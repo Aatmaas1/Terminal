@@ -9026,7 +9026,7 @@ PrefabInstance:
     - target: {fileID: 253680872594538817, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1961562087628283521, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
         type: 3}
@@ -9036,12 +9036,22 @@ PrefabInstance:
     - target: {fileID: 1961562087628283521, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7276370997458175113, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
         type: 3}
       propertyPath: m_Name
       value: PorteTuto (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7377187848033654927, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7377187848033654927, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8048227694326013491, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
         type: 3}
@@ -9866,7 +9876,7 @@ Transform:
   m_GameObject: {fileID: 391006118}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 36, y: 21, z: 19}
+  m_LocalPosition: {x: 36, y: 20, z: 19}
   m_LocalScale: {x: 100, y: 1, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
