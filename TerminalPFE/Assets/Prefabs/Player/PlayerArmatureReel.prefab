@@ -104,9 +104,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1673585269366348018}
+  - component: {fileID: 4893600354897106098}
   m_Layer: 0
   m_Name: Geometry
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,6 +128,29 @@ Transform:
   - {fileID: 4321648008667947954}
   m_Father: {fileID: 6991022163748651879}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &4893600354897106098
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539179983187797645}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.2
+  m_Height: 1.8
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!1 &950348466594005354
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,6 +230,7 @@ GameObject:
   - component: {fileID: 8021138607815601599}
   - component: {fileID: 2021576279853907833}
   - component: {fileID: 454113454025468004}
+  - component: {fileID: 9094604308206974726}
   m_Layer: 8
   m_Name: PlayerArmatureReel
   m_TagString: Player
@@ -464,6 +489,18 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &9094604308206974726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059678176860768493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0033b32696af5634f82639571b1a13de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1116219123447706844
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,7 +929,7 @@ GameObject:
   - component: {fileID: 3576798532895581474}
   m_Layer: 0
   m_Name: Armature_Mesh
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2040,7 +2077,7 @@ GameObject:
   - component: {fileID: 1574478760570962875}
   m_Layer: 0
   m_Name: Skeleton
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

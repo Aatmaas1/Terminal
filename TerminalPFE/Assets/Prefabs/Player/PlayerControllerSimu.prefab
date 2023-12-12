@@ -327,6 +327,7 @@ GameObject:
   - component: {fileID: 3961162535608211731}
   - component: {fileID: 5436091264387587228}
   - component: {fileID: 9036111012582859369}
+  - component: {fileID: 6853042862143257984}
   m_Layer: 8
   m_Name: PlayerControllerSimu
   m_TagString: Player
@@ -553,6 +554,18 @@ MonoBehaviour:
   analogMovement: 0
   cursorLocked: 1
   cursorInputForLook: 1
+--- !u!114 &6853042862143257984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5544738564733168811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0033b32696af5634f82639571b1a13de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5856779578708907541
 GameObject:
   m_ObjectHideFlags: 0

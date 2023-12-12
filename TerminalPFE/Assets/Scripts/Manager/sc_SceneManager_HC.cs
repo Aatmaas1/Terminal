@@ -12,7 +12,7 @@ public class sc_SceneManager_HC : MonoBehaviour
     public static sc_SceneManager_HC Instance;
 
     AsyncOperation asyncLoad;
-    bool bLoadDone;
+    bool bLoadDone = true;
     bool isReadyToGo;
 
     private void Awake()
@@ -41,9 +41,12 @@ public class sc_SceneManager_HC : MonoBehaviour
 
     public void PrepScene(string nom)
     {
-        bLoadDone = false;
-        isReadyToGo = true;
-        StartCoroutine(LoadAsyncScene(nom));
+        if (bLoadDone)
+        {
+            bLoadDone = false;
+            isReadyToGo = false;
+            StartCoroutine(LoadAsyncScene(nom));
+        }
     }
 
     IEnumerator LoadAsyncScene(string nom)
@@ -62,6 +65,7 @@ public class sc_SceneManager_HC : MonoBehaviour
         {
             yield return null;
         }
+        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
         asyncLoad.allowSceneActivation = true;
     }
 
