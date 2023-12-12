@@ -55,12 +55,12 @@ public class sc_SceneManager_HC : MonoBehaviour
         {
             //scene has loaded as much as possible,
             // the last 10% can't be multi-threaded
-            yield return new WaitForEndOfFrame();
+            yield return null;
         }
         bLoadDone = asyncLoad.isDone;
         while (!isReadyToGo)
         {
-            yield return new WaitForEndOfFrame();
+            yield return null;
         }
         asyncLoad.allowSceneActivation = true;
     }
