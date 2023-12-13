@@ -1,0 +1,5 @@
+1 - Remplacer la caméra par MainCamera
+2 - Ajouter le prefab de joueur voulu et le PlayerFollowCamera lié
+3 - Regler le "Follow" de PlayerfollowCamera sur l'élément de l'avatar nommé PlayerCameraRoot
+4.1.1 - Si avatar virtuel, mettre PlayerFollowCamera dans sa variable VirtualCamera (sous Cinemachine dans Third PersonController(Script))
+4.1.2 - Si avatar virtuel, ajouter 5 MembreAvatarVirtuel dans la scène (pas enfant de l'avatar) et leur donner comme cible les TargetsMembres enfants de l'avatar
