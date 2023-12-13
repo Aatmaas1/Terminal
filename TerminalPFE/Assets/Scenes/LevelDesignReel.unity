@@ -2316,6 +2316,86 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 847549210}
     m_Modifications:
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 413656755}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 413656754}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PorteOpeningAndClosing
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ChangeColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ActionPorteTuto, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: sc_ChangeLightColor, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2929544031918411696, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 4.5981417
+      objectReference: {fileID: 0}
+    - target: {fileID: 2929544031918411696, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 3.7290387
+      objectReference: {fileID: 0}
     - target: {fileID: 3907300992667793055, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
         type: 3}
       propertyPath: m_Name
@@ -3409,7 +3489,77 @@ PrefabInstance:
     - target: {fileID: 253680872594538817, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1470744998}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1470744996}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PorteOpeningAndClosing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ChangeColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ActionPorteTuto, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: sc_ChangeLightColor, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1961562087628283521, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
         type: 3}
@@ -3419,7 +3569,7 @@ PrefabInstance:
     - target: {fileID: 1961562087628283521, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7276370997458175113, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
         type: 3}
@@ -7066,6 +7216,76 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 847549210}
     m_Modifications:
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1928641705}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1928641704}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PorteOpeningAndClosing
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ChangeColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ActionPorteTuto, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: sc_ChangeLightColor, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3907300992667793055, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
         type: 3}
       propertyPath: m_Name
@@ -8850,6 +9070,76 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1622822553}
     m_Modifications:
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1028991971}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1028991970}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PorteOpeningAndClosing
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ChangeColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ActionPorteTuto, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: sc_ChangeLightColor, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3907300992667793055, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
         type: 3}
       propertyPath: m_Name
@@ -9028,10 +9318,15 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1197148740104026316, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
         type: 3}
       propertyPath: OnInteractDoor.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
         type: 3}
@@ -9040,12 +9335,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
         type: 3}
+      propertyPath: OnInteractDoor.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
       propertyPath: OnInteractDoor.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 802908698}
     - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
         type: 3}
+      propertyPath: OnInteractDoor.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 367244327}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
       propertyPath: OnInteractDoor.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoor.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
@@ -9055,12 +9370,97 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
         type: 3}
+      propertyPath: OnInteractDoor.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ChangeColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 802908698}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 367244327}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PorteOpeningAndClosing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ChangeColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
       propertyPath: OnInteractDoor.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: ActionPorteTuto, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
         type: 3}
+      propertyPath: OnInteractDoor.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: sc_ChangeLightColor, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoor.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ActionPorteTuto, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: sc_ChangeLightColor, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
       propertyPath: OnInteractDoor.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoor.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1961562087628283521, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
@@ -9072,6 +9472,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107408599437085556, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5189716391593126764, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7276370997458175113, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
         type: 3}
@@ -9138,6 +9548,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9221719122916451676, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 57eb0de0f26d73c46a904cf4e57181af, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9149,6 +9564,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 367244325}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &367244327 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6978922823870778433, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+    type: 3}
+  m_PrefabInstance: {fileID: 367244325}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f0a2c9f8a3f994c846299a146b4007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &367994744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10778,6 +11205,30 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 413016346}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &413656754 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1668807668835940500, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 92571434}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f0a2c9f8a3f994c846299a146b4007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &413656755 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1898718869756740817, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 92571434}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a75ec3a5403472a4cb46555ffb45560e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &415291998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12840,6 +13291,76 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 847549210}
     m_Modifications:
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 649075141}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 649075140}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PorteOpeningAndClosing
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ChangeColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ActionPorteTuto, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: sc_ChangeLightColor, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3907300992667793055, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
         type: 3}
       propertyPath: m_Name
@@ -17042,6 +17563,30 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647114268}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &649075140 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1668807668835940500, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 485527904}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f0a2c9f8a3f994c846299a146b4007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &649075141 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1898718869756740817, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 485527904}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a75ec3a5403472a4cb46555ffb45560e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &655861615
 GameObject:
   m_ObjectHideFlags: 0
@@ -25953,6 +26498,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1024467476}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1028991970 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1668807668835940500, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 363199483}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f0a2c9f8a3f994c846299a146b4007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1028991971 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1898718869756740817, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 363199483}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a75ec3a5403472a4cb46555ffb45560e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1031605962
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28321,6 +28890,76 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1134047179}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1134047177}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PorteOpeningAndClosing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ChangeColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ActionPorteTuto, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: sc_ChangeLightColor, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1961562087628283521, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28407,6 +29046,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1134047175}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1134047177 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6978922823870778433, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1134047175}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f0a2c9f8a3f994c846299a146b4007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1134047179 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2593780962835798587, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1134047175}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a75ec3a5403472a4cb46555ffb45560e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1134371945
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31639,6 +32302,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1942377931}
     m_Modifications:
+    - target: {fileID: 1668807668835940500, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898718869756740817, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3907300992667793055, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
         type: 3}
       propertyPath: m_Name
@@ -31789,6 +32462,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.016
       objectReference: {fileID: 0}
+    - target: {fileID: 8189934058729002379, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31876,6 +32554,76 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1622822553}
     m_Modifications:
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1697699625}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1697699623}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PorteOpeningAndClosing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ChangeColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ActionPorteTuto, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: sc_ChangeLightColor, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7276370997458175113, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
         type: 3}
       propertyPath: m_Name
@@ -32252,6 +33000,76 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 847549210}
     m_Modifications:
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1796577176}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1796577175}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PorteOpeningAndClosing
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ChangeColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ActionPorteTuto, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: sc_ChangeLightColor, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 273213873236998348, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3907300992667793055, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
         type: 3}
       propertyPath: m_Name
@@ -35315,6 +36133,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1467461671}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1470744996 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6978922823870778433, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+    type: 3}
+  m_PrefabInstance: {fileID: 131566143}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f0a2c9f8a3f994c846299a146b4007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1470744998 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2593780962835798587, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+    type: 3}
+  m_PrefabInstance: {fileID: 131566143}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a75ec3a5403472a4cb46555ffb45560e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1470827413
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40089,6 +40931,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1697457061}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1697699623 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6978922823870778433, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1311148234}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f0a2c9f8a3f994c846299a146b4007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1697699625 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2593780962835798587, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1311148234}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a75ec3a5403472a4cb46555ffb45560e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1697942495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41217,6 +42083,76 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1763845538}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1763845536}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PorteOpeningAndClosing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ChangeColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ActionPorteTuto, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: sc_ChangeLightColor, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557390381850227559, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: OnInteractDoorAutomatique.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1961562087628283521, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -41293,6 +42229,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1763845534}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1763845536 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6978922823870778433, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1763845534}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f0a2c9f8a3f994c846299a146b4007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1763845538 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2593780962835798587, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1763845534}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a75ec3a5403472a4cb46555ffb45560e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1770601604
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42150,6 +43110,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1795834412}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1796577175 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1668807668835940500, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1329298513}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f0a2c9f8a3f994c846299a146b4007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1796577176 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1898718869756740817, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1329298513}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a75ec3a5403472a4cb46555ffb45560e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1805383561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45405,6 +46389,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1922652174}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1928641704 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1668807668835940500, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 292332819}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f0a2c9f8a3f994c846299a146b4007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1928641705 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1898718869756740817, guid: 56775dab9c143d0489fa7f79a6b5f8cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 292332819}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a75ec3a5403472a4cb46555ffb45560e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1932931474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48212,6 +49220,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893600354897106098, guid: e848b10f55eedc2448951992f3da7e91,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6991022163748651879, guid: e848b10f55eedc2448951992f3da7e91,
         type: 3}

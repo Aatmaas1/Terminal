@@ -3,7 +3,7 @@ using UnityEngine;
 public class ActionPorteTuto : MonoBehaviour
 {
     //à passer en private
-    public bool isOpen;
+    public bool isOpening;
     private Animator PorteTutoAnimator;
     private void Start()
     {
@@ -12,21 +12,23 @@ public class ActionPorteTuto : MonoBehaviour
 
     public void PorteOpeningAndClosing()
     {
-        if (isOpen)
+        if (isOpening)
         {
-            print("Je suis rentré dans le Unity Event et je veux me fermer");
+            print("Je suis rentré dans le Unity Event et je me ferme");
 
             PorteTutoAnimator.SetBool("IsOpening", false);
            
-            isOpen = false;
+            isOpening = false;
         }
+        
         else
         {
-            print("Je suis rentré dans le Unity Event et je veux m'ouvrir");
+            print("Je suis rentré dans le Unity Event et je m'ouvre");
             PorteTutoAnimator.SetBool("IsOpening", true);
             
-            isOpen = true;
+            isOpening = true;
         }
+        
     }
 
   

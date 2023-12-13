@@ -6,11 +6,11 @@ using UnityEngine.Events;
 public class UnityEventPortes : MonoBehaviour
 {
 
-    public UnityEvent OnInteractDoor;
+    public UnityEvent OnInteractDoorAutomatique;
 
-    public void InteractDoor()
+    public void InteractDoorAutomatique()
     {
-        OnInteractDoor?.Invoke();
+        OnInteractDoorAutomatique?.Invoke();
     }
     
 }
