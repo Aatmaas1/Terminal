@@ -1,0 +1,10 @@
+1 - Vérifier que la scène possède un avatar, un objet avec sc_SceneManager et un prefab Memoire (ou un moyen d'y accéder, c'est un DontDestroyOnLoad)
+
+2 - Ajouter le prefab de terminal
+3 - Dans VideoPlayer, Mettre dans Camera la mainCamera
+4 - Dans Testtrigger, lier le 2e event sur PrepScene du SceneManager et lui donner le nom de la scène à ouvrir (le monde parrallele)
+5 - Mettre l'index voulu : Chaque Terminal est lié à ceux avec le même index et y emmenera
+Les indexs sont des entiers positifs
+6 - Bouger son point de spawn où voulu (l'objet vide enfant). La rotation est affecté aussi, par défaut elle fait face au terminal
+
+7 - Debug et appellez Hugo quand ça marche pas (:
