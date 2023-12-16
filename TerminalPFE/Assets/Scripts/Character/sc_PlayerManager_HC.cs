@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class sc_PlayerManager_HC : MonoBehaviour
 {
@@ -15,5 +17,10 @@ public class sc_PlayerManager_HC : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private void OnLevelWasLoaded(int level)
+    {
+        GetComponent<PlayerInput>().ActivateInput();
     }
 }
