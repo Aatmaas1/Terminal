@@ -14,7 +14,7 @@ public class ActionPorteTuto : MonoBehaviour
     {
         if (isOpening)
         {
-            print("Je suis rentré dans le Unity Event et je me ferme");
+            //print("Je suis rentré dans le Unity Event et je me ferme");
 
             PorteTutoAnimator.SetBool("IsOpening", false);
            
@@ -23,12 +23,17 @@ public class ActionPorteTuto : MonoBehaviour
         
         else
         {
-            print("Je suis rentré dans le Unity Event et je m'ouvre");
+            //print("Je suis rentré dans le Unity Event et je m'ouvre");
             PorteTutoAnimator.SetBool("IsOpening", true);
             
             isOpening = true;
         }
         
+    }
+
+    public void PorteOpeningBouton()
+    {
+        PorteTutoAnimator.SetTrigger("IsOpening");
     }
 
   
