@@ -58,6 +58,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e5c559e7a1eb80b49b0fb8d3693ecfce,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 57eb0de0f26d73c46a904cf4e57181af, type: 2}
+    - target: {fileID: -3013697386055130873, guid: e5c559e7a1eb80b49b0fb8d3693ecfce,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3013697386055130873, guid: e5c559e7a1eb80b49b0fb8d3693ecfce,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e5c559e7a1eb80b49b0fb8d3693ecfce,
         type: 3}
       propertyPath: m_Name
@@ -71,6 +86,22 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1850129488977522389}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e5c559e7a1eb80b49b0fb8d3693ecfce,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3583412803774878270}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e5c559e7a1eb80b49b0fb8d3693ecfce,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7906050387687121333}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e5c559e7a1eb80b49b0fb8d3693ecfce,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 964124936728454812}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e5c559e7a1eb80b49b0fb8d3693ecfce,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2268206479482354976}
     - targetCorrespondingSourceObject: {fileID: 3963097025340178604, guid: e5c559e7a1eb80b49b0fb8d3693ecfce,
         type: 3}
       insertIndex: -1
@@ -135,6 +166,72 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7353841966144253182, guid: e5c559e7a1eb80b49b0fb8d3693ecfce, type: 3}
+--- !u!114 &3583412803774878270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5596281972138069256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8acdd43a9cc512648b75102da317fbba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteractDoorAutomatique:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractDoorBouton:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &7906050387687121333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5596281972138069256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a75ec3a5403472a4cb46555ffb45560e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOpening: 0
+--- !u!114 &964124936728454812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5596281972138069256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f0a2c9f8a3f994c846299a146b4007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOpen: 0
+  lightMat: {fileID: 0}
+--- !u!95 &2268206479482354976
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5596281972138069256}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7877d6a73622bae44a1be87eb8f4ccc2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8617403291664675061 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3963097025340178604, guid: e5c559e7a1eb80b49b0fb8d3693ecfce,
