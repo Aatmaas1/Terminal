@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+#if UNITY_EDITOR
 
 
 
@@ -23,3 +24,4 @@ public class sc_BumperEditor_HC : Editor
         Handles.DrawLine(t.transform.position, dir + t.transform.position);
     }
 }
+#endif
