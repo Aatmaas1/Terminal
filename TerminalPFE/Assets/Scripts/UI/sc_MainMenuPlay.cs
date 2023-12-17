@@ -14,7 +14,7 @@ public class sc_MainMenuPlay : MonoBehaviour, IBoutonsMainMenu_HC
 
     private void OnMouseOver()
     {
-        Debug.Log("aaa");
+        //Debug.Log("aaa");
         script.BoutonHover(value);
     }
 }
