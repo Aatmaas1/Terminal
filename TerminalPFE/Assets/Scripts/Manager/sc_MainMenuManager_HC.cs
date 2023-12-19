@@ -34,7 +34,7 @@ public class sc_MainMenuManager_HC : MonoBehaviour
     IEnumerator LaunchAnimPorte()
     {
         _hasFirstPressed = true;
-        CachePorte.GetComponent<Animator>().Play("ActionPorte");
+        CachePorte.GetComponent<Animator>().SetBool("IsOpening", true);
         TextePressAnyButton.GetComponent<Animator>().Play("ActionPressButton");
         yield return new WaitForSeconds(2f);
         _controlsLocked = false;
