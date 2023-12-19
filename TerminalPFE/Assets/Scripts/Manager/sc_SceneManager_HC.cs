@@ -30,6 +30,7 @@ public class sc_SceneManager_HC : MonoBehaviour
 
     public void ChargeScene(string nom)
     {
+        sc_DataManager.instance.SaveAll();
         Time.timeScale = 1;
         SceneManager.LoadScene(nom);
     }
@@ -47,6 +48,7 @@ public class sc_SceneManager_HC : MonoBehaviour
             isReadyToGo = false;
             StartCoroutine(LoadAsyncScene(nom));
         }
+        sc_DataManager.instance.SaveAll();
     }
 
     IEnumerator LoadAsyncScene(string nom)
