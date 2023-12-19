@@ -1,6 +1,7 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class sc_MainMenuQuit_HC : MonoBehaviour, IBoutonsMainMenu_HC
+public class sc_MainMenuQuit_HC : MonoBehaviour, IBoutonsMainMenu_HC, IPointerEnterHandler
 {
     public int value;
     public sc_MainMenuManager_HC script;
@@ -9,9 +10,8 @@ public class sc_MainMenuQuit_HC : MonoBehaviour, IBoutonsMainMenu_HC
         sc_SceneManager_HC.Instance.Quitter();
     }
 
-    private void OnMouseEnter()
+    public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("bbb");
         script.BoutonHover(value);
     }
 }
