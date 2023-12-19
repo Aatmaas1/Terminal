@@ -42,8 +42,8 @@ public class sc_MainMenuManager_HC : MonoBehaviour
 
     void SetPoints()
     {
-        PointGauche.transform.position = Boutons[optionSelected].transform.position + Vector3.left * 180 * Screen.width / 1920;
-        PointDroite.transform.position = Boutons[optionSelected].transform.position + Vector3.right * 180 * Screen.width / 1920;
+        PointGauche.transform.position = Boutons[optionSelected].transform.position + Vector3.left * 180;
+        PointDroite.transform.position = Boutons[optionSelected].transform.position + Vector3.right * 180;
     }
 
     public void OnUp()

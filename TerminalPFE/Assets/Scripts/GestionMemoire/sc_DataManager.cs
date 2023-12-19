@@ -30,6 +30,7 @@ public class sc_DataManager : MonoBehaviour
             Destroy(this);
         }
         instance = this;
+        DontDestroyOnLoad(this);
     }
 
     private void Start()

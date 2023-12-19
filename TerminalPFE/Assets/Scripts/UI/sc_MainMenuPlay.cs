@@ -15,6 +15,7 @@ public class sc_MainMenuPlay : MonoBehaviour, IBoutonsMainMenu_HC, IPointerEnter
             sc_DataManager.instance.NewGame();
         }
         sc_SceneManager_HC.Instance.ChargeScene(sceneName);
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void OnPointerEnter(PointerEventData eventData)

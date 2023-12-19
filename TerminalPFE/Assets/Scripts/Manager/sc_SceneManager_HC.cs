@@ -69,10 +69,23 @@ public class sc_SceneManager_HC : MonoBehaviour
         }
         SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
         asyncLoad.allowSceneActivation = true;
+        Time.timeScale = 1;
     }
 
     public void IsReadyToLoad()
     {
         isReadyToGo = true;
+    }
+
+
+
+    public void Pause()
+    {
+        Time.timeScale = 0;
+    }
+
+    public void Reprendre()
+    {
+        Time.timeScale = 1;
     }
 }
