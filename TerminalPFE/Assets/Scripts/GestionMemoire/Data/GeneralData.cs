@@ -7,7 +7,7 @@ using UnityEngine;
 public class GeneralData
 {
     public int lastSceneLoaded, indexterminal;
-    public Vector3 LastPos;
+    public Transform LastPos;
     public bool porteTuto1Ouverte, porteTuto2Ouverte, porteSortieOuverte, SolCasse, hasSwitchedBody;
 
 
@@ -15,7 +15,7 @@ public class GeneralData
     {
         this.lastSceneLoaded = 0;
         this.indexterminal = -1;
-        this.LastPos = Vector3.zero;
+        this.LastPos = null;
         this.porteTuto1Ouverte = false;
         this.porteTuto2Ouverte = false;
         this.porteSortieOuverte = false;
