@@ -31,7 +31,6 @@ public class Bouton : MonoBehaviour, IDataManager
         {
             case 0:
                 isOpen = data.porteTuto1Ouverte;
-                Debug.Log(name + isOpen);
                 if (isOpen)
                 {
                     StartCoroutine(Ouvre());
@@ -60,7 +59,6 @@ public class Bouton : MonoBehaviour, IDataManager
         {
             case 0:
                 data.porteTuto1Ouverte = isOpen;
-                Debug.Log(name + isOpen);
                 break;
             case 1:
                 data.porteTuto2Ouverte = isOpen;
