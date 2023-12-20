@@ -30,6 +30,7 @@ public class sc_DataManager : MonoBehaviour
             Destroy(this);
         }
         instance = this;
+        //DontDestroyOnLoad(this);
     }
 
     private void Start()
@@ -65,6 +66,7 @@ public class sc_DataManager : MonoBehaviour
 
     public void SaveAll()
     {
+        this.dataInterfaceObjects = FindAllDataInterfaceObjects();
         //pass data to other scripts to handle it
         foreach (IDataManager interf in dataInterfaceObjects)
         {
@@ -103,5 +105,21 @@ public class sc_DataManager : MonoBehaviour
     {
         this.dataInterfaceObjects = FindAllDataInterfaceObjects();
         LoadToObjects();
+    }
+
+
+    public void ForceSaveIndex(int index)
+    {
+        generalData.indexterminal = index;
+    }
+
+    public void ForceSaveLastScene(int index)
+    {
+        generalData.lastSceneLoaded = index;
+    }
+
+    public int WhatIsLastScene()
+    {
+        return generalData.lastSceneLoaded;
     }
 }

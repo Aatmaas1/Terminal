@@ -2763,7 +2763,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnTrig.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 575980660}
+      objectReference: {fileID: 0}
     - target: {fileID: 5682610326638163505, guid: 5601c4111a7c1e84e8c723a2b7cda04c,
         type: 3}
       propertyPath: OnTrig.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -3940,7 +3940,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnTrig.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 575980660}
+      objectReference: {fileID: 0}
     - target: {fileID: 5682610326638163505, guid: 5601c4111a7c1e84e8c723a2b7cda04c,
         type: 3}
       propertyPath: OnTrig.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -6359,7 +6359,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnTrig.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 575980660}
+      objectReference: {fileID: 0}
     - target: {fileID: 5682610326638163505, guid: 5601c4111a7c1e84e8c723a2b7cda04c,
         type: 3}
       propertyPath: OnTrig.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -13101,50 +13101,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560262101}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &575980659
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 575980661}
-  - component: {fileID: 575980660}
-  m_Layer: 0
-  m_Name: SceneManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &575980660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575980659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b76148d849aadf4bb58f2fe4bbf9266, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &575980661
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575980659}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &577750623
 GameObject:
   m_ObjectHideFlags: 0
@@ -18795,7 +18751,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnTrig.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 575980660}
+      objectReference: {fileID: 0}
     - target: {fileID: 5682610326638163505, guid: 5601c4111a7c1e84e8c723a2b7cda04c,
         type: 3}
       propertyPath: OnTrig.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -51029,7 +50985,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1346160693}
-  - {fileID: 575980661}
   - {fileID: 1176452708}
   - {fileID: 1661291946}
   - {fileID: 45936370}

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
+using UnityEngine.UI;
 
 public class sc_MainMenuManager_HC : MonoBehaviour
 {
@@ -36,14 +37,18 @@ public class sc_MainMenuManager_HC : MonoBehaviour
         _hasFirstPressed = true;
         CachePorte.GetComponent<Animator>().SetBool("IsOpening", true);
         TextePressAnyButton.GetComponent<Animator>().Play("ActionPressButton");
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.2f);
         _controlsLocked = false;
+        foreach(GameObject but in Boutons)
+        {
+            but.GetComponent<Button>().enabled = true;
+        }
     }
 
     void SetPoints()
     {
-        PointGauche.transform.position = Boutons[optionSelected].transform.position + Vector3.left * 180 * Screen.width / 1920;
-        PointDroite.transform.position = Boutons[optionSelected].transform.position + Vector3.right * 180 * Screen.width / 1920;
+        PointGauche.transform.position = Boutons[optionSelected].transform.position + Vector3.left * 180f / 14.8f;
+        PointDroite.transform.position = Boutons[optionSelected].transform.position + Vector3.right * 180f / 14.8f;
     }
 
     public void OnUp()

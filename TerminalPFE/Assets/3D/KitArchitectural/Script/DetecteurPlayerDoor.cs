@@ -16,7 +16,7 @@ public class DetecteurPlayerDoor : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            print("La porte détecte le player en entrée" + transform.parent.name);
+            //print("La porte détecte le player en entrée" + transform.parent.name);
             UnityEventPortes.InteractDoorAutomatique();
         }
     }
@@ -25,7 +25,7 @@ public class DetecteurPlayerDoor : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            print("La porte détecte le player en sortie" + transform.parent.name);
+            //print("La porte détecte le player en sortie" + transform.parent.name);
             UnityEventPortes.InteractDoorAutomatique();
         }
     }
