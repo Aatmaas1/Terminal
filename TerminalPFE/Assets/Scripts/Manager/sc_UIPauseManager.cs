@@ -52,8 +52,8 @@ public class sc_UIPauseManager : MonoBehaviour
 
     public void LoadInventory()
     {
-        sc_DataManager.instance.ForceSave().indexterminal = -1;
-        sc_DataManager.instance.ForceSave().lastSceneLoaded = SceneManager.GetActiveScene().buildIndex;
+        sc_DataManager.instance.ForceSaveIndex(-1);
+        sc_DataManager.instance.ForceSaveLastScene(SceneManager.GetActiveScene().buildIndex);
         sc_SceneManager_HC.Instance.ChargeScene("Inventaire");
     }
 }

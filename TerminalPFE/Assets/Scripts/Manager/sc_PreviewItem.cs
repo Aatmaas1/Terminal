@@ -1,43 +1,57 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class sc_PreviewItem : MonoBehaviour, IDataManager
 {
+    public static sc_PreviewItem Instance;
+
     public GameObject[] Cadres;
     public GameObject[] Models;
+    public GameObject[] ImageItem;
 
-    public GameObject Selected;
+    public GameObject SelectedSlot, menuSelection;
+    GameObject shownItem = null;
+    bool isShowing = false;
+    public float rotateSpeed;
+
     int hauteur = 0;
     int largeur = 0;
-    // Start is called before the first frame update
+
+
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        Selected.transform.position = Cadres[hauteur*4+ largeur].transform.position;
+        SelectedSlot.transform.position = Cadres[hauteur * 4 + largeur].transform.position;
     }
 
 
     public void LoadData(GeneralData data)
     {
-        int temp = 0;
-        for(int i = 0; i < 4; i++)
+        for (int temp = 0; temp < 12; temp++)
         {
-            for(int j = 0; j<3; j++)
+            if (data.ItemsCollected[temp] == false)
             {
-                if (data.ItemsCollected[temp] == false)
-                {
-                    Models[i*4+ j] = null;
-                    temp++;
-                }
+                ImageItem[temp].SetActive(false);
             }
+
         }
     }
 
@@ -69,16 +83,63 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
         if (largeur > 3) { largeur = 0; }
     }
 
+    public void OnInterract()
+    {
+        if (!isShowing)
+        {
+            if(ImageItem[hauteur * 4 + largeur].activeInHierarchy)
+            {
+                isShowing = true; ;
+                menuSelection.SetActive(false);
+                shownItem = Models[hauteur * 4 + largeur];
+                shownItem.transform.position += Vector3.up * 20f;
+                Cursor.lockState = CursorLockMode.Locked;
+            }
+        }
+    }
+
+    public void OnBack()
+    {
+        if(isShowing)
+        {
+            shownItem.transform.position -= Vector3.up * 20f;
+            shownItem = null;
+            menuSelection.SetActive(true);
+            isShowing = false;
+            Cursor.lockState = CursorLockMode.None;
+        }
+        else
+        {
+            Retour();
+        }
+    }
+
+    public void OnMoveObject(InputValue value)
+    {
+        if (isShowing)
+        {
+            shownItem.transform.Rotate(value.Get<Vector2>() * rotateSpeed);
+        }
+    }
+
 
     public void Retour()
     {
         if (sc_DataManager.instance.WhatIsLastScene() == 1)
         {
             sc_SceneManager_HC.Instance.ChargeScene("LevelDesignReel");
+            Cursor.lockState = CursorLockMode.Locked;
         }
         else
         {
             sc_SceneManager_HC.Instance.ChargeScene("LevelDesignSimu");
+            Cursor.lockState = CursorLockMode.Locked;
         }
+    }
+
+    public void Highlight(int nb)
+    {
+        hauteur = Mathf.FloorToInt(nb / 4f);
+        largeur = nb % 4;
     }
 }

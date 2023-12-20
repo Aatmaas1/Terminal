@@ -20,13 +20,14 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         }
     }
 
-    private void OnLevelWasLoaded(int level)
+    private void Start()
     {
         GetComponent<PlayerInput>().ActivateInput();
     }
 
     public void LoadData(GeneralData data)
     {
+        Debug.Log(data.indexterminal);
         if (IndexTerminal >= 0)
         {
             TestTrigger[] terminaux = FindObjectsOfType<TestTrigger>();
@@ -42,7 +43,10 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         {
             if (data.LastPos != Vector3.zero)
             {
-                transform.SetPositionAndRotation(data.LastPos, data.LastRot);
+                GetComponent<CharacterController>().enabled = false;
+                transform.position = data.LastPos;
+                transform.rotation = data.LastRot;
+                GetComponent<CharacterController>().enabled = true; ;
             }
         }
     }

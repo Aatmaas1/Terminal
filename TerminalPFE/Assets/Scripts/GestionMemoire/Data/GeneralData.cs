@@ -20,6 +20,6 @@ public class GeneralData
         this.porteSortieOuverte = false;
         this.SolCasse = false;
         this.hasSwitchedBody = false;
-        this.ItemsCollected = new bool[]{ false, false, false, false, false, false, false, false, false, false, false, false};
+        this.ItemsCollected = new bool[]{ true, false, false, false, false, true, false, false, false, false, false, false};
     }
 }

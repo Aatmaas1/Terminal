@@ -343,17 +343,6 @@
                 },
                 {
                     "name": "",
-                    "id": "081d428c-05a0-4ed8-8f67-f699499fb99b",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KeyboardMouse",
-                    "action": "Interract",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "9df446d7-bc6b-477b-8ad9-606739aa7ba1",
                     "path": "<Keyboard>/enter",
                     "interactions": "",
@@ -463,39 +452,6 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "Scroll",
-                    "id": "b5014a75-1de1-49b2-a145-52b183b71c11",
-                    "path": "1DAxis(minValue=0,whichSideWins=1)",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Up",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "1135290e-0ae1-4dd5-bafa-ca40aa906a95",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Up",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "f6e52144-457d-45df-8f7a-73e49d18d066",
-                    "path": "<Mouse>/scroll/up",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KeyboardMouse",
-                    "action": "Up",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "",
                     "id": "2dddfe89-50c5-4987-b90a-fe4def23ccf1",
                     "path": "<Keyboard>/escape",
@@ -582,39 +538,6 @@
                     "action": "Down",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "Scroll",
-                    "id": "9436d695-ad32-4b89-88b6-b58789c064a5",
-                    "path": "1DAxis(maxValue=0,whichSideWins=2)",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Down",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "a6543ac6-ac66-486e-8164-fb60daf9c8af",
-                    "path": "<Mouse>/scroll/down",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KeyboardMouse",
-                    "action": "Down",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "3d51936f-87a5-4f20-9275-a417e19f0e59",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Down",
-                    "isComposite": false,
-                    "isPartOfComposite": true
                 },
                 {
                     "name": "",
