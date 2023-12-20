@@ -105,4 +105,15 @@ public class sc_DataManager : MonoBehaviour
         this.dataInterfaceObjects = FindAllDataInterfaceObjects();
         LoadToObjects();
     }
+
+
+    public ref GeneralData ForceSave()
+    {
+        return ref generalData;
+    }
+
+    public int WhatIsLastScene()
+    {
+        return generalData.lastSceneLoaded;
+    }
 }

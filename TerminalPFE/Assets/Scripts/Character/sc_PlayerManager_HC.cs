@@ -52,5 +52,9 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         data.LastPos = transform.position;
         data.LastRot = transform.rotation;
         data.indexterminal = IndexTerminal;
+        if(SceneManager.GetActiveScene().buildIndex == 1 || SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            data.lastSceneLoaded = SceneManager.GetActiveScene().buildIndex;
+        }
     }
 }

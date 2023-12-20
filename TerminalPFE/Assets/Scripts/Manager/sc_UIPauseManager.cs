@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class sc_UIPauseManager : MonoBehaviour
 {
@@ -47,5 +48,12 @@ public class sc_UIPauseManager : MonoBehaviour
     public void Quitter()
     {
         sc_SceneManager_HC.Instance.ChargeScene("MainMenu");
+    }
+
+    public void LoadInventory()
+    {
+        sc_DataManager.instance.ForceSave().indexterminal = -1;
+        sc_DataManager.instance.ForceSave().lastSceneLoaded = SceneManager.GetActiveScene().buildIndex;
+        sc_SceneManager_HC.Instance.ChargeScene("Inventaire");
     }
 }

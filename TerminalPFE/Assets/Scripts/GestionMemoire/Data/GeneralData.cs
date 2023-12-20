@@ -7,7 +7,7 @@ public class GeneralData
     public Vector3 LastPos;
     public Quaternion LastRot;
     public bool porteTuto1Ouverte, porteTuto2Ouverte, porteSortieOuverte, SolCasse, hasSwitchedBody;
-
+    public bool[] ItemsCollected;
 
     public GeneralData()
     {
@@ -20,5 +20,6 @@ public class GeneralData
         this.porteSortieOuverte = false;
         this.SolCasse = false;
         this.hasSwitchedBody = false;
+        this.ItemsCollected = new bool[]{ false, false, false, false, false, false, false, false, false, false, false, false};
     }
 }

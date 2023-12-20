@@ -275,6 +275,24 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "Left",
+                    "type": "Button",
+                    "id": "18010cd4-4bc2-4407-a4c5-738f5ec782e2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Right",
+                    "type": "Button",
+                    "id": "33df73d3-3623-4e2d-aa5c-fe53b0f54e9d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "Interract",
                     "type": "Button",
                     "id": "40401fe0-f254-45af-9c5e-e0253ba234fa",
@@ -479,6 +497,61 @@
                 },
                 {
                     "name": "",
+                    "id": "2dddfe89-50c5-4987-b90a-fe4def23ccf1",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bfb26602-6477-47a7-bbc2-9ce442fe6bcb",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "16111e25-587c-4521-b1d9-094c00dd826f",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "Left",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7cb843e5-49c7-4aef-b707-8f3fbaf515b0",
+                    "path": "<Gamepad>/leftStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Left",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a74d0999-eb3e-4af8-adf3-d36a5d72a6cf",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "211b92f2-b82e-4f7e-833c-c7d7cf3fef76",
                     "path": "<Keyboard>/s",
                     "interactions": "",
@@ -545,23 +618,34 @@
                 },
                 {
                     "name": "",
-                    "id": "2dddfe89-50c5-4987-b90a-fe4def23ccf1",
-                    "path": "<Keyboard>/escape",
+                    "id": "4d4d916c-8633-467e-acec-9c6889fe8e70",
+                    "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "KeyboardMouse",
-                    "action": "Pause",
+                    "action": "Right",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "bfb26602-6477-47a7-bbc2-9ce442fe6bcb",
-                    "path": "<Gamepad>/start",
+                    "id": "4e6fd258-a1ac-43ab-acd8-d21b8ea79a31",
+                    "path": "<Gamepad>/leftStick/right",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Pause",
+                    "action": "Right",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c8836798-d61d-46f5-98e0-67aed552ad6b",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Right",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
