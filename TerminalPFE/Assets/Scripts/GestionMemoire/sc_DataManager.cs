@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-using UnityEngine.SceneManagement;
 
 public class sc_DataManager : MonoBehaviour
 {
@@ -36,7 +35,6 @@ public class sc_DataManager : MonoBehaviour
     private void Start()
     {
         this.fileHandler = new sc_FileHandler_HC(Application.persistentDataPath, fileName);
-        SceneManager.activeSceneChanged += SceneChanged;
         this.dataInterfaceObjects = FindAllDataInterfaceObjects();
         LoadAll();
     }
@@ -98,13 +96,6 @@ public class sc_DataManager : MonoBehaviour
         IEnumerable<IDataManager> datapersistenceobjects = FindObjectsOfType<MonoBehaviour>().OfType<IDataManager>();
 
         return new List<IDataManager>(datapersistenceobjects);
-    }
-
-
-    void SceneChanged(Scene current, Scene next)
-    {
-        this.dataInterfaceObjects = FindAllDataInterfaceObjects();
-        LoadToObjects();
     }
 
 
