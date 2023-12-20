@@ -9,6 +9,5 @@ public class sc_HoverInventaire_HC : MonoBehaviour, IPointerEnterHandler
     public void OnPointerEnter(PointerEventData eventData)
     {
         sc_PreviewItem.Instance.Highlight(index);
-        Debug.Log("aaa");
     }
 }
