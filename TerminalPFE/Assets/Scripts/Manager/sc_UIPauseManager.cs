@@ -47,6 +47,7 @@ public class sc_UIPauseManager : MonoBehaviour
 
     public void Quitter()
     {
+        sc_DataManager.instance.SaveAll();
         sc_SceneManager_HC.Instance.ChargeScene("MainMenu");
     }
 

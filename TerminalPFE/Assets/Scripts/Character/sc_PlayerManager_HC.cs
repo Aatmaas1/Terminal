@@ -27,7 +27,7 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
 
     public void LoadData(GeneralData data)
     {
-        Debug.Log(data.indexterminal);
+        IndexTerminal = data.indexterminal;
         if (IndexTerminal >= 0)
         {
             TestTrigger[] terminaux = FindObjectsOfType<TestTrigger>();
@@ -35,7 +35,9 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
             {
                 if (terminaux[i].index == IndexTerminal)
                 {
-                    terminaux[i].SpawnPlayer();
+                    GetComponent<CharacterController>().enabled = false;
+                    transform.position = terminaux[i].playerAvatarSpawn.transform.position;
+                    transform.rotation = terminaux[i].playerAvatarSpawn.transform.rotation;
                 }
             }
         }
@@ -46,9 +48,9 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
                 GetComponent<CharacterController>().enabled = false;
                 transform.position = data.LastPos;
                 transform.rotation = data.LastRot;
-                GetComponent<CharacterController>().enabled = true; ;
             }
         }
+        GetComponent<CharacterController>().enabled = true;
     }
 
     public void SaveData(ref GeneralData data)

@@ -20,12 +20,4 @@ public class TestTrigger : MonoBehaviour
             transform.position = new Vector3(0, -5000, 0);
         }
     }
-
-    public void SpawnPlayer()
-    {
-        sc_PlayerManager_HC.Instance.GetComponent<CharacterController>().enabled = false;
-        sc_PlayerManager_HC.Instance.transform.position = playerAvatarSpawn.transform.position;
-        sc_PlayerManager_HC.Instance.transform.rotation = playerAvatarSpawn.transform.rotation;
-        sc_PlayerManager_HC.Instance.GetComponent<CharacterController>().enabled = true;
-    }
 }
