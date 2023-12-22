@@ -22,9 +22,12 @@ public class Bouton : MonoBehaviour, IDataManager
             isOpen = true;
             //print("La porte détecte le player en entrée" + transform.parent.name);
             UnityEventPortes.InteractDoorBouton();
+
+            this.gameObject.SetActive(false);
         }
     }
 
+    
     public void LoadData(GeneralData data)
     {
         switch (index)

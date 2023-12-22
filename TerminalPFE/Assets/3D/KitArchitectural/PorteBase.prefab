@@ -92,8 +92,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 10.06818, y: 1, z: 3.0455334}
-  m_Center: {x: 0.9940195, y: 0.5, z: 1.9772333}
+  m_Size: {x: 11.961885, y: 1, z: 3.0455334}
+  m_Center: {x: 0.9840524, y: 0.5, z: 1.9772333}
 --- !u!1001 &4249406132439976910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -254,6 +254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8acdd43a9cc512648b75102da317fbba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDoorBroken: 0
   OnInteractDoorAutomatique:
     m_PersistentCalls:
       m_Calls: []
