@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0574FF77-4242-4605-998D-91A725DFF951}" SchemaVersion="119" RootDocumentID="{AB2030D7-FEB3-4931-8F66-2372D24A8919}" ParentDocumentID="{5477266C-D991-4580-A687-CA6FC8AF0645}">
+	<AudioObjects>
+		<WorkUnit Name="Pas" ID="{0574FF77-4242-4605-998D-91A725DFF951}" OwnerID="{5477266C-D991-4580-A687-CA6FC8AF0645}" PersistMode="Nested">
+			<ChildrenList>
+				<RandomSequenceContainer Name="RandomContainerTest" ID="{B00E3A8C-9E71-412A-A5ED-DD67E8ACA790}" ShortID="499822055">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Housse1" ID="{9B99A1BE-0CC9-472A-AD8C-DCAC74BE73F6}" ShortID="541470358">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Housse1" ID="{740A6FDD-D46A-47F2-8B09-8F1291BD78CF}">
+									<Language>SFX</Language>
+									<AudioFile>RandomContainerTest\Housse1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="336847074"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Housse1" ID="{740A6FDD-D46A-47F2-8B09-8F1291BD78CF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Housse2" ID="{EA97A108-77B4-46A0-AE22-2D08DA1FFE4C}" ShortID="561662988">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Housse2" ID="{8D276470-CEE2-45FD-9622-519CBD1FD5C4}">
+									<Language>SFX</Language>
+									<AudioFile>RandomContainerTest\Housse2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="850912280"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Housse2" ID="{8D276470-CEE2-45FD-9622-519CBD1FD5C4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Housse3" ID="{CB8A9A74-D440-4E01-BD92-2C98C0AC2404}" ShortID="685633210">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Housse3" ID="{8BD2BF31-DE4C-4424-B2F7-76F579D97178}">
+									<Language>SFX</Language>
+									<AudioFile>RandomContainerTest\Housse3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="25478728"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Housse3" ID="{8BD2BF31-DE4C-4424-B2F7-76F579D97178}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

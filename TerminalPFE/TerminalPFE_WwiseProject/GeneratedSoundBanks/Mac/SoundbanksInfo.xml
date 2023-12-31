@@ -22,13 +22,25 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E17443E6-14E2-34CE-2FEA-45FFED165879}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{9CC98A3A-ADD5-2310-E648-7E1DC5C4F801}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
+				<File Id="25478728" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>RandomContainerTest\Housse3.wav</ShortName>
+					<CachePath>SFX/RandomContainerTest/Housse3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="336847074" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>RandomContainerTest\Housse1.wav</ShortName>
+					<CachePath>SFX/RandomContainerTest/Housse1_818F3B66.wem</CachePath>
+				</File>
 				<File Id="352465723" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>4NN4_MASTERING2.wav</ShortName>
 					<CachePath>SFX/4NN4_MASTERING2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="850912280" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>RandomContainerTest\Housse2.wav</ShortName>
+					<CachePath>SFX/RandomContainerTest/Housse2_818F3B66.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -37,8 +49,15 @@
 						<MediaRef Id="352465723"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2623669360" Name="Play_RandomContainerTest" DurationType="OneShot" DurationMin="0.22595833" DurationMax="0.34614584">
+					<MediaRefs>
+						<MediaRef Id="25478728"/>
+						<MediaRef Id="336847074"/>
+						<MediaRef Id="850912280"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{AE6CEB16-B6D6-9559-8D97-D1D4BF474C90}</FileHash>
+	<FileHash>{2AB55547-B487-7699-19CC-1A2AD301DE0A}</FileHash>
 </SoundBanksInfo>

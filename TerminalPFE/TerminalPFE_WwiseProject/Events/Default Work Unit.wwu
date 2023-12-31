@@ -14,6 +14,21 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="PasEvent" ID="{28C60C9B-8036-447C-AC66-D85D71DDFE5C}" ShortID="941182768">
+					<ChildrenList>
+						<Event Name="Play_RandomContainerTest" ID="{1FCA9C28-3655-4D15-9BBF-E62F7F50F220}">
+							<ChildrenList>
+								<Action Name="" ID="{FAC90B89-E36D-4677-8C49-0605A2022A65}" ShortID="841324573">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RandomContainerTest" ID="{B00E3A8C-9E71-412A-A5ED-DD67E8ACA790}" WorkUnitID="{0574FF77-4242-4605-998D-91A725DFF951}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
