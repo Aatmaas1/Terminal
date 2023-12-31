@@ -55,6 +55,21 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_4NN4_MASTERING2" ID="{CB8118CB-D54B-4AFA-BACA-05842173B307}">
+					<ChildrenList>
+						<Action Name="" ID="{C0E741B6-9B19-4B83-B9DE-555ABEC0EA5D}" ShortID="1052537544">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="4NN4_MASTERING2" ID="{1368F824-5DE1-485B-9779-1915D015E25B}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
