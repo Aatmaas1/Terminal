@@ -3,8 +3,10 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{B0E864E3-B148-48B4-B41F-12B8470EC700}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="SoundBankINI" ID="{64C4EF07-F09E-49DA-82FE-B0612FB803C3}">
-					<ObjectInclusionList/>
+				<SoundBank Name="Main" ID="{17C71D25-0FEF-42EF-A545-F46544A81C52}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_4NN4_MASTERING2" ID="{7A954C22-1A37-4A05-AA4A-2F72BDFE301E}" WorkUnitID="{82BEFC32-1D9E-48B6-82C8-FD8A959356A5}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
