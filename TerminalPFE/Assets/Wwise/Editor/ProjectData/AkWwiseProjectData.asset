@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: a496d604dfb54f43bca9994076f26b0d
     GuidInternal: 
-    m_lastTime: -8584976049637195464
+    m_lastTime: -8584976011701712296
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -143,7 +143,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e364e8b048b1b448b41f12b8470ec700
     GuidInternal: 
-    m_lastTime: -8584976049633247628
+    m_lastTime: -8584975999092390867
     List:
     - name: Main
       guid: 251dc717ef0fef42a545f46544a81c52
@@ -171,7 +171,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 32fcbe829e1db64882c8fd8a959356a5
     GuidInternal: 
-    m_lastTime: -8584976049642187856
+    m_lastTime: -8584975995568264370
     List:
     - name: PasEvent
       guid: 9b0cc62836807c44ac66d85d71ddfe5c
@@ -207,6 +207,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 157.1923
       minDuration: 157.1923
+    - name: Play_PropositionSimulation
+      guid: 1bab1b8d7ce6cc4faa3a1faf7bc997eb
+      id: 388074695
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Play_PropositionSimulation
+        ObjectType: 3
+        guid: 1bab1b8d7ce6cc4faa3a1faf7bc997eb
+      Path: Events\Default Work Unit\Play_PropositionSimulation
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_RandomContainerTest
       guid: 289cca1f5536154d9bbfe62f7f50f220
       id: 2623669360
@@ -227,6 +244,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.34614584
       minDuration: 0.22595833
+    - name: Stop_PropositionSimulation
+      guid: 4a037acc8015974889c3e619f21b1435
+      id: 3465213173
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Stop_PropositionSimulation
+        ObjectType: 3
+        guid: 4a037acc8015974889c3e619f21b1435
+      Path: Events\Default Work Unit\Stop_PropositionSimulation
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -284,7 +318,7 @@ MonoBehaviour:
     m_lastTime: -8584991312705959035
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000200000003000000040000000600000007000000080000000a0000000b0000000c0000001700000080000000810000002fc30200
+  ExpandedWaapiItemIds: 040000000500000006000000070000000e0000000f0000001200000013000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

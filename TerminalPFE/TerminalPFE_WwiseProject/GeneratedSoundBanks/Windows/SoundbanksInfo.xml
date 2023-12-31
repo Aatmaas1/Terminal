@@ -51,13 +51,17 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{54D3BFFC-8D7E-32BC-9FAD-A3713B66C8BC}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{003AEB58-08A0-88E9-121D-884367EF726E}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="25478728" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>RandomContainerTest\Housse3.wav</ShortName>
 					<CachePath>SFX/RandomContainerTest/Housse3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="31641563" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PropositionSimulation.wav</ShortName>
+					<CachePath>SFX/PropositionSimulation_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="336847074" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>RandomContainerTest\Housse1.wav</ShortName>
@@ -78,6 +82,11 @@
 						<MediaRef Id="352465723"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="388074695" Name="Play_PropositionSimulation" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="31641563"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2623669360" Name="Play_RandomContainerTest" DurationType="OneShot" DurationMin="0.22595833" DurationMax="0.34614584">
 					<MediaRefs>
 						<MediaRef Id="25478728"/>
@@ -85,8 +94,9 @@
 						<MediaRef Id="850912280"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3465213173" Name="Stop_PropositionSimulation" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2F75E379-E03B-5B1A-64AF-FA926231EB5E}</FileHash>
+	<FileHash>{E2197CD6-EBEE-BEDB-CDAE-3AC86F6DC25B}</FileHash>
 </SoundBanksInfo>
