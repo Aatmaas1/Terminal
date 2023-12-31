@@ -9,20 +9,49 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D326F752-7CA2-0A14-FDB1-63ECE89D0199}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A7A52ACB-1B39-ECD6-A8DF-F684FCA3185D}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<ShareSets>
+					<Plugin Id="992902880" Name="Small_Tiled_Room1" LibName="Wwise Matrix Reverb" LibId="7536643"/>
+					<Plugin Id="2098638826" Name="Underground_Parking1" LibName="Wwise Matrix Reverb" LibId="7536643"/>
+					<Plugin Id="3673681183" Name="Large_Bright_Chamber1" LibName="Wwise Matrix Reverb" LibId="7536643"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="3744218805" Name="ReverbBus"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="1834452165" Name="ReverbZoneTuto">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2098638826"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="3284971226" Name="ReverbPortalPortes">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="992902880"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="3854959149" Name="ReverbZoneTuto2">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3673681183"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{9CC98A3A-ADD5-2310-E648-7E1DC5C4F801}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{54D3BFFC-8D7E-32BC-9FAD-A3713B66C8BC}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -59,5 +88,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2AB55547-B487-7699-19CC-1A2AD301DE0A}</FileHash>
+	<FileHash>{014F4202-450C-551D-2885-966AB2FB6248}</FileHash>
 </SoundBanksInfo>

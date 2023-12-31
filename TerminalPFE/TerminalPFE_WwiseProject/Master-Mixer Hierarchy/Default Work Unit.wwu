@@ -9,6 +9,63 @@
 							<ObjectRef Name="System" ID="{4311EB38-66DB-44C0-92FB-EAA5E50769A3}" WorkUnitID="{5BAC3935-05A9-4501-9CC1-DC38554E4621}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="ReverbBus" ID="{757DB92A-6649-4F4A-A97F-AEE91F00E9B3}">
+							<ChildrenList>
+								<AuxBus Name="ReverbZoneTuto" ID="{D713D25F-9AED-44AA-8063-32F7534FDA18}">
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{7B316583-DA55-4CA5-BE78-43FDA6C0ED8A}" ShortID="217004247">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+																<ObjectRef Name="Underground_Parking1" ID="{8DA66AA3-6CA0-41A0-B7A2-BB6FCABFCDA8}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</AuxBus>
+								<AuxBus Name="ReverbPortalPortes" ID="{4E3615F8-13D2-4EDD-9E00-78F5E6859F97}">
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{C978E77B-EC91-4C31-AB4C-C5A5C0D4F354}" ShortID="555106690">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+																<ObjectRef Name="Small_Tiled_Room1" ID="{41EEE722-3009-4B3F-8820-F414623783E3}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</AuxBus>
+								<AuxBus Name="ReverbZoneTuto2" ID="{C1DBB168-CA18-4FD5-803F-AF57E63B05B0}">
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{E751A114-C934-4E05-9CEE-C6D6863ACE5A}" ShortID="110719843">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+																<ObjectRef Name="Large_Bright_Chamber1" ID="{0BFA2291-5716-4759-AC24-F59D29E8F2E4}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</AuxBus>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

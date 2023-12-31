@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: a496d604dfb54f43bca9994076f26b0d
     GuidInternal: 
-    m_lastTime: -8584991312706109085
+    m_lastTime: -8584976054798311197
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -54,6 +54,83 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: ReverbBus
+      guid: 2ab97d7549664a4fa97faee91f00e9b3
+      id: 3744218805
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a496d604dfb54f43bca9994076f26b0d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: ReverbBus
+        ObjectType: 2
+        guid: 2ab97d7549664a4fa97faee91f00e9b3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbBus
+    - name: ReverbPortalPortes
+      guid: f815364ed213dd4e9e0078f5e6859f97
+      id: 3284971226
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a496d604dfb54f43bca9994076f26b0d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: ReverbBus
+        ObjectType: 2
+        guid: 2ab97d7549664a4fa97faee91f00e9b3
+      - ElementName: ReverbPortalPortes
+        ObjectType: 1
+        guid: f815364ed213dd4e9e0078f5e6859f97
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbBus\ReverbPortalPortes
+    - name: ReverbZoneTuto
+      guid: 5fd213d7ed9aaa44806332f7534fda18
+      id: 1834452165
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a496d604dfb54f43bca9994076f26b0d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: ReverbBus
+        ObjectType: 2
+        guid: 2ab97d7549664a4fa97faee91f00e9b3
+      - ElementName: ReverbZoneTuto
+        ObjectType: 1
+        guid: 5fd213d7ed9aaa44806332f7534fda18
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbBus\ReverbZoneTuto
+    - name: ReverbZoneTuto2
+      guid: 68b1dbc118cad54f803faf57e63b05b0
+      id: 3854959149
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a496d604dfb54f43bca9994076f26b0d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: ReverbBus
+        ObjectType: 2
+        guid: 2ab97d7549664a4fa97faee91f00e9b3
+      - ElementName: ReverbZoneTuto2
+        ObjectType: 1
+        guid: 68b1dbc118cad54f803faf57e63b05b0
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbBus\ReverbZoneTuto2
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -94,7 +171,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 32fcbe829e1db64882c8fd8a959356a5
     GuidInternal: 
-    m_lastTime: -8584976092638911796
+    m_lastTime: -8584976072292063881
     List:
     - name: PasEvent
       guid: 9b0cc62836807c44ac66d85d71ddfe5c
@@ -176,7 +253,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 714a7c0a843719468b6cdc73bdd5c5ef
     GuidInternal: 
-    m_lastTime: -8584991312705999083
+    m_lastTime: -8584976072292003898
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -207,7 +284,7 @@ MonoBehaviour:
     m_lastTime: -8584991312705959035
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000600000007000000080000000a0000000b0000000c0000008000000081000000
+  ExpandedWaapiItemIds: 010000000200000003000000040000000600000007000000080000000a0000000b0000000c0000001700000080000000810000002fc30200
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

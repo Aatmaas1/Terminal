@@ -26,7 +26,15 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID REVERBBUS = 3744218805U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID REVERBPORTALPORTES = 3284971226U;
+        static const AkUniqueID REVERBZONETUTO = 1834452165U;
+        static const AkUniqueID REVERBZONETUTO2 = 3854959149U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {
