@@ -41,15 +41,18 @@ public class sc_ChangeLightColor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isOpening && !isOpen)
+        if (cableMat != null)
         {
-            value = Mathf.MoveTowards(value, 1, Time.deltaTime * speed);
-            cableMat.SetFloat("_ColorChanger", value);
-        }
-        else if (!isOpening && isOpen)
-        {
-            valueClose = Mathf.MoveTowards(valueClose, 0, Time.deltaTime * speed);
-            cableMat.SetFloat("_ColorChanger", valueClose);
+            if (isOpening && !isOpen)
+            {
+                value = Mathf.MoveTowards(value, 1, Time.deltaTime * speed);
+                cableMat.SetFloat("_ColorChanger", value);
+            }
+            else if (!isOpening && isOpen)
+            {
+                valueClose = Mathf.MoveTowards(valueClose, 0, Time.deltaTime * speed);
+                cableMat.SetFloat("_ColorChanger", valueClose);
+            }
         }
     }
 
