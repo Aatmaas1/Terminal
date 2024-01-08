@@ -8,8 +8,10 @@ public class sc_UIPauseManager : MonoBehaviour
 {
     public static sc_UIPauseManager Instance;
 
-    public GameObject menuPause;
+    public GameObject menuPause, cameraGame, cameraPause;
     public PlayerInput pInput;
+
+    Transform player;
     private void Awake()
     {
         if (Instance == null)
@@ -22,6 +24,24 @@ public class sc_UIPauseManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        player = menuPause.transform.parent;
+    }
+
+    private void Update()
+    {
+        if (menuPause.activeInHierarchy)
+        {
+            if (Physics.Raycast(player.position + Vector3.up, player.forward + Vector3.up, 2.5f))
+            {
+                player.GetComponent<CharacterController>().enabled = false;
+                player.Rotate(new Vector3(0, 10, 0));
+                player.GetComponent<CharacterController>().enabled = true;
+            }
+        }
+    }
+
     public void TestPause()
     {
         if (menuPause.activeInHierarchy) { EndPause(); }
@@ -31,9 +51,11 @@ public class sc_UIPauseManager : MonoBehaviour
     void StartPause()
     {
         pInput.SwitchCurrentActionMap("UI");
-        sc_SceneManager_HC.Instance.Pause();
+        //sc_SceneManager_HC.Instance.Pause();
         menuPause.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
+        cameraGame.SetActive(false);
+        cameraPause.SetActive(true);
     }
 
     void EndPause()
@@ -42,6 +64,8 @@ public class sc_UIPauseManager : MonoBehaviour
         sc_SceneManager_HC.Instance.Reprendre();
         menuPause.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
+        cameraGame.SetActive(true);
+        cameraPause.SetActive(false);
     }
 
 
