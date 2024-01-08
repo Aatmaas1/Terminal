@@ -102,15 +102,30 @@ public class sc_DataManager : MonoBehaviour
     public void ForceSaveIndex(int index)
     {
         generalData.indexterminal = index;
+        fileHandler.Save(generalData);
     }
 
     public void ForceSaveLastScene(int index)
     {
         generalData.lastSceneLoaded = index;
+        fileHandler.Save(generalData);
     }
 
     public int WhatIsLastScene()
     {
         return generalData.lastSceneLoaded;
+        fileHandler.Save(generalData);
+    }
+
+    public void MoveRobotTuto(bool ya)
+    {
+        generalData.tutoBody = ya;
+        fileHandler.Save(generalData);
+    }
+
+    public void MoveRobotCorpse()
+    {
+        generalData.hasSwitchedBody = true;
+        fileHandler.Save(generalData);
     }
 }
