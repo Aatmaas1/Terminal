@@ -14,7 +14,7 @@ public class sc_RobotControl : MonoBehaviour, IDataManager
         {
             if (isAtTheEnd)
             {
-                if (data.hasSwitchedBody)
+                if (data.tutoBody)
                 {
                     gameObject.SetActive(false);
                 }
@@ -25,7 +25,7 @@ public class sc_RobotControl : MonoBehaviour, IDataManager
             }
             else
             {
-                if (data.hasSwitchedBody)
+                if (data.tutoBody)
                 {
                     gameObject.SetActive(true);
                 }
@@ -39,7 +39,7 @@ public class sc_RobotControl : MonoBehaviour, IDataManager
         {
             if (isAtTheEnd)
             {
-                if (data.tutoBody)
+                if (data.hasSwitchedBody)
                 {
                     gameObject.SetActive(false);
                 }
@@ -50,7 +50,7 @@ public class sc_RobotControl : MonoBehaviour, IDataManager
             }
             else
             {
-                if (data.tutoBody)
+                if (data.hasSwitchedBody)
                 {
                     gameObject.SetActive(true);
                 }
