@@ -12,14 +12,328 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b173e825c9ccfad48b57aa8e34e1192e, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Virtual Acoustics
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 1cf59fa78aed4b48900c0883722c8eb0
+    ParentPath: Virtual Acoustics\Default Work Unit
+    guid: 1cf59fa78aed4b48900c0883722c8eb0
+    GuidInternal: 
+    m_lastTime: -8584988773957779181
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Master-Mixer Hierarchy
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: a496d604dfb54f43bca9994076f26b0d
+    ParentPath: Master-Mixer Hierarchy\Default Work Unit
+    guid: a496d604dfb54f43bca9994076f26b0d
+    GuidInternal: 
+    m_lastTime: -8584968861977802615
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a496d604dfb54f43bca9994076f26b0d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: ReverbBus
+      guid: 2ab97d7549664a4fa97faee91f00e9b3
+      id: 3744218805
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a496d604dfb54f43bca9994076f26b0d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: ReverbBus
+        ObjectType: 2
+        guid: 2ab97d7549664a4fa97faee91f00e9b3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbBus
+    - name: ReverbPortalPortes
+      guid: f815364ed213dd4e9e0078f5e6859f97
+      id: 3284971226
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a496d604dfb54f43bca9994076f26b0d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: ReverbBus
+        ObjectType: 2
+        guid: 2ab97d7549664a4fa97faee91f00e9b3
+      - ElementName: ReverbPortalPortes
+        ObjectType: 1
+        guid: f815364ed213dd4e9e0078f5e6859f97
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbBus\ReverbPortalPortes
+    - name: ReverbZoneTuto
+      guid: 5fd213d7ed9aaa44806332f7534fda18
+      id: 1834452165
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a496d604dfb54f43bca9994076f26b0d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: ReverbBus
+        ObjectType: 2
+        guid: 2ab97d7549664a4fa97faee91f00e9b3
+      - ElementName: ReverbZoneTuto
+        ObjectType: 1
+        guid: 5fd213d7ed9aaa44806332f7534fda18
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbBus\ReverbZoneTuto
+    - name: ReverbZoneTuto2
+      guid: 68b1dbc118cad54f803faf57e63b05b0
+      id: 3854959149
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a496d604dfb54f43bca9994076f26b0d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: ReverbBus
+        ObjectType: 2
+        guid: 2ab97d7549664a4fa97faee91f00e9b3
+      - ElementName: ReverbZoneTuto2
+        ObjectType: 1
+        guid: 68b1dbc118cad54f803faf57e63b05b0
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbBus\ReverbZoneTuto2
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: e364e8b048b1b448b41f12b8470ec700
+    ParentPath: SoundBanks\Default Work Unit
+    guid: e364e8b048b1b448b41f12b8470ec700
+    GuidInternal: 
+    m_lastTime: -8584973981621814092
+    List:
+    - name: Main
+      guid: 251dc717ef0fef42a545f46544a81c52
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e364e8b048b1b448b41f12b8470ec700
+      - ElementName: Main
+        ObjectType: 7
+        guid: 251dc717ef0fef42a545f46544a81c52
+      Path: SoundBanks\Default Work Unit\Main
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 32fcbe829e1db64882c8fd8a959356a5
+    ParentPath: Events\Default Work Unit
+    guid: 32fcbe829e1db64882c8fd8a959356a5
+    GuidInternal: 
+    m_lastTime: -8584973981641167878
+    List:
+    - name: PasEvent
+      guid: 9b0cc62836807c44ac66d85d71ddfe5c
+      id: 439236005
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: PasEvent
+        ObjectType: 4
+        guid: 9b0cc62836807c44ac66d85d71ddfe5c
+      Path: Events\Default Work Unit\PasEvent
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_4NN4_MASTERING2
+      guid: 224c957a371a054aaa4a2f72bdfe301e
+      id: 4068946449
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Play_4NN4_MASTERING2
+        ObjectType: 3
+        guid: 224c957a371a054aaa4a2f72bdfe301e
+      Path: Events\Default Work Unit\Play_4NN4_MASTERING2
+      maxAttenuation: 0
+      maxDuration: 157.1923
+      minDuration: 157.1923
+    - name: Play_PropositionSimulation
+      guid: 1bab1b8d7ce6cc4faa3a1faf7bc997eb
+      id: 388074695
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Play_PropositionSimulation
+        ObjectType: 3
+        guid: 1bab1b8d7ce6cc4faa3a1faf7bc997eb
+      Path: Events\Default Work Unit\Play_PropositionSimulation
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_RandomContainerTest
+      guid: 289cca1f5536154d9bbfe62f7f50f220
+      id: 2623669360
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: PasEvent
+        ObjectType: 4
+        guid: 9b0cc62836807c44ac66d85d71ddfe5c
+      - ElementName: Play_RandomContainerTest
+        ObjectType: 3
+        guid: 289cca1f5536154d9bbfe62f7f50f220
+      Path: Events\Default Work Unit\PasEvent\Play_RandomContainerTest
+      maxAttenuation: 0
+      maxDuration: 0.34614584
+      minDuration: 0.22595833
+    - name: Stop_4NN4_MASTERING2
+      guid: cb1881cb4bd5fa4abaca05842173b307
+      id: 1362331995
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Stop_4NN4_MASTERING2
+        ObjectType: 3
+        guid: cb1881cb4bd5fa4abaca05842173b307
+      Path: Events\Default Work Unit\Stop_4NN4_MASTERING2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_PropositionSimulation
+      guid: 4a037acc8015974889c3e619f21b1435
+      id: 3465213173
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Stop_PropositionSimulation
+        ObjectType: 3
+        guid: 4a037acc8015974889c3e619f21b1435
+      Path: Events\Default Work Unit\Stop_PropositionSimulation
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: f463c39a5f915547a8ea853e5e7d5179
+    ParentPath: Game Parameters\Default Work Unit
+    guid: f463c39a5f915547a8ea853e5e7d5179
+    GuidInternal: 
+    m_lastTime: -8584988773958198945
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 714a7c0a843719468b6cdc73bdd5c5ef
+    ParentPath: States\Default Work Unit
+    guid: 714a7c0a843719468b6cdc73bdd5c5ef
+    GuidInternal: 
+    m_lastTime: -8584988773957969077
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 6a351b9960659c4795efc6c4eb9bc882
+    ParentPath: Switches\Default Work Unit
+    guid: 6a351b9960659c4795efc6c4eb9bc882
+    GuidInternal: 
+    m_lastTime: -8584988773957949094
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Triggers
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 2231a2ba2b69e34ab5a5aaa376433f97
+    ParentPath: Triggers\Default Work Unit
+    guid: 2231a2ba2b69e34ab5a5aaa376433f97
+    GuidInternal: 
+    m_lastTime: -8584988773957879126
+    List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
