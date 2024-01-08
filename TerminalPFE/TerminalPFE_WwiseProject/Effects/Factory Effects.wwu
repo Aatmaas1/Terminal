@@ -683,14 +683,15 @@
 								<Property Name="HFRatio" Type="Real32" Value="4.5"/>
 								<Property Name="NumberOfDelays" Type="int32" Value="12"/>
 								<Property Name="ReverbTime" Type="Real32" Value="1"/>
-								<Property Name="WetLevel" Type="Real32" Value="-20"/>
+								<Property Name="WetLevel" Type="Real32" Value="-69"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Big_Garage1" ID="{172402A8-22F4-40FC-BE1D-5269594CB633}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
 							<PropertyList>
 								<Property Name="HFRatio" Type="Real32" Value="3"/>
-								<Property Name="NumberOfDelays" Type="int32" Value="12"/>
-								<Property Name="ReverbTime" Type="Real32" Value="2"/>
+								<Property Name="NumberOfDelays" Type="int32" Value="16"/>
+								<Property Name="PreDelay" Type="Real32" Value="0.3"/>
+								<Property Name="ReverbTime" Type="Real32" Value="0.5"/>
 								<Property Name="WetLevel" Type="Real32" Value="-30"/>
 							</PropertyList>
 						</Effect>
@@ -721,19 +722,21 @@
 						</Effect>
 						<Effect Name="PA_Announcement1" ID="{65E0ACE4-B404-4485-87A4-5907277D9858}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
 							<PropertyList>
+								<Property Name="DryLevel" Type="Real32" Value="-10.3"/>
 								<Property Name="HFRatio" Type="Real32" Value="5.5"/>
 								<Property Name="NumberOfDelays" Type="int32" Value="12"/>
 								<Property Name="PreDelay" Type="Real32" Value="0.2"/>
-								<Property Name="ReverbTime" Type="Real32" Value="2"/>
+								<Property Name="ReverbTime" Type="Real32" Value="1"/>
 								<Property Name="WetLevel" Type="Real32" Value="-30"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Small_Tiled_Room1" ID="{41EEE722-3009-4B3F-8820-F414623783E3}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
 							<PropertyList>
+								<Property Name="DryLevel" Type="Real32" Value="-23.3"/>
 								<Property Name="HFRatio" Type="Real32" Value="8"/>
 								<Property Name="NumberOfDelays" Type="int32" Value="12"/>
-								<Property Name="ReverbTime" Type="Real32" Value="1.5"/>
-								<Property Name="WetLevel" Type="Real32" Value="-25"/>
+								<Property Name="ReverbTime" Type="Real32" Value="0.6"/>
+								<Property Name="WetLevel" Type="Real32" Value="-37"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Small_Wooden_Room1" ID="{F7CBE859-36A8-4174-B553-AE32A7FE95FA}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
