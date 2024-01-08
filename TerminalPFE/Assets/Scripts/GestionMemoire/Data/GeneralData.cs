@@ -6,7 +6,7 @@ public class GeneralData
     public int lastSceneLoaded, indexterminal;
     public Vector3 LastPos;
     public Quaternion LastRot;
-    public bool porteTuto1Ouverte, porteTuto2Ouverte, porteSortieOuverte, SolCasse, hasSwitchedBody;
+    public bool porteTuto1Ouverte, porteTuto2Ouverte, porteSortieOuverte, SolCasse, tutoBody, hasSwitchedBody;
     public bool[] ItemsCollected;
 
     public GeneralData()
@@ -19,6 +19,7 @@ public class GeneralData
         this.porteTuto2Ouverte = false;
         this.porteSortieOuverte = false;
         this.SolCasse = false;
+        this.tutoBody = false;
         this.hasSwitchedBody = false;
         this.ItemsCollected = new bool[]{ true, false, false, false, false, true, false, false, false, false, false, false};
     }

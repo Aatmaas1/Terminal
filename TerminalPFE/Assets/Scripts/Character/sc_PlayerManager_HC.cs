@@ -28,7 +28,7 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
     public void LoadData(GeneralData data)
     {
         IndexTerminal = data.indexterminal;
-        Debug.Log(data.LastPos);
+        //Debug.Log(data.LastPos);
         if (IndexTerminal >= 0)
         {
             TestTrigger[] terminaux = FindObjectsOfType<TestTrigger>();
