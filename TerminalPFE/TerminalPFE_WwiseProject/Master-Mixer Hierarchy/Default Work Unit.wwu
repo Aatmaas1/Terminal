@@ -13,6 +13,18 @@
 						<Bus Name="ReverbBus" ID="{757DB92A-6649-4F4A-A97F-AEE91F00E9B3}">
 							<ChildrenList>
 								<AuxBus Name="ReverbZoneTuto" ID="{D713D25F-9AED-44AA-8063-32F7534FDA18}">
+									<PropertyList>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ObjectLists>
 										<ObjectList Name="Effects">
 											<Reference>
@@ -20,7 +32,7 @@
 													<EffectSlot Name="" ID="{7B316583-DA55-4CA5-BE78-43FDA6C0ED8A}" ShortID="217004247">
 														<ReferenceList>
 															<Reference Name="Effect" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
-																<ObjectRef Name="Underground_Parking1" ID="{8DA66AA3-6CA0-41A0-B7A2-BB6FCABFCDA8}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+																<ObjectRef Name="Big_Garage1" ID="{172402A8-22F4-40FC-BE1D-5269594CB633}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 															</Reference>
 														</ReferenceList>
 													</EffectSlot>
