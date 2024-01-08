@@ -27,6 +27,7 @@ public class sc_UIPauseManager : MonoBehaviour
     private void Start()
     {
         player = menuPause.transform.parent;
+        StartCoroutine(TestPauseAtStrat());
     }
 
     private void Update()
@@ -80,5 +81,15 @@ public class sc_UIPauseManager : MonoBehaviour
         sc_DataManager.instance.ForceSaveIndex(-1);
         sc_DataManager.instance.ForceSaveLastScene(SceneManager.GetActiveScene().buildIndex);
         sc_SceneManager_HC.Instance.ChargeScene("Inventaire");
+    }
+
+    IEnumerator TestPauseAtStrat()
+    {
+        yield return new WaitForSeconds(0.1f);
+        if (sc_DataManager.instance.WhatIsLastScene() == 3)
+        {
+            StartPause();
+        }
+
     }
 }

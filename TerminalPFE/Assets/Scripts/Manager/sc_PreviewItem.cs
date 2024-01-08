@@ -127,11 +127,13 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
     {
         if (sc_DataManager.instance.WhatIsLastScene() == 1)
         {
+            sc_DataManager.instance.ForceSaveLastScene(3);
             sc_SceneManager_HC.Instance.ChargeScene("LevelDesignReel");
             Cursor.lockState = CursorLockMode.Locked;
         }
         else
         {
+            sc_DataManager.instance.ForceSaveLastScene(3);
             sc_SceneManager_HC.Instance.ChargeScene("LevelDesignSimu");
             Cursor.lockState = CursorLockMode.Locked;
         }
