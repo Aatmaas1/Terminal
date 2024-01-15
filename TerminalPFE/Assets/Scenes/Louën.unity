@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6055,17 +6055,17 @@ PrefabInstance:
     - target: {fileID: 1055308880812402645, guid: e848b10f55eedc2448951992f3da7e91,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.03320205
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1055308880812402645, guid: e848b10f55eedc2448951992f3da7e91,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.10263901
+      value: 0.10340429
       objectReference: {fileID: 0}
     - target: {fileID: 1055308880812402645, guid: e848b10f55eedc2448951992f3da7e91,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0029212884
+      value: 5.820766e-11
       objectReference: {fileID: 0}
     - target: {fileID: 1055308880812402645, guid: e848b10f55eedc2448951992f3da7e91,
         type: 3}
@@ -6091,6 +6091,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerArmatureReel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059678176860768493, guid: e848b10f55eedc2448951992f3da7e91,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1386451932837157062, guid: e848b10f55eedc2448951992f3da7e91,
         type: 3}
@@ -7883,6 +7888,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1a8bc755d928964f988e65126d0257f, type: 3}
+--- !u!1001 &1969614456008560809
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4002143401691966453, guid: c132b5e3725aebc41ab37e1bf3ff37cd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002143401691966453, guid: c132b5e3725aebc41ab37e1bf3ff37cd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002143401691966453, guid: c132b5e3725aebc41ab37e1bf3ff37cd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002143401691966453, guid: c132b5e3725aebc41ab37e1bf3ff37cd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002143401691966453, guid: c132b5e3725aebc41ab37e1bf3ff37cd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002143401691966453, guid: c132b5e3725aebc41ab37e1bf3ff37cd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002143401691966453, guid: c132b5e3725aebc41ab37e1bf3ff37cd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002143401691966453, guid: c132b5e3725aebc41ab37e1bf3ff37cd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002143401691966453, guid: c132b5e3725aebc41ab37e1bf3ff37cd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002143401691966453, guid: c132b5e3725aebc41ab37e1bf3ff37cd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4377965669287047503, guid: c132b5e3725aebc41ab37e1bf3ff37cd,
+        type: 3}
+      propertyPath: m_Name
+      value: Terminal (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c132b5e3725aebc41ab37e1bf3ff37cd, type: 3}
 --- !u!1001 &3010186574412751380
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8639,3 +8712,4 @@ SceneRoots:
   - {fileID: 904408997}
   - {fileID: 1043339882}
   - {fileID: 199996320}
+  - {fileID: 1969614456008560809}
