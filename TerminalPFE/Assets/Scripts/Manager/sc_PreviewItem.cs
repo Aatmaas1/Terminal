@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class sc_PreviewItem : MonoBehaviour, IDataManager
 {
@@ -8,6 +9,7 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
     public GameObject[] Cadres;
     public GameObject[] Models;
     public GameObject[] ImageItem;
+    public TMP_Text Titre;
 
     public GameObject SelectedSlot, menuSelection;
     GameObject shownItem = null;
@@ -93,7 +95,8 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
                 menuSelection.SetActive(false);
                 shownItem = Models[hauteur * 4 + largeur];
                 shownItem.transform.position += Vector3.up * 20f;
-                //Cursor.lockState = CursorLockMode.Locked;
+                Titre.text = shownItem.name;
+                Cursor.lockState = CursorLockMode.Locked;
             }
         }
     }
@@ -106,6 +109,7 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
             shownItem = null;
             menuSelection.SetActive(true);
             isShowing = false;
+            Titre.text = "Inventaire";
             Cursor.lockState = CursorLockMode.None;
         }
         else
@@ -118,18 +122,7 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
     {
         if (isShowing)
         {
-            if(GetComponent<PlayerInput>().currentControlScheme == "KeyboardMouse")
-            {
-                if (Input.GetKey(0))
-                {
-                    Debug.Log("aa");
-                    shownItem.transform.Rotate(value.Get<Vector2>() * rotateSpeed);
-                }
-            }
-            else
-            {
-                shownItem.transform.Rotate(value.Get<Vector2>() * rotateSpeed);
-            }
+            shownItem.transform.Rotate(value.Get<Vector2>() * rotateSpeed);
         }
     }
 
