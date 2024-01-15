@@ -93,7 +93,7 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
                 menuSelection.SetActive(false);
                 shownItem = Models[hauteur * 4 + largeur];
                 shownItem.transform.position += Vector3.up * 20f;
-                Cursor.lockState = CursorLockMode.Locked;
+                //Cursor.lockState = CursorLockMode.Locked;
             }
         }
     }
@@ -118,7 +118,18 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
     {
         if (isShowing)
         {
-            shownItem.transform.Rotate(value.Get<Vector2>() * rotateSpeed);
+            if(GetComponent<PlayerInput>().currentControlScheme == "KeyboardMouse")
+            {
+                if (Input.GetKey(0))
+                {
+                    Debug.Log("aa");
+                    shownItem.transform.Rotate(value.Get<Vector2>() * rotateSpeed);
+                }
+            }
+            else
+            {
+                shownItem.transform.Rotate(value.Get<Vector2>() * rotateSpeed);
+            }
         }
     }
 
