@@ -15,7 +15,10 @@ public class AK_OTE_AM : AkTriggerCollisionEnter
 
     private void OnTriggerEnter(UnityEngine.Collider in_other)
     {
-        if (triggerDelegate != null && (triggerObject == null || triggerObject == in_other.gameObject))
-            triggerDelegate(in_other.gameObject);
+        if (in_other != null && in_other.CompareTag("Walkable"))
+        {
+            if (triggerDelegate != null && (triggerObject == null || triggerObject == in_other.gameObject))
+                triggerDelegate(in_other.gameObject);
+        }
     }
 }
