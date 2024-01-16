@@ -3,9 +3,14 @@
 	<AudioObjects>
 		<WorkUnit Name="Pas" ID="{0574FF77-4242-4605-998D-91A725DFF951}" OwnerID="{5477266C-D991-4580-A687-CA6FC8AF0645}" PersistMode="Nested">
 			<ChildrenList>
-				<RandomSequenceContainer Name="RandomContainerTest" ID="{B00E3A8C-9E71-412A-A5ED-DD67E8ACA790}" ShortID="499822055">
+				<RandomSequenceContainer Name="RANDOMISEUR_PAS" ID="{B00E3A8C-9E71-412A-A5ED-DD67E8ACA790}" ShortID="499822055">
 					<PropertyList>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -16,7 +21,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Housse1" ID="{9B99A1BE-0CC9-472A-AD8C-DCAC74BE73F6}" ShortID="541470358">
+						<Sound Name="SFX_PAS_ANDROÏDE_1" ID="{458B515B-D502-4B67-8424-48A3E4BEE79E}" ShortID="1056717966">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
@@ -26,19 +31,19 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Housse1" ID="{740A6FDD-D46A-47F2-8B09-8F1291BD78CF}">
+								<AudioFileSource Name="SFX_PAS_ANDROÏDE_1" ID="{9B45F0B3-2399-48DD-9EE4-FAF0597E966F}">
 									<Language>SFX</Language>
-									<AudioFile>RandomContainerTest\Housse1.wav</AudioFile>
+									<AudioFile>SFX_PAS_ANDROÏDE_1.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="336847074"/>
+										<MediaID ID="520465305"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Housse1" ID="{740A6FDD-D46A-47F2-8B09-8F1291BD78CF}" Platform="Linked"/>
+								<ActiveSource Name="SFX_PAS_ANDROÏDE_1" ID="{9B45F0B3-2399-48DD-9EE4-FAF0597E966F}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Housse2" ID="{EA97A108-77B4-46A0-AE22-2D08DA1FFE4C}" ShortID="561662988">
+						<Sound Name="SFX_PAS_ANDROÏDE_2" ID="{4273AC82-FA80-45BB-83EA-60C4CCE0DBC8}" ShortID="107242936">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
@@ -48,19 +53,19 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Housse2" ID="{8D276470-CEE2-45FD-9622-519CBD1FD5C4}">
+								<AudioFileSource Name="SFX_PAS_ANDROÏDE_2" ID="{7D187356-E31B-493B-A5A9-103FDCE5002B}">
 									<Language>SFX</Language>
-									<AudioFile>RandomContainerTest\Housse2.wav</AudioFile>
+									<AudioFile>SFX_PAS_ANDROÏDE_2.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="850912280"/>
+										<MediaID ID="13083898"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Housse2" ID="{8D276470-CEE2-45FD-9622-519CBD1FD5C4}" Platform="Linked"/>
+								<ActiveSource Name="SFX_PAS_ANDROÏDE_2" ID="{7D187356-E31B-493B-A5A9-103FDCE5002B}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Housse3" ID="{CB8A9A74-D440-4E01-BD92-2C98C0AC2404}" ShortID="685633210">
+						<Sound Name="SFX_PAS_ANDROÏDE_3" ID="{872E1115-3F9B-4B37-A851-A24DEB337D8A}" ShortID="255628293">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
@@ -70,16 +75,82 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Housse3" ID="{8BD2BF31-DE4C-4424-B2F7-76F579D97178}">
+								<AudioFileSource Name="SFX_PAS_ANDROÏDE_3" ID="{8BECAD07-F291-464B-BCA0-7B463DB7B593}">
 									<Language>SFX</Language>
-									<AudioFile>RandomContainerTest\Housse3.wav</AudioFile>
+									<AudioFile>SFX_PAS_ANDROÏDE_3.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="25478728"/>
+										<MediaID ID="539106288"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Housse3" ID="{8BD2BF31-DE4C-4424-B2F7-76F579D97178}" Platform="Linked"/>
+								<ActiveSource Name="SFX_PAS_ANDROÏDE_3" ID="{8BECAD07-F291-464B-BCA0-7B463DB7B593}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_PAS_ANDROÏDE_4" ID="{6C4EDE0E-66EE-4D3C-AD3C-F29663FDBD47}" ShortID="512442166">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_PAS_ANDROÏDE_4" ID="{74DB016F-8614-4D26-951E-8D7DF6D53F5A}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_PAS_ANDROÏDE_4.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="881874796"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_PAS_ANDROÏDE_4" ID="{74DB016F-8614-4D26-951E-8D7DF6D53F5A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_PAS_ANDROÏDE_5" ID="{7812AA3C-9F7F-4FFD-821E-057D357C0F99}" ShortID="566608706">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_PAS_ANDROÏDE_5" ID="{20190329-1865-476B-9057-6329579767A6}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_PAS_ANDROÏDE_5.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="670562076"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_PAS_ANDROÏDE_5" ID="{20190329-1865-476B-9057-6329579767A6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_PAS_ANDROÏDE_6" ID="{79138771-E9C5-4A5C-B92A-153867FDE023}" ShortID="999740141">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_PAS_ANDROÏDE_6" ID="{ED5BCC93-84D3-48FB-83B0-59F014CAD7C2}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_PAS_ANDROÏDE_6.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="676488202"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_PAS_ANDROÏDE_6" ID="{ED5BCC93-84D3-48FB-83B0-59F014CAD7C2}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
