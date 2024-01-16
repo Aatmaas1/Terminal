@@ -1,6 +1,6 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using TMPro;
 
 public class sc_PreviewItem : MonoBehaviour, IDataManager
 {
@@ -13,11 +13,9 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
 
     public GameObject SelectedSlot, menuSelection;
     GameObject shownItem = null;
-    bool isShowing = false;
     public float rotateSpeed;
 
-    int hauteur = 0;
-    int largeur = 0;
+    int selected = 0;
 
 
 
@@ -41,7 +39,7 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
     // Update is called once per frame
     void Update()
     {
-        SelectedSlot.transform.position = Cadres[hauteur * 4 + largeur].transform.position;
+        SelectedSlot.transform.position = Cadres[selected].transform.position;
     }
 
 
@@ -64,40 +62,36 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
 
     public void OnUp()
     {
-        hauteur -= 1;
-        if (hauteur < 0) { hauteur = 2; }
+        selected -= 1;
+        if (selected < 0) { selected = 11; }
     }
     public void OnDown()
     {
-        hauteur += 1;
-        if (hauteur > 2) { hauteur = 0; }
+        selected += 1;
+        if (selected > 11) { selected = 0; }
     }
 
     public void OnLeft()
     {
-        largeur -= 1;
-        if (largeur < 0) { largeur = 3; }
+        OnBack();
     }
 
     public void OnRight()
     {
-        largeur += 1;
-        if (largeur > 3) { largeur = 0; }
+        OnInterract();
     }
 
     public void OnInterract()
     {
-        if (!isShowing)
+        if (ImageItem[selected].activeInHierarchy)
         {
-            if(ImageItem[hauteur * 4 + largeur].activeInHierarchy)
+            if (shownItem != null)
             {
-                isShowing = true; ;
-                menuSelection.SetActive(false);
-                shownItem = Models[hauteur * 4 + largeur];
-                shownItem.transform.position += Vector3.up * 20f;
-                Titre.text = shownItem.name;
-                Cursor.lockState = CursorLockMode.Locked;
+                shownItem.transform.position -= Vector3.up * 20f;
             }
+            shownItem = Models[selected];
+            shownItem.transform.position += Vector3.up * 20f;
+            Titre.text = shownItem.name;
         }
     }
 
@@ -105,33 +99,34 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
     {
         if (sc_UIPauseManager.Instance.inventaire.activeInHierarchy)
         {
-            if (isShowing)
+            if(shownItem != null)
             {
                 shownItem.transform.position -= Vector3.up * 20f;
                 shownItem = null;
-                menuSelection.SetActive(true);
-                isShowing = false;
-                Titre.text = "Inventaire";
-                Cursor.lockState = CursorLockMode.None;
             }
-            else
-            {
-                sc_UIPauseManager.Instance.CloseInventory();
-            }
+            Cursor.lockState = CursorLockMode.None;
+            sc_UIPauseManager.Instance.CloseInventory();
         }
+    }
+
+    public void OnPause()
+    {
+        OnBack();
     }
 
     public void OnMoveObject(InputValue value)
     {
-        if (isShowing)
+        if (shownItem != null)
         {
-            shownItem.transform.Rotate(value.Get<Vector2>() * rotateSpeed);
+            if (Input.GetMouseButton(0))
+            {
+                shownItem.transform.Rotate(value.Get<Vector2>() * rotateSpeed);
+            }
         }
     }
 
     public void Highlight(int nb)
     {
-        hauteur = Mathf.FloorToInt(nb / 4f);
-        largeur = nb % 4;
+        selected = nb;
     }
 }

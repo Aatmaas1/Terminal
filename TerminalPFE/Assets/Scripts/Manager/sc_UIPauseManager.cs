@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using Cinemachine;
 
 public class sc_UIPauseManager : MonoBehaviour
 {
@@ -26,7 +27,7 @@ public class sc_UIPauseManager : MonoBehaviour
 
     private void Start()
     {
-        player = menuPause.transform.parent;
+        player = menuPause.transform.parent.parent;
         StartCoroutine(TestPauseAtStrat());
     }
 
@@ -64,6 +65,7 @@ public class sc_UIPauseManager : MonoBehaviour
 
     void EndPause()
     {
+        Camera.main.gameObject.GetComponent<CinemachineBrain>().m_DefaultBlend.m_Time = 0.6f;
         pInput.SwitchCurrentActionMap("Player");
         sc_SceneManager_HC.Instance.Reprendre();
         menuPause.SetActive(false);
@@ -81,6 +83,7 @@ public class sc_UIPauseManager : MonoBehaviour
 
     public void LoadInventory()
     {
+        Camera.main.gameObject.GetComponent<CinemachineBrain>().m_DefaultBlend.m_Time = 0.15f;
         inventaire.SetActive(true);
         cameraInventaire.SetActive(true);
         menuPause.SetActive(false);
