@@ -13,9 +13,15 @@ public class sc_Test : MonoBehaviour
             Destroy(this);
     }
 
-    public Action OnTamer;
+    private void Start()
+    {
+        Tamer();
+    }
+
+
+    public System.Action OnTamer;
     public void Tamer()
     {
-
+        print("Tamer");
     }
 }

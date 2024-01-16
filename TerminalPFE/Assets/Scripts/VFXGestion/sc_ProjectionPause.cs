@@ -12,7 +12,11 @@ public class sc_ProjectionPause : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        pm.OnPause += PauseProjo;
+        projectionFX.enabled = false;
+
+        if(pm != null)
+            pm.OnPause += PauseProjo;
+
     }
 
     // Update is called once per frame
@@ -23,7 +27,6 @@ public class sc_ProjectionPause : MonoBehaviour
 
     public void PauseProjo()
     {
-        print("yo");
         if(isPause)
         {
             isPause = false;
