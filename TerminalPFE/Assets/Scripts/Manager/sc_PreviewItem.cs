@@ -103,18 +103,21 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
 
     public void OnBack()
     {
-        if(isShowing)
+        if (sc_UIPauseManager.Instance.inventaire.activeInHierarchy)
         {
-            shownItem.transform.position -= Vector3.up * 20f;
-            shownItem = null;
-            menuSelection.SetActive(true);
-            isShowing = false;
-            Titre.text = "Inventaire";
-            Cursor.lockState = CursorLockMode.None;
-        }
-        else
-        {
-            Retour();
+            if (isShowing)
+            {
+                shownItem.transform.position -= Vector3.up * 20f;
+                shownItem = null;
+                menuSelection.SetActive(true);
+                isShowing = false;
+                Titre.text = "Inventaire";
+                Cursor.lockState = CursorLockMode.None;
+            }
+            else
+            {
+                sc_UIPauseManager.Instance.CloseInventory();
+            }
         }
     }
 
@@ -123,23 +126,6 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
         if (isShowing)
         {
             shownItem.transform.Rotate(value.Get<Vector2>() * rotateSpeed);
-        }
-    }
-
-
-    public void Retour()
-    {
-        if (sc_DataManager.instance.WhatIsLastScene() == 1)
-        {
-            sc_DataManager.instance.ForceSaveLastScene(3);
-            sc_SceneManager_HC.Instance.ChargeScene("LevelDesignReel");
-            Cursor.lockState = CursorLockMode.Locked;
-        }
-        else
-        {
-            sc_DataManager.instance.ForceSaveLastScene(3);
-            sc_SceneManager_HC.Instance.ChargeScene("LevelDesignSimu");
-            Cursor.lockState = CursorLockMode.Locked;
         }
     }
 
