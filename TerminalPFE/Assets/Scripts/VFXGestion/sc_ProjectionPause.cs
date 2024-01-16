@@ -1,15 +1,18 @@
 using UnityEngine;
 using UnityEngine.VFX;
 
+
 public class sc_ProjectionPause : MonoBehaviour
 {
+    public sc_UIPauseManager pm;
+
     public VisualEffect projectionFX;
 
     private bool isPause;
     // Start is called before the first frame update
     void Start()
     {
-        sc_Test.instance.OnTamer += PauseProjo;
+        pm.OnPause += PauseProjo;
     }
 
     // Update is called once per frame
@@ -20,6 +23,7 @@ public class sc_ProjectionPause : MonoBehaviour
 
     public void PauseProjo()
     {
+        print("yo");
         if(isPause)
         {
             isPause = false;

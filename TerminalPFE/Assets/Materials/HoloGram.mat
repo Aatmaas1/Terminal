@@ -53,10 +53,11 @@ Material:
     - _TimeSpeed: 1
     m_Colors:
     - _Color: {r: 8, g: 0, b: 0, a: 0}
-    - _HoloSpeed: {r: 0, g: 0, b: 0, a: 0}
-    - _LogoTiling: {r: 1.5, g: 1, b: 0, a: 0}
+    - _HoloSpeed: {r: 0.2, g: 0, b: 0, a: 0}
+    - _LogoOffset: {r: 0, g: 0.25, b: 0, a: 0}
+    - _LogoTiling: {r: 1.5, g: 0.5, b: 0, a: 0}
     - _LogoTimeSpeed: {r: 0.5, g: 0, b: 0, a: 0}
-    - _Tiling: {r: 25, g: 0, b: 0, a: 0}
+    - _Tiling: {r: 5, g: 0, b: 0, a: 0}
     - _TimeSpeed: {r: 5, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &2658126503237180942

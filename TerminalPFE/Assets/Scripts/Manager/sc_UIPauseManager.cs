@@ -43,11 +43,13 @@ public class sc_UIPauseManager : MonoBehaviour
         }
     }
 
+    public System.Action OnPause;
     public void TestPause()
     {
         if (menuPause.activeInHierarchy) { EndPause(); }
         else { StartPause();}
     }
+
 
     void StartPause()
     {
@@ -59,6 +61,7 @@ public class sc_UIPauseManager : MonoBehaviour
         cameraPause.SetActive(true);
     }
 
+    
     void EndPause()
     {
         pInput.SwitchCurrentActionMap("Player");
