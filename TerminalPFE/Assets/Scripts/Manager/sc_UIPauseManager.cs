@@ -46,6 +46,8 @@ public class sc_UIPauseManager : MonoBehaviour
     public System.Action OnPause;
     public void TestPause()
     {
+        if (OnPause != null)
+            OnPause();
         if (menuPause.activeInHierarchy) { EndPause(); }
         else { StartPause();}
     }
