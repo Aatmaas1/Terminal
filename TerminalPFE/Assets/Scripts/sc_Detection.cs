@@ -53,4 +53,22 @@ public class sc_Detection : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.CompareTag("Player"))
+        {
+
+            player = null;
+
+            onDetection = false;
+
+            foreach (VisualEffect fx in interractableList)
+            {
+                fx.enabled = false;
+
+            }
+
+        }
+    }
+
 }
