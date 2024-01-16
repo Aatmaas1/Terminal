@@ -5,12 +5,15 @@ using UnityEngine;
 public class FloorDestroyed : MonoBehaviour, IDataManager
 {
     bool isBroken = false;
+
+    public Animator animator;
     public  void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             isBroken = true;
-            transform.parent.gameObject.SetActive(false);
+            // transform.parent.gameObject.SetActive(false);
+            animator.GetComponent<Animator>().SetTrigger("Destroy");
         }
     }
 
