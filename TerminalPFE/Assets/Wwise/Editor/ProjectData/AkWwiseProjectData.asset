@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 1cf59fa78aed4b48900c0883722c8eb0
     GuidInternal: 
-    m_lastTime: -8584961591969325424
+    m_lastTime: -8584961376108387220
     List:
     - name: BETON
       guid: 4c9ae77e8847c643b2c6e42551e1bd87
@@ -51,7 +51,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Factory Acoustic Textures
     guid: 6b663d46a83ca54f8b4a5fef12b883f6
     GuidInternal: 
-    m_lastTime: -8585010150521125288
+    m_lastTime: -8584961376108367210
     List:
     - name: Acoustic_Banner
       guid: f2532d2fccda8e408b8898b1b52a26d6
@@ -317,7 +317,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: a496d604dfb54f43bca9994076f26b0d
     GuidInternal: 
-    m_lastTime: -8584961386555844818
+    m_lastTime: -8584960882268622293
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -410,6 +410,46 @@ MonoBehaviour:
         ObjectType: 1
         guid: 32905c8804ebb44ebbb7de3043b128d3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbMaster\RoomMedium
+    - name: RoomRefectoire
+      guid: 2173be36c1600044949ac133dd1d3d20
+      id: 3501257686
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a496d604dfb54f43bca9994076f26b0d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: ReverbMaster
+        ObjectType: 1
+        guid: 42842fd81596364b96a11bfd164ea25a
+      - ElementName: RoomRefectoire
+        ObjectType: 1
+        guid: 2173be36c1600044949ac133dd1d3d20
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbMaster\RoomRefectoire
+    - name: RoomRefectoire2
+      guid: 4345347243c3424dafd03e96b5430044
+      id: 1552931280
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a496d604dfb54f43bca9994076f26b0d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: ReverbMaster
+        ObjectType: 1
+        guid: 42842fd81596364b96a11bfd164ea25a
+      - ElementName: RoomRefectoire2
+        ObjectType: 1
+        guid: 4345347243c3424dafd03e96b5430044
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbMaster\RoomRefectoire2
     - name: RoomSmall
       guid: 7569fd984a4291458ccb5a59c3ef30ef
       id: 3205342581
@@ -430,6 +470,26 @@ MonoBehaviour:
         ObjectType: 1
         guid: 7569fd984a4291458ccb5a59c3ef30ef
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbMaster\RoomSmall
+    - name: RoomStairs
+      guid: 68fe7de147d8ad418b2c85e15ce45f27
+      id: 654671026
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a496d604dfb54f43bca9994076f26b0d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: ReverbMaster
+        ObjectType: 1
+        guid: 42842fd81596364b96a11bfd164ea25a
+      - ElementName: RoomStairs
+        ObjectType: 1
+        guid: 68fe7de147d8ad418b2c85e15ce45f27
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbMaster\RoomStairs
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -634,7 +694,7 @@ MonoBehaviour:
     m_lastTime: -8584991312705959035
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0200000003000000040000000500000008000000090000000a0000001400000018000000190000001a0000001b0000001c0000001e0000001f00000021000000220000002f0000003000000031000000340000004300000044000000450000000f0100002e010000f2010000210200005903000075b20800
+  ExpandedWaapiItemIds: 01000000020000000300000004000000060000000700000008000000090000001f0000002d00000097000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
