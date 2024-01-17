@@ -17,8 +17,10 @@ public class ActionPorteTuto : MonoBehaviour
             //print("Je suis rentré dans le Unity Event et je me ferme");
 
             PorteTutoAnimator.SetBool("IsOpening", false);
-           
+            
             isOpening = false;
+
+            
         }
         
         else

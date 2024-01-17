@@ -44,6 +44,7 @@ namespace StarterAssets
 			SprintInput(value.isPressed);
 		}
 
+
         public void OnPause()
         {
 			SetPause();

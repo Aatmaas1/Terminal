@@ -29,14 +29,15 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
-        static const AkUniqueID REVERBBUS = 3744218805U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES
     {
-        static const AkUniqueID REVERBPORTALPORTES = 3284971226U;
-        static const AkUniqueID REVERBZONETUTO = 1834452165U;
-        static const AkUniqueID REVERBZONETUTO2 = 3854959149U;
+        static const AkUniqueID REVERBMASTER = 1686871543U;
+        static const AkUniqueID ROOMHALL = 484847633U;
+        static const AkUniqueID ROOMLARGE = 3553615197U;
+        static const AkUniqueID ROOMMEDIUM = 4002769053U;
+        static const AkUniqueID ROOMSMALL = 3205342581U;
     } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES

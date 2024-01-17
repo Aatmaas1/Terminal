@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
-using Cinemachine;
 
 public class sc_UIPauseManager : MonoBehaviour
 {
     public static sc_UIPauseManager Instance;
 
-    public GameObject menuPause, inventaire, cameraGame, cameraPause, cameraInventaire;
+    public GameObject menuPause, cameraGame, cameraPause;
     public PlayerInput pInput;
 
     Transform player;
@@ -27,7 +26,7 @@ public class sc_UIPauseManager : MonoBehaviour
 
     private void Start()
     {
-        player = menuPause.transform.parent.parent;
+        player = menuPause.transform.parent;
         StartCoroutine(TestPauseAtStrat());
     }
 
@@ -44,14 +43,15 @@ public class sc_UIPauseManager : MonoBehaviour
         }
     }
 
+    public System.Action OnPause;
     public void TestPause()
     {
-        if (!inventaire.activeInHierarchy)
-        {
-            if (menuPause.activeInHierarchy) { EndPause(); }
-            else { StartPause(); }
-        }
+        if (OnPause != null)
+            OnPause();
+        if (menuPause.activeInHierarchy) { EndPause(); }
+        else { StartPause();}
     }
+
 
     void StartPause()
     {
@@ -63,9 +63,9 @@ public class sc_UIPauseManager : MonoBehaviour
         cameraPause.SetActive(true);
     }
 
+    
     void EndPause()
     {
-        Camera.main.gameObject.GetComponent<CinemachineBrain>().m_DefaultBlend.m_Time = 0.6f;
         pInput.SwitchCurrentActionMap("Player");
         sc_SceneManager_HC.Instance.Reprendre();
         menuPause.SetActive(false);
@@ -83,18 +83,9 @@ public class sc_UIPauseManager : MonoBehaviour
 
     public void LoadInventory()
     {
-        Camera.main.gameObject.GetComponent<CinemachineBrain>().m_DefaultBlend.m_Time = 0.15f;
-        inventaire.SetActive(true);
-        cameraInventaire.SetActive(true);
-        menuPause.SetActive(false);
-        cameraPause.SetActive(false);
-    }
-    public void CloseInventory()
-    {
-        inventaire.SetActive(false);
-        cameraInventaire.SetActive(false);
-        menuPause.SetActive(true);
-        cameraPause.SetActive(true);
+        sc_DataManager.instance.ForceSaveIndex(-1);
+        sc_DataManager.instance.ForceSaveLastScene(SceneManager.GetActiveScene().buildIndex);
+        sc_SceneManager_HC.Instance.ChargeScene("Inventaire");
     }
 
     IEnumerator TestPauseAtStrat()
