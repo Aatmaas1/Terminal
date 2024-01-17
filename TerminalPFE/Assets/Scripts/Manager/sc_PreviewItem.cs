@@ -99,7 +99,7 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
     {
         if (sc_UIPauseManager.Instance.inventaire.activeInHierarchy)
         {
-            if(shownItem != null)
+            if (shownItem != null)
             {
                 shownItem.transform.position -= Vector3.up * 20f;
                 shownItem = null;
