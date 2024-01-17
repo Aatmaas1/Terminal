@@ -49,8 +49,8 @@ public class sc_UIPauseManager : MonoBehaviour
     {
         if (OnPause != null)
             OnPause();
-        if (menuPause.activeInHierarchy) { EndPause(); }
-        else { StartPause(); }
+        //if (menuPause.activeInHierarchy) { EndPause(); }
+        //else { StartPause(); }
         if (!inventaire.activeInHierarchy)
         {
             if (menuPause.activeInHierarchy) { EndPause(); }
