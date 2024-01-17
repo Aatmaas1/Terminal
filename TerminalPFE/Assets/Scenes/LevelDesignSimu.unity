@@ -45600,6 +45600,18 @@ MonoBehaviour:
   - {fileID: 1554928186}
   - {fileID: 1345566469}
   - {fileID: 43159059}
+  IsObjects:
+  - {fileID: 11400000, guid: df805e52d35493345bf2e15643e6fe11, type: 2}
+  - {fileID: 11400000, guid: 4bbaf2027bf4c76468a91cf527e545a3, type: 2}
+  - {fileID: 11400000, guid: df805e52d35493345bf2e15643e6fe11, type: 2}
+  - {fileID: 11400000, guid: 4bbaf2027bf4c76468a91cf527e545a3, type: 2}
+  - {fileID: 11400000, guid: df805e52d35493345bf2e15643e6fe11, type: 2}
+  - {fileID: 11400000, guid: 4bbaf2027bf4c76468a91cf527e545a3, type: 2}
+  - {fileID: 11400000, guid: df805e52d35493345bf2e15643e6fe11, type: 2}
+  - {fileID: 11400000, guid: 4bbaf2027bf4c76468a91cf527e545a3, type: 2}
+  - {fileID: 11400000, guid: df805e52d35493345bf2e15643e6fe11, type: 2}
+  - {fileID: 11400000, guid: 4bbaf2027bf4c76468a91cf527e545a3, type: 2}
+  - {fileID: 11400000, guid: df805e52d35493345bf2e15643e6fe11, type: 2}
   ImageItem:
   - {fileID: 253314754}
   - {fileID: 253314752}
@@ -45614,6 +45626,7 @@ MonoBehaviour:
   - {fileID: 253314734}
   - {fileID: 253314732}
   Titre: {fileID: 253314730}
+  description: {fileID: 1914795324}
   SelectedSlot: {fileID: 253314731}
   menuSelection: {fileID: 253314756}
   rotateSpeed: 10
@@ -52459,6 +52472,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911265030}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1914795324 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5178896747958484418, guid: 34c1a59c530a3e8479a4dcad1ce09496,
+    type: 3}
+  m_PrefabInstance: {fileID: 253314728}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1914873921
 GameObject:
   m_ObjectHideFlags: 0

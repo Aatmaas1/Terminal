@@ -8,8 +8,9 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
 
     public GameObject[] Cadres;
     public GameObject[] Models;
+    public sc_SO_Memoire_HC[] IsObjects;
     public GameObject[] ImageItem;
-    public TMP_Text Titre;
+    public TMP_Text Titre, description;
 
     public GameObject SelectedSlot, menuSelection;
     GameObject shownItem = null;
@@ -33,7 +34,10 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
 
     void Start()
     {
-
+        for(int i = 0; i<12; i++)
+        {
+            ImageItem[i].GetComponent<TMP_Text>().text = IsObjects[i].nom;
+        }
     }
 
     // Update is called once per frame
@@ -91,7 +95,8 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
             }
             shownItem = Models[selected];
             shownItem.transform.position += Vector3.up * 20f;
-            Titre.text = shownItem.name;
+            Titre.text = IsObjects[selected].nom;
+            description.text = IsObjects[selected].description;
         }
     }
 
