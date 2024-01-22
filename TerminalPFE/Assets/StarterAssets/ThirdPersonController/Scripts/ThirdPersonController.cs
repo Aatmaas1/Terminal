@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 using Cinemachine;
 #if ENABLE_INPUT_SYSTEM 
 using UnityEngine.InputSystem;
@@ -108,6 +109,9 @@ namespace StarterAssets
         private float _verticalVelocity;
         private float _terminalVelocity = 53.0f;
 
+        private Vector3 _externalInput;
+        private bool _delayBumper = false;
+
         // timeout deltatime
         private float _jumpTimeoutDelta;
         private float _fallTimeoutDelta;
@@ -216,6 +220,11 @@ namespace StarterAssets
             if (Grounded)
             {
                 _coyoteTime = MaxCoyoteTime;
+
+                if (!_delayBumper)
+                {
+                    _externalInput = Vector3.zero;
+                }
             }
 
             // update animator if using character
@@ -310,8 +319,16 @@ namespace StarterAssets
             Vector3 targetDirection = Quaternion.Euler(0.0f, _targetRotation, 0.0f) * Vector3.forward;
 
             // move the player
-            _controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) +
-                             new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+            if (_externalInput != Vector3.zero)
+            {
+                _controller.Move(_externalInput * Time.deltaTime +
+                                 new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+            }
+            else
+            {
+                _controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) +
+                                 new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+            }
 
             // update animator if using character
             if (_hasAnimator)
@@ -431,6 +448,27 @@ namespace StarterAssets
             {
                 AudioSource.PlayClipAtPoint(LandingAudioClip, transform.TransformPoint(_controller.center), FootstepAudioVolume);
             }
+        }
+
+
+        public void GetBumped(Vector3 direction)
+        {
+            _verticalVelocity = Mathf.Sqrt(direction.y * -1.9f * Gravity);
+            _coyoteTime = 0;
+            _externalInput = new Vector3(direction.x * 1.9f, 0, direction.z * 1.9f);
+            _delayBumper = true;
+            StartCoroutine(DelayImpulse());
+        }
+
+        IEnumerator DelayImpulse()
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                yield return new WaitForSeconds(0.2f);
+                _delayBumper = false;
+                _externalInput *= 0.8f;
+            }
+            _externalInput = Vector3.zero;
         }
     }
 }

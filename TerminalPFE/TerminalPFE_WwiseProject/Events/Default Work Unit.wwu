@@ -1,6 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{82BEFC32-1D9E-48B6-82C8-FD8A959356A5}" SchemaVersion="119">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{82BEFC32-1D9E-48B6-82C8-FD8A959356A5}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{82BEFC32-1D9E-48B6-82C8-FD8A959356A5}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_4NN4_MASTERING2" ID="{7A954C22-1A37-4A05-AA4A-2F72BDFE301E}">
+					<ChildrenList>
+						<Action Name="" ID="{F8E40400-BDB9-45A0-8F14-E0DCB5B48B16}" ShortID="478758892">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="4NN4_MASTERING2" ID="{1368F824-5DE1-485B-9779-1915D015E25B}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="PasEvent" ID="{28C60C9B-8036-447C-AC66-D85D71DDFE5C}" ShortID="941182768">
+					<ChildrenList>
+						<Event Name="Play_RandomContainerTest" ID="{1FCA9C28-3655-4D15-9BBF-E62F7F50F220}">
+							<ChildrenList>
+								<Action Name="" ID="{FAC90B89-E36D-4677-8C49-0605A2022A65}" ShortID="841324573">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RANDOMISEUR_PAS" ID="{B00E3A8C-9E71-412A-A5ED-DD67E8ACA790}" WorkUnitID="{0574FF77-4242-4605-998D-91A725DFF951}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Play_PropositionSimulation" ID="{8D1BAB1B-E67C-4FCC-AA3A-1FAF7BC997EB}">
+					<ChildrenList>
+						<Action Name="" ID="{AFC42DD7-E0BB-42E5-8403-F1BBCF861F05}" ShortID="588934266">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PropositionSimulation" ID="{4E2D0F9B-3665-4992-8FFD-CD80A53FF955}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_PropositionSimulation" ID="{CC7A034A-1580-4897-89C3-E619F21B1435}">
+					<ChildrenList>
+						<Action Name="" ID="{6B824865-C94C-464D-AECB-1241B2206E5A}" ShortID="300844101">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PropositionSimulation" ID="{4E2D0F9B-3665-4992-8FFD-CD80A53FF955}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_4NN4_MASTERING2" ID="{CB8118CB-D54B-4AFA-BACA-05842173B307}">
+					<ChildrenList>
+						<Action Name="" ID="{C0E741B6-9B19-4B83-B9DE-555ABEC0EA5D}" ShortID="1052537544">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="4NN4_MASTERING2" ID="{1368F824-5DE1-485B-9779-1915D015E25B}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

@@ -43,10 +43,16 @@ namespace StarterAssets
 		{
 			SprintInput(value.isPressed);
 		}
+
+
+        public void OnPause()
+        {
+			SetPause();
+        }
 #endif
 
 
-		public void MoveInput(Vector2 newMoveDirection)
+        public void MoveInput(Vector2 newMoveDirection)
 		{
 			move = newMoveDirection;
 		} 
@@ -73,8 +79,20 @@ namespace StarterAssets
 
 		private void SetCursorState(bool newState)
 		{
-			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
+			if (GetComponent<PlayerInput>().currentActionMap.name == "Player")
+			{
+				Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
+			}
 		}
+
+		private void SetPause()
+        {
+			if(sc_UIPauseManager.Instance != null)
+            {
+				sc_UIPauseManager.Instance.TestPause();
+
+			}
+        }
 	}
 	
 }

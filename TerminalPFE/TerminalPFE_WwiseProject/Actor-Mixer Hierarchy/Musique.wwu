@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}" SchemaVersion="119" RootDocumentID="{AB2030D7-FEB3-4931-8F66-2372D24A8919}" ParentDocumentID="{AB2030D7-FEB3-4931-8F66-2372D24A8919}">
+	<AudioObjects>
+		<WorkUnit Name="Musique" ID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}" OwnerID="{AB2030D7-FEB3-4931-8F66-2372D24A8919}" PersistMode="Nested">
+			<ChildrenList>
+				<Sound Name="4NN4_MASTERING2" ID="{1368F824-5DE1-485B-9779-1915D015E25B}" ShortID="109313220">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="4NN4_MASTERING2" ID="{D2FE2C47-3683-4EE4-8662-AEAB53AA1706}">
+							<Language>SFX</Language>
+							<AudioFile>4NN4_MASTERING2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="352465723"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="4NN4_MASTERING2" ID="{D2FE2C47-3683-4EE4-8662-AEAB53AA1706}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="PropositionSimulation" ID="{4E2D0F9B-3665-4992-8FFD-CD80A53FF955}" ShortID="266907452">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="PropositionSimulation" ID="{1FC06EA9-0DBC-4B4E-8445-814EE0DF7E56}">
+							<Language>SFX</Language>
+							<AudioFile>PropositionSimulation.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="31641563"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="PropositionSimulation" ID="{1FC06EA9-0DBC-4B4E-8445-814EE0DF7E56}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
