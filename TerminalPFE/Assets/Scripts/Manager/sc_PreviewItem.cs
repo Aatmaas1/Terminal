@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,15 +8,15 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
 
     public GameObject[] Cadres;
     public GameObject[] Models;
+    public sc_SO_Memoire_HC[] IsObjects;
     public GameObject[] ImageItem;
+    public TMP_Text Titre, description;
 
     public GameObject SelectedSlot, menuSelection;
     GameObject shownItem = null;
-    bool isShowing = false;
     public float rotateSpeed;
 
-    int hauteur = 0;
-    int largeur = 0;
+    int selected = 0;
 
 
 
@@ -33,13 +34,16 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
 
     void Start()
     {
-
+        for(int i = 0; i<12; i++)
+        {
+            ImageItem[i].GetComponent<TMP_Text>().text = IsObjects[i].nom;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        SelectedSlot.transform.position = Cadres[hauteur * 4 + largeur].transform.position;
+        SelectedSlot.transform.position = Cadres[selected].transform.position;
     }
 
 
@@ -62,97 +66,114 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
 
     public void OnUp()
     {
-        hauteur -= 1;
-        if (hauteur < 0) { hauteur = 2; }
+        if (ImageItem[selected].activeInHierarchy)
+        {
+            Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", false);
+        }
+        selected -= 1;
+        if (selected < 0) { selected = 11; }
+        if (ImageItem[selected].activeInHierarchy)
+        {
+            Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", true);
+        }
     }
     public void OnDown()
     {
-        hauteur += 1;
-        if (hauteur > 2) { hauteur = 0; }
+        if (ImageItem[selected].activeInHierarchy)
+        {
+            Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", false);
+        }
+        selected += 1;
+        if (selected > 11) { selected = 0; }
+        if (ImageItem[selected].activeInHierarchy)
+        {
+            Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", true);
+        }
     }
 
     public void OnLeft()
     {
-        largeur -= 1;
-        if (largeur < 0) { largeur = 3; }
+        if (ImageItem[selected].activeInHierarchy)
+        {
+            Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", false);
+        }
+        OnBack();
+        if (ImageItem[selected].activeInHierarchy)
+        {
+            Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", true);
+        }
     }
 
     public void OnRight()
     {
-        largeur += 1;
-        if (largeur > 3) { largeur = 0; }
+        if (ImageItem[selected].activeInHierarchy)
+        {
+            Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", false);
+        }
+        OnInterract();
+        if (ImageItem[selected].activeInHierarchy)
+        {
+            Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", true);
+        }
     }
 
     public void OnInterract()
     {
-        if (!isShowing)
+        if (ImageItem[selected].activeInHierarchy)
         {
-            if(ImageItem[hauteur * 4 + largeur].activeInHierarchy)
+            if (shownItem != null)
             {
-                isShowing = true; ;
-                menuSelection.SetActive(false);
-                shownItem = Models[hauteur * 4 + largeur];
-                shownItem.transform.position += Vector3.up * 20f;
-                //Cursor.lockState = CursorLockMode.Locked;
+                shownItem.transform.position -= Vector3.up * 20f;
             }
+            description.gameObject.SetActive(true);
+            shownItem = Models[selected];
+            shownItem.transform.position += Vector3.up * 20f;
+            Titre.text = IsObjects[selected].nom;
+            description.text = IsObjects[selected].description;
         }
     }
 
     public void OnBack()
     {
-        if(isShowing)
+        if (sc_UIPauseManager.Instance.inventaire.activeInHierarchy)
         {
-            shownItem.transform.position -= Vector3.up * 20f;
-            shownItem = null;
-            menuSelection.SetActive(true);
-            isShowing = false;
+            if (shownItem != null)
+            {
+                shownItem.transform.position -= Vector3.up * 20f;
+                shownItem = null;
+            }
+            description.gameObject.SetActive(false);
             Cursor.lockState = CursorLockMode.None;
+            sc_UIPauseManager.Instance.CloseInventory();
         }
-        else
-        {
-            Retour();
-        }
+    }
+
+    public void OnPause()
+    {
+        OnBack();
     }
 
     public void OnMoveObject(InputValue value)
     {
-        if (isShowing)
+        if (shownItem != null)
         {
-            if(GetComponent<PlayerInput>().currentControlScheme == "KeyboardMouse")
-            {
-                if (Input.GetKey(0))
-                {
-                    Debug.Log("aa");
-                    shownItem.transform.Rotate(value.Get<Vector2>() * rotateSpeed);
-                }
-            }
-            else
+            if (Input.GetMouseButton(0))
             {
                 shownItem.transform.Rotate(value.Get<Vector2>() * rotateSpeed);
             }
         }
     }
 
-
-    public void Retour()
-    {
-        if (sc_DataManager.instance.WhatIsLastScene() == 1)
-        {
-            sc_DataManager.instance.ForceSaveLastScene(3);
-            sc_SceneManager_HC.Instance.ChargeScene("LevelDesignReel");
-            Cursor.lockState = CursorLockMode.Locked;
-        }
-        else
-        {
-            sc_DataManager.instance.ForceSaveLastScene(3);
-            sc_SceneManager_HC.Instance.ChargeScene("LevelDesignSimu");
-            Cursor.lockState = CursorLockMode.Locked;
-        }
-    }
-
     public void Highlight(int nb)
     {
-        hauteur = Mathf.FloorToInt(nb / 4f);
-        largeur = nb % 4;
+        if (ImageItem[selected].activeInHierarchy)
+        {
+            Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", false);
+        }
+        selected = nb;
+        if (ImageItem[selected].activeInHierarchy)
+        {
+            Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", true);
+        }
     }
 }
