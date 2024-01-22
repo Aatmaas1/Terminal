@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class sc_MainMenuManager_HC : MonoBehaviour
 {
+    public bool hasPorte;
     public GameObject CachePorte, TextePressAnyButton;
     public GameObject[] Boutons;
     public GameObject PointGauche, PointDroite;
@@ -21,6 +22,18 @@ public class sc_MainMenuManager_HC : MonoBehaviour
     {
         optionSelected = 0;
         SetPoints();
+        Boutons[optionSelected].GetComponent<Animator>().SetBool("IsSelected", true);
+        if (!hasPorte)
+        {
+            _hasFirstPressed = true;
+            CachePorte.SetActive(false);
+            TextePressAnyButton.SetActive(false);
+            _controlsLocked = false;
+            foreach (GameObject but in Boutons)
+            {
+                but.GetComponent<Button>().enabled = true;
+            }
+        }
     }
 
     // Update is called once per frame
@@ -55,9 +68,11 @@ public class sc_MainMenuManager_HC : MonoBehaviour
     {
         if (!_controlsLocked)
         {
+            Boutons[optionSelected].GetComponent<Animator>().SetBool("IsSelected", false);
             optionSelected -= 1;
             if(optionSelected < 0) { optionSelected = Boutons.Length - 1; }
             SetPoints();
+            Boutons[optionSelected].GetComponent<Animator>().SetBool("IsSelected", true);
         }
     }
 
@@ -65,9 +80,11 @@ public class sc_MainMenuManager_HC : MonoBehaviour
     {
         if (!_controlsLocked)
         {
+            Boutons[optionSelected].GetComponent<Animator>().SetBool("IsSelected", false);
             optionSelected += 1;
             if (optionSelected >= Boutons.Length) { optionSelected = 0; }
             SetPoints();
+            Boutons[optionSelected].GetComponent<Animator>().SetBool("IsSelected", true);
         }
     }
 
@@ -84,7 +101,9 @@ public class sc_MainMenuManager_HC : MonoBehaviour
 
     public void BoutonHover(int bout)
     {
+        Boutons[optionSelected].GetComponent<Animator>().SetBool("IsSelected", false);
         optionSelected = bout;
         SetPoints();
+        Boutons[optionSelected].GetComponent<Animator>().SetBool("IsSelected", true);
     }
 }

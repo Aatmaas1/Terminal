@@ -70,7 +70,10 @@ public class sc_UIPauseManager : MonoBehaviour
 
     void EndPause()
     {
-        Camera.main.gameObject.GetComponent<CinemachineBrain>().m_DefaultBlend.m_Time = 0.6f;
+        menuPause.transform.GetChild(2).GetComponent<Animator>().SetBool("IsSelected", false);
+        menuPause.transform.GetChild(3).GetComponent<Animator>().SetBool("IsSelected", false);
+        menuPause.transform.GetChild(4).GetComponent<Animator>().SetBool("IsSelected", false);
+        Camera.main.gameObject.GetComponent<CinemachineBrain>().m_DefaultBlend.m_Time = 0.5f;
         pInput.SwitchCurrentActionMap("Player");
         sc_SceneManager_HC.Instance.Reprendre();
         menuPause.SetActive(false);
@@ -88,6 +91,9 @@ public class sc_UIPauseManager : MonoBehaviour
 
     public void LoadInventory()
     {
+        menuPause.transform.GetChild(2).GetComponent<Animator>().SetBool("IsSelected", false);
+        menuPause.transform.GetChild(3).GetComponent<Animator>().SetBool("IsSelected", false);
+        menuPause.transform.GetChild(4).GetComponent<Animator>().SetBool("IsSelected", false);
         Camera.main.gameObject.GetComponent<CinemachineBrain>().m_DefaultBlend.m_Time = 0.15f;
         inventaire.SetActive(true);
         cameraInventaire.SetActive(true);

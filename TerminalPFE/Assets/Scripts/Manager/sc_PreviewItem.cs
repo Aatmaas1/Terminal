@@ -66,23 +66,55 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
 
     public void OnUp()
     {
+        if (ImageItem[selected].activeInHierarchy)
+        {
+            Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", false);
+        }
         selected -= 1;
         if (selected < 0) { selected = 11; }
+        if (ImageItem[selected].activeInHierarchy)
+        {
+            Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", true);
+        }
     }
     public void OnDown()
     {
+        if (ImageItem[selected].activeInHierarchy)
+        {
+            Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", false);
+        }
         selected += 1;
         if (selected > 11) { selected = 0; }
+        if (ImageItem[selected].activeInHierarchy)
+        {
+            Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", true);
+        }
     }
 
     public void OnLeft()
     {
+        if (ImageItem[selected].activeInHierarchy)
+        {
+            Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", false);
+        }
         OnBack();
+        if (ImageItem[selected].activeInHierarchy)
+        {
+            Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", true);
+        }
     }
 
     public void OnRight()
     {
+        if (ImageItem[selected].activeInHierarchy)
+        {
+            Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", false);
+        }
         OnInterract();
+        if (ImageItem[selected].activeInHierarchy)
+        {
+            Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", true);
+        }
     }
 
     public void OnInterract()
@@ -93,6 +125,7 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
             {
                 shownItem.transform.position -= Vector3.up * 20f;
             }
+            description.gameObject.SetActive(true);
             shownItem = Models[selected];
             shownItem.transform.position += Vector3.up * 20f;
             Titre.text = IsObjects[selected].nom;
@@ -109,6 +142,7 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
                 shownItem.transform.position -= Vector3.up * 20f;
                 shownItem = null;
             }
+            description.gameObject.SetActive(false);
             Cursor.lockState = CursorLockMode.None;
             sc_UIPauseManager.Instance.CloseInventory();
         }
@@ -132,6 +166,14 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
 
     public void Highlight(int nb)
     {
+        if (ImageItem[selected].activeInHierarchy)
+        {
+            Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", false);
+        }
         selected = nb;
+        if (ImageItem[selected].activeInHierarchy)
+        {
+            Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", true);
+        }
     }
 }

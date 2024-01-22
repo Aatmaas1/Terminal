@@ -19,6 +19,7 @@ public class sc_Bumper_HC : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" && _isGood)
         {
+            GetComponent<Animator>().Play("Bump");
             collision.transform.parent.GetComponent<ThirdPersonController>().GetBumped(Direction);
             _isGood = false;
             StartCoroutine(Cd());
