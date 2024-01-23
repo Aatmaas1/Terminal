@@ -21,6 +21,6 @@ public class GeneralData
         this.SolCasse = false;
         this.tutoBody = false;
         this.hasSwitchedBody = false;
-        this.ItemsCollected = new bool[]{ true, false, false, false, false, true, false, false, false, false, false, false};
+        this.ItemsCollected = new bool[]{ false, false, false, false, false, false, false, false, false, false, false, false};
     }
 }

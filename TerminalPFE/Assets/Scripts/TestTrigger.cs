@@ -10,6 +10,7 @@ public class TestTrigger : MonoBehaviour
     public UnityEvent OnTrig;
     public int index;
     public GameObject playerAvatarSpawn;
+    bool isOpen = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -19,8 +20,9 @@ public class TestTrigger : MonoBehaviour
             other.GetComponent<PlayerInput>().DeactivateInput();
             OnTrig?.Invoke();
             transform.position = new Vector3(0, -5000, 0);
+            sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterractionNoReturn");
 
-            if(index == 1 && SceneManager.GetActiveScene().buildIndex == 2)
+            if (index == 1 && SceneManager.GetActiveScene().buildIndex == 2)
             {
                 sc_DataManager.instance.MoveRobotTuto(false);
             }
@@ -33,5 +35,40 @@ public class TestTrigger : MonoBehaviour
                 sc_DataManager.instance.MoveRobotCorpse();
             }
         }
+    }
+
+    public void BeamMeUp()
+    {
+        if (isOpen)
+        {
+            sc_PlayerManager_HC.Instance.IndexTerminal = index;
+            sc_PlayerManager_HC.Instance.GetComponent<PlayerInput>().DeactivateInput();
+            OnTrig?.Invoke();
+            transform.position = new Vector3(0, -5000, 0);
+            sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterractionNoReturn");
+
+            if (index == 1 && SceneManager.GetActiveScene().buildIndex == 2)
+            {
+                sc_DataManager.instance.MoveRobotTuto(false);
+            }
+            if (index == 2 && SceneManager.GetActiveScene().buildIndex == 2)
+            {
+                sc_DataManager.instance.MoveRobotTuto(true);
+            }
+            if (index == 3)
+            {
+                sc_DataManager.instance.MoveRobotCorpse();
+            }
+        }
+    }
+
+    public void PlayerReady()
+    {
+        isOpen = true;
+    }
+
+    public void LostPlayer()
+    {
+        isOpen = false;
     }
 }
