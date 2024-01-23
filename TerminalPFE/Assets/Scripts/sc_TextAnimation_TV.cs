@@ -2,18 +2,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
+
 public class sc_TextAnimation_TV : MonoBehaviour
 {
     public TextMeshProUGUI textcomponent;
+    
     public string[] lignes;
+    public string[] lignes2;
+    public string[] lignes3;
+    
+   
+
+    public List<string[]> page = new List<string[]>();
     public float speedChar;
     public float speedLigne;
+    public float speedAttenteDansTexte;
 
     private int index;
-    public bool isoktoGO = false;
+    private int pageindex;
+    
 
     private char retourligne = 'ù';
-    
+    private char AttenteDansTexte = '§';
+    private char effacerCharMoinsUn = '°';
+
+    public void Start()
+    {
+        page.Add(lignes); page.Add(lignes2); page.Add(lignes3);
+        pageindex = 0;
+        index = 0;
+
+    }
     public void OnEnable()
     {
         textcomponent.text = string.Empty;
@@ -23,37 +43,67 @@ public class sc_TextAnimation_TV : MonoBehaviour
     public void StartAffichage()
     {
         index = 0;
-        StartCoroutine(TypeLigne());
+        StartCoroutine(TypeLigne(page[pageindex]));
+        
     }
 
-    IEnumerator TypeLigne()
+    IEnumerator TypeLigne(string[] Lignes)
     {
-        foreach(char c in lignes[index].ToCharArray())
+        
+        foreach (char c in Lignes[index].ToCharArray())
         {
             if(c == retourligne)
             {
                 textcomponent.text += "<br>";
                 yield return new WaitForSecondsRealtime(speedLigne);
             }
+            else if( c == AttenteDansTexte)
+            {
+                yield return new WaitForSecondsRealtime(speedAttenteDansTexte);
+            }
+            else if( c == effacerCharMoinsUn)
+            {
+                textcomponent.text = textcomponent.text.Substring(0, textcomponent.text.Length - 1);
+            }
             else
             {
                 textcomponent.text += c;
+                yield return new WaitForSecondsRealtime(speedChar);
             }
             
-            yield return new WaitForSecondsRealtime(speedChar);
+            
             
         }
-        NextLignes();
+        NextLignes(Lignes);
         
     }
-    void NextLignes()
+    void NextLignes(string[] Lignes)
     {
-        if(index < lignes.Length -1)
+        if(index < Lignes.Length -1)
         {
             index++;
-            print("prochaine ligne");
-            StartCoroutine(TypeLigne());
+            
+            StartCoroutine(TypeLigne(page[pageindex]));
 
         }
+        else
+        {
+            ClearConsole();
+            
+        }
     }
+    void ClearConsole()
+    {
+        if(pageindex < page.Count)
+        textcomponent.text = string.Empty;
+        pageindex++;
+        index = 0;
+        
+        print(" page index = " + pageindex);
+        
+        StartCoroutine(TypeLigne(page[pageindex]));
+
+    }
+
+   
 }
