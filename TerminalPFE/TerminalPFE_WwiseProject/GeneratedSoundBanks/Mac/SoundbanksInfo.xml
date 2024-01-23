@@ -9,18 +9,19 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{FD3E11A7-2221-8F6B-0F58-8423E6624A0C}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{0DBF060B-E6AD-8FCE-8F77-1E30FD323EF3}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
 				<Custom>
+					<Plugin Id="144472841" Name="Hall_Large_Dark (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="268380290" Name="Room_Medium_High_Absorbtion (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="285849851" Name="Hall_Large (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="421856901" Name="Room_Small (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="452199371" Name="Room_Large (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="618729785" Name="Room_Medium (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="653677774" Name="Hall_Medium_Bright (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="697846693" Name="Hall_Medium_Dark (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
-					<Plugin Id="932718469" Name="Hall_Large_Bright (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</Custom>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
@@ -34,7 +35,7 @@
 				<AuxBus Id="484847633" Name="RoomHall">
 					<PluginRefs>
 						<Custom>
-							<PluginRef Id="932718469"/>
+							<PluginRef Id="285849851"/>
 						</Custom>
 					</PluginRefs>
 					<AuxBusRefs>
@@ -66,6 +67,16 @@
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="421856901"/>
+						</Custom>
+					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="1686871543" Name="ReverbMaster"/>
+					</AuxBusRefs>
+				</AuxBus>
+				<AuxBus Id="3453832305" Name="RoomHallDark">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="144472841"/>
 						</Custom>
 					</PluginRefs>
 					<AuxBusRefs>
@@ -304,5 +315,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{45636A76-A88C-8A99-9202-D94532928719}</FileHash>
+	<FileHash>{BB6D3502-ECF5-3708-5284-6321E4B74161}</FileHash>
 </SoundBanksInfo>

@@ -35,6 +35,7 @@ namespace AK
     {
         static const AkUniqueID REVERBMASTER = 1686871543U;
         static const AkUniqueID ROOMHALL = 484847633U;
+        static const AkUniqueID ROOMHALLDARK = 3453832305U;
         static const AkUniqueID ROOMLARGE = 3553615197U;
         static const AkUniqueID ROOMMEDIUM = 4002769053U;
         static const AkUniqueID ROOMREFECTOIRE = 3501257686U;
