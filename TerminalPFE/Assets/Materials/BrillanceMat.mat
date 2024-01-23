@@ -51,11 +51,17 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 1
-    - _NoiseScale: 10
+    - _Alpha: 1.05
+    - _Float: 0.5
+    - _NoiseScale: 2
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _Thickness: 0.1
     m_Colors:
-    - _Color: {r: 2.9960787, g: 2.3559043, b: 0, a: 0}
+    - _Color: {r: 0.99999994, g: 0.7905759, b: 0, a: 0}
     - _NoiseSpeed: {r: 0.1, g: 0.1, b: 0, a: 0}
+    - _Pos: {r: 0, g: 0.86, b: 0, a: 0}
+    - _SpherePos: {r: 0, g: 2.27, b: 0, a: 0}
+    - _TimeSpeed: {r: 1, g: 0, b: 0, a: 0}
+    - _noiseScale: {r: 3.94, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
