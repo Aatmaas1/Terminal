@@ -34,10 +34,7 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
 
     void Start()
     {
-        for(int i = 0; i<12; i++)
-        {
-            ImageItem[i].GetComponent<TMP_Text>().text = IsObjects[i].nom;
-        }
+        MajInv();
     }
 
     // Update is called once per frame
@@ -54,6 +51,10 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
             if (data.ItemsCollected[temp] == false)
             {
                 ImageItem[temp].SetActive(false);
+            }
+            else
+            {
+                ImageItem[temp].SetActive(true);
             }
 
         }
@@ -174,6 +175,14 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
         if (ImageItem[selected].activeInHierarchy)
         {
             Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", true);
+        }
+    }
+
+    public void MajInv()
+    {
+        for (int i = 0; i < 12; i++)
+        {
+            ImageItem[i].GetComponent<TMP_Text>().text = IsObjects[i].nom;
         }
     }
 }
