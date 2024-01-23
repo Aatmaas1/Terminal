@@ -24,6 +24,8 @@ public class Bouton : MonoBehaviour, IDataManager
             UnityEventPortes.InteractDoorBouton();
 
             this.gameObject.SetActive(false);
+
+            sc_ScreenShake.instance.ScreenBaseQuick();
         }
     }
 
