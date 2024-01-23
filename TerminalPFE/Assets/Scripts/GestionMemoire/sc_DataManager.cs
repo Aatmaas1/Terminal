@@ -39,7 +39,7 @@ public class sc_DataManager : MonoBehaviour
         LoadAll();
     }
 
-    private void Update()
+    /*private void Update()
     {
         if (Input.GetKeyDown(KeyCode.K))
         {
@@ -48,7 +48,7 @@ public class sc_DataManager : MonoBehaviour
             fileHandler.Save(generalData);
             LoadAll();
         }
-    }
+    }*/
 
 
     public void NewGame()
