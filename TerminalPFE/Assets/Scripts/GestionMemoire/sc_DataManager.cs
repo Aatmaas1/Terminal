@@ -39,6 +39,16 @@ public class sc_DataManager : MonoBehaviour
         LoadAll();
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            Debug.Log("reset");
+            NewGame();
+            fileHandler.Save(generalData);
+            LoadAll();
+        }
+    }
 
 
     public void NewGame()
@@ -115,6 +125,13 @@ public class sc_DataManager : MonoBehaviour
     {
         return generalData.lastSceneLoaded;
         fileHandler.Save(generalData);
+    }
+
+    public void SaveObject(int index, bool state)
+    {
+        generalData.ItemsCollected[index] = state;
+        fileHandler.Save(generalData);
+        sc_PreviewItem.Instance.LoadData(generalData);
     }
 
     public void MoveRobotTuto(bool ya)

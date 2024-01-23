@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class sc_TargetScan_HC : MonoBehaviour
+public class sc_TargetScan_HC : MonoBehaviour, I_Interactible
 {
-    public UnityEvent GetDetected;
-    public UnityEvent GetUndetected;
+    public UnityEvent EnterDetection;
+    public UnityEvent ExitDetection;
     public UnityEvent Interract;
 
     public void GetClicked()
     {
-        GetDetected?.Invoke();
+        EnterDetection?.Invoke();
     }
     public void GetLost()
     {
-        GetUndetected?.Invoke();
+        ExitDetection?.Invoke();
     }
-    public void GetUsed()
+    public void PressedInteract()
     {
         Interract?.Invoke();
     }

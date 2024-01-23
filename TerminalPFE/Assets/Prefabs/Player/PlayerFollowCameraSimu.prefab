@@ -76,7 +76,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damping: {x: 0.2, y: 0.5, z: 0.3}
-  ShoulderOffset: {x: 0, y: -0.1, z: 0}
+  ShoulderOffset: {x: 0, y: 0.8, z: 0.3}
   VerticalArmLength: 0
   CameraSide: 0.6
   CameraDistance: 4.5
@@ -84,9 +84,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   IgnoreTag: Player
-  CameraRadius: 0.15
-  DampingIntoCollision: 0.4
-  DampingFromCollision: 0.4
+  CameraRadius: 0.1
+  DampingIntoCollision: 0.2
+  DampingFromCollision: 0.3
 --- !u!1 &6375402846876933364
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,6 +151,13 @@ MonoBehaviour:
     GateFit: 2
     FocusDistance: 10
     m_SensorSize: {x: 1, y: 1}
+    Iso: 200
+    ShutterSpeed: 0.005
+    Aperture: 16
+    BladeCount: 5
+    Curvature: {x: 2, y: 11}
+    BarrelClipping: 0.25
+    Anamorphism: 0
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

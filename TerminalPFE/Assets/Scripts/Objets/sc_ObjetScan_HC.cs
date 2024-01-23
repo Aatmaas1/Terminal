@@ -36,4 +36,12 @@ public class sc_ObjetScan_HC : MonoBehaviour
     {
         isBlue = false;
     }
+
+    public void Used()
+    {
+        if (isBlue)
+        {
+            sc_DataManager.instance.SaveObject(ObjetRef.Index, true);
+        }
+    }
 }

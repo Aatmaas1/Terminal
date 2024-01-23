@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using System.Linq;
 
 public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
 {
@@ -62,6 +63,15 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         if(SceneManager.GetActiveScene().buildIndex == 1 || SceneManager.GetActiveScene().buildIndex == 2)
         {
             data.lastSceneLoaded = SceneManager.GetActiveScene().buildIndex;
+        }
+    }
+
+    public void OnClick()
+    {
+        IEnumerable<I_Interactible> datapersistenceobjects = FindObjectsOfType<MonoBehaviour>().OfType<I_Interactible>();
+        foreach (I_Interactible interf in datapersistenceobjects)
+        {
+            interf.PressedInteract();
         }
     }
 }
