@@ -7,9 +7,12 @@ using System;
 public class sc_TextAnimation_TV : MonoBehaviour
 {
     public TextMeshProUGUI textcomponent;
+    
     public string[] lignes;
     public string[] lignes2;
     public string[] lignes3;
+    
+   
 
     public List<string[]> page = new List<string[]>();
     public float speedChar;
@@ -17,15 +20,18 @@ public class sc_TextAnimation_TV : MonoBehaviour
     public float speedAttenteDansTexte;
 
     private int index;
-    private int pageindex = 0;
+    private int pageindex;
     
 
     private char retourligne = 'ù';
     private char AttenteDansTexte = '§';
+    private char effacerCharMoinsUn = '°';
 
     public void Start()
     {
         page.Add(lignes); page.Add(lignes2); page.Add(lignes3);
+        pageindex = 0;
+        index = 0;
 
     }
     public void OnEnable()
@@ -36,13 +42,14 @@ public class sc_TextAnimation_TV : MonoBehaviour
 
     public void StartAffichage()
     {
-        
+        index = 0;
         StartCoroutine(TypeLigne(page[pageindex]));
+        
     }
 
     IEnumerator TypeLigne(string[] Lignes)
     {
-        index = 0;
+        
         foreach (char c in Lignes[index].ToCharArray())
         {
             if(c == retourligne)
@@ -54,6 +61,10 @@ public class sc_TextAnimation_TV : MonoBehaviour
             {
                 yield return new WaitForSecondsRealtime(speedAttenteDansTexte);
             }
+            else if( c == effacerCharMoinsUn)
+            {
+                textcomponent.text = textcomponent.text.Substring(0, textcomponent.text.Length - 1);
+            }
             else
             {
                 textcomponent.text += c;
@@ -63,15 +74,15 @@ public class sc_TextAnimation_TV : MonoBehaviour
             
             
         }
-        NextLignes();
+        NextLignes(Lignes);
         
     }
-    void NextLignes()
+    void NextLignes(string[] Lignes)
     {
-        if(index < lignes.Length -1)
+        if(index < Lignes.Length -1)
         {
             index++;
-            print("prochaine ligne");
+            
             StartCoroutine(TypeLigne(page[pageindex]));
 
         }
@@ -83,10 +94,13 @@ public class sc_TextAnimation_TV : MonoBehaviour
     }
     void ClearConsole()
     {
-        if(pageindex < page.Count -1)
+        if(pageindex < page.Count)
         textcomponent.text = string.Empty;
         pageindex++;
-        print(pageindex);
+        index = 0;
+        
+        print(" page index = " + pageindex);
+        
         StartCoroutine(TypeLigne(page[pageindex]));
 
     }

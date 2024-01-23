@@ -694,7 +694,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -536.3744, y: 0, z: -352.29706, w: 0}
+  m_margin: {x: -536.3744, y: 0, z: -726.5264, w: -559.49036}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -722,30 +722,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textcomponent: {fileID: 951874399}
   lignes:
-  - _PLUSHON SCREAMER program
-  - "\xF9C:'' Initialization \xA7[---------------------]"
-  - "\xF9Colonize mind in progress"
+  - "_searching \xA7. \xA7. \xA7."
+  - "\xF9@program uploading [chrysalis_new_hope] "
+  - "\xF9@Initialization \xA7[----------------------------]"
   - "\xF9#"
   - "\xF9#"
   - "\xF9#"
   - "\xF9#"
   - "\xF9#"
   - "\xF9#"
-  - "\xF9Completed [mission]"
+  - "\xF9\xA7@upload completed \xA7. \xA7. \xA7."
   lignes2:
-  - Koalala
-  - ededededededede
-  - "Koalala\xA7dedededed\xA7\xA7Dede"
-  - "Koalala\xA7dedededed\xA7\xA7Dede"
-  lignes3:
-  - dedede
-  - dedede
-  - edededededed
-  - dedededed
-  - dedededed
-  speedChar: 0.05
+  - "@instalation \xA7. \xA7. \xA7."
+  - "\xF9ChEngine_headmaster_memoryParameterName : \xA7. \xA7. \xA7. \xB0\xB0\xB0\xB0\xB0\xB0\xA77T9H\xA7 "
+  - "\xF9ChEngine_softwareApp_12api_ \xA7\xA7 "
+  - "\xF9#"
+  - "\xF9#"
+  - "\xF9#"
+  - "\xF9#"
+  - "\xF9#"
+  - "\xF9missInformation \xA7. \xA7. \xA7."
+  lignes3: []
+  speedChar: 0.04
   speedLigne: 0.4
-  speedAttenteDansTexte: 1.5
+  speedAttenteDansTexte: 0.8
 --- !u!1 &1089948140
 GameObject:
   m_ObjectHideFlags: 0
@@ -1039,7 +1039,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1436183418
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1079,7 +1079,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '@Gobertow version [125.3622.12:45]'
+  m_text: '@plushon version [125.3622.12:45]'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 280e98f64cfc208478e4a11c4ed2579f, type: 2}
   m_sharedMaterial: {fileID: 8031471863272568227, guid: 280e98f64cfc208478e4a11c4ed2579f,
