@@ -144,6 +144,7 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
                 shownItem = null;
             }
             description.gameObject.SetActive(false);
+            Titre.text = "Inventaire";
             Cursor.lockState = CursorLockMode.None;
             sc_UIPauseManager.Instance.CloseInventory();
         }

@@ -20,8 +20,9 @@ public class TestTrigger : MonoBehaviour
             other.GetComponent<PlayerInput>().DeactivateInput();
             OnTrig?.Invoke();
             transform.position = new Vector3(0, -5000, 0);
+            sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterractionNoReturn");
 
-            if(index == 1 && SceneManager.GetActiveScene().buildIndex == 2)
+            if (index == 1 && SceneManager.GetActiveScene().buildIndex == 2)
             {
                 sc_DataManager.instance.MoveRobotTuto(false);
             }
@@ -44,6 +45,7 @@ public class TestTrigger : MonoBehaviour
             sc_PlayerManager_HC.Instance.GetComponent<PlayerInput>().DeactivateInput();
             OnTrig?.Invoke();
             transform.position = new Vector3(0, -5000, 0);
+            sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterractionNoReturn");
 
             if (index == 1 && SceneManager.GetActiveScene().buildIndex == 2)
             {

@@ -30,7 +30,7 @@ public class sc_ScreenShake : MonoBehaviour
     public void ScreenBaseQuick()
     {
         animator.SetTrigger("ScreenBaseQuick");
-        Debug.Log("ici");
+        //Debug.Log("ici");
     }
 
     public void ScreenBaseLong()
