@@ -5,7 +5,7 @@ using UnityEngine;
 public class FloorDestroyed : MonoBehaviour, IDataManager
 {
     bool isBroken = false;
-
+    public GameObject BatterieLow;
     public Animator animator;
     public  void OnTriggerEnter(Collider other)
     {
@@ -14,6 +14,10 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
             isBroken = true;
             // transform.parent.gameObject.SetActive(false);
             animator.GetComponent<Animator>().SetTrigger("Destroy");
+            sc_ScreenShake.instance.ScreenHardLong();
+            StartCoroutine("WaitBeforeBatterie");
+
+
         }
     }
 
@@ -29,5 +33,12 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
     public void SaveData(ref GeneralData data)
     {
         data.SolCasse = isBroken;
+    }
+
+    IEnumerator WaitBeforeBatterie()
+    {
+        yield return new WaitForSeconds(3.5f);
+        sc_ScreenShake.instance.FovBatterie();
+        BatterieLow.SetActive(true);
     }
 }
