@@ -9,15 +9,30 @@ public class Bouton : MonoBehaviour, IDataManager
 
     public int index;
     bool isOpen = false;
+    bool PlayerClose = false;
 
     private void Start()
     {
         UnityEventPortes = PorteOuvertureParBouton.GetComponent<UnityEventPortes>();
     }
 
-    public void OnTriggerEnter(Collider other)
+    /*public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
+        {
+            isOpen = true;
+            //print("La porte détecte le player en entrée" + transform.parent.name);
+            UnityEventPortes.InteractDoorBouton();
+
+            this.gameObject.SetActive(false);
+
+            sc_ScreenShake.instance.ScreenBaseQuick();
+        }
+    }*/
+
+    public void AppuyeBouton()
+    {
+        if (PlayerClose)
         {
             isOpen = true;
             //print("La porte détecte le player en entrée" + transform.parent.name);
@@ -78,5 +93,15 @@ public class Bouton : MonoBehaviour, IDataManager
     {
         yield return new WaitForSeconds(0.1f);
         UnityEventPortes.InteractDoorBouton();
+    }
+
+    public void PlayerReady()
+    {
+        PlayerClose = true;
+    }
+
+    public void LostPlayer()
+    {
+        PlayerClose = false;
     }
 }
