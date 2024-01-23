@@ -22,6 +22,7 @@ public class sc_Bumper_HC : MonoBehaviour
             GetComponent<Animator>().Play("Bump");
             collision.transform.parent.GetComponent<ThirdPersonController>().GetBumped(Direction);
             _isGood = false;
+            gameObject.GetComponentInChildren<ParticleSystem>().Play();
             StartCoroutine(Cd());
         }
     }
