@@ -38,9 +38,9 @@ public class sc_ScreenShake : MonoBehaviour
         animator.SetTrigger("ScreenBaseLong");
     }
 
-    public void ScreenHardQuick()
+    public void ScreenHardLong()
     {
-        animator.SetTrigger("ScreenHardQuick");
+        animator.SetTrigger("ScreenHardLong");
     }
 
     public void FovBase()

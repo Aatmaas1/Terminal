@@ -92,8 +92,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 11.961885, y: 1, z: 3.0455334}
-  m_Center: {x: 0.9840524, y: 0.5, z: 1.9772333}
+  m_Size: {x: 14.881106, y: 1, z: 3.0455334}
+  m_Center: {x: 1.0075955, y: 0.5, z: 1.9772333}
 --- !u!1001 &4249406132439976910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -287,7 +287,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOpen: 0
-  lightMat: {fileID: 0}
+  isOpening: 0
+  calbe: {fileID: 0}
+  speed: 0
 --- !u!95 &8189934058729002379
 Animator:
   serializedVersion: 5
