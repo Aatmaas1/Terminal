@@ -15,12 +15,16 @@ public class UnityEventPortes : MonoBehaviour
     public void InteractDoorAutomatique()
     {
         OnInteractDoorAutomatique?.Invoke();
+       // sc_ScreenShake.instance.ScreenBaseQuick();
+
     }
 
 
     public void InteractDoorBouton()
     {
         OnInteractDoorBouton?.Invoke();
+       // sc_ScreenShake.instance.ScreenBaseQuick();
+
     }
 
     private void Start()

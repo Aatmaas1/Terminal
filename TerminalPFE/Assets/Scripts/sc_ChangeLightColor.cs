@@ -31,6 +31,8 @@ public class sc_ChangeLightColor : MonoBehaviour
     {
         if(cableMat != null) 
         {
+            sc_ScreenShake.instance.ScreenBaseQuick();
+
             value = 0;
             valueClose = 1; 
             index = lightIndex;
@@ -85,12 +87,16 @@ public class sc_ChangeLightColor : MonoBehaviour
         {
             lightMat.SetFloat("_ColorChanger", 0);
             isOpen = false;
+            sc_ScreenShake.instance.ScreenBaseQuick();
+
         }
 
         else //la porte est fermée donc on ouvre
         {
             lightMat.SetFloat("_ColorChanger", 1);
             isOpen = true;
+            sc_ScreenShake.instance.ScreenBaseQuick();
+
         }
     }
 
