@@ -87,7 +87,7 @@ public class sc_ChangeLightColor : MonoBehaviour
         {
             lightMat.SetFloat("_ColorChanger", 0);
             isOpen = false;
-            sc_ScreenShake.instance.ScreenBaseQuick();
+            //sc_ScreenShake.instance.ScreenBaseQuick();
 
         }
 

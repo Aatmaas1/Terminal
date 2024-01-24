@@ -6,6 +6,7 @@ public class sc_ScreenShake : MonoBehaviour
 {
     //le singletone
     public static sc_ScreenShake instance;
+    public Animator lightPlayer;
 
     private  Animator animator;
 
@@ -25,6 +26,12 @@ public class sc_ScreenShake : MonoBehaviour
         {
             Destroy(this);
         }
+    }
+
+    public void OnInteractPlayerLight()
+    {
+        lightPlayer.SetTrigger("OnInteract");
+        //Debug.Log("LightPlayer");
     }
 
     public void ScreenBaseQuick()

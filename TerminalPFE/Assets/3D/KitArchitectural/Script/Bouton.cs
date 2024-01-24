@@ -40,8 +40,8 @@ public class Bouton : MonoBehaviour, IDataManager
 
             this.gameObject.SetActive(false);
 
-            sc_ScreenShake.instance.ScreenBaseQuick();
-
+            //sc_ScreenShake.instance.ScreenBaseQuick();
+            sc_ScreenShake.instance.OnInteractPlayerLight();
             sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterraction");
         }
     }
