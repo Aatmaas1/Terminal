@@ -27,7 +27,7 @@ public class ActionPorteTuto : MonoBehaviour
         {
             //print("Je suis rentré dans le Unity Event et je m'ouvre");
             PorteTutoAnimator.SetBool("IsOpening", true);
-            sc_ScreenShake.instance.ScreenBaseQuick();
+            //sc_ScreenShake.instance.ScreenBaseQuick();
             isOpening = true;
         }
         
@@ -36,7 +36,7 @@ public class ActionPorteTuto : MonoBehaviour
     public void PorteOpeningBouton()
     {
         PorteTutoAnimator.SetTrigger("IsOpening");
-        sc_ScreenShake.instance.ScreenBaseQuick();
+       // sc_ScreenShake.instance.ScreenBaseQuick();
     }
 
   
