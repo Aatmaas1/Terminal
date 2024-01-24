@@ -16,12 +16,6 @@ public class TestTrigger : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            sc_PlayerManager_HC.Instance.IndexTerminal = index;
-            other.GetComponent<PlayerInput>().DeactivateInput();
-            OnTrig?.Invoke();
-            transform.position = new Vector3(0, -5000, 0);
-            sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterractionNoReturn");
-
             if (index == 1 && SceneManager.GetActiveScene().buildIndex == 2)
             {
                 sc_DataManager.instance.MoveRobotTuto(false);
@@ -34,6 +28,12 @@ public class TestTrigger : MonoBehaviour
             {
                 sc_DataManager.instance.MoveRobotCorpse();
             }
+
+            sc_PlayerManager_HC.Instance.IndexTerminal = index;
+            other.GetComponent<PlayerInput>().DeactivateInput();
+            OnTrig?.Invoke();
+            transform.position = new Vector3(0, -5000, 0);
+            sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterractionNoReturn");
         }
     }
 
@@ -41,12 +41,6 @@ public class TestTrigger : MonoBehaviour
     {
         if (isOpen)
         {
-            sc_PlayerManager_HC.Instance.IndexTerminal = index;
-            sc_PlayerManager_HC.Instance.GetComponent<PlayerInput>().DeactivateInput();
-            OnTrig?.Invoke();
-            transform.position = new Vector3(0, -5000, 0);
-            sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterractionNoReturn");
-
             if (index == 1 && SceneManager.GetActiveScene().buildIndex == 2)
             {
                 sc_DataManager.instance.MoveRobotTuto(false);
@@ -59,6 +53,12 @@ public class TestTrigger : MonoBehaviour
             {
                 sc_DataManager.instance.MoveRobotCorpse();
             }
+
+            sc_PlayerManager_HC.Instance.IndexTerminal = index;
+            sc_PlayerManager_HC.Instance.GetComponent<PlayerInput>().SwitchCurrentActionMap("Nothing");
+            OnTrig?.Invoke();
+            transform.position = new Vector3(0, -5000, 0);
+            sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterractionNoReturn");
         }
     }
 
