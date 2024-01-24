@@ -85,6 +85,7 @@ public class sc_UIPauseManager : MonoBehaviour
 
     public void Quitter()
     {
+        sc_PlayerManager_HC.Instance.IndexTerminal = -1;
         sc_DataManager.instance.SaveAll();
         sc_SceneManager_HC.Instance.ChargeScene("MainMenu");
     }
