@@ -522,7 +522,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e364e8b048b1b448b41f12b8470ec700
     GuidInternal: 
-    m_lastTime: -8584954110151622725
+    m_lastTime: -8584954089787091843
     List:
     - name: Main
       guid: 251dc717ef0fef42a545f46544a81c52
@@ -550,7 +550,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 32fcbe829e1db64882c8fd8a959356a5
     GuidInternal: 
-    m_lastTime: -8584954110059169943
+    m_lastTime: -8584954089849446122
     List:
     - name: PasEvent
       guid: 9b0cc62836807c44ac66d85d71ddfe5c
@@ -638,8 +638,8 @@ MonoBehaviour:
         guid: 2c91207f45e384489490bd001c93b4ab
       Path: Events\Default Work Unit\Play_SFX_BUMPER_BOOST
       maxAttenuation: 0
-      maxDuration: 0.381
-      minDuration: 0.381
+      maxDuration: 1.5843333
+      minDuration: 1.5843333
     - name: Play_SFX_FERMETURE_PORTE_PETITE
       guid: 16ca79b7a461454a823d7ca1e3da3977
       id: 317254060
@@ -708,6 +708,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.1453542
       minDuration: 1.1453542
+    - name: Play_SFX_PERLES_TUILES
+      guid: 65907e57fffd3146ad314edf1e80901b
+      id: 2699630658
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Play_SFX_PERLES_TUILES
+        ObjectType: 3
+        guid: 65907e57fffd3146ad314edf1e80901b
+      Path: Events\Default Work Unit\Play_SFX_PERLES_TUILES
+      maxAttenuation: 0
+      maxDuration: 0.9375
+      minDuration: 0.9375
     - name: Play_SFX_PORTE_FINALE
       guid: 4414709b3a857f40aa3042f0c88b1d7c
       id: 2394956354
@@ -833,7 +850,7 @@ MonoBehaviour:
     m_lastTime: -8584991312705959035
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 60000000610000006700000068000000
+  ExpandedWaapiItemIds: 0600000007000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

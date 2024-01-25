@@ -6,6 +6,7 @@
 				<RandomSequenceContainer Name="RANDOMISEUR_PAS" ID="{B00E3A8C-9E71-412A-A5ED-DD67E8ACA790}" ShortID="499822055">
 					<PropertyList>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>

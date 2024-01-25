@@ -252,7 +252,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8883931F-EE39-224C-E652-C0C7D542759A}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{5C24CC2D-716C-3815-59D8-D37215640223}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -264,9 +264,21 @@
 					<ShortName>PropositionSimulation.wav</ShortName>
 					<CachePath>SFX/PropositionSimulation_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="76343104" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_SIMULATION_TUILES_6.wav</ShortName>
+					<CachePath>SFX/SFX_SIMULATION_TUILES_6_818F3B66.wem</CachePath>
+				</File>
+				<File Id="85067457" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_SIMULATION_TUILES_5.wav</ShortName>
+					<CachePath>SFX/SFX_SIMULATION_TUILES_5_818F3B66.wem</CachePath>
+				</File>
 				<File Id="352465723" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>4NN4_MASTERING2.wav</ShortName>
 					<CachePath>SFX/4NN4_MASTERING2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="435168779" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_SIMULATION_TUILES_2.wav</ShortName>
+					<CachePath>SFX/SFX_SIMULATION_TUILES_2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="520465305" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PAS_ANDROÏDE_1.wav</ShortName>
@@ -275,6 +287,18 @@
 				<File Id="539106288" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PAS_ANDROÏDE_3.wav</ShortName>
 					<CachePath>SFX/SFX_PAS_ANDROÏDE_3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="544464536" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_SIMULATION_TUILES_3.wav</ShortName>
+					<CachePath>SFX/SFX_SIMULATION_TUILES_3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="565426712" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_SIMULATION_TUILES_4.wav</ShortName>
+					<CachePath>SFX/SFX_SIMULATION_TUILES_4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="601300744" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_SIMULATION_TUILES_9.wav</ShortName>
+					<CachePath>SFX/SFX_SIMULATION_TUILES_9_818F3B66.wem</CachePath>
 				</File>
 				<File Id="670562076" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PAS_ANDROÏDE_5.wav</ShortName>
@@ -300,13 +324,29 @@
 					<ShortName>SFX_OUVERTURE_PORTE_PETITE.wav</ShortName>
 					<CachePath>SFX/SFX_OUVERTURE_PORTE_PETITE_818F3B66.wem</CachePath>
 				</File>
+				<File Id="792590712" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_SIMULATION_TUILES_10.wav</ShortName>
+					<CachePath>SFX/SFX_SIMULATION_TUILES_10_818F3B66.wem</CachePath>
+				</File>
+				<File Id="822224943" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_SIMULATION_TUILES_1.wav</ShortName>
+					<CachePath>SFX/SFX_SIMULATION_TUILES_1_818F3B66.wem</CachePath>
+				</File>
 				<File Id="881874796" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PAS_ANDROÏDE_4.wav</ShortName>
 					<CachePath>SFX/SFX_PAS_ANDROÏDE_4_818F3B66.wem</CachePath>
 				</File>
+				<File Id="916630455" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_SIMULATION_TUILES_8.wav</ShortName>
+					<CachePath>SFX/SFX_SIMULATION_TUILES_8_818F3B66.wem</CachePath>
+				</File>
 				<File Id="922605610" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_FERMETURE_PORTE_TUTO.wav</ShortName>
 					<CachePath>SFX/SFX_FERMETURE_PORTE_TUTO_818F3B66.wem</CachePath>
+				</File>
+				<File Id="961710233" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_SIMULATION_TUILES_7.wav</ShortName>
+					<CachePath>SFX/SFX_SIMULATION_TUILES_7_818F3B66.wem</CachePath>
 				</File>
 				<File Id="1004497866" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_BUMPER_BOOST.wav</ShortName>
@@ -363,6 +403,20 @@
 						<MediaRef Id="723591768"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2699630658" Name="Play_SFX_PERLES_TUILES" DurationType="OneShot" DurationMin="0.9375" DurationMax="0.9375">
+					<MediaRefs>
+						<MediaRef Id="76343104"/>
+						<MediaRef Id="85067457"/>
+						<MediaRef Id="435168779"/>
+						<MediaRef Id="544464536"/>
+						<MediaRef Id="565426712"/>
+						<MediaRef Id="601300744"/>
+						<MediaRef Id="792590712"/>
+						<MediaRef Id="822224943"/>
+						<MediaRef Id="916630455"/>
+						<MediaRef Id="961710233"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2394956354" Name="Play_SFX_PORTE_FINALE" DurationType="OneShot" DurationMin="6.827854" DurationMax="6.827854">
 					<MediaRefs>
 						<MediaRef Id="747293285"/>
@@ -378,5 +432,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FA6C8920-0868-2DEB-ABBA-28A466AE75A0}</FileHash>
+	<FileHash>{D754718B-9170-BA8B-22AD-23200734F58E}</FileHash>
 </SoundBanksInfo>

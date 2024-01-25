@@ -21,6 +21,7 @@ namespace AK
         static const AkUniqueID PLAY_SFX_FERMETURE_PORTE_TUTO = 1226673255U;
         static const AkUniqueID PLAY_SFX_OUVERTURE_PORTE_PETITE = 3699296330U;
         static const AkUniqueID PLAY_SFX_OUVERTURE_PORTE_TUTO = 1974769985U;
+        static const AkUniqueID PLAY_SFX_PERLES_TUILES = 2699630658U;
         static const AkUniqueID PLAY_SFX_PORTE_FINALE = 2394956354U;
         static const AkUniqueID PLAY_SFX_PORTES_CHANGELIGHT = 140330310U;
         static const AkUniqueID STOP_4NN4_MASTERING2 = 1362331995U;
