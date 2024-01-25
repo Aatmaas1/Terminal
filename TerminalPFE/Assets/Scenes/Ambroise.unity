@@ -420,6 +420,142 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1001 &891717133569809013
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4659287260565591604, guid: 6336b89dbbb176e408abca5088dcd9dd,
+        type: 3}
+      propertyPath: m_Name
+      value: TapisRoulant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5468159118914325646, guid: 6336b89dbbb176e408abca5088dcd9dd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5468159118914325646, guid: 6336b89dbbb176e408abca5088dcd9dd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5468159118914325646, guid: 6336b89dbbb176e408abca5088dcd9dd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5468159118914325646, guid: 6336b89dbbb176e408abca5088dcd9dd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5468159118914325646, guid: 6336b89dbbb176e408abca5088dcd9dd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5468159118914325646, guid: 6336b89dbbb176e408abca5088dcd9dd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5468159118914325646, guid: 6336b89dbbb176e408abca5088dcd9dd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5468159118914325646, guid: 6336b89dbbb176e408abca5088dcd9dd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5468159118914325646, guid: 6336b89dbbb176e408abca5088dcd9dd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5468159118914325646, guid: 6336b89dbbb176e408abca5088dcd9dd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6336b89dbbb176e408abca5088dcd9dd, type: 3}
+--- !u!1001 &7040827236911489393
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4699158251511469733, guid: 9129abeb25851c64bb90d25f4e93bb07,
+        type: 3}
+      propertyPath: m_Name
+      value: TapisRoulantVirage
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367467379693423647, guid: 9129abeb25851c64bb90d25f4e93bb07,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367467379693423647, guid: 9129abeb25851c64bb90d25f4e93bb07,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367467379693423647, guid: 9129abeb25851c64bb90d25f4e93bb07,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367467379693423647, guid: 9129abeb25851c64bb90d25f4e93bb07,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367467379693423647, guid: 9129abeb25851c64bb90d25f4e93bb07,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367467379693423647, guid: 9129abeb25851c64bb90d25f4e93bb07,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367467379693423647, guid: 9129abeb25851c64bb90d25f4e93bb07,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367467379693423647, guid: 9129abeb25851c64bb90d25f4e93bb07,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367467379693423647, guid: 9129abeb25851c64bb90d25f4e93bb07,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367467379693423647, guid: 9129abeb25851c64bb90d25f4e93bb07,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9129abeb25851c64bb90d25f4e93bb07, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -427,3 +563,5 @@ SceneRoots:
   - {fileID: 56149592}
   - {fileID: 1613274748}
   - {fileID: 1183830094}
+  - {fileID: 891717133569809013}
+  - {fileID: 7040827236911489393}
