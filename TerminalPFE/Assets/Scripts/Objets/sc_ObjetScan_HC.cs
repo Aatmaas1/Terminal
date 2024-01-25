@@ -42,6 +42,8 @@ public class sc_ObjetScan_HC : MonoBehaviour
         if (isBlue)
         {
             sc_DataManager.instance.SaveObject(ObjetRef.Index, true);
+            sc_PlayerManager_HC.Instance.transform.GetChild(8).GetComponent<VisualEffect>().SendEvent("OnScan");
+            sc_ScreenShake.instance.OnInteractPlayerLight();
         }
     }
 }
