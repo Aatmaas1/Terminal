@@ -1090,7 +1090,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '@plushon version [125.3622.12:45]'
+  m_text: '@CL version [01.21:2119]'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 280e98f64cfc208478e4a11c4ed2579f, type: 2}
   m_sharedMaterial: {fileID: 8031471863272568227, guid: 280e98f64cfc208478e4a11c4ed2579f,
@@ -1100,7 +1100,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 16765097
+    rgba: 4294955177
   m_fontColor: {r: 0.6627451, g: 0.8156863, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1341,6 +1341,7 @@ GameObject:
   - component: {fileID: 1562991615}
   - component: {fileID: 1562991614}
   - component: {fileID: 1562991619}
+  - component: {fileID: 1562991620}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1514,6 +1515,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1562991620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562991613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75e0f1676d2398149a224c553ef1b471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1830765247
 GameObject:
   m_ObjectHideFlags: 0
