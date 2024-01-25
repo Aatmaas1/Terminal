@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
-using System;
+using UnityEngine;
 
 public class sc_TextAnimation_TV : MonoBehaviour
 {
     public TextMeshProUGUI textcomponent;
-    
+
     public string[] lignes;
     public string[] lignes2;
     public string[] lignes3;
-    
-   
+
+
 
     public List<string[]> page = new List<string[]>();
     public float speedChar;
@@ -21,7 +20,7 @@ public class sc_TextAnimation_TV : MonoBehaviour
 
     private int index;
     private int pageindex;
-    
+
 
     private char retourligne = 'ù';
     private char AttenteDansTexte = '§';
@@ -44,24 +43,24 @@ public class sc_TextAnimation_TV : MonoBehaviour
     {
         index = 0;
         StartCoroutine(TypeLigne(page[pageindex]));
-        
+
     }
 
     IEnumerator TypeLigne(string[] Lignes)
     {
-        
+
         foreach (char c in Lignes[index].ToCharArray())
         {
-            if(c == retourligne)
+            if (c == retourligne)
             {
                 textcomponent.text += "<br>";
                 yield return new WaitForSecondsRealtime(speedLigne);
             }
-            else if( c == AttenteDansTexte)
+            else if (c == AttenteDansTexte)
             {
                 yield return new WaitForSecondsRealtime(speedAttenteDansTexte);
             }
-            else if( c == effacerCharMoinsUn)
+            else if (c == effacerCharMoinsUn)
             {
                 textcomponent.text = textcomponent.text.Substring(0, textcomponent.text.Length - 1);
             }
@@ -70,40 +69,42 @@ public class sc_TextAnimation_TV : MonoBehaviour
                 textcomponent.text += c;
                 yield return new WaitForSecondsRealtime(speedChar);
             }
-            
-            
-            
+
+
+
         }
         NextLignes(Lignes);
-        
+
     }
     void NextLignes(string[] Lignes)
     {
-        if(index < Lignes.Length -1)
+        if (index < Lignes.Length - 1)
         {
             index++;
-            
+
             StartCoroutine(TypeLigne(page[pageindex]));
 
         }
         else
         {
             ClearConsole();
-            
+
         }
     }
     void ClearConsole()
     {
-        if(pageindex < page.Count)
-        textcomponent.text = string.Empty;
+        if (pageindex < page.Count)
+
+            textcomponent.text = string.Empty;
         pageindex++;
         index = 0;
-        
+
         print(" page index = " + pageindex);
-        
+
         StartCoroutine(TypeLigne(page[pageindex]));
+
 
     }
 
-   
+
 }
