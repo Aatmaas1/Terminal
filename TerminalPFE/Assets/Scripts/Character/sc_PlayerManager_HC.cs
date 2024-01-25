@@ -80,6 +80,7 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
     public void OnJump()
     {
         OnJumping.GetComponent<ParticleSystem>().Play();
+        sc_ScreenShake.instance.FovBase();
         //Debug.Log("Appeler de base");
     }
 }
