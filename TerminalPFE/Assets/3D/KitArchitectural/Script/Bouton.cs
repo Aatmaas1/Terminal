@@ -48,7 +48,7 @@ public class Bouton : MonoBehaviour, IDataManager
 
     public void AppuyeBouton()
     {
-        if (PlayerClose)
+        if (PlayerClose && isOpen == false)
         {
             isOpen = true;
             //print("La porte détecte le player en entrée" + transform.parent.name);
