@@ -54,6 +54,7 @@ public class Bouton : MonoBehaviour, IDataManager
             //print("La porte détecte le player en entrée" + transform.parent.name);
             UnityEventPortes.InteractDoorBouton();
             this.gameObject.GetComponent<Animator>().SetTrigger("IsClick");
+            this.gameObject.GetComponentInChildren<ParticleSystem>().Play();
             //this.gameObject.SetActive(false);
 
             //sc_ScreenShake.instance.ScreenBaseQuick();

@@ -7,7 +7,7 @@ using UnityEngine.VFX;
 public class pos : MonoBehaviour
 {
 
-    public VisualEffect mat;
+    public Material mat;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +19,7 @@ public class pos : MonoBehaviour
     {
         if(mat != null)
         {
-            mat.SetVector3("PlayerPos", transform.position);
+            mat.SetVector("_Pos", transform.position);
         }
     }
 }
