@@ -35,6 +35,8 @@ public class sc_Detection : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            sc_ScreenShake.instance.OnInteractPlayerLight();
+
             player = other.transform;
 
             detectionFX.transform.position = other.transform.position;
@@ -45,6 +47,7 @@ public class sc_Detection : MonoBehaviour
             foreach(VisualEffect fx in interractableList) 
             {
                 fx.enabled = true;
+                
 
                 Vector3 fxPos = fx.transform.position;
                 fx.SetVector3("Pos01", fxPos);
