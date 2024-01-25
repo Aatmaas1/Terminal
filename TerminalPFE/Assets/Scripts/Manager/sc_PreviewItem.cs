@@ -131,6 +131,7 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
             shownItem.transform.position += Vector3.up * 20f;
             Titre.text = IsObjects[selected].nom;
             description.text = IsObjects[selected].description;
+            //description.transform.GetChild(0).GetComponent<TMP_Text>().text = IsObjects[selected].commentaireAndroid;
         }
     }
 

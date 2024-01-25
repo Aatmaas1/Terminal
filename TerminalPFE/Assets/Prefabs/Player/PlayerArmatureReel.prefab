@@ -316,11 +316,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canJump: 0
-  canRun: 0
+  canRun: 1
   zoomies: 0
   ZoomiesValue: 0.025
   MoveSpeed: 3.5
-  SprintSpeed: 7
+  SprintSpeed: 10
   RotationSmoothTime: 0.17
   SpeedChangeRate: 10
   LandingAudioClip: {fileID: 8300000, guid: ff697d3070687ce4583faa0561a145a2, type: 3}
@@ -501,6 +501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0033b32696af5634f82639571b1a13de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnJumping: {fileID: 0}
   IndexTerminal: -1
 --- !u!1 &1116219123447706844
 GameObject:

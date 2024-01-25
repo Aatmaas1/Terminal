@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class Bouton : MonoBehaviour, IDataManager
 {
@@ -10,10 +11,25 @@ public class Bouton : MonoBehaviour, IDataManager
     public int index;
     bool isOpen = false;
     bool PlayerClose = false;
+    VisualEffect Vfx;
+    float color = 0;
 
     private void Start()
     {
         UnityEventPortes = PorteOuvertureParBouton.GetComponent<UnityEventPortes>();
+        Vfx = GetComponent<VisualEffect>();
+    }
+    private void FixedUpdate()
+    {
+        if (PlayerClose && color < 1)
+        {
+            color += 0.05f;
+        }
+        if (!PlayerClose && color > 0)
+        {
+            color -= 0.05f;
+        }
+        Vfx.SetFloat("ColorChanger", color);
     }
 
     /*public void OnTriggerEnter(Collider other)
