@@ -69,7 +69,7 @@ public class sc_Anim_AvatarVirtuel_HC : MonoBehaviour
     {
         for (int i = 0; i < Membres.Length; i++)
         {
-            Membres[i].transform.position = transform.position + transform.forward * -(-0.4f + 0.18f*i);
+            Membres[i].transform.position = transform.position + transform.forward * -(-0.4f + 0.18f*i) + transform.right * Random.Range(-0.11f, 0.11f);
         }
     }
 }
