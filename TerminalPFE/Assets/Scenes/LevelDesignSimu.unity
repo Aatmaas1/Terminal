@@ -48613,6 +48613,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 67177101050810880, guid: bd490966050138b438befb72512e2ff8,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1751022663478100954, guid: bd490966050138b438befb72512e2ff8,
+        type: 3}
+      propertyPath: rotations.Array.data[0]
+      value: -80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1751022663478100954, guid: bd490966050138b438befb72512e2ff8,
+        type: 3}
+      propertyPath: rotations.Array.data[4]
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 2233509954081113877, guid: bd490966050138b438befb72512e2ff8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3597911373619870242, guid: bd490966050138b438befb72512e2ff8,
         type: 3}
       propertyPath: m_LocalScale.x

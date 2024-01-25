@@ -8,6 +8,5 @@ public class sc_SO_Memoire_HC : ScriptableObject
     public int Index;
     public string nom;
     [TextArea]
-    public string description;
-    public GameObject modele3D;
+    public string description, commentaireAndroid;
 }

@@ -61,7 +61,7 @@ public class sc_Anim_AvatarVirtuel_HC : MonoBehaviour
     {
         for(int i = 0; i < Membres.Length; i++)
         {
-            Membres[i].transform.position = new Vector3(Mathf.Sin(90 * i)*0.1f, 0.04f * i+0.1f, Mathf.Cos(90 * i)*0.1f) + transform.position;
+            Membres[i].transform.position = new Vector3(Mathf.Sin(90 * i)*0.2f, 0.05f * i, Mathf.Cos(90 * i)*0.2f) + transform.position;
         }
     }
 
