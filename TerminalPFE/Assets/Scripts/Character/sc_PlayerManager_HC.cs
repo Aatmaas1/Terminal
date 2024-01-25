@@ -7,6 +7,8 @@ using System.Linq;
 
 public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
 {
+    public ParticleSystem OnJumping;
+
     public static sc_PlayerManager_HC Instance;
     public int IndexTerminal = -1;
     private void Awake()
@@ -73,5 +75,11 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         {
             interf.PressedInteract();
         }
+    }
+
+    public void OnJump()
+    {
+        OnJumping.GetComponent<ParticleSystem>().Play();
+        //Debug.Log("Appeler de base");
     }
 }
