@@ -114,7 +114,10 @@ public class TestTrigger : MonoBehaviour, IDataManager
         int enfants = transform.childCount;
         for (int i = 0; i < enfants; i++)
         {
-            transform.GetChild(i).GetComponent<MeshRenderer>().material = newMat;
+            if (transform.GetChild(i).GetComponent<MeshRenderer>())
+            {
+                transform.GetChild(i).GetComponent<MeshRenderer>().material = newMat;
+            }
         }
     }
 

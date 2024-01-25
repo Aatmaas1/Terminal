@@ -130,8 +130,8 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
             shownItem = Models[selected];
             shownItem.transform.position += Vector3.up * 20f;
             Titre.text = IsObjects[selected].nom;
-            description.text = IsObjects[selected].description;
-            //description.transform.GetChild(0).GetComponent<TMP_Text>().text = IsObjects[selected].commentaireAndroid;
+            description.text = IsObjects[selected].commentaireAndroid;
+            description.transform.GetChild(0).GetComponent<TMP_Text>().text = IsObjects[selected].description;
         }
     }
 
