@@ -9,6 +9,8 @@ public class sc_UIPauseManager : MonoBehaviour
 {
     public static sc_UIPauseManager Instance;
 
+    public System.Action OnPause;
+
     public GameObject menuPause, inventaire, cameraGame, cameraPause, cameraInventaire;
     public PlayerInput pInput;
 
@@ -43,16 +45,14 @@ public class sc_UIPauseManager : MonoBehaviour
             }
         }
     }
-
-    public System.Action OnPause;
     public void TestPause()
     {
-        if (OnPause != null)
-            OnPause();
         //if (menuPause.activeInHierarchy) { EndPause(); }
         //else { StartPause(); }
         if (!inventaire.activeInHierarchy)
         {
+            if (OnPause != null)
+                OnPause();
             if (menuPause.activeInHierarchy) { EndPause(); }
             else { StartPause(); }
         }
@@ -114,7 +114,7 @@ public class sc_UIPauseManager : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         if (sc_DataManager.instance.WhatIsLastScene() == 3)
         {
-            StartPause();
+            TestPause();
         }
 
     }

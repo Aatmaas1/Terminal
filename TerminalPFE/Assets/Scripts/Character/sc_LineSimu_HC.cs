@@ -16,6 +16,6 @@ public class sc_LineSimu_HC : MonoBehaviour
     void Update()
     {
         connect.SetPositions(new Vector3[]{ start.position, end.position});
-        connect.widthMultiplier = ((0.25f - Vector3.Distance(start.position, end.position))/0.3f);
+        connect.widthMultiplier = ((0.23f - Vector3.Distance(start.position, end.position))/0.3f);
     }
 }
