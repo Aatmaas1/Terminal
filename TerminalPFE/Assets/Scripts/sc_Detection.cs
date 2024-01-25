@@ -44,7 +44,7 @@ public class sc_Detection : MonoBehaviour
                 {
                     life--;
                     sc_ScreenShake.instance.OnInteractPlayerLight();
-
+                    sc_ScreenShake.instance.FovBase();
                     player = other.transform;
 
                     detectionFX.transform.position = other.transform.position;

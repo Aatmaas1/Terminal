@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3029484660488193710}
   - component: {fileID: 1813664573182652105}
   - component: {fileID: 6509219930929034974}
+  - component: {fileID: 7574674968908188646}
   m_Layer: 0
   m_Name: Bouton
   m_TagString: Untagged
@@ -179,6 +180,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PorteOuvertureParBouton: {fileID: 0}
   index: 0
+--- !u!95 &7574674968908188646
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2939084546821328140}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 907e0b688ac45ee42ae20b00b0fda166, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &858102110179977072
 PrefabInstance:
   m_ObjectHideFlags: 0

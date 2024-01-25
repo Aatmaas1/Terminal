@@ -32,13 +32,13 @@ public class Bouton : MonoBehaviour, IDataManager
 
     public void AppuyeBouton()
     {
-        if (PlayerClose)
+        if (PlayerClose && isOpen == false)
         {
             isOpen = true;
             //print("La porte détecte le player en entrée" + transform.parent.name);
             UnityEventPortes.InteractDoorBouton();
-
-            this.gameObject.SetActive(false);
+            this.gameObject.GetComponent<Animator>().SetTrigger("IsClick");
+            //this.gameObject.SetActive(false);
 
             //sc_ScreenShake.instance.ScreenBaseQuick();
             sc_ScreenShake.instance.OnInteractPlayerLight();
