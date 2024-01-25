@@ -147,6 +147,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_SFX_PERLES_TUILES" ID="{577E9065-FDFF-4631-AD31-4EDF1E80901B}">
+					<ChildrenList>
+						<Action Name="" ID="{497CBB5A-460E-4B79-8EE2-F4F6FA94ECBB}" ShortID="633972192">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_PERLES_TUILES" ID="{E70EAE05-4174-4828-9C7E-C14582121F5B}" WorkUnitID="{33A9B59E-00EB-49C4-92FF-5A2330E219CF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
