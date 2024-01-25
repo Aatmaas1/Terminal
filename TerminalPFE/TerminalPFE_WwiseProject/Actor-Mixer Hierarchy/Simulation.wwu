@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{33A9B59E-00EB-49C4-92FF-5A2330E219CF}" SchemaVersion="119" RootDocumentID="{AB2030D7-FEB3-4931-8F66-2372D24A8919}" ParentDocumentID="{5477266C-D991-4580-A687-CA6FC8AF0645}">
+	<AudioObjects>
+		<WorkUnit Name="Simulation" ID="{33A9B59E-00EB-49C4-92FF-5A2330E219CF}" OwnerID="{5477266C-D991-4580-A687-CA6FC8AF0645}" PersistMode="Nested">
+			<ChildrenList>
+				<Sound Name="SFX_BUMPER_BOOST" ID="{3D83A90D-A3F2-4726-B342-3273BB9CB540}" ShortID="590909328">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-13</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_BUMPER_BOOST" ID="{0140BF3F-7097-46B5-85CE-E70B489C67A8}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_BUMPER_BOOST.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1004497866"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_BUMPER_BOOST" ID="{0140BF3F-7097-46B5-85CE-E70B489C67A8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

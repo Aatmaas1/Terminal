@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{35CEDD8C-522E-40A2-AE68-9C1877E44B99}" SchemaVersion="119" RootDocumentID="{AB2030D7-FEB3-4931-8F66-2372D24A8919}" ParentDocumentID="{5477266C-D991-4580-A687-CA6FC8AF0645}">
+	<AudioObjects>
+		<WorkUnit Name="Portes" ID="{35CEDD8C-522E-40A2-AE68-9C1877E44B99}" OwnerID="{5477266C-D991-4580-A687-CA6FC8AF0645}" PersistMode="Nested">
+			<ChildrenList>
+				<Sound Name="SFX_OUVERTURE_PORTE_PETITE" ID="{8A3F0EE5-79AD-42A0-B0A9-B67C4087ED67}" ShortID="1050927176">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_OUVERTURE_PORTE_PETITE" ID="{158A1004-57AB-44A8-BB82-19AFC64AB6A1}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_OUVERTURE_PORTE_PETITE.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="775787932"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_OUVERTURE_PORTE_PETITE" ID="{158A1004-57AB-44A8-BB82-19AFC64AB6A1}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SFX_FERMETURE_PORTE_PETITE" ID="{FD265EF0-B6E2-4CCD-9441-E7A3BE2F8BFF}" ShortID="191269118">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_FERMETURE_PORTE_PETITE" ID="{C55ABDBC-D830-4006-B559-A4D9E00D3AE4}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_FERMETURE_PORTE_PETITE.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="707380317"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_FERMETURE_PORTE_PETITE" ID="{C55ABDBC-D830-4006-B559-A4D9E00D3AE4}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SFX_OUVERTURE_PORTE_TUTO" ID="{B6836ABF-27FA-4C88-9043-44093883FA6D}" ShortID="483795144">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_OUVERTURE_PORTE_TUTO" ID="{FD3356DF-5344-4380-AEDA-E43A1EA21A81}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_OUVERTURE_PORTE_TUTO.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="723591768"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_OUVERTURE_PORTE_TUTO" ID="{FD3356DF-5344-4380-AEDA-E43A1EA21A81}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SFX_FERMETURE_PORTE_TUTO" ID="{87768B83-0A0C-40FF-AB6E-710D6A087DCF}" ShortID="944354579">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_FERMETURE_PORTE_TUTO" ID="{233AFCA7-06A6-4A27-A97F-C5211D0C004D}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_FERMETURE_PORTE_TUTO.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="922605610"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_FERMETURE_PORTE_TUTO" ID="{233AFCA7-06A6-4A27-A97F-C5211D0C004D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SFX_PORTE_FINALE" ID="{B692877B-B51D-4C63-8DA2-A51929D03716}" ShortID="931083036">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_PORTE_FINALE" ID="{C8151061-C9FD-462F-A4D3-7493CCCD64BE}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_PORTE_FINALE.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="747293285"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_PORTE_FINALE" ID="{C8151061-C9FD-462F-A4D3-7493CCCD64BE}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SFX_PORTES_CHANGELIGHT" ID="{A6F13EEB-826F-472B-9ED8-74330D4C231F}" ShortID="337650405">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_PORTES_CHANGELIGHT" ID="{C47B990A-D448-4C06-AC60-7EBD2A075B0E}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_PORTES_CHANGELIGHT.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1031853575"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_PORTES_CHANGELIGHT" ID="{C47B990A-D448-4C06-AC60-7EBD2A075B0E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

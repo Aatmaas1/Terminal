@@ -252,7 +252,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{1EABD822-8141-949B-5846-E6EE757ED088}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8883931F-EE39-224C-E652-C0C7D542759A}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -284,9 +284,37 @@
 					<ShortName>SFX_PAS_ANDROÏDE_6.wav</ShortName>
 					<CachePath>SFX/SFX_PAS_ANDROÏDE_6_818F3B66.wem</CachePath>
 				</File>
+				<File Id="707380317" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_FERMETURE_PORTE_PETITE.wav</ShortName>
+					<CachePath>SFX/SFX_FERMETURE_PORTE_PETITE_818F3B66.wem</CachePath>
+				</File>
+				<File Id="723591768" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_OUVERTURE_PORTE_TUTO.wav</ShortName>
+					<CachePath>SFX/SFX_OUVERTURE_PORTE_TUTO_818F3B66.wem</CachePath>
+				</File>
+				<File Id="747293285" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_PORTE_FINALE.wav</ShortName>
+					<CachePath>SFX/SFX_PORTE_FINALE_818F3B66.wem</CachePath>
+				</File>
+				<File Id="775787932" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_OUVERTURE_PORTE_PETITE.wav</ShortName>
+					<CachePath>SFX/SFX_OUVERTURE_PORTE_PETITE_818F3B66.wem</CachePath>
+				</File>
 				<File Id="881874796" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PAS_ANDROÏDE_4.wav</ShortName>
 					<CachePath>SFX/SFX_PAS_ANDROÏDE_4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="922605610" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_FERMETURE_PORTE_TUTO.wav</ShortName>
+					<CachePath>SFX/SFX_FERMETURE_PORTE_TUTO_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1004497866" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_BUMPER_BOOST.wav</ShortName>
+					<CachePath>SFX/SFX_BUMPER_BOOST_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1031853575" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_PORTES_CHANGELIGHT.wav</ShortName>
+					<CachePath>SFX/SFX_PORTES_CHANGELIGHT_818F3B66.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -310,10 +338,45 @@
 						<MediaRef Id="881874796"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="4021310751" Name="Play_SFX_BUMPER_BOOST" DurationType="OneShot" DurationMin="1.5843333" DurationMax="1.5843333">
+					<MediaRefs>
+						<MediaRef Id="1004497866"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="317254060" Name="Play_SFX_FERMETURE_PORTE_PETITE" DurationType="OneShot" DurationMin="1.29325" DurationMax="1.29325">
+					<MediaRefs>
+						<MediaRef Id="707380317"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1226673255" Name="Play_SFX_FERMETURE_PORTE_TUTO" DurationType="OneShot" DurationMin="1.3588958" DurationMax="1.3588958">
+					<MediaRefs>
+						<MediaRef Id="922605610"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3699296330" Name="Play_SFX_OUVERTURE_PORTE_PETITE" DurationType="OneShot" DurationMin="1.0550833" DurationMax="1.0550833">
+					<MediaRefs>
+						<MediaRef Id="775787932"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1974769985" Name="Play_SFX_OUVERTURE_PORTE_TUTO" DurationType="OneShot" DurationMin="1.1453542" DurationMax="1.1453542">
+					<MediaRefs>
+						<MediaRef Id="723591768"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2394956354" Name="Play_SFX_PORTE_FINALE" DurationType="OneShot" DurationMin="6.827854" DurationMax="6.827854">
+					<MediaRefs>
+						<MediaRef Id="747293285"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="140330310" Name="Play_SFX_PORTES_CHANGELIGHT" DurationType="OneShot" DurationMin="1.8461459" DurationMax="1.8461459">
+					<MediaRefs>
+						<MediaRef Id="1031853575"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1362331995" Name="Stop_4NN4_MASTERING2" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3465213173" Name="Stop_PropositionSimulation" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BB6D3502-ECF5-3708-5284-6321E4B74161}</FileHash>
+	<FileHash>{FA6C8920-0868-2DEB-ABBA-28A466AE75A0}</FileHash>
 </SoundBanksInfo>
