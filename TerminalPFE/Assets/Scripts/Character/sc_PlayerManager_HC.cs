@@ -11,6 +11,9 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
 
     public static sc_PlayerManager_HC Instance;
     public int IndexTerminal = -1;
+
+    PlayerInput pInput;
+
     private void Awake()
     {
         if (Instance == null)
@@ -26,6 +29,7 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
     private void Start()
     {
         GetComponent<PlayerInput>().ActivateInput();
+        pInput = GetComponent<PlayerInput>();
     }
 
     public void LoadData(GeneralData data)
@@ -82,5 +86,38 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         OnJumping.GetComponent<ParticleSystem>().Play();
         sc_ScreenShake.instance.FovBase();
         //Debug.Log("Appeler de base");
+    }
+
+    /// <summary>
+    /// A choisir entre Player, UI et Nothing
+    /// </summary>
+    /// <param name="mode"></param>
+    public void SetInputMode(string mode)
+    {
+        pInput.SwitchCurrentActionMap(mode);
+    }
+
+    public void SetCamTo(Transform obj)
+    {
+        StartCoroutine(TurnCam(obj));
+    }
+
+    IEnumerator TurnCam(Transform obj)
+    {
+        Quaternion oldrot = transform.GetChild(0).rotation;
+        for (int i = 1; i<= 20; i++)
+        {
+            Debug.Log("aaaaa");
+            transform.GetChild(0).rotation = Quaternion.RotateTowards(transform.GetChild(0).rotation,
+                Quaternion.LookRotation(obj.position - transform.GetChild(0).position, Vector3.up),9f);
+            yield return new WaitForSeconds(0.01f);
+        }
+        yield return new WaitForSeconds(1f);
+        for (int i = 1; i <= 60; i++)
+        {
+            Debug.Log("aaaaa");
+            transform.GetChild(0).rotation = Quaternion.RotateTowards(transform.GetChild(0).rotation, oldrot, 3f);
+            yield return new WaitForSeconds(0.01f);
+        }
     }
 }
