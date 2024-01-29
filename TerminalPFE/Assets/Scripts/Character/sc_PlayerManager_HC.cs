@@ -83,9 +83,11 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
 
     public void OnJump()
     {
-        OnJumping.GetComponent<ParticleSystem>().Play();
-        sc_ScreenShake.instance.FovBase();
-        //Debug.Log("Appeler de base");
+        if (GetComponent<StarterAssets.ThirdPersonController>().Grounded)
+        {
+            OnJumping.GetComponent<ParticleSystem>().Play();
+            sc_ScreenShake.instance.FovBase();
+        }
     }
 
     /// <summary>
@@ -107,7 +109,6 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         Quaternion oldrot = transform.GetChild(0).rotation;
         for (int i = 1; i<= 20; i++)
         {
-            Debug.Log("aaaaa");
             transform.GetChild(0).rotation = Quaternion.RotateTowards(transform.GetChild(0).rotation,
                 Quaternion.LookRotation(obj.position - transform.GetChild(0).position, Vector3.up),9f);
             yield return new WaitForSeconds(0.01f);
@@ -115,7 +116,6 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         yield return new WaitForSeconds(1f);
         for (int i = 1; i <= 60; i++)
         {
-            Debug.Log("aaaaa");
             transform.GetChild(0).rotation = Quaternion.RotateTowards(transform.GetChild(0).rotation, oldrot, 3f);
             yield return new WaitForSeconds(0.01f);
         }

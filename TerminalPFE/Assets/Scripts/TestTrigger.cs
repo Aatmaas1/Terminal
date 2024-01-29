@@ -66,7 +66,7 @@ public class TestTrigger : MonoBehaviour, IDataManager
             }
 
             sc_PlayerManager_HC.Instance.IndexTerminal = index;
-            other.GetComponent<PlayerInput>().DeactivateInput();
+            sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
             OnTrig?.Invoke();
             transform.position = new Vector3(0, -5000, 0);
             sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterractionNoReturn");
@@ -92,7 +92,7 @@ public class TestTrigger : MonoBehaviour, IDataManager
             }
 
             sc_PlayerManager_HC.Instance.IndexTerminal = index;
-            sc_PlayerManager_HC.Instance.GetComponent<PlayerInput>().SwitchCurrentActionMap("Nothing");
+            sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
             OnTrig?.Invoke();
             transform.position = new Vector3(0, -5000, 0);
             sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterractionNoReturn");
