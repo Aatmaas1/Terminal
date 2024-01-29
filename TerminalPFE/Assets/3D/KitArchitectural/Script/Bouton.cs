@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
+using Cinemachine;
 
 public class Bouton : MonoBehaviour, IDataManager
 {
@@ -60,6 +61,7 @@ public class Bouton : MonoBehaviour, IDataManager
             //sc_ScreenShake.instance.ScreenBaseQuick();
             sc_ScreenShake.instance.OnInteractPlayerLight();
             sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterraction");
+            StartCoroutine(CamPorte());
         }
     }
 
@@ -112,6 +114,15 @@ public class Bouton : MonoBehaviour, IDataManager
     {
         yield return new WaitForSeconds(0.1f);
         UnityEventPortes.InteractDoorBouton();
+    }
+    IEnumerator CamPorte()
+    {
+        sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
+        yield return new WaitForSeconds(0.2f);
+        sc_PlayerManager_HC.Instance.SetCamTo(PorteOuvertureParBouton.transform.GetChild(5));
+
+        yield return new WaitForSeconds(2f);
+        sc_PlayerManager_HC.Instance.SetInputMode("Player");
     }
 
     public void PlayerReady()

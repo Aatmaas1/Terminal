@@ -12,7 +12,6 @@ public class sc_UIPauseManager : MonoBehaviour
     public System.Action OnPause;
 
     public GameObject menuPause, inventaire, cameraGame, cameraPause, cameraInventaire;
-    public PlayerInput pInput;
 
     Transform player;
     private void Awake()
@@ -58,7 +57,7 @@ public class sc_UIPauseManager : MonoBehaviour
 
     void StartPause()
     {
-        pInput.SwitchCurrentActionMap("UI");
+        sc_PlayerManager_HC.Instance.SetInputMode("UI");
         //sc_SceneManager_HC.Instance.Pause();
         menuPause.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
@@ -72,7 +71,7 @@ public class sc_UIPauseManager : MonoBehaviour
         menuPause.transform.GetChild(3).GetComponent<Animator>().SetBool("IsSelected", false);
         menuPause.transform.GetChild(4).GetComponent<Animator>().SetBool("IsSelected", false);
         Camera.main.gameObject.GetComponent<CinemachineBrain>().m_DefaultBlend.m_Time = 0.5f;
-        pInput.SwitchCurrentActionMap("Player");
+        sc_PlayerManager_HC.Instance.SetInputMode("Player");
         sc_SceneManager_HC.Instance.Reprendre();
         menuPause.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
