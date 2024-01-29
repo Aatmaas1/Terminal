@@ -7,7 +7,6 @@ using Cinemachine;
 public class Bouton : MonoBehaviour, IDataManager
 {
     private UnityEventPortes UnityEventPortes;
-    public CinemachineVirtualCamera mainCam;
     public GameObject PorteOuvertureParBouton;
 
     public int index;
