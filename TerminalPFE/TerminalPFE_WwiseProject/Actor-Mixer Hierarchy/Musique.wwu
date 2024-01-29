@@ -28,6 +28,11 @@
 				<Sound Name="PropositionSimulation" ID="{4E2D0F9B-3665-4992-8FFD-CD80A53FF955}" ShortID="266907452">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-24</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">

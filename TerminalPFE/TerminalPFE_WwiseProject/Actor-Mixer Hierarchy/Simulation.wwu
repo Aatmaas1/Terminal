@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{33A9B59E-00EB-49C4-92FF-5A2330E219CF}" SchemaVersion="119" RootDocumentID="{AB2030D7-FEB3-4931-8F66-2372D24A8919}" ParentDocumentID="{5477266C-D991-4580-A687-CA6FC8AF0645}">
+	<AudioObjects>
+		<WorkUnit Name="Simulation" ID="{33A9B59E-00EB-49C4-92FF-5A2330E219CF}" OwnerID="{5477266C-D991-4580-A687-CA6FC8AF0645}" PersistMode="Nested">
+			<ChildrenList>
+				<Sound Name="SFX_BUMPER_BOOST" ID="{3D83A90D-A3F2-4726-B342-3273BB9CB540}" ShortID="590909328">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-13</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_BUMPER_BOOST" ID="{0140BF3F-7097-46B5-85CE-E70B489C67A8}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_BUMPER_BOOST.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1004497866"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_BUMPER_BOOST" ID="{0140BF3F-7097-46B5-85CE-E70B489C67A8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="SFX_PERLES_TUILES" ID="{E70EAE05-4174-4828-9C7E-C14582121F5B}" ShortID="948048753">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-20</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SFX_SIMULATION_TUILES_1" ID="{210A3C4D-18AB-44C3-81F4-1E1FA20DF7E5}" ShortID="167695672">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_SIMULATION_TUILES_1" ID="{81A93CCC-F998-4198-BF3F-064C7CD1708C}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_SIMULATION_TUILES_1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="822224943"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_SIMULATION_TUILES_1" ID="{81A93CCC-F998-4198-BF3F-064C7CD1708C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_SIMULATION_TUILES_2" ID="{0CDA1031-B920-44E9-94C0-769AE66A394E}" ShortID="864051852">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_SIMULATION_TUILES_2" ID="{3752F9EF-961F-49B4-BFCC-EB4A55CB083F}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_SIMULATION_TUILES_2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="435168779"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_SIMULATION_TUILES_2" ID="{3752F9EF-961F-49B4-BFCC-EB4A55CB083F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_SIMULATION_TUILES_3" ID="{C2E770A3-A9C4-4385-B729-63F7477C270B}" ShortID="207525459">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_SIMULATION_TUILES_3" ID="{975BECEB-6030-4CFD-A00B-DC03A74D5759}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_SIMULATION_TUILES_3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="544464536"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_SIMULATION_TUILES_3" ID="{975BECEB-6030-4CFD-A00B-DC03A74D5759}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_SIMULATION_TUILES_4" ID="{0BF18E41-1C69-42BE-8224-3F5BC7EB7629}" ShortID="895611993">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_SIMULATION_TUILES_4" ID="{CF81CCAB-A70D-4B00-8EDE-AA947527DBA5}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_SIMULATION_TUILES_4.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="565426712"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_SIMULATION_TUILES_4" ID="{CF81CCAB-A70D-4B00-8EDE-AA947527DBA5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_SIMULATION_TUILES_5" ID="{6F5FDB75-1E3A-4210-8524-E0D5CA43C6A2}" ShortID="1061111432">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_SIMULATION_TUILES_5" ID="{3D0337BE-2DD5-4C1D-BC37-066D03CC31AE}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_SIMULATION_TUILES_5.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="85067457"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_SIMULATION_TUILES_5" ID="{3D0337BE-2DD5-4C1D-BC37-066D03CC31AE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_SIMULATION_TUILES_6" ID="{D29E43FC-D3E8-415B-A968-9D19923E90B4}" ShortID="7333408">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_SIMULATION_TUILES_6" ID="{C146CD56-D988-45DA-A68F-014E18B2716B}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_SIMULATION_TUILES_6.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="76343104"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_SIMULATION_TUILES_6" ID="{C146CD56-D988-45DA-A68F-014E18B2716B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_SIMULATION_TUILES_7" ID="{E4479F0D-F2F8-4341-B14B-A22391374E2D}" ShortID="177272290">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_SIMULATION_TUILES_7" ID="{66741BA2-5882-4E3D-B552-A143C2D24615}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_SIMULATION_TUILES_7.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="961710233"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_SIMULATION_TUILES_7" ID="{66741BA2-5882-4E3D-B552-A143C2D24615}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_SIMULATION_TUILES_8" ID="{3C355BF1-618E-4DB2-BA9E-EE3A3487D6B4}" ShortID="776332930">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_SIMULATION_TUILES_8" ID="{9E9E2B25-E151-46B2-BA98-6F7B67B85BCB}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_SIMULATION_TUILES_8.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="916630455"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_SIMULATION_TUILES_8" ID="{9E9E2B25-E151-46B2-BA98-6F7B67B85BCB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_SIMULATION_TUILES_9" ID="{5461DB3F-4B56-4C45-BB79-84FA05AD3077}" ShortID="984098357">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_SIMULATION_TUILES_9" ID="{8AB53D00-081B-40F3-9862-6293EABC9B46}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_SIMULATION_TUILES_9.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="601300744"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_SIMULATION_TUILES_9" ID="{8AB53D00-081B-40F3-9862-6293EABC9B46}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_SIMULATION_TUILES_10" ID="{C75A81D2-8040-40FF-8FBE-96C9012C1905}" ShortID="206149252">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_SIMULATION_TUILES_10" ID="{B7981908-2ADA-430E-A390-2C0D81091E84}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_SIMULATION_TUILES_10.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="792590712"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_SIMULATION_TUILES_10" ID="{B7981908-2ADA-430E-A390-2C0D81091E84}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

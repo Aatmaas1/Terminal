@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.VFX;
 
 public class TestTrigger : MonoBehaviour, IDataManager
 {
@@ -9,6 +10,28 @@ public class TestTrigger : MonoBehaviour, IDataManager
     public int index;
     public GameObject playerAvatarSpawn;
     bool isOpen = false;
+    VisualEffect Vfx;
+    float color = 0;
+
+    private void Start()
+    {
+        Vfx = GetComponent<VisualEffect>();
+    }
+    private void FixedUpdate()
+    {
+        if (Vfx != null)
+        {
+            if (isOpen && color < 1)
+            {
+                color += 0.05f;
+            }
+            if (!isOpen && color > 0)
+            {
+                color -= 0.05f;
+            }
+            Vfx.SetFloat("ColorChanger", color);
+        }
+    }
 
     public bool isUse = false;
     public Material nonUseMat;
@@ -91,7 +114,10 @@ public class TestTrigger : MonoBehaviour, IDataManager
         int enfants = transform.childCount;
         for (int i = 0; i < enfants; i++)
         {
-            transform.GetChild(i).GetComponent<MeshRenderer>().material = newMat;
+            if (transform.GetChild(i).GetComponent<MeshRenderer>())
+            {
+                transform.GetChild(i).GetComponent<MeshRenderer>().material = newMat;
+            }
         }
     }
 

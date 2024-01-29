@@ -37,7 +37,7 @@ public class sc_UIPauseManager : MonoBehaviour
     {
         if (menuPause.activeInHierarchy)
         {
-            if (Physics.Raycast(player.position + Vector3.up, player.forward + Vector3.up, 2.5f))
+            if (Physics.Raycast(player.position + Vector3.up, player.forward, 2f))
             {
                 player.GetComponent<CharacterController>().enabled = false;
                 player.Rotate(new Vector3(0, 10, 0));
@@ -47,8 +47,6 @@ public class sc_UIPauseManager : MonoBehaviour
     }
     public void TestPause()
     {
-        //if (menuPause.activeInHierarchy) { EndPause(); }
-        //else { StartPause(); }
         if (!inventaire.activeInHierarchy)
         {
             if (OnPause != null)
