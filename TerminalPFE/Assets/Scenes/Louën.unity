@@ -8346,11 +8346,29 @@ VisualEffect:
   m_ResourceVersion: 1
   m_PropertySheet:
     m_Float:
-      m_Array: []
+      m_Array:
+      - m_Value: 50
+        m_Name: RayRate
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 0, y: 0.5, z: 0}
+        m_Name: Pos01
+        m_Overridden: 1
+      - m_Value: {x: 0, y: 10, z: 0}
+        m_Name: Pos02
+        m_Overridden: 1
+      - m_Value: {x: 0, y: 20, z: 0}
+        m_Name: Pos03
+        m_Overridden: 1
+      - m_Value: {x: 0, y: 30, z: 0}
+        m_Name: Pos04
+        m_Overridden: 1
+      - m_Value: {x: 0, y: 0.2, z: 0}
+        m_Name: BeginPos
+        m_Overridden: 1
     m_Vector4f:
       m_Array: []
     m_Uint:
