@@ -130,6 +130,7 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
                 GetComponent<CharacterController>().enabled = false;
                 transform.position = terminaux[i].playerAvatarSpawn.transform.position;
                 transform.rotation = terminaux[i].playerAvatarSpawn.transform.rotation;
+                GetComponent<CharacterController>().enabled = true;
             }
         }
     }

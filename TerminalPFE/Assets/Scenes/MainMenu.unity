@@ -793,7 +793,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 47.000008}
+  m_AnchoredPosition: {x: 0, y: 166}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &738575547
@@ -808,7 +808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b7d6aecbd5786a4e9e087a34b8021c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 1
+  value: 0
   script: {fileID: 1802576074}
   sceneName: LevelDesignReel
 --- !u!61 &738575548
@@ -1101,8 +1101,8 @@ RectTransform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 2064051750}
   - {fileID: 738575546}
+  - {fileID: 2064051750}
   - {fileID: 1125379337}
   - {fileID: 1552621304}
   - {fileID: 1180483971}
@@ -2451,8 +2451,8 @@ MonoBehaviour:
   CachePorte: {fileID: 1344125848}
   TextePressAnyButton: {fileID: 1777657016}
   Boutons:
-  - {fileID: 2064051749}
   - {fileID: 738575545}
+  - {fileID: 2064051749}
   - {fileID: 1125379336}
   - {fileID: 1552621303}
   - {fileID: 1180483970}
@@ -2806,7 +2806,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 166}
+  m_AnchoredPosition: {x: 0, y: 61}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2064051751
@@ -2821,7 +2821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b7d6aecbd5786a4e9e087a34b8021c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 0
+  value: 1
   script: {fileID: 1802576074}
   sceneName: LevelDesignReel
 --- !u!61 &2064051752
