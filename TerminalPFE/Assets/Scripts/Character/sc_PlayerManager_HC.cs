@@ -104,19 +104,27 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         StartCoroutine(TurnCam(obj));
     }
 
+    public void LookA(Transform looka)
+    {
+        Quaternion oldrot = transform.GetChild(0).rotation;
+        transform.LookAt(new Vector3(looka.position.x, transform.position.y, looka.position.z), Vector3.up);
+        transform.GetChild(0).rotation = oldrot;
+    }
+
     IEnumerator TurnCam(Transform obj)
     {
         Quaternion oldrot = transform.GetChild(0).rotation;
-        for (int i = 1; i<= 20; i++)
+
+        for (int i = 1; i<= 60; i++)
         {
             transform.GetChild(0).rotation = Quaternion.RotateTowards(transform.GetChild(0).rotation,
-                Quaternion.LookRotation(obj.position - transform.GetChild(0).position, Vector3.up),9f);
+                Quaternion.LookRotation(obj.position - transform.GetChild(0).position, Vector3.up),3f);
             yield return new WaitForSeconds(0.01f);
         }
         yield return new WaitForSeconds(1f);
-        for (int i = 1; i <= 60; i++)
+        for (int i = 1; i <= 120; i++)
         {
-            transform.GetChild(0).rotation = Quaternion.RotateTowards(transform.GetChild(0).rotation, oldrot, 3f);
+            transform.GetChild(0).rotation = Quaternion.RotateTowards(transform.GetChild(0).rotation, oldrot, 1.5f);
             yield return new WaitForSeconds(0.01f);
         }
     }
