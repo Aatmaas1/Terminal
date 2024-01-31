@@ -53,7 +53,23 @@ public class TestTrigger : MonoBehaviour, IDataManager
     {
         if (other.tag == "Player")
         {
-            BeamMeUp();
+            if (index == 1 && SceneManager.GetActiveScene().buildIndex == 2)
+            {
+                sc_DataManager.instance.MoveRobotTuto(false);
+            }
+            if (index == 2 && SceneManager.GetActiveScene().buildIndex == 2)
+            {
+                sc_DataManager.instance.MoveRobotTuto(true);
+            }
+            if (index == 3)
+            {
+                sc_DataManager.instance.MoveRobotCorpse();
+            }
+
+            sc_PlayerManager_HC.Instance.IndexTerminal = index;
+            sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
+            OnTrig?.Invoke();
+            sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterractionNoReturn");
         }
     }
 

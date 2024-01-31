@@ -34,7 +34,7 @@ public class sc_UIPauseManager : MonoBehaviour
 
     private void Update()
     {
-        if (menuPause.activeInHierarchy)
+        if (menuPause.activeInHierarchy || inventaire.activeInHierarchy)
         {
             if (Physics.Raycast(player.position + Vector3.up, player.forward, 2f))
             {
