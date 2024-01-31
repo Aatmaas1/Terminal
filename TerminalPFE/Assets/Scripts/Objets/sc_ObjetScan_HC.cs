@@ -45,6 +45,7 @@ public class sc_ObjetScan_HC : MonoBehaviour
             sc_PlayerManager_HC.Instance.transform.GetChild(8).GetComponent<VisualEffect>().SendEvent("OnScan");
             sc_ScreenShake.instance.OnInteractPlayerLight();
             StartCoroutine(FreezePlayer());
+            sc_PlayerManager_HC.Instance.LookA(transform);
         }
     }
 
@@ -53,5 +54,7 @@ public class sc_ObjetScan_HC : MonoBehaviour
         sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
         yield return new WaitForSeconds(2.3f);
         sc_PlayerManager_HC.Instance.SetInputMode("Player");
+        sc_UIPauseManager.Instance.TestPause();
+        sc_UIPauseManager.Instance.LoadInventory();
     }
 }
