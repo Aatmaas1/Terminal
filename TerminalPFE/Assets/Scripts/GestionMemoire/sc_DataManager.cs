@@ -74,7 +74,7 @@ public class sc_DataManager : MonoBehaviour
 
     public void SaveAll()
     {
-        //this.dataInterfaceObjects = FindAllDataInterfaceObjects();
+        this.dataInterfaceObjects = FindAllDataInterfaceObjects();
         //pass data to other scripts to handle it
         foreach (IDataManager interf in dataInterfaceObjects)
         {

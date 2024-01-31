@@ -3,6 +3,7 @@ using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.VFX;
+using System.Collections;
 
 public class TestTrigger : MonoBehaviour, IDataManager
 {
@@ -52,24 +53,7 @@ public class TestTrigger : MonoBehaviour, IDataManager
     {
         if (other.tag == "Player")
         {
-            if (index == 1 && SceneManager.GetActiveScene().buildIndex == 2)
-            {
-                sc_DataManager.instance.MoveRobotTuto(false);
-            }
-            if (index == 2 && SceneManager.GetActiveScene().buildIndex == 2)
-            {
-                sc_DataManager.instance.MoveRobotTuto(true);
-            }
-            if (index == 3)
-            {
-                sc_DataManager.instance.MoveRobotCorpse();
-            }
-
-            sc_PlayerManager_HC.Instance.IndexTerminal = index;
-            sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
-            OnTrig?.Invoke();
-            transform.position = new Vector3(0, -5000, 0);
-            sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterractionNoReturn");
+            BeamMeUp();
         }
     }
 
@@ -93,10 +77,16 @@ public class TestTrigger : MonoBehaviour, IDataManager
 
             sc_PlayerManager_HC.Instance.IndexTerminal = index;
             sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
-            OnTrig?.Invoke();
-            transform.position = new Vector3(0, -5000, 0);
             sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterractionNoReturn");
+            sc_UIPauseManager.Instance.cameraPause.SetActive(false);
+            StartCoroutine(DelayEffet());
         }
+    }
+
+    IEnumerator DelayEffet()
+    {
+        yield return new WaitForSeconds(1.5f);
+        OnTrig?.Invoke();
     }
 
     public void PlayerReady()
