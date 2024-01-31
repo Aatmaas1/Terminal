@@ -38,16 +38,7 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         //Debug.Log(data.LastPos);
         if (IndexTerminal >= 0)
         {
-            TestTrigger[] terminaux = FindObjectsOfType<TestTrigger>();
-            for (int i = 0; i < terminaux.Length; i++)
-            {
-                if (terminaux[i].index == IndexTerminal)
-                {
-                    GetComponent<CharacterController>().enabled = false;
-                    transform.position = terminaux[i].playerAvatarSpawn.transform.position;
-                    transform.rotation = terminaux[i].playerAvatarSpawn.transform.rotation;
-                }
-            }
+            Respawn();
         }
         else
         {
@@ -126,6 +117,20 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         {
             transform.GetChild(0).rotation = Quaternion.RotateTowards(transform.GetChild(0).rotation, oldrot, 1.5f);
             yield return new WaitForSeconds(0.01f);
+        }
+    }
+
+    public void Respawn()
+    {
+        TestTrigger[] terminaux = FindObjectsOfType<TestTrigger>();
+        for (int i = 0; i < terminaux.Length; i++)
+        {
+            if (terminaux[i].index == IndexTerminal)
+            {
+                GetComponent<CharacterController>().enabled = false;
+                transform.position = terminaux[i].playerAvatarSpawn.transform.position;
+                transform.rotation = terminaux[i].playerAvatarSpawn.transform.rotation;
+            }
         }
     }
 }

@@ -75,7 +75,7 @@ public class TestTrigger : MonoBehaviour, IDataManager
 
     public void BeamMeUp()
     {
-        if (isOpen)
+        if (isOpen && !isUse)
         {
             isUse = true;
             if (index == 1 && SceneManager.GetActiveScene().buildIndex == 2)
@@ -93,6 +93,7 @@ public class TestTrigger : MonoBehaviour, IDataManager
 
             sc_PlayerManager_HC.Instance.IndexTerminal = index;
             sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
+            sc_PlayerManager_HC.Instance.LookA(transform.GetChild(2));
             sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterractionNoReturn");
             sc_UIPauseManager.Instance.cameraPause.SetActive(false);
             StartCoroutine(DelayEffet());
