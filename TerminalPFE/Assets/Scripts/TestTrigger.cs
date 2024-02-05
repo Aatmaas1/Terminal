@@ -13,7 +13,7 @@ public class TestTrigger : MonoBehaviour, IDataManager
     bool isOpen = false;
     VisualEffect Vfx;
     float color = 0;
-
+    public float ChangementVitesseTerminalAnimation;
     private void Start()
     {
         Vfx = GetComponent<VisualEffect>();
@@ -102,7 +102,7 @@ public class TestTrigger : MonoBehaviour, IDataManager
 
     IEnumerator DelayEffet()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(ChangementVitesseTerminalAnimation);
         OnTrig?.Invoke();
     }
 
