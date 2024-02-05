@@ -213,17 +213,17 @@ PrefabInstance:
     - target: {fileID: 2237544878096718680, guid: f5e9187b9e3758f42ac0efd69f105b77,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2237544878096718680, guid: f5e9187b9e3758f42ac0efd69f105b77,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2237544878096718680, guid: f5e9187b9e3758f42ac0efd69f105b77,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2237544878096718680, guid: f5e9187b9e3758f42ac0efd69f105b77,
         type: 3}
@@ -501,6 +501,7 @@ MonoBehaviour:
         m_CallState: 2
   index: 1
   playerAvatarSpawn: {fileID: 464196836217461568}
+  ChangementVitesseTerminalAnimation: 3.3
   isUse: 0
   nonUseMat: {fileID: 87437032686664549, guid: c9c1c1e256217db42b28f9897af00379, type: 3}
   useMat: {fileID: 2100000, guid: 16dc323307948984492cd69d11d46cb9, type: 2}
@@ -524,7 +525,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4377965669287047503}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: b722dd9d81a7d614daf29938d718f2a3, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: a11b357e7ed184042823d12dc11c4a91, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -536,16 +537,14 @@ VideoPlayer:
   m_AspectRatio: 2
   m_DataSource: 0
   m_TimeUpdateMode: 2
-  m_PlaybackSpeed: 2
+  m_PlaybackSpeed: 5
   m_AudioOutputMode: 2
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
   m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 0
