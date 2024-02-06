@@ -15,6 +15,7 @@ public class sc_BumperTrail_LDOV : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         bumperVFX.SetVector3("Pos01", pos01.position);
         bumperVFX.SetVector3("Pos02", pos02.position);
         bumperVFX.SetVector3("Pos03", pos03.position);
