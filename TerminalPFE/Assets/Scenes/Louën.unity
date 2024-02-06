@@ -212,6 +212,12 @@ VisualEffect:
       - m_Value: {x: 0, y: -4.48, z: 0}
         m_Name: PlayerPos
         m_Overridden: 1
+      - m_Value: {x: 0, y: 0, z: 0}
+        m_Name: Pos01
+        m_Overridden: 1
+      - m_Value: {x: 0, y: -5, z: 0}
+        m_Name: Pos02
+        m_Overridden: 1
     m_Vector4f:
       m_Array:
       - m_Value: {x: 1, y: 1, z: 1, w: 1}
@@ -2637,7 +2643,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748275791}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 9132906d69803e7459c5c6f8baee58ae, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: e22bb9da1d7f38044a9e209704a65ad8, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -2651,14 +2657,12 @@ VideoPlayer:
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
   m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 1
@@ -8288,7 +8292,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!73398921 &1092187046
 VFXRenderer:
   serializedVersion: 1
@@ -8297,7 +8301,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1092187045}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -10052,7 +10056,7 @@ PrefabInstance:
     - target: {fileID: 4127230717711464577, guid: 13c99a7f4823eb845a532d08e11fbbbe,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.091
       objectReference: {fileID: 0}
     - target: {fileID: 4127230717711464577, guid: 13c99a7f4823eb845a532d08e11fbbbe,
         type: 3}
@@ -10094,10 +10098,55 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7914853809880844450, guid: 13c99a7f4823eb845a532d08e11fbbbe,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.x
+      value: -0.059
+      objectReference: {fileID: 0}
+    - target: {fileID: 7914853809880844450, guid: 13c99a7f4823eb845a532d08e11fbbbe,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.y
+      value: -0.059000008
+      objectReference: {fileID: 0}
+    - target: {fileID: 7914853809880844450, guid: 13c99a7f4823eb845a532d08e11fbbbe,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[1].m_Value.y
+      value: 0.634
+      objectReference: {fileID: 0}
+    - target: {fileID: 7914853809880844450, guid: 13c99a7f4823eb845a532d08e11fbbbe,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[2].m_Value.y
+      value: 1.166
+      objectReference: {fileID: 0}
+    - target: {fileID: 7914853809880844450, guid: 13c99a7f4823eb845a532d08e11fbbbe,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[3].m_Value.y
+      value: 1.905
+      objectReference: {fileID: 0}
     - target: {fileID: 7921956617326981547, guid: 13c99a7f4823eb845a532d08e11fbbbe,
         type: 3}
       propertyPath: m_Name
       value: BumperEldenRing
+      objectReference: {fileID: 0}
+    - target: {fileID: 7921956617326981547, guid: 13c99a7f4823eb845a532d08e11fbbbe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8368528855455875858, guid: 13c99a7f4823eb845a532d08e11fbbbe,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8956712184652446111, guid: 13c99a7f4823eb845a532d08e11fbbbe,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.059
+      objectReference: {fileID: 0}
+    - target: {fileID: 8956712184652446111, guid: 13c99a7f4823eb845a532d08e11fbbbe,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10112,6 +10161,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1977247810290719655, guid: c132b5e3725aebc41ab37e1bf3ff37cd,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4002143401691966453, guid: c132b5e3725aebc41ab37e1bf3ff37cd,
         type: 3}
       propertyPath: m_LocalPosition.x
