@@ -1,13 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using Cinemachine;
+using System.Collections;
+using UnityEngine;
 
 public class sc_TutoManager_HC : MonoBehaviour
 {
     public static sc_TutoManager_HC Instance;
 
-    public GameObject CamGameplay, CamTuto, Trigger1, Trigger2, TriggerPorte1;
+    public GameObject CamGameplay, CamTuto, Trigger1, Trigger2, TriggerPorte1, TriggerTutoMoveStart;
 
     public float StartDelay;
 
@@ -32,7 +31,7 @@ public class sc_TutoManager_HC : MonoBehaviour
         Anims = GetComponent<Animator>();
 
 
-        if(sc_DataManager.instance.TestIsNewSave())
+        if (sc_DataManager.instance.TestIsNewSave())
         {
             TriggerPorte1.SetActive(false);
             StartCoroutine(DelayStart());
@@ -50,22 +49,31 @@ public class sc_TutoManager_HC : MonoBehaviour
 
     public void TriggerActivated(int index)
     {
-        if(index == 1)
+        switch (index)
         {
-            StartCoroutine(DelayTutoMove2());
-        }
+            case 1:
+                StartCoroutine(DelayTutoMove2());
+                break;
 
 
-        if(index == 2)
-        {
-            TriggerPorte1.SetActive(true); ;
+            case 2:
+                TriggerPorte1.SetActive(true);
+                Anims.Play("TutoMoveEnd");
+                TriggerTutoMoveStart.SetActive(true);
+                break;
+
+            case 3:
+                Anims.Play("TutoInteract");
+                break;
         }
     }
+
 
     IEnumerator DelayTutoMove2()
     {
         yield return new WaitForSeconds(0.1f);
         Anims.Play("TutoMove2");
+        Trigger2.SetActive(true);
 
     }
 
@@ -74,5 +82,10 @@ public class sc_TutoManager_HC : MonoBehaviour
         CamGameplay.SetActive(true);
         sc_PlayerManager_HC.Instance.SetInputMode("Player");
         CamGameplay.GetComponent<CinemachineVirtualCamera>().LookAt = null;
+    }
+
+    public void BoutonPressed()
+    {
+        Anims.Play("TutoEnd");
     }
 }
