@@ -19953,7 +19953,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.Position, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"position":{"x":0.0,"y":1.5,"z":0.0}}'
+      m_SerializableObject: '{"position":{"x":0.0,"y":-1.5,"z":0.0}}'
     m_Space: 0
   m_Property:
     name: RotationCenter
@@ -20123,7 +20123,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.DirectionType, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"direction":{"x":0.25,"y":1.0,"z":0.25}}'
+      m_SerializableObject: '{"direction":{"x":-0.15000000596046449,"y":1.0,"z":-0.15000000596046449}}'
     m_Space: 0
   m_Property:
     name: RotationAxis
@@ -20719,7 +20719,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 7
+      m_SerializableObject: 2
     m_Space: 2147483647
   m_Property:
     name: min
@@ -20753,7 +20753,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 8
+      m_SerializableObject: 1
     m_Space: 2147483647
   m_Property:
     name: max
