@@ -68,8 +68,8 @@ public class TestTrigger : MonoBehaviour, IDataManager
 
             sc_PlayerManager_HC.Instance.IndexTerminal = index;
             sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
-            OnTrig?.Invoke();
-            sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterractionNoReturn");
+            sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimEntreeTerminalSimu");
+            StartCoroutine(DelayEffet());
         }
     }
 
@@ -94,7 +94,7 @@ public class TestTrigger : MonoBehaviour, IDataManager
             sc_PlayerManager_HC.Instance.IndexTerminal = index;
             sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
             sc_PlayerManager_HC.Instance.LookA(transform.GetChild(2));
-            sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterractionNoReturn");
+            sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimEntreeTerminalReel");
             sc_UIPauseManager.Instance.cameraPause.SetActive(false);
             StartCoroutine(DelayEffet());
         }
