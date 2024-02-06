@@ -39,6 +39,15 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         if (IndexTerminal >= 0)
         {
             Respawn();
+            SetInputMode("Nothing");
+            if(SceneManager.GetActiveScene().buildIndex == 1)
+            {
+                GetComponent<Animator>().Play("AnimSortieTerminalReel");
+            }
+            if (SceneManager.GetActiveScene().buildIndex == 2)
+            {
+                GetComponent<Animator>().Play("AnimSortieTerminalSimu");
+            }
         }
         else
         {

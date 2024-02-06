@@ -10056,7 +10056,7 @@ PrefabInstance:
     - target: {fileID: 4127230717711464577, guid: 13c99a7f4823eb845a532d08e11fbbbe,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.091
       objectReference: {fileID: 0}
     - target: {fileID: 4127230717711464577, guid: 13c99a7f4823eb845a532d08e11fbbbe,
         type: 3}
@@ -10098,10 +10098,55 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7914853809880844450, guid: 13c99a7f4823eb845a532d08e11fbbbe,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.x
+      value: -0.059
+      objectReference: {fileID: 0}
+    - target: {fileID: 7914853809880844450, guid: 13c99a7f4823eb845a532d08e11fbbbe,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.y
+      value: -0.059000008
+      objectReference: {fileID: 0}
+    - target: {fileID: 7914853809880844450, guid: 13c99a7f4823eb845a532d08e11fbbbe,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[1].m_Value.y
+      value: 0.634
+      objectReference: {fileID: 0}
+    - target: {fileID: 7914853809880844450, guid: 13c99a7f4823eb845a532d08e11fbbbe,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[2].m_Value.y
+      value: 1.166
+      objectReference: {fileID: 0}
+    - target: {fileID: 7914853809880844450, guid: 13c99a7f4823eb845a532d08e11fbbbe,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[3].m_Value.y
+      value: 1.905
+      objectReference: {fileID: 0}
     - target: {fileID: 7921956617326981547, guid: 13c99a7f4823eb845a532d08e11fbbbe,
         type: 3}
       propertyPath: m_Name
       value: BumperEldenRing
+      objectReference: {fileID: 0}
+    - target: {fileID: 7921956617326981547, guid: 13c99a7f4823eb845a532d08e11fbbbe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8368528855455875858, guid: 13c99a7f4823eb845a532d08e11fbbbe,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8956712184652446111, guid: 13c99a7f4823eb845a532d08e11fbbbe,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.059
+      objectReference: {fileID: 0}
+    - target: {fileID: 8956712184652446111, guid: 13c99a7f4823eb845a532d08e11fbbbe,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

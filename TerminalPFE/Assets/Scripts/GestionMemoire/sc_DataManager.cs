@@ -145,4 +145,16 @@ public class sc_DataManager : MonoBehaviour
         generalData.hasSwitchedBody = true;
         fileHandler.Save(generalData);
     }
+
+    public bool TestIsNewSave()
+    {
+        if(generalData.LastPos == Vector3.zero)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
