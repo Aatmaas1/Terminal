@@ -35,7 +35,7 @@ public class ActionPorteTuto : MonoBehaviour
 
     public void PorteOpeningBouton()
     {
-        PorteTutoAnimator.SetTrigger("IsOpening");
+        PorteTutoAnimator.SetBool("IsOpening", true);
        // sc_ScreenShake.instance.ScreenBaseQuick();
     }
 

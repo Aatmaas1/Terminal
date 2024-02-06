@@ -24,10 +24,6 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         {
             Destroy(gameObject);
         }
-    }
-
-    private void Start()
-    {
         GetComponent<PlayerInput>().ActivateInput();
         pInput = GetComponent<PlayerInput>();
     }

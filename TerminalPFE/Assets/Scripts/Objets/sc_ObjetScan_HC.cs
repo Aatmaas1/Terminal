@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
 
-public class sc_ObjetScan_HC : MonoBehaviour
+public class sc_ObjetScan_HC : MonoBehaviour, IDataManager
 {
     public sc_SO_Memoire_HC ObjetRef;
 
     VisualEffect Vfx;
     float color = 0;
     bool isBlue;
+    bool isScanned = false;
 
     private void Start()
     {
@@ -17,6 +18,12 @@ public class sc_ObjetScan_HC : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        if (isScanned && Vfx.isActiveAndEnabled)
+        {
+            Vfx.enabled = false;
+        }
+
+
         if(isBlue && color < 1)
         {
             color += 0.05f;
@@ -39,10 +46,11 @@ public class sc_ObjetScan_HC : MonoBehaviour
 
     public void Used()
     {
-        if (isBlue)
+        if (isBlue && !isScanned)
         {
+            isScanned = true;
             sc_DataManager.instance.SaveObject(ObjetRef.Index, true);
-            sc_PlayerManager_HC.Instance.transform.GetChild(8).GetComponent<VisualEffect>().SendEvent("OnScan");
+            sc_PlayerManager_HC.Instance.transform.GetChild(9).GetComponent<VisualEffect>().SendEvent("OnScan");
             sc_ScreenShake.instance.OnInteractPlayerLight();
             StartCoroutine(FreezePlayer());
             sc_PlayerManager_HC.Instance.LookA(transform);
@@ -56,5 +64,18 @@ public class sc_ObjetScan_HC : MonoBehaviour
         sc_PlayerManager_HC.Instance.SetInputMode("Player");
         sc_UIPauseManager.Instance.TestPause();
         sc_UIPauseManager.Instance.LoadInventory();
+    }
+
+    public void LoadData(GeneralData data)
+    {
+        if(data.ItemsCollected[ObjetRef.Index] == true)
+        {
+            isScanned = true;
+        }
+    }
+
+    public void SaveData(ref GeneralData data)
+    {
+        
     }
 }
