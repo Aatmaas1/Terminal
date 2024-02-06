@@ -20,7 +20,7 @@ public class TestTrigger : MonoBehaviour, IDataManager
     }
     private void FixedUpdate()
     {
-        if (Vfx != null)
+        if (Vfx != null && SceneManager.GetActiveScene().buildIndex == 1)
         {
             if (isOpen && color < 1)
             {
