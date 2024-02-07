@@ -252,7 +252,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{5C24CC2D-716C-3815-59D8-D37215640223}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{79CCE58B-B003-2FBF-0881-3FE08E868BAD}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -275,6 +275,10 @@
 				<File Id="352465723" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>4NN4_MASTERING2.wav</ShortName>
 					<CachePath>SFX/4NN4_MASTERING2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="356420912" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_DETECTION_LANCEMENT2.wav</ShortName>
+					<CachePath>SFX/SFX_DETECTION_LANCEMENT2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="435168779" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_2.wav</ShortName>
@@ -332,6 +336,10 @@
 					<ShortName>SFX_SIMULATION_TUILES_1.wav</ShortName>
 					<CachePath>SFX/SFX_SIMULATION_TUILES_1_818F3B66.wem</CachePath>
 				</File>
+				<File Id="837757474" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_SCAN_OBJ.wav</ShortName>
+					<CachePath>SFX/SFX_SCAN_OBJ_818F3B66.wem</CachePath>
+				</File>
 				<File Id="881874796" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PAS_ANDROÏDE_4.wav</ShortName>
 					<CachePath>SFX/SFX_PAS_ANDROÏDE_4_818F3B66.wem</CachePath>
@@ -383,6 +391,11 @@
 						<MediaRef Id="1004497866"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2126400971" Name="Play_SFX_DETECTION_LANCEMENT2" DurationType="OneShot" DurationMin="9.384625" DurationMax="9.384625">
+					<MediaRefs>
+						<MediaRef Id="356420912"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="317254060" Name="Play_SFX_FERMETURE_PORTE_PETITE" DurationType="OneShot" DurationMin="1.29325" DurationMax="1.29325">
 					<MediaRefs>
 						<MediaRef Id="707380317"/>
@@ -427,10 +440,15 @@
 						<MediaRef Id="1031853575"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="4060256703" Name="Play_SFX_SCAN_OBJ" DurationType="OneShot" DurationMin="5.143417" DurationMax="5.143417">
+					<MediaRefs>
+						<MediaRef Id="837757474"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1362331995" Name="Stop_4NN4_MASTERING2" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3465213173" Name="Stop_PropositionSimulation" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D754718B-9170-BA8B-22AD-23200734F58E}</FileHash>
+	<FileHash>{EED422C9-2ECB-F78C-A716-3153A896E364}</FileHash>
 </SoundBanksInfo>

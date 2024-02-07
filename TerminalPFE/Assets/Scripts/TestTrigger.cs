@@ -58,14 +58,17 @@ public class TestTrigger : MonoBehaviour, IDataManager
             if (index == 1 && SceneManager.GetActiveScene().buildIndex == 2)
             {
                 sc_DataManager.instance.MoveRobotTuto(false);
+                //Debug.Log("DeclencheSortie");
             }
             if (index == 2 && SceneManager.GetActiveScene().buildIndex == 2)
             {
                 sc_DataManager.instance.MoveRobotTuto(true);
+                //Debug.Log("DeclencheSortie");
             }
             if (index == 3)
             {
                 sc_DataManager.instance.MoveRobotCorpse();
+                //Debug.Log("DeclencheSortie");
             }
 
             sc_PlayerManager_HC.Instance.IndexTerminal = index;
