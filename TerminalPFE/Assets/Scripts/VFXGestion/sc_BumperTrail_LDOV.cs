@@ -16,9 +16,9 @@ public class sc_BumperTrail_LDOV : MonoBehaviour
     void Update()
     {
 
-        bumperVFX.SetVector3("Pos01", pos01.position);
-        bumperVFX.SetVector3("Pos02", pos02.position);
-        bumperVFX.SetVector3("Pos03", pos03.position);
-        bumperVFX.SetVector3("Pos04", pos04.position);
+        bumperVFX.SetVector3("Pos01", pos01.localPosition);
+        bumperVFX.SetVector3("Pos02", pos02.localPosition);
+        bumperVFX.SetVector3("Pos03", pos03.localPosition);
+        bumperVFX.SetVector3("Pos04", pos04.localPosition);
     }
 }
