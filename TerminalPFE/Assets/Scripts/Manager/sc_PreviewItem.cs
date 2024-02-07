@@ -162,7 +162,8 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
         {
             if (Input.GetMouseButton(0))
             {
-                shownItem.transform.Rotate(value.Get<Vector2>() * rotateSpeed);
+                Vector2 tem = Vector2.Perpendicular(Vector2.Perpendicular(Vector2.Perpendicular(value.Get<Vector2>() * rotateSpeed)));
+                shownItem.transform.Rotate(0, tem.y, tem.x, Space.World);
             }
         }
     }

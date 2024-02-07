@@ -44,7 +44,7 @@ public class sc_TutoManager_HC : MonoBehaviour
         sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
         CamGameplay.SetActive(false);
         Anims.Play("TutoMove1");
-
+        Trigger1.SetActive(true);
     }
 
     public void TriggerActivated(int index)
