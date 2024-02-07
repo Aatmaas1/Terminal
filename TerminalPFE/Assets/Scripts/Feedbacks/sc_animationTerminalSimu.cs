@@ -18,7 +18,6 @@ public class sc_animationTerminalSimu : MonoBehaviour
 
     public void lePersoSortDeSimu()
     {
-        Debug.Log("aaa");
         animator.SetTrigger("LeftSimu");
 
     }
