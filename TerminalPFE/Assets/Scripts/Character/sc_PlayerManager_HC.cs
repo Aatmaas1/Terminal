@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 using System.Linq;
+using Cinemachine;
 
 public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
 {
@@ -42,6 +43,7 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
             }
             if (SceneManager.GetActiveScene().buildIndex == 2)
             {
+                Camera.main.gameObject.GetComponent<CinemachineBrain>().m_DefaultBlend.m_Time = 0f;
                 GetComponent<Animator>().Play("AnimSortieTerminalSimu");
             }
         }
@@ -138,5 +140,16 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
                 GetComponent<CharacterController>().enabled = true;
             }
         }
+    }
+
+    public void EndAnim()
+    {
+        StartCoroutine(DelayFixCam());
+    }
+
+    IEnumerator DelayFixCam()
+    {
+        yield return new WaitForEndOfFrame();
+        Camera.main.gameObject.GetComponent<CinemachineBrain>().m_DefaultBlend.m_Time = 0.5f;
     }
 }
