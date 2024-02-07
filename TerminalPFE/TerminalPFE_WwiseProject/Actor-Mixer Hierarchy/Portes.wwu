@@ -139,6 +139,15 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="SFX_PORTES_CHANGELIGHT" ID="{A6F13EEB-826F-472B-9ED8-74330D4C231F}" ShortID="337650405">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>

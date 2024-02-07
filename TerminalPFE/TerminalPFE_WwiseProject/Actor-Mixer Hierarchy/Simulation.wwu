@@ -6,6 +6,7 @@
 				<Sound Name="SFX_BUMPER_BOOST" ID="{3D83A90D-A3F2-4726-B342-3273BB9CB540}" ShortID="590909328">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -37,6 +38,7 @@
 				<RandomSequenceContainer Name="SFX_PERLES_TUILES" ID="{E70EAE05-4174-4828-9C7E-C14582121F5B}" ShortID="948048753">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">

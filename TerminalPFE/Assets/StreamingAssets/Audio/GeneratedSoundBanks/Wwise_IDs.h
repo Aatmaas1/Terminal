@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID PLAY_PROPOSITIONSIMULATION = 388074695U;
         static const AkUniqueID PLAY_RANDOMCONTAINERTEST = 2623669360U;
         static const AkUniqueID PLAY_SFX_BUMPER_BOOST = 4021310751U;
+        static const AkUniqueID PLAY_SFX_DETECTION_LANCEMENT2 = 2126400971U;
         static const AkUniqueID PLAY_SFX_FERMETURE_PORTE_PETITE = 317254060U;
         static const AkUniqueID PLAY_SFX_FERMETURE_PORTE_TUTO = 1226673255U;
         static const AkUniqueID PLAY_SFX_OUVERTURE_PORTE_PETITE = 3699296330U;
@@ -24,6 +25,7 @@ namespace AK
         static const AkUniqueID PLAY_SFX_PERLES_TUILES = 2699630658U;
         static const AkUniqueID PLAY_SFX_PORTE_FINALE = 2394956354U;
         static const AkUniqueID PLAY_SFX_PORTES_CHANGELIGHT = 140330310U;
+        static const AkUniqueID PLAY_SFX_SCAN_OBJ = 4060256703U;
         static const AkUniqueID STOP_4NN4_MASTERING2 = 1362331995U;
         static const AkUniqueID STOP_PROPOSITIONSIMULATION = 3465213173U;
     } // namespace EVENTS

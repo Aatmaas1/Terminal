@@ -3,17 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{82BEFC32-1D9E-48B6-82C8-FD8A959356A5}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_4NN4_MASTERING2" ID="{7A954C22-1A37-4A05-AA4A-2F72BDFE301E}">
-					<ChildrenList>
-						<Action Name="" ID="{F8E40400-BDB9-45A0-8F14-E0DCB5B48B16}" ShortID="478758892">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="4NN4_MASTERING2" ID="{1368F824-5DE1-485B-9779-1915D015E25B}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="PasEvent" ID="{28C60C9B-8036-447C-AC66-D85D71DDFE5C}" ShortID="941182768">
 					<ChildrenList>
 						<Event Name="Play_RandomContainerTest" ID="{1FCA9C28-3655-4D15-9BBF-E62F7F50F220}">
@@ -29,135 +18,184 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Play_PropositionSimulation" ID="{8D1BAB1B-E67C-4FCC-AA3A-1FAF7BC997EB}">
+				<Folder Name="Musique" ID="{9106F988-DCD8-4094-8199-BBA3AE90ACB0}" ShortID="215421132">
 					<ChildrenList>
-						<Action Name="" ID="{AFC42DD7-E0BB-42E5-8403-F1BBCF861F05}" ShortID="588934266">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="PropositionSimulation" ID="{4E2D0F9B-3665-4992-8FFD-CD80A53FF955}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Play_4NN4_MASTERING2" ID="{7A954C22-1A37-4A05-AA4A-2F72BDFE301E}">
+							<ChildrenList>
+								<Action Name="" ID="{F8E40400-BDB9-45A0-8F14-E0DCB5B48B16}" ShortID="478758892">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="4NN4_MASTERING2" ID="{1368F824-5DE1-485B-9779-1915D015E25B}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_PropositionSimulation" ID="{8D1BAB1B-E67C-4FCC-AA3A-1FAF7BC997EB}">
+							<ChildrenList>
+								<Action Name="" ID="{AFC42DD7-E0BB-42E5-8403-F1BBCF861F05}" ShortID="588934266">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PropositionSimulation" ID="{4E2D0F9B-3665-4992-8FFD-CD80A53FF955}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_PropositionSimulation" ID="{CC7A034A-1580-4897-89C3-E619F21B1435}">
+							<ChildrenList>
+								<Action Name="" ID="{6B824865-C94C-464D-AECB-1241B2206E5A}" ShortID="300844101">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PropositionSimulation" ID="{4E2D0F9B-3665-4992-8FFD-CD80A53FF955}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_4NN4_MASTERING2" ID="{CB8118CB-D54B-4AFA-BACA-05842173B307}">
+							<ChildrenList>
+								<Action Name="" ID="{C0E741B6-9B19-4B83-B9DE-555ABEC0EA5D}" ShortID="1052537544">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="4NN4_MASTERING2" ID="{1368F824-5DE1-485B-9779-1915D015E25B}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Stop_PropositionSimulation" ID="{CC7A034A-1580-4897-89C3-E619F21B1435}">
+				</Folder>
+				<Folder Name="SIMULATION" ID="{341F4021-3D6C-49F2-B57D-96BCB18E02F4}" ShortID="370386191">
 					<ChildrenList>
-						<Action Name="" ID="{6B824865-C94C-464D-AECB-1241B2206E5A}" ShortID="300844101">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="PropositionSimulation" ID="{4E2D0F9B-3665-4992-8FFD-CD80A53FF955}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Play_SFX_BUMPER_BOOST" ID="{7F20912C-E345-4884-9490-BD001C93B4AB}">
+							<ChildrenList>
+								<Action Name="" ID="{8404E938-95A4-4192-850F-9155FFE25FAB}" ShortID="754337358">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_BUMPER_BOOST" ID="{3D83A90D-A3F2-4726-B342-3273BB9CB540}" WorkUnitID="{33A9B59E-00EB-49C4-92FF-5A2330E219CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_PERLES_TUILES" ID="{577E9065-FDFF-4631-AD31-4EDF1E80901B}">
+							<ChildrenList>
+								<Action Name="" ID="{497CBB5A-460E-4B79-8EE2-F4F6FA94ECBB}" ShortID="633972192">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_PERLES_TUILES" ID="{E70EAE05-4174-4828-9C7E-C14582121F5B}" WorkUnitID="{33A9B59E-00EB-49C4-92FF-5A2330E219CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Stop_4NN4_MASTERING2" ID="{CB8118CB-D54B-4AFA-BACA-05842173B307}">
+				</Folder>
+				<Folder Name="PORTES" ID="{727F9BAD-C409-4A3D-A5B2-28FF9479E558}" ShortID="798991923">
 					<ChildrenList>
-						<Action Name="" ID="{C0E741B6-9B19-4B83-B9DE-555ABEC0EA5D}" ShortID="1052537544">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="4NN4_MASTERING2" ID="{1368F824-5DE1-485B-9779-1915D015E25B}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Play_SFX_PORTE_FINALE" ID="{9B701444-853A-407F-AA30-42F0C88B1D7C}">
+							<ChildrenList>
+								<Action Name="" ID="{98CB2C14-5DFC-4DDF-AE57-25566CCF1449}" ShortID="674042457">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_PORTE_FINALE" ID="{B692877B-B51D-4C63-8DA2-A51929D03716}" WorkUnitID="{35CEDD8C-522E-40A2-AE68-9C1877E44B99}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_FERMETURE_PORTE_TUTO" ID="{6D675055-2614-4BB2-A52C-BDBFC7611390}">
+							<ChildrenList>
+								<Action Name="" ID="{6200F7AB-6227-428A-89E1-69E27E966B52}" ShortID="549560093">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_FERMETURE_PORTE_TUTO" ID="{87768B83-0A0C-40FF-AB6E-710D6A087DCF}" WorkUnitID="{35CEDD8C-522E-40A2-AE68-9C1877E44B99}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_OUVERTURE_PORTE_TUTO" ID="{97D15166-3F68-41DB-A247-24200FFA3C7E}">
+							<ChildrenList>
+								<Action Name="" ID="{9CC21CE1-6552-4E7B-9829-84F66A5B81B7}" ShortID="130077996">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_OUVERTURE_PORTE_TUTO" ID="{B6836ABF-27FA-4C88-9043-44093883FA6D}" WorkUnitID="{35CEDD8C-522E-40A2-AE68-9C1877E44B99}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_FERMETURE_PORTE_PETITE" ID="{B779CA16-61A4-4A45-823D-7CA1E3DA3977}">
+							<ChildrenList>
+								<Action Name="" ID="{8305416D-CDBD-4817-8A23-D0913F3C14D7}" ShortID="918273768">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_FERMETURE_PORTE_PETITE" ID="{FD265EF0-B6E2-4CCD-9441-E7A3BE2F8BFF}" WorkUnitID="{35CEDD8C-522E-40A2-AE68-9C1877E44B99}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_PORTES_CHANGELIGHT" ID="{F92C3DAA-B1E1-4037-B7D0-05AF042E0323}">
+							<ChildrenList>
+								<Action Name="" ID="{82982A18-F210-4059-90FF-3BF015446430}" ShortID="1065566527">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_PORTES_CHANGELIGHT" ID="{A6F13EEB-826F-472B-9ED8-74330D4C231F}" WorkUnitID="{35CEDD8C-522E-40A2-AE68-9C1877E44B99}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_OUVERTURE_PORTE_PETITE" ID="{E0417EF2-804C-47BA-AFCF-71544CD27215}">
+							<ChildrenList>
+								<Action Name="" ID="{F4FA9F4D-0897-4B38-B670-8BD2A6273FEF}" ShortID="425587376">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_OUVERTURE_PORTE_PETITE" ID="{8A3F0EE5-79AD-42A0-B0A9-B67C4087ED67}" WorkUnitID="{35CEDD8C-522E-40A2-AE68-9C1877E44B99}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Play_SFX_FERMETURE_PORTE_PETITE" ID="{B779CA16-61A4-4A45-823D-7CA1E3DA3977}">
+				</Folder>
+				<Folder Name="DETECTION SCAN" ID="{8EB62DA2-6E4A-4A6B-9D1B-6A35AB255CDB}" ShortID="561391475">
 					<ChildrenList>
-						<Action Name="" ID="{8305416D-CDBD-4817-8A23-D0913F3C14D7}" ShortID="918273768">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SFX_FERMETURE_PORTE_PETITE" ID="{FD265EF0-B6E2-4CCD-9441-E7A3BE2F8BFF}" WorkUnitID="{35CEDD8C-522E-40A2-AE68-9C1877E44B99}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Play_SFX_DETECTION_LANCEMENT2" ID="{0D209940-88C6-47A2-899C-19CC4D36CECB}">
+							<ChildrenList>
+								<Action Name="" ID="{A8EE2D55-6869-48A9-8C26-E7571296D9E1}" ShortID="1029671064">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_DETECTION_LANCEMENT2" ID="{5F8CD4EA-8700-4838-B211-C92AD375C46C}" WorkUnitID="{506924A9-A2C9-454F-8B8E-FC7839558575}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_SCAN_OBJ" ID="{444B08C1-1647-44F3-9EEF-7216A2CB9FAA}">
+							<ChildrenList>
+								<Action Name="" ID="{04CE77FA-D8A5-4EA4-AA8B-4AB1CB846359}" ShortID="89945156">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_SCAN_OBJ" ID="{5B5F2A14-EC5A-498A-9335-1A44A6CF4386}" WorkUnitID="{506924A9-A2C9-454F-8B8E-FC7839558575}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Play_SFX_FERMETURE_PORTE_TUTO" ID="{6D675055-2614-4BB2-A52C-BDBFC7611390}">
-					<ChildrenList>
-						<Action Name="" ID="{6200F7AB-6227-428A-89E1-69E27E966B52}" ShortID="549560093">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SFX_FERMETURE_PORTE_TUTO" ID="{87768B83-0A0C-40FF-AB6E-710D6A087DCF}" WorkUnitID="{35CEDD8C-522E-40A2-AE68-9C1877E44B99}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_SFX_OUVERTURE_PORTE_PETITE" ID="{E0417EF2-804C-47BA-AFCF-71544CD27215}">
-					<ChildrenList>
-						<Action Name="" ID="{F4FA9F4D-0897-4B38-B670-8BD2A6273FEF}" ShortID="425587376">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SFX_OUVERTURE_PORTE_PETITE" ID="{8A3F0EE5-79AD-42A0-B0A9-B67C4087ED67}" WorkUnitID="{35CEDD8C-522E-40A2-AE68-9C1877E44B99}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_SFX_OUVERTURE_PORTE_TUTO" ID="{97D15166-3F68-41DB-A247-24200FFA3C7E}">
-					<ChildrenList>
-						<Action Name="" ID="{9CC21CE1-6552-4E7B-9829-84F66A5B81B7}" ShortID="130077996">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SFX_OUVERTURE_PORTE_TUTO" ID="{B6836ABF-27FA-4C88-9043-44093883FA6D}" WorkUnitID="{35CEDD8C-522E-40A2-AE68-9C1877E44B99}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_SFX_PORTE_FINALE" ID="{9B701444-853A-407F-AA30-42F0C88B1D7C}">
-					<ChildrenList>
-						<Action Name="" ID="{98CB2C14-5DFC-4DDF-AE57-25566CCF1449}" ShortID="674042457">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SFX_PORTE_FINALE" ID="{B692877B-B51D-4C63-8DA2-A51929D03716}" WorkUnitID="{35CEDD8C-522E-40A2-AE68-9C1877E44B99}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_SFX_PORTES_CHANGELIGHT" ID="{F92C3DAA-B1E1-4037-B7D0-05AF042E0323}">
-					<ChildrenList>
-						<Action Name="" ID="{82982A18-F210-4059-90FF-3BF015446430}" ShortID="1065566527">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SFX_PORTES_CHANGELIGHT" ID="{A6F13EEB-826F-472B-9ED8-74330D4C231F}" WorkUnitID="{35CEDD8C-522E-40A2-AE68-9C1877E44B99}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_SFX_BUMPER_BOOST" ID="{7F20912C-E345-4884-9490-BD001C93B4AB}">
-					<ChildrenList>
-						<Action Name="" ID="{8404E938-95A4-4192-850F-9155FFE25FAB}" ShortID="754337358">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SFX_BUMPER_BOOST" ID="{3D83A90D-A3F2-4726-B342-3273BB9CB540}" WorkUnitID="{33A9B59E-00EB-49C4-92FF-5A2330E219CF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_SFX_PERLES_TUILES" ID="{577E9065-FDFF-4631-AD31-4EDF1E80901B}">
-					<ChildrenList>
-						<Action Name="" ID="{497CBB5A-460E-4B79-8EE2-F4F6FA94ECBB}" ShortID="633972192">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SFX_PERLES_TUILES" ID="{E70EAE05-4174-4828-9C7E-C14582121F5B}" WorkUnitID="{33A9B59E-00EB-49C4-92FF-5A2330E219CF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
