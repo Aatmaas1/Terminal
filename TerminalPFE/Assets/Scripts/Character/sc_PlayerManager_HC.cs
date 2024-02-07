@@ -102,13 +102,6 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         StartCoroutine(TurnCam(obj));
     }
 
-    public void LookA(Transform looka)
-    {
-        Quaternion oldrot = transform.GetChild(0).rotation;
-        transform.LookAt(new Vector3(looka.position.x, transform.position.y, looka.position.z), Vector3.up);
-        transform.GetChild(0).rotation = oldrot;
-    }
-
     IEnumerator TurnCam(Transform obj)
     {
         Quaternion oldrot = transform.GetChild(0).rotation;
@@ -124,6 +117,26 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         {
             transform.GetChild(0).rotation = Quaternion.RotateTowards(transform.GetChild(0).rotation, oldrot, 1.5f);
             yield return new WaitForSeconds(0.01f);
+        }
+    }
+
+    public void LookA(Transform looka)
+    {
+        StartCoroutine(TurnPlayer(looka));
+        /*Quaternion oldrot = transform.GetChild(0).rotation;
+        transform.LookAt(new Vector3(looka.position.x, transform.position.y, looka.position.z), Vector3.up);
+        transform.GetChild(0).rotation = oldrot;*/
+    }
+    IEnumerator TurnPlayer(Transform obj)
+    {
+        Quaternion oldrot = transform.GetChild(0).rotation;
+
+        for (int i = 1; i <= 50; i++)
+        {
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(new Vector3(obj.position.x, 0, obj.position.z)
+                - new Vector3(transform.position.x, 0, transform.position.z), Vector3.up), 5f);
+            yield return new WaitForSeconds(0.01f);
+            transform.GetChild(0).rotation = oldrot;
         }
     }
 
