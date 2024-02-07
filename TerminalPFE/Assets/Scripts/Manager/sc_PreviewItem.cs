@@ -46,7 +46,7 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
 
     public void LoadData(GeneralData data)
     {
-        for (int temp = 0; temp < 12; temp++)
+        for (int temp = 0; temp < 8; temp++)
         {
             if (data.ItemsCollected[temp] == false)
             {
@@ -182,7 +182,7 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
 
     public void MajInv()
     {
-        for (int i = 0; i < 12; i++)
+        for (int i = 0; i < 8; i++)
         {
             ImageItem[i].GetComponent<TMP_Text>().text = IsObjects[i].nom;
         }
