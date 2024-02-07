@@ -97,6 +97,8 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         pInput.SwitchCurrentActionMap(mode);
     }
 
+
+    #region GestionCutscenes
     public void SetCamTo(Transform obj)
     {
         StartCoroutine(TurnCam(obj));
@@ -139,6 +141,21 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
             transform.GetChild(0).rotation = oldrot;
         }
     }
+    public void MoveToTerminal(Transform term)
+    {
+        StartCoroutine(MovePlayer(term));
+    }
+    IEnumerator MovePlayer(Transform obj)
+    {
+        while(Vector3.Distance(new Vector3(transform.position.x, 0, transform.position.z), new Vector3(obj.position.x, 0, obj.position.z)) > 0.8f)
+        {
+            transform.Translate(Vector3.Normalize(new Vector3(obj.position.x, 0, obj.position.z)
+                - new Vector3(transform.position.x, 0, transform.position.z)) * 0.02f);
+            yield return new WaitForSeconds(0.01f);
+        }
+    }
+
+    #endregion
 
     public void Respawn()
     {
