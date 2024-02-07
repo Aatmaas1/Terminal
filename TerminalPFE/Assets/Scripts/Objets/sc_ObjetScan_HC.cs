@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
 
@@ -11,10 +10,13 @@ public class sc_ObjetScan_HC : MonoBehaviour, IDataManager
     float color = 0;
     bool isBlue;
     bool isScanned = false;
+    VisualEffect dataVFX;
+    public int dataVFXChildIndex;
 
     private void Start()
     {
         Vfx = GetComponent<VisualEffect>();
+        dataVFX = transform.GetChild(dataVFXChildIndex).GetComponent<VisualEffect>();
     }
     private void FixedUpdate()
     {
@@ -24,7 +26,7 @@ public class sc_ObjetScan_HC : MonoBehaviour, IDataManager
         }
 
 
-        if(isBlue && color < 1)
+        if (isBlue && color < 1)
         {
             color += 0.05f;
         }
@@ -38,7 +40,7 @@ public class sc_ObjetScan_HC : MonoBehaviour, IDataManager
     {
         isBlue = true;
     }
-    
+
     public void DevientBlanc()
     {
         isBlue = false;
@@ -61,7 +63,15 @@ public class sc_ObjetScan_HC : MonoBehaviour, IDataManager
     IEnumerator FreezePlayer()
     {
         sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
-        yield return new WaitForSeconds(2.3f);
+
+        if (dataVFX != null)
+        {
+            yield return new WaitForSeconds(1f);
+            dataVFX.SendEvent("OnData");
+            yield return new WaitForSeconds(2.3f);
+        }
+        else
+            yield return new WaitForSeconds(2.3f);
         sc_PlayerManager_HC.Instance.SetInputMode("Player");
         sc_UIPauseManager.Instance.TestPause();
         sc_UIPauseManager.Instance.LoadInventory();
@@ -69,7 +79,7 @@ public class sc_ObjetScan_HC : MonoBehaviour, IDataManager
 
     public void LoadData(GeneralData data)
     {
-        if(data.ItemsCollected[ObjetRef.Index] == true)
+        if (data.ItemsCollected[ObjetRef.Index] == true)
         {
             isScanned = true;
         }
@@ -77,6 +87,6 @@ public class sc_ObjetScan_HC : MonoBehaviour, IDataManager
 
     public void SaveData(ref GeneralData data)
     {
-        
+
     }
 }
