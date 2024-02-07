@@ -42,13 +42,13 @@ public class sc_SceneManager_HC : MonoBehaviour
 
     public void PrepScene(string nom)
     {
+        sc_DataManager.instance.SaveAll();
         if (bLoadDone)
         {
             bLoadDone = false;
             isReadyToGo = false;
             StartCoroutine(LoadAsyncScene(nom));
         }
-        sc_DataManager.instance.SaveAll();
     }
 
     IEnumerator LoadAsyncScene(string nom)

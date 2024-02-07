@@ -79,9 +79,12 @@ namespace StarterAssets
 
 		private void SetCursorState(bool newState)
 		{
-			if (GetComponent<PlayerInput>().currentActionMap.name == "Player")
+			if (GetComponent<PlayerInput>())
 			{
-				Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
+				if (GetComponent<PlayerInput>().currentActionMap.name == "Player")
+				{
+					Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
+				}
 			}
 		}
 
