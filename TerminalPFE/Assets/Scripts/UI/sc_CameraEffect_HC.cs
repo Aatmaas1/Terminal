@@ -16,7 +16,7 @@ public class sc_CameraEffect_HC : MonoBehaviour
     void EndReached(UnityEngine.Video.VideoPlayer vp)
     {
         sc_SceneManager_HC.Instance.IsReadyToLoad();
-        vp.enabled = false;
+        //vp.enabled = false;
     }
 
     public void PlayVid()
