@@ -14,6 +14,7 @@ public class TestTrigger : MonoBehaviour, IDataManager
     VisualEffect Vfx;
     float color = 0;
     public float ChangementVitesseTerminalAnimation;
+    bool isInUse = false;
     private void Start()
     {
         Vfx = GetComponent<VisualEffect>();
@@ -51,8 +52,9 @@ public class TestTrigger : MonoBehaviour, IDataManager
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && !isInUse)
         {
+            isInUse = true;
             if (index == 1 && SceneManager.GetActiveScene().buildIndex == 2)
             {
                 sc_DataManager.instance.MoveRobotTuto(false);
@@ -69,6 +71,7 @@ public class TestTrigger : MonoBehaviour, IDataManager
             sc_PlayerManager_HC.Instance.IndexTerminal = index;
             sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
             sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimEntreeTerminalSimu");
+            GetComponent<sc_animationTerminalSimu>().lePersoSortDeSimu();
             StartCoroutine(DelayEffet());
         }
     }
