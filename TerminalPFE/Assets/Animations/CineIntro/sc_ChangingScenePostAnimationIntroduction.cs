@@ -9,7 +9,7 @@ public class sc_ChangingScenePostAnimationIntroduction : MonoBehaviour
 
     public void ChangeScene()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("LevelDesignReel");
     }
 
 }
