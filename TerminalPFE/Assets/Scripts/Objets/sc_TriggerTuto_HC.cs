@@ -20,14 +20,19 @@ public class sc_TriggerTuto_HC : MonoBehaviour
         {
             isUsed = true;
             sc_TutoManager_HC.Instance.TriggerActivated(index);
-            Debug.Log("Bye");
-            //gameObject.SetActive(false);
             if(_ZoneVFX != null && !alreadyActivated)
             {
                 _ZoneVFX.SendEvent("OnEnter");
                 _ZoneVFX.SetFloat("ColorChanger", 1);
                 alreadyActivated = true;
             }
+            StartCoroutine(Disable());
         }
+    }
+
+    IEnumerator Disable()
+    {
+        yield return new WaitForSeconds(0.5f);
+        gameObject.SetActive(false);
     }
 }

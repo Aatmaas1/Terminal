@@ -122,7 +122,7 @@ public class Bouton : MonoBehaviour, IDataManager
         sc_PlayerManager_HC.Instance.LookA(transform);
         sc_PlayerManager_HC.Instance.SetCamTo(PorteOuvertureParBouton.transform.GetChild(5));
 
-        yield return new WaitForSeconds(3.3f);
+        yield return new WaitForSeconds(3f);
         sc_PlayerManager_HC.Instance.SetInputMode("Player");
     }
 

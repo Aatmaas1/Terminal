@@ -29,11 +29,6 @@ public class sc_DataManager : MonoBehaviour
             Destroy(this);
         }
         instance = this;
-        //DontDestroyOnLoad(this);
-    }
-
-    private void Start()
-    {
         this.fileHandler = new sc_FileHandler_HC(Application.persistentDataPath, fileName);
         this.dataInterfaceObjects = FindAllDataInterfaceObjects();
         LoadAll();
