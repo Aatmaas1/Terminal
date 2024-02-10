@@ -14,7 +14,6 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
         if (other.CompareTag("Player"))
         {
             isBroken = true;
-            // transform.parent.gameObject.SetActive(false);
             animator.GetComponent<Animator>().SetTrigger("Destroy");
             PlayerAnimator.GetComponent<Animator>().SetTrigger("Fall");
             
@@ -31,7 +30,13 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
         if (data.SolCasse)
         {
             isBroken = true;
-            transform.parent.gameObject.SetActive(false);
+            Debug.Log("recasse");
+            animator.speed = 20f;
+            animator.GetComponent<Animator>().SetTrigger("Destroy");
+            if(!data.hasSwitchedBody)
+            {
+                BatterieLow.SetActive(true);
+            }
         }
     }
 

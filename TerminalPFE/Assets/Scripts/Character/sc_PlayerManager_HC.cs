@@ -35,6 +35,7 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         if (IndexTerminal >= 0)
         {
             pInput = GetComponent<PlayerInput>();
+            pInput.ActivateInput();
             Respawn();
             SetInputMode("Nothing");
             if(SceneManager.GetActiveScene().buildIndex == 1)
