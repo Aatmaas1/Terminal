@@ -25,16 +25,16 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         {
             Destroy(gameObject);
         }
-        GetComponent<PlayerInput>().ActivateInput();
         pInput = GetComponent<PlayerInput>();
+        pInput.ActivateInput();
     }
 
     public void LoadData(GeneralData data)
     {
         IndexTerminal = data.indexterminal;
-        //Debug.Log(data.LastPos);
         if (IndexTerminal >= 0)
         {
+            pInput = GetComponent<PlayerInput>();
             Respawn();
             SetInputMode("Nothing");
             if(SceneManager.GetActiveScene().buildIndex == 1)
