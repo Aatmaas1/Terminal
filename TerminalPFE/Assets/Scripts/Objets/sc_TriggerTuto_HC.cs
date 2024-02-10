@@ -5,6 +5,8 @@ using UnityEngine.VFX;
 
 public class sc_TriggerTuto_HC : MonoBehaviour
 {
+   // private UnityEventPortes UnityEventPortes;
+    //public GameObject PorteOuvertureParBouton;
     public int index;
     bool isUsed = false;
     VisualEffect _ZoneVFX;
@@ -12,6 +14,7 @@ public class sc_TriggerTuto_HC : MonoBehaviour
 
     private void Start()
     {
+        //UnityEventPortes = PorteOuvertureParBouton.GetComponent<UnityEventPortes>();
         _ZoneVFX = GetComponent<VisualEffect>();
     }
     private void OnTriggerEnter(Collider other)
@@ -19,6 +22,7 @@ public class sc_TriggerTuto_HC : MonoBehaviour
         if(other.tag == "Player" && !isUsed)
         {
             isUsed = true;
+           // UnityEventPortes.InteractDoorBouton();
             sc_TutoManager_HC.Instance.TriggerActivated(index);
             if(_ZoneVFX != null && !alreadyActivated)
             {
