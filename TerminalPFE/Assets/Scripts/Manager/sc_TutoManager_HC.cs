@@ -53,6 +53,7 @@ public class sc_TutoManager_HC : MonoBehaviour
         {
             case 1:
                 StartCoroutine(DelayTutoMove2());
+                TriggerPorte1.SetActive(true);
                 break;
 
 
@@ -71,9 +72,14 @@ public class sc_TutoManager_HC : MonoBehaviour
 
     IEnumerator DelayTutoMove2()
     {
+        sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
         yield return new WaitForSeconds(0.1f);
+        sc_PlayerManager_HC.Instance.SetCamTo(transform.GetChild(4));
         Anims.Play("TutoMove2");
-        Trigger2.SetActive(true);
+
+        yield return new WaitForSeconds(3f);
+        sc_PlayerManager_HC.Instance.SetInputMode("Player");
+        //Trigger2.SetActive(true);
 
     }
 

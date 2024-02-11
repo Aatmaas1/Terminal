@@ -75,6 +75,8 @@ public class sc_ObjetScan_HC : MonoBehaviour, IDataManager
         sc_PlayerManager_HC.Instance.SetInputMode("Player");
         sc_UIPauseManager.Instance.TestPause();
         sc_UIPauseManager.Instance.LoadInventory();
+        sc_PreviewItem.Instance.Highlight(ObjetRef.Index);
+        sc_PreviewItem.Instance.OnInterract();
     }
 
     public void LoadData(GeneralData data)
