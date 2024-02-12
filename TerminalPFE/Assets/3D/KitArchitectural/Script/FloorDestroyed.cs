@@ -54,7 +54,9 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
     }
     IEnumerator WaitAnimFall()
     {
+        sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
         yield return new WaitForSeconds(2.5f);
         PlayerAnimator.GetComponent<Animator>().SetTrigger("StopFall");
+        sc_PlayerManager_HC.Instance.SetInputMode("Player");
     }
 }
