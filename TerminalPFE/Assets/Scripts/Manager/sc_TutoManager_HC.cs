@@ -95,7 +95,10 @@ public class sc_TutoManager_HC : MonoBehaviour, IDataManager
 
     public void Boutoned()
     {
-        Anims.Play("TutoEnd");
+        if (Porte0Ouverte)
+        {
+            Anims.Play("TutoEnd");
+        }
     }
 
     public void OuvrePorte()
