@@ -2,7 +2,7 @@ using Cinemachine;
 using System.Collections;
 using UnityEngine;
 
-public class sc_TutoManager_HC : MonoBehaviour
+public class sc_TutoManager_HC : MonoBehaviour, IDataManager
 {
     public static sc_TutoManager_HC Instance;
 
@@ -11,6 +11,7 @@ public class sc_TutoManager_HC : MonoBehaviour
     public float StartDelay;
 
     Animator Anims;
+    bool Porte0Ouverte = true;
 
 
     private void Awake()
@@ -34,6 +35,7 @@ public class sc_TutoManager_HC : MonoBehaviour
         if (sc_DataManager.instance.TestIsNewSave())
         {
             TriggerPorte1.SetActive(false);
+            Porte0Ouverte = false;
             StartCoroutine(DelayStart());
         }
     }
@@ -58,7 +60,7 @@ public class sc_TutoManager_HC : MonoBehaviour
 
 
             case 2:
-                TriggerPorte1.SetActive(true);
+                //TriggerPorte1.SetActive(true);
                 Anims.Play("TutoMoveEnd");
                 TriggerTutoMoveStart.SetActive(true);
                 break;
@@ -74,6 +76,7 @@ public class sc_TutoManager_HC : MonoBehaviour
     {
         sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
         yield return new WaitForSeconds(0.1f);
+        OuvrePorte();
         sc_PlayerManager_HC.Instance.SetCamTo(transform.GetChild(4));
         Anims.Play("TutoMove2");
 
@@ -90,8 +93,34 @@ public class sc_TutoManager_HC : MonoBehaviour
         CamGameplay.GetComponent<CinemachineVirtualCamera>().LookAt = null;
     }
 
-    public void BoutonPressed()
+    public void Boutoned()
     {
         Anims.Play("TutoEnd");
+    }
+
+    public void OuvrePorte()
+    {
+        Porte0Ouverte = true;
+        TriggerPorte1.GetComponentInParent<UnityEventPortes>().InteractDoorBouton();
+    }
+
+    public void LoadData(GeneralData data)
+    {
+        if (data.porteTuto0Ouverte)
+        {
+            Porte0Ouverte = true;
+            StartCoroutine(Starting());
+        }
+    }
+
+    public void SaveData(ref GeneralData data)
+    {
+        data.porteTuto0Ouverte = Porte0Ouverte;
+    }
+
+    IEnumerator Starting()
+    {
+        yield return new WaitForSeconds(0.1f);
+        OuvrePorte();
     }
 }

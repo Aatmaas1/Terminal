@@ -6,7 +6,7 @@ public class GeneralData
     public int lastSceneLoaded, indexterminal;
     public Vector3 LastPos;
     public Quaternion LastRot;
-    public bool porteTuto1Ouverte, porteTuto2Ouverte, porteSortieOuverte, SolCasse, tutoBody, hasSwitchedBody;
+    public bool porteTuto0Ouverte, porteTuto1Ouverte, porteTuto2Ouverte, porteSortieOuverte, SolCasse, tutoBody, hasSwitchedBody;
     public bool[] ItemsCollected;
 
     public GeneralData()
@@ -15,6 +15,7 @@ public class GeneralData
         this.indexterminal = -1;
         this.LastPos = Vector3.zero;
         this.LastRot = Quaternion.identity;
+        this.porteTuto0Ouverte = false;
         this.porteTuto1Ouverte = false;
         this.porteTuto2Ouverte = false;
         this.porteSortieOuverte = false;
