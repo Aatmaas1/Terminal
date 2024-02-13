@@ -28,7 +28,6 @@ public class sc_plateformeSimu : MonoBehaviour
     }
      */
 
-   // /*
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -43,10 +42,9 @@ public class sc_plateformeSimu : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            gameObject.GetComponentInParent<MeshRenderer>().material.color = Color.red;
+            gameObject.GetComponentInParent<MeshRenderer>().material.color = new Color(0.2784313725490196f, 0.00784313725490196f, 0.30980392156862746f);
 
             //Debug.Log("La plateforme détecte le player en sortie");
         }
     }
-   // */
 }
