@@ -12,12 +12,11 @@ public class AK_PORTES_AM : MonoBehaviour
 
     public void Open()
     {
-        open.Post(gameObject);
-
-        if(gameObject.name == "PorteUsine" && portal != null)
+        if (gameObject.name == "PorteUsine" && portal != null)
         {
             portal.SetActive(true);
         }
+        open.Post(gameObject);
     }
 
     public void Close()
