@@ -258,11 +258,31 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: 57eb0de0f26d73c46a904cf4e57181af, type: 2}
+    - target: {fileID: -6453210915069073375, guid: d45f0ce82e859f84ca5c501d9a22b9ae,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d33dbc6dca2125542b18c874afcb499c, type: 2}
+    - target: {fileID: -6453210915069073375, guid: d45f0ce82e859f84ca5c501d9a22b9ae,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: d33dbc6dca2125542b18c874afcb499c, type: 2}
     - target: {fileID: -4822382995428504699, guid: d45f0ce82e859f84ca5c501d9a22b9ae,
         type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -2573065736091385540, guid: d45f0ce82e859f84ca5c501d9a22b9ae,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d33dbc6dca2125542b18c874afcb499c, type: 2}
+    - target: {fileID: -2573065736091385540, guid: d45f0ce82e859f84ca5c501d9a22b9ae,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: d33dbc6dca2125542b18c874afcb499c, type: 2}
     - target: {fileID: 334833198096839571, guid: d45f0ce82e859f84ca5c501d9a22b9ae,
         type: 3}
       propertyPath: m_IsActive
@@ -482,6 +502,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: b27ef65995d89ab4793b1557fe38afab,
       type: 2}
+  portal: {fileID: 0}
 --- !u!54 &3499453494545306894
 Rigidbody:
   m_ObjectHideFlags: 0
