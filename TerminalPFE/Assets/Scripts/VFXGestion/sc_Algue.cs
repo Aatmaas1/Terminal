@@ -23,9 +23,9 @@ public class sc_Algue : MonoBehaviour
         if( _mat == null )
             _mat = GetComponentInChildren<SkinnedMeshRenderer>().material;
 
-        float distance = Mathf.Clamp(Vector3.Distance(transform.position, _playerTransform.position), 0, 1);
+        float distance = Mathf.Clamp(Vector3.Distance(transform.position, _playerTransform.position), 0, 2);
 
-        growValue = (Mathf.Abs(distance));
+        growValue = (Mathf.Abs(distance/2));
 
         _mat.SetFloat("_Grow", growValue);
 
