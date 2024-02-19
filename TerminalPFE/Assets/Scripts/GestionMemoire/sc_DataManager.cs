@@ -152,4 +152,16 @@ public class sc_DataManager : MonoBehaviour
             return false;
         }
     }
+
+    public void CheatCode()
+    {
+        NewGame();
+        generalData.lastSceneLoaded = 1;
+        generalData.indexterminal = -1;
+        generalData.LastPos = new Vector3(57, 0, 4);
+        generalData.LastRot = new Quaternion(0, 0.637f, 0, 0.77f);
+        generalData.porteTuto0Ouverte = true;
+        generalData.porteTuto1Ouverte = true;
+        generalData.porteTuto2Ouverte = true;
+    }
 }
