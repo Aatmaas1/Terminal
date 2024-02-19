@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class AK_POSTEVENT_AM : MonoBehaviour
 {
-    public AK.Wwise.Event playScan;
+    public AK.Wwise.Event playEvent;
 
     public void PostEvent()
     {
-        playScan.Post(gameObject);
+        playEvent.Post(gameObject);
     }
 }

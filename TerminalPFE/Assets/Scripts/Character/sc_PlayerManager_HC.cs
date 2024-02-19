@@ -1,10 +1,10 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.InputSystem;
 using System.Linq;
-using Cinemachine;
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
 {
@@ -38,7 +38,7 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
             pInput.ActivateInput();
             Respawn();
             SetInputMode("Nothing");
-            if(SceneManager.GetActiveScene().buildIndex == 1)
+            if (SceneManager.GetActiveScene().buildIndex == 1)
             {
                 GetComponent<Animator>().Play("AnimSortieTerminalReel");
             }
@@ -65,7 +65,7 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         data.LastPos = transform.position;
         data.LastRot = transform.rotation;
         data.indexterminal = IndexTerminal;
-        if(SceneManager.GetActiveScene().buildIndex == 1 || SceneManager.GetActiveScene().buildIndex == 2)
+        if (SceneManager.GetActiveScene().buildIndex == 1 || SceneManager.GetActiveScene().buildIndex == 2)
         {
             data.lastSceneLoaded = SceneManager.GetActiveScene().buildIndex;
         }
@@ -100,19 +100,18 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
 
 
     #region GestionCutscenes
-    public void SetCamTo(Transform obj)
+    public void MakeCamLookAt(Transform obj)
     {
         StartCoroutine(TurnCam(obj));
     }
-
     IEnumerator TurnCam(Transform obj)
     {
         Quaternion oldrot = transform.GetChild(0).rotation;
 
-        for (int i = 1; i<= 60; i++)
+        for (int i = 1; i <= 60; i++)
         {
             transform.GetChild(0).rotation = Quaternion.RotateTowards(transform.GetChild(0).rotation,
-                Quaternion.LookRotation(obj.position - transform.GetChild(0).position, Vector3.up),3f);
+                Quaternion.LookRotation(obj.position - transform.GetChild(0).position, Vector3.up), 3f);
             yield return new WaitForSeconds(0.01f);
         }
         yield return new WaitForSeconds(1f);
@@ -123,12 +122,9 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         }
     }
 
-    public void LookA(Transform looka)
+    public void TurnPlayerToward(Transform cible)
     {
-        StartCoroutine(TurnPlayer(looka));
-        /*Quaternion oldrot = transform.GetChild(0).rotation;
-        transform.LookAt(new Vector3(looka.position.x, transform.position.y, looka.position.z), Vector3.up);
-        transform.GetChild(0).rotation = oldrot;*/
+        StartCoroutine(TurnPlayer(cible));
     }
     IEnumerator TurnPlayer(Transform obj)
     {
@@ -142,18 +138,47 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
             transform.GetChild(0).rotation = oldrot;
         }
     }
+
     public void MoveToTerminal(Transform term)
     {
         StartCoroutine(MovePlayer(term));
     }
     IEnumerator MovePlayer(Transform obj)
     {
-        while(Vector3.Distance(new Vector3(transform.position.x, 0, transform.position.z), new Vector3(obj.position.x, 0, obj.position.z)) > 0.8f)
+        while (Vector3.Distance(new Vector3(transform.position.x, 0, transform.position.z), new Vector3(obj.position.x, 0, obj.position.z)) > 0.8f)
         {
             transform.Translate(Vector3.Normalize(new Vector3(obj.position.x, 0, obj.position.z)
                 - new Vector3(transform.position.x, 0, transform.position.z)) * 0.02f);
             yield return new WaitForSeconds(0.01f);
         }
+    }
+
+    public void CameraScan(GameObject cible)
+    {
+        StartCoroutine(CutsceneScan(cible));
+    }
+    IEnumerator CutsceneScan(GameObject cible)
+    {
+        Quaternion oldrot = transform.GetChild(0).rotation;
+
+
+        float maxspeed = Vector3.Angle(transform.GetChild(0).forward, Vector3.Scale(cible.transform.position, new Vector3(1, 1, 0)) -
+            Vector3.Scale(transform.GetChild(0).position, new Vector3(1, 1, 0))) / 70f;
+        for (int i = 1; i <= 150; i++)
+        {
+            transform.GetChild(0).rotation = Quaternion.RotateTowards(transform.GetChild(0).rotation,
+                Quaternion.LookRotation(Vector3.Scale(cible.transform.position, new Vector3(1, 1, 0)) -
+                Vector3.Scale(transform.GetChild(0).position, new Vector3(1, 1, 0)), Vector3.up), maxspeed);
+            yield return new WaitForSeconds(0.01f);
+        }
+        yield return new WaitForSeconds(0.7f);
+        for (int i = 1; i <= 100; i++)
+        {
+            transform.GetChild(0).Rotate(new Vector3(-45 / 100f, 0, 0));
+            yield return new WaitForSeconds(0.01f);
+        }
+
+        transform.GetChild(0).rotation = oldrot;
     }
 
     #endregion
