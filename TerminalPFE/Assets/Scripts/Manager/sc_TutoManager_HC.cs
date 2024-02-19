@@ -77,7 +77,7 @@ public class sc_TutoManager_HC : MonoBehaviour, IDataManager
         sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
         yield return new WaitForSeconds(0.1f);
         OuvrePorte();
-        sc_PlayerManager_HC.Instance.SetCamTo(transform.GetChild(4));
+        sc_PlayerManager_HC.Instance.MakeCamLookAt(transform.GetChild(4));
         Anims.Play("TutoMove2");
 
         yield return new WaitForSeconds(3f);

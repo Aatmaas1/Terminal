@@ -36,6 +36,7 @@ public class sc_ObjetScan_HC : MonoBehaviour, IDataManager
         }
         Vfx.SetFloat("ColorChanger", color);
     }
+
     public void DevientBleu()
     {
         isBlue = true;
@@ -55,8 +56,9 @@ public class sc_ObjetScan_HC : MonoBehaviour, IDataManager
             sc_PlayerManager_HC.Instance.transform.GetChild(9).GetComponent<VisualEffect>().SendEvent("OnScan");
             sc_PlayerManager_HC.Instance.transform.GetChild(9).GetComponent<AK_POSTEVENT_AM>().PostEvent();
             sc_ScreenShake.instance.OnInteractPlayerLight();
+            sc_PlayerManager_HC.Instance.TurnPlayerToward(transform);
             StartCoroutine(FreezePlayer());
-            sc_PlayerManager_HC.Instance.LookA(transform);
+            sc_PlayerManager_HC.Instance.CameraScan(gameObject);
         }
     }
 
@@ -81,7 +83,7 @@ public class sc_ObjetScan_HC : MonoBehaviour, IDataManager
 
     public void LoadData(GeneralData data)
     {
-        if(ObjetRef.Index <= 11)
+        if (ObjetRef.Index <= 11)
         {
             if (data.ItemsCollected[ObjetRef.Index] == true)
             {
