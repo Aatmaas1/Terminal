@@ -81,9 +81,12 @@ public class sc_ObjetScan_HC : MonoBehaviour, IDataManager
 
     public void LoadData(GeneralData data)
     {
-        if (data.ItemsCollected[ObjetRef.Index] == true)
+        if(ObjetRef.Index <= 11)
         {
-            isScanned = true;
+            if (data.ItemsCollected[ObjetRef.Index] == true)
+            {
+                isScanned = true;
+            }
         }
     }
 
