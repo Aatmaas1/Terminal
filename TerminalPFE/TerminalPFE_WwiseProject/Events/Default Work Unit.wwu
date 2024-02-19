@@ -196,6 +196,21 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="INTRODUCTION" ID="{15F67296-FB51-4583-A345-7E6AE462E197}" ShortID="489691828">
+					<ChildrenList>
+						<Event Name="Play_SFX_CONSTRUCTION_ANDRO" ID="{05097D6E-F435-443E-8568-7DE6CAC5DCFB}">
+							<ChildrenList>
+								<Action Name="" ID="{5289C34D-A6C4-4BC2-B69F-B11ED3997049}" ShortID="140834448">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_CONSTRUCTION_ANDRO" ID="{39051024-50B6-45C0-82EA-8A53D97371C2}" WorkUnitID="{AC4208DC-5399-48C9-B7CC-46E5EA3F80D2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
