@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 1cf59fa78aed4b48900c0883722c8eb0
     GuidInternal: 
-    m_lastTime: -8584956867393635481
+    m_lastTime: -8584961376108387220
     List:
     - name: BETON
       guid: 4c9ae77e8847c643b2c6e42551e1bd87
@@ -51,7 +51,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Factory Acoustic Textures
     guid: 6b663d46a83ca54f8b4a5fef12b883f6
     GuidInternal: 
-    m_lastTime: -8584956867393635481
+    m_lastTime: -8584961376108367210
     List:
     - name: Acoustic_Banner
       guid: f2532d2fccda8e408b8898b1b52a26d6
@@ -317,7 +317,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: a496d604dfb54f43bca9994076f26b0d
     GuidInternal: 
-    m_lastTime: -8584948957268205240
+    m_lastTime: -8584956000894313691
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -522,7 +522,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e364e8b048b1b448b41f12b8470ec700
     GuidInternal: 
-    m_lastTime: -8584941745420799973
+    m_lastTime: -8584932703717461415
     List:
     - name: Main
       guid: 251dc717ef0fef42a545f46544a81c52
@@ -550,7 +550,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 32fcbe829e1db64882c8fd8a959356a5
     GuidInternal: 
-    m_lastTime: -8584941745426720275
+    m_lastTime: -8584932703978390880
     List:
     - name: DETECTION SCAN
       guid: a22db68e4a6e6b4a9d1b6a35ab255cdb
@@ -566,6 +566,23 @@ MonoBehaviour:
         ObjectType: 4
         guid: a22db68e4a6e6b4a9d1b6a35ab255cdb
       Path: Events\Default Work Unit\DETECTION SCAN
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: INTRODUCTION
+      guid: 9672f61551fb8345a3457e6ae462e197
+      id: 1034344105
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: INTRODUCTION
+        ObjectType: 4
+        guid: 9672f61551fb8345a3457e6ae462e197
+      Path: Events\Default Work Unit\INTRODUCTION
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -683,6 +700,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.5843333
       minDuration: 1.5843333
+    - name: Play_SFX_CONSTRUCTION_ANDRO
+      guid: 6e7d090535f43e4485687de6cac5dcfb
+      id: 1925718750
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: INTRODUCTION
+        ObjectType: 4
+        guid: 9672f61551fb8345a3457e6ae462e197
+      - ElementName: Play_SFX_CONSTRUCTION_ANDRO
+        ObjectType: 3
+        guid: 6e7d090535f43e4485687de6cac5dcfb
+      Path: Events\Default Work Unit\INTRODUCTION\Play_SFX_CONSTRUCTION_ANDRO
+      maxAttenuation: 0
+      maxDuration: 24.364792
+      minDuration: 24.364792
     - name: Play_SFX_DETECTION_LANCEMENT2
       guid: 4099200dc688a247899c19cc4d36cecb
       id: 2126400971
@@ -994,7 +1031,7 @@ MonoBehaviour:
     m_lastTime: -8584991312705959035
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 02000000030000000400000024000000
+  ExpandedWaapiItemIds: 0200000003000000040000000500000006000000080000000f0000001000000024000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

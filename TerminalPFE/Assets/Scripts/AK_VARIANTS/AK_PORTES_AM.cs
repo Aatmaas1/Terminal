@@ -8,20 +8,18 @@ public class AK_PORTES_AM : MonoBehaviour
     public AK.Wwise.Event close;
     public AK.Wwise.Event changeLight;
 
-    public GameObject portal;
+    public AkRoomPortal portal;
 
     public void Open()
     {
-        if (gameObject.name == "PorteUsine" && portal != null)
-        {
-            portal.SetActive(true);
-        }
+        portal.Open();
         open.Post(gameObject);
     }
 
     public void Close()
     {
         close.Post(gameObject);
+        portal.Close();
     }
 
     public void ChangeLight()

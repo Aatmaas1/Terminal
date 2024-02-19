@@ -252,7 +252,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{79CCE58B-B003-2FBF-0881-3FE08E868BAD}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B89EEF7B-4541-F1E2-58B5-EADE4B8579DC}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -271,6 +271,10 @@
 				<File Id="85067457" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_5.wav</ShortName>
 					<CachePath>SFX/SFX_SIMULATION_TUILES_5_818F3B66.wem</CachePath>
+				</File>
+				<File Id="214063422" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_CONSTRUCTION_ANDROÏDE.wav</ShortName>
+					<CachePath>SFX/SFX_CONSTRUCTION_ANDROÏDE_A2DB6565.wem</CachePath>
 				</File>
 				<File Id="352465723" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>4NN4_MASTERING2.wav</ShortName>
@@ -391,6 +395,11 @@
 						<MediaRef Id="1004497866"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1925718750" Name="Play_SFX_CONSTRUCTION_ANDRO" DurationType="OneShot" DurationMin="24.364792" DurationMax="24.364792">
+					<MediaRefs>
+						<MediaRef Id="214063422"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2126400971" Name="Play_SFX_DETECTION_LANCEMENT2" DurationType="OneShot" DurationMin="9.384625" DurationMax="9.384625">
 					<MediaRefs>
 						<MediaRef Id="356420912"/>
@@ -450,5 +459,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{EED422C9-2ECB-F78C-A716-3153A896E364}</FileHash>
+	<FileHash>{3F9FFAE6-39B1-C1EE-4EBE-7B716A75B178}</FileHash>
 </SoundBanksInfo>
