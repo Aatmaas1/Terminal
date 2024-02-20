@@ -118,8 +118,8 @@ public class Bouton : MonoBehaviour, IDataManager
     IEnumerator CamPorte()
     {
         sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
-        yield return new WaitForSeconds(0.2f);
         sc_PlayerManager_HC.Instance.TurnPlayerToward(transform);
+        yield return new WaitForSeconds(0.5f);
         sc_PlayerManager_HC.Instance.MakeCamLookAt(PorteOuvertureParBouton.transform.GetChild(4));
 
         yield return new WaitForSeconds(3f);

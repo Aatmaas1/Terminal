@@ -108,20 +108,23 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
     }
     IEnumerator TurnCam(Transform obj)
     {
-        Quaternion oldrot = transform.GetChild(0).rotation;
+        Transform chi = transform.GetChild(0);
+        Quaternion oldrot = chi.rotation;
 
-        Vector3 direction = (obj.position - transform.GetChild(0).position).normalized;
+        Vector3 direction = (obj.position - chi.position).normalized;
+        float speed = Vector3.Angle(transform.GetChild(0).forward, direction)/60f;
 
         for (int i = 1; i <= 60; i++)
         {
-            transform.GetChild(0).rotation = Quaternion.RotateTowards(transform.GetChild(0).rotation,
-                Quaternion.LookRotation(direction, Vector3.up), 3f);
+            chi.rotation = Quaternion.RotateTowards(chi.rotation, Quaternion.LookRotation(direction, Vector3.up), speed*2);
+            chi.eulerAngles = Vector3.Scale(chi.rotation.eulerAngles, new Vector3(1, 1, 0));
             yield return new WaitForSeconds(0.01f);
         }
         yield return new WaitForSeconds(1f);
         for (int i = 1; i <= 120; i++)
         {
-            transform.GetChild(0).rotation = Quaternion.RotateTowards(transform.GetChild(0).rotation, oldrot, 1.5f);
+            transform.GetChild(0).rotation = Quaternion.RotateTowards(transform.GetChild(0).rotation, oldrot, speed);
+            chi.eulerAngles = Vector3.Scale(chi.rotation.eulerAngles, new Vector3(1, 1, 0));
             yield return new WaitForSeconds(0.01f);
         }
     }
@@ -197,8 +200,8 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
                 GetComponent<CharacterController>().enabled = false;
                 transform.position = terminaux[i].playerAvatarSpawn.transform.position;
                 transform.rotation = terminaux[i].playerAvatarSpawn.transform.rotation;
-                transform.GetChild(0).rotation = Quaternion.Euler(0, 0, 0);
-                GetComponent<StarterAssets.ThirdPersonController>().ResetCam();
+                GetComponent<StarterAssets.ThirdPersonController>().ResetCam(new Vector2(0, 0f));
+                transform.GetChild(0).rotation = transform.rotation;
                 GetComponent<CharacterController>().enabled = true;
             }
         }
