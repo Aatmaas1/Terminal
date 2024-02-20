@@ -13,6 +13,8 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
     public static sc_PlayerManager_HC Instance;
     public int IndexTerminal = -1;
 
+    public float dureeAnimRespawn;
+
     PlayerInput pInput;
 
     private void Awake()
@@ -196,6 +198,20 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
                 GetComponent<CharacterController>().enabled = true;
             }
         }
+    }
+
+    public void LanceAnimRespawn()
+    {
+        StartCoroutine(AnimRespawn());
+    }
+
+    IEnumerator AnimRespawn()
+    {
+        SetInputMode("Nothing");
+        GetComponent<Animator>().Play("AnimRespawn");
+        yield return new WaitForSeconds(dureeAnimRespawn);
+        SetInputMode("Player");
+
     }
 
     public void EndAnim()

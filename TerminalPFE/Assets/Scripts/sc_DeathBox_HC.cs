@@ -19,6 +19,6 @@ public class sc_DeathBox_HC : MonoBehaviour
     {
         yield return new WaitForSeconds(dureeAnim);
         sc_PlayerManager_HC.Instance.Respawn();
-        sc_PlayerManager_HC.Instance.SetInputMode("Player");
+        sc_PlayerManager_HC.Instance.LanceAnimRespawn();
     }
 }
