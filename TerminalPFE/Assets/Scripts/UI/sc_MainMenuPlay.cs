@@ -10,7 +10,7 @@ public class sc_MainMenuPlay : MonoBehaviour, IBoutonsMainMenu_HC, IPointerEnter
     public string sceneName;
     public void IsClicked()
     {
-        if(value == 1)
+        if(value == 1 || value == 3)
         {
             sc_DataManager.instance.NewGame();
         }

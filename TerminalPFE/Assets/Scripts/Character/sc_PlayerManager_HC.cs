@@ -110,10 +110,12 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
     {
         Quaternion oldrot = transform.GetChild(0).rotation;
 
+        Vector3 direction = (obj.position - transform.GetChild(0).position).normalized;
+
         for (int i = 1; i <= 60; i++)
         {
             transform.GetChild(0).rotation = Quaternion.RotateTowards(transform.GetChild(0).rotation,
-                Quaternion.LookRotation(obj.position - transform.GetChild(0).position, Vector3.up), 3f);
+                Quaternion.LookRotation(direction, Vector3.up), 3f);
             yield return new WaitForSeconds(0.01f);
         }
         yield return new WaitForSeconds(1f);

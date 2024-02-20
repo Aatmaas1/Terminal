@@ -2001,8 +2001,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1552621304}
-  - component: {fileID: 1552621309}
   - component: {fileID: 1552621308}
+  - component: {fileID: 1552621309}
   - component: {fileID: 1552621307}
   - component: {fileID: 1552621305}
   m_Layer: 5
@@ -2098,7 +2098,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1552621309}
-        m_TargetAssemblyTypeName: sc_MainMenuQuit_HC, Assembly-CSharp
+        m_TargetAssemblyTypeName: sc_MainMenuPlay, Assembly-CSharp
         m_MethodName: IsClicked
         m_Mode: 1
         m_Arguments:
@@ -2163,11 +2163,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1552621303}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07c4306486f3ce54fbc2fd623401700e, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b7d6aecbd5786a4e9e087a34b8021c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   value: 3
   script: {fileID: 1802576074}
+  sceneName: LevelDesignReel
 --- !u!20 &1657274286 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 109594368029046378, guid: ea06adb326b375748b4cde697cd75d85,
@@ -3315,7 +3316,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Cr\xE9dits"
+  m_text: "Cr\xE9dits (en fait New game sans Intro)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 280e98f64cfc208478e4a11c4ed2579f, type: 2}
   m_sharedMaterial: {fileID: 8031471863272568227, guid: 280e98f64cfc208478e4a11c4ed2579f,
