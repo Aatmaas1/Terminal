@@ -473,5 +473,11 @@ namespace StarterAssets
             }
             _externalInput = Vector3.zero;
         }
+
+        public void ResetCam()
+        {
+            _cinemachineTargetPitch = 0;
+            _cinemachineTargetYaw = 0;
+        }
     }
 }
