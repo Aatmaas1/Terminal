@@ -12,14 +12,23 @@ public class AK_PORTES_AM : MonoBehaviour
 
     public void Open()
     {
-        portal.Open();
+        if(portal != null)
+        {
+            portal.Open();
+        }
+        
         open.Post(gameObject);
     }
 
     public void Close()
     {
         close.Post(gameObject);
-        portal.Close();
+
+        if (portal != null)
+        {
+            portal.Close();
+        }
+
     }
 
     public void ChangeLight()
