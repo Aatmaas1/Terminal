@@ -4,6 +4,13 @@
 		<WorkUnit Name="INTRO CONSTRUCTION ANDRO" ID="{AC4208DC-5399-48C9-B7CC-46E5EA3F80D2}" OwnerID="{5477266C-D991-4580-A687-CA6FC8AF0645}" PersistMode="Nested">
 			<ChildrenList>
 				<Sound Name="SFX_CONSTRUCTION_ANDRO" ID="{39051024-50B6-45C0-82EA-8A53D97371C2}" ShortID="574166625">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-24</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
