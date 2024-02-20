@@ -27,7 +27,6 @@ public class sc_ChangeLightColor : MonoBehaviour
     {
         if(calbe != null)
             cableMat = calbe.GetComponent<LineRenderer>().materials[0];
-        akPortes = GetComponent<AK_PORTES_AM>();
     }
 
     public void ChangeLights(int lightIndex)
