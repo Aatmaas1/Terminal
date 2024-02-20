@@ -197,6 +197,8 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
                 GetComponent<CharacterController>().enabled = false;
                 transform.position = terminaux[i].playerAvatarSpawn.transform.position;
                 transform.rotation = terminaux[i].playerAvatarSpawn.transform.rotation;
+                transform.GetChild(0).rotation = Quaternion.Euler(0, 0, 0);
+                GetComponent<StarterAssets.ThirdPersonController>().ResetCam();
                 GetComponent<CharacterController>().enabled = true;
             }
         }
