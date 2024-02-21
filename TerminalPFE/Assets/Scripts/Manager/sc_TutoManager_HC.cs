@@ -6,7 +6,7 @@ public class sc_TutoManager_HC : MonoBehaviour, IDataManager
 {
     public static sc_TutoManager_HC Instance;
 
-    public GameObject CamGameplay, CamTuto, Trigger1, Trigger2, TriggerPorte1, TriggerTutoMoveStart;
+    public GameObject CamGameplay, CamTuto, Trigger1, Porte1, TriggerTutoMoveStart;
 
     public float StartDelay;
 
@@ -34,7 +34,6 @@ public class sc_TutoManager_HC : MonoBehaviour, IDataManager
 
         if (sc_DataManager.instance.TestIsNewSave())
         {
-            TriggerPorte1.SetActive(false);
             Porte0Ouverte = false;
             StartCoroutine(DelayStart());
         }
@@ -42,11 +41,11 @@ public class sc_TutoManager_HC : MonoBehaviour, IDataManager
 
     IEnumerator DelayStart()
     {
+        //Trigger1.SetActive(true);
         yield return new WaitForSeconds(StartDelay);
         sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
         CamGameplay.SetActive(false);
         Anims.Play("TutoMove1");
-        Trigger1.SetActive(true);
     }
 
     public void TriggerActivated(int index)
@@ -55,7 +54,8 @@ public class sc_TutoManager_HC : MonoBehaviour, IDataManager
         {
             case 1:
                 StartCoroutine(DelayTutoMove2());
-                TriggerPorte1.SetActive(true);
+                Porte1.GetComponent<UnityEventPortes>().InteractDoorBouton();
+                Porte0Ouverte = true;
                 break;
 
 
@@ -77,7 +77,7 @@ public class sc_TutoManager_HC : MonoBehaviour, IDataManager
         sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
         yield return new WaitForSeconds(0.1f);
         OuvrePorte();
-        sc_PlayerManager_HC.Instance.MakeCamLookAt(transform.GetChild(4));
+        sc_PlayerManager_HC.Instance.MakeCamLookAt(Porte1.transform.GetChild(4));
         Anims.Play("TutoMove2");
 
         yield return new WaitForSeconds(3f);
@@ -104,7 +104,7 @@ public class sc_TutoManager_HC : MonoBehaviour, IDataManager
     public void OuvrePorte()
     {
         Porte0Ouverte = true;
-        TriggerPorte1.GetComponentInParent<UnityEventPortes>().InteractDoorBouton();
+        Porte1.GetComponent<UnityEventPortes>().InteractDoorBouton();
     }
 
     public void LoadData(GeneralData data)
@@ -113,6 +113,10 @@ public class sc_TutoManager_HC : MonoBehaviour, IDataManager
         {
             Porte0Ouverte = true;
             StartCoroutine(Starting());
+        }
+        else
+        {
+            Trigger1.SetActive(true);
         }
     }
 
