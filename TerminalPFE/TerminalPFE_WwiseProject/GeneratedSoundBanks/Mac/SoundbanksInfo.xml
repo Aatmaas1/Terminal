@@ -9,20 +9,20 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{0DBF060B-E6AD-8FCE-8F77-1E30FD323EF3}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A6FCFF23-B230-191A-0573-0293A523D34A}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
 				<Custom>
-					<Plugin Id="144472841" Name="Hall_Large_Dark (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="268380290" Name="Room_Medium_High_Absorbtion (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="285849851" Name="Hall_Large (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="421856901" Name="Room_Small (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="452199371" Name="Room_Large (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="618729785" Name="Room_Medium (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
-					<Plugin Id="653677774" Name="Hall_Medium_Bright (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
-					<Plugin Id="697846693" Name="Hall_Medium_Dark (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</Custom>
+				<ShareSets>
+					<Plugin Id="3451596814" Name="Hall_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
@@ -52,16 +52,6 @@
 						<AuxBusRef Id="1686871543" Name="ReverbMaster"/>
 					</AuxBusRefs>
 				</AuxBus>
-				<AuxBus Id="1552931280" Name="RoomRefectoire2">
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="697846693"/>
-						</Custom>
-					</PluginRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="1686871543" Name="ReverbMaster"/>
-					</AuxBusRefs>
-				</AuxBus>
 				<AuxBus Id="1686871543" Name="ReverbMaster"/>
 				<AuxBus Id="3205342581" Name="RoomSmall">
 					<PluginRefs>
@@ -73,21 +63,11 @@
 						<AuxBusRef Id="1686871543" Name="ReverbMaster"/>
 					</AuxBusRefs>
 				</AuxBus>
-				<AuxBus Id="3453832305" Name="RoomHallDark">
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="144472841"/>
-						</Custom>
-					</PluginRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="1686871543" Name="ReverbMaster"/>
-					</AuxBusRefs>
-				</AuxBus>
 				<AuxBus Id="3501257686" Name="RoomRefectoire">
 					<PluginRefs>
-						<Custom>
-							<PluginRef Id="653677774"/>
-						</Custom>
+						<ShareSets>
+							<PluginRef Id="3451596814"/>
+						</ShareSets>
 					</PluginRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="1686871543" Name="ReverbMaster"/>
@@ -252,7 +232,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{F0689A44-FAA0-C593-EE79-807BA91C4A95}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E93AD85B-8EDD-7961-5138-1F745878BCAC}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -459,5 +439,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{30BFFF9D-854B-290F-9324-85C443CBBD63}</FileHash>
+	<FileHash>{8667278E-E541-D724-5E09-EF4F93C4ED9F}</FileHash>
 </SoundBanksInfo>

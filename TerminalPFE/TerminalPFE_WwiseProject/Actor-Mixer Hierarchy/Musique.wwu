@@ -4,13 +4,6 @@
 		<WorkUnit Name="Musique" ID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}" OwnerID="{AB2030D7-FEB3-4931-8F66-2372D24A8919}" PersistMode="Nested">
 			<ChildrenList>
 				<Sound Name="4NN4_MASTERING2" ID="{1368F824-5DE1-485B-9779-1915D015E25B}" ShortID="109313220">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-10</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
@@ -37,7 +30,7 @@
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-20</Value>
+								<Value>-10</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
