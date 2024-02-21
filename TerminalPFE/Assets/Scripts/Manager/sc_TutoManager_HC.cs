@@ -54,8 +54,7 @@ public class sc_TutoManager_HC : MonoBehaviour, IDataManager
         {
             case 1:
                 StartCoroutine(DelayTutoMove2());
-                Porte1.GetComponent<UnityEventPortes>().InteractDoorBouton();
-                Porte0Ouverte = true;
+                OuvrePorte();
                 break;
 
 
