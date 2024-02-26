@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
-using UnityEngine.SceneManagement;
+using UnityEngine.VFX;
 
 public class sc_CameraEffect_HC : MonoBehaviour
 {
@@ -23,6 +23,7 @@ public class sc_CameraEffect_HC : MonoBehaviour
     {
         Camera.main.nearClipPlane = 0.01f;
         videoPlayer.Play();
+        GetComponent<VisualEffect>().enabled = false;
     }
 
     

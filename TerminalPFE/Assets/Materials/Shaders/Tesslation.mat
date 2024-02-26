@@ -48,7 +48,7 @@ Material:
     m_Floats:
     - _Clip: 0.15
     - _HeightMult: 0.25
-    - _NoiseScale: 8
+    - _NoiseScale: 20
     - _Position: 3.5
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -56,8 +56,8 @@ Material:
     - _NoiseSpeed: {r: 0.025, g: -0.025, b: 0, a: 0}
     - _Offset: {r: 0.09, g: 0.06, b: 0, a: 0}
     - _OffsetSpeed: {r: -0.05, g: 0.05, b: 0, a: 0}
-    - _TesslationColor: {r: 4.131263, g: 0, b: 5.992157, a: 0}
-    - _Tiling: {r: 0.1, g: 0.1, b: 0, a: 0}
+    - _TesslationColor: {r: 1.6341884, g: 0.37631452, b: 3.4686377, a: 1}
+    - _Tiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &4402736341389048539
 MonoBehaviour:
