@@ -5181,6 +5181,7 @@ GameObject:
   - component: {fileID: 7488137571865276620}
   - component: {fileID: 4475921252192735525}
   - component: {fileID: 7736259772051694007}
+  - component: {fileID: 5241145364048603862}
   m_Layer: 0
   m_Name: PlateformeSimu
   m_TagString: Untagged
@@ -5233,7 +5234,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2d606e34ff9bcf549b299708583e2a3d, type: 2}
+  - {fileID: 2100000, guid: 0df4fc2d90e5cf840876c910491dddf9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5288,3 +5289,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78ca30e1619e9a547bce6e9114bac777, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5241145364048603862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8628415327811375912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d47d91eef4f01f249b45ee5c092caadb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  changerSpeed: 5
