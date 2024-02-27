@@ -109,6 +109,7 @@ public class TestTrigger : MonoBehaviour, IDataManager
 
     IEnumerator DelayEffet()
     {
+        GetComponent<sc_CameraEffect_HC>().PrepareVideo();
         yield return new WaitForSeconds(ChangementVitesseTerminalAnimation);
         OnTrig?.Invoke();
     }
