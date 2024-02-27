@@ -72,7 +72,7 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
             Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", false);
         }
         selected -= 1;
-        if (selected < 0) { selected = 11; }
+        if (selected < 0) { selected = 7; }
         if (ImageItem[selected].activeInHierarchy)
         {
             Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", true);
@@ -85,7 +85,7 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
             Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", false);
         }
         selected += 1;
-        if (selected > 11) { selected = 0; }
+        if (selected > 7) { selected = 0; }
         if (ImageItem[selected].activeInHierarchy)
         {
             Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", true);
