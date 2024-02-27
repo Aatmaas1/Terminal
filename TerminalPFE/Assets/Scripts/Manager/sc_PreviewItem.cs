@@ -148,6 +148,10 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
             Titre.text = "Inventaire";
             Cursor.lockState = CursorLockMode.None;
             sc_UIPauseManager.Instance.CloseInventory();
+            if (sc_UIPauseManager.Instance.menuPause.activeInHierarchy)
+            {
+                sc_UIPauseManager.Instance.TestPause();
+            }
         }
     }
 

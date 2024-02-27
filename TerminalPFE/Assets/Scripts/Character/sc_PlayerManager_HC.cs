@@ -91,6 +91,12 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         }
     }
 
+    public void OnInventaire()
+    {
+        sc_UIPauseManager.Instance.TestPause();
+        sc_UIPauseManager.Instance.LoadInventory();
+    }
+
     /// <summary>
     /// A choisir entre Player, UI et Nothing
     /// </summary>

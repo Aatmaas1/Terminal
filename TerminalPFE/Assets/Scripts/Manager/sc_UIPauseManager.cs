@@ -11,7 +11,7 @@ public class sc_UIPauseManager : MonoBehaviour
 
     public System.Action OnPause;
 
-    public GameObject menuPause, inventaire, cameraGame, cameraPause, cameraInventaire;
+    public GameObject menuPause, inventaire, cameraGame, cameraPause;
 
     Transform player;
     private void Awake()
@@ -94,14 +94,12 @@ public class sc_UIPauseManager : MonoBehaviour
         menuPause.transform.GetChild(4).GetComponent<Animator>().SetBool("IsSelected", false);
         Camera.main.gameObject.GetComponent<CinemachineBrain>().m_DefaultBlend.m_Time = 0.15f;
         inventaire.SetActive(true);
-        cameraInventaire.SetActive(true);
         menuPause.SetActive(false);
         cameraPause.SetActive(false);
     }
     public void CloseInventory()
     {
         inventaire.SetActive(false);
-        cameraInventaire.SetActive(false);
         menuPause.SetActive(true);
         cameraPause.SetActive(true);
     }
