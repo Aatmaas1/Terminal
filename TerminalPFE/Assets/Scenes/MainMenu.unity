@@ -655,6 +655,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PorteTuto
       objectReference: {fileID: 0}
+    - target: {fileID: 7276370997458175113, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8048227694326013491, guid: 6eb4a0b417e7c30469c372c636b2c1b0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -856,6 +861,7 @@ GameObject:
   - component: {fileID: 703200813}
   - component: {fileID: 703200812}
   - component: {fileID: 703200814}
+  - component: {fileID: 703200815}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -922,6 +928,32 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 6a72cfaba9b40954b9270810c5e36f89,
+      type: 2}
+  decodeBank: 0
+  overrideLoadSetting: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
+--- !u!114 &703200815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703200811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2149a5d61e6e2cd41ae40badec2c1e90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: cdbe76db5122de248a96070571e97d37,
       type: 2}
   decodeBank: 0
   overrideLoadSetting: 0
@@ -2304,7 +2336,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1777657017
 RectTransform:
   m_ObjectHideFlags: 0

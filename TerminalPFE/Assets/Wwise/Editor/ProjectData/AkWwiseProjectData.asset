@@ -482,7 +482,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e364e8b048b1b448b41f12b8470ec700
     GuidInternal: 
-    m_lastTime: -8584925887367539536
+    m_lastTime: -8584925521241589546
     List:
     - name: Main
       guid: 251dc717ef0fef42a545f46544a81c52
@@ -498,6 +498,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 251dc717ef0fef42a545f46544a81c52
       Path: SoundBanks\Default Work Unit\Main
+    - name: MUSIQUE
+      guid: 64f4e0bf9fde7e45b0047a2f5a7cf03f
+      id: 69765534
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e364e8b048b1b448b41f12b8470ec700
+      - ElementName: MUSIQUE
+        ObjectType: 7
+        guid: 64f4e0bf9fde7e45b0047a2f5a7cf03f
+      Path: SoundBanks\Default Work Unit\MUSIQUE
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -510,7 +524,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 32fcbe829e1db64882c8fd8a959356a5
     GuidInternal: 
-    m_lastTime: -8584925887374283079
+    m_lastTime: -8584925529075822434
     List:
     - name: AMBIANCES
       guid: 0de342e3b708fb408c527d577683a4a1
@@ -677,6 +691,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.6240417
       minDuration: 0.6240417
+    - name: Play_SFX_AMBIANCE_CROWD
+      guid: 40e418d09e4b0744978021fab1cd859c
+      id: 1326775932
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: AMBIANCES
+        ObjectType: 4
+        guid: 0de342e3b708fb408c527d577683a4a1
+      - ElementName: Play_SFX_AMBIANCE_CROWD
+        ObjectType: 3
+        guid: 40e418d09e4b0744978021fab1cd859c
+      Path: Events\Default Work Unit\AMBIANCES\Play_SFX_AMBIANCE_CROWD
+      maxAttenuation: 0
+      maxDuration: 30.96498
+      minDuration: 30.96498
     - name: Play_SFX_AMBIANCE_VENT_LOOP_LONG
       guid: dc816605e3676c459c3c9b692f6f4ec3
       id: 490583398
@@ -991,6 +1025,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Stop_SFX_AMBIANCE_CROWD
+      guid: 5993cdd367ed69459afd7a08475473c9
+      id: 3185533582
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: AMBIANCES
+        ObjectType: 4
+        guid: 0de342e3b708fb408c527d577683a4a1
+      - ElementName: Stop_SFX_AMBIANCE_CROWD
+        ObjectType: 3
+        guid: 5993cdd367ed69459afd7a08475473c9
+      Path: Events\Default Work Unit\AMBIANCES\Stop_SFX_AMBIANCE_CROWD
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -1048,7 +1102,7 @@ MonoBehaviour:
     m_lastTime: -8584991312705959035
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000001100000012000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
