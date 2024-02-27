@@ -36,7 +36,12 @@ public class sc_UIPauseManager : MonoBehaviour
     {
         if (menuPause.activeInHierarchy || inventaire.activeInHierarchy)
         {
-            if (Physics.Raycast(player.position + Vector3.up, player.forward, 2f))
+            bool mid = Physics.Raycast(player.position + Vector3.up * 1.5f, player.forward + player.right.normalized * 0.35f, 2f);
+            bool TR = Physics.Raycast(player.position + Vector3.up * 1.5f, player.forward + Vector3.up * 0.4f + player.right.normalized * 0.80f, 2f);
+            bool TL = Physics.Raycast(player.position + Vector3.up * 1.5f, player.forward + Vector3.up * 0.4f - player.right.normalized * 0.1f, 2f);
+            bool BR = Physics.Raycast(player.position + Vector3.up * 1.5f, player.forward - Vector3.up * 0.4f + player.right.normalized * 0.80f, 2f);
+            bool BL = Physics.Raycast(player.position + Vector3.up * 1.5f, player.forward - Vector3.up * 0.4f - player.right.normalized * 0.1f, 2f);
+            if (mid || TR || TL || BR || BL)
             {
                 player.GetComponent<CharacterController>().enabled = false;
                 player.Rotate(new Vector3(0, 10, 0));
