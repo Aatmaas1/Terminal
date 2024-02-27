@@ -14,8 +14,10 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_4NN4_MASTERING2 = 4068946449U;
+        static const AkUniqueID PLAY_MUSIQUE_SALLE_WALL_E = 1291952458U;
         static const AkUniqueID PLAY_PROPOSITIONSIMULATION = 388074695U;
         static const AkUniqueID PLAY_RANDOMCONTAINERTEST = 2623669360U;
+        static const AkUniqueID PLAY_SFX_AMBIANCE_VENT_LOOP_LONG = 490583398U;
         static const AkUniqueID PLAY_SFX_BUMPER_BOOST = 4021310751U;
         static const AkUniqueID PLAY_SFX_CONSTRUCTION_ANDRO = 1925718750U;
         static const AkUniqueID PLAY_SFX_DETECTION_LANCEMENT2 = 2126400971U;

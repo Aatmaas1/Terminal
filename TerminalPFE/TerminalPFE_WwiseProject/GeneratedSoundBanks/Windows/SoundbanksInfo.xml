@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{479E20A5-BD88-B467-67AC-55472F27BA84}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{DCFF661B-47F9-6183-C4F6-CE2FA14DA8D4}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -232,7 +232,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{2DFC549F-C302-24CF-A208-9B80370E7E40}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{DBE5CB1C-E1BC-10A1-CF80-BA73DF66A432}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -283,6 +283,10 @@
 				<File Id="565426712" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_4.wav</ShortName>
 					<CachePath>SFX/SFX_SIMULATION_TUILES_4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="586738246" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUSIQUE_SALLE_WALL_E.wav</ShortName>
+					<CachePath>SFX/MUSIQUE_SALLE_WALL_E_818F3B66.wem</CachePath>
 				</File>
 				<File Id="601300744" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_9.wav</ShortName>
@@ -336,6 +340,10 @@
 					<ShortName>SFX_FERMETURE_PORTE_TUTO.wav</ShortName>
 					<CachePath>SFX/SFX_FERMETURE_PORTE_TUTO_818F3B66.wem</CachePath>
 				</File>
+				<File Id="941196900" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_AMBIANCE_VENT_LOOP_LONG.wav</ShortName>
+					<CachePath>SFX/SFX_AMBIANCE_VENT_LOOP_LONG_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="961710233" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_7.wav</ShortName>
 					<CachePath>SFX/SFX_SIMULATION_TUILES_7_818F3B66.wem</CachePath>
@@ -355,6 +363,11 @@
 						<MediaRef Id="352465723"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1291952458" Name="Play_MUSIQUE_SALLE_WALL_E" DurationType="OneShot" DurationMin="137.93452" DurationMax="137.93452">
+					<MediaRefs>
+						<MediaRef Id="586738246"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="388074695" Name="Play_PropositionSimulation" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="31641563"/>
@@ -368,6 +381,11 @@
 						<MediaRef Id="670562076"/>
 						<MediaRef Id="676488202"/>
 						<MediaRef Id="881874796"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="490583398" Name="Play_SFX_AMBIANCE_VENT_LOOP_LONG" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="941196900"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="4021310751" Name="Play_SFX_BUMPER_BOOST" DurationType="OneShot" DurationMin="1.5843333" DurationMax="1.5843333">
@@ -439,5 +457,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{82E7A94B-DEAC-6C7B-5B0F-729912E0BEFC}</FileHash>
+	<FileHash>{D49165D1-3AEA-F4C6-FF05-0382D2A31E5C}</FileHash>
 </SoundBanksInfo>
