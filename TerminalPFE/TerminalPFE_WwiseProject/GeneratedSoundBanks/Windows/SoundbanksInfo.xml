@@ -269,7 +269,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7588FF23-4607-ABDA-90ED-8F3A2308FFAB}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{9A4FE2D5-6D42-6249-7C2F-D4458BF022E8}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -349,6 +349,10 @@
 					<ShortName>SFX_SIMULATION_TUILES_1.wav</ShortName>
 					<CachePath>SFX/SFX_SIMULATION_TUILES_1_818F3B66.wem</CachePath>
 				</File>
+				<File Id="831089712" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_AMBIANCE_CROWD.wav</ShortName>
+					<CachePath>SFX/SFX_AMBIANCE_CROWD_818F3B66.wem</CachePath>
+				</File>
 				<File Id="837757474" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SCAN_OBJ.wav</ShortName>
 					<CachePath>SFX/SFX_SCAN_OBJ_818F3B66.wem</CachePath>
@@ -391,6 +395,11 @@
 						<MediaRef Id="670562076"/>
 						<MediaRef Id="676488202"/>
 						<MediaRef Id="881874796"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1326775932" Name="Play_SFX_AMBIANCE_CROWD" DurationType="OneShot" DurationMin="30.96498" DurationMax="30.96498">
+					<MediaRefs>
+						<MediaRef Id="831089712"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="490583398" Name="Play_SFX_AMBIANCE_VENT_LOOP_LONG" DurationType="Infinite">
@@ -462,8 +471,9 @@
 						<MediaRef Id="837757474"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3185533582" Name="Stop_SFX_AMBIANCE_CROWD" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D53A81A6-DA66-7EC4-F235-ABFB2508D526}</FileHash>
+	<FileHash>{BF80D125-2486-9935-CBD5-AB97C2F805B4}</FileHash>
 </SoundBanksInfo>

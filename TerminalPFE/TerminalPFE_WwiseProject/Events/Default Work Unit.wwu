@@ -235,6 +235,31 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Stop_SFX_AMBIANCE_CROWD" ID="{D3CD9359-ED67-4569-9AFD-7A08475473C9}">
+							<ChildrenList>
+								<Action Name="" ID="{EBD6A0CB-DAB7-432F-9424-49B60E2DCE88}" ShortID="204630293">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_AMBIANCE_CROWD" ID="{40FA8890-175D-4004-9E23-A3CE7E791220}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_AMBIANCE_CROWD" ID="{D018E440-4B9E-4407-9780-21FAB1CD859C}">
+							<ChildrenList>
+								<Action Name="" ID="{6F176ECF-EEE3-49B1-B45B-D8B9398B04A7}" ShortID="884497049">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_AMBIANCE_CROWD" ID="{40FA8890-175D-4004-9E23-A3CE7E791220}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
