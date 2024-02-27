@@ -9,6 +9,43 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
+		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{2966AABB-8FB3-78BA-86C9-FDB2B8F9F702}">
+			<ShortName>MUSIQUE</ShortName>
+			<Path>MUSIQUE.bnk</Path>
+			<Media>
+				<File Id="31641563" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PropositionSimulation.wav</ShortName>
+					<CachePath>SFX/PropositionSimulation_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="352465723" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>4NN4_MASTERING2.wav</ShortName>
+					<CachePath>SFX/4NN4_MASTERING2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="586738246" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUSIQUE_SALLE_WALL_E.wav</ShortName>
+					<CachePath>SFX/MUSIQUE_SALLE_WALL_E_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="4068946449" Name="Play_4NN4_MASTERING2" DurationType="OneShot" DurationMin="157.1923" DurationMax="157.1923">
+					<MediaRefs>
+						<MediaRef Id="352465723"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1291952458" Name="Play_MUSIQUE_SALLE_WALL_E" DurationType="OneShot" DurationMin="137.93452" DurationMax="137.93452">
+					<MediaRefs>
+						<MediaRef Id="586738246"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="388074695" Name="Play_PropositionSimulation" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="31641563"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1362331995" Name="Stop_4NN4_MASTERING2" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3465213173" Name="Stop_PropositionSimulation" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
 		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{DCFF661B-47F9-6183-C4F6-CE2FA14DA8D4}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -232,17 +269,13 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{DBE5CB1C-E1BC-10A1-CF80-BA73DF66A432}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7588FF23-4607-ABDA-90ED-8F3A2308FFAB}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="13083898" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PAS_ANDROÏDE_2.wav</ShortName>
 					<CachePath>SFX/SFX_PAS_ANDROÏDE_2_818F3B66.wem</CachePath>
-				</File>
-				<File Id="31641563" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>PropositionSimulation.wav</ShortName>
-					<CachePath>SFX/PropositionSimulation_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="76343104" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_6.wav</ShortName>
@@ -255,10 +288,6 @@
 				<File Id="214063422" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_CONSTRUCTION_ANDROÏDE.wav</ShortName>
 					<CachePath>SFX/SFX_CONSTRUCTION_ANDROÏDE_268A4F59.wem</CachePath>
-				</File>
-				<File Id="352465723" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>4NN4_MASTERING2.wav</ShortName>
-					<CachePath>SFX/4NN4_MASTERING2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="356420912" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_DETECTION_LANCEMENT2.wav</ShortName>
@@ -283,10 +312,6 @@
 				<File Id="565426712" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_4.wav</ShortName>
 					<CachePath>SFX/SFX_SIMULATION_TUILES_4_818F3B66.wem</CachePath>
-				</File>
-				<File Id="586738246" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUSIQUE_SALLE_WALL_E.wav</ShortName>
-					<CachePath>SFX/MUSIQUE_SALLE_WALL_E_818F3B66.wem</CachePath>
 				</File>
 				<File Id="601300744" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_9.wav</ShortName>
@@ -358,21 +383,6 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="4068946449" Name="Play_4NN4_MASTERING2" DurationType="OneShot" DurationMin="157.1923" DurationMax="157.1923">
-					<MediaRefs>
-						<MediaRef Id="352465723"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="1291952458" Name="Play_MUSIQUE_SALLE_WALL_E" DurationType="OneShot" DurationMin="137.93452" DurationMax="137.93452">
-					<MediaRefs>
-						<MediaRef Id="586738246"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="388074695" Name="Play_PropositionSimulation" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="31641563"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="2623669360" Name="Play_RandomContainerTest" DurationType="OneShot" DurationMin="0.6240417" DurationMax="0.6240417">
 					<MediaRefs>
 						<MediaRef Id="13083898"/>
@@ -452,10 +462,8 @@
 						<MediaRef Id="837757474"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1362331995" Name="Stop_4NN4_MASTERING2" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3465213173" Name="Stop_PropositionSimulation" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D49165D1-3AEA-F4C6-FF05-0382D2A31E5C}</FileHash>
+	<FileHash>{D53A81A6-DA66-7EC4-F235-ABFB2508D526}</FileHash>
 </SoundBanksInfo>
