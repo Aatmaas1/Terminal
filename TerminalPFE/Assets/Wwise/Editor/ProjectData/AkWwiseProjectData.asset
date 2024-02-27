@@ -482,7 +482,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e364e8b048b1b448b41f12b8470ec700
     GuidInternal: 
-    m_lastTime: -8584932633646448281
+    m_lastTime: -8584925901722671328
     List:
     - name: Main
       guid: 251dc717ef0fef42a545f46544a81c52
@@ -510,8 +510,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 32fcbe829e1db64882c8fd8a959356a5
     GuidInternal: 
-    m_lastTime: -8584932633654817013
+    m_lastTime: -8584925901856578802
     List:
+    - name: AMBIANCES
+      guid: 0de342e3b708fb408c527d577683a4a1
+      id: 1404066300
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: AMBIANCES
+        ObjectType: 4
+        guid: 0de342e3b708fb408c527d577683a4a1
+      Path: Events\Default Work Unit\AMBIANCES
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: DETECTION SCAN
       guid: a22db68e4a6e6b4a9d1b6a35ab255cdb
       id: 2309407253
@@ -600,6 +617,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 157.1923
       minDuration: 157.1923
+    - name: Play_MUSIQUE_SALLE_WALL_E
+      guid: 452712bfd9d08e4ca67ea60aadd5a546
+      id: 1291952458
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Musique
+        ObjectType: 4
+        guid: 88f90691d8dc94408199bba3ae90acb0
+      - ElementName: Play_MUSIQUE_SALLE_WALL_E
+        ObjectType: 3
+        guid: 452712bfd9d08e4ca67ea60aadd5a546
+      Path: Events\Default Work Unit\Musique\Play_MUSIQUE_SALLE_WALL_E
+      maxAttenuation: 0
+      maxDuration: 137.93452
+      minDuration: 137.93452
     - name: Play_PropositionSimulation
       guid: 1bab1b8d7ce6cc4faa3a1faf7bc997eb
       id: 388074695
@@ -640,6 +677,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.6240417
       minDuration: 0.6240417
+    - name: Play_SFX_AMBIANCE_VENT_LOOP_LONG
+      guid: dc816605e3676c459c3c9b692f6f4ec3
+      id: 490583398
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: AMBIANCES
+        ObjectType: 4
+        guid: 0de342e3b708fb408c527d577683a4a1
+      - ElementName: Play_SFX_AMBIANCE_VENT_LOOP_LONG
+        ObjectType: 3
+        guid: dc816605e3676c459c3c9b692f6f4ec3
+      Path: Events\Default Work Unit\AMBIANCES\Play_SFX_AMBIANCE_VENT_LOOP_LONG
+      maxAttenuation: 0
+      maxDuration: 156.92513
+      minDuration: 156.92513
     - name: Play_SFX_BUMPER_BOOST
       guid: 2c91207f45e384489490bd001c93b4ab
       id: 4021310751
@@ -991,7 +1048,7 @@ MonoBehaviour:
     m_lastTime: -8584991312705959035
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000006000000090000000c000000440000004500000046000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

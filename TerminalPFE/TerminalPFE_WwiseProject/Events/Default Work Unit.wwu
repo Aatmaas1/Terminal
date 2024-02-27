@@ -72,6 +72,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_MUSIQUE_SALLE_WALL_E" ID="{BF122745-D0D9-4C8E-A67E-A60AADD5A546}">
+							<ChildrenList>
+								<Action Name="" ID="{89821BC3-590C-47B2-B873-D1BBD846F9DD}" ShortID="1059672195">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MUSIQUE_SALLE_WALL_E" ID="{6F719EF3-4715-467F-8321-8EDE0830DEE8}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="SIMULATION" ID="{341F4021-3D6C-49F2-B57D-96BCB18E02F4}" ShortID="370386191">
@@ -204,6 +215,21 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SFX_CONSTRUCTION_ANDRO" ID="{39051024-50B6-45C0-82EA-8A53D97371C2}" WorkUnitID="{AC4208DC-5399-48C9-B7CC-46E5EA3F80D2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="AMBIANCES" ID="{E342E30D-08B7-40FB-8C52-7D577683A4A1}" ShortID="445620462">
+					<ChildrenList>
+						<Event Name="Play_SFX_AMBIANCE_VENT_LOOP_LONG" ID="{056681DC-67E3-456C-9C3C-9B692F6F4EC3}">
+							<ChildrenList>
+								<Action Name="" ID="{5871D314-3AE2-4436-B989-26068CFBA0A6}" ShortID="483226895">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_AMBIANCE_VENT_LOOP_LONG" ID="{877BA685-E0A1-4871-9D90-9F170F1F0DDF}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

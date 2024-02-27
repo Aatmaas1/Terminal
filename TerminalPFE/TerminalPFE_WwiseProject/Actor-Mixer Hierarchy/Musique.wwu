@@ -4,6 +4,13 @@
 		<WorkUnit Name="Musique" ID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}" OwnerID="{AB2030D7-FEB3-4931-8F66-2372D24A8919}" PersistMode="Nested">
 			<ChildrenList>
 				<Sound Name="4NN4_MASTERING2" ID="{1368F824-5DE1-485B-9779-1915D015E25B}" ShortID="109313220">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
@@ -53,6 +60,47 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="PropositionSimulation" ID="{1FC06EA9-0DBC-4B4E-8445-814EE0DF7E56}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="MUSIQUE_SALLE_WALL_E" ID="{6F719EF3-4715-467F-8321-8EDE0830DEE8}" ShortID="117374398">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+						<Property Name="LoopCount" Type="int32" Value="5"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="97"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-22</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="MUSIQUE_SALLE_WALL_E" ID="{556EEC7E-457F-40B9-B92B-E62BB58450C3}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>MUSIQUE_SALLE_WALL_E.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="586738246"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{E2018A6A-FA91-41C5-AE50-74D0BD5EF21A}"/>
+					</PositioningInfo>
+					<ActiveSourceList>
+						<ActiveSource Name="MUSIQUE_SALLE_WALL_E" ID="{556EEC7E-457F-40B9-B92B-E62BB58450C3}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>
