@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{02F7EF37-C886-3E25-413C-0E696052A830}">
+		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{330B4B56-E606-3410-BE0C-1B80D171C0EC}">
 			<ShortName>MUSIQUE</ShortName>
 			<Path>MUSIQUE.bnk</Path>
 			<Media>
@@ -32,7 +32,7 @@
 						<MediaRef Id="352465723"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1291952458" Name="Play_MUSIQUE_SALLE_WALL_E" DurationType="OneShot" DurationMin="137.93452" DurationMax="137.93452">
+				<Event Id="1291952458" Name="Play_MUSIQUE_SALLE_WALL_E" MaxAttenuation="195" DurationType="OneShot" DurationMin="137.93452" DurationMax="137.93452">
 					<MediaRefs>
 						<MediaRef Id="586738246"/>
 					</MediaRefs>
@@ -46,7 +46,7 @@
 				<Event Id="3465213173" Name="Stop_PropositionSimulation" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{DCFF661B-47F9-6183-C4F6-CE2FA14DA8D4}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{34E17170-89E6-BDA6-6887-9339B193A6AF}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -269,7 +269,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{07E08205-41C9-BA8B-5732-A72DA53D2394}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{57F96934-374F-1FA6-1D5E-E6998515D1A9}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -391,7 +391,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2623669360" Name="Play_RandomContainerTest" DurationType="OneShot" DurationMin="0.6240417" DurationMax="0.6240417">
+				<Event Id="2623669360" Name="Play_RandomContainerTest" MaxAttenuation="195" DurationType="OneShot" DurationMin="0.6240417" DurationMax="0.6240417">
 					<MediaRefs>
 						<MediaRef Id="13083898"/>
 						<MediaRef Id="520465305"/>
@@ -401,17 +401,17 @@
 						<MediaRef Id="881874796"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1326775932" Name="Play_SFX_AMBIANCE_CROWD" DurationType="OneShot" DurationMin="30.96498" DurationMax="30.96498">
+				<Event Id="1326775932" Name="Play_SFX_AMBIANCE_CROWD" MaxAttenuation="195" DurationType="OneShot" DurationMin="30.96498" DurationMax="30.96498">
 					<MediaRefs>
 						<MediaRef Id="831089712"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="490583398" Name="Play_SFX_AMBIANCE_VENT_LOOP_LONG" DurationType="Infinite">
+				<Event Id="490583398" Name="Play_SFX_AMBIANCE_VENT_LOOP_LONG" MaxAttenuation="195" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="941196900"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1101089906" Name="Play_SFX_BOUTON_CLICK" DurationType="OneShot" DurationMin="0.10145833" DurationMax="0.10145833">
+				<Event Id="1101089906" Name="Play_SFX_BOUTON_CLICK" MaxAttenuation="195" DurationType="OneShot" DurationMin="0.10145833" DurationMax="0.10145833">
 					<MediaRefs>
 						<MediaRef Id="660654465"/>
 					</MediaRefs>
@@ -426,27 +426,27 @@
 						<MediaRef Id="214063422"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2126400971" Name="Play_SFX_DETECTION_LANCEMENT2" DurationType="OneShot" DurationMin="9.384625" DurationMax="9.384625">
+				<Event Id="2126400971" Name="Play_SFX_DETECTION_LANCEMENT2" MaxAttenuation="195" DurationType="OneShot" DurationMin="9.384625" DurationMax="9.384625">
 					<MediaRefs>
 						<MediaRef Id="356420912"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="317254060" Name="Play_SFX_FERMETURE_PORTE_PETITE" DurationType="OneShot" DurationMin="1.29325" DurationMax="1.29325">
+				<Event Id="317254060" Name="Play_SFX_FERMETURE_PORTE_PETITE" MaxAttenuation="195" DurationType="OneShot" DurationMin="1.29325" DurationMax="1.29325">
 					<MediaRefs>
 						<MediaRef Id="707380317"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1226673255" Name="Play_SFX_FERMETURE_PORTE_TUTO" DurationType="OneShot" DurationMin="1.3588958" DurationMax="1.3588958">
+				<Event Id="1226673255" Name="Play_SFX_FERMETURE_PORTE_TUTO" MaxAttenuation="195" DurationType="OneShot" DurationMin="1.3588958" DurationMax="1.3588958">
 					<MediaRefs>
 						<MediaRef Id="922605610"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3699296330" Name="Play_SFX_OUVERTURE_PORTE_PETITE" DurationType="OneShot" DurationMin="1.0550833" DurationMax="1.0550833">
+				<Event Id="3699296330" Name="Play_SFX_OUVERTURE_PORTE_PETITE" MaxAttenuation="195" DurationType="OneShot" DurationMin="1.0550833" DurationMax="1.0550833">
 					<MediaRefs>
 						<MediaRef Id="775787932"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1974769985" Name="Play_SFX_OUVERTURE_PORTE_TUTO" DurationType="OneShot" DurationMin="1.1453542" DurationMax="1.1453542">
+				<Event Id="1974769985" Name="Play_SFX_OUVERTURE_PORTE_TUTO" MaxAttenuation="195" DurationType="OneShot" DurationMin="1.1453542" DurationMax="1.1453542">
 					<MediaRefs>
 						<MediaRef Id="723591768"/>
 					</MediaRefs>
@@ -465,17 +465,17 @@
 						<MediaRef Id="961710233"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2394956354" Name="Play_SFX_PORTE_FINALE" DurationType="OneShot" DurationMin="6.827854" DurationMax="6.827854">
+				<Event Id="2394956354" Name="Play_SFX_PORTE_FINALE" MaxAttenuation="195" DurationType="OneShot" DurationMin="6.827854" DurationMax="6.827854">
 					<MediaRefs>
 						<MediaRef Id="747293285"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="140330310" Name="Play_SFX_PORTES_CHANGELIGHT" DurationType="OneShot" DurationMin="1.8461459" DurationMax="1.8461459">
+				<Event Id="140330310" Name="Play_SFX_PORTES_CHANGELIGHT" MaxAttenuation="195" DurationType="OneShot" DurationMin="1.8461459" DurationMax="1.8461459">
 					<MediaRefs>
 						<MediaRef Id="1031853575"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="4060256703" Name="Play_SFX_SCAN_OBJ" DurationType="OneShot" DurationMin="5.143417" DurationMax="5.143417">
+				<Event Id="4060256703" Name="Play_SFX_SCAN_OBJ" MaxAttenuation="195" DurationType="OneShot" DurationMin="5.143417" DurationMax="5.143417">
 					<MediaRefs>
 						<MediaRef Id="837757474"/>
 					</MediaRefs>
@@ -484,5 +484,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{51FF95CD-080C-8A52-7AE6-15175DB22291}</FileHash>
+	<FileHash>{C1D72DD2-1B36-2125-F698-1C88698C0A7C}</FileHash>
 </SoundBanksInfo>

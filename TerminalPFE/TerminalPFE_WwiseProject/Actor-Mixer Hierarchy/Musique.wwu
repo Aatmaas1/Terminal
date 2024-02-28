@@ -68,7 +68,7 @@
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
 						<Property Name="LoopCount" Type="int32" Value="5"/>
-						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="97"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="95"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -77,6 +77,9 @@
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="test" ID="{83FC4427-373B-423C-9734-382CCBEF1630}" WorkUnitID="{1AEB090E-561D-4FBA-B8F3-272DEE9A77E2}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
 						</Reference>

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{02F7EF37-C886-3E25-413C-0E696052A830}">
+		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{F1486A8F-0A63-0011-B7EB-3FCE4F166184}">
 			<ShortName>MUSIQUE</ShortName>
 			<Path>MUSIQUE.bnk</Path>
 			<Media>
@@ -32,7 +32,7 @@
 						<MediaRef Id="352465723"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1291952458" Name="Play_MUSIQUE_SALLE_WALL_E" DurationType="OneShot" DurationMin="137.93452" DurationMax="137.93452">
+				<Event Id="1291952458" Name="Play_MUSIQUE_SALLE_WALL_E" MaxAttenuation="195" DurationType="OneShot" DurationMin="137.93452" DurationMax="137.93452">
 					<MediaRefs>
 						<MediaRef Id="586738246"/>
 					</MediaRefs>
@@ -46,7 +46,7 @@
 				<Event Id="3465213173" Name="Stop_PropositionSimulation" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{52326857-B4ED-AE0F-5821-02BBBA2704D6}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E65BABD8-5BBB-D5B2-EB80-992114A8FD93}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -269,7 +269,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{07E08205-41C9-BA8B-5732-A72DA53D2394}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E1D7D3F0-DA50-1750-FB24-B7381AAFB3FE}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -484,5 +484,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{27D93F61-826C-B618-0106-A7DEFD56C401}</FileHash>
+	<FileHash>{64250551-457B-B7AE-FFCC-F54A64849F24}</FileHash>
 </SoundBanksInfo>
