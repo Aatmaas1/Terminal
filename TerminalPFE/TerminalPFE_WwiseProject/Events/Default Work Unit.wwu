@@ -277,6 +277,17 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_SFX_EBOULEMENT" ID="{D5A529CE-5FEC-46EA-A1CA-B397AFE006AF}">
+					<ChildrenList>
+						<Action Name="" ID="{B532936B-BD69-4BB0-9F83-AABC35691A72}" ShortID="1011485614">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_EBOULEMENT" ID="{71F15AB3-9DE7-4437-A6B1-93A5F66695FF}" WorkUnitID="{5477266C-D991-4580-A687-CA6FC8AF0645}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

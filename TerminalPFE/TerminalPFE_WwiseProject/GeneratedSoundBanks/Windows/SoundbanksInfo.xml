@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{330B4B56-E606-3410-BE0C-1B80D171C0EC}">
+		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{CEC752D1-78A5-6C26-69EF-B40A9BFD638E}">
 			<ShortName>MUSIQUE</ShortName>
 			<Path>MUSIQUE.bnk</Path>
 			<Media>
@@ -269,7 +269,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{57F96934-374F-1FA6-1D5E-E6998515D1A9}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{92AD33E6-BAA1-AFA5-7B55-A7785FCECAF8}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -369,6 +369,10 @@
 					<ShortName>SFX_SIMULATION_TUILES_8.wav</ShortName>
 					<CachePath>SFX/SFX_SIMULATION_TUILES_8_818F3B66.wem</CachePath>
 				</File>
+				<File Id="919887464" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_EBOULEMENT.wav</ShortName>
+					<CachePath>SFX/SFX_EBOULEMENT_818F3B66.wem</CachePath>
+				</File>
 				<File Id="922605610" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_FERMETURE_PORTE_TUTO.wav</ShortName>
 					<CachePath>SFX/SFX_FERMETURE_PORTE_TUTO_818F3B66.wem</CachePath>
@@ -431,6 +435,11 @@
 						<MediaRef Id="356420912"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3758634482" Name="Play_SFX_EBOULEMENT" DurationType="OneShot" DurationMin="5.019583" DurationMax="5.019583">
+					<MediaRefs>
+						<MediaRef Id="919887464"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="317254060" Name="Play_SFX_FERMETURE_PORTE_PETITE" MaxAttenuation="195" DurationType="OneShot" DurationMin="1.29325" DurationMax="1.29325">
 					<MediaRefs>
 						<MediaRef Id="707380317"/>
@@ -484,5 +493,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C1D72DD2-1B36-2125-F698-1C88698C0A7C}</FileHash>
+	<FileHash>{1A3EFA50-17B8-7A02-CB1C-CA5FC41D8F8F}</FileHash>
 </SoundBanksInfo>
