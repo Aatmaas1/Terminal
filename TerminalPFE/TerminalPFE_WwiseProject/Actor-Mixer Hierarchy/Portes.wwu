@@ -194,6 +194,35 @@
 						<ActiveSource Name="SFX_PORTES_CHANGELIGHT" ID="{C47B990A-D448-4C06-AC60-7EBD2A075B0E}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="SFX_BOUTON_CLICK" ID="{15AA468B-3ACD-400F-9E46-326078FFB81A}" ShortID="943460906">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_BOUTON_CLICK" ID="{9476A36D-83BB-44F7-B9E6-6ECC243CBB1A}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_BOUTON_CLICK.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="660654465"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_BOUTON_CLICK" ID="{9476A36D-83BB-44F7-B9E6-6ECC243CBB1A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

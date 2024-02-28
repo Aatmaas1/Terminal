@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID PLAY_RANDOMCONTAINERTEST = 2623669360U;
         static const AkUniqueID PLAY_SFX_AMBIANCE_CROWD = 1326775932U;
         static const AkUniqueID PLAY_SFX_AMBIANCE_VENT_LOOP_LONG = 490583398U;
+        static const AkUniqueID PLAY_SFX_BOUTON_CLICK = 1101089906U;
         static const AkUniqueID PLAY_SFX_BUMPER_BOOST = 4021310751U;
         static const AkUniqueID PLAY_SFX_CONSTRUCTION_ANDRO = 1925718750U;
         static const AkUniqueID PLAY_SFX_DETECTION_LANCEMENT2 = 2126400971U;

@@ -482,7 +482,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e364e8b048b1b448b41f12b8470ec700
     GuidInternal: 
-    m_lastTime: -8584925521241589546
+    m_lastTime: -8584925102690824866
     List:
     - name: Main
       guid: 251dc717ef0fef42a545f46544a81c52
@@ -524,7 +524,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 32fcbe829e1db64882c8fd8a959356a5
     GuidInternal: 
-    m_lastTime: -8584925529075822434
+    m_lastTime: -8584925102690874866
     List:
     - name: AMBIANCES
       guid: 0de342e3b708fb408c527d577683a4a1
@@ -731,6 +731,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_SFX_BOUTON_CLICK
+      guid: 33b5d9c6e4e88742ba1cc6edcf35b975
+      id: 1101089906
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: PORTES
+        ObjectType: 4
+        guid: ad9b7f7209c43d4aa5b228ff9479e558
+      - ElementName: Play_SFX_BOUTON_CLICK
+        ObjectType: 3
+        guid: 33b5d9c6e4e88742ba1cc6edcf35b975
+      Path: Events\Default Work Unit\PORTES\Play_SFX_BOUTON_CLICK
+      maxAttenuation: 0
+      maxDuration: 0.10145833
+      minDuration: 0.10145833
     - name: Play_SFX_BUMPER_BOOST
       guid: 2c91207f45e384489490bd001c93b4ab
       id: 4021310751
@@ -1102,7 +1122,7 @@ MonoBehaviour:
     m_lastTime: -8584991312705959035
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000001100000012000000
+  ExpandedWaapiItemIds: 3b0000003c00000042000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
