@@ -21,10 +21,13 @@ public class sc_CameraEffect_HC : MonoBehaviour
 
     public void PlayVid()
     {
-        Camera.main.nearClipPlane = 0.01f;
+        Camera.main.nearClipPlane = 0.00001f;
         videoPlayer.Play();
         GetComponent<VisualEffect>().enabled = false;
     }
 
-    
+    public void PrepareVideo()
+    {
+        videoPlayer.Prepare();
+    }
 }

@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	140330310	Play_SFX_PORTES_CHANGELIGHT			\Default Work Unit\PORTES\Play_SFX_PORTES_CHANGELIGHT	
 	317254060	Play_SFX_FERMETURE_PORTE_PETITE			\Default Work Unit\PORTES\Play_SFX_FERMETURE_PORTE_PETITE	
 	490583398	Play_SFX_AMBIANCE_VENT_LOOP_LONG			\Default Work Unit\AMBIANCES\Play_SFX_AMBIANCE_VENT_LOOP_LONG	
+	1101089906	Play_SFX_BOUTON_CLICK			\Default Work Unit\PORTES\Play_SFX_BOUTON_CLICK	
 	1226673255	Play_SFX_FERMETURE_PORTE_TUTO			\Default Work Unit\PORTES\Play_SFX_FERMETURE_PORTE_TUTO	
 	1326775932	Play_SFX_AMBIANCE_CROWD			\Default Work Unit\AMBIANCES\Play_SFX_AMBIANCE_CROWD	
 	1925718750	Play_SFX_CONSTRUCTION_ANDRO			\Default Work Unit\INTRODUCTION\Play_SFX_CONSTRUCTION_ANDRO	
@@ -12,6 +13,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2699630658	Play_SFX_PERLES_TUILES			\Default Work Unit\SIMULATION\Play_SFX_PERLES_TUILES	
 	3185533582	Stop_SFX_AMBIANCE_CROWD			\Default Work Unit\AMBIANCES\Stop_SFX_AMBIANCE_CROWD	
 	3699296330	Play_SFX_OUVERTURE_PORTE_PETITE			\Default Work Unit\PORTES\Play_SFX_OUVERTURE_PORTE_PETITE	
+	3758634482	Play_SFX_EBOULEMENT			\Default Work Unit\Play_SFX_EBOULEMENT	
 	4021310751	Play_SFX_BUMPER_BOOST			\Default Work Unit\SIMULATION\Play_SFX_BUMPER_BOOST	
 	4060256703	Play_SFX_SCAN_OBJ			\Default Work Unit\DETECTION SCAN\Play_SFX_SCAN_OBJ	
 
@@ -27,6 +29,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	544464536	SFX_SIMULATION_TUILES_3	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_SIMULATION_TUILES_3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Simulation\SFX_PERLES_TUILES\SFX_SIMULATION_TUILES_3		180096
 	565426712	SFX_SIMULATION_TUILES_4	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_SIMULATION_TUILES_4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Simulation\SFX_PERLES_TUILES\SFX_SIMULATION_TUILES_4		180096
 	601300744	SFX_SIMULATION_TUILES_9	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_SIMULATION_TUILES_9_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Simulation\SFX_PERLES_TUILES\SFX_SIMULATION_TUILES_9		180096
+	660654465	SFX_BOUTON_CLICK	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_BOUTON_CLICK_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Portes\SFX_BOUTON_CLICK		19576
 	670562076	SFX_PAS_ANDROÏDE_5	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_PAS_ANDROÏDE_5_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Pas\RANDOMISEUR_PAS\SFX_PAS_ANDROÏDE_5		119912
 	676488202	SFX_PAS_ANDROÏDE_6	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_PAS_ANDROÏDE_6_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Pas\RANDOMISEUR_PAS\SFX_PAS_ANDROÏDE_6		119912
 	707380317	SFX_FERMETURE_PORTE_PETITE	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_FERMETURE_PORTE_PETITE_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Portes\SFX_FERMETURE_PORTE_PETITE		248400
@@ -39,6 +42,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	837757474	SFX_SCAN_OBJ	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_SCAN_OBJ_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\DETECTION SCAN\SFX_SCAN_OBJ		987632
 	881874796	SFX_PAS_ANDROÏDE_4	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_PAS_ANDROÏDE_4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Pas\RANDOMISEUR_PAS\SFX_PAS_ANDROÏDE_4		119912
 	916630455	SFX_SIMULATION_TUILES_8	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_SIMULATION_TUILES_8_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Simulation\SFX_PERLES_TUILES\SFX_SIMULATION_TUILES_8		180096
+	919887464	SFX_EBOULEMENT	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_EBOULEMENT_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_EBOULEMENT		963856
 	922605610	SFX_FERMETURE_PORTE_TUTO	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_FERMETURE_PORTE_TUTO_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Portes\SFX_FERMETURE_PORTE_TUTO		261004
 	941196900	SFX_AMBIANCE_VENT_LOOP_LONG	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_AMBIANCE_VENT_LOOP_LONG_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambiances\SFX_AMBIANCE_VENT_LOOP_LONG		30129720
 	961710233	SFX_SIMULATION_TUILES_7	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_SIMULATION_TUILES_7_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Simulation\SFX_PERLES_TUILES\SFX_SIMULATION_TUILES_7		180096
