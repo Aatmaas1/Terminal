@@ -143,10 +143,10 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
     {
         Quaternion oldrot = transform.GetChild(0).rotation;
 
-        for (int i = 1; i <= 50; i++)
+        for (int i = 1; i <= 25; i++)
         {
             transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(new Vector3(obj.position.x, 0, obj.position.z)
-                - new Vector3(transform.position.x, 0, transform.position.z), Vector3.up), 5f);
+                - new Vector3(transform.position.x, 0, transform.position.z), Vector3.up), 10f);
             yield return new WaitForSeconds(0.01f);
             transform.GetChild(0).rotation = oldrot;
         }
@@ -158,10 +158,12 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
     }
     IEnumerator MovePlayer(Transform obj)
     {
-        while (Vector3.Distance(new Vector3(transform.position.x, 0, transform.position.z), new Vector3(obj.position.x, 0, obj.position.z)) > 0.8f)
+        Vector3 dest = (-new Vector3(obj.position.x, 0, obj.position.z) + new Vector3(transform.position.x, 0, transform.position.z)).normalized
+            * 1.1f + new Vector3(obj.position.x, 0, obj.position.z);
+        Debug.DrawLine(dest, dest + Vector3.up, Color.red, 5f);
+        while (Vector3.Distance(new Vector3(transform.position.x, 0, transform.position.z), dest) > 0.05f)
         {
-            transform.Translate(Vector3.Normalize(new Vector3(obj.position.x, 0, obj.position.z)
-                - new Vector3(transform.position.x, 0, transform.position.z)) * 0.02f);
+            transform.Translate(Vector3.Normalize(dest - new Vector3(transform.position.x, 0, transform.position.z)) * 0.05f);
             yield return new WaitForSeconds(0.01f);
         }
     }
