@@ -482,7 +482,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e364e8b048b1b448b41f12b8470ec700
     GuidInternal: 
-    m_lastTime: -8584925887367539536
+    m_lastTime: -8584925058667384121
     List:
     - name: Main
       guid: 251dc717ef0fef42a545f46544a81c52
@@ -498,6 +498,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 251dc717ef0fef42a545f46544a81c52
       Path: SoundBanks\Default Work Unit\Main
+    - name: MUSIQUE
+      guid: 64f4e0bf9fde7e45b0047a2f5a7cf03f
+      id: 69765534
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e364e8b048b1b448b41f12b8470ec700
+      - ElementName: MUSIQUE
+        ObjectType: 7
+        guid: 64f4e0bf9fde7e45b0047a2f5a7cf03f
+      Path: SoundBanks\Default Work Unit\MUSIQUE
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -510,7 +524,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 32fcbe829e1db64882c8fd8a959356a5
     GuidInternal: 
-    m_lastTime: -8584925887374283079
+    m_lastTime: -8584925058804866253
     List:
     - name: AMBIANCES
       guid: 0de342e3b708fb408c527d577683a4a1
@@ -634,7 +648,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 452712bfd9d08e4ca67ea60aadd5a546
       Path: Events\Default Work Unit\Musique\Play_MUSIQUE_SALLE_WALL_E
-      maxAttenuation: 0
+      maxAttenuation: 195
       maxDuration: 137.93452
       minDuration: 137.93452
     - name: Play_PropositionSimulation
@@ -674,9 +688,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: 289cca1f5536154d9bbfe62f7f50f220
       Path: Events\Default Work Unit\PasEvent\Play_RandomContainerTest
-      maxAttenuation: 0
+      maxAttenuation: 195
       maxDuration: 0.6240417
       minDuration: 0.6240417
+    - name: Play_SFX_AMBIANCE_CROWD
+      guid: 40e418d09e4b0744978021fab1cd859c
+      id: 1326775932
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: AMBIANCES
+        ObjectType: 4
+        guid: 0de342e3b708fb408c527d577683a4a1
+      - ElementName: Play_SFX_AMBIANCE_CROWD
+        ObjectType: 3
+        guid: 40e418d09e4b0744978021fab1cd859c
+      Path: Events\Default Work Unit\AMBIANCES\Play_SFX_AMBIANCE_CROWD
+      maxAttenuation: 195
+      maxDuration: 30.96498
+      minDuration: 30.96498
     - name: Play_SFX_AMBIANCE_VENT_LOOP_LONG
       guid: dc816605e3676c459c3c9b692f6f4ec3
       id: 490583398
@@ -694,9 +728,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: dc816605e3676c459c3c9b692f6f4ec3
       Path: Events\Default Work Unit\AMBIANCES\Play_SFX_AMBIANCE_VENT_LOOP_LONG
-      maxAttenuation: 0
+      maxAttenuation: 195
       maxDuration: -1
       minDuration: -1
+    - name: Play_SFX_BOUTON_CLICK
+      guid: 33b5d9c6e4e88742ba1cc6edcf35b975
+      id: 1101089906
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: PORTES
+        ObjectType: 4
+        guid: ad9b7f7209c43d4aa5b228ff9479e558
+      - ElementName: Play_SFX_BOUTON_CLICK
+        ObjectType: 3
+        guid: 33b5d9c6e4e88742ba1cc6edcf35b975
+      Path: Events\Default Work Unit\PORTES\Play_SFX_BOUTON_CLICK
+      maxAttenuation: 195
+      maxDuration: 0.10145833
+      minDuration: 0.10145833
     - name: Play_SFX_BUMPER_BOOST
       guid: 2c91207f45e384489490bd001c93b4ab
       id: 4021310751
@@ -754,9 +808,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: 4099200dc688a247899c19cc4d36cecb
       Path: Events\Default Work Unit\DETECTION SCAN\Play_SFX_DETECTION_LANCEMENT2
-      maxAttenuation: 0
+      maxAttenuation: 195
       maxDuration: 9.384625
       minDuration: 9.384625
+    - name: Play_SFX_EBOULEMENT
+      guid: ce29a5d5ec5fea46a1cab397afe006af
+      id: 3758634482
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Play_SFX_EBOULEMENT
+        ObjectType: 3
+        guid: ce29a5d5ec5fea46a1cab397afe006af
+      Path: Events\Default Work Unit\Play_SFX_EBOULEMENT
+      maxAttenuation: 0
+      maxDuration: 5.019583
+      minDuration: 5.019583
     - name: Play_SFX_FERMETURE_PORTE_PETITE
       guid: 16ca79b7a461454a823d7ca1e3da3977
       id: 317254060
@@ -774,7 +845,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 16ca79b7a461454a823d7ca1e3da3977
       Path: Events\Default Work Unit\PORTES\Play_SFX_FERMETURE_PORTE_PETITE
-      maxAttenuation: 0
+      maxAttenuation: 195
       maxDuration: 1.29325
       minDuration: 1.29325
     - name: Play_SFX_FERMETURE_PORTE_TUTO
@@ -794,7 +865,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 5550676d1426b24ba52cbdbfc7611390
       Path: Events\Default Work Unit\PORTES\Play_SFX_FERMETURE_PORTE_TUTO
-      maxAttenuation: 0
+      maxAttenuation: 195
       maxDuration: 1.3588958
       minDuration: 1.3588958
     - name: Play_SFX_OUVERTURE_PORTE_PETITE
@@ -814,7 +885,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: f27e41e04c80ba47afcf71544cd27215
       Path: Events\Default Work Unit\PORTES\Play_SFX_OUVERTURE_PORTE_PETITE
-      maxAttenuation: 0
+      maxAttenuation: 195
       maxDuration: 1.0550833
       minDuration: 1.0550833
     - name: Play_SFX_OUVERTURE_PORTE_TUTO
@@ -834,7 +905,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 6651d197683fdb41a24724200ffa3c7e
       Path: Events\Default Work Unit\PORTES\Play_SFX_OUVERTURE_PORTE_TUTO
-      maxAttenuation: 0
+      maxAttenuation: 195
       maxDuration: 1.1453542
       minDuration: 1.1453542
     - name: Play_SFX_PERLES_TUILES
@@ -874,7 +945,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 4414709b3a857f40aa3042f0c88b1d7c
       Path: Events\Default Work Unit\PORTES\Play_SFX_PORTE_FINALE
-      maxAttenuation: 0
+      maxAttenuation: 195
       maxDuration: 6.827854
       minDuration: 6.827854
     - name: Play_SFX_PORTES_CHANGELIGHT
@@ -894,7 +965,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: aa3d2cf9e1b13740b7d005af042e0323
       Path: Events\Default Work Unit\PORTES\Play_SFX_PORTES_CHANGELIGHT
-      maxAttenuation: 0
+      maxAttenuation: 195
       maxDuration: 1.8461459
       minDuration: 1.8461459
     - name: Play_SFX_SCAN_OBJ
@@ -914,7 +985,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: c1084b444716f3449eef7216a2cb9faa
       Path: Events\Default Work Unit\DETECTION SCAN\Play_SFX_SCAN_OBJ
-      maxAttenuation: 0
+      maxAttenuation: 195
       maxDuration: 5.143417
       minDuration: 5.143417
     - name: PORTES
@@ -991,6 +1062,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Stop_SFX_AMBIANCE_CROWD
+      guid: 5993cdd367ed69459afd7a08475473c9
+      id: 3185533582
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: AMBIANCES
+        ObjectType: 4
+        guid: 0de342e3b708fb408c527d577683a4a1
+      - ElementName: Stop_SFX_AMBIANCE_CROWD
+        ObjectType: 3
+        guid: 5993cdd367ed69459afd7a08475473c9
+      Path: Events\Default Work Unit\AMBIANCES\Stop_SFX_AMBIANCE_CROWD
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -1048,7 +1139,7 @@ MonoBehaviour:
     m_lastTime: -8584991312705959035
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 3b0000003c00000042000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

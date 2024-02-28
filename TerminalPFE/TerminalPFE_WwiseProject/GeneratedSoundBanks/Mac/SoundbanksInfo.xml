@@ -9,7 +9,44 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{52326857-B4ED-AE0F-5821-02BBBA2704D6}">
+		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{CEC752D1-78A5-6C26-69EF-B40A9BFD638E}">
+			<ShortName>MUSIQUE</ShortName>
+			<Path>MUSIQUE.bnk</Path>
+			<Media>
+				<File Id="31641563" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PropositionSimulation.wav</ShortName>
+					<CachePath>SFX/PropositionSimulation_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="352465723" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>4NN4_MASTERING2.wav</ShortName>
+					<CachePath>SFX/4NN4_MASTERING2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="586738246" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUSIQUE_SALLE_WALL_E.wav</ShortName>
+					<CachePath>SFX/MUSIQUE_SALLE_WALL_E_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="4068946449" Name="Play_4NN4_MASTERING2" DurationType="OneShot" DurationMin="157.1923" DurationMax="157.1923">
+					<MediaRefs>
+						<MediaRef Id="352465723"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1291952458" Name="Play_MUSIQUE_SALLE_WALL_E" MaxAttenuation="195" DurationType="OneShot" DurationMin="137.93452" DurationMax="137.93452">
+					<MediaRefs>
+						<MediaRef Id="586738246"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="388074695" Name="Play_PropositionSimulation" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="31641563"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1362331995" Name="Stop_4NN4_MASTERING2" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3465213173" Name="Stop_PropositionSimulation" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E65BABD8-5BBB-D5B2-EB80-992114A8FD93}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -232,17 +269,13 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{DBE5CB1C-E1BC-10A1-CF80-BA73DF66A432}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{92AD33E6-BAA1-AFA5-7B55-A7785FCECAF8}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="13083898" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PAS_ANDROÏDE_2.wav</ShortName>
 					<CachePath>SFX/SFX_PAS_ANDROÏDE_2_818F3B66.wem</CachePath>
-				</File>
-				<File Id="31641563" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>PropositionSimulation.wav</ShortName>
-					<CachePath>SFX/PropositionSimulation_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="76343104" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_6.wav</ShortName>
@@ -255,10 +288,6 @@
 				<File Id="214063422" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_CONSTRUCTION_ANDROÏDE.wav</ShortName>
 					<CachePath>SFX/SFX_CONSTRUCTION_ANDROÏDE_268A4F59.wem</CachePath>
-				</File>
-				<File Id="352465723" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>4NN4_MASTERING2.wav</ShortName>
-					<CachePath>SFX/4NN4_MASTERING2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="356420912" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_DETECTION_LANCEMENT2.wav</ShortName>
@@ -284,13 +313,13 @@
 					<ShortName>SFX_SIMULATION_TUILES_4.wav</ShortName>
 					<CachePath>SFX/SFX_SIMULATION_TUILES_4_818F3B66.wem</CachePath>
 				</File>
-				<File Id="586738246" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUSIQUE_SALLE_WALL_E.wav</ShortName>
-					<CachePath>SFX/MUSIQUE_SALLE_WALL_E_818F3B66.wem</CachePath>
-				</File>
 				<File Id="601300744" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_9.wav</ShortName>
 					<CachePath>SFX/SFX_SIMULATION_TUILES_9_818F3B66.wem</CachePath>
+				</File>
+				<File Id="660654465" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_BOUTON_CLICK.wav</ShortName>
+					<CachePath>SFX/SFX_BOUTON_CLICK_818F3B66.wem</CachePath>
 				</File>
 				<File Id="670562076" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PAS_ANDROÏDE_5.wav</ShortName>
@@ -324,6 +353,10 @@
 					<ShortName>SFX_SIMULATION_TUILES_1.wav</ShortName>
 					<CachePath>SFX/SFX_SIMULATION_TUILES_1_818F3B66.wem</CachePath>
 				</File>
+				<File Id="831089712" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_AMBIANCE_CROWD.wav</ShortName>
+					<CachePath>SFX/SFX_AMBIANCE_CROWD_818F3B66.wem</CachePath>
+				</File>
 				<File Id="837757474" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SCAN_OBJ.wav</ShortName>
 					<CachePath>SFX/SFX_SCAN_OBJ_818F3B66.wem</CachePath>
@@ -335,6 +368,10 @@
 				<File Id="916630455" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_8.wav</ShortName>
 					<CachePath>SFX/SFX_SIMULATION_TUILES_8_818F3B66.wem</CachePath>
+				</File>
+				<File Id="919887464" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_EBOULEMENT.wav</ShortName>
+					<CachePath>SFX/SFX_EBOULEMENT_818F3B66.wem</CachePath>
 				</File>
 				<File Id="922605610" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_FERMETURE_PORTE_TUTO.wav</ShortName>
@@ -358,22 +395,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="4068946449" Name="Play_4NN4_MASTERING2" DurationType="OneShot" DurationMin="157.1923" DurationMax="157.1923">
-					<MediaRefs>
-						<MediaRef Id="352465723"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="1291952458" Name="Play_MUSIQUE_SALLE_WALL_E" DurationType="OneShot" DurationMin="137.93452" DurationMax="137.93452">
-					<MediaRefs>
-						<MediaRef Id="586738246"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="388074695" Name="Play_PropositionSimulation" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="31641563"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="2623669360" Name="Play_RandomContainerTest" DurationType="OneShot" DurationMin="0.6240417" DurationMax="0.6240417">
+				<Event Id="2623669360" Name="Play_RandomContainerTest" MaxAttenuation="195" DurationType="OneShot" DurationMin="0.6240417" DurationMax="0.6240417">
 					<MediaRefs>
 						<MediaRef Id="13083898"/>
 						<MediaRef Id="520465305"/>
@@ -383,9 +405,19 @@
 						<MediaRef Id="881874796"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="490583398" Name="Play_SFX_AMBIANCE_VENT_LOOP_LONG" DurationType="Infinite">
+				<Event Id="1326775932" Name="Play_SFX_AMBIANCE_CROWD" MaxAttenuation="195" DurationType="OneShot" DurationMin="30.96498" DurationMax="30.96498">
+					<MediaRefs>
+						<MediaRef Id="831089712"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="490583398" Name="Play_SFX_AMBIANCE_VENT_LOOP_LONG" MaxAttenuation="195" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="941196900"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1101089906" Name="Play_SFX_BOUTON_CLICK" MaxAttenuation="195" DurationType="OneShot" DurationMin="0.10145833" DurationMax="0.10145833">
+					<MediaRefs>
+						<MediaRef Id="660654465"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="4021310751" Name="Play_SFX_BUMPER_BOOST" DurationType="OneShot" DurationMin="1.5843333" DurationMax="1.5843333">
@@ -398,27 +430,32 @@
 						<MediaRef Id="214063422"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2126400971" Name="Play_SFX_DETECTION_LANCEMENT2" DurationType="OneShot" DurationMin="9.384625" DurationMax="9.384625">
+				<Event Id="2126400971" Name="Play_SFX_DETECTION_LANCEMENT2" MaxAttenuation="195" DurationType="OneShot" DurationMin="9.384625" DurationMax="9.384625">
 					<MediaRefs>
 						<MediaRef Id="356420912"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="317254060" Name="Play_SFX_FERMETURE_PORTE_PETITE" DurationType="OneShot" DurationMin="1.29325" DurationMax="1.29325">
+				<Event Id="3758634482" Name="Play_SFX_EBOULEMENT" DurationType="OneShot" DurationMin="5.019583" DurationMax="5.019583">
+					<MediaRefs>
+						<MediaRef Id="919887464"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="317254060" Name="Play_SFX_FERMETURE_PORTE_PETITE" MaxAttenuation="195" DurationType="OneShot" DurationMin="1.29325" DurationMax="1.29325">
 					<MediaRefs>
 						<MediaRef Id="707380317"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1226673255" Name="Play_SFX_FERMETURE_PORTE_TUTO" DurationType="OneShot" DurationMin="1.3588958" DurationMax="1.3588958">
+				<Event Id="1226673255" Name="Play_SFX_FERMETURE_PORTE_TUTO" MaxAttenuation="195" DurationType="OneShot" DurationMin="1.3588958" DurationMax="1.3588958">
 					<MediaRefs>
 						<MediaRef Id="922605610"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3699296330" Name="Play_SFX_OUVERTURE_PORTE_PETITE" DurationType="OneShot" DurationMin="1.0550833" DurationMax="1.0550833">
+				<Event Id="3699296330" Name="Play_SFX_OUVERTURE_PORTE_PETITE" MaxAttenuation="195" DurationType="OneShot" DurationMin="1.0550833" DurationMax="1.0550833">
 					<MediaRefs>
 						<MediaRef Id="775787932"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1974769985" Name="Play_SFX_OUVERTURE_PORTE_TUTO" DurationType="OneShot" DurationMin="1.1453542" DurationMax="1.1453542">
+				<Event Id="1974769985" Name="Play_SFX_OUVERTURE_PORTE_TUTO" MaxAttenuation="195" DurationType="OneShot" DurationMin="1.1453542" DurationMax="1.1453542">
 					<MediaRefs>
 						<MediaRef Id="723591768"/>
 					</MediaRefs>
@@ -437,25 +474,24 @@
 						<MediaRef Id="961710233"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2394956354" Name="Play_SFX_PORTE_FINALE" DurationType="OneShot" DurationMin="6.827854" DurationMax="6.827854">
+				<Event Id="2394956354" Name="Play_SFX_PORTE_FINALE" MaxAttenuation="195" DurationType="OneShot" DurationMin="6.827854" DurationMax="6.827854">
 					<MediaRefs>
 						<MediaRef Id="747293285"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="140330310" Name="Play_SFX_PORTES_CHANGELIGHT" DurationType="OneShot" DurationMin="1.8461459" DurationMax="1.8461459">
+				<Event Id="140330310" Name="Play_SFX_PORTES_CHANGELIGHT" MaxAttenuation="195" DurationType="OneShot" DurationMin="1.8461459" DurationMax="1.8461459">
 					<MediaRefs>
 						<MediaRef Id="1031853575"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="4060256703" Name="Play_SFX_SCAN_OBJ" DurationType="OneShot" DurationMin="5.143417" DurationMax="5.143417">
+				<Event Id="4060256703" Name="Play_SFX_SCAN_OBJ" MaxAttenuation="195" DurationType="OneShot" DurationMin="5.143417" DurationMax="5.143417">
 					<MediaRefs>
 						<MediaRef Id="837757474"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1362331995" Name="Stop_4NN4_MASTERING2" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3465213173" Name="Stop_PropositionSimulation" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3185533582" Name="Stop_SFX_AMBIANCE_CROWD" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5CC4D476-DAFA-D5D3-4446-EEE1F569347B}</FileHash>
+	<FileHash>{D7F5D463-9898-9324-0F56-5D9705579D78}</FileHash>
 </SoundBanksInfo>

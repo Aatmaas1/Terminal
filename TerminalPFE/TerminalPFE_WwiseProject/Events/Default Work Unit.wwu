@@ -179,6 +179,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_SFX_BOUTON_CLICK" ID="{C6D9B533-E8E4-4287-BA1C-C6EDCF35B975}">
+							<ChildrenList>
+								<Action Name="" ID="{6E4D5EAF-06B1-4F66-9BCD-E6F3CC39FE9C}" ShortID="784054507">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_BOUTON_CLICK" ID="{15AA468B-3ACD-400F-9E46-326078FFB81A}" WorkUnitID="{35CEDD8C-522E-40A2-AE68-9C1877E44B99}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="DETECTION SCAN" ID="{8EB62DA2-6E4A-4A6B-9D1B-6A35AB255CDB}" ShortID="561391475">
@@ -235,8 +246,48 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Stop_SFX_AMBIANCE_CROWD" ID="{D3CD9359-ED67-4569-9AFD-7A08475473C9}">
+							<ChildrenList>
+								<Action Name="" ID="{EBD6A0CB-DAB7-432F-9424-49B60E2DCE88}" ShortID="204630293">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_AMBIANCE_CROWD" ID="{40FA8890-175D-4004-9E23-A3CE7E791220}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_AMBIANCE_CROWD" ID="{D018E440-4B9E-4407-9780-21FAB1CD859C}">
+							<ChildrenList>
+								<Action Name="" ID="{6F176ECF-EEE3-49B1-B45B-D8B9398B04A7}" ShortID="884497049">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_AMBIANCE_CROWD" ID="{40FA8890-175D-4004-9E23-A3CE7E791220}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_SFX_EBOULEMENT" ID="{D5A529CE-5FEC-46EA-A1CA-B397AFE006AF}">
+					<ChildrenList>
+						<Action Name="" ID="{B532936B-BD69-4BB0-9F83-AABC35691A72}" ShortID="1011485614">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_EBOULEMENT" ID="{71F15AB3-9DE7-4437-A6B1-93A5F66695FF}" WorkUnitID="{5477266C-D991-4580-A687-CA6FC8AF0645}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
