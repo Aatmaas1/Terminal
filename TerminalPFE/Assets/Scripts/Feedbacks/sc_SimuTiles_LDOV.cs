@@ -15,7 +15,7 @@ public class sc_SimuTiles_LDOV : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _mat = GetComponent<MeshRenderer>().material;
+        _mat = GetComponentInParent<MeshRenderer>().material;
     }
 
 
