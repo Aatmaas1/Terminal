@@ -73,6 +73,7 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         }
     }
 
+    #region Controles
     public void OnClick()
     {
         IEnumerable<I_Interactible> datapersistenceobjects = FindObjectsOfType<MonoBehaviour>().OfType<I_Interactible>();
@@ -107,7 +108,7 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         pInput.SwitchCurrentActionMap(mode);
         pInput.currentActionMap.Enable();
     }
-
+    #endregion
 
     #region GestionCutscenes
     public void MakeCamLookAt(Transform obj)
@@ -210,7 +211,7 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
                 GetComponent<CharacterController>().enabled = false;
                 transform.position = terminaux[i].playerAvatarSpawn.transform.position;
                 transform.rotation = terminaux[i].playerAvatarSpawn.transform.rotation;
-                GetComponent<StarterAssets.ThirdPersonController>().ResetCam(new Vector2(0, 0f));
+                GetComponent<StarterAssets.ThirdPersonController>().ResetCam(new Vector2(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y));
                 transform.GetChild(0).rotation = transform.rotation;
                 GetComponent<CharacterController>().enabled = true;
             }
