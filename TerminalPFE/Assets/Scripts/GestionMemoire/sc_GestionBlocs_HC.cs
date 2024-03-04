@@ -27,16 +27,38 @@ public class sc_GestionBlocs_HC : MonoBehaviour
     public void LoadAll()
     {
         // Load all the saves using dataHandler
-        this.DataBlocs = fileHandler.Load();
+        this.DataBlocs = fileHandler.LoadBlocks();
 
         // if there isn't any, create a new save
-        if (this.generalData == null)
+        if (this.DataBlocs == null)
         {
             Debug.Log("No Data found, creating a new save file.");
             NewGame();
         }
 
         //Pass it to the scripts
-        LoadToObjects();
+        LoadToBlocks();
+    }
+
+    public void LoadToBlocks()
+    {
+        sc_plateformeSimu[] myItems = FindObjectsOfType(typeof(sc_plateformeSimu)) as sc_plateformeSimu[];
+        Debug.Log("Found " + myItems.Length + " instances with this script attached");
+        foreach (sc_plateformeSimu item in myItems)
+        {
+            if (DataBlocs.blocs[item.idBox] == true)
+            {
+                item.StartTrigger();
+            }
+        }
+    }
+
+    public void SaveBlocs()
+    {
+        sc_plateformeSimu[] myItems = FindObjectsOfType(typeof(sc_plateformeSimu)) as sc_plateformeSimu[];
+        foreach (sc_plateformeSimu item in myItems)
+        {
+            DataBlocs.blocs[item.idBox] = item.isUsed;
+        }
     }
 }

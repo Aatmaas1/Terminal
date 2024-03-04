@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.HighDefinition;
 
 public class sc_plateformeSimu : MonoBehaviour
 {
+    public int idBox;
+    public bool isUsed = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +36,7 @@ public class sc_plateformeSimu : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            isUsed = true;
             gameObject.GetComponentInParent<MeshRenderer>().material.color = new Color(0f, 1f, 1f, 1f);
             gameObject.GetComponentInChildren<ParticleSystem>().Play();
             //Debug.Log("La plateforme détecte le player en entrée");
@@ -46,5 +51,11 @@ public class sc_plateformeSimu : MonoBehaviour
 
             //Debug.Log("La plateforme détecte le player en sortie");
         }
+    }
+
+    public void StartTrigger()
+    {
+        isUsed = true;
+        gameObject.GetComponentInParent<MeshRenderer>().material.color = new Color(0.2784313725490196f, 0.00784313725490196f, 0.30980392156862746f);
     }
 }
