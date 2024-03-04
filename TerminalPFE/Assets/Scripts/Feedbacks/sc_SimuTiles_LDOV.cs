@@ -39,6 +39,6 @@ public class sc_SimuTiles_LDOV : MonoBehaviour
             _mat.SetVector("_PlayerPos", other.transform.position);
             gameObject.GetComponentInChildren<ParticleSystem>().Play();
         }
-    }
+    } 
 
 }
