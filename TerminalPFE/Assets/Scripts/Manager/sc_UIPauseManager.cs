@@ -89,6 +89,10 @@ public class sc_UIPauseManager : MonoBehaviour
     {
         sc_PlayerManager_HC.Instance.IndexTerminal = -1;
         sc_DataManager.instance.SaveAll();
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            sc_GestionBlocs_HC.instance.SaveBlocs();
+        }
         sc_SceneManager_HC.Instance.ChargeScene("MainMenu");
     }
 

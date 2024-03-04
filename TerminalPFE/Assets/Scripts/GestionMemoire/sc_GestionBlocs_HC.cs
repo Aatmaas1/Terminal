@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class sc_GestionBlocs_HC : MonoBehaviour
 {
+    public static sc_GestionBlocs_HC instance;
     [Header("File Storage Config")]
     [SerializeField] private string fileName;
 
@@ -16,9 +18,21 @@ public class sc_GestionBlocs_HC : MonoBehaviour
 
     private void Awake()
     {
+        if (instance != null)
+        {
+            Destroy(this);
+        }
+        instance = this;
         this.fileHandler = new sc_FileHandler_HC(Application.persistentDataPath, fileName);
-        LoadAll();
     }
+    private void Start()
+    {
+        if(SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            LoadAll();
+        }
+    }
+
     public void NewGame()
     {
         this.DataBlocs = new BlocsSimu();
@@ -42,23 +56,47 @@ public class sc_GestionBlocs_HC : MonoBehaviour
 
     public void LoadToBlocks()
     {
-        sc_plateformeSimu[] myItems = FindObjectsOfType(typeof(sc_plateformeSimu)) as sc_plateformeSimu[];
-        Debug.Log("Found " + myItems.Length + " instances with this script attached");
-        foreach (sc_plateformeSimu item in myItems)
+        //sc_SimuTiles_LDOV[] myItems = FindObjectsOfType(typeof(sc_SimuTiles_LDOV)) as sc_SimuTiles_LDOV[];
+        //Debug.Log("Found " + myItems.Length + " instances with this script attached");
+        /*foreach (sc_SimuTiles_LDOV item in myItems)
         {
             if (DataBlocs.blocs[item.idBox] == true)
             {
                 item.StartTrigger();
+            }
+        }*/
+        int i = 0;
+        foreach (Transform child in transform)
+        {
+            if (child.GetChild(0).GetComponent<sc_SimuTiles_LDOV>())
+            {
+                sc_SimuTiles_LDOV tested = child.GetChild(0).GetComponent<sc_SimuTiles_LDOV>();
+                if (DataBlocs.blocs[i] == true)
+                {
+                    tested.StartTrigger();
+                }
+                i++;
             }
         }
     }
 
     public void SaveBlocs()
     {
-        sc_plateformeSimu[] myItems = FindObjectsOfType(typeof(sc_plateformeSimu)) as sc_plateformeSimu[];
-        foreach (sc_plateformeSimu item in myItems)
+        //sc_SimuTiles_LDOV[] myItems = FindObjectsOfType(typeof(sc_SimuTiles_LDOV)) as sc_SimuTiles_LDOV[];
+        int i = 0;
+        foreach(Transform child in transform)
         {
-            DataBlocs.blocs[item.idBox] = item.isUsed;
+            if (child.GetChild(0).GetComponent<sc_SimuTiles_LDOV>())
+            {
+                sc_SimuTiles_LDOV tested = child.GetChild(0).GetComponent<sc_SimuTiles_LDOV>();
+                DataBlocs.blocs[i] = tested._touch;
+                i++;
+            }
         }
+        /*foreach (sc_SimuTiles_LDOV item in myItems)
+        {
+            DataBlocs.blocs[item.idBox] = item._touch;
+        }*/
+        fileHandler.SaveBlocks(DataBlocs);
     }
 }

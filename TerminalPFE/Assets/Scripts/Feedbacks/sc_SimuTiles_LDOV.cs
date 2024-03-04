@@ -6,11 +6,13 @@ public class sc_SimuTiles_LDOV : MonoBehaviour
 {
     private Material _mat;
 
-    bool _touch;
+    public bool _touch;
 
     float _clrChangr = 0;
 
     public float changerSpeed;
+
+    public int idBox;
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +41,15 @@ public class sc_SimuTiles_LDOV : MonoBehaviour
             _mat.SetVector("_PlayerPos", other.transform.position);
             gameObject.GetComponentInChildren<ParticleSystem>().Play();
         }
-    } 
+    }
+
+    public void StartTrigger()
+    {
+        Debug.Log("aaaaaaa");
+        _mat = GetComponentInParent<MeshRenderer>().material;
+        _touch = true;
+        _mat.SetVector("_PlayerPos", transform.position + Vector3.up);
+        gameObject.GetComponentInChildren<ParticleSystem>().Play();
+    }
 
 }

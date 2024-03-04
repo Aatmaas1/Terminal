@@ -115,7 +115,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1827705050317161968}
   - component: {fileID: 8355105995834670574}
-  - component: {fileID: 8850304419256395174}
   - component: {fileID: 8347064131887446256}
   - component: {fileID: 2481720221872969354}
   - component: {fileID: 7412971642439780346}
@@ -166,18 +165,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 0.40197837, z: 1}
   m_Center: {x: 0, y: 0.5167182, z: 0}
---- !u!114 &8850304419256395174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4705885366180876479}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78ca30e1619e9a547bce6e9114bac777, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8347064131887446256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5194,7 +5181,6 @@ GameObject:
   - component: {fileID: 7111074598152397061}
   - component: {fileID: 7488137571865276620}
   - component: {fileID: 4475921252192735525}
-  - component: {fileID: 7736259772051694007}
   m_Layer: 0
   m_Name: PlateformeSimu
   m_TagString: Untagged
@@ -5290,15 +5276,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7736259772051694007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8628415327811375912}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78ca30e1619e9a547bce6e9114bac777, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

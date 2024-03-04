@@ -71,6 +71,10 @@ public class TestTrigger : MonoBehaviour, IDataManager
                 //Debug.Log("DeclencheSortie");
             }
 
+            if (SceneManager.GetActiveScene().buildIndex == 2)
+            {
+                sc_GestionBlocs_HC.instance.SaveBlocs();
+            }
             sc_PlayerManager_HC.Instance.IndexTerminal = index;
             sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
             sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimEntreeTerminalSimu");

@@ -10,10 +10,10 @@ public class tex : MonoBehaviour
     [ContextMenu("Do Something")]
     void DoSomething()
     {
-       sc_plateformeSimu[] myItems = FindObjectsOfType(typeof(sc_plateformeSimu)) as sc_plateformeSimu[];
+        sc_SimuTiles_LDOV[] myItems = FindObjectsOfType(typeof(sc_SimuTiles_LDOV)) as sc_SimuTiles_LDOV[];
         Debug.Log("Found " + myItems.Length + " instances with this script attached");
         int i = 0;
-        foreach (sc_plateformeSimu item in myItems)
+        foreach (sc_SimuTiles_LDOV item in myItems)
         {
             item.idBox = i;
             i++;
