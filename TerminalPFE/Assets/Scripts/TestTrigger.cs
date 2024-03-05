@@ -71,6 +71,10 @@ public class TestTrigger : MonoBehaviour, IDataManager
                 //Debug.Log("DeclencheSortie");
             }
 
+            if (SceneManager.GetActiveScene().buildIndex == 2)
+            {
+                sc_GestionBlocs_HC.instance.SaveBlocs();
+            }
             sc_PlayerManager_HC.Instance.IndexTerminal = index;
             sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
             sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimEntreeTerminalSimu");
@@ -100,7 +104,7 @@ public class TestTrigger : MonoBehaviour, IDataManager
             sc_PlayerManager_HC.Instance.IndexTerminal = index;
             sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
             sc_PlayerManager_HC.Instance.TurnPlayerToward(transform.GetChild(2));
-            //sc_PlayerManager_HC.Instance.MoveToTerminal(transform);
+            sc_PlayerManager_HC.Instance.MoveToTerminal(transform.GetChild(2));
             sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimEntreeTerminalReel");
             sc_UIPauseManager.Instance.cameraPause.SetActive(false);
             StartCoroutine(DelayEffet());
@@ -109,6 +113,7 @@ public class TestTrigger : MonoBehaviour, IDataManager
 
     IEnumerator DelayEffet()
     {
+        GetComponent<sc_CameraEffect_HC>().PrepareVideo();
         yield return new WaitForSeconds(ChangementVitesseTerminalAnimation);
         OnTrig?.Invoke();
     }

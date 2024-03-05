@@ -121,6 +121,7 @@ GameObject:
   - component: {fileID: 7412971642439780346}
   - component: {fileID: 4739449118233459048}
   - component: {fileID: 6701882995855537921}
+  - component: {fileID: 2445462653377402924}
   m_Layer: 0
   m_Name: Detecteur
   m_TagString: Untagged
@@ -172,7 +173,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4705885366180876479}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78ca30e1619e9a547bce6e9114bac777, type: 3}
   m_Name: 
@@ -282,6 +283,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerObject: {fileID: 0}
+--- !u!114 &2445462653377402924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4705885366180876479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d47d91eef4f01f249b45ee5c092caadb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  changerSpeed: 5
 --- !u!1 &7432101956817488967
 GameObject:
   m_ObjectHideFlags: 0
@@ -5233,7 +5247,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 979aef027a1c86c42a15ce35fce366fa, type: 2}
+  - {fileID: 2100000, guid: f11b056627a31264e912a6b871a07364, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -18,6 +18,7 @@ public class AK_PORTES_AM : MonoBehaviour
         }
         
         open.Post(gameObject);
+        Debug.Log("Je m'ouvre");
     }
 
     public void Close()

@@ -11,7 +11,7 @@ public class sc_UIPauseManager : MonoBehaviour
 
     public System.Action OnPause;
 
-    public GameObject menuPause, inventaire, cameraGame, cameraPause, cameraInventaire;
+    public GameObject menuPause, inventaire, cameraGame, cameraPause;
 
     Transform player;
     private void Awake()
@@ -36,7 +36,12 @@ public class sc_UIPauseManager : MonoBehaviour
     {
         if (menuPause.activeInHierarchy || inventaire.activeInHierarchy)
         {
-            if (Physics.Raycast(player.position + Vector3.up, player.forward, 2f))
+            bool mid = Physics.Raycast(player.position + Vector3.up * 1.5f, player.forward + player.right.normalized * 0.35f, 2f);
+            bool TR = Physics.Raycast(player.position + Vector3.up * 1.5f, player.forward + Vector3.up * 0.4f + player.right.normalized * 0.80f, 2f);
+            bool TL = Physics.Raycast(player.position + Vector3.up * 1.5f, player.forward + Vector3.up * 0.4f - player.right.normalized * 0.1f, 2f);
+            bool BR = Physics.Raycast(player.position + Vector3.up * 1.5f, player.forward - Vector3.up * 0.4f + player.right.normalized * 0.80f, 2f);
+            bool BL = Physics.Raycast(player.position + Vector3.up * 1.5f, player.forward - Vector3.up * 0.4f - player.right.normalized * 0.1f, 2f);
+            if (mid || TR || TL || BR || BL)
             {
                 player.GetComponent<CharacterController>().enabled = false;
                 player.Rotate(new Vector3(0, 10, 0));
@@ -84,6 +89,10 @@ public class sc_UIPauseManager : MonoBehaviour
     {
         sc_PlayerManager_HC.Instance.IndexTerminal = -1;
         sc_DataManager.instance.SaveAll();
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            sc_GestionBlocs_HC.instance.SaveBlocs();
+        }
         sc_SceneManager_HC.Instance.ChargeScene("MainMenu");
     }
 
@@ -94,14 +103,12 @@ public class sc_UIPauseManager : MonoBehaviour
         menuPause.transform.GetChild(4).GetComponent<Animator>().SetBool("IsSelected", false);
         Camera.main.gameObject.GetComponent<CinemachineBrain>().m_DefaultBlend.m_Time = 0.15f;
         inventaire.SetActive(true);
-        cameraInventaire.SetActive(true);
         menuPause.SetActive(false);
         cameraPause.SetActive(false);
     }
     public void CloseInventory()
     {
         inventaire.SetActive(false);
-        cameraInventaire.SetActive(false);
         menuPause.SetActive(true);
         cameraPause.SetActive(true);
     }

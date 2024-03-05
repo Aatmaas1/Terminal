@@ -72,6 +72,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_MUSIQUE_SALLE_WALL_E" ID="{BF122745-D0D9-4C8E-A67E-A60AADD5A546}">
+							<ChildrenList>
+								<Action Name="" ID="{89821BC3-590C-47B2-B873-D1BBD846F9DD}" ShortID="1059672195">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MUSIQUE_SALLE_WALL_E" ID="{6F719EF3-4715-467F-8321-8EDE0830DEE8}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="SIMULATION" ID="{341F4021-3D6C-49F2-B57D-96BCB18E02F4}" ShortID="370386191">
@@ -168,6 +179,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_SFX_BOUTON_CLICK" ID="{C6D9B533-E8E4-4287-BA1C-C6EDCF35B975}">
+							<ChildrenList>
+								<Action Name="" ID="{6E4D5EAF-06B1-4F66-9BCD-E6F3CC39FE9C}" ShortID="784054507">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_BOUTON_CLICK" ID="{15AA468B-3ACD-400F-9E46-326078FFB81A}" WorkUnitID="{35CEDD8C-522E-40A2-AE68-9C1877E44B99}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="DETECTION SCAN" ID="{8EB62DA2-6E4A-4A6B-9D1B-6A35AB255CDB}" ShortID="561391475">
@@ -211,6 +233,61 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="AMBIANCES" ID="{E342E30D-08B7-40FB-8C52-7D577683A4A1}" ShortID="445620462">
+					<ChildrenList>
+						<Event Name="Play_SFX_AMBIANCE_VENT_LOOP_LONG" ID="{056681DC-67E3-456C-9C3C-9B692F6F4EC3}">
+							<ChildrenList>
+								<Action Name="" ID="{5871D314-3AE2-4436-B989-26068CFBA0A6}" ShortID="483226895">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_AMBIANCE_VENT_LOOP_LONG" ID="{877BA685-E0A1-4871-9D90-9F170F1F0DDF}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_SFX_AMBIANCE_CROWD" ID="{D3CD9359-ED67-4569-9AFD-7A08475473C9}">
+							<ChildrenList>
+								<Action Name="" ID="{EBD6A0CB-DAB7-432F-9424-49B60E2DCE88}" ShortID="204630293">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_AMBIANCE_CROWD" ID="{40FA8890-175D-4004-9E23-A3CE7E791220}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_AMBIANCE_CROWD" ID="{D018E440-4B9E-4407-9780-21FAB1CD859C}">
+							<ChildrenList>
+								<Action Name="" ID="{6F176ECF-EEE3-49B1-B45B-D8B9398B04A7}" ShortID="884497049">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_AMBIANCE_CROWD" ID="{40FA8890-175D-4004-9E23-A3CE7E791220}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Play_SFX_EBOULEMENT" ID="{D5A529CE-5FEC-46EA-A1CA-B397AFE006AF}">
+					<ChildrenList>
+						<Action Name="" ID="{B532936B-BD69-4BB0-9F83-AABC35691A72}" ShortID="1011485614">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_EBOULEMENT" ID="{71F15AB3-9DE7-4437-A6B1-93A5F66695FF}" WorkUnitID="{5477266C-D991-4580-A687-CA6FC8AF0645}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

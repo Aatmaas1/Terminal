@@ -47,6 +47,36 @@ public class sc_FileHandler_HC
         return loadedData;
     }
 
+    public BlocsSimu LoadBlocks()
+    {
+        //Combine pr que ça marche sur windows, linux et mac (normalement)
+        string FullPath = Path.Combine(DataPath, FileName);
+        BlocsSimu loadedData = null;
+        if (File.Exists(FullPath))
+        {
+            try
+            {
+                string dataToLoad = "";
+                using (FileStream stream = new FileStream(FullPath, FileMode.Open))
+                {
+                    using (StreamReader reader = new StreamReader(stream))
+                    {
+                        dataToLoad = reader.ReadToEnd();
+                    }
+                }
+
+
+                //Deserialisation
+                loadedData = JsonUtility.FromJson<BlocsSimu>(dataToLoad);
+            }
+            catch (Exception e)
+            {
+                Debug.LogError("Error occured when trying to load file : " + FullPath + "\n" + e);
+            }
+        }
+        return loadedData;
+    }
+
 
     public void Save(GeneralData data)
     {
@@ -62,17 +92,46 @@ public class sc_FileHandler_HC
             string dataToStore = JsonUtility.ToJson(data, true);
 
 
-            using(FileStream stream = new FileStream(FullPath, FileMode.Create))
+            using (FileStream stream = new FileStream(FullPath, FileMode.Create))
             {
-                using(StreamWriter writer = new StreamWriter(stream))
+                using (StreamWriter writer = new StreamWriter(stream))
                 {
                     writer.Write(dataToStore);
                 }
             }
         }
-        catch(Exception e)
+        catch (Exception e)
         {
-            Debug.LogError("Error occured when trying to save to file : " + FullPath + "\n" +  e);
+            Debug.LogError("Error occured when trying to save to file : " + FullPath + "\n" + e);
+        }
+    }
+
+
+    public void SaveBlocks(BlocsSimu data)
+    {
+        //Combine pr que ça marche sur windows, linux et mac (normalement)
+        string FullPath = Path.Combine(DataPath, FileName);
+
+
+        try
+        {
+            Directory.CreateDirectory(Path.GetDirectoryName(FullPath));
+
+            //Serialisation
+            string dataToStore = JsonUtility.ToJson(data, true);
+
+
+            using (FileStream stream = new FileStream(FullPath, FileMode.Create))
+            {
+                using (StreamWriter writer = new StreamWriter(stream))
+                {
+                    writer.Write(dataToStore);
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.LogError("Error occured when trying to save to file : " + FullPath + "\n" + e);
         }
     }
 }
