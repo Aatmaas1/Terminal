@@ -9,36 +9,7 @@
 				<WorkUnit Name="DETECTION SCAN" ID="{506924A9-A2C9-454F-8B8E-FC7839558575}" PersistMode="Reference"/>
 				<WorkUnit Name="INTRO CONSTRUCTION ANDRO" ID="{AC4208DC-5399-48C9-B7CC-46E5EA3F80D2}" PersistMode="Reference"/>
 				<WorkUnit Name="Ambiances" ID="{147F8A23-E62D-43B9-B80D-6E19A3441376}" PersistMode="Reference"/>
-				<Sound Name="SFX_EBOULEMENT" ID="{71F15AB3-9DE7-4437-A6B1-93A5F66695FF}" ShortID="826405311">
-					<PropertyList>
-						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-5</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="SFX_EBOULEMENT" ID="{0503B279-D678-4DF8-80CB-FCC62749D52F}">
-							<Language>SFX</Language>
-							<AudioFile>SFX_EBOULEMENT.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="919887464"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="SFX_EBOULEMENT" ID="{0503B279-D678-4DF8-80CB-FCC62749D52F}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
+				<WorkUnit Name="Transitions" ID="{966934EA-2DC0-4447-9711-9782A113F052}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

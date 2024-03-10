@@ -269,7 +269,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{92AD33E6-BAA1-AFA5-7B55-A7785FCECAF8}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{51DAB784-B28E-A3B1-A792-851910B10A1E}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -308,6 +308,10 @@
 				<File Id="544464536" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_3.wav</ShortName>
 					<CachePath>SFX/SFX_SIMULATION_TUILES_3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="558280839" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_REELTOSIMU.wav</ShortName>
+					<CachePath>SFX/SFX_REELTOSIMU_68D7E6FA.wem</CachePath>
 				</File>
 				<File Id="565426712" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_4.wav</ShortName>
@@ -484,14 +488,20 @@
 						<MediaRef Id="1031853575"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1946099615" Name="Play_SFX_REELTOSIMU" DurationType="OneShot" DurationMin="19.097124" DurationMax="19.097124">
+					<MediaRefs>
+						<MediaRef Id="558280839"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="4060256703" Name="Play_SFX_SCAN_OBJ" MaxAttenuation="195" DurationType="OneShot" DurationMin="5.143417" DurationMax="5.143417">
 					<MediaRefs>
 						<MediaRef Id="837757474"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3185533582" Name="Stop_SFX_AMBIANCE_CROWD" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1116948477" Name="Stop_SFX_REELTOSIMU" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D7F5D463-9898-9324-0F56-5D9705579D78}</FileHash>
+	<FileHash>{EF44B5B0-2916-84BD-D0B5-329C9BC0B409}</FileHash>
 </SoundBanksInfo>

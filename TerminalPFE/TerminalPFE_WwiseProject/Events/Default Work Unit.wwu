@@ -277,17 +277,47 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Play_SFX_EBOULEMENT" ID="{D5A529CE-5FEC-46EA-A1CA-B397AFE006AF}">
+				<Folder Name="TRANSITIONS" ID="{B2332AF7-D31D-4ACA-B9DC-FA5CD171A264}" ShortID="520741749">
 					<ChildrenList>
-						<Action Name="" ID="{B532936B-BD69-4BB0-9F83-AABC35691A72}" ShortID="1011485614">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SFX_EBOULEMENT" ID="{71F15AB3-9DE7-4437-A6B1-93A5F66695FF}" WorkUnitID="{5477266C-D991-4580-A687-CA6FC8AF0645}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Play_SFX_EBOULEMENT" ID="{D5A529CE-5FEC-46EA-A1CA-B397AFE006AF}">
+							<ChildrenList>
+								<Action Name="" ID="{B532936B-BD69-4BB0-9F83-AABC35691A72}" ShortID="1011485614">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_EBOULEMENT" ID="{71F15AB3-9DE7-4437-A6B1-93A5F66695FF}" WorkUnitID="{966934EA-2DC0-4447-9711-9782A113F052}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_REELTOSIMU" ID="{D41E0A23-178A-45A2-AAF8-2E4EC80CE6CF}">
+							<ChildrenList>
+								<Action Name="" ID="{1F37DA59-C902-48C5-BB91-48213048909F}" ShortID="862537380">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_REELTOSIMU" ID="{8AC5B136-98B7-4111-B0FE-EDB92B125817}" WorkUnitID="{966934EA-2DC0-4447-9711-9782A113F052}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_SFX_REELTOSIMU" ID="{0CD1EB48-A5F5-4972-A196-8B1C4581BEDC}">
+							<ChildrenList>
+								<Action Name="" ID="{A36FDAB8-3CA8-45AC-9B10-7A4BB56A0872}" ShortID="450126871">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_REELTOSIMU" ID="{8AC5B136-98B7-4111-B0FE-EDB92B125817}" WorkUnitID="{966934EA-2DC0-4447-9711-9782A113F052}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
