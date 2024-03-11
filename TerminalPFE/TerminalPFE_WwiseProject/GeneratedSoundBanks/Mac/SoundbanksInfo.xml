@@ -269,7 +269,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{51DAB784-B28E-A3B1-A792-851910B10A1E}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{4D0EF357-E738-BD0A-9EE3-9F4E716E0E59}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -288,6 +288,10 @@
 				<File Id="214063422" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_CONSTRUCTION_ANDROÏDE.wav</ShortName>
 					<CachePath>SFX/SFX_CONSTRUCTION_ANDROÏDE_268A4F59.wem</CachePath>
+				</File>
+				<File Id="336626696" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_REELTOSIMU_2.wav</ShortName>
+					<CachePath>SFX/SFX_REELTOSIMU_2_5C4B1980.wem</CachePath>
 				</File>
 				<File Id="356420912" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_DETECTION_LANCEMENT2.wav</ShortName>
@@ -309,10 +313,6 @@
 					<ShortName>SFX_SIMULATION_TUILES_3.wav</ShortName>
 					<CachePath>SFX/SFX_SIMULATION_TUILES_3_818F3B66.wem</CachePath>
 				</File>
-				<File Id="558280839" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_REELTOSIMU.wav</ShortName>
-					<CachePath>SFX/SFX_REELTOSIMU_68D7E6FA.wem</CachePath>
-				</File>
 				<File Id="565426712" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_4.wav</ShortName>
 					<CachePath>SFX/SFX_SIMULATION_TUILES_4_818F3B66.wem</CachePath>
@@ -320,10 +320,6 @@
 				<File Id="601300744" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_9.wav</ShortName>
 					<CachePath>SFX/SFX_SIMULATION_TUILES_9_818F3B66.wem</CachePath>
-				</File>
-				<File Id="660654465" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_BOUTON_CLICK.wav</ShortName>
-					<CachePath>SFX/SFX_BOUTON_CLICK_818F3B66.wem</CachePath>
 				</File>
 				<File Id="670562076" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PAS_ANDROÏDE_5.wav</ShortName>
@@ -419,11 +415,6 @@
 						<MediaRef Id="941196900"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1101089906" Name="Play_SFX_BOUTON_CLICK" MaxAttenuation="195" DurationType="OneShot" DurationMin="0.10145833" DurationMax="0.10145833">
-					<MediaRefs>
-						<MediaRef Id="660654465"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="4021310751" Name="Play_SFX_BUMPER_BOOST" DurationType="OneShot" DurationMin="1.5843333" DurationMax="1.5843333">
 					<MediaRefs>
 						<MediaRef Id="1004497866"/>
@@ -488,9 +479,9 @@
 						<MediaRef Id="1031853575"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1946099615" Name="Play_SFX_REELTOSIMU" DurationType="OneShot" DurationMin="19.097124" DurationMax="19.097124">
+				<Event Id="3337838948" Name="Play_SFX_REELTOSIMU_2" DurationType="OneShot" DurationMin="19.104605" DurationMax="19.104605">
 					<MediaRefs>
-						<MediaRef Id="558280839"/>
+						<MediaRef Id="336626696"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="4060256703" Name="Play_SFX_SCAN_OBJ" MaxAttenuation="195" DurationType="OneShot" DurationMin="5.143417" DurationMax="5.143417">
@@ -499,9 +490,9 @@
 					</MediaRefs>
 				</Event>
 				<Event Id="3185533582" Name="Stop_SFX_AMBIANCE_CROWD" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1116948477" Name="Stop_SFX_REELTOSIMU" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1840303866" Name="Stop_SFX_REELTOSIMU_2" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{EF44B5B0-2916-84BD-D0B5-329C9BC0B409}</FileHash>
+	<FileHash>{D638C3F0-06D1-64C2-5C5A-FE0F626741DA}</FileHash>
 </SoundBanksInfo>
