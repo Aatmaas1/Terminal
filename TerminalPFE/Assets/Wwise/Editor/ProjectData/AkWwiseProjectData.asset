@@ -482,7 +482,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e364e8b048b1b448b41f12b8470ec700
     GuidInternal: 
-    m_lastTime: -8584915416566846223
+    m_lastTime: -8584914533711367665
     List:
     - name: Main
       guid: 251dc717ef0fef42a545f46544a81c52
@@ -524,7 +524,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 32fcbe829e1db64882c8fd8a959356a5
     GuidInternal: 
-    m_lastTime: -8584915412431354736
+    m_lastTime: -8584914529159981876
     List:
     - name: AMBIANCES
       guid: 0de342e3b708fb408c527d577683a4a1
@@ -971,9 +971,9 @@ MonoBehaviour:
       maxAttenuation: 195
       maxDuration: 1.8461459
       minDuration: 1.8461459
-    - name: Play_SFX_REELTOSIMU
-      guid: 230a1ed48a17a245aaf82e4ec80ce6cf
-      id: 1946099615
+    - name: Play_SFX_REELTOSIMU_2
+      guid: f4a7a2c1cca2d641b37de77470e13013
+      id: 3337838948
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -984,13 +984,13 @@ MonoBehaviour:
       - ElementName: TRANSITIONS
         ObjectType: 4
         guid: f72a33b21dd3ca4ab9dcfa5cd171a264
-      - ElementName: Play_SFX_REELTOSIMU
+      - ElementName: Play_SFX_REELTOSIMU_2
         ObjectType: 3
-        guid: 230a1ed48a17a245aaf82e4ec80ce6cf
-      Path: Events\Default Work Unit\TRANSITIONS\Play_SFX_REELTOSIMU
+        guid: f4a7a2c1cca2d641b37de77470e13013
+      Path: Events\Default Work Unit\TRANSITIONS\Play_SFX_REELTOSIMU_2
       maxAttenuation: 0
-      maxDuration: 19.097124
-      minDuration: 19.097124
+      maxDuration: 19.104605
+      minDuration: 19.104605
     - name: Play_SFX_SCAN_OBJ
       guid: c1084b444716f3449eef7216a2cb9faa
       id: 4060256703
@@ -1105,9 +1105,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: Stop_SFX_REELTOSIMU
-      guid: 48ebd10cf5a57249a1968b1c4581bedc
-      id: 1116948477
+    - name: Stop_SFX_REELTOSIMU_2
+      guid: ec7d80f90bb09046b2baf29c2e1a86ca
+      id: 1840303866
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -1118,10 +1118,10 @@ MonoBehaviour:
       - ElementName: TRANSITIONS
         ObjectType: 4
         guid: f72a33b21dd3ca4ab9dcfa5cd171a264
-      - ElementName: Stop_SFX_REELTOSIMU
+      - ElementName: Stop_SFX_REELTOSIMU_2
         ObjectType: 3
-        guid: 48ebd10cf5a57249a1968b1c4581bedc
-      Path: Events\Default Work Unit\TRANSITIONS\Stop_SFX_REELTOSIMU
+        guid: ec7d80f90bb09046b2baf29c2e1a86ca
+      Path: Events\Default Work Unit\TRANSITIONS\Stop_SFX_REELTOSIMU_2
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -1199,7 +1199,7 @@ MonoBehaviour:
     m_lastTime: -8584991312705959035
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000a0000000b0000000d0000000e0000001300000016000000
+  ExpandedWaapiItemIds: 06000000070000000f000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

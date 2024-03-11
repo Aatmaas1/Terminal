@@ -290,27 +290,27 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_SFX_REELTOSIMU" ID="{D41E0A23-178A-45A2-AAF8-2E4EC80CE6CF}">
+						<Event Name="Play_SFX_REELTOSIMU_2" ID="{C1A2A7F4-A2CC-41D6-B37D-E77470E13013}">
 							<ChildrenList>
-								<Action Name="" ID="{1F37DA59-C902-48C5-BB91-48213048909F}" ShortID="862537380">
+								<Action Name="" ID="{A97B5429-B7E3-46D2-850B-6E302033E05E}" ShortID="730665064">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_REELTOSIMU" ID="{8AC5B136-98B7-4111-B0FE-EDB92B125817}" WorkUnitID="{966934EA-2DC0-4447-9711-9782A113F052}"/>
+											<ObjectRef Name="SFX_REELTOSIMU_2" ID="{3038B8F4-3E80-478D-8F0B-27F9F1AD5102}" WorkUnitID="{966934EA-2DC0-4447-9711-9782A113F052}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Stop_SFX_REELTOSIMU" ID="{0CD1EB48-A5F5-4972-A196-8B1C4581BEDC}">
+						<Event Name="Stop_SFX_REELTOSIMU_2" ID="{F9807DEC-B00B-4690-B2BA-F29C2E1A86CA}">
 							<ChildrenList>
-								<Action Name="" ID="{A36FDAB8-3CA8-45AC-9B10-7A4BB56A0872}" ShortID="450126871">
+								<Action Name="" ID="{27123044-8B8D-4F74-9A31-7FA97A55FD36}" ShortID="350250015">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_REELTOSIMU" ID="{8AC5B136-98B7-4111-B0FE-EDB92B125817}" WorkUnitID="{966934EA-2DC0-4447-9711-9782A113F052}"/>
+											<ObjectRef Name="SFX_REELTOSIMU_2" ID="{3038B8F4-3E80-478D-8F0B-27F9F1AD5102}" WorkUnitID="{966934EA-2DC0-4447-9711-9782A113F052}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
