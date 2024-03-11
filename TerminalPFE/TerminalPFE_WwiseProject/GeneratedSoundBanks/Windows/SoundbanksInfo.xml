@@ -269,7 +269,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{513E9646-0452-4C0A-7CA9-8D9953CFA3CC}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{4D0EF357-E738-BD0A-9EE3-9F4E716E0E59}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -320,10 +320,6 @@
 				<File Id="601300744" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_9.wav</ShortName>
 					<CachePath>SFX/SFX_SIMULATION_TUILES_9_818F3B66.wem</CachePath>
-				</File>
-				<File Id="660654465" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_BOUTON_CLICK.wav</ShortName>
-					<CachePath>SFX/SFX_BOUTON_CLICK_818F3B66.wem</CachePath>
 				</File>
 				<File Id="670562076" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PAS_ANDROÏDE_5.wav</ShortName>
@@ -419,11 +415,6 @@
 						<MediaRef Id="941196900"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1101089906" Name="Play_SFX_BOUTON_CLICK" MaxAttenuation="195" DurationType="OneShot" DurationMin="0.10145833" DurationMax="0.10145833">
-					<MediaRefs>
-						<MediaRef Id="660654465"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="4021310751" Name="Play_SFX_BUMPER_BOOST" DurationType="OneShot" DurationMin="1.5843333" DurationMax="1.5843333">
 					<MediaRefs>
 						<MediaRef Id="1004497866"/>
@@ -503,5 +494,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B334DA0B-71C2-9791-765D-11179FDD10AF}</FileHash>
+	<FileHash>{2F0A8623-8087-F8E6-C09F-7DF5D0A6B776}</FileHash>
 </SoundBanksInfo>
