@@ -8,6 +8,7 @@ public class GeneralData
     public Quaternion LastRot;
     public bool porteTuto0Ouverte, porteTuto1Ouverte, porteTuto2Ouverte, porteSortieOuverte, SolCasse, tutoBody, hasSwitchedBody;
     public bool[] ItemsCollected;
+    public bool porteSpam;
 
     public GeneralData()
     {
@@ -23,5 +24,6 @@ public class GeneralData
         this.tutoBody = false;
         this.hasSwitchedBody = false;
         this.ItemsCollected = new bool[]{ false, false, false, false, false, false, false, false, false, false, false, false};
+        this.porteSpam = false;
     }
 }
