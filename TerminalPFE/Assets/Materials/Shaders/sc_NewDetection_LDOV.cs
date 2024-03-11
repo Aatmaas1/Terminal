@@ -30,7 +30,7 @@ public class sc_NewDetection_LDOV : MonoBehaviour
         {
             foreach(VisualEffect fx in allVFX)
             {
-                fx.SetVector3("PlayerPos", player.position);
+                fx.SetVector3("PlayerPos", transform.position);
             }
         }
     }
