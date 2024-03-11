@@ -19,7 +19,6 @@ namespace AK
         static const AkUniqueID PLAY_RANDOMCONTAINERTEST = 2623669360U;
         static const AkUniqueID PLAY_SFX_AMBIANCE_CROWD = 1326775932U;
         static const AkUniqueID PLAY_SFX_AMBIANCE_VENT_LOOP_LONG = 490583398U;
-        static const AkUniqueID PLAY_SFX_BOUTON_CLICK = 1101089906U;
         static const AkUniqueID PLAY_SFX_BUMPER_BOOST = 4021310751U;
         static const AkUniqueID PLAY_SFX_CONSTRUCTION_ANDRO = 1925718750U;
         static const AkUniqueID PLAY_SFX_DETECTION_LANCEMENT2 = 2126400971U;
@@ -31,12 +30,12 @@ namespace AK
         static const AkUniqueID PLAY_SFX_PERLES_TUILES = 2699630658U;
         static const AkUniqueID PLAY_SFX_PORTE_FINALE = 2394956354U;
         static const AkUniqueID PLAY_SFX_PORTES_CHANGELIGHT = 140330310U;
-        static const AkUniqueID PLAY_SFX_REELTOSIMU = 1946099615U;
+        static const AkUniqueID PLAY_SFX_REELTOSIMU_2 = 3337838948U;
         static const AkUniqueID PLAY_SFX_SCAN_OBJ = 4060256703U;
         static const AkUniqueID STOP_4NN4_MASTERING2 = 1362331995U;
         static const AkUniqueID STOP_PROPOSITIONSIMULATION = 3465213173U;
         static const AkUniqueID STOP_SFX_AMBIANCE_CROWD = 3185533582U;
-        static const AkUniqueID STOP_SFX_REELTOSIMU = 1116948477U;
+        static const AkUniqueID STOP_SFX_REELTOSIMU_2 = 1840303866U;
     } // namespace EVENTS
 
     namespace BANKS
