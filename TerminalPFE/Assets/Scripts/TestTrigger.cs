@@ -15,6 +15,11 @@ public class TestTrigger : MonoBehaviour, IDataManager
     float color = 0;
     public float ChangementVitesseTerminalAnimation;
     bool isInUse = false;
+
+    public bool isUse = false;
+    public Material nonUseMat;
+    public Material useMat;
+
     private void Start()
     {
         Vfx = GetComponent<VisualEffect>();
@@ -34,10 +39,6 @@ public class TestTrigger : MonoBehaviour, IDataManager
             Vfx.SetFloat("ColorChanger", color);
         }
     }
-
-    public bool isUse = false;
-    public Material nonUseMat;
-    public Material useMat;
     private void Update()
     {
         if (isUse == true)
@@ -120,7 +121,10 @@ public class TestTrigger : MonoBehaviour, IDataManager
 
     public void PlayerReady()
     {
-        isOpen = true;
+        if(!isUse)
+        {
+            isOpen = true;
+        }
     }
 
     public void LostPlayer()
