@@ -305,6 +305,36 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Stop_SFX_SIMUTOREEL" ID="{1425BE91-35E8-4AD1-848B-B3E4921E5F2A}">
+							<ChildrenList>
+								<Action Name="" ID="{41F71944-FE4B-4720-AF8D-3F22F4430CAC}" ShortID="627435325">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_SIMUTOREEL" ID="{87A125E5-E1D4-45C6-B20D-F8450F6AE6B5}" WorkUnitID="{966934EA-2DC0-4447-9711-9782A113F052}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_SIMUTOREEL" ID="{B91A9DB6-D7B8-49A8-89C2-ED4A80163655}">
+							<ChildrenList>
+								<Action Name="" ID="{B41904FF-F154-4799-A63B-2F0FE20E6863}" ShortID="783995526">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_SIMUTOREEL" ID="{87A125E5-E1D4-45C6-B20D-F8450F6AE6B5}" WorkUnitID="{966934EA-2DC0-4447-9711-9782A113F052}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
