@@ -269,7 +269,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{4D0EF357-E738-BD0A-9EE3-9F4E716E0E59}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{12300CC5-4E11-0E60-AD45-CF58AFF0A162}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -360,6 +360,10 @@
 				<File Id="837757474" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SCAN_OBJ.wav</ShortName>
 					<CachePath>SFX/SFX_SCAN_OBJ_818F3B66.wem</CachePath>
+				</File>
+				<File Id="854111363" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_SIMUTOREEL.wav</ShortName>
+					<CachePath>SFX/SFX_SIMUTOREEL_B5E07405.wem</CachePath>
 				</File>
 				<File Id="881874796" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PAS_ANDROÏDE_4.wav</ShortName>
@@ -489,10 +493,16 @@
 						<MediaRef Id="837757474"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2427864811" Name="Play_SFX_SIMUTOREEL" DurationType="OneShot" DurationMin="19.044584" DurationMax="19.044584">
+					<MediaRefs>
+						<MediaRef Id="854111363"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3185533582" Name="Stop_SFX_AMBIANCE_CROWD" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1840303866" Name="Stop_SFX_REELTOSIMU_2" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1074890505" Name="Stop_SFX_SIMUTOREEL" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2F0A8623-8087-F8E6-C09F-7DF5D0A6B776}</FileHash>
+	<FileHash>{1F2E8D80-CAC9-8CF5-C60A-460C20631B52}</FileHash>
 </SoundBanksInfo>

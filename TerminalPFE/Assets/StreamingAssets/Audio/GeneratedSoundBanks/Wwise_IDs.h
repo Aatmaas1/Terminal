@@ -32,10 +32,12 @@ namespace AK
         static const AkUniqueID PLAY_SFX_PORTES_CHANGELIGHT = 140330310U;
         static const AkUniqueID PLAY_SFX_REELTOSIMU_2 = 3337838948U;
         static const AkUniqueID PLAY_SFX_SCAN_OBJ = 4060256703U;
+        static const AkUniqueID PLAY_SFX_SIMUTOREEL = 2427864811U;
         static const AkUniqueID STOP_4NN4_MASTERING2 = 1362331995U;
         static const AkUniqueID STOP_PROPOSITIONSIMULATION = 3465213173U;
         static const AkUniqueID STOP_SFX_AMBIANCE_CROWD = 3185533582U;
         static const AkUniqueID STOP_SFX_REELTOSIMU_2 = 1840303866U;
+        static const AkUniqueID STOP_SFX_SIMUTOREEL = 1074890505U;
     } // namespace EVENTS
 
     namespace BANKS
