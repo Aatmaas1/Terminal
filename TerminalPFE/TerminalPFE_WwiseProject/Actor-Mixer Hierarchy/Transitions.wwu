@@ -67,6 +67,40 @@
 						<ActiveSource Name="SFX_REELTOSIMU_2" ID="{767EE32F-CBCB-4026-BD9E-97AA32487156}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="SFX_SIMUTOREEL" ID="{87A125E5-E1D4-45C6-B20D-F8450F6AE6B5}" ShortID="399281000">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-11</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_SIMUTOREEL" ID="{D61B0718-87B5-40BC-8B71-D81A80F1E454}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="1.91509776536313"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.585168761638734"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>SFX_SIMUTOREEL.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="854111363"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_SIMUTOREEL" ID="{D61B0718-87B5-40BC-8B71-D81A80F1E454}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
