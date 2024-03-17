@@ -16,7 +16,10 @@ public class sc_AnimTerminal_LDOV : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            animator.SetBool("IsOpen", true);
+            if(!animator.GetComponent<TestTrigger>().isUse)
+            {
+                animator.SetBool("IsOpen", true);
+            }
         }
     }
 

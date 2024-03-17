@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 4911748031979099264}
   - component: {fileID: 5715061561103105664}
   - component: {fileID: 2328055599129155224}
+  - component: {fileID: 5948074067238697121}
   m_Layer: 0
   m_Name: Terminal
   m_TagString: Untagged
@@ -290,6 +291,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: TestsHugo2
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5948074067238697121}
+        m_TargetAssemblyTypeName: AK_POSTEVENT_AM, Assembly-CSharp
+        m_MethodName: PostEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
   index: 0
@@ -458,6 +471,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 939f7861c44967a4abce893c83ca9dd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5948074067238697121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6796312986989884305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d11157e2edff0f44966e5e03b83a829, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2d57ab2c4651c0748804e4bbf30cf588,
+      type: 2}
+  stopEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &9082019885917475487
 GameObject:
   m_ObjectHideFlags: 0
