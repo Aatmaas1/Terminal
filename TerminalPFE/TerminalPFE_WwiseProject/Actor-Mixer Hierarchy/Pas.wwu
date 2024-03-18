@@ -172,6 +172,172 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="RANDOMISEUR_PAS_SABLE" ID="{38AF32D8-6573-4F7C-93DA-A51510455F76}" ShortID="1031524271">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="test" ID="{83FC4427-373B-423C-9734-382CCBEF1630}" WorkUnitID="{1AEB090E-561D-4FBA-B8F3-272DEE9A77E2}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SFX_PAS_ANDROÏDE_SABLE_1" ID="{150296EB-807B-427D-BE51-C91F9D3E83CB}" ShortID="24683083">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_PAS_ANDROÏDE_SABLE_1" ID="{AAC6133C-CF90-4A63-9FB1-CA4FC598F8E4}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_PAS_ANDROÏDE_SABLE_1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="978644198"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_PAS_ANDROÏDE_SABLE_1" ID="{AAC6133C-CF90-4A63-9FB1-CA4FC598F8E4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_PAS_ANDROÏDE_SABLE_2" ID="{E618CA69-DC21-47F2-9259-549348747BAE}" ShortID="115467305">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_PAS_ANDROÏDE_SABLE_2" ID="{2A624135-CA86-44CF-8B2E-5BC61B7F1A3D}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_PAS_ANDROÏDE_SABLE_2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="479046017"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_PAS_ANDROÏDE_SABLE_2" ID="{2A624135-CA86-44CF-8B2E-5BC61B7F1A3D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_PAS_ANDROÏDE_SABLE_3" ID="{5AEA7EA4-3149-478E-A03D-7EB09F2C00E6}" ShortID="597730981">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_PAS_ANDROÏDE_SABLE_3" ID="{E0276ED9-68E9-4D47-AD7A-912773F24387}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_PAS_ANDROÏDE_SABLE_3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="978945700"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_PAS_ANDROÏDE_SABLE_3" ID="{E0276ED9-68E9-4D47-AD7A-912773F24387}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_PAS_ANDROÏDE_SABLE_4" ID="{9F3D15BC-8EAB-448B-A289-536B9D1F781E}" ShortID="796878361">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_PAS_ANDROÏDE_SABLE_4" ID="{C9F9059B-D5A0-478A-910E-D24C30DC9C74}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_PAS_ANDROÏDE_SABLE_4.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="38118640"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_PAS_ANDROÏDE_SABLE_4" ID="{C9F9059B-D5A0-478A-910E-D24C30DC9C74}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_PAS_ANDROÏDE_SABLE_5" ID="{B8FEF794-7B32-49F9-B2BD-9936E9CE3830}" ShortID="707123853">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_PAS_ANDROÏDE_SABLE_5" ID="{F043FAF6-E1D2-4ED2-8B20-CB1A2678D4BA}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_PAS_ANDROÏDE_SABLE_5.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="857904994"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_PAS_ANDROÏDE_SABLE_5" ID="{F043FAF6-E1D2-4ED2-8B20-CB1A2678D4BA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_PAS_ANDROÏDE_SABLE_6" ID="{08457CA8-7FCA-41D4-B049-A26DEBD1593D}" ShortID="157885021">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_PAS_ANDROÏDE_SABLE_6" ID="{9C580629-A5F8-42C8-B9A9-46E4008532C8}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_PAS_ANDROÏDE_SABLE_6.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="948307174"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_PAS_ANDROÏDE_SABLE_6" ID="{9C580629-A5F8-42C8-B9A9-46E4008532C8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

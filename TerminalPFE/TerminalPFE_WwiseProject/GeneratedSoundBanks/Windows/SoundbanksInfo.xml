@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{CEC752D1-78A5-6C26-69EF-B40A9BFD638E}">
+		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{3CAE8EBA-B552-A7C1-BBA9-B6601FC83485}">
 			<ShortName>MUSIQUE</ShortName>
 			<Path>MUSIQUE.bnk</Path>
 			<Media>
@@ -269,13 +269,21 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{12300CC5-4E11-0E60-AD45-CF58AFF0A162}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{A8143CF6-E671-D8CE-2B65-45E84BD08A66}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="13083898" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PAS_ANDROÏDE_2.wav</ShortName>
 					<CachePath>SFX/SFX_PAS_ANDROÏDE_2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="13346509" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_LETTRES_INTRO_2.wav</ShortName>
+					<CachePath>SFX/SFX_LETTRES_INTRO_2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="38118640" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_PAS_ANDROÏDE_SABLE_4.wav</ShortName>
+					<CachePath>SFX/SFX_PAS_ANDROÏDE_SABLE_4_818F3B66.wem</CachePath>
 				</File>
 				<File Id="76343104" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_6.wav</ShortName>
@@ -289,6 +297,14 @@
 					<ShortName>SFX_CONSTRUCTION_ANDROÏDE.wav</ShortName>
 					<CachePath>SFX/SFX_CONSTRUCTION_ANDROÏDE_268A4F59.wem</CachePath>
 				</File>
+				<File Id="233112726" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_SABLE_SOL.wav</ShortName>
+					<CachePath>SFX/SFX_SABLE_SOL_818F3B66.wem</CachePath>
+				</File>
+				<File Id="293166367" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_TERMINAL_OUVERTURE.wav</ShortName>
+					<CachePath>SFX/SFX_TERMINAL_OUVERTURE_818F3B66.wem</CachePath>
+				</File>
 				<File Id="336626696" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_REELTOSIMU_2.wav</ShortName>
 					<CachePath>SFX/SFX_REELTOSIMU_2_5C4B1980.wem</CachePath>
@@ -300,6 +316,10 @@
 				<File Id="435168779" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_2.wav</ShortName>
 					<CachePath>SFX/SFX_SIMULATION_TUILES_2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="479046017" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_PAS_ANDROÏDE_SABLE_2.wav</ShortName>
+					<CachePath>SFX/SFX_PAS_ANDROÏDE_SABLE_2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="520465305" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PAS_ANDROÏDE_1.wav</ShortName>
@@ -320,6 +340,10 @@
 				<File Id="601300744" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_9.wav</ShortName>
 					<CachePath>SFX/SFX_SIMULATION_TUILES_9_818F3B66.wem</CachePath>
+				</File>
+				<File Id="603627856" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_LETTRES_INTRO_3.wav</ShortName>
+					<CachePath>SFX/SFX_LETTRES_INTRO_3_818F3B66.wem</CachePath>
 				</File>
 				<File Id="670562076" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PAS_ANDROÏDE_5.wav</ShortName>
@@ -363,7 +387,15 @@
 				</File>
 				<File Id="854111363" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMUTOREEL.wav</ShortName>
-					<CachePath>SFX/SFX_SIMUTOREEL_B5E07405.wem</CachePath>
+					<CachePath>SFX/SFX_SIMUTOREEL_3DAFE51F.wem</CachePath>
+				</File>
+				<File Id="857904994" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_PAS_ANDROÏDE_SABLE_5.wav</ShortName>
+					<CachePath>SFX/SFX_PAS_ANDROÏDE_SABLE_5_818F3B66.wem</CachePath>
+				</File>
+				<File Id="871342710" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_PORTE_BLOQUEE.wav</ShortName>
+					<CachePath>SFX/SFX_PORTE_BLOQUEE_818F3B66.wem</CachePath>
 				</File>
 				<File Id="881874796" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PAS_ANDROÏDE_4.wav</ShortName>
@@ -385,20 +417,51 @@
 					<ShortName>SFX_AMBIANCE_VENT_LOOP_LONG.wav</ShortName>
 					<CachePath>SFX/SFX_AMBIANCE_VENT_LOOP_LONG_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="946652825" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_TERMINAL_FERMETURE.wav</ShortName>
+					<CachePath>SFX/SFX_TERMINAL_FERMETURE_818F3B66.wem</CachePath>
+				</File>
+				<File Id="948307174" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_PAS_ANDROÏDE_SABLE_6.wav</ShortName>
+					<CachePath>SFX/SFX_PAS_ANDROÏDE_SABLE_6_818F3B66.wem</CachePath>
+				</File>
 				<File Id="961710233" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_7.wav</ShortName>
 					<CachePath>SFX/SFX_SIMULATION_TUILES_7_818F3B66.wem</CachePath>
+				</File>
+				<File Id="978644198" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_PAS_ANDROÏDE_SABLE_1.wav</ShortName>
+					<CachePath>SFX/SFX_PAS_ANDROÏDE_SABLE_1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="978945700" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_PAS_ANDROÏDE_SABLE_3.wav</ShortName>
+					<CachePath>SFX/SFX_PAS_ANDROÏDE_SABLE_3_818F3B66.wem</CachePath>
 				</File>
 				<File Id="1004497866" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_BUMPER_BOOST.wav</ShortName>
 					<CachePath>SFX/SFX_BUMPER_BOOST_818F3B66.wem</CachePath>
 				</File>
+				<File Id="1027573716" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_LETTRES_INTRO_1.wav</ShortName>
+					<CachePath>SFX/SFX_LETTRES_INTRO_1_818F3B66.wem</CachePath>
+				</File>
 				<File Id="1031853575" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PORTES_CHANGELIGHT.wav</ShortName>
 					<CachePath>SFX/SFX_PORTES_CHANGELIGHT_818F3B66.wem</CachePath>
 				</File>
+				<File Id="1061350635" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_TERMINAL_BOUCLE.wav</ShortName>
+					<CachePath>SFX/SFX_TERMINAL_BOUCLE_2E3EB4C2.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
+				<Event Id="2615986883" Name="Play_RANDOM_LETTRES" DurationType="OneShot" DurationMin="0.203125" DurationMax="0.8125">
+					<MediaRefs>
+						<MediaRef Id="13346509"/>
+						<MediaRef Id="603627856"/>
+						<MediaRef Id="1027573716"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2623669360" Name="Play_RandomContainerTest" MaxAttenuation="195" DurationType="OneShot" DurationMin="0.6240417" DurationMax="0.6240417">
 					<MediaRefs>
 						<MediaRef Id="13083898"/>
@@ -407,6 +470,16 @@
 						<MediaRef Id="670562076"/>
 						<MediaRef Id="676488202"/>
 						<MediaRef Id="881874796"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="128182366" Name="Play_RANDOMISEUR_PAS_SABLE" MaxAttenuation="195" DurationType="OneShot" DurationMin="0.6240417" DurationMax="0.6240417">
+					<MediaRefs>
+						<MediaRef Id="38118640"/>
+						<MediaRef Id="479046017"/>
+						<MediaRef Id="857904994"/>
+						<MediaRef Id="948307174"/>
+						<MediaRef Id="978644198"/>
+						<MediaRef Id="978945700"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1326775932" Name="Play_SFX_AMBIANCE_CROWD" MaxAttenuation="195" DurationType="OneShot" DurationMin="30.96498" DurationMax="30.96498">
@@ -473,6 +546,11 @@
 						<MediaRef Id="961710233"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1116452380" Name="Play_SFX_PORTE_BLOQUEE" MaxAttenuation="195" DurationType="OneShot" DurationMin="1.8509583" DurationMax="1.8509583">
+					<MediaRefs>
+						<MediaRef Id="871342710"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2394956354" Name="Play_SFX_PORTE_FINALE" MaxAttenuation="195" DurationType="OneShot" DurationMin="6.827854" DurationMax="6.827854">
 					<MediaRefs>
 						<MediaRef Id="747293285"/>
@@ -488,6 +566,11 @@
 						<MediaRef Id="336626696"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1177195950" Name="Play_SFX_SABLE_SOL" MaxAttenuation="195" DurationType="OneShot" DurationMin="24" DurationMax="24">
+					<MediaRefs>
+						<MediaRef Id="233112726"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="4060256703" Name="Play_SFX_SCAN_OBJ" MaxAttenuation="195" DurationType="OneShot" DurationMin="5.143417" DurationMax="5.143417">
 					<MediaRefs>
 						<MediaRef Id="837757474"/>
@@ -498,11 +581,27 @@
 						<MediaRef Id="854111363"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2080143493" Name="Play_SFX_TERMINAL_BOUCLE" MaxAttenuation="195" DurationType="OneShot" DurationMin="36.80325" DurationMax="36.80325">
+					<MediaRefs>
+						<MediaRef Id="1061350635"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2337403756" Name="Play_SFX_TERMINAL_FERMETURE" MaxAttenuation="195" DurationType="OneShot" DurationMin="1.3872292" DurationMax="1.3872292">
+					<MediaRefs>
+						<MediaRef Id="946652825"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2483481318" Name="Play_SFX_TERMINAL_OUVERTURE" MaxAttenuation="195" DurationType="OneShot" DurationMin="1.3872292" DurationMax="1.3872292">
+					<MediaRefs>
+						<MediaRef Id="293166367"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3185533582" Name="Stop_SFX_AMBIANCE_CROWD" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1840303866" Name="Stop_SFX_REELTOSIMU_2" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1074890505" Name="Stop_SFX_SIMUTOREEL" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1191159315" Name="Stop_SFX_TERMINAL_BOUCLE" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1F2E8D80-CAC9-8CF5-C60A-460C20631B52}</FileHash>
+	<FileHash>{8D1BB6EB-7DB6-A634-DD66-3A4F50608EAF}</FileHash>
 </SoundBanksInfo>
