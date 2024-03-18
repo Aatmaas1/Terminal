@@ -7,6 +7,8 @@ public class sc_TextAnimation_TV : MonoBehaviour
 {
     public TextMeshProUGUI textcomponent;
 
+    public AK_POSTEVENT_AM randomSound;
+
     public string[] lignes;
     public string[] lignes2;
     public string[] lignes3;
@@ -53,19 +55,23 @@ public class sc_TextAnimation_TV : MonoBehaviour
         {
             if (c == retourligne)
             {
+                randomSound.PostEvent();
                 textcomponent.text += "<br>";
                 yield return new WaitForSecondsRealtime(speedLigne);
             }
             else if (c == AttenteDansTexte)
             {
+                randomSound.PostEvent();
                 yield return new WaitForSecondsRealtime(speedAttenteDansTexte);
             }
             else if (c == effacerCharMoinsUn)
             {
+                randomSound.PostEvent();
                 textcomponent.text = textcomponent.text.Substring(0, textcomponent.text.Length - 1);
             }
             else
             {
+                randomSound.PostEvent();
                 textcomponent.text += c;
                 yield return new WaitForSecondsRealtime(speedChar);
             }
