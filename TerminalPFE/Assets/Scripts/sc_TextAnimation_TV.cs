@@ -55,18 +55,15 @@ public class sc_TextAnimation_TV : MonoBehaviour
         {
             if (c == retourligne)
             {
-                randomSound.PostEvent();
                 textcomponent.text += "<br>";
                 yield return new WaitForSecondsRealtime(speedLigne);
             }
             else if (c == AttenteDansTexte)
             {
-                randomSound.PostEvent();
                 yield return new WaitForSecondsRealtime(speedAttenteDansTexte);
             }
             else if (c == effacerCharMoinsUn)
             {
-                randomSound.PostEvent();
                 textcomponent.text = textcomponent.text.Substring(0, textcomponent.text.Length - 1);
             }
             else

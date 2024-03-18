@@ -12,13 +12,13 @@ Event	ID	Name			Wwise Object Path	Notes
 	1840303866	Stop_SFX_REELTOSIMU_2			\Default Work Unit\TRANSITIONS\Stop_SFX_REELTOSIMU_2	
 	1925718750	Play_SFX_CONSTRUCTION_ANDRO			\Default Work Unit\INTRODUCTION\Play_SFX_CONSTRUCTION_ANDRO	
 	1974769985	Play_SFX_OUVERTURE_PORTE_TUTO			\Default Work Unit\PORTES\Play_SFX_OUVERTURE_PORTE_TUTO	
+	2068312904	Play_SFX_LETTRES_INTRO_NEW_ESSAI_2			\Default Work Unit\INTRODUCTION\Play_SFX_LETTRES_INTRO_NEW_ESSAI_2	
 	2080143493	Play_SFX_TERMINAL_BOUCLE			\Default Work Unit\TERMINAL\Play_SFX_TERMINAL_BOUCLE	
 	2126400971	Play_SFX_DETECTION_LANCEMENT2			\Default Work Unit\DETECTION SCAN\Play_SFX_DETECTION_LANCEMENT2	
 	2337403756	Play_SFX_TERMINAL_FERMETURE			\Default Work Unit\TERMINAL\Play_SFX_TERMINAL_FERMETURE	
 	2394956354	Play_SFX_PORTE_FINALE			\Default Work Unit\PORTES\Play_SFX_PORTE_FINALE	
 	2427864811	Play_SFX_SIMUTOREEL			\Default Work Unit\TRANSITIONS\Play_SFX_SIMUTOREEL	
 	2483481318	Play_SFX_TERMINAL_OUVERTURE			\Default Work Unit\TERMINAL\Play_SFX_TERMINAL_OUVERTURE	
-	2615986883	Play_RANDOM_LETTRES			\Default Work Unit\INTRODUCTION\Play_RANDOM_LETTRES	
 	2623669360	Play_RandomContainerTest			\Default Work Unit\PasEvent\Play_RandomContainerTest	
 	2699630658	Play_SFX_PERLES_TUILES			\Default Work Unit\SIMULATION\Play_SFX_PERLES_TUILES	
 	3185533582	Stop_SFX_AMBIANCE_CROWD			\Default Work Unit\AMBIANCES\Stop_SFX_AMBIANCE_CROWD	
@@ -30,10 +30,10 @@ Event	ID	Name			Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	13083898	SFX_PAS_ANDROÏDE_2	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_PAS_ANDROÏDE_2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Pas\RANDOMISEUR_PAS\SFX_PAS_ANDROÏDE_2		119912
-	13346509	SFX_LETTRES_INTRO_2	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_LETTRES_INTRO_2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\INTRO CONSTRUCTION ANDRO\RANDOM_LETTRES\SFX_LETTRES_INTRO_2		156096
 	38118640	SFX_PAS_ANDROÏDE_SABLE_4	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_PAS_ANDROÏDE_SABLE_4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Pas\RANDOMISEUR_PAS_SABLE\SFX_PAS_ANDROÏDE_SABLE_4		119912
 	76343104	SFX_SIMULATION_TUILES_6	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_SIMULATION_TUILES_6_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Simulation\SFX_PERLES_TUILES\SFX_SIMULATION_TUILES_6		180096
 	85067457	SFX_SIMULATION_TUILES_5	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_SIMULATION_TUILES_5_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Simulation\SFX_PERLES_TUILES\SFX_SIMULATION_TUILES_5		180096
+	132449596	SFX_LETTRES_INTRO_NEW_ESSAI_2	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_LETTRES_INTRO_NEW_ESSAI_2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\INTRO CONSTRUCTION ANDRO\SFX_LETTRES_INTRO_NEW_ESSAI_2		156096
 	214063422	SFX_CONSTRUCTION_ANDRO	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_CONSTRUCTION_ANDROÏDE_268A4F59.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\INTRO CONSTRUCTION ANDRO\SFX_CONSTRUCTION_ANDRO		4678136
 	233112726	SFX_SABLE_SOL	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_SABLE_SOL_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambiances\SFX_SABLE_SOL		4608096
 	293166367	SFX_TERMINAL_OUVERTURE	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_TERMINAL_OUVERTURE_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\TERMINAL\SFX_TERMINAL_OUVERTURE		266444
@@ -46,7 +46,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	544464536	SFX_SIMULATION_TUILES_3	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_SIMULATION_TUILES_3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Simulation\SFX_PERLES_TUILES\SFX_SIMULATION_TUILES_3		180096
 	565426712	SFX_SIMULATION_TUILES_4	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_SIMULATION_TUILES_4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Simulation\SFX_PERLES_TUILES\SFX_SIMULATION_TUILES_4		180096
 	601300744	SFX_SIMULATION_TUILES_9	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_SIMULATION_TUILES_9_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Simulation\SFX_PERLES_TUILES\SFX_SIMULATION_TUILES_9		180096
-	603627856	SFX_LETTRES_INTRO_3	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_LETTRES_INTRO_3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\INTRO CONSTRUCTION ANDRO\RANDOM_LETTRES\SFX_LETTRES_INTRO_3		156096
 	670562076	SFX_PAS_ANDROÏDE_5	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_PAS_ANDROÏDE_5_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Pas\RANDOMISEUR_PAS\SFX_PAS_ANDROÏDE_5		119912
 	676488202	SFX_PAS_ANDROÏDE_6	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_PAS_ANDROÏDE_6_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Pas\RANDOMISEUR_PAS\SFX_PAS_ANDROÏDE_6		119912
 	707380317	SFX_FERMETURE_PORTE_PETITE	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_FERMETURE_PORTE_PETITE_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Portes\SFX_FERMETURE_PORTE_PETITE		248400
@@ -71,7 +70,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	978644198	SFX_PAS_ANDROÏDE_SABLE_1	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_PAS_ANDROÏDE_SABLE_1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Pas\RANDOMISEUR_PAS_SABLE\SFX_PAS_ANDROÏDE_SABLE_1		119912
 	978945700	SFX_PAS_ANDROÏDE_SABLE_3	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_PAS_ANDROÏDE_SABLE_3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Pas\RANDOMISEUR_PAS_SABLE\SFX_PAS_ANDROÏDE_SABLE_3		119912
 	1004497866	SFX_BUMPER_BOOST	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_BUMPER_BOOST_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Simulation\SFX_BUMPER_BOOST		304288
-	1027573716	SFX_LETTRES_INTRO_1	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_LETTRES_INTRO_1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\INTRO CONSTRUCTION ANDRO\RANDOM_LETTRES\SFX_LETTRES_INTRO_1		156096
 	1031853575	SFX_PORTES_CHANGELIGHT	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_PORTES_CHANGELIGHT_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Portes\SFX_PORTES_CHANGELIGHT		354556
-	1061350635	SFX_TERMINAL_BOUCLE	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_TERMINAL_BOUCLE_2E3EB4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\TERMINAL\SFX_TERMINAL_BOUCLE		7066320
+	1061350635	SFX_TERMINAL_BOUCLE	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_TERMINAL_BOUCLE_8AB1EF33.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\TERMINAL\SFX_TERMINAL_BOUCLE		7066320
 

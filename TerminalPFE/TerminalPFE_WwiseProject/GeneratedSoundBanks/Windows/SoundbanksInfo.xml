@@ -271,17 +271,13 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{1F646F98-7CA8-E3F2-F5F2-04FF77874910}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{EF3F48AF-9268-20FA-7545-2DC1ECBE8005}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="13083898" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PAS_ANDROÏDE_2.wav</ShortName>
 					<CachePath>SFX/SFX_PAS_ANDROÏDE_2_818F3B66.wem</CachePath>
-				</File>
-				<File Id="13346509" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_LETTRES_INTRO_2.wav</ShortName>
-					<CachePath>SFX/SFX_LETTRES_INTRO_2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="38118640" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PAS_ANDROÏDE_SABLE_4.wav</ShortName>
@@ -294,6 +290,10 @@
 				<File Id="85067457" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_5.wav</ShortName>
 					<CachePath>SFX/SFX_SIMULATION_TUILES_5_818F3B66.wem</CachePath>
+				</File>
+				<File Id="132449596" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_LETTRES_INTRO_NEW_ESSAI_2.wav</ShortName>
+					<CachePath>SFX/SFX_LETTRES_INTRO_NEW_ESSAI_2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="214063422" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_CONSTRUCTION_ANDROÏDE.wav</ShortName>
@@ -342,10 +342,6 @@
 				<File Id="601300744" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_9.wav</ShortName>
 					<CachePath>SFX/SFX_SIMULATION_TUILES_9_818F3B66.wem</CachePath>
-				</File>
-				<File Id="603627856" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_LETTRES_INTRO_3.wav</ShortName>
-					<CachePath>SFX/SFX_LETTRES_INTRO_3_818F3B66.wem</CachePath>
 				</File>
 				<File Id="670562076" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PAS_ANDROÏDE_5.wav</ShortName>
@@ -443,27 +439,16 @@
 					<ShortName>SFX_BUMPER_BOOST.wav</ShortName>
 					<CachePath>SFX/SFX_BUMPER_BOOST_818F3B66.wem</CachePath>
 				</File>
-				<File Id="1027573716" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_LETTRES_INTRO_1.wav</ShortName>
-					<CachePath>SFX/SFX_LETTRES_INTRO_1_818F3B66.wem</CachePath>
-				</File>
 				<File Id="1031853575" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PORTES_CHANGELIGHT.wav</ShortName>
 					<CachePath>SFX/SFX_PORTES_CHANGELIGHT_818F3B66.wem</CachePath>
 				</File>
 				<File Id="1061350635" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_TERMINAL_BOUCLE.wav</ShortName>
-					<CachePath>SFX/SFX_TERMINAL_BOUCLE_2E3EB4C2.wem</CachePath>
+					<CachePath>SFX/SFX_TERMINAL_BOUCLE_8AB1EF33.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2615986883" Name="Play_RANDOM_LETTRES" DurationType="OneShot" DurationMin="0.203125" DurationMax="0.8125">
-					<MediaRefs>
-						<MediaRef Id="13346509"/>
-						<MediaRef Id="603627856"/>
-						<MediaRef Id="1027573716"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="2623669360" Name="Play_RandomContainerTest" MaxAttenuation="195" DurationType="OneShot" DurationMin="0.6240417" DurationMax="0.6240417">
 					<MediaRefs>
 						<MediaRef Id="13083898"/>
@@ -522,6 +507,11 @@
 				<Event Id="1226673255" Name="Play_SFX_FERMETURE_PORTE_TUTO" MaxAttenuation="195" DurationType="OneShot" DurationMin="1.3588958" DurationMax="1.3588958">
 					<MediaRefs>
 						<MediaRef Id="922605610"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2068312904" Name="Play_SFX_LETTRES_INTRO_NEW_ESSAI_2" DurationType="OneShot" DurationMin="0.8101568" DurationMax="0.81485">
+					<MediaRefs>
+						<MediaRef Id="132449596"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3699296330" Name="Play_SFX_OUVERTURE_PORTE_PETITE" MaxAttenuation="195" DurationType="OneShot" DurationMin="1.0550833" DurationMax="1.0550833">
@@ -605,5 +595,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F977F5F5-C727-D9D4-51C2-502E47057606}</FileHash>
+	<FileHash>{42E4232E-60B8-FA80-2C7D-C4B2F345E53D}</FileHash>
 </SoundBanksInfo>

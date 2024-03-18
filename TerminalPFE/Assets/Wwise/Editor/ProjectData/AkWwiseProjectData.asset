@@ -482,7 +482,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e364e8b048b1b448b41f12b8470ec700
     GuidInternal: 
-    m_lastTime: -8584908473116001653
+    m_lastTime: -8584908435306851994
     List:
     - name: Main
       guid: 251dc717ef0fef42a545f46544a81c52
@@ -524,7 +524,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 32fcbe829e1db64882c8fd8a959356a5
     GuidInternal: 
-    m_lastTime: -8584908471621159046
+    m_lastTime: -8584908435343903015
     List:
     - name: AMBIANCES
       guid: 0de342e3b708fb408c527d577683a4a1
@@ -691,26 +691,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_RANDOM_LETTRES
-      guid: ec657340b5f0154e8a518e67cc48653f
-      id: 2615986883
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 32fcbe829e1db64882c8fd8a959356a5
-      - ElementName: INTRODUCTION
-        ObjectType: 4
-        guid: 9672f61551fb8345a3457e6ae462e197
-      - ElementName: Play_RANDOM_LETTRES
-        ObjectType: 3
-        guid: ec657340b5f0154e8a518e67cc48653f
-      Path: Events\Default Work Unit\INTRODUCTION\Play_RANDOM_LETTRES
-      maxAttenuation: 0
-      maxDuration: 0.8125
-      minDuration: 0.203125
     - name: Play_RandomContainerTest
       guid: 289cca1f5536154d9bbfe62f7f50f220
       id: 2623669360
@@ -911,6 +891,26 @@ MonoBehaviour:
       maxAttenuation: 195
       maxDuration: 1.3588958
       minDuration: 1.3588958
+    - name: Play_SFX_LETTRES_INTRO_NEW_ESSAI_2
+      guid: e1ba84e02d29bc4d934d54f909e386eb
+      id: 2068312904
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: INTRODUCTION
+        ObjectType: 4
+        guid: 9672f61551fb8345a3457e6ae462e197
+      - ElementName: Play_SFX_LETTRES_INTRO_NEW_ESSAI_2
+        ObjectType: 3
+        guid: e1ba84e02d29bc4d934d54f909e386eb
+      Path: Events\Default Work Unit\INTRODUCTION\Play_SFX_LETTRES_INTRO_NEW_ESSAI_2
+      maxAttenuation: 0
+      maxDuration: 0.81485
+      minDuration: 0.8101568
     - name: Play_SFX_OUVERTURE_PORTE_PETITE
       guid: f27e41e04c80ba47afcf71544cd27215
       id: 3699296330
@@ -1436,7 +1436,7 @@ MonoBehaviour:
     m_lastTime: -8584991312705959035
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000090000000e000000
+  ExpandedWaapiItemIds: 0500000006000000090000000a0000005f0000006000000063000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
