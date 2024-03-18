@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{3CAE8EBA-B552-A7C1-BBA9-B6601FC83485}">
+		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{7480E86B-6BA3-43B7-658F-B81A5F6A4C2E}">
 			<ShortName>MUSIQUE</ShortName>
 			<Path>MUSIQUE.bnk</Path>
 			<Media>
@@ -27,6 +27,7 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="1769335880" Name="Pause_MUSIQUE_SALLE_WALL_E" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="4068946449" Name="Play_4NN4_MASTERING2" DurationType="OneShot" DurationMin="157.1923" DurationMax="157.1923">
 					<MediaRefs>
 						<MediaRef Id="352465723"/>
@@ -42,6 +43,7 @@
 						<MediaRef Id="31641563"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="4222333403" Name="Resume_MUSIQUE_SALLE_WALL_E" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1362331995" Name="Stop_4NN4_MASTERING2" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3465213173" Name="Stop_PropositionSimulation" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
@@ -269,7 +271,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{A8143CF6-E671-D8CE-2B65-45E84BD08A66}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{1F646F98-7CA8-E3F2-F5F2-04FF77874910}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -603,5 +605,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8D1BB6EB-7DB6-A634-DD66-3A4F50608EAF}</FileHash>
+	<FileHash>{F977F5F5-C727-D9D4-51C2-502E47057606}</FileHash>
 </SoundBanksInfo>

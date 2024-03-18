@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PAUSE_MUSIQUE_SALLE_WALL_E = 1769335880U;
         static const AkUniqueID PLAY_4NN4_MASTERING2 = 4068946449U;
         static const AkUniqueID PLAY_MUSIQUE_SALLE_WALL_E = 1291952458U;
         static const AkUniqueID PLAY_PROPOSITIONSIMULATION = 388074695U;
@@ -40,6 +41,7 @@ namespace AK
         static const AkUniqueID PLAY_SFX_TERMINAL_BOUCLE = 2080143493U;
         static const AkUniqueID PLAY_SFX_TERMINAL_FERMETURE = 2337403756U;
         static const AkUniqueID PLAY_SFX_TERMINAL_OUVERTURE = 2483481318U;
+        static const AkUniqueID RESUME_MUSIQUE_SALLE_WALL_E = 4222333403U;
         static const AkUniqueID STOP_4NN4_MASTERING2 = 1362331995U;
         static const AkUniqueID STOP_PROPOSITIONSIMULATION = 3465213173U;
         static const AkUniqueID STOP_SFX_AMBIANCE_CROWD = 3185533582U;

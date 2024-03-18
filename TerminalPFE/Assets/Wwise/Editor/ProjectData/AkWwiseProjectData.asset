@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 1cf59fa78aed4b48900c0883722c8eb0
     GuidInternal: 
-    m_lastTime: -8584956867393635481
+    m_lastTime: -8584961376108387220
     List:
     - name: BETON
       guid: 4c9ae77e8847c643b2c6e42551e1bd87
@@ -51,7 +51,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Factory Acoustic Textures
     guid: 6b663d46a83ca54f8b4a5fef12b883f6
     GuidInternal: 
-    m_lastTime: -8584956867393635481
+    m_lastTime: -8584961376108367210
     List:
     - name: Acoustic_Banner
       guid: f2532d2fccda8e408b8898b1b52a26d6
@@ -317,7 +317,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: a496d604dfb54f43bca9994076f26b0d
     GuidInternal: 
-    m_lastTime: -8584929594377138351
+    m_lastTime: -8584930946568215695
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -482,7 +482,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e364e8b048b1b448b41f12b8470ec700
     GuidInternal: 
-    m_lastTime: -8584909241301407677
+    m_lastTime: -8584908473116001653
     List:
     - name: Main
       guid: 251dc717ef0fef42a545f46544a81c52
@@ -524,7 +524,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 32fcbe829e1db64882c8fd8a959356a5
     GuidInternal: 
-    m_lastTime: -8584909241305510812
+    m_lastTime: -8584908471621159046
     List:
     - name: AMBIANCES
       guid: 0de342e3b708fb408c527d577683a4a1
@@ -611,6 +611,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Pause_MUSIQUE_SALLE_WALL_E
+      guid: 9693552e98aa4c46936728cb3a8b8706
+      id: 1769335880
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Musique
+        ObjectType: 4
+        guid: 88f90691d8dc94408199bba3ae90acb0
+      - ElementName: Pause_MUSIQUE_SALLE_WALL_E
+        ObjectType: 3
+        guid: 9693552e98aa4c46936728cb3a8b8706
+      Path: Events\Default Work Unit\Musique\Pause_MUSIQUE_SALLE_WALL_E
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Play_4NN4_MASTERING2
       guid: 224c957a371a054aaa4a2f72bdfe301e
       id: 4068946449
@@ -671,6 +691,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_RANDOM_LETTRES
+      guid: ec657340b5f0154e8a518e67cc48653f
+      id: 2615986883
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: INTRODUCTION
+        ObjectType: 4
+        guid: 9672f61551fb8345a3457e6ae462e197
+      - ElementName: Play_RANDOM_LETTRES
+        ObjectType: 3
+        guid: ec657340b5f0154e8a518e67cc48653f
+      Path: Events\Default Work Unit\INTRODUCTION\Play_RANDOM_LETTRES
+      maxAttenuation: 0
+      maxDuration: 0.8125
+      minDuration: 0.203125
     - name: Play_RandomContainerTest
       guid: 289cca1f5536154d9bbfe62f7f50f220
       id: 2623669360
@@ -688,6 +728,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: 289cca1f5536154d9bbfe62f7f50f220
       Path: Events\Default Work Unit\PasEvent\Play_RandomContainerTest
+      maxAttenuation: 195
+      maxDuration: 0.6240417
+      minDuration: 0.6240417
+    - name: Play_RANDOMISEUR_PAS_SABLE
+      guid: cb1f8c0e76735b46a52314d2f7f50366
+      id: 128182366
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: PasEvent
+        ObjectType: 4
+        guid: 9b0cc62836807c44ac66d85d71ddfe5c
+      - ElementName: Play_RANDOMISEUR_PAS_SABLE
+        ObjectType: 3
+        guid: cb1f8c0e76735b46a52314d2f7f50366
+      Path: Events\Default Work Unit\PasEvent\Play_RANDOMISEUR_PAS_SABLE
       maxAttenuation: 195
       maxDuration: 0.6240417
       minDuration: 0.6240417
@@ -911,6 +971,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.9375
       minDuration: 0.9375
+    - name: Play_SFX_PORTE_BLOQUEE
+      guid: 4feb34ab4387614995f0967ab73c7ddb
+      id: 1116452380
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: PORTES
+        ObjectType: 4
+        guid: ad9b7f7209c43d4aa5b228ff9479e558
+      - ElementName: Play_SFX_PORTE_BLOQUEE
+        ObjectType: 3
+        guid: 4feb34ab4387614995f0967ab73c7ddb
+      Path: Events\Default Work Unit\PORTES\Play_SFX_PORTE_BLOQUEE
+      maxAttenuation: 195
+      maxDuration: 1.8509583
+      minDuration: 1.8509583
     - name: Play_SFX_PORTE_FINALE
       guid: 4414709b3a857f40aa3042f0c88b1d7c
       id: 2394956354
@@ -971,6 +1051,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 19.104605
       minDuration: 19.104605
+    - name: Play_SFX_SABLE_SOL
+      guid: 9f780296b103c946873cc084896e80cb
+      id: 1177195950
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: AMBIANCES
+        ObjectType: 4
+        guid: 0de342e3b708fb408c527d577683a4a1
+      - ElementName: Play_SFX_SABLE_SOL
+        ObjectType: 3
+        guid: 9f780296b103c946873cc084896e80cb
+      Path: Events\Default Work Unit\AMBIANCES\Play_SFX_SABLE_SOL
+      maxAttenuation: 195
+      maxDuration: 24
+      minDuration: 24
     - name: Play_SFX_SCAN_OBJ
       guid: c1084b444716f3449eef7216a2cb9faa
       id: 4060256703
@@ -1011,6 +1111,66 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 19.044584
       minDuration: 19.044584
+    - name: Play_SFX_TERMINAL_BOUCLE
+      guid: 8d6da815c223bb47b1da4d5cf728fdfa
+      id: 2080143493
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: TERMINAL
+        ObjectType: 4
+        guid: 1995fc54f904da41b58259b9545dc882
+      - ElementName: Play_SFX_TERMINAL_BOUCLE
+        ObjectType: 3
+        guid: 8d6da815c223bb47b1da4d5cf728fdfa
+      Path: Events\Default Work Unit\TERMINAL\Play_SFX_TERMINAL_BOUCLE
+      maxAttenuation: 195
+      maxDuration: 36.80325
+      minDuration: 36.80325
+    - name: Play_SFX_TERMINAL_FERMETURE
+      guid: 98d559e527e9bb46b8e6570f8b1074e6
+      id: 2337403756
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: TERMINAL
+        ObjectType: 4
+        guid: 1995fc54f904da41b58259b9545dc882
+      - ElementName: Play_SFX_TERMINAL_FERMETURE
+        ObjectType: 3
+        guid: 98d559e527e9bb46b8e6570f8b1074e6
+      Path: Events\Default Work Unit\TERMINAL\Play_SFX_TERMINAL_FERMETURE
+      maxAttenuation: 195
+      maxDuration: 1.3872292
+      minDuration: 1.3872292
+    - name: Play_SFX_TERMINAL_OUVERTURE
+      guid: ff38eba8c9605f44b4b995ab3afa0a3e
+      id: 2483481318
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: TERMINAL
+        ObjectType: 4
+        guid: 1995fc54f904da41b58259b9545dc882
+      - ElementName: Play_SFX_TERMINAL_OUVERTURE
+        ObjectType: 3
+        guid: ff38eba8c9605f44b4b995ab3afa0a3e
+      Path: Events\Default Work Unit\TERMINAL\Play_SFX_TERMINAL_OUVERTURE
+      maxAttenuation: 195
+      maxDuration: 1.3872292
+      minDuration: 1.3872292
     - name: PORTES
       guid: ad9b7f7209c43d4aa5b228ff9479e558
       id: 3185142948
@@ -1028,6 +1188,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Resume_MUSIQUE_SALLE_WALL_E
+      guid: abbc6aea9106594aa7aada46ae5cc056
+      id: 4222333403
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Musique
+        ObjectType: 4
+        guid: 88f90691d8dc94408199bba3ae90acb0
+      - ElementName: Resume_MUSIQUE_SALLE_WALL_E
+        ObjectType: 3
+        guid: abbc6aea9106594aa7aada46ae5cc056
+      Path: Events\Default Work Unit\Musique\Resume_MUSIQUE_SALLE_WALL_E
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: SIMULATION
       guid: 21401f346c3df249b57d96bcb18e02f4
       id: 4005576884
@@ -1145,6 +1325,43 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Stop_SFX_TERMINAL_BOUCLE
+      guid: 050d83703509a84f9aa8d466b18cc7e3
+      id: 1191159315
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: TERMINAL
+        ObjectType: 4
+        guid: 1995fc54f904da41b58259b9545dc882
+      - ElementName: Stop_SFX_TERMINAL_BOUCLE
+        ObjectType: 3
+        guid: 050d83703509a84f9aa8d466b18cc7e3
+      Path: Events\Default Work Unit\TERMINAL\Stop_SFX_TERMINAL_BOUCLE
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: TERMINAL
+      guid: 1995fc54f904da41b58259b9545dc882
+      id: 414380065
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: TERMINAL
+        ObjectType: 4
+        guid: 1995fc54f904da41b58259b9545dc882
+      Path: Events\Default Work Unit\TERMINAL
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: TRANSITIONS
       guid: f72a33b21dd3ca4ab9dcfa5cd171a264
       id: 52661923
@@ -1174,7 +1391,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: f463c39a5f915547a8ea853e5e7d5179
     GuidInternal: 
-    m_lastTime: -8584991339338135126
+    m_lastTime: -8584991312706139084
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -1188,7 +1405,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 714a7c0a843719468b6cdc73bdd5c5ef
     GuidInternal: 
-    m_lastTime: -8584991339338059162
+    m_lastTime: -8584976072292003898
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -1202,7 +1419,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 6a351b9960659c4795efc6c4eb9bc882
     GuidInternal: 
-    m_lastTime: -8584991339338059162
+    m_lastTime: -8584991312705989083
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -1216,10 +1433,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 2231a2ba2b69e34ab5a5aaa376433f97
     GuidInternal: 
-    m_lastTime: -8584991339338039150
+    m_lastTime: -8584991312705959035
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 05000000060000000e000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
