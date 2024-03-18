@@ -16,6 +16,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_RANDOMISEUR_PAS_SABLE" ID="{0E8C1FCB-7376-465B-A523-14D2F7F50366}">
+							<ChildrenList>
+								<Action Name="" ID="{9BDA2AC2-DD82-4DA5-A92F-E628768D84A1}" ShortID="581480247">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RANDOMISEUR_PAS_SABLE" ID="{38AF32D8-6573-4F7C-93DA-A51510455F76}" WorkUnitID="{0574FF77-4242-4605-998D-91A725DFF951}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Musique" ID="{9106F988-DCD8-4094-8199-BBA3AE90ACB0}" ShortID="215421132">
@@ -47,6 +58,7 @@
 								<Action Name="" ID="{6B824865-C94C-464D-AECB-1241B2206E5A}" ShortID="300844101">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
@@ -62,6 +74,7 @@
 								<Action Name="" ID="{C0E741B6-9B19-4B83-B9DE-555ABEC0EA5D}" ShortID="1052537544">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
@@ -75,6 +88,36 @@
 						<Event Name="Play_MUSIQUE_SALLE_WALL_E" ID="{BF122745-D0D9-4C8E-A67E-A60AADD5A546}">
 							<ChildrenList>
 								<Action Name="" ID="{89821BC3-590C-47B2-B873-D1BBD846F9DD}" ShortID="1059672195">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MUSIQUE_SALLE_WALL_E" ID="{6F719EF3-4715-467F-8321-8EDE0830DEE8}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Pause_MUSIQUE_SALLE_WALL_E" ID="{2E559396-AA98-464C-9367-28CB3A8B8706}">
+							<ChildrenList>
+								<Action Name="" ID="{F52ECE82-1AAF-4137-B770-9C14B61D8CDA}" ShortID="23317808">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MUSIQUE_SALLE_WALL_E" ID="{6F719EF3-4715-467F-8321-8EDE0830DEE8}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Resume_MUSIQUE_SALLE_WALL_E" ID="{EA6ABCAB-0691-4A59-A7AA-DA46AE5CC056}">
+							<ChildrenList>
+								<Action Name="" ID="{122E8097-97E7-4AE1-83A7-2AFC7C891AEB}" ShortID="799508314">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="MUSIQUE_SALLE_WALL_E" ID="{6F719EF3-4715-467F-8321-8EDE0830DEE8}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
@@ -179,6 +222,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_SFX_PORTE_BLOQUEE" ID="{AB34EB4F-8743-4961-95F0-967AB73C7DDB}">
+							<ChildrenList>
+								<Action Name="" ID="{1A0BBA1A-9C01-4C5F-89D4-9A2D1E48B5BF}" ShortID="742979329">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_PORTE_BLOQUEE" ID="{DE864B14-33C3-4CB8-B496-497C34831F89}" WorkUnitID="{35CEDD8C-522E-40A2-AE68-9C1877E44B99}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="DETECTION SCAN" ID="{8EB62DA2-6E4A-4A6B-9D1B-6A35AB255CDB}" ShortID="561391475">
@@ -215,6 +269,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SFX_CONSTRUCTION_ANDRO" ID="{39051024-50B6-45C0-82EA-8A53D97371C2}" WorkUnitID="{AC4208DC-5399-48C9-B7CC-46E5EA3F80D2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_LETTRES_INTRO_NEW_ESSAI_2" ID="{E084BAE1-292D-4DBC-934D-54F909E386EB}">
+							<ChildrenList>
+								<Action Name="" ID="{6043C8C0-AEC1-461D-9FD2-46D6FC1FF859}" ShortID="546030499">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_LETTRES_INTRO_NEW_ESSAI_2" ID="{D50F775E-6F4C-4D92-9045-1B15D6107BE2}" WorkUnitID="{AC4208DC-5399-48C9-B7CC-46E5EA3F80D2}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -259,6 +324,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SFX_AMBIANCE_CROWD" ID="{40FA8890-175D-4004-9E23-A3CE7E791220}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_SABLE_SOL" ID="{9602789F-03B1-46C9-873C-C084896E80CB}">
+							<ChildrenList>
+								<Action Name="" ID="{D69420F1-3702-4908-96DE-6F4996170E3C}" ShortID="5809431">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_SABLE_SOL" ID="{06054C99-70E5-42DF-B0F1-C5CDFFE8960B}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -330,6 +406,58 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SFX_SIMUTOREEL" ID="{87A125E5-E1D4-45C6-B20D-F8450F6AE6B5}" WorkUnitID="{966934EA-2DC0-4447-9711-9782A113F052}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="TERMINAL" ID="{54FC9519-04F9-41DA-B582-59B9545DC882}" ShortID="540681637">
+					<ChildrenList>
+						<Event Name="Play_SFX_TERMINAL_OUVERTURE" ID="{A8EB38FF-60C9-445F-B4B9-95AB3AFA0A3E}">
+							<ChildrenList>
+								<Action Name="" ID="{123AA4AF-8589-469A-BE3D-24BB1F1164EA}" ShortID="865174665">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_TERMINAL_OUVERTURE" ID="{DD7A4D60-741C-4247-9083-07FD69AE9819}" WorkUnitID="{9F2C9965-1026-42E0-9E33-FCF174569D2C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_TERMINAL_BOUCLE" ID="{15A86D8D-23C2-47BB-B1DA-4D5CF728FDFA}">
+							<ChildrenList>
+								<Action Name="" ID="{C8336B29-42BC-4FFE-B623-7BB665BF2E4D}" ShortID="672561651">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_TERMINAL_BOUCLE" ID="{A7475FD2-0449-419A-BD29-3FF403DF4AD1}" WorkUnitID="{9F2C9965-1026-42E0-9E33-FCF174569D2C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_TERMINAL_FERMETURE" ID="{E559D598-E927-46BB-B8E6-570F8B1074E6}">
+							<ChildrenList>
+								<Action Name="" ID="{E9BCCA79-0D1C-4E78-8810-4D351FD9D842}" ShortID="530731072">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_TERMINAL_FERMETURE" ID="{11F71C39-B941-4F52-8153-82EA82A8F8CD}" WorkUnitID="{9F2C9965-1026-42E0-9E33-FCF174569D2C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_SFX_TERMINAL_BOUCLE" ID="{70830D05-0935-4FA8-9AA8-D466B18CC7E3}">
+							<ChildrenList>
+								<Action Name="" ID="{93654F47-B337-4798-803B-7FD4D2BC47C4}" ShortID="478778297">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_TERMINAL_BOUCLE" ID="{A7475FD2-0449-419A-BD29-3FF403DF4AD1}" WorkUnitID="{9F2C9965-1026-42E0-9E33-FCF174569D2C}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

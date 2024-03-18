@@ -37,6 +37,48 @@
 						<ActiveSource Name="SFX_CONSTRUCTION_ANDROÏDE" ID="{25FCECC2-1784-453E-8187-69B90B576323}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="SFX_LETTRES_INTRO_NEW_ESSAI_2" ID="{D50F775E-6F4C-4D92-9045-1B15D6107BE2}" ShortID="999315185">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{B936DB5A-2BF1-4F24-89E9-3C1E66C37FFA}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="5"/>
+											<Property Name="Min" Type="Real64" Value="-5"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-29</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_LETTRES_INTRO_NEW_ESSAI_2" ID="{64523281-292E-4F4E-B90C-AF08F7890F18}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_LETTRES_INTRO_NEW_ESSAI_2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="132449596"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_LETTRES_INTRO_NEW_ESSAI_2" ID="{64523281-292E-4F4E-B90C-AF08F7890F18}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

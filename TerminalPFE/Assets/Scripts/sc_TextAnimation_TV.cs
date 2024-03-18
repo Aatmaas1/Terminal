@@ -7,6 +7,8 @@ public class sc_TextAnimation_TV : MonoBehaviour
 {
     public TextMeshProUGUI textcomponent;
 
+    public AK_POSTEVENT_AM randomSound;
+
     public string[] lignes;
     public string[] lignes2;
     public string[] lignes3;
@@ -66,6 +68,7 @@ public class sc_TextAnimation_TV : MonoBehaviour
             }
             else
             {
+                randomSound.PostEvent();
                 textcomponent.text += c;
                 yield return new WaitForSecondsRealtime(speedChar);
             }

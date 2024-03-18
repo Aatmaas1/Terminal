@@ -135,6 +135,8 @@ GameObject:
   - component: {fileID: 49055912}
   - component: {fileID: 49055911}
   - component: {fileID: 49055910}
+  - component: {fileID: 49055913}
+  - component: {fileID: 49055914}
   m_Layer: 5
   m_Name: TEXTdev
   m_TagString: Untagged
@@ -174,6 +176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textcomponent: {fileID: 49055911}
+  randomSound: {fileID: 49055914}
   lignes:
   - "_searching \xA7. \xA7. \xA7."
   - "\xF9@program uploading [chrysalis_new_hope] "
@@ -308,6 +311,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 49055908}
   m_CullTransparentMesh: 1
+--- !u!114 &49055913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49055908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39aa918e6aae49d4793394497512a086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!114 &49055914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49055908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d11157e2edff0f44966e5e03b83a829, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 35003700fdd0208428c7c3905665767d,
+      type: 2}
+  stopEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &82818734
 GameObject:
   m_ObjectHideFlags: 0
@@ -1186,6 +1232,10 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: c80e413df1501a84cad772e08c2f2c3c,
       type: 2}
+  stopEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &953167424
 MonoBehaviour:
   m_ObjectHideFlags: 0
