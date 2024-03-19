@@ -2973,7 +2973,7 @@ Animator:
   m_GameObject: {fileID: 6410141352305311938}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 36078ab0369161e49a29d349ae3e0739, type: 3}
-  m_Controller: {fileID: 9100000, guid: 40db3173a05ae3242b1c182a09b0a183, type: 2}
+  m_Controller: {fileID: 9100000, guid: 07c59d23fdb5b6044954900dafa2f95a, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3023,10 +3023,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canJump: 0
-  canRun: 1
+  canRun: 0
   zoomies: 0
   ZoomiesValue: 0.025
-  MoveSpeed: 4.025
+  MoveSpeed: 1
   SprintSpeed: 10
   RotationSmoothTime: 0.17
   SpeedChangeRate: 10

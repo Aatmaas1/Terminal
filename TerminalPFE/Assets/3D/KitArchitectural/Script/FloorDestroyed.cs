@@ -8,7 +8,8 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
     public GameObject BatterieLow;
     public Animator animator;
     public Animator PlayerAnimator;
-    
+    public sc_CorpsCasse_HC RobotCasse;
+
     public  void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -36,6 +37,7 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
             if(!data.hasSwitchedBody)
             {
                 BatterieLow.SetActive(true);
+                RobotCasse.BreakLegs();
             }
         }
     }
@@ -58,5 +60,6 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
         yield return new WaitForSeconds(2.5f);
         PlayerAnimator.GetComponent<Animator>().SetTrigger("StopFall");
         sc_PlayerManager_HC.Instance.SetInputMode("Player");
+        RobotCasse.BreakLegs();
     }
 }
