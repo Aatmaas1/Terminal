@@ -61,10 +61,10 @@ public class sc_NewDetection_LDOV : MonoBehaviour
 
         while (lerper < 1)
         {
-            circleSize = Mathf.Lerp(circleSize, 5f, lerper);
+            circleSize = Mathf.Lerp(0, 5f, lerper);
             _mat.SetFloat("_CircleSize", circleSize);
 
-            circleDiff = Mathf.Lerp(circleDiff, 0, lerper);
+            circleDiff = Mathf.Lerp(0.9f, 0, lerper);
             _mat.SetFloat("_sizeDiff", circleDiff);
 
             lerper += Time.deltaTime * ringSpeed;
