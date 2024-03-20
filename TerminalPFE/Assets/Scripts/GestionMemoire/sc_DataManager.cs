@@ -164,4 +164,9 @@ public class sc_DataManager : MonoBehaviour
         generalData.porteTuto1Ouverte = true;
         generalData.porteTuto2Ouverte = true;
     }
+
+    public bool TestCasse()
+    {
+        return generalData.SolCasse && !generalData.hasSwitchedBody;
+    }
 }

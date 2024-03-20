@@ -104,9 +104,12 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
     /// <param name="mode"></param>
     public void SetInputMode(string mode)
     {
-        pInput.currentActionMap.Disable();
-        pInput.SwitchCurrentActionMap(mode);
-        pInput.currentActionMap.Enable();
+        if(gameObject.activeInHierarchy)
+        {
+            pInput.currentActionMap.Disable();
+            pInput.SwitchCurrentActionMap(mode);
+            pInput.currentActionMap.Enable();
+        }
     }
     #endregion
 

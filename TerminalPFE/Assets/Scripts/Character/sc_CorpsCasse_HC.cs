@@ -1,23 +1,10 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
-public class sc_CorpsCasse_HC : MonoBehaviour, IDataManager
+public class sc_CorpsCasse_HC : MonoBehaviour
 {
     public GameObject CorpsDeBase, newCamFollow, CamFollowBase;
-
-    public void LoadData(GeneralData data)
-    {
-        if(data.SolCasse && !data.hasSwitchedBody)
-        {
-            BreakLegs();
-        }
-    }
-
-    public void SaveData(ref GeneralData data)
-    {
-        //throw new System.NotImplementedException();
-    }
 
     public void BreakLegs()
     {
@@ -25,5 +12,15 @@ public class sc_CorpsCasse_HC : MonoBehaviour, IDataManager
         CamFollowBase.SetActive(false);
         gameObject.SetActive(true);
         newCamFollow.SetActive(true);
+        CorpsDeBase.transform.parent = gameObject.transform;
+        CorpsDeBase.transform.position = transform.position;
+    }
+    public void OnClick()
+    {
+        IEnumerable<I_Interactible> datapersistenceobjects = FindObjectsOfType<MonoBehaviour>().OfType<I_Interactible>();
+        foreach (I_Interactible interf in datapersistenceobjects)
+        {
+            interf.PressedInteract();
+        }
     }
 }

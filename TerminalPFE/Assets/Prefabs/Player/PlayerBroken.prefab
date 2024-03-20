@@ -2933,6 +2933,7 @@ GameObject:
   - component: {fileID: 2259514669089141923}
   - component: {fileID: 5887420479194835503}
   - component: {fileID: 7286605469021367229}
+  - component: {fileID: 7501333510065254661}
   m_Layer: 8
   m_Name: PlayerBroken
   m_TagString: Player
@@ -2948,7 +2949,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6410141352305311938}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.0000029504295}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.389987, y: 1, z: 10.310003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3264,6 +3265,21 @@ MonoBehaviour:
   SelectedSlot: {fileID: 0}
   menuSelection: {fileID: 0}
   rotateSpeed: 5
+--- !u!114 &7501333510065254661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6410141352305311938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a728dc685f67e1744a1ff473bbede2e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CorpsDeBase: {fileID: 0}
+  newCamFollow: {fileID: 0}
+  CamFollowBase: {fileID: 0}
 --- !u!1 &6503582876015397093
 GameObject:
   m_ObjectHideFlags: 0
