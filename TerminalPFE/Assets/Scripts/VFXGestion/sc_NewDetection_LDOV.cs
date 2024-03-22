@@ -9,6 +9,7 @@ public class sc_NewDetection_LDOV : MonoBehaviour
     private Material _mat;
 
     public float ringSpeed = 1;
+    public AnimationCurve ringCurve;
 
     public Transform player;
 
@@ -61,10 +62,10 @@ public class sc_NewDetection_LDOV : MonoBehaviour
 
         while (lerper < 1)
         {
-            circleSize = Mathf.Lerp(0, 5f, lerper);
+            circleSize = Mathf.Lerp(0, 5f, ringCurve.Evaluate(lerper));
             _mat.SetFloat("_CircleSize", circleSize);
 
-            circleDiff = Mathf.Lerp(0.9f, 0, lerper);
+            circleDiff = Mathf.Lerp(0.9f, 0, ringCurve.Evaluate(lerper));
             _mat.SetFloat("_sizeDiff", circleDiff);
 
             lerper += Time.deltaTime * ringSpeed;
