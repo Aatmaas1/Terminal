@@ -25,11 +25,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainText:
-        m_Texture: {fileID: 8400000, guid: 63a0a7065cc52bd4088c712d39b1f851, type: 2}
+        m_Texture: {fileID: 8400000, guid: 79097b1dc5119d14fa5e9820c10e9393, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2DAsset_d8709b8f2e4647a9ab39464e6bdf3698_Out_0_Texture2D:
-        m_Texture: {fileID: 8400000, guid: 63a0a7065cc52bd4088c712d39b1f851, type: 2}
+        m_Texture: {fileID: 8400000, guid: 79097b1dc5119d14fa5e9820c10e9393, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -48,12 +48,14 @@ Material:
     m_Floats:
     - _NoisePower: 15
     - _Old: 0
-    - _PosPower: 1
+    - _PosPower: 0.5
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _minclamp: 0.4
-    - _posPowerAdd: 0.05
+    - _Weight: 1
+    - _minclamp: 0.3
+    - _posPowerAdd: 0
     m_Colors:
+    - _Pos: {r: 0.91, g: 0, b: 0, a: 0}
     - _SandColor: {r: 0.9716981, g: 0.8624075, b: 0.26125848, a: 0}
     - _ShadowSandColor: {r: 0.6698113, g: 0.366685, b: 0, a: 0}
   m_BuildTextureStacks: []
