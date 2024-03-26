@@ -46,7 +46,7 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
 
     public void LoadData(GeneralData data)
     {
-        for (int temp = 0; temp < 8; temp++)
+        for (int temp = 0; temp < 11; temp++)
         {
             if (data.ItemsCollected[temp] == false)
             {
@@ -72,7 +72,7 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
             Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", false);
         }
         selected -= 1;
-        if (selected < 0) { selected = 7; }
+        if (selected < 0) { selected = 10; }
         if (ImageItem[selected].activeInHierarchy)
         {
             Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", true);
@@ -85,7 +85,7 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
             Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", false);
         }
         selected += 1;
-        if (selected > 7) { selected = 0; }
+        if (selected > 10) { selected = 0; }
         if (ImageItem[selected].activeInHierarchy)
         {
             Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", true);
@@ -187,7 +187,7 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
 
     public void MajInv()
     {
-        for (int i = 0; i < 8; i++)
+        for (int i = 0; i < 11; i++)
         {
             ImageItem[i].GetComponent<TMP_Text>().text = IsObjects[i].nom;
         }

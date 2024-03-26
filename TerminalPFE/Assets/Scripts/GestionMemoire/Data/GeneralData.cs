@@ -9,6 +9,7 @@ public class GeneralData
     public bool porteTuto0Ouverte, porteTuto1Ouverte, porteTuto2Ouverte, porteSortieOuverte, SolCasse, tutoBody, hasSwitchedBody;
     public bool[] ItemsCollected;
     public bool porteSpam;
+    public bool doc1, doc2, doc3;
 
     public GeneralData()
     {
@@ -25,5 +26,8 @@ public class GeneralData
         this.hasSwitchedBody = false;
         this.ItemsCollected = new bool[]{ false, false, false, false, false, false, false, false, false, false, false, false};
         this.porteSpam = false;
+        this.doc1 = false;
+        this.doc2 = false;
+        this.doc3 = false;
     }
 }
