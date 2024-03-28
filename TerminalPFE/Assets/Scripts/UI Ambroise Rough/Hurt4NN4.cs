@@ -25,7 +25,7 @@ public class Hurt4NN4 : MonoBehaviour
         PlayerAnimator.GetComponent<Animator>().SetTrigger("Hurting");
 
 
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(7f);
         sc_PlayerManager_HC.Instance.SetInputMode("Player");
         
     }
