@@ -86,6 +86,22 @@ public class TestTrigger : MonoBehaviour, IDataManager
 
     public void BeamMeUp()
     {
+        sc_PlayerManager_HC.Instance.IndexTerminal = index;
+
+        if (sc_DataManager.instance.TestCasse())
+        {
+            sc_DataManager.instance.ForceSaveIndex(3);
+        }
+        else
+        {
+            sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
+            sc_PlayerManager_HC.Instance.TurnPlayerToward(transform.GetChild(2));
+            sc_PlayerManager_HC.Instance.MoveToTerminal(transform.GetChild(2));
+            sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimEntreeTerminalReel");
+        }
+
+
+
         if (isOpen && !isUse)
         {
             isUse = true;
@@ -100,21 +116,6 @@ public class TestTrigger : MonoBehaviour, IDataManager
             if (index == 3)
             {
                 sc_DataManager.instance.MoveRobotCorpse();
-            }
-
-
-            sc_PlayerManager_HC.Instance.IndexTerminal = index;
-
-            if (sc_DataManager.instance.TestCasse())
-            {
-
-            }
-            else
-            {
-                sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
-                sc_PlayerManager_HC.Instance.TurnPlayerToward(transform.GetChild(2));
-                sc_PlayerManager_HC.Instance.MoveToTerminal(transform.GetChild(2));
-                sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimEntreeTerminalReel");
             }
 
             sc_UIPauseManager.Instance.cameraPause.SetActive(false);

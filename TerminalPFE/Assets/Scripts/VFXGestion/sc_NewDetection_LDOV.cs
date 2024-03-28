@@ -75,7 +75,7 @@ public class sc_NewDetection_LDOV : MonoBehaviour
 
         }
 
-        print(circleSize + " & " + circleDiff);
+        //print(circleSize + " & " + circleDiff);
 
     }
 }

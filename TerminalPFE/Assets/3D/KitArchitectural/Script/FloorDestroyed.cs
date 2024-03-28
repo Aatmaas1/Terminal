@@ -22,7 +22,7 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
             StartCoroutine("WaitBeforeBatterie");
             StartCoroutine(WaitAnimFall());
 
-
+            sc_DataManager.instance.CasseSol();
         }
     }
 

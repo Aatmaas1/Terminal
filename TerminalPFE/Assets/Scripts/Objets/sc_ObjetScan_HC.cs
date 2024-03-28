@@ -53,8 +53,8 @@ public class sc_ObjetScan_HC : MonoBehaviour, IDataManager
         {
             isScanned = true;
             sc_DataManager.instance.SaveObject(ObjetRef.Index, true);
-            sc_PlayerManager_HC.Instance.transform.GetChild(9).GetComponent<VisualEffect>().SendEvent("OnScan");
-            sc_PlayerManager_HC.Instance.transform.GetChild(9).GetComponent<AK_POSTEVENT_AM>().PostEvent();
+            sc_PlayerManager_HC.Instance.transform.GetChild(7).GetComponent<VisualEffect>().SendEvent("OnScan");
+            sc_PlayerManager_HC.Instance.transform.GetChild(7).GetComponent<AK_POSTEVENT_AM>().PostEvent();
             sc_ScreenShake.instance.OnInteractPlayerLight();
             sc_PlayerManager_HC.Instance.TurnPlayerToward(transform);
             StartCoroutine(FreezePlayer());

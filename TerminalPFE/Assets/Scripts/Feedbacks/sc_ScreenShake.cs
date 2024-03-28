@@ -30,7 +30,7 @@ public class sc_ScreenShake : MonoBehaviour
 
     public void OnInteractPlayerLight()
     {
-        lightPlayer.SetTrigger("OnInteract");
+        //lightPlayer.SetTrigger("OnInteract");
         //Debug.Log("LightPlayer");
     }
 

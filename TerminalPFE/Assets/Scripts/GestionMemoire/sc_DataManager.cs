@@ -49,6 +49,8 @@ public class sc_DataManager : MonoBehaviour
     public void NewGame()
     {
         this.generalData = new GeneralData();
+        sc_FileHandler_HC a = new sc_FileHandler_HC(Application.persistentDataPath, "Cubes.game");
+        a.SaveBlocks(new BlocsSimu());
     }
 
     public void LoadAll()
@@ -163,6 +165,11 @@ public class sc_DataManager : MonoBehaviour
         generalData.porteTuto0Ouverte = true;
         generalData.porteTuto1Ouverte = true;
         generalData.porteTuto2Ouverte = true;
+    }
+
+    public void CasseSol()
+    {
+        generalData.SolCasse = true;
     }
 
     public bool TestCasse()
