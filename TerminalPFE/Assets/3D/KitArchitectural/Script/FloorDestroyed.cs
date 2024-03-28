@@ -6,6 +6,7 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
 {
     bool isBroken = false;
     public GameObject BatterieLow;
+    public GameObject BatterieLowUI;
     public Animator animator;
     public Animator PlayerAnimator;
     public sc_CorpsCasse_HC RobotCasse;
@@ -37,6 +38,7 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
             if(!data.hasSwitchedBody)
             {
                 BatterieLow.SetActive(true);
+
                 RobotCasse.BreakLegs();
             }
         }
@@ -52,6 +54,8 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
         yield return new WaitForSeconds(3.5f);
         sc_ScreenShake.instance.FovBatterie();
         BatterieLow.SetActive(true);
+        BatterieLow.GetComponent<Animator>().SetTrigger("Reel");
+        BatterieLowUI.SetActive(true);
         
     }
     IEnumerator WaitAnimFall()
