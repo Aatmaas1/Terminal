@@ -1115,7 +1115,7 @@ PrefabInstance:
     - target: {fileID: 288813905133023858, guid: ea06adb326b375748b4cde697cd75d85,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 357.2154
+      value: 359.41364
       objectReference: {fileID: 0}
     - target: {fileID: 288813905133023858, guid: ea06adb326b375748b4cde697cd75d85,
         type: 3}
@@ -1125,7 +1125,7 @@ PrefabInstance:
     - target: {fileID: 288813905133023858, guid: ea06adb326b375748b4cde697cd75d85,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.84189
+      value: 2.754123
       objectReference: {fileID: 0}
     - target: {fileID: 288813905133023858, guid: ea06adb326b375748b4cde697cd75d85,
         type: 3}
@@ -4962,7 +4962,7 @@ PrefabInstance:
     - target: {fileID: 346882875557933443, guid: 643dd71afb4a05a46a1a1967b04ea735,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 357.2154
+      value: 359.41364
       objectReference: {fileID: 0}
     - target: {fileID: 346882875557933443, guid: 643dd71afb4a05a46a1a1967b04ea735,
         type: 3}
@@ -4972,7 +4972,7 @@ PrefabInstance:
     - target: {fileID: 346882875557933443, guid: 643dd71afb4a05a46a1a1967b04ea735,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.84189
+      value: 2.754123
       objectReference: {fileID: 0}
     - target: {fileID: 346882875557933443, guid: 643dd71afb4a05a46a1a1967b04ea735,
         type: 3}
@@ -5014,6 +5014,11 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1371093563}
+    - target: {fileID: 5310228006512941413, guid: 643dd71afb4a05a46a1a1967b04ea735,
+        type: 3}
+      propertyPath: ShoulderOffset.z
+      value: -2.2
+      objectReference: {fileID: 0}
     - target: {fileID: 7115544344553054864, guid: 643dd71afb4a05a46a1a1967b04ea735,
         type: 3}
       propertyPath: m_Name
@@ -8818,6 +8823,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0.27161282
+      objectReference: {fileID: 0}
+    - target: {fileID: 350626459784290046, guid: e848b10f55eedc2448951992f3da7e91,
+        type: 3}
+      propertyPath: m_WarningMessage
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 353672131080761482, guid: e848b10f55eedc2448951992f3da7e91,
         type: 3}
