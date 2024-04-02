@@ -3,10 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
 
+
 public class sc_NewDetection_LDOV : MonoBehaviour
 {
 
     private Material _mat;
+
+    [ColorUsage(true, true)]
+    public Color colorBase;
+    [ColorUsage(true, true)]
+    public Color colorBright;
 
     public float ringSpeed = 1;
     public AnimationCurve ringCurve;
@@ -60,6 +66,8 @@ public class sc_NewDetection_LDOV : MonoBehaviour
 
         float circleDiff = 0.9f;
 
+        Color lerperColor;
+
         while (lerper < 1)
         {
             circleSize = Mathf.Lerp(0, 5f, ringCurve.Evaluate(lerper));
@@ -69,6 +77,17 @@ public class sc_NewDetection_LDOV : MonoBehaviour
             _mat.SetFloat("_sizeDiff", circleDiff);
 
             lerper += Time.deltaTime * ringSpeed;
+
+            if (lerper < 0.5f)
+            {
+                lerperColor = Color.Lerp(colorBase, colorBright, lerper * 2);
+                _mat.SetColor("_Color", lerperColor);
+            }
+            if (lerper >= 0.5f)
+            {
+                lerperColor = Color.Lerp(colorBright, colorBase, (lerper-0.5f) * 2);
+                _mat.SetColor("_Color", lerperColor);
+            }
 
 
             yield return null;
