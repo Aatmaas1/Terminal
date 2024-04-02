@@ -110,6 +110,97 @@
 						<ActiveSource Name="MUSIQUE_SALLE_WALL_E" ID="{556EEC7E-457F-40B9-B92B-E62BB58450C3}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="MUSIQUE_CONSTRUCTION" ID="{30F9D22B-C8F3-4E43-BA09-4415F50D6DBE}" ShortID="455997832">
+					<PropertyList>
+						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="MUSIQUE_CONSTRUCTION" ID="{8F3947B0-1653-4D8A-8B85-BBFAF1034687}">
+							<Language>SFX</Language>
+							<AudioFile>MUSIQUE_CONSTRUCTION.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="497967653"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="MUSIQUE_CONSTRUCTION" ID="{8F3947B0-1653-4D8A-8B85-BBFAF1034687}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="MUSIQUE_INTRO" ID="{5E5C8EF8-7C82-4AD8-B063-82615638DEB9}" ShortID="263133371">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="MUSIQUE_INTRO" ID="{454F1E1E-379B-4737-879F-80B5D3C82235}">
+							<Language>SFX</Language>
+							<AudioFile>MUSIQUE_INTRO.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="107665008"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="MUSIQUE_INTRO" ID="{454F1E1E-379B-4737-879F-80B5D3C82235}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="MUSIQUE_OUTRO" ID="{3A0CAE67-DF26-4128-9831-00FAB00FC8F8}" ShortID="762148497">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="MUSIQUE_OUTRO" ID="{5EF8EC5D-1645-4592-96A4-8ABF63DF8FA2}">
+							<Language>SFX</Language>
+							<AudioFile>MUSIQUE_OUTRO.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="635976130"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="MUSIQUE_OUTRO" ID="{5EF8EC5D-1645-4592-96A4-8ABF63DF8FA2}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="MUSIQUE_SORTIE" ID="{D0333636-FF89-4EB1-ADB9-3385A89C1047}" ShortID="294470876">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="MUSIQUE_SORTIE" ID="{327645E3-9746-4EAF-A2FD-EB06D0E5CFFE}">
+							<Language>SFX</Language>
+							<AudioFile>MUSIQUE_SORTIE.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="759052263"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="MUSIQUE_SORTIE" ID="{327645E3-9746-4EAF-A2FD-EB06D0E5CFFE}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

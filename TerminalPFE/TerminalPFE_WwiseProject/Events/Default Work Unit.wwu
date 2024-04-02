@@ -126,6 +126,50 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_MUSIQUE_CONSTRUCTION" ID="{0FED14F3-3695-4FBB-B086-FDEFA2DBD4DB}">
+							<ChildrenList>
+								<Action Name="" ID="{B4498A01-7FF8-45FB-A05C-5E2CFD6C169F}" ShortID="125357769">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MUSIQUE_CONSTRUCTION" ID="{30F9D22B-C8F3-4E43-BA09-4415F50D6DBE}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_MUSIQUE_INTRO" ID="{278042C6-3E80-49D8-8C36-E60360ED5171}">
+							<ChildrenList>
+								<Action Name="" ID="{D4F7D06D-F7A8-40BE-B8E1-237ACC5DE477}" ShortID="287558801">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MUSIQUE_INTRO" ID="{5E5C8EF8-7C82-4AD8-B063-82615638DEB9}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_MUSIQUE_OUTRO" ID="{FA0C3F4C-E446-48E4-960E-1CF72A986DA6}">
+							<ChildrenList>
+								<Action Name="" ID="{7C434C7B-41B8-4101-9B16-945B568E8451}" ShortID="1063322891">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MUSIQUE_OUTRO" ID="{3A0CAE67-DF26-4128-9831-00FAB00FC8F8}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_MUSIQUE_SORTIE" ID="{6DCA3D34-B314-42FE-95CA-97E2DF5FA53C}">
+							<ChildrenList>
+								<Action Name="" ID="{6BA8C381-0099-44FE-ACDC-173A5C784B20}" ShortID="287105720">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MUSIQUE_SORTIE" ID="{D0333636-FF89-4EB1-ADB9-3385A89C1047}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="SIMULATION" ID="{341F4021-3D6C-49F2-B57D-96BCB18E02F4}" ShortID="370386191">
@@ -335,6 +379,35 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SFX_SABLE_SOL" ID="{06054C99-70E5-42DF-B0F1-C5CDFFE8960B}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_AMBIANCE_TEMPETE" ID="{713185BE-BF65-45AE-A3D1-F79B539B97A0}">
+							<ChildrenList>
+								<Action Name="" ID="{A6EE9B06-6482-4D65-9813-C94AE411CC5F}" ShortID="913562478">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMBIANCE_VENT_SEEMLESS_2" ID="{68B9158D-B511-4CEA-8012-70F498B0B9CB}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_AMBIANCE_VENT_SEEMLESS_2" ID="{D574AE8B-C69F-4A45-A88E-07E73764FB4C}">
+							<ChildrenList>
+								<Action Name="" ID="{D97A3732-C413-4014-8E66-65BAC63D786D}" ShortID="576648001">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMBIANCE_VENT_SEEMLESS_2" ID="{68B9158D-B511-4CEA-8012-70F498B0B9CB}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
