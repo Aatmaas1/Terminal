@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SandInteraction
-  m_Shader: {fileID: -6465566751694194690, guid: 8a8d447d231b88b4ba7b0523d243da76,
+  m_Name: SandText
+  m_Shader: {fileID: -6465566751694194690, guid: abfdd65320313f64f9c2f74d5c2fa261,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -28,10 +28,6 @@ Material:
         m_Texture: {fileID: 8400000, guid: 79097b1dc5119d14fa5e9820c10e9393, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Texture2DAsset_d8709b8f2e4647a9ab39464e6bdf3698_Out_0_Texture2D:
-        m_Texture: {fileID: 8400000, guid: 79097b1dc5119d14fa5e9820c10e9393, type: 2}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -46,21 +42,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _NoisePower: 15
-    - _Old: 0
-    - _PosPower: 0.5
+    - _MinClamp: 0.3
+    - _PosPower: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Step: 1
-    - _Weight: -0.2
-    - _minclamp: 0.3
-    - _posPowerAdd: 0
     m_Colors:
-    - _Pos: {r: 0, g: 0, b: -6.63, a: 0}
-    - _SandColor: {r: 0.9716981, g: 0.8624075, b: 0.26125848, a: 0}
-    - _ShadowSandColor: {r: 0.6698113, g: 0.366685, b: 0, a: 0}
+    - _SandColor: {r: 1, g: 0.84931326, b: 0, a: 0}
+    - _ShadowSandColor: {r: 1, g: 0.5874088, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &2923782909228312606
+--- !u!114 &3081070288415464670
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
