@@ -17,10 +17,13 @@ public class sc_CorpsCasse_HC : MonoBehaviour
     }
     public void OnClick()
     {
-        IEnumerable<I_Interactible> datapersistenceobjects = FindObjectsOfType<MonoBehaviour>().OfType<I_Interactible>();
-        foreach (I_Interactible interf in datapersistenceobjects)
+        if (gameObject.activeInHierarchy)
         {
-            interf.PressedInteract();
+            IEnumerable<I_Interactible> datapersistenceobjects = FindObjectsOfType<MonoBehaviour>().OfType<I_Interactible>();
+            foreach (I_Interactible interf in datapersistenceobjects)
+            {
+                interf.PressedInteract();
+            }
         }
     }
 }

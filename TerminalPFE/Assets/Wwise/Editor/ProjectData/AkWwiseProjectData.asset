@@ -482,7 +482,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e364e8b048b1b448b41f12b8470ec700
     GuidInternal: 
-    m_lastTime: -8584908435306851994
+    m_lastTime: -8584895356746997243
     List:
     - name: Main
       guid: 251dc717ef0fef42a545f46544a81c52
@@ -524,7 +524,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 32fcbe829e1db64882c8fd8a959356a5
     GuidInternal: 
-    m_lastTime: -8584908435343903015
+    m_lastTime: -8584895357144926579
     List:
     - name: AMBIANCES
       guid: 0de342e3b708fb408c527d577683a4a1
@@ -651,6 +651,86 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 157.1923
       minDuration: 157.1923
+    - name: Play_AMBIANCE_VENT_SEEMLESS_2
+      guid: 88014eb76baf5542aa27d61c9b8233b9
+      id: 3498856201
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: AMBIANCES
+        ObjectType: 4
+        guid: 0de342e3b708fb408c527d577683a4a1
+      - ElementName: Play_AMBIANCE_VENT_SEEMLESS_2
+        ObjectType: 3
+        guid: 88014eb76baf5542aa27d61c9b8233b9
+      Path: Events\Default Work Unit\AMBIANCES\Play_AMBIANCE_VENT_SEEMLESS_2
+      maxAttenuation: 0
+      maxDuration: 19.829521
+      minDuration: 19.829521
+    - name: Play_MUSIQUE_CONSTRUCTION
+      guid: 38dfcd9a3c0638488956ee3e96620952
+      id: 4111426405
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Musique
+        ObjectType: 4
+        guid: 88f90691d8dc94408199bba3ae90acb0
+      - ElementName: Play_MUSIQUE_CONSTRUCTION
+        ObjectType: 3
+        guid: 38dfcd9a3c0638488956ee3e96620952
+      Path: Events\Default Work Unit\Musique\Play_MUSIQUE_CONSTRUCTION
+      maxAttenuation: 0
+      maxDuration: 36.863647
+      minDuration: 36.863647
+    - name: Play_MUSIQUE_INTRO
+      guid: 3feedb70fb827546af2bcde91bf87063
+      id: 1305709588
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Musique
+        ObjectType: 4
+        guid: 88f90691d8dc94408199bba3ae90acb0
+      - ElementName: Play_MUSIQUE_INTRO
+        ObjectType: 3
+        guid: 3feedb70fb827546af2bcde91bf87063
+      Path: Events\Default Work Unit\Musique\Play_MUSIQUE_INTRO
+      maxAttenuation: 0
+      maxDuration: 28.596582
+      minDuration: 28.596582
+    - name: Play_MUSIQUE_OUTRO
+      guid: 388436d2d960c649821b134573b87f55
+      id: 946375059
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Musique
+        ObjectType: 4
+        guid: 88f90691d8dc94408199bba3ae90acb0
+      - ElementName: Play_MUSIQUE_OUTRO
+        ObjectType: 3
+        guid: 388436d2d960c649821b134573b87f55
+      Path: Events\Default Work Unit\Musique\Play_MUSIQUE_OUTRO
+      maxAttenuation: 0
+      maxDuration: 34.914772
+      minDuration: 34.914772
     - name: Play_MUSIQUE_SALLE_WALL_E
       guid: 452712bfd9d08e4ca67ea60aadd5a546
       id: 1291952458
@@ -671,6 +751,26 @@ MonoBehaviour:
       maxAttenuation: 195
       maxDuration: 137.93452
       minDuration: 137.93452
+    - name: Play_MUSIQUE_SORTIE
+      guid: 744725bf44f15b45a5225570d6f9094b
+      id: 3323333764
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Musique
+        ObjectType: 4
+        guid: 88f90691d8dc94408199bba3ae90acb0
+      - ElementName: Play_MUSIQUE_SORTIE
+        ObjectType: 3
+        guid: 744725bf44f15b45a5225570d6f9094b
+      Path: Events\Default Work Unit\Musique\Play_MUSIQUE_SORTIE
+      maxAttenuation: 0
+      maxDuration: 28.08523
+      minDuration: 28.08523
     - name: Play_PropositionSimulation
       guid: 1bab1b8d7ce6cc4faa3a1faf7bc997eb
       id: 388074695
@@ -1245,6 +1345,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Stop_AMBIANCE_VENT_SEEMLESS_2
+      guid: 3838c09fe30a12488ac204ab7b2c74e7
+      id: 2546232511
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: AMBIANCES
+        ObjectType: 4
+        guid: 0de342e3b708fb408c527d577683a4a1
+      - ElementName: Stop_AMBIANCE_VENT_SEEMLESS_2
+        ObjectType: 3
+        guid: 3838c09fe30a12488ac204ab7b2c74e7
+      Path: Events\Default Work Unit\AMBIANCES\Stop_AMBIANCE_VENT_SEEMLESS_2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_PropositionSimulation
       guid: 4a037acc8015974889c3e619f21b1435
       id: 3465213173
@@ -1436,7 +1556,7 @@ MonoBehaviour:
     m_lastTime: -8584991312705959035
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000090000000a0000005f0000006000000063000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
