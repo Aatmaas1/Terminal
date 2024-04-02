@@ -176,4 +176,11 @@ public class sc_DataManager : MonoBehaviour
     {
         return generalData.SolCasse && !generalData.hasSwitchedBody;
     }
+
+    public bool TestCard(int iD)
+    {
+        if (iD == 1) { return generalData.ItemsCollected[0]; }
+        else if(iD == 2) { return generalData.ItemsCollected[8]; }
+        else { return generalData.ItemsCollected[10]; }
+    }
 }

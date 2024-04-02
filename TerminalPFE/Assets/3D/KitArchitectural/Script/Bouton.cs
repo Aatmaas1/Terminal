@@ -8,6 +8,8 @@ public class Bouton : MonoBehaviour, IDataManager
 {
     private UnityEventPortes UnityEventPortes;
     public GameObject PorteOuvertureParBouton;
+    public bool CardTuto = false;
+    public bool CardEnd = false;
 
     public int index;
     bool isOpen = false;
@@ -51,6 +53,21 @@ public class Bouton : MonoBehaviour, IDataManager
     {
         if (PlayerClose && isOpen == false)
         {
+            if (CardTuto && !sc_DataManager.instance.TestCard(1))
+            {
+                Debug.Log("manque carte");
+                return;
+            }
+            if (CardEnd && !sc_DataManager.instance.TestCard(2))
+            {
+                return;
+            }
+            if (CardTuto && CardEnd && !sc_DataManager.instance.TestCard(3))
+            {
+                return;
+            }
+            Debug.Log("oui carte");
+
             isOpen = true;
             //print("La porte détecte le player en entrée" + transform.parent.name);
             UnityEventPortes.InteractDoorBouton();
