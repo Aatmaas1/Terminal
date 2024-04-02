@@ -9,13 +9,25 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{7480E86B-6BA3-43B7-658F-B81A5F6A4C2E}">
+		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{CC2FA39C-FEEA-9434-F69D-880F98A50416}">
 			<ShortName>MUSIQUE</ShortName>
 			<Path>MUSIQUE.bnk</Path>
 			<Media>
 				<File Id="31641563" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PropositionSimulation.wav</ShortName>
 					<CachePath>SFX/PropositionSimulation_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="106371886" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUSIQUE_CONSTRUCTION.wav</ShortName>
+					<CachePath>SFX/MUSIQUE_CONSTRUCTION_818F3B66.wem</CachePath>
+				</File>
+				<File Id="129048949" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUSIQUE_INTRO.wav</ShortName>
+					<CachePath>SFX/MUSIQUE_INTRO_818F3B66.wem</CachePath>
+				</File>
+				<File Id="251354379" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUSIQUE_SORTIE.wav</ShortName>
+					<CachePath>SFX/MUSIQUE_SORTIE_818F3B66.wem</CachePath>
 				</File>
 				<File Id="352465723" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>4NN4_MASTERING2.wav</ShortName>
@@ -25,6 +37,10 @@
 					<ShortName>MUSIQUE_SALLE_WALL_E.wav</ShortName>
 					<CachePath>SFX/MUSIQUE_SALLE_WALL_E_818F3B66.wem</CachePath>
 				</File>
+				<File Id="843582853" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUSIQUE_OUTRO.wav</ShortName>
+					<CachePath>SFX/MUSIQUE_OUTRO_818F3B66.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
 				<Event Id="1769335880" Name="Pause_MUSIQUE_SALLE_WALL_E" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
@@ -33,9 +49,29 @@
 						<MediaRef Id="352465723"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="4111426405" Name="Play_MUSIQUE_CONSTRUCTION" DurationType="OneShot" DurationMin="36.863647" DurationMax="36.863647">
+					<MediaRefs>
+						<MediaRef Id="106371886"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1305709588" Name="Play_MUSIQUE_INTRO" DurationType="OneShot" DurationMin="28.596582" DurationMax="28.596582">
+					<MediaRefs>
+						<MediaRef Id="129048949"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="946375059" Name="Play_MUSIQUE_OUTRO" DurationType="OneShot" DurationMin="34.914772" DurationMax="34.914772">
+					<MediaRefs>
+						<MediaRef Id="843582853"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1291952458" Name="Play_MUSIQUE_SALLE_WALL_E" MaxAttenuation="195" DurationType="OneShot" DurationMin="137.93452" DurationMax="137.93452">
 					<MediaRefs>
 						<MediaRef Id="586738246"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3323333764" Name="Play_MUSIQUE_SORTIE" DurationType="OneShot" DurationMin="28.08523" DurationMax="28.08523">
+					<MediaRefs>
+						<MediaRef Id="251354379"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="388074695" Name="Play_PropositionSimulation" DurationType="Infinite">
@@ -271,7 +307,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{EF3F48AF-9268-20FA-7545-2DC1ECBE8005}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{D9BF08ED-DA4B-99DA-AF9E-2AD661897644}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -294,6 +330,10 @@
 				<File Id="132449596" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_LETTRES_INTRO_NEW_ESSAI_2.wav</ShortName>
 					<CachePath>SFX/SFX_LETTRES_INTRO_NEW_ESSAI_2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="161739750" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMBIANCE_VENT_SEEMLESS_2.wav</ShortName>
+					<CachePath>SFX/AMBIANCE_VENT_SEEMLESS_2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="214063422" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_CONSTRUCTION_ANDROÏDE.wav</ShortName>
@@ -449,6 +489,11 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="3498856201" Name="Play_AMBIANCE_VENT_SEEMLESS_2" DurationType="OneShot" DurationMin="19.829521" DurationMax="19.829521">
+					<MediaRefs>
+						<MediaRef Id="161739750"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2623669360" Name="Play_RandomContainerTest" MaxAttenuation="195" DurationType="OneShot" DurationMin="0.6240417" DurationMax="0.6240417">
 					<MediaRefs>
 						<MediaRef Id="13083898"/>
@@ -595,5 +640,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{42E4232E-60B8-FA80-2C7D-C4B2F345E53D}</FileHash>
+	<FileHash>{7FB9CAD8-3847-A8DA-C5FD-A7A1E4638E85}</FileHash>
 </SoundBanksInfo>
