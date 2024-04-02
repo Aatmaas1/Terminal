@@ -104,6 +104,28 @@
 						<ActiveSource Name="SFX_SABLE_SOL" ID="{0B7A081E-F74C-49FD-BDA3-9645DE31964D}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="AMBIANCE_VENT_SEEMLESS_2" ID="{68B9158D-B511-4CEA-8012-70F498B0B9CB}" ShortID="370470038">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="AMBIANCE_VENT_SEEMLESS_2" ID="{7C894E51-0D93-4ABF-9C68-D43EDF1FDD87}">
+							<Language>SFX</Language>
+							<AudioFile>AMBIANCE_VENT_SEEMLESS_2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="119368649"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="AMBIANCE_VENT_SEEMLESS_2" ID="{7C894E51-0D93-4ABF-9C68-D43EDF1FDD87}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
