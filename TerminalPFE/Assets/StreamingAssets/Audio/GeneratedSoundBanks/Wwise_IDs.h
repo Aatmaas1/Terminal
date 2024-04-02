@@ -15,7 +15,12 @@ namespace AK
     {
         static const AkUniqueID PAUSE_MUSIQUE_SALLE_WALL_E = 1769335880U;
         static const AkUniqueID PLAY_4NN4_MASTERING2 = 4068946449U;
+        static const AkUniqueID PLAY_AMBIANCE_VENT_SEEMLESS_2 = 3498856201U;
+        static const AkUniqueID PLAY_MUSIQUE_CONSTRUCTION = 4111426405U;
+        static const AkUniqueID PLAY_MUSIQUE_INTRO = 1305709588U;
+        static const AkUniqueID PLAY_MUSIQUE_OUTRO = 946375059U;
         static const AkUniqueID PLAY_MUSIQUE_SALLE_WALL_E = 1291952458U;
+        static const AkUniqueID PLAY_MUSIQUE_SORTIE = 3323333764U;
         static const AkUniqueID PLAY_PROPOSITIONSIMULATION = 388074695U;
         static const AkUniqueID PLAY_RANDOMCONTAINERTEST = 2623669360U;
         static const AkUniqueID PLAY_RANDOMISEUR_PAS_SABLE = 128182366U;
