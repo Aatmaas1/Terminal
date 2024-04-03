@@ -11,10 +11,7 @@ public class Death4NN4 : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-
             StartCoroutine(WaitAnimDeath());
-
-
         }
     }
 
