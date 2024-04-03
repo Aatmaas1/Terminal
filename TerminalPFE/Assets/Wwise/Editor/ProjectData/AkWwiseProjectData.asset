@@ -482,7 +482,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e364e8b048b1b448b41f12b8470ec700
     GuidInternal: 
-    m_lastTime: -8584895356746997243
+    m_lastTime: -8584894682599760248
     List:
     - name: Main
       guid: 251dc717ef0fef42a545f46544a81c52
@@ -524,7 +524,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 32fcbe829e1db64882c8fd8a959356a5
     GuidInternal: 
-    m_lastTime: -8584895357144926579
+    m_lastTime: -8584894682599870614
     List:
     - name: AMBIANCES
       guid: 0de342e3b708fb408c527d577683a4a1
@@ -669,11 +669,11 @@ MonoBehaviour:
         guid: 88014eb76baf5542aa27d61c9b8233b9
       Path: Events\Default Work Unit\AMBIANCES\Play_AMBIANCE_VENT_SEEMLESS_2
       maxAttenuation: 0
-      maxDuration: 19.829521
-      minDuration: 19.829521
-    - name: Play_MUSIQUE_CONSTRUCTION
-      guid: 38dfcd9a3c0638488956ee3e96620952
-      id: 4111426405
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_MUSIQUE_INTO_DEMARCHE_DIFF
+      guid: 2d0ead5e00ccd049aa1713d00a66ec38
+      id: 1666445414
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -684,33 +684,13 @@ MonoBehaviour:
       - ElementName: Musique
         ObjectType: 4
         guid: 88f90691d8dc94408199bba3ae90acb0
-      - ElementName: Play_MUSIQUE_CONSTRUCTION
+      - ElementName: Play_MUSIQUE_INTO_DEMARCHE_DIFF
         ObjectType: 3
-        guid: 38dfcd9a3c0638488956ee3e96620952
-      Path: Events\Default Work Unit\Musique\Play_MUSIQUE_CONSTRUCTION
+        guid: 2d0ead5e00ccd049aa1713d00a66ec38
+      Path: Events\Default Work Unit\Musique\Play_MUSIQUE_INTO_DEMARCHE_DIFF
       maxAttenuation: 0
-      maxDuration: 36.863647
-      minDuration: 36.863647
-    - name: Play_MUSIQUE_INTRO
-      guid: 3feedb70fb827546af2bcde91bf87063
-      id: 1305709588
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 32fcbe829e1db64882c8fd8a959356a5
-      - ElementName: Musique
-        ObjectType: 4
-        guid: 88f90691d8dc94408199bba3ae90acb0
-      - ElementName: Play_MUSIQUE_INTRO
-        ObjectType: 3
-        guid: 3feedb70fb827546af2bcde91bf87063
-      Path: Events\Default Work Unit\Musique\Play_MUSIQUE_INTRO
-      maxAttenuation: 0
-      maxDuration: 28.596582
-      minDuration: 28.596582
+      maxDuration: 62.261353
+      minDuration: 62.261353
     - name: Play_MUSIQUE_OUTRO
       guid: 388436d2d960c649821b134573b87f55
       id: 946375059
@@ -1556,7 +1536,7 @@ MonoBehaviour:
     m_lastTime: -8584991312705959035
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 05000000060000000c0000000d00000011000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

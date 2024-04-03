@@ -148,23 +148,12 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_MUSIQUE_INTRO" ID="{70DBEE3F-82FB-4675-AF2B-CDE91BF87063}">
+						<Event Name="Play_MUSIQUE_INTO_DEMARCHE_DIFF" ID="{5EAD0E2D-CC00-49D0-AA17-13D00A66EC38}">
 							<ChildrenList>
-								<Action Name="" ID="{A659EB50-8303-446E-ADF2-F007B431033D}" ShortID="926494680">
+								<Action Name="" ID="{4EFE5733-C844-4208-AA37-5B7C5ECB2ADD}" ShortID="222481160">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="MUSIQUE_INTRO" ID="{83A380B8-CE8F-4A33-9E69-145D07C63826}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_MUSIQUE_CONSTRUCTION" ID="{9ACDDF38-063C-4838-8956-EE3E96620952}">
-							<ChildrenList>
-								<Action Name="" ID="{BEB3893B-398D-48D0-8F95-D77400439BCA}" ShortID="526656454">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="MUSIQUE_CONSTRUCTION" ID="{FB474DD5-8101-4220-88CD-A88A29867C04}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+											<ObjectRef Name="MUSIQUE_INTO_DEMARCHE_DIFF" ID="{8B8C3E5A-05B6-42D4-8A92-C96C6804146C}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -392,7 +381,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="AMBIANCE_VENT_SEEMLESS_2" ID="{4E002351-FFE5-4D74-9D90-82BE0557ACB1}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
+											<ObjectRef Name="AMBIANCE_TEMPETE_SEEMLESS" ID="{0C3227C2-6872-4C51-94B8-7329DC41B272}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -407,7 +396,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="AMBIANCE_VENT_SEEMLESS_2" ID="{4E002351-FFE5-4D74-9D90-82BE0557ACB1}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
+											<ObjectRef Name="AMBIANCE_TEMPETE_SEEMLESS" ID="{0C3227C2-6872-4C51-94B8-7329DC41B272}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

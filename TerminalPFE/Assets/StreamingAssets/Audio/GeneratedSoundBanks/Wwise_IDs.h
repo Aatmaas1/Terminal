@@ -16,8 +16,7 @@ namespace AK
         static const AkUniqueID PAUSE_MUSIQUE_SALLE_WALL_E = 1769335880U;
         static const AkUniqueID PLAY_4NN4_MASTERING2 = 4068946449U;
         static const AkUniqueID PLAY_AMBIANCE_VENT_SEEMLESS_2 = 3498856201U;
-        static const AkUniqueID PLAY_MUSIQUE_CONSTRUCTION = 4111426405U;
-        static const AkUniqueID PLAY_MUSIQUE_INTRO = 1305709588U;
+        static const AkUniqueID PLAY_MUSIQUE_INTO_DEMARCHE_DIFF = 1666445414U;
         static const AkUniqueID PLAY_MUSIQUE_OUTRO = 946375059U;
         static const AkUniqueID PLAY_MUSIQUE_SALLE_WALL_E = 1291952458U;
         static const AkUniqueID PLAY_MUSIQUE_SORTIE = 3323333764U;

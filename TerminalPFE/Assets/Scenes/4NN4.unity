@@ -2641,7 +2641,6 @@ GameObject:
   - component: {fileID: 467862354}
   - component: {fileID: 467862353}
   - component: {fileID: 467862352}
-  - component: {fileID: 467862355}
   m_Layer: 0
   m_Name: TriggerBatterie
   m_TagString: Untagged
@@ -2698,27 +2697,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 85919041}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &467862355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 467862351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d11157e2edff0f44966e5e03b83a829, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8b22d1091a337644f9e7b81b46876786,
-      type: 2}
-  stopEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
 --- !u!114 &471398045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13189,13 +13167,12 @@ MonoBehaviour:
   playEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 4a613015e7ed5be479de3a8335907b01,
+    WwiseObjectReference: {fileID: 11400000, guid: 29734efb479bd1848bd8ced1c64eb9e3,
       type: 2}
   stopEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 00b063e3163ef7442931582c9edbf4fd,
-      type: 2}
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &1650449643
 GameObject:
   m_ObjectHideFlags: 0

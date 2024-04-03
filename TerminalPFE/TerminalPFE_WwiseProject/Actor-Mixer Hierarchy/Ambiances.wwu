@@ -104,7 +104,10 @@
 						<ActiveSource Name="SFX_SABLE_SOL" ID="{0B7A081E-F74C-49FD-BDA3-9645DE31964D}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="AMBIANCE_VENT_SEEMLESS_2" ID="{4E002351-FFE5-4D74-9D90-82BE0557ACB1}" ShortID="61585746">
+				<Sound Name="AMBIANCE_TEMPETE_SEEMLESS" ID="{0C3227C2-6872-4C51-94B8-7329DC41B272}" ShortID="584864250">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
@@ -114,16 +117,16 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="AMBIANCE_VENT_SEEMLESS_2" ID="{70B4E470-7941-44FA-974F-1DA298F06DE6}">
+						<AudioFileSource Name="AMBIANCE_TEMPETE_SEEMLESS" ID="{999DA81B-6791-4FE1-81C0-7B4486CC9E90}">
 							<Language>SFX</Language>
-							<AudioFile>AMBIANCE_VENT_SEEMLESS_2.wav</AudioFile>
+							<AudioFile>AMBIANCE_TEMPETE_SEEMLESS.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="161739750"/>
+								<MediaID ID="386145636"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="AMBIANCE_VENT_SEEMLESS_2" ID="{70B4E470-7941-44FA-974F-1DA298F06DE6}" Platform="Linked"/>
+						<ActiveSource Name="AMBIANCE_TEMPETE_SEEMLESS" ID="{999DA81B-6791-4FE1-81C0-7B4486CC9E90}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>
