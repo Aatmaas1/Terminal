@@ -97,8 +97,11 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
 
     public void OnInventaire()
     {
-        sc_UIPauseManager.Instance.TestPause();
-        sc_UIPauseManager.Instance.LoadInventory();
+        if(SceneManager.GetActiveScene().buildIndex != 3)
+        {
+            sc_UIPauseManager.Instance.TestPause();
+            sc_UIPauseManager.Instance.LoadInventory();
+        }
     }
 
     /// <summary>
