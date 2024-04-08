@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 60088738}
-  m_IndirectSpecularColor: {r: 0.632951, g: 0.23868087, b: 0.12571746, a: 1}
+  m_IndirectSpecularColor: {r: 0.6329508, g: 0.23868087, b: 0.12571749, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13246,12 +13246,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerAnimator: {fileID: 151071937}
-  fadeToBlack: {fileID: 0}
-  timeToStop: 0
-  timeToDie: 0
-  timeToFade: 0
-  timeToLoad: 0
-  postEvent: {fileID: 0}
+  fadeToBlack: {fileID: 788286560}
+  timeToStop: 18
+  timeToDie: 2
+  timeToFade: 5
+  timeToLoad: 7
+  postEvent: {fileID: 1634242952}
 --- !u!114 &1634242952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13272,7 +13272,8 @@ MonoBehaviour:
   stopEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 55f3901a48841c740abf698899ebb192,
+      type: 2}
 --- !u!114 &1634242953
 MonoBehaviour:
   m_ObjectHideFlags: 0

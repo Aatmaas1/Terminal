@@ -107,6 +107,11 @@
 				<Sound Name="AMBIANCE_TEMPETE_SEEMLESS" ID="{0C3227C2-6872-4C51-94B8-7329DC41B272}" ShortID="584864250">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
