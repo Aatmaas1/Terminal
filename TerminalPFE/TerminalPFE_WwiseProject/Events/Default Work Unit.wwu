@@ -387,12 +387,13 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Stop_AMBIANCE_VENT_SEEMLESS_2" ID="{9FC03838-0AE3-4812-8AC2-04AB7B2C74E7}">
+						<Event Name="Stop_AMBIANCE_TEMPETE_SEEMLESS" ID="{827B2BDF-5AB0-46F3-952B-E2FDC995BEB1}">
 							<ChildrenList>
-								<Action Name="" ID="{F3D5EABA-660D-4E09-9D58-135569B4F2B6}" ShortID="805086529">
+								<Action Name="" ID="{B18E1C77-1FCA-43C2-8536-6C1A5395F0A0}" ShortID="436883477">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
 										<Property Name="FadeTime" Type="Real64" Value="5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
