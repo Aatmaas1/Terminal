@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{47FF051D-47AA-ABDC-EFA7-5148C95163A9}">
+		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{506CDC56-82AD-0BB6-E4AA-9010D3B631A8}">
 			<ShortName>MUSIQUE</ShortName>
 			<Path>MUSIQUE.bnk</Path>
 			<Media>
@@ -298,7 +298,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{479B2538-19ED-68F5-69EF-469EE51898C9}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{4BF2B197-AA5B-C3C3-51D4-9B6EFF9AECFD}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -624,6 +624,7 @@
 						<MediaRef Id="293166367"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3983987071" Name="Stop_AMBIANCE_TEMPETE_SEEMLESS" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3185533582" Name="Stop_SFX_AMBIANCE_CROWD" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1840303866" Name="Stop_SFX_REELTOSIMU_2" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1074890505" Name="Stop_SFX_SIMUTOREEL" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
@@ -631,5 +632,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{AAA03B87-E95C-5852-25ED-02BC46FA2E4C}</FileHash>
+	<FileHash>{6B5C2090-2C89-ECA6-5825-970ADFFF0515}</FileHash>
 </SoundBanksInfo>
