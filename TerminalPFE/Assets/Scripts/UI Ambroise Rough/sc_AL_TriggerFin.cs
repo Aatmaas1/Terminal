@@ -13,7 +13,7 @@ public class sc_AL_TriggerFin : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             StartCoroutine(DeclencheUIEnd());
-            cameraEndPlayer.SetTrigger("End");
+            //cameraEndPlayer.SetTrigger("End");
             //cameraEndCinemachine.SetActive(true);
             other.GetComponent<PlayerInput>().SwitchCurrentActionMap("UI");
             Cursor.lockState = CursorLockMode.None;
