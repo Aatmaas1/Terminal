@@ -8,6 +8,10 @@ public class Death4NN4 : MonoBehaviour
     public Animator PlayerAnimator;
 
     public GameObject fadeToBlack;
+    
+    //public GameObject ThirdPersonController;
+    
+    
 
     [Header("Contrôle des timings")]
     public float timeToStop;
@@ -34,7 +38,9 @@ public class Death4NN4 : MonoBehaviour
     IEnumerator WaitAnimDeath()
     {
         PlayerAnimator.GetComponent<Animator>().SetTrigger("SlowWalk");
-        postEvent.PostEvent();
+        // ici il faut faire marcher 4NN4 lentement en code donc reduire sa vitesse sinon ça va pas
+       
+                postEvent.PostEvent();
 
         yield return new WaitForSeconds(timeToStop);
 
