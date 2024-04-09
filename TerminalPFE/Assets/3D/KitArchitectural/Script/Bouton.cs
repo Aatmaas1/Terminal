@@ -14,6 +14,7 @@ public class Bouton : MonoBehaviour, IDataManager
     bool PlayerClose = false;
     VisualEffect Vfx;
     float color = 0;
+    public int cardID = 0;
 
     private void Start()
     {
@@ -51,6 +52,13 @@ public class Bouton : MonoBehaviour, IDataManager
     {
         if (PlayerClose && isOpen == false)
         {
+            if(cardID != 0)
+            {
+                if (!sc_DataManager.instance.CheckID(cardID))
+                {
+                    return;
+                }
+            }
             isOpen = true;
             //print("La porte détecte le player en entrée" + transform.parent.name);
             UnityEventPortes.InteractDoorBouton();
