@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{9AC363F4-915F-4755-A8EA-853E5E7D5179}" SchemaVersion="119">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{9AC363F4-915F-4755-A8EA-853E5E7D5179}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{9AC363F4-915F-4755-A8EA-853E5E7D5179}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="VOLUME" ID="{4BC566F2-B5CD-4CFB-80BB-75672B59C51D}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

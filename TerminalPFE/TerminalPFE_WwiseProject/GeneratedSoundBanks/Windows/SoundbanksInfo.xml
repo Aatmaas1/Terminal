@@ -75,7 +75,7 @@
 				<Event Id="3465213173" Name="Stop_PropositionSimulation" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{34E17170-89E6-BDA6-6887-9339B193A6AF}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D9C88945-2D5C-1785-F2C4-F9FE5F25E5FE}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -160,6 +160,9 @@
 					</AuxBusRefs>
 				</AuxBus>
 			</AuxBusses>
+			<GameParameters>
+				<GameParameter Id="2415836739" Name="VOLUME"/>
+			</GameParameters>
 			<AcousticTextures>
 				<AcousticTexture Id="386080821" Name="BETON">
 					<Properties>
@@ -632,5 +635,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{346C34E3-C32C-2746-1A51-F274EC2781D9}</FileHash>
+	<FileHash>{33DB51DB-B70A-C877-8DE8-C8A780AA1F2B}</FileHash>
 </SoundBanksInfo>
