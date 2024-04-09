@@ -7,6 +7,7 @@ public class VolumeManager : MonoBehaviour
     [SerializeField] Slider volumeSlider;
 
     //public AkAudioListener camAudioListener;
+
     
 
     private void Start()
@@ -31,7 +32,7 @@ public class VolumeManager : MonoBehaviour
     public void ChangeVolume()
     {
         //AudioListener.volume = volumeSlider.value;
-        
+        AkSoundEngine.SetRTPCValue("VOLUME", volumeSlider.value * 100);
         SaveVolume();
     }
 
