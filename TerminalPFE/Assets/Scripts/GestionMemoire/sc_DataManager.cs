@@ -176,4 +176,21 @@ public class sc_DataManager : MonoBehaviour
     {
         return generalData.SolCasse && !generalData.hasSwitchedBody;
     }
+
+    public bool CheckID(int index)
+    {
+        if (index == 1)
+        {
+            return generalData.ItemsCollected[0];
+        }
+        else if (index == 2)
+        {
+            return generalData.ItemsCollected[8];
+        }
+        else if (index == 3)
+        {
+            return generalData.ItemsCollected[10];
+        }
+        else { return false; }
+    }
 }

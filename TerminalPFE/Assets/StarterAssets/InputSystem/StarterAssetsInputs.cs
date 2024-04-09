@@ -48,7 +48,10 @@ namespace StarterAssets
 
         public void OnPause()
         {
-			SetPause();
+			if(SceneManager.GetActiveScene().buildIndex != 3)
+            {
+                SetPause();
+            }
         }
 #endif
 
