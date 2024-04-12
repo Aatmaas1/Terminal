@@ -45,7 +45,7 @@ public class sc_SimuTiles_LDOV : MonoBehaviour
 
     public void StartTrigger()
     {
-        Debug.Log("aaaaaaa");
+        //Debug.Log("aaaaaaa");
         _mat = GetComponentInParent<MeshRenderer>().material;
         _touch = true;
         _mat.SetVector("_PlayerPos", transform.position + Vector3.up);
