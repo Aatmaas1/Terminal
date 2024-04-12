@@ -11,10 +11,18 @@ public class sc_SandPos_LDOV : MonoBehaviour
     Vector3 diffPos;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         diffPos = new Vector3(transform.position.x - playerPos.position.x, transform.position.y - playerPos.position.y, transform.position.z - playerPos.position.z);
         print(playerPos.position.y + diffPos.y);
+    }
+
+    private void Start()
+    {
+        if(transform.parent != null)
+        {
+            transform.parent = null;
+        }
     }
 
     // Update is called once per frame
