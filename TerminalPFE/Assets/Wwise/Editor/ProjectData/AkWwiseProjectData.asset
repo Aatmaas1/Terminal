@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 1cf59fa78aed4b48900c0883722c8eb0
     GuidInternal: 
-    m_lastTime: -8584961376108387220
+    m_lastTime: -8584956867393635481
     List:
     - name: BETON
       guid: 4c9ae77e8847c643b2c6e42551e1bd87
@@ -51,7 +51,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Factory Acoustic Textures
     guid: 6b663d46a83ca54f8b4a5fef12b883f6
     GuidInternal: 
-    m_lastTime: -8584961376108367210
+    m_lastTime: -8584956867393635481
     List:
     - name: Acoustic_Banner
       guid: f2532d2fccda8e408b8898b1b52a26d6
@@ -317,7 +317,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: a496d604dfb54f43bca9994076f26b0d
     GuidInternal: 
-    m_lastTime: -8584930946568215695
+    m_lastTime: -8584889450920494532
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -482,7 +482,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e364e8b048b1b448b41f12b8470ec700
     GuidInternal: 
-    m_lastTime: -8584895356746997243
+    m_lastTime: -8584890158670485938
     List:
     - name: Main
       guid: 251dc717ef0fef42a545f46544a81c52
@@ -524,7 +524,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 32fcbe829e1db64882c8fd8a959356a5
     GuidInternal: 
-    m_lastTime: -8584895357144926579
+    m_lastTime: -8584890158681132734
     List:
     - name: AMBIANCES
       guid: 0de342e3b708fb408c527d577683a4a1
@@ -669,11 +669,11 @@ MonoBehaviour:
         guid: 88014eb76baf5542aa27d61c9b8233b9
       Path: Events\Default Work Unit\AMBIANCES\Play_AMBIANCE_VENT_SEEMLESS_2
       maxAttenuation: 0
-      maxDuration: 19.829521
-      minDuration: 19.829521
-    - name: Play_MUSIQUE_CONSTRUCTION
-      guid: 38dfcd9a3c0638488956ee3e96620952
-      id: 4111426405
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_MUSIQUE_INTO_DEMARCHE_DIFF
+      guid: 2d0ead5e00ccd049aa1713d00a66ec38
+      id: 1666445414
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -684,33 +684,13 @@ MonoBehaviour:
       - ElementName: Musique
         ObjectType: 4
         guid: 88f90691d8dc94408199bba3ae90acb0
-      - ElementName: Play_MUSIQUE_CONSTRUCTION
+      - ElementName: Play_MUSIQUE_INTO_DEMARCHE_DIFF
         ObjectType: 3
-        guid: 38dfcd9a3c0638488956ee3e96620952
-      Path: Events\Default Work Unit\Musique\Play_MUSIQUE_CONSTRUCTION
+        guid: 2d0ead5e00ccd049aa1713d00a66ec38
+      Path: Events\Default Work Unit\Musique\Play_MUSIQUE_INTO_DEMARCHE_DIFF
       maxAttenuation: 0
-      maxDuration: 36.863647
-      minDuration: 36.863647
-    - name: Play_MUSIQUE_INTRO
-      guid: 3feedb70fb827546af2bcde91bf87063
-      id: 1305709588
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 32fcbe829e1db64882c8fd8a959356a5
-      - ElementName: Musique
-        ObjectType: 4
-        guid: 88f90691d8dc94408199bba3ae90acb0
-      - ElementName: Play_MUSIQUE_INTRO
-        ObjectType: 3
-        guid: 3feedb70fb827546af2bcde91bf87063
-      Path: Events\Default Work Unit\Musique\Play_MUSIQUE_INTRO
-      maxAttenuation: 0
-      maxDuration: 28.596582
-      minDuration: 28.596582
+      maxDuration: 62.261353
+      minDuration: 62.261353
     - name: Play_MUSIQUE_OUTRO
       guid: 388436d2d960c649821b134573b87f55
       id: 946375059
@@ -1345,9 +1325,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: Stop_AMBIANCE_VENT_SEEMLESS_2
-      guid: 3838c09fe30a12488ac204ab7b2c74e7
-      id: 2546232511
+    - name: Stop_AMBIANCE_TEMPETE_SEEMLESS
+      guid: df2b7b82b05af346952be2fdc995beb1
+      id: 3983987071
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -1358,13 +1338,13 @@ MonoBehaviour:
       - ElementName: AMBIANCES
         ObjectType: 4
         guid: 0de342e3b708fb408c527d577683a4a1
-      - ElementName: Stop_AMBIANCE_VENT_SEEMLESS_2
+      - ElementName: Stop_AMBIANCE_TEMPETE_SEEMLESS
         ObjectType: 3
-        guid: 3838c09fe30a12488ac204ab7b2c74e7
-      Path: Events\Default Work Unit\AMBIANCES\Stop_AMBIANCE_VENT_SEEMLESS_2
+        guid: df2b7b82b05af346952be2fdc995beb1
+      Path: Events\Default Work Unit\AMBIANCES\Stop_AMBIANCE_TEMPETE_SEEMLESS
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_PropositionSimulation
       guid: 4a037acc8015974889c3e619f21b1435
       id: 3465213173
@@ -1511,8 +1491,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: f463c39a5f915547a8ea853e5e7d5179
     GuidInternal: 
-    m_lastTime: -8584991312706139084
-    List: []
+    m_lastTime: -8584889450920514529
+    List:
+    - name: VOLUME
+      guid: f266c54bcdb5fb4c80bb75672b59c51d
+      id: 2415836739
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f463c39a5f915547a8ea853e5e7d5179
+      - ElementName: VOLUME
+        ObjectType: 13
+        guid: f266c54bcdb5fb4c80bb75672b59c51d
+      Path: Game Parameters\Default Work Unit\VOLUME
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -1525,7 +1519,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 714a7c0a843719468b6cdc73bdd5c5ef
     GuidInternal: 
-    m_lastTime: -8584976072292003898
+    m_lastTime: -8584991339338059162
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -1539,7 +1533,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 6a351b9960659c4795efc6c4eb9bc882
     GuidInternal: 
-    m_lastTime: -8584991312705989083
+    m_lastTime: -8584991339338059162
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -1553,7 +1547,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 2231a2ba2b69e34ab5a5aaa376433f97
     GuidInternal: 
-    m_lastTime: -8584991312705959035
+    m_lastTime: -8584991339338039150
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 

@@ -1,6 +1,7 @@
 using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 #endif
 
 namespace StarterAssets
@@ -47,7 +48,10 @@ namespace StarterAssets
 
         public void OnPause()
         {
-			SetPause();
+			if(SceneManager.GetActiveScene().buildIndex != 3)
+            {
+                SetPause();
+            }
         }
 #endif
 
@@ -55,12 +59,21 @@ namespace StarterAssets
         public void MoveInput(Vector2 newMoveDirection)
 		{
 			move = newMoveDirection;
+			if(SceneManager.GetActiveScene().buildIndex == 3 )
+			{
+				move.x = 0;
+				move.y = Mathf.Clamp01(move.y);
+			}
 		} 
 
 		public void LookInput(Vector2 newLookDirection)
 		{
 			look = newLookDirection;
-		}
+            if (SceneManager.GetActiveScene().buildIndex == 3)
+            {
+				look = Vector2.zero;
+            }
+        }
 
 		public void JumpInput(bool newJumpState)
 		{

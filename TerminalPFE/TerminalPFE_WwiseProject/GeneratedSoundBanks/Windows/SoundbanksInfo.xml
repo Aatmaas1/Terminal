@@ -9,21 +9,13 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{CC2FA39C-FEEA-9434-F69D-880F98A50416}">
+		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{506CDC56-82AD-0BB6-E4AA-9010D3B631A8}">
 			<ShortName>MUSIQUE</ShortName>
 			<Path>MUSIQUE.bnk</Path>
 			<Media>
 				<File Id="31641563" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PropositionSimulation.wav</ShortName>
 					<CachePath>SFX/PropositionSimulation_FBC78EF0.wem</CachePath>
-				</File>
-				<File Id="106371886" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUSIQUE_CONSTRUCTION.wav</ShortName>
-					<CachePath>SFX/MUSIQUE_CONSTRUCTION_818F3B66.wem</CachePath>
-				</File>
-				<File Id="129048949" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUSIQUE_INTRO.wav</ShortName>
-					<CachePath>SFX/MUSIQUE_INTRO_818F3B66.wem</CachePath>
 				</File>
 				<File Id="251354379" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MUSIQUE_SORTIE.wav</ShortName>
@@ -37,6 +29,10 @@
 					<ShortName>MUSIQUE_SALLE_WALL_E.wav</ShortName>
 					<CachePath>SFX/MUSIQUE_SALLE_WALL_E_818F3B66.wem</CachePath>
 				</File>
+				<File Id="771713541" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUSIQUE_INTO_DEMARCHE_DIFF.wav</ShortName>
+					<CachePath>SFX/MUSIQUE_INTO_DEMARCHE_DIFF_818F3B66.wem</CachePath>
+				</File>
 				<File Id="843582853" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MUSIQUE_OUTRO.wav</ShortName>
 					<CachePath>SFX/MUSIQUE_OUTRO_818F3B66.wem</CachePath>
@@ -49,14 +45,9 @@
 						<MediaRef Id="352465723"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="4111426405" Name="Play_MUSIQUE_CONSTRUCTION" DurationType="OneShot" DurationMin="36.863647" DurationMax="36.863647">
+				<Event Id="1666445414" Name="Play_MUSIQUE_INTO_DEMARCHE_DIFF" DurationType="OneShot" DurationMin="62.261353" DurationMax="62.261353">
 					<MediaRefs>
-						<MediaRef Id="106371886"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="1305709588" Name="Play_MUSIQUE_INTRO" DurationType="OneShot" DurationMin="28.596582" DurationMax="28.596582">
-					<MediaRefs>
-						<MediaRef Id="129048949"/>
+						<MediaRef Id="771713541"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="946375059" Name="Play_MUSIQUE_OUTRO" DurationType="OneShot" DurationMin="34.914772" DurationMax="34.914772">
@@ -84,7 +75,7 @@
 				<Event Id="3465213173" Name="Stop_PropositionSimulation" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{34E17170-89E6-BDA6-6887-9339B193A6AF}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D9C88945-2D5C-1785-F2C4-F9FE5F25E5FE}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -169,6 +160,9 @@
 					</AuxBusRefs>
 				</AuxBus>
 			</AuxBusses>
+			<GameParameters>
+				<GameParameter Id="2415836739" Name="VOLUME"/>
+			</GameParameters>
 			<AcousticTextures>
 				<AcousticTexture Id="386080821" Name="BETON">
 					<Properties>
@@ -307,7 +301,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{D9BF08ED-DA4B-99DA-AF9E-2AD661897644}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{AF449FFD-1FD9-2250-2FCC-370ED8D1088C}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -331,10 +325,6 @@
 					<ShortName>SFX_LETTRES_INTRO_NEW_ESSAI_2.wav</ShortName>
 					<CachePath>SFX/SFX_LETTRES_INTRO_NEW_ESSAI_2_818F3B66.wem</CachePath>
 				</File>
-				<File Id="161739750" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AMBIANCE_VENT_SEEMLESS_2.wav</ShortName>
-					<CachePath>SFX/AMBIANCE_VENT_SEEMLESS_2_818F3B66.wem</CachePath>
-				</File>
 				<File Id="214063422" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_CONSTRUCTION_ANDROÏDE.wav</ShortName>
 					<CachePath>SFX/SFX_CONSTRUCTION_ANDROÏDE_268A4F59.wem</CachePath>
@@ -354,6 +344,10 @@
 				<File Id="356420912" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_DETECTION_LANCEMENT2.wav</ShortName>
 					<CachePath>SFX/SFX_DETECTION_LANCEMENT2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="386145636" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMBIANCE_TEMPETE_SEEMLESS.wav</ShortName>
+					<CachePath>SFX/AMBIANCE_TEMPETE_SEEMLESS_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="435168779" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_2.wav</ShortName>
@@ -489,9 +483,9 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3498856201" Name="Play_AMBIANCE_VENT_SEEMLESS_2" DurationType="OneShot" DurationMin="19.829521" DurationMax="19.829521">
+				<Event Id="3498856201" Name="Play_AMBIANCE_VENT_SEEMLESS_2" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="161739750"/>
+						<MediaRef Id="386145636"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2623669360" Name="Play_RandomContainerTest" MaxAttenuation="195" DurationType="OneShot" DurationMin="0.6240417" DurationMax="0.6240417">
@@ -633,6 +627,7 @@
 						<MediaRef Id="293166367"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3983987071" Name="Stop_AMBIANCE_TEMPETE_SEEMLESS" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3185533582" Name="Stop_SFX_AMBIANCE_CROWD" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1840303866" Name="Stop_SFX_REELTOSIMU_2" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1074890505" Name="Stop_SFX_SIMUTOREEL" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
@@ -640,5 +635,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7FB9CAD8-3847-A8DA-C5FD-A7A1E4638E85}</FileHash>
+	<FileHash>{33DB51DB-B70A-C877-8DE8-C8A780AA1F2B}</FileHash>
 </SoundBanksInfo>
