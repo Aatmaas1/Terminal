@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class sc_cinemachineCinematiqueend : MonoBehaviour
 {
+    
     public void GoToIddleAnimation()
     {
         this.gameObject.GetComponent<Animator>().SetTrigger("Iddle");
@@ -11,6 +12,8 @@ public class sc_cinemachineCinematiqueend : MonoBehaviour
 
     public void GoToEndAnimation()
     {
+        this.gameObject.SetActive(true);
+        
         this.gameObject.GetComponent<Animator>().SetTrigger("End");
     }
 }
