@@ -13,6 +13,7 @@ public class Bouton : MonoBehaviour, IDataManager
     bool isOpen = false;
     bool PlayerClose = false;
     VisualEffect Vfx;
+    public VisualEffect VfxFeedBack;
     float color = 0;
     public int cardID = 0;
 
@@ -63,7 +64,7 @@ public class Bouton : MonoBehaviour, IDataManager
             //print("La porte détecte le player en entrée" + transform.parent.name);
             UnityEventPortes.InteractDoorBouton();
             this.gameObject.GetComponent<Animator>().SetTrigger("IsClick");
-            this.gameObject.GetComponentInChildren<VisualEffect>().SendEvent("OnBOuton");
+            VfxFeedBack.SendEvent("OnBouton");
             //this.gameObject.SetActive(false);
 
             //sc_ScreenShake.instance.ScreenBaseQuick();
