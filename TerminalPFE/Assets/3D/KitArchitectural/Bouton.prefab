@@ -60,7 +60,7 @@ VisualEffect:
       - m_Value: 0
         m_Name: ColorChanger
         m_Overridden: 1
-      - m_Value: 0
+      - m_Value: 0.1
         m_Name: DistanceForce
         m_Overridden: 1
     m_Vector2f:
@@ -383,7 +383,7 @@ VisualEffect:
   m_GameObject: {fileID: 8572874811134175066}
   m_Enabled: 1
   m_Asset: {fileID: 8926484042661614526, guid: b4bf3115d4121ff4ea322b615173e46e, type: 3}
-  m_InitialEventName: OnBouton
+  m_InitialEventName: OnStart
   m_InitialEventNameOverriden: 1
   m_StartSeed: 0
   m_ResetSeedOnPlay: 1
