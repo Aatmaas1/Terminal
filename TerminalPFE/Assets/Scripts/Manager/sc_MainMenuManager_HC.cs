@@ -34,6 +34,11 @@ public class sc_MainMenuManager_HC : MonoBehaviour
                 but.GetComponent<Button>().enabled = true;
             }
         }
+
+        if (sc_DataManager.instance.TestIsNewSave())
+        {
+            Boutons[0].SetActive(false);
+        }
     }
 
     // Update is called once per frame
