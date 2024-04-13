@@ -1170,7 +1170,7 @@ PrefabInstance:
     - target: {fileID: 288813905133023858, guid: ea06adb326b375748b4cde697cd75d85,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 359.28375
+      value: 359.24945
       objectReference: {fileID: 0}
     - target: {fileID: 288813905133023858, guid: ea06adb326b375748b4cde697cd75d85,
         type: 3}
@@ -1180,7 +1180,7 @@ PrefabInstance:
     - target: {fileID: 288813905133023858, guid: ea06adb326b375748b4cde697cd75d85,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.7593093
+      value: 1.8999938
       objectReference: {fileID: 0}
     - target: {fileID: 288813905133023858, guid: ea06adb326b375748b4cde697cd75d85,
         type: 3}
@@ -5232,7 +5232,7 @@ PrefabInstance:
     - target: {fileID: 346882875557933443, guid: 643dd71afb4a05a46a1a1967b04ea735,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 359.28375
+      value: 359.24945
       objectReference: {fileID: 0}
     - target: {fileID: 346882875557933443, guid: 643dd71afb4a05a46a1a1967b04ea735,
         type: 3}
@@ -5242,7 +5242,7 @@ PrefabInstance:
     - target: {fileID: 346882875557933443, guid: 643dd71afb4a05a46a1a1967b04ea735,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.7593093
+      value: 1.8999938
       objectReference: {fileID: 0}
     - target: {fileID: 346882875557933443, guid: 643dd71afb4a05a46a1a1967b04ea735,
         type: 3}
@@ -5284,6 +5284,11 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1371093563}
+    - target: {fileID: 5310228006512941413, guid: 643dd71afb4a05a46a1a1967b04ea735,
+        type: 3}
+      propertyPath: CameraSide
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5310228006512941413, guid: 643dd71afb4a05a46a1a1967b04ea735,
         type: 3}
       propertyPath: CameraDistance
@@ -7127,7 +7132,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &995514900
 Transform:
   m_ObjectHideFlags: 0
@@ -8253,7 +8258,7 @@ PrefabInstance:
     - target: {fileID: 7298939621828970412, guid: 01f5a03f1edcafe408baa3128b2f3a17,
         type: 3}
       propertyPath: m_text
-      value: Terminal [1.0.5.2]
+      value: Terminal [1.0.6]
       objectReference: {fileID: 0}
     - target: {fileID: 8210028465651701123, guid: 01f5a03f1edcafe408baa3128b2f3a17,
         type: 3}
@@ -8271,6 +8276,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8823762072059625623, guid: 01f5a03f1edcafe408baa3128b2f3a17,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 678
+      objectReference: {fileID: 0}
+    - target: {fileID: 8823762072059625623, guid: 01f5a03f1edcafe408baa3128b2f3a17,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -519.62
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -13870,7 +13885,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.62352943, g: 0.45940107, b: 0.3098039, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 0.3
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
