@@ -1,5 +1,5 @@
+using StarterAssets;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,10 +8,10 @@ public class Death4NN4 : MonoBehaviour
     public Animator PlayerAnimator;
 
     public GameObject fadeToBlack;
-    
+
     //public GameObject ThirdPersonController;
-    
-    
+
+
 
     [Header("Contrôle des timings")]
     public float timeToStop;
@@ -38,9 +38,9 @@ public class Death4NN4 : MonoBehaviour
     IEnumerator WaitAnimDeath()
     {
         PlayerAnimator.GetComponent<Animator>().SetTrigger("SlowWalk");
-        // ici il faut faire marcher 4NN4 lentement en code donc reduire sa vitesse sinon ça va pas
-       
-                postEvent.PostEvent();
+        StartCoroutine(SlowDown());
+
+        postEvent.PostEvent();
 
         yield return new WaitForSeconds(timeToStop);
 
@@ -67,5 +67,14 @@ public class Death4NN4 : MonoBehaviour
 
         SceneManager.LoadScene("Introduction");
 
+    }
+
+    IEnumerator SlowDown()
+    {
+        for (float i = 0f; i < 200f; i++)
+        {
+            PlayerAnimator.gameObject.GetComponent<ThirdPersonController>().MoveSpeed = 4 * (1f - (0.75f * i * 0.005f));
+            yield return new WaitForSeconds(0.01f);
+        }
     }
 }
