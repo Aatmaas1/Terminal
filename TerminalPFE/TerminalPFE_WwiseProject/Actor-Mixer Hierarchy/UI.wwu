@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C1B3393F-8FEC-4DB0-B4BA-1FFD0B2CB28E}" SchemaVersion="119" RootDocumentID="{AB2030D7-FEB3-4931-8F66-2372D24A8919}" ParentDocumentID="{5477266C-D991-4580-A687-CA6FC8AF0645}">
+	<AudioObjects>
+		<WorkUnit Name="UI" ID="{C1B3393F-8FEC-4DB0-B4BA-1FFD0B2CB28E}" OwnerID="{5477266C-D991-4580-A687-CA6FC8AF0645}" PersistMode="Nested">
+			<ChildrenList>
+				<Sound Name="SFX_BOUTONS_PARCOURIR" ID="{9AF5FF69-9FCC-4FF3-9B5D-DA9B9E9FFF8B}" ShortID="877255089">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_BOUTONS_PARCOURIR" ID="{B6021E9C-7CA6-4CFC-9992-5BE361ABB592}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.0524828368306912"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.301559273582116"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.419696983321027"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>SFX_BOUTONS_PARCOURIR.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="561456419"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_BOUTONS_PARCOURIR" ID="{B6021E9C-7CA6-4CFC-9992-5BE361ABB592}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

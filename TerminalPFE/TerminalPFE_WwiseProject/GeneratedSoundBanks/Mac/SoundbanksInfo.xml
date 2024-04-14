@@ -75,7 +75,7 @@
 				<Event Id="3465213173" Name="Stop_PropositionSimulation" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E65BABD8-5BBB-D5B2-EB80-992114A8FD93}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{1DEC931F-A496-5F47-30F7-1C128774766A}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -160,6 +160,9 @@
 					</AuxBusRefs>
 				</AuxBus>
 			</AuxBusses>
+			<GameParameters>
+				<GameParameter Id="2415836739" Name="VOLUME"/>
+			</GameParameters>
 			<AcousticTextures>
 				<AcousticTexture Id="386080821" Name="BETON">
 					<Properties>
@@ -298,7 +301,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{4BF2B197-AA5B-C3C3-51D4-9B6EFF9AECFD}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8CB81253-7DA7-0F8E-E8A5-1CD80029F9BD}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -340,7 +343,7 @@
 				</File>
 				<File Id="356420912" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_DETECTION_LANCEMENT2.wav</ShortName>
-					<CachePath>SFX/SFX_DETECTION_LANCEMENT2_818F3B66.wem</CachePath>
+					<CachePath>SFX/SFX_DETECTION_LANCEMENT2_08EEFC29.wem</CachePath>
 				</File>
 				<File Id="386145636" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMBIANCE_TEMPETE_SEEMLESS.wav</ShortName>
@@ -365,6 +368,10 @@
 				<File Id="544464536" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_3.wav</ShortName>
 					<CachePath>SFX/SFX_SIMULATION_TUILES_3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="561456419" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_BOUTONS_PARCOURIR.wav</ShortName>
+					<CachePath>SFX/SFX_BOUTONS_PARCOURIR_82945485.wem</CachePath>
 				</File>
 				<File Id="565426712" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_4.wav</ShortName>
@@ -515,6 +522,11 @@
 						<MediaRef Id="941196900"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1055529180" Name="Play_SFX_BOUTONS_PARCOURIR" DurationType="OneShot" DurationMin="0.419697" DurationMax="0.419697">
+					<MediaRefs>
+						<MediaRef Id="561456419"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="4021310751" Name="Play_SFX_BUMPER_BOOST" DurationType="OneShot" DurationMin="1.5843333" DurationMax="1.5843333">
 					<MediaRefs>
 						<MediaRef Id="1004497866"/>
@@ -525,7 +537,7 @@
 						<MediaRef Id="214063422"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2126400971" Name="Play_SFX_DETECTION_LANCEMENT2" MaxAttenuation="195" DurationType="OneShot" DurationMin="9.384625" DurationMax="9.384625">
+				<Event Id="2126400971" Name="Play_SFX_DETECTION_LANCEMENT2" MaxAttenuation="195" DurationType="OneShot" DurationMin="1.5591564" DurationMax="1.5591564">
 					<MediaRefs>
 						<MediaRef Id="356420912"/>
 					</MediaRefs>
@@ -632,5 +644,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6B5C2090-2C89-ECA6-5825-970ADFFF0515}</FileHash>
+	<FileHash>{7338AC80-1F71-A772-4CC1-CE1224B75ECE}</FileHash>
 </SoundBanksInfo>

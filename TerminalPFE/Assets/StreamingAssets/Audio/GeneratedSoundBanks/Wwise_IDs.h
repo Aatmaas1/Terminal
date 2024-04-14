@@ -25,6 +25,7 @@ namespace AK
         static const AkUniqueID PLAY_RANDOMISEUR_PAS_SABLE = 128182366U;
         static const AkUniqueID PLAY_SFX_AMBIANCE_CROWD = 1326775932U;
         static const AkUniqueID PLAY_SFX_AMBIANCE_VENT_LOOP_LONG = 490583398U;
+        static const AkUniqueID PLAY_SFX_BOUTONS_PARCOURIR = 1055529180U;
         static const AkUniqueID PLAY_SFX_BUMPER_BOOST = 4021310751U;
         static const AkUniqueID PLAY_SFX_CONSTRUCTION_ANDRO = 1925718750U;
         static const AkUniqueID PLAY_SFX_DETECTION_LANCEMENT2 = 2126400971U;

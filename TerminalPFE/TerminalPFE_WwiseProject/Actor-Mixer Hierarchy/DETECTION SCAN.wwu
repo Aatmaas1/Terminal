@@ -27,6 +27,14 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="SFX_DETECTION_LANCEMENT2" ID="{9284B6B5-778C-49E0-B601-32A73A5DD809}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.148426013912341"/>
+								<Property Name="FadeInShape" Type="int16" Value="0"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="1.07657135858195"/>
+								<Property Name="FadeOutShape" Type="int16" Value="7"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="1.55915639460375"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>SFX_DETECTION_LANCEMENT2.wav</AudioFile>
 							<MediaIDList>
