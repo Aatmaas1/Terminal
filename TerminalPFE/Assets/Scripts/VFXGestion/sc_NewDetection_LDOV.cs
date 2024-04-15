@@ -6,6 +6,7 @@ using UnityEngine.VFX;
 
 public class sc_NewDetection_LDOV : MonoBehaviour
 {
+    private AK_POSTEVENT_AM audioEvent;
 
     private Material _mat;
 
@@ -25,6 +26,7 @@ public class sc_NewDetection_LDOV : MonoBehaviour
     void Start()
     {
         _mat = GetComponent<MeshRenderer>().material;
+        audioEvent = GetComponent<AK_POSTEVENT_AM>();
     }
 
     // Update is called once per frame
@@ -52,6 +54,8 @@ public class sc_NewDetection_LDOV : MonoBehaviour
             other.GetComponentInChildren<VisualEffect>().enabled = true;
 
             allVFX.Add(other.GetComponentInChildren<VisualEffect>());
+
+            audioEvent.PostEvent();
         } 
     }
 

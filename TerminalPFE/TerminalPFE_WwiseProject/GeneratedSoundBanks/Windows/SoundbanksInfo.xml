@@ -301,7 +301,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{AF449FFD-1FD9-2250-2FCC-370ED8D1088C}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8CB81253-7DA7-0F8E-E8A5-1CD80029F9BD}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -343,7 +343,7 @@
 				</File>
 				<File Id="356420912" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_DETECTION_LANCEMENT2.wav</ShortName>
-					<CachePath>SFX/SFX_DETECTION_LANCEMENT2_818F3B66.wem</CachePath>
+					<CachePath>SFX/SFX_DETECTION_LANCEMENT2_08EEFC29.wem</CachePath>
 				</File>
 				<File Id="386145636" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMBIANCE_TEMPETE_SEEMLESS.wav</ShortName>
@@ -368,6 +368,10 @@
 				<File Id="544464536" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_3.wav</ShortName>
 					<CachePath>SFX/SFX_SIMULATION_TUILES_3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="561456419" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_BOUTONS_PARCOURIR.wav</ShortName>
+					<CachePath>SFX/SFX_BOUTONS_PARCOURIR_82945485.wem</CachePath>
 				</File>
 				<File Id="565426712" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_4.wav</ShortName>
@@ -518,6 +522,11 @@
 						<MediaRef Id="941196900"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1055529180" Name="Play_SFX_BOUTONS_PARCOURIR" DurationType="OneShot" DurationMin="0.419697" DurationMax="0.419697">
+					<MediaRefs>
+						<MediaRef Id="561456419"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="4021310751" Name="Play_SFX_BUMPER_BOOST" DurationType="OneShot" DurationMin="1.5843333" DurationMax="1.5843333">
 					<MediaRefs>
 						<MediaRef Id="1004497866"/>
@@ -528,7 +537,7 @@
 						<MediaRef Id="214063422"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2126400971" Name="Play_SFX_DETECTION_LANCEMENT2" MaxAttenuation="195" DurationType="OneShot" DurationMin="9.384625" DurationMax="9.384625">
+				<Event Id="2126400971" Name="Play_SFX_DETECTION_LANCEMENT2" MaxAttenuation="195" DurationType="OneShot" DurationMin="1.5591564" DurationMax="1.5591564">
 					<MediaRefs>
 						<MediaRef Id="356420912"/>
 					</MediaRefs>
@@ -635,5 +644,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{33DB51DB-B70A-C877-8DE8-C8A780AA1F2B}</FileHash>
+	<FileHash>{6214EE86-5067-F444-2D20-244B0AEE9BF6}</FileHash>
 </SoundBanksInfo>

@@ -528,6 +528,21 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="UI" ID="{066555B0-0D5B-4E48-A53E-41DB3858150E}" ShortID="840047857">
+					<ChildrenList>
+						<Event Name="Play_SFX_BOUTONS_PARCOURIR" ID="{9BE057CD-EDB4-454E-8A16-E6B6961B476E}">
+							<ChildrenList>
+								<Action Name="" ID="{2508EBBD-AFA2-456F-B257-68706011970A}" ShortID="788090840">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_BOUTONS_PARCOURIR" ID="{9AF5FF69-9FCC-4FF3-9B5D-DA9B9E9FFF8B}" WorkUnitID="{C1B3393F-8FEC-4DB0-B4BA-1FFD0B2CB28E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
