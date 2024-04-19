@@ -15,7 +15,7 @@ public class sc_ObjetScan_HC : MonoBehaviour, IDataManager
 
     private void Start()
     {
-        Vfx = GetComponent<VisualEffect>();
+        Vfx = transform.GetChild(0).GetComponent<VisualEffect>();
         dataVFX = transform.GetChild(dataVFXChildIndex).GetComponent<VisualEffect>();
     }
     private void FixedUpdate()
@@ -23,6 +23,7 @@ public class sc_ObjetScan_HC : MonoBehaviour, IDataManager
         if (isScanned && Vfx.isActiveAndEnabled)
         {
             Vfx.enabled = false;
+            transform.tag = "Untagged";
         }
 
 
