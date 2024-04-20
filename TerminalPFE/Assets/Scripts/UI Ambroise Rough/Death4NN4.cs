@@ -8,7 +8,7 @@ public class Death4NN4 : MonoBehaviour
     public Animator PlayerAnimator;
 
     public GameObject fadeToBlack;
-
+    public GameObject rope4NN4ToPlanner;
     //public GameObject ThirdPersonController;
 
 
@@ -55,7 +55,7 @@ public class Death4NN4 : MonoBehaviour
         PlayerAnimator.GetComponent<Animator>().speed = 1f;
         sc_ScreenShake.instance.ScreenBaseQuick();
         PlayerAnimator.GetComponent<Animator>().SetTrigger("Death");
-
+        rope4NN4ToPlanner.SetActive(false);
 
         yield return new WaitForSeconds(timeToFade);
 

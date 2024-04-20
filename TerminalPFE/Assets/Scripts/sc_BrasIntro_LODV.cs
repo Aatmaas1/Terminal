@@ -15,6 +15,7 @@ public class sc_BrasIntro_LODV : MonoBehaviour
     public Animator animator;
 
     bool isTransportingChara;
+   // bool hasAlreadyTransportPlayer = false;
 
     Vector3 rota = new Vector3(0, 180, 0);
 
@@ -27,10 +28,11 @@ public class sc_BrasIntro_LODV : MonoBehaviour
 
     private void Update()
     {
-        if (isTransportingChara)
+        if (isTransportingChara /*&& hasAlreadyTransportPlayer == false*/)
         {
             character.transform.rotation = Quaternion.Euler(rota);
             character.transform.position = socket.position;
+            //hasAlreadyTransportPlayer = true;
         }
     }
 
