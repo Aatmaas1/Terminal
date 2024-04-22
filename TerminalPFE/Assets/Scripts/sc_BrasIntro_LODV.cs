@@ -1,7 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
+
+
+
 
 public class sc_BrasIntro_LODV : MonoBehaviour
 {
@@ -15,15 +16,25 @@ public class sc_BrasIntro_LODV : MonoBehaviour
     public Animator animator;
 
     bool isTransportingChara;
-   // bool hasAlreadyTransportPlayer = false;
+
+    public bool isRealStart;
+    // bool hasAlreadyTransportPlayer = false;
 
     Vector3 rota = new Vector3(0, 180, 0);
 
     private void Start()
     {
-        controller.enabled = false;
-        animator.enabled = false;
-        isTransportingChara = true;
+        if (sc_PlayerManager_HC.Instance.IndexTerminal >= 0)
+            isRealStart = false;
+
+
+        if (isRealStart)
+        {
+            controller.enabled = false;
+            animator.enabled = false;
+            isTransportingChara = true;
+            isRealStart = false;
+        }
     }
 
     private void Update()

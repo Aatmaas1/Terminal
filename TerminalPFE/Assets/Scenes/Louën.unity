@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -714,6 +714,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &281865954
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ReverseFracture (Instance) (Instance) (Instance)
+  m_Shader: {fileID: -6465566751694194690, guid: af717c543a947a142ab6bda1469fb8ff,
+    type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _Radius: 2
+    - _RotationMult: 0.5
+    - _Strenght02Mult: 0.5
+    m_Colors:
+    - _Color: {r: 1, g: 0, b: 0, a: 0}
+    - _Pos: {r: -2.255, g: 0.003, b: -0.206, a: 0}
+    - _Strenght: {r: 45, g: 0.2, b: 0, a: 0}
+    - _Strenght02: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
 --- !u!1 &346239596
 GameObject:
   m_ObjectHideFlags: 0
@@ -1106,7 +1155,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: -6527670528093515950, guid: d2f0da3998423f44594868ffed55c3e6, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1962,55 +2011,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &784467926
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: ReverseFracture (Instance) (Instance)
-  m_Shader: {fileID: -6465566751694194690, guid: af717c543a947a142ab6bda1469fb8ff,
-    type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 2
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - unity_Lightmaps:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_LightmapsInd:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_ShadowMasks:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _QueueControl: 0
-    - _QueueOffset: 0
-    - _Radius: 2
-    - _RotationMult: 0.5
-    - _Strenght02Mult: 0.5
-    m_Colors:
-    - _Color: {r: 1, g: 0, b: 0, a: 0}
-    - _Pos: {r: -2.255, g: 0.003, b: -0.206, a: 0}
-    - _Strenght: {r: 45, g: 0.2, b: 0, a: 0}
-    - _Strenght02: {r: 0, g: 0, b: 0, a: 0}
-  m_BuildTextureStacks: []
 --- !u!1 &849639874
 GameObject:
   m_ObjectHideFlags: 0
@@ -7542,7 +7542,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 784467926}
+      objectReference: {fileID: 281865954}
     - target: {fileID: 919132149155446097, guid: bc700074eee12c84687d9d7431748b76,
         type: 3}
       propertyPath: m_Name
@@ -8076,6 +8076,84 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1597877025}
   m_Mesh: {fileID: 4711208715938537054, guid: 5807b7511baa1d14cbefa4bc5c1bb462, type: 3}
+--- !u!1001 &1644964052
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7427599796130108770, guid: ce023cef7a66f9046b3bf080b3a965d1,
+        type: 3}
+      propertyPath: m_Name
+      value: Sol4x4x2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809226385606119384, guid: ce023cef7a66f9046b3bf080b3a965d1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809226385606119384, guid: ce023cef7a66f9046b3bf080b3a965d1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809226385606119384, guid: ce023cef7a66f9046b3bf080b3a965d1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.914
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809226385606119384, guid: ce023cef7a66f9046b3bf080b3a965d1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809226385606119384, guid: ce023cef7a66f9046b3bf080b3a965d1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809226385606119384, guid: ce023cef7a66f9046b3bf080b3a965d1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809226385606119384, guid: ce023cef7a66f9046b3bf080b3a965d1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809226385606119384, guid: ce023cef7a66f9046b3bf080b3a965d1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809226385606119384, guid: ce023cef7a66f9046b3bf080b3a965d1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809226385606119384, guid: ce023cef7a66f9046b3bf080b3a965d1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8941016185449149623, guid: ce023cef7a66f9046b3bf080b3a965d1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4999f842fd11b754e9f6f986b8a3a5f3, type: 2}
+    - target: {fileID: 8941016185449149623, guid: ce023cef7a66f9046b3bf080b3a965d1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[5]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4999f842fd11b754e9f6f986b8a3a5f3, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ce023cef7a66f9046b3bf080b3a965d1, type: 3}
 --- !u!1 &1669274409
 GameObject:
   m_ObjectHideFlags: 0
@@ -8529,3 +8607,4 @@ SceneRoots:
   - {fileID: 614082277}
   - {fileID: 186077943}
   - {fileID: 208460453}
+  - {fileID: 1644964052}
