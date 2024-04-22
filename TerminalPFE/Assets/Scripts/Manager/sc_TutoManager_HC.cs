@@ -45,7 +45,7 @@ public class sc_TutoManager_HC : MonoBehaviour, IDataManager
         yield return new WaitForSeconds(StartDelay);
         sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
         CamGameplay.SetActive(false);
-        Anims.Play("TutoMove1");
+        //Anims.Play("TutoMove1");
     }
 
     public void TriggerActivated(int index)
