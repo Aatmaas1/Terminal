@@ -10,6 +10,6 @@ public class BlocsSimu
 
     public BlocsSimu()
     {
-        blocs = new bool[2000];
+        blocs = new bool[6000];
     }
 }
