@@ -1,8 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
-using Cinemachine;
 
 public class Bouton : MonoBehaviour, IDataManager
 {
@@ -16,6 +14,8 @@ public class Bouton : MonoBehaviour, IDataManager
     public VisualEffect VfxFeedBack;
     float color = 0;
     public int cardID = 0;
+
+    public GameObject holoText;
 
     private void Start()
     {
@@ -53,7 +53,7 @@ public class Bouton : MonoBehaviour, IDataManager
     {
         if (PlayerClose && isOpen == false)
         {
-            if(cardID != 0)
+            if (cardID != 0)
             {
                 if (!sc_DataManager.instance.CheckID(cardID))
                 {
@@ -75,7 +75,7 @@ public class Bouton : MonoBehaviour, IDataManager
         }
     }
 
-    
+
     public void LoadData(GeneralData data)
     {
         switch (index)
@@ -101,6 +101,20 @@ public class Bouton : MonoBehaviour, IDataManager
                     StartCoroutine(Ouvre());
                 }
                 break;
+            case 3:
+                isOpen = data.porteDirecteur;
+                if (isOpen)
+                {
+                    StartCoroutine(Ouvre());
+                }
+                break;
+            case 4:
+                isOpen = data.porteProd;
+                if (isOpen)
+                {
+                    StartCoroutine(Ouvre());
+                }
+                break;
         }
     }
 
@@ -117,6 +131,12 @@ public class Bouton : MonoBehaviour, IDataManager
             case 2:
                 data.porteSortieOuverte = isOpen;
                 break;
+            case 3:
+                data.porteDirecteur = isOpen;
+                break;
+            case 4:
+                data.porteProd = isOpen;
+                break;
         }
     }
 
@@ -125,7 +145,7 @@ public class Bouton : MonoBehaviour, IDataManager
         yield return new WaitForSeconds(0.1f);
         Material m = transform.GetChild(3).GetComponent<MeshRenderer>().materials[1];
         m.SetColor("_Color", new Color(22f, 191f, 0));
-        m.SetColor("_EmissionColor", new Color(22f, 191f, 0) /100f);
+        m.SetColor("_EmissionColor", new Color(22f, 191f, 0) / 100f);
         UnityEventPortes.InteractDoorBouton();
     }
     IEnumerator CamPorte()
@@ -156,9 +176,17 @@ public class Bouton : MonoBehaviour, IDataManager
         yield return new WaitForSeconds(0.1f);
         m.SetColor("_Color", new Color(190f, 0f, 0));
         m.SetColor("_EmissionColor", new Color(190f, 0f, 0) / 100f);
-        yield return new WaitForSeconds(0.5f);
+        if (holoText != null)
+        {
+            holoText.GetComponent<TMPro.TMP_Text>().text = "ERROR";
+        }
+        yield return new WaitForSeconds(0.8f);
         transform.GetChild(3).GetComponent<MeshRenderer>().materials[1] = bleu;
         m.SetColor("_Color", bleu.GetColor("_Color"));
         m.SetColor("_EmissionColor", bleu.GetColor("_EmissionColor"));
+        if (holoText != null)
+        {
+            holoText.GetComponent<TMPro.TMP_Text>().text = "Access \n card needed";
+        }
     }
 }
