@@ -541,6 +541,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_SFX_BOUTON_CLICK_NON" ID="{8B752EF0-FA9B-4FED-AF25-2097C2D286D2}">
+							<ChildrenList>
+								<Action Name="" ID="{5D9A6B72-ECB3-433C-93F7-1C3B6B3808E9}" ShortID="534292435">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_BOUTON_CLICK_NON" ID="{4070B7F0-B2AF-4C93-8BEF-2AEA7EBA904A}" WorkUnitID="{C1B3393F-8FEC-4DB0-B4BA-1FFD0B2CB28E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_BOUTON_CLICK_OUI" ID="{AFA7B2CF-551D-4621-AC16-60C5F466CA7D}">
+							<ChildrenList>
+								<Action Name="" ID="{F7B958F2-AB08-4271-9212-0AE78250A02C}" ShortID="1042079438">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_BOUTON_CLICK_OUI" ID="{EDE6B5A5-D4F0-42E0-B353-E36C5A17C69D}" WorkUnitID="{C1B3393F-8FEC-4DB0-B4BA-1FFD0B2CB28E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

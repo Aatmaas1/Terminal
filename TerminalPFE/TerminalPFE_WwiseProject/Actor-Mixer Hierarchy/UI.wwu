@@ -31,6 +31,69 @@
 						<ActiveSource Name="SFX_BOUTONS_PARCOURIR" ID="{B6021E9C-7CA6-4CFC-9992-5BE361ABB592}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="SFX_BOUTON_CLICK_NON" ID="{4070B7F0-B2AF-4C93-8BEF-2AEA7EBA904A}" ShortID="479193804">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-14</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_BOUTON_CLICK_NON" ID="{D54806FB-8F60-42D0-A99F-41AAA74A1880}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_BOUTON_CLICK_NON.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="444243406"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_BOUTON_CLICK_NON" ID="{D54806FB-8F60-42D0-A99F-41AAA74A1880}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SFX_BOUTON_CLICK_OUI" ID="{EDE6B5A5-D4F0-42E0-B353-E36C5A17C69D}" ShortID="842587853">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-14</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_BOUTON_CLICK_OUI" ID="{C0A4A377-E633-44EF-949D-34D840D55B6E}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.524125082131618"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.888172552971806"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>SFX_BOUTON_CLICK_OUI.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="41481307"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_BOUTON_CLICK_OUI" ID="{C0A4A377-E633-44EF-949D-34D840D55B6E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
