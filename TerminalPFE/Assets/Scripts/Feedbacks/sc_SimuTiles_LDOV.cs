@@ -37,7 +37,7 @@ public class sc_SimuTiles_LDOV : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             _touch = true; 
-            print("playerDetection");
+            //print("playerDetection");
             _mat.SetVector("_PlayerPos", other.transform.position);
             gameObject.GetComponentInChildren<ParticleSystem>().Play();
         }
