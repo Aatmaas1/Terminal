@@ -301,7 +301,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8CB81253-7DA7-0F8E-E8A5-1CD80029F9BD}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8F5745E1-5175-2F4A-8394-DC17120A84B4}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -312,6 +312,10 @@
 				<File Id="38118640" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PAS_ANDROÏDE_SABLE_4.wav</ShortName>
 					<CachePath>SFX/SFX_PAS_ANDROÏDE_SABLE_4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="41481307" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_BOUTON_CLICK_OUI.wav</ShortName>
+					<CachePath>SFX/SFX_BOUTON_CLICK_OUI_9E686036.wem</CachePath>
 				</File>
 				<File Id="76343104" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_6.wav</ShortName>
@@ -352,6 +356,10 @@
 				<File Id="435168779" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_2.wav</ShortName>
 					<CachePath>SFX/SFX_SIMULATION_TUILES_2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="444243406" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_BOUTON_CLICK_NON.wav</ShortName>
+					<CachePath>SFX/SFX_BOUTON_CLICK_NON_818F3B66.wem</CachePath>
 				</File>
 				<File Id="479046017" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PAS_ANDROÏDE_SABLE_2.wav</ShortName>
@@ -522,6 +530,16 @@
 						<MediaRef Id="941196900"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3549990494" Name="Play_SFX_BOUTON_CLICK_NON" DurationType="OneShot" DurationMin="2.0240362" DurationMax="2.0240362">
+					<MediaRefs>
+						<MediaRef Id="444243406"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3382067122" Name="Play_SFX_BOUTON_CLICK_OUI" DurationType="OneShot" DurationMin="0.88817257" DurationMax="0.88817257">
+					<MediaRefs>
+						<MediaRef Id="41481307"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1055529180" Name="Play_SFX_BOUTONS_PARCOURIR" DurationType="OneShot" DurationMin="0.419697" DurationMax="0.419697">
 					<MediaRefs>
 						<MediaRef Id="561456419"/>
@@ -644,5 +662,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6214EE86-5067-F444-2D20-244B0AEE9BF6}</FileHash>
+	<FileHash>{859F16F5-54BA-CBC4-4C2F-3A170F95CD95}</FileHash>
 </SoundBanksInfo>
