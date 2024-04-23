@@ -101,6 +101,13 @@ public class Bouton : MonoBehaviour, IDataManager
                     StartCoroutine(Ouvre());
                 }
                 break;
+            case 3:
+                isOpen = data.porteDirecteur;
+                if (isOpen)
+                {
+                    StartCoroutine(Ouvre());
+                }
+                break;
         }
     }
 
@@ -116,6 +123,9 @@ public class Bouton : MonoBehaviour, IDataManager
                 break;
             case 2:
                 data.porteSortieOuverte = isOpen;
+                break;
+            case 3:
+                data.porteDirecteur = isOpen;
                 break;
         }
     }
