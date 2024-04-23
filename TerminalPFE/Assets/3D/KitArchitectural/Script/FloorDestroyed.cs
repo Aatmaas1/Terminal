@@ -24,6 +24,8 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
             StartCoroutine(WaitAnimFall());
 
             sc_DataManager.instance.CasseSol();
+            // on détruit cet objet après la 1ere utilisation pour ne plus qu'il aparaisse
+            Destroy(this.gameObject);
         }
     }
 
@@ -40,7 +42,10 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
                 BatterieLow.SetActive(true);
 
                 RobotCasse.BreakLegs();
+                
             }
+            // on détruit cet objet après la 1ere utilisation pour ne plus qu'il aparaisse
+            Destroy(this.gameObject);
         }
     }
 
