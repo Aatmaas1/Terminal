@@ -25,7 +25,7 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
 
             sc_DataManager.instance.CasseSol();
             // on détruit cet objet après la 1ere utilisation pour ne plus qu'il aparaisse
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
         }
     }
 
