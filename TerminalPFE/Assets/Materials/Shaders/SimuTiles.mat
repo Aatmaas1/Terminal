@@ -23,11 +23,11 @@ Material:
   m_Name: SimuTiles
   m_Shader: {fileID: -6465566751694194690, guid: 78866dc9406ae8a47abd9895952fe434,
     type: 3}
-  m_Parent: {fileID: 0}
+  m_Parent: {fileID: 2100000, guid: 70bbb5f1b6cc2ca45b95608adaf378dc, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 2
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -36,26 +36,9 @@ Material:
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs:
-    - unity_Lightmaps:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_LightmapsInd:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_ShadowMasks:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+    m_TexEnvs: []
     m_Ints: []
-    m_Floats:
-    - _ColorChanger: 0
-    - _QueueControl: 0
-    - _QueueOffset: 0
+    m_Floats: []
     m_Colors:
     - _BaseColor: {r: 0, g: 0.34099078, b: 0.5, a: 0}
-    - _ChangedColor: {r: 0, g: 1.4980394, b: 0.5837709, a: 0}
-    - _PlayerPos: {r: 42, g: 1, b: 15, a: 0}
   m_BuildTextureStacks: []
