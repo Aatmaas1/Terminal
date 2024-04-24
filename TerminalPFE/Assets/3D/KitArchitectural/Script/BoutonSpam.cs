@@ -19,11 +19,10 @@ public class BoutonSpam : MonoBehaviour, IDataManager
     private void Start()
     {
         UnityEventPortes = PorteOuvertureParBouton.GetComponent<UnityEventPortes>();
-        Vfx = GetComponent<VisualEffect>();
     }
     private void FixedUpdate()
     {
-        if (PlayerClose && color < 1)
+        /*if (PlayerClose && color < 1)
         {
             color += 0.05f;
         }
@@ -31,7 +30,7 @@ public class BoutonSpam : MonoBehaviour, IDataManager
         {
             color -= 0.05f;
         }
-        Vfx.SetFloat("ColorChanger", color);
+        Vfx.SetFloat("ColorChanger", color); /*
     }
 
     /*public void OnTriggerEnter(Collider other)
@@ -45,8 +44,8 @@ public class BoutonSpam : MonoBehaviour, IDataManager
             this.gameObject.SetActive(false);
 
             sc_ScreenShake.instance.ScreenBaseQuick();
-        }
-    }*/
+        }*/
+    }
 
     public void AppuyeBouton()
     {

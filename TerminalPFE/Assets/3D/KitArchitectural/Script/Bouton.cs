@@ -20,7 +20,7 @@ public class Bouton : MonoBehaviour, IDataManager
     private void Start()
     {
         UnityEventPortes = PorteOuvertureParBouton.GetComponent<UnityEventPortes>();
-        Vfx = GetComponent<VisualEffect>();
+        Vfx = GetComponentInChildren<VisualEffect>();
     }
     private void FixedUpdate()
     {
