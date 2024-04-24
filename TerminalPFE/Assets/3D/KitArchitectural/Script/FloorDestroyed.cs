@@ -44,8 +44,7 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
                 RobotCasse.BreakLegs();
                 
             }
-            // on détruit cet objet après la 1ere utilisation pour ne plus qu'il aparaisse
-            Destroy(this.gameObject);
+            StartCoroutine(WaitForSecondsToDestroyTheGameObject());
         }
     }
 
@@ -70,5 +69,12 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
         PlayerAnimator.GetComponent<Animator>().SetTrigger("StopFall");
         sc_PlayerManager_HC.Instance.SetInputMode("Player");
         RobotCasse.BreakLegs();
+    }
+    
+    IEnumerator WaitForSecondsToDestroyTheGameObject()
+    {
+        yield return new WaitForSeconds(10f);
+        // on détruit cet objet après la 1ere utilisation pour ne plus qu'il aparaisse
+        Destroy(this.gameObject);
     }
 }
