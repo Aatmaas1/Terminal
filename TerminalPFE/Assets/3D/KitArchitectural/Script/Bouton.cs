@@ -16,6 +16,7 @@ public class Bouton : MonoBehaviour, IDataManager
     public int cardID = 0;
 
     public GameObject holoText;
+    public sc_Digicode_HC checkDigi;
 
     private void Start()
     {
@@ -60,6 +61,11 @@ public class Bouton : MonoBehaviour, IDataManager
                     StartCoroutine(Blocked());
                     return;
                 }
+            }
+            if (checkDigi != null)
+            {
+                checkDigi.Open();
+                return;
             }
             isOpen = true;
             //print("La porte détecte le player en entrée" + transform.parent.name);
@@ -188,5 +194,20 @@ public class Bouton : MonoBehaviour, IDataManager
         {
             holoText.GetComponent<TMPro.TMP_Text>().text = "Access \n card needed";
         }
+    }
+
+    public void AppelDigicode()
+    {
+        isOpen = true;
+        //print("La porte détecte le player en entrée" + transform.parent.name);
+        UnityEventPortes.InteractDoorBouton();
+        this.gameObject.GetComponent<Animator>().SetTrigger("IsClick");
+        VfxFeedBack.SendEvent("OnBouton");
+        //this.gameObject.SetActive(false);
+
+        //sc_ScreenShake.instance.ScreenBaseQuick();
+        sc_ScreenShake.instance.OnInteractPlayerLight();
+        sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterraction");
+        StartCoroutine(CamPorte());
     }
 }
