@@ -6,12 +6,16 @@ public class sc_SableIntensity : MonoBehaviour
 {
     public GameObject TempeteDeSable1;
     public GameObject TempeteDeSable2;
-
-    public void StopSand()
+    private void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag("Player"))
+        {
         TempeteDeSable1.SetActive(false);
         TempeteDeSable2.SetActive(false);
+
+        }
     }
+   
 
     public void RestartSand()
     {
