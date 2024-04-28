@@ -113,7 +113,13 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         if(gameObject.activeInHierarchy)
         {
             pInput = GetComponent<PlayerInput>();
-            pInput.currentActionMap.Disable();
+            pInput.enabled = true;
+            pInput.ActivateInput();
+            if (pInput.currentActionMap == null)
+            {
+                pInput.currentActionMap = pInput.actions.actionMaps[0];
+            }
+            //pInput.currentActionMap.Disable();
             pInput.SwitchCurrentActionMap(mode);
             pInput.currentActionMap.Enable();
         }
