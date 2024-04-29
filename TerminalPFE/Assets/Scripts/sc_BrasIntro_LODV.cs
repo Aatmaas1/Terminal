@@ -24,7 +24,7 @@ public class sc_BrasIntro_LODV : MonoBehaviour
 
     private void Start()
     {
-        if (sc_PlayerManager_HC.Instance.IndexTerminal >= 0)
+        if (!sc_DataManager.instance.TestIsNewSave())
             isRealStart = false;
 
 

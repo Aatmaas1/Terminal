@@ -159,7 +159,7 @@ public class sc_DataManager : MonoBehaviour
     {
         NewGame();
         generalData.lastSceneLoaded = 1;
-        generalData.indexterminal = -1;
+        generalData.indexterminal = 0;
         generalData.LastPos = new Vector3(57, 0, 4);
         generalData.LastRot = new Quaternion(0, 0.637f, 0, 0.77f);
         generalData.porteTuto0Ouverte = true;

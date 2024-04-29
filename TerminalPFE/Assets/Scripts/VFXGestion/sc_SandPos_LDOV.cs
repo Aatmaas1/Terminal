@@ -14,7 +14,7 @@ public class sc_SandPos_LDOV : MonoBehaviour
     void Awake()
     {
         diffPos = new Vector3(transform.position.x - playerPos.position.x, transform.position.y - playerPos.position.y, transform.position.z - playerPos.position.z);
-        print(playerPos.position.y + diffPos.y);
+        //print(playerPos.position.y + diffPos.y);
     }
 
     private void Start()
