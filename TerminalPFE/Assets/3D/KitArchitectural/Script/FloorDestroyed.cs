@@ -9,6 +9,7 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
     public GameObject BatterieLowUI;
     public Animator animator;
     public Animator PlayerAnimator;
+    public Animator EcranNoir;
     public sc_CorpsCasse_HC RobotCasse;
 
     public  void OnTriggerEnter(Collider other)
@@ -65,10 +66,14 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
     IEnumerator WaitAnimFall()
     {
         sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(2.4f);
+        EcranNoir.Play("FadeIn");
+        yield return new WaitForSeconds(0.5f);
         PlayerAnimator.GetComponent<Animator>().SetTrigger("StopFall");
         sc_PlayerManager_HC.Instance.SetInputMode("Player");
         RobotCasse.BreakLegs();
+        yield return new WaitForSeconds(1.5f);
+        EcranNoir.Play("FadeOut");
     }
     
     IEnumerator WaitForSecondsToDestroyTheGameObject()
