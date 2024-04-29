@@ -60,9 +60,7 @@ public class sc_CableTool_LDOV : MonoBehaviour
             //les positions
             cable.SetVertexCount(vertexNomber);
 
-            if (vertexNomber > 2)
-            {
-                for (float i = 0; i < vertexNomber ; i+=1)
+                for (float i = 1; i < vertexNomber -1 ; i+=1)
                 {
                     float lerper = (i / (vertexNomber-1));
                     Vector3 pointPos = Vector3.Lerp(startPos.position, endPos.position, lerper);
@@ -76,13 +74,9 @@ public class sc_CableTool_LDOV : MonoBehaviour
                     int index = Mathf.FloorToInt(i);
                     cable.SetPosition(index, modifPos);
                 }
-            }
 
-            else
-            {
                 cable.SetPosition(0, startPos.position);
-                cable.SetPosition(1, endPos.position);
-            }
+                cable.SetPosition(vertexNomber -1, endPos.position);
 
             //la taille
             AnimationCurve sizeCurve = new AnimationCurve();
