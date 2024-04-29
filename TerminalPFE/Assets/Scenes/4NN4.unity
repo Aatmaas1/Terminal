@@ -8910,7 +8910,17 @@ PrefabInstance:
     - target: {fileID: 7298939621828970412, guid: 01f5a03f1edcafe408baa3128b2f3a17,
         type: 3}
       propertyPath: m_text
-      value: Terminal [1.0.6]
+      value: Terminal [1.0.7]
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298939621828970412, guid: 01f5a03f1edcafe408baa3128b2f3a17,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298939621828970412, guid: 01f5a03f1edcafe408baa3128b2f3a17,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8210028465651701123, guid: 01f5a03f1edcafe408baa3128b2f3a17,
         type: 3}
@@ -8937,7 +8947,7 @@ PrefabInstance:
     - target: {fileID: 8823762072059625623, guid: 01f5a03f1edcafe408baa3128b2f3a17,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -519.62
+      value: -539.9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
