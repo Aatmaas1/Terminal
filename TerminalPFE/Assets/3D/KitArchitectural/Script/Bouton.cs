@@ -17,6 +17,7 @@ public class Bouton : MonoBehaviour, IDataManager
 
     public GameObject holoText;
     public sc_Digicode_HC checkDigi;
+    bool _isBlocked = false;
 
     private void Start()
     {
@@ -52,7 +53,7 @@ public class Bouton : MonoBehaviour, IDataManager
 
     public void AppuyeBouton()
     {
-        if (PlayerClose && isOpen == false)
+        if (PlayerClose && isOpen == false && !_isBlocked)
         {
             if (cardID != 0)
             {
@@ -78,6 +79,9 @@ public class Bouton : MonoBehaviour, IDataManager
             sc_ScreenShake.instance.OnInteractPlayerLight();
             sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterraction");
             StartCoroutine(CamPorte());
+            Material m = transform.GetChild(3).GetComponent<MeshRenderer>().materials[1];
+            m.SetColor("_Color", new Color(22f, 191f, 0));
+            m.SetColor("_EmissionColor", new Color(22f, 191f, 0) / 100f);
         }
     }
 
@@ -148,7 +152,8 @@ public class Bouton : MonoBehaviour, IDataManager
 
     IEnumerator Ouvre()
     {
-        yield return new WaitForSeconds(0.1f);
+        PorteOuvertureParBouton.GetComponent<Animator>().speed = 1000;
+        yield return new WaitForEndOfFrame();
         Material m = transform.GetChild(3).GetComponent<MeshRenderer>().materials[1];
         m.SetColor("_Color", new Color(22f, 191f, 0));
         m.SetColor("_EmissionColor", new Color(22f, 191f, 0) / 100f);
@@ -177,6 +182,7 @@ public class Bouton : MonoBehaviour, IDataManager
 
     IEnumerator Blocked()
     {
+        _isBlocked = true;
         Material bleu = new Material(transform.GetChild(3).GetComponent<MeshRenderer>().materials[1]);
         Material m = transform.GetChild(3).GetComponent<MeshRenderer>().materials[1];
         yield return new WaitForSeconds(0.1f);
@@ -194,6 +200,7 @@ public class Bouton : MonoBehaviour, IDataManager
         {
             holoText.GetComponent<TMPro.TMP_Text>().text = "Access \n card needed";
         }
+        _isBlocked = false;
     }
 
     public void AppelDigicode()
