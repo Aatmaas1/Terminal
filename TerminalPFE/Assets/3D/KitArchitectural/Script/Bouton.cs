@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.VFX;
+using UnityEngine.UI;
 
 public class Bouton : MonoBehaviour, IDataManager
 {
@@ -17,6 +18,8 @@ public class Bouton : MonoBehaviour, IDataManager
 
     public GameObject holoText;
     public sc_Digicode_HC checkDigi;
+    public GameObject logo;
+    public Sprite logoCard, logoCross;
     bool _isBlocked = false;
 
     private void Start()
@@ -55,6 +58,10 @@ public class Bouton : MonoBehaviour, IDataManager
     {
         if (PlayerClose && isOpen == false && !_isBlocked)
         {
+            sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterraction");
+            sc_ScreenShake.instance.OnInteractPlayerLight();
+            sc_PlayerManager_HC.Instance.TurnPlayerToward(transform);
+            sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
             if (cardID != 0)
             {
                 if (!sc_DataManager.instance.CheckID(cardID))
@@ -69,19 +76,10 @@ public class Bouton : MonoBehaviour, IDataManager
                 return;
             }
             isOpen = true;
-            //print("La porte détecte le player en entrée" + transform.parent.name);
-            UnityEventPortes.InteractDoorBouton();
-            this.gameObject.GetComponent<Animator>().SetTrigger("IsClick");
-            VfxFeedBack.SendEvent("OnBouton");
             //this.gameObject.SetActive(false);
 
             //sc_ScreenShake.instance.ScreenBaseQuick();
-            sc_ScreenShake.instance.OnInteractPlayerLight();
-            sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterraction");
             StartCoroutine(CamPorte());
-            Material m = transform.GetChild(3).GetComponent<MeshRenderer>().materials[1];
-            m.SetColor("_Color", new Color(22f, 191f, 0));
-            m.SetColor("_EmissionColor", new Color(22f, 191f, 0) / 100f);
         }
     }
 
@@ -161,12 +159,19 @@ public class Bouton : MonoBehaviour, IDataManager
     }
     IEnumerator CamPorte()
     {
-        sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
-        sc_PlayerManager_HC.Instance.TurnPlayerToward(transform);
         yield return new WaitForSeconds(0.5f);
         sc_PlayerManager_HC.Instance.MakeCamLookAt(PorteOuvertureParBouton.transform.GetChild(4));
 
-        yield return new WaitForSeconds(3f);
+        UnityEventPortes.InteractDoorBouton();
+        this.gameObject.GetComponent<Animator>().SetTrigger("IsClick");
+        VfxFeedBack.SendEvent("OnBouton");
+
+        yield return new WaitForSeconds(0.2f);
+        Material m = transform.GetChild(3).GetComponent<MeshRenderer>().materials[1];
+        m.SetColor("_Color", new Color(22f, 191f, 0));
+        m.SetColor("_EmissionColor", new Color(22f, 191f, 0) / 100f);
+
+        yield return new WaitForSeconds(2.8f);
         sc_PlayerManager_HC.Instance.SetInputMode("Player");
     }
 
@@ -185,14 +190,20 @@ public class Bouton : MonoBehaviour, IDataManager
         _isBlocked = true;
         Material bleu = new Material(transform.GetChild(3).GetComponent<MeshRenderer>().materials[1]);
         Material m = transform.GetChild(3).GetComponent<MeshRenderer>().materials[1];
-        yield return new WaitForSeconds(0.1f);
+
+        yield return new WaitForSeconds(0.5f);
         m.SetColor("_Color", new Color(190f, 0f, 0));
         m.SetColor("_EmissionColor", new Color(190f, 0f, 0) / 100f);
         if (holoText != null)
         {
             holoText.GetComponent<TMPro.TMP_Text>().text = "ERROR";
         }
-        yield return new WaitForSeconds(0.8f);
+        logo.GetComponent<Image>().sprite = logoCross;
+
+        yield return new WaitForSeconds(0.5f);
+        sc_PlayerManager_HC.Instance.SetInputMode("Player");
+
+        yield return new WaitForSeconds(0.3f);
         transform.GetChild(3).GetComponent<MeshRenderer>().materials[1] = bleu;
         m.SetColor("_Color", bleu.GetColor("_Color"));
         m.SetColor("_EmissionColor", bleu.GetColor("_EmissionColor"));
@@ -200,6 +211,7 @@ public class Bouton : MonoBehaviour, IDataManager
         {
             holoText.GetComponent<TMPro.TMP_Text>().text = "Access \n card needed";
         }
+        logo.GetComponent<Image>().sprite = logoCard;
         _isBlocked = false;
     }
 
