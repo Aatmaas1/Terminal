@@ -34,6 +34,11 @@ public class sc_SceneManager_HC : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene(nom);
     }
+    public void ChargeSceneNoLoad(string nom)
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(nom);
+    }
 
     public void Quitter()
     {

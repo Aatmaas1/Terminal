@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class FloorDestroyed : MonoBehaviour, IDataManager
 {
@@ -11,6 +13,7 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
     public Animator PlayerAnimator;
     public Animator EcranNoir;
     public sc_CorpsCasse_HC RobotCasse;
+    public GameObject ecranDead;
 
     public  void OnTriggerEnter(Collider other)
     {
@@ -27,6 +30,7 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
             sc_DataManager.instance.CasseSol();
             // on détruit cet objet après la 1ere utilisation pour ne plus qu'il aparaisse
             //Destroy(this.gameObject);
+            StartCoroutine(DelayMort());
         }
     }
 
@@ -81,5 +85,28 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
         yield return new WaitForSeconds(10f);
         // on détruit cet objet après la 1ere utilisation pour ne plus qu'il aparaisse
         Destroy(this.gameObject);
+    }
+
+    IEnumerator DelayMort()
+    {
+        yield return new WaitForSeconds(10f);
+        ecranDead.SetActive(true);
+        for(int i = 0; i<=100; i++)
+        {
+            ecranDead.GetComponent<Image>().color = new Color(0, 0, 0, i /100);
+            ecranDead.transform.GetChild(1).GetComponent<TMP_Text>().color = new Color(0, 0, 0, i / 100);
+            yield return new WaitForSeconds(0.01f);
+        }
+        ecranDead.transform.GetChild(0).gameObject.SetActive(true);
+        BatterieLow.SetActive(false);
+        BatterieLowUI.SetActive(false);
+        sc_PlayerManager_HC.Instance.SetInputMode("UI");
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+    public void NewLife()
+    {
+        sc_DataManager.instance.NewGame();
+        sc_SceneManager_HC.Instance.ChargeSceneNoLoad("Introduction");
     }
 }

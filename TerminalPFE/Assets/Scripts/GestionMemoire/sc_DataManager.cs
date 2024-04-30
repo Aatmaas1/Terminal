@@ -49,6 +49,7 @@ public class sc_DataManager : MonoBehaviour
     public void NewGame()
     {
         this.generalData = new GeneralData();
+        fileHandler.Save(generalData);
         sc_FileHandler_HC a = new sc_FileHandler_HC(Application.persistentDataPath, "Cubes.game");
         a.SaveBlocks(new BlocsSimu());
     }

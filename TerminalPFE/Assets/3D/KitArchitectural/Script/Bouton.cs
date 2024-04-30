@@ -156,6 +156,7 @@ public class Bouton : MonoBehaviour, IDataManager
         m.SetColor("_Color", new Color(22f, 191f, 0));
         m.SetColor("_EmissionColor", new Color(22f, 191f, 0) / 100f);
         UnityEventPortes.InteractDoorBouton();
+        Destroy(logo);
     }
     IEnumerator CamPorte()
     {
@@ -170,6 +171,11 @@ public class Bouton : MonoBehaviour, IDataManager
         Material m = transform.GetChild(3).GetComponent<MeshRenderer>().materials[1];
         m.SetColor("_Color", new Color(22f, 191f, 0));
         m.SetColor("_EmissionColor", new Color(22f, 191f, 0) / 100f);
+        Destroy(logo);
+        if (holoText != null)
+        {
+            holoText.GetComponent<TMPro.TMP_Text>().text = "";
+        }
 
         yield return new WaitForSeconds(2.8f);
         sc_PlayerManager_HC.Instance.SetInputMode("Player");

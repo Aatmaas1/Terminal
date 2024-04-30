@@ -27,6 +27,9 @@ public class sc_MainMenuPlay : MonoBehaviour, IBoutonsMainMenu_HC, IPointerEnter
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        script.BoutonHover(value);
+        if(script != null)
+        {
+            script.BoutonHover(value);
+        }
     }
 }
