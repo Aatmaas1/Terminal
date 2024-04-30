@@ -38,7 +38,7 @@ public class sc_plateformeSimu : MonoBehaviour
         {
             isUsed = true;
             gameObject.GetComponentInParent<MeshRenderer>().material.color = new Color(0f, 1f, 1f, 1f);
-            gameObject.GetComponentInChildren<ParticleSystem>().Play();
+            //gameObject.GetComponentInChildren<ParticleSystem>().Play();
             //Debug.Log("La plateforme détecte le player en entrée");
         }
     }

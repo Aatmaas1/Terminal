@@ -39,7 +39,7 @@ public class sc_SimuTiles_LDOV : MonoBehaviour
             _touch = true; 
             //print("playerDetection");
             _mat.SetVector("_PlayerPos", other.transform.position);
-            gameObject.GetComponentInChildren<ParticleSystem>().Play();
+            //gameObject.GetComponentInChildren<ParticleSystem>().Play();
         }
     }
 
@@ -49,7 +49,7 @@ public class sc_SimuTiles_LDOV : MonoBehaviour
         _mat = GetComponentInParent<MeshRenderer>().material;
         _touch = true;
         _mat.SetVector("_PlayerPos", transform.position + Vector3.up);
-        gameObject.GetComponentInChildren<ParticleSystem>().Play();
+        //gameObject.GetComponentInChildren<ParticleSystem>().Play();
     }
 
 }
