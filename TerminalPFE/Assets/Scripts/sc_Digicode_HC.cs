@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class sc_Digicode_HC : MonoBehaviour
 {
     public string Code;
     public TMP_Text Affichage;
     public GameObject Visuel, CamPerso, CamCode, VisuRobot;
+    public Color colorError;
 
     string memory = "";
     bool _canAct = true;
@@ -81,11 +83,17 @@ public class sc_Digicode_HC : MonoBehaviour
 
     IEnumerator DelayReset()
     {
+        Color tempc = Affichage.transform.parent.GetComponent<Image>().color;
+        //Color textc = Affichage.color;
         _canAct = false;
-        Affichage.color = Color.red;
+        //Affichage.color = Color.black;
+        Affichage.transform.parent.GetComponent<Image>().color = colorError;
+        memory = "XXXX";
+        UpdateText();
         yield return new WaitForSeconds(0.5f);
         DeleteAll();
         _canAct = true;
-        Affichage.color = Color.white;
+        //Affichage.color = textc;
+        Affichage.transform.parent.GetComponent<Image>().color = tempc;
     }
 }
