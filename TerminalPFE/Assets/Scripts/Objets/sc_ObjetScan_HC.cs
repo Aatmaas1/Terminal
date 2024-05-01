@@ -20,7 +20,7 @@ public class sc_ObjetScan_HC : MonoBehaviour, IDataManager
     }
     private void FixedUpdate()
     {
-        if (isScanned && Vfx.isActiveAndEnabled)
+        if (isScanned /*&& Vfx.isActiveAndEnabled*/)
         {
             Vfx.enabled = false;
             transform.tag = "Untagged";

@@ -30,6 +30,7 @@ public class sc_NewDetection_LDOV : MonoBehaviour
         {
             foreach(VisualEffect fx in allVFX)
             {
+
                 fx.SetVector3("PlayerPos", transform.position);
             }
         }
@@ -43,7 +44,9 @@ public class sc_NewDetection_LDOV : MonoBehaviour
 
             other.GetComponentInChildren<VisualEffect>().enabled = true;
 
-            allVFX.Add(other.GetComponentInChildren<VisualEffect>());
+            if(!allVFX.Contains(other.GetComponentInChildren<VisualEffect>()))
+                if(other.GetComponentInChildren<VisualEffect>().HasVector3("PlayerPos"))
+                    allVFX.Add(other.GetComponentInChildren<VisualEffect>());
 
             audioEvent.PostEvent();
         } 
