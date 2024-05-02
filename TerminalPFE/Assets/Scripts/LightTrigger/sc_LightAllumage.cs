@@ -10,11 +10,15 @@ public class sc_LightAllumage : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        for(int i =0; i <= LightsList.Length+1; i++)
+        if (other.CompareTag("Player"))
         {
-            LightsList[0].GetComponent<Animator>().SetTrigger("LightOn");
-            Destroy(gameObject);
+            for (int i = 0; i <= LightsList.Length + 1; i++)
+            {
+                LightsList[0].GetComponent<Animator>().SetTrigger("LightOn");
+                Destroy(gameObject);
+            }
         }
+        
         
     }
 }
