@@ -64,7 +64,7 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
         sc_ScreenShake.instance.FovBatterie();
         BatterieLow.SetActive(true);
         BatterieLow.GetComponent<Animator>().SetTrigger("Reel");
-        BatterieLowUI.SetActive(true);
+        //BatterieLowUI.SetActive(true);
         
     }
     IEnumerator WaitAnimFall()
@@ -89,7 +89,7 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
 
     IEnumerator DelayMort()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(90f);
         ecranDead.SetActive(true);
         for(int i = 0; i<=100; i++)
         {
