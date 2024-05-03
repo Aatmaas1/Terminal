@@ -12,11 +12,14 @@ public class sc_LightAllumage : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            for (int i = 0; i <= LightsList.Length + 1; i++)
+            for (int i = 0; i <= LightsList.Length ; i++)
             {
-                LightsList[0].GetComponent<Animator>().SetTrigger("LightOn");
-                Destroy(gameObject);
+                LightsList[i].GetComponent<Animator>().SetTrigger("LightOn");
+                Debug.Log(LightsList[0].name + " a allumé la lumière");
+
+
             }
+            //Destroy(gameObject);
         }
         
         
