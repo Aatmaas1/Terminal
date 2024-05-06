@@ -20,6 +20,8 @@ public class TestTrigger : MonoBehaviour, IDataManager
     public Material nonUseMat;
     public Material useMat;
 
+    public bool brasRougeEnSortie = false, jambeRougeEnSortie = false;
+
     private void Start()
     {
         Vfx = GetComponent<VisualEffect>();
@@ -98,7 +100,7 @@ public class TestTrigger : MonoBehaviour, IDataManager
             {
                 sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
                 sc_PlayerManager_HC.Instance.TurnPlayerToward(transform.GetChild(2));
-                sc_PlayerManager_HC.Instance.MoveToTerminal(transform.GetChild(2));
+                //sc_PlayerManager_HC.Instance.MoveToTerminal(transform.GetChild(2));
                 sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimEntreeTerminalReel");
             }
 

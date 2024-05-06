@@ -198,4 +198,10 @@ public class sc_DataManager : MonoBehaviour
         }
         else { return false; }
     }
+
+    public void SaveRobotColor(bool arm, bool leg)
+    {
+        generalData.redArm = arm;
+        generalData.redLeg = leg;
+    }
 }

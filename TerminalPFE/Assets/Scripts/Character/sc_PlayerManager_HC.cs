@@ -17,6 +17,8 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
 
     PlayerInput pInput;
 
+    public Material brasGris, brasRouge, jambesGris, jambesRouge;
+
     private void Awake()
     {
         if (Instance == null)
@@ -43,6 +45,18 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
             if (SceneManager.GetActiveScene().buildIndex == 1)
             {
                 GetComponent<Animator>().Play("AnimSortieTerminalReel");
+
+
+                TestTrigger[] terminaux = FindObjectsOfType<TestTrigger>();
+                for (int i = 0; i < terminaux.Length; i++)
+                {
+                    if (terminaux[i].index == IndexTerminal)
+                    {
+                        sc_DataManager.instance.SaveRobotColor(terminaux[i].brasRougeEnSortie, terminaux[i].jambeRougeEnSortie);
+                        SetLimbColor(terminaux[i].brasRougeEnSortie, terminaux[i].jambeRougeEnSortie);
+                    }
+                }
+
             }
             if (SceneManager.GetActiveScene().buildIndex == 2)
             {
@@ -60,6 +74,10 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
             }
         }
         GetComponent<CharacterController>().enabled = true;
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            SetLimbColor(data.redArm, data.redLeg);
+        }
     }
 
     public void SaveData(ref GeneralData data)
@@ -257,5 +275,25 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
     {
         yield return new WaitForEndOfFrame();
         Camera.main.gameObject.GetComponent<CinemachineBrain>().m_DefaultBlend.m_Time = 0.5f;
+    }
+
+    public void SetLimbColor(bool isBrasRouge, bool isJambeRouge)
+    {
+        if(isBrasRouge)
+        {
+            transform.GetChild(1).GetChild(0).GetComponent<SkinnedMeshRenderer>().materials[2] = brasRouge;
+        }
+        else
+        {
+            transform.GetChild(1).GetChild(0).GetComponent<SkinnedMeshRenderer>().materials[2] = brasGris;
+        }
+        if (isJambeRouge)
+        {
+            transform.GetChild(1).GetChild(0).GetComponent<SkinnedMeshRenderer>().materials[3] = jambesRouge;
+        }
+        else
+        {
+            transform.GetChild(1).GetChild(0).GetComponent<SkinnedMeshRenderer>().materials[3] = jambesGris;
+        }
     }
 }

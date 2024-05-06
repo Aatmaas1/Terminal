@@ -10,6 +10,7 @@ public class GeneralData
     public bool[] ItemsCollected;
     public bool porteSpam;
     public bool doc1, doc2, doc3;
+    public bool redArm, redLeg;
 
     public GeneralData()
     {
@@ -31,5 +32,7 @@ public class GeneralData
         this.doc1 = false;
         this.doc2 = false;
         this.doc3 = false;
+        this.redArm = false;
+        this.redLeg = false;
     }
 }
