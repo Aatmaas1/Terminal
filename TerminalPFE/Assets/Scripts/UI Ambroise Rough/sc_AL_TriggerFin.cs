@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -15,15 +14,17 @@ public class sc_AL_TriggerFin : MonoBehaviour
             StartCoroutine(DeclencheUIEnd());
             cameraEndPlayer.SetTrigger("End");
             //cameraEndCinemachine.SetActive(true);
-            other.GetComponent<PlayerInput>().SwitchCurrentActionMap("UI");
-            Cursor.lockState = CursorLockMode.None;
+            sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
         }
     }
 
     IEnumerator DeclencheUIEnd()
     {
         yield return new WaitForSeconds(5f);
-            PanelFinRough.SetActive(true);
-
+        PanelFinRough.SetActive(true);
+        yield return new WaitForSeconds(30f);
+        sc_PlayerManager_HC.Instance.SetInputMode("UI");
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }
