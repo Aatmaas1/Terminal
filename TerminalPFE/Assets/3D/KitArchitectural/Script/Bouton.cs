@@ -24,6 +24,7 @@ public class Bouton : MonoBehaviour, IDataManager
     [Tooltip("Donner en référence tout bouton de l'autre coté de la porte")]
     public Bouton jumeau;
 
+    public string textError;
     private void Start()
     {
         UnityEventPortes = PorteOuvertureParBouton.GetComponent<UnityEventPortes>();
@@ -218,7 +219,7 @@ public class Bouton : MonoBehaviour, IDataManager
         m.SetColor("_EmissionColor", bleu.GetColor("_EmissionColor"));
         if (holoText != null)
         {
-            holoText.GetComponent<TMPro.TMP_Text>().text = "Access \n card needed";
+            holoText.GetComponent<TMPro.TMP_Text>().text = textError;
         }
         logo.GetComponent<Image>().sprite = logoCard;
         _isBlocked = false;
