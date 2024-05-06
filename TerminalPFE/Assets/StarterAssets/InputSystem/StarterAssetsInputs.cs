@@ -51,6 +51,7 @@ namespace StarterAssets
 			if(SceneManager.GetActiveScene().buildIndex != 3)
             {
                 SetPause();
+				sc_PlayerManager_HC.Instance.ResetZoom();
             }
         }
 #endif

@@ -108,16 +108,13 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
 
     public void OnZoom()
     {
-        if (cameraZoom.Priority == 1)
-        {
-            cameraZoom.Priority = 100;
-        }
-        else
-        {
-            cameraZoom.Priority = 1;
-        }
+        cameraZoom.gameObject.SetActive(!cameraZoom.gameObject.activeInHierarchy);
     }
 
+    public void ResetZoom()
+    {
+        cameraZoom.gameObject.SetActive(false);
+    }
     public void OnJump()
     {
         if (GetComponent<StarterAssets.ThirdPersonController>().Grounded)
@@ -133,6 +130,7 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         {
             sc_UIPauseManager.Instance.TestPause();
             sc_UIPauseManager.Instance.LoadInventory();
+            ResetZoom();
         }
     }
 
