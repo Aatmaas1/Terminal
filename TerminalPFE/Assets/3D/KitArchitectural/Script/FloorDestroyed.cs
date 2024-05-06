@@ -15,6 +15,8 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
     public sc_CorpsCasse_HC RobotCasse;
     public GameObject ecranDead;
 
+    public GameObject audioTriggerToDestroyAfter1stHQ;
+
     public  void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -49,6 +51,7 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
                 RobotCasse.BreakLegs();
                 
             }
+            // on appelle ici la coroutine dans la mémoire data pour se souvenir que le trigger existe plus
             StartCoroutine(WaitForSecondsToDestroyTheGameObject());
         }
     }
@@ -82,9 +85,10 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
     
     IEnumerator WaitForSecondsToDestroyTheGameObject()
     {
-        yield return new WaitForSeconds(10f);
-        // on détruit cet objet après la 1ere utilisation pour ne plus qu'il aparaisse
+        yield return new WaitForSeconds(5f);
+        // on détruit cet objet après la 1ere utilisation pour ne plus qu'il aparaisse (et le trigger du son)
         Destroy(this.gameObject);
+        Destroy(audioTriggerToDestroyAfter1stHQ);
     }
 
     IEnumerator DelayMort()

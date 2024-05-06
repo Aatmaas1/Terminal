@@ -21,7 +21,10 @@ public class Bouton : MonoBehaviour, IDataManager
     public GameObject logo;
     public Sprite logoCard, logoCross;
     bool _isBlocked = false;
+    [Tooltip("Donner en référence tout bouton de l'autre coté de la porte")]
+    public Bouton jumeau;
 
+    public string textError;
     private void Start()
     {
         UnityEventPortes = PorteOuvertureParBouton.GetComponent<UnityEventPortes>();
@@ -80,6 +83,11 @@ public class Bouton : MonoBehaviour, IDataManager
 
             //sc_ScreenShake.instance.ScreenBaseQuick();
             StartCoroutine(CamPorte());
+
+            if(jumeau != null)
+            {
+                jumeau.PasseVert();
+            }
         }
     }
 
@@ -152,32 +160,28 @@ public class Bouton : MonoBehaviour, IDataManager
     {
         PorteOuvertureParBouton.GetComponent<Animator>().speed = 1000;
         yield return new WaitForEndOfFrame();
-        Material m = transform.GetChild(3).GetComponent<MeshRenderer>().materials[1];
-        m.SetColor("_Color", new Color(22f, 191f, 0));
-        m.SetColor("_EmissionColor", new Color(22f, 191f, 0) / 100f);
         UnityEventPortes.InteractDoorBouton();
-        Destroy(logo);
     }
     IEnumerator CamPorte()
     {
         yield return new WaitForSeconds(0.5f);
-        sc_PlayerManager_HC.Instance.MakeCamLookAt(PorteOuvertureParBouton.transform.GetChild(4));
+        //sc_PlayerManager_HC.Instance.MakeCamLookAt(PorteOuvertureParBouton.transform.GetChild(4));
+        PorteOuvertureParBouton.transform.GetChild(5).gameObject.SetActive(true);
 
         UnityEventPortes.InteractDoorBouton();
         this.gameObject.GetComponent<Animator>().SetTrigger("IsClick");
         VfxFeedBack.SendEvent("OnBouton");
 
         yield return new WaitForSeconds(0.2f);
-        Material m = transform.GetChild(3).GetComponent<MeshRenderer>().materials[1];
-        m.SetColor("_Color", new Color(22f, 191f, 0));
-        m.SetColor("_EmissionColor", new Color(22f, 191f, 0) / 100f);
-        Destroy(logo);
+        PasseVert();
         if (holoText != null)
         {
             holoText.GetComponent<TMPro.TMP_Text>().text = "";
         }
 
-        yield return new WaitForSeconds(2.8f);
+        yield return new WaitForSeconds(1.5f);
+        PorteOuvertureParBouton.transform.GetChild(5).gameObject.SetActive(false);
+        yield return new WaitForSeconds(1.3f);
         sc_PlayerManager_HC.Instance.SetInputMode("Player");
     }
 
@@ -215,7 +219,7 @@ public class Bouton : MonoBehaviour, IDataManager
         m.SetColor("_EmissionColor", bleu.GetColor("_EmissionColor"));
         if (holoText != null)
         {
-            holoText.GetComponent<TMPro.TMP_Text>().text = "Access \n card needed";
+            holoText.GetComponent<TMPro.TMP_Text>().text = textError;
         }
         logo.GetComponent<Image>().sprite = logoCard;
         _isBlocked = false;
@@ -234,5 +238,14 @@ public class Bouton : MonoBehaviour, IDataManager
         sc_ScreenShake.instance.OnInteractPlayerLight();
         sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterraction");
         StartCoroutine(CamPorte());
+    }
+
+    public void PasseVert()
+    {
+        isOpen = true;
+        Material m = transform.GetChild(3).GetComponent<MeshRenderer>().materials[1];
+        m.SetColor("_Color", new Color(22f, 191f, 0));
+        m.SetColor("_EmissionColor", new Color(22f, 191f, 0) / 100f);
+        Destroy(logo);
     }
 }

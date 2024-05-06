@@ -1,6 +1,8 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.VFX;
+using UnityEngine.UI;
+using static ak.wwise.core;
 
 public class BoutonSpam : MonoBehaviour, IDataManager
 {
@@ -16,13 +18,20 @@ public class BoutonSpam : MonoBehaviour, IDataManager
     public float delayReset = 1;
     int compteur = 0;
 
+    public GameObject holoText;
+    public sc_Digicode_HC checkDigi;
+    public GameObject logo;
+    public Sprite logoCard, logoCross;
+    bool _isBlocked = false;
+
     private void Start()
     {
         UnityEventPortes = PorteOuvertureParBouton.GetComponent<UnityEventPortes>();
+        Vfx = GetComponentInChildren<VisualEffect>();
     }
     private void FixedUpdate()
     {
-        /*if (PlayerClose && color < 1)
+        if (PlayerClose && color < 1)
         {
             color += 0.05f;
         }
@@ -30,33 +39,20 @@ public class BoutonSpam : MonoBehaviour, IDataManager
         {
             color -= 0.05f;
         }
-        Vfx.SetFloat("ColorChanger", color); /*
-    }
-
-    /*public void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            isOpen = true;
-            //print("La porte détecte le player en entrée" + transform.parent.name);
-            UnityEventPortes.InteractDoorBouton();
-
-            this.gameObject.SetActive(false);
-
-            sc_ScreenShake.instance.ScreenBaseQuick();
-        }*/
+        Vfx.SetFloat("ColorChanger", color);
     }
 
     public void AppuyeBouton()
     {
-        if (PlayerClose && isOpen == false)
+        if (PlayerClose && isOpen == false && !_isBlocked)
         {
             if(compteur >= nbFakeAppuyage)
             {
-                isOpen = true;
-                UnityEventPortes.InteractDoorBouton();
-                this.gameObject.GetComponent<Animator>().SetTrigger("IsClick");
+                sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterraction");
                 sc_ScreenShake.instance.OnInteractPlayerLight();
+                sc_PlayerManager_HC.Instance.TurnPlayerToward(transform);
+                sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
+                isOpen = true;
                 StartCoroutine(CamPorte());
             }
             else
@@ -64,11 +60,11 @@ public class BoutonSpam : MonoBehaviour, IDataManager
                 compteur += 1;
                 StopAllCoroutines();
                 StartCoroutine(CDSpam());
-                StartCoroutine(FakeCamPorte());
+                StartCoroutine(Blocked());
                 this.gameObject.GetComponent<Animator>().SetTrigger("FakeClick");
             }
 
-            this.gameObject.GetComponentInChildren<ParticleSystem>().Play();
+            //this.gameObject.GetComponentInChildren<ParticleSystem>().Play();
             sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterraction");
         }
     }
@@ -95,19 +91,22 @@ public class BoutonSpam : MonoBehaviour, IDataManager
     }
     IEnumerator CamPorte()
     {
-        sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
-        sc_PlayerManager_HC.Instance.TurnPlayerToward(transform);
         yield return new WaitForSeconds(0.5f);
-        sc_PlayerManager_HC.Instance.MakeCamLookAt(PorteOuvertureParBouton.transform.GetChild(3));
+        PorteOuvertureParBouton.transform.GetChild(4).gameObject.SetActive(true);
 
-        yield return new WaitForSeconds(3f);
-        sc_PlayerManager_HC.Instance.SetInputMode("Player");
-    }
-    IEnumerator FakeCamPorte()
-    {
-        sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
-        sc_PlayerManager_HC.Instance.TurnPlayerToward(transform);
-        yield return new WaitForSeconds(1.2f);
+        UnityEventPortes.InteractDoorBouton();
+        this.gameObject.GetComponent<Animator>().SetTrigger("IsClick");
+
+        yield return new WaitForSeconds(0.2f);
+        PasseVert();
+        if (holoText != null)
+        {
+            holoText.GetComponent<TMPro.TMP_Text>().text = "";
+        }
+
+        yield return new WaitForSeconds(1.5f);
+        PorteOuvertureParBouton.transform.GetChild(4).gameObject.SetActive(false);
+        yield return new WaitForSeconds(1.3f);
         sc_PlayerManager_HC.Instance.SetInputMode("Player");
     }
 
@@ -124,5 +123,43 @@ public class BoutonSpam : MonoBehaviour, IDataManager
     public void LostPlayer()
     {
         PlayerClose = false;
+    }
+
+    IEnumerator Blocked()
+    {
+        _isBlocked = true;
+        Material bleu = new Material(transform.GetChild(3).GetComponent<MeshRenderer>().materials[1]);
+        Material m = transform.GetChild(3).GetComponent<MeshRenderer>().materials[1];
+
+        yield return new WaitForSeconds(0.5f);
+        m.SetColor("_Color", new Color(190f, 0f, 0));
+        m.SetColor("_EmissionColor", new Color(190f, 0f, 0) / 100f);
+        if (holoText != null)
+        {
+            holoText.GetComponent<TMPro.TMP_Text>().text = "ERROR";
+        }
+        logo.GetComponent<Image>().sprite = logoCross;
+
+        yield return new WaitForSeconds(0.5f);
+        sc_PlayerManager_HC.Instance.SetInputMode("Player");
+
+        yield return new WaitForSeconds(0.3f);
+        transform.GetChild(3).GetComponent<MeshRenderer>().materials[1] = bleu;
+        m.SetColor("_Color", bleu.GetColor("_Color"));
+        m.SetColor("_EmissionColor", bleu.GetColor("_EmissionColor"));
+        if (holoText != null)
+        {
+            holoText.GetComponent<TMPro.TMP_Text>().text = "Please \n try again";
+        }
+        logo.GetComponent<Image>().sprite = logoCard;
+        _isBlocked = false;
+    }
+
+    public void PasseVert()
+    {
+        Material m = transform.GetChild(3).GetComponent<MeshRenderer>().materials[1];
+        m.SetColor("_Color", new Color(22f, 191f, 0));
+        m.SetColor("_EmissionColor", new Color(22f, 191f, 0) / 100f);
+        Destroy(logo);
     }
 }
