@@ -1,11 +1,15 @@
 using System.Collections.Generic;
-using UnityEngine;
 using System.Linq;
+using UnityEngine;
 
 public class sc_CorpsCasse_HC : MonoBehaviour
 {
     public GameObject CorpsDeBase, newCamFollow, CamFollowBase;
 
+    public void launchInteractAnimation()
+    {
+        GetComponent<Animator>().Play("ZombieInteraction");
+    }
     public void BreakLegs()
     {
         CorpsDeBase.SetActive(false);
