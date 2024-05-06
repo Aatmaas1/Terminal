@@ -19,6 +19,8 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
 
     public Material brasGris, brasRouge, jambesGris, jambesRouge;
 
+    public CinemachineVirtualCamera cameraZoom;
+
     private void Awake()
     {
         if (Instance == null)
@@ -115,7 +117,7 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
 
     public void OnInventaire()
     {
-        if(SceneManager.GetActiveScene().buildIndex != 3)
+        if (SceneManager.GetActiveScene().buildIndex != 3)
         {
             sc_UIPauseManager.Instance.TestPause();
             sc_UIPauseManager.Instance.LoadInventory();
@@ -128,7 +130,7 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
     /// <param name="mode"></param>
     public void SetInputMode(string mode)
     {
-        if(gameObject.activeInHierarchy)
+        if (gameObject.activeInHierarchy)
         {
             pInput = GetComponent<PlayerInput>();
             pInput.enabled = true;
@@ -155,11 +157,11 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         Quaternion oldrot = chi.rotation;
 
         Vector3 direction = (obj.position - chi.position).normalized;
-        float speed = Vector3.Angle(transform.GetChild(0).forward, direction)/60f;
+        float speed = Vector3.Angle(transform.GetChild(0).forward, direction) / 60f;
 
         for (int i = 1; i <= 60; i++)
         {
-            chi.rotation = Quaternion.RotateTowards(chi.rotation, Quaternion.LookRotation(direction, Vector3.up), speed*2);
+            chi.rotation = Quaternion.RotateTowards(chi.rotation, Quaternion.LookRotation(direction, Vector3.up), speed * 2);
             chi.eulerAngles = Vector3.Scale(chi.rotation.eulerAngles, new Vector3(1, 1, 0));
             yield return new WaitForSeconds(0.01f);
         }
@@ -304,4 +306,18 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
 
         transform.GetChild(1).GetChild(0).GetComponent<SkinnedMeshRenderer>().materials = fun;
     }
+
+    public void OnZoom(InputAction.CallbackContext isZoom)
+    {
+
+        if (isZoom.started)
+        {
+            cameraZoom.Priority = 100;
+        }
+        if (isZoom.canceled)
+        {
+            cameraZoom.Priority = 1;
+        }
+    }
+
 }
