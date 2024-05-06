@@ -2332,8 +2332,8 @@ SkinnedMeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 43714b68324cc2c409d534d9874f2a2b, type: 2}
+  - {fileID: 2100000, guid: 6dc652ad6bfa1fb4e86168bdcf8737c7, type: 2}
   - {fileID: 2100000, guid: 766fd3ff04aab4745a764d33daac86fa, type: 2}
-  - {fileID: 2100000, guid: 8b25e99361ac31d4e9ae83c46aee69ea, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2358,7 +2358,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4698152120088058464, guid: eb94420dd2d7ec74bbabdb3fb1a0399c, type: 3}
+  m_Mesh: {fileID: 4698152120088058464, guid: bbd989421657cf148b7b8b4d558a04b4, type: 3}
   m_Bones:
   - {fileID: 972976259751631080}
   - {fileID: 1569133700589266041}
@@ -3213,6 +3213,10 @@ MonoBehaviour:
   OnJumping: {fileID: 0}
   IndexTerminal: -1
   dureeAnimRespawn: 0
+  brasGris: {fileID: 0}
+  brasRouge: {fileID: 0}
+  jambesGris: {fileID: 0}
+  jambesRouge: {fileID: 0}
 --- !u!114 &7286605469021367229
 MonoBehaviour:
   m_ObjectHideFlags: 0
