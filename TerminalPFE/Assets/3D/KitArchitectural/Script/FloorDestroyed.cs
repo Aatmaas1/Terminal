@@ -49,6 +49,7 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
                 RobotCasse.BreakLegs();
                 
             }
+            // on appelle ici la coroutine dans la mémoire data pour se souvenir que le trigger existe plus
             StartCoroutine(WaitForSecondsToDestroyTheGameObject());
         }
     }
@@ -82,7 +83,7 @@ public class FloorDestroyed : MonoBehaviour, IDataManager
     
     IEnumerator WaitForSecondsToDestroyTheGameObject()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(5f);
         // on détruit cet objet après la 1ere utilisation pour ne plus qu'il aparaisse
         Destroy(this.gameObject);
     }
