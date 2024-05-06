@@ -18,6 +18,7 @@ public class sc_AnimTerminal_LDOV : MonoBehaviour
         {
             if(!animator.GetComponent<TestTrigger>().isUse)
             {
+                animator.SetBool("IsClose", false);
                 animator.SetBool("IsOpen", true);
             }
         }
@@ -28,6 +29,7 @@ public class sc_AnimTerminal_LDOV : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             animator.SetBool("IsOpen", false);
+            animator.SetBool("IsClose", true);
         }
     }
 
