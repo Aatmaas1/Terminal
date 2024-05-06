@@ -106,6 +106,18 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         }
     }
 
+    public void OnZoom()
+    {
+        if (cameraZoom.Priority == 1)
+        {
+            cameraZoom.Priority = 100;
+        }
+        else
+        {
+            cameraZoom.Priority = 1;
+        }
+    }
+
     public void OnJump()
     {
         if (GetComponent<StarterAssets.ThirdPersonController>().Grounded)
@@ -306,18 +318,4 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
 
         transform.GetChild(1).GetChild(0).GetComponent<SkinnedMeshRenderer>().materials = fun;
     }
-
-    public void OnZoom(InputAction.CallbackContext isZoom)
-    {
-
-        if (isZoom.started)
-        {
-            cameraZoom.Priority = 100;
-        }
-        if (isZoom.canceled)
-        {
-            cameraZoom.Priority = 1;
-        }
-    }
-
 }
