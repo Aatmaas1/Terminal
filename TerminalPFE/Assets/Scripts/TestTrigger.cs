@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.VFX;
 using System.Collections;
+using Unity.VisualScripting;
 
 public class TestTrigger : MonoBehaviour, IDataManager
 {
@@ -22,9 +23,12 @@ public class TestTrigger : MonoBehaviour, IDataManager
 
     public bool brasRougeEnSortie = false, jambeRougeEnSortie = false;
 
+    bool _blockStart = true;
+
     private void Start()
     {
         Vfx = GetComponent<VisualEffect>();
+        StartCoroutine(DelayStart());
     }
     private void FixedUpdate()
     {
@@ -134,7 +138,7 @@ public class TestTrigger : MonoBehaviour, IDataManager
 
     public void PlayerReady()
     {
-        if(!isUse)
+        if(!isUse && !_blockStart)
         {
             isOpen = true;
         }
@@ -188,5 +192,11 @@ public class TestTrigger : MonoBehaviour, IDataManager
     public void SaveData(ref GeneralData data)
     {
         //   throw new System.NotImplementedException();
+    }
+
+    IEnumerator DelayStart()
+    {
+        yield return new WaitForSeconds(0.2f);
+        _blockStart = false;
     }
 }
