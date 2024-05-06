@@ -161,7 +161,8 @@ public class Bouton : MonoBehaviour, IDataManager
     IEnumerator CamPorte()
     {
         yield return new WaitForSeconds(0.5f);
-        sc_PlayerManager_HC.Instance.MakeCamLookAt(PorteOuvertureParBouton.transform.GetChild(4));
+        //sc_PlayerManager_HC.Instance.MakeCamLookAt(PorteOuvertureParBouton.transform.GetChild(4));
+        PorteOuvertureParBouton.transform.GetChild(5).gameObject.SetActive(true);
 
         UnityEventPortes.InteractDoorBouton();
         this.gameObject.GetComponent<Animator>().SetTrigger("IsClick");
@@ -177,7 +178,9 @@ public class Bouton : MonoBehaviour, IDataManager
             holoText.GetComponent<TMPro.TMP_Text>().text = "";
         }
 
-        yield return new WaitForSeconds(2.8f);
+        yield return new WaitForSeconds(1.5f);
+        PorteOuvertureParBouton.transform.GetChild(5).gameObject.SetActive(false);
+        yield return new WaitForSeconds(1.3f);
         sc_PlayerManager_HC.Instance.SetInputMode("Player");
     }
 
