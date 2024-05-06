@@ -279,21 +279,29 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
 
     public void SetLimbColor(bool isBrasRouge, bool isJambeRouge)
     {
-        if(isBrasRouge)
+        Material[] fun = new Material[4];
+        fun = transform.GetChild(1).GetChild(0).GetComponent<SkinnedMeshRenderer>().materials;
+        if (isBrasRouge)
         {
-            transform.GetChild(1).GetChild(0).GetComponent<SkinnedMeshRenderer>().materials[2] = brasRouge;
+            fun[2] = brasRouge;
+            Debug.Log("BrasRouge");
         }
         else
         {
-            transform.GetChild(1).GetChild(0).GetComponent<SkinnedMeshRenderer>().materials[2] = brasGris;
+            fun[2] = brasGris;
+            Debug.Log("BrasGris");
         }
         if (isJambeRouge)
         {
-            transform.GetChild(1).GetChild(0).GetComponent<SkinnedMeshRenderer>().materials[3] = jambesRouge;
+            fun[3] = jambesRouge;
+            Debug.Log("JambeRouge");
         }
         else
         {
-            transform.GetChild(1).GetChild(0).GetComponent<SkinnedMeshRenderer>().materials[3] = jambesGris;
+            fun[3] = jambesGris;
+            Debug.Log("JambeGris");
         }
+
+        transform.GetChild(1).GetChild(0).GetComponent<SkinnedMeshRenderer>().materials = fun;
     }
 }
