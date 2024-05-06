@@ -242,6 +242,7 @@ public class Bouton : MonoBehaviour, IDataManager
 
     public void PasseVert()
     {
+        isOpen = true;
         Material m = transform.GetChild(3).GetComponent<MeshRenderer>().materials[1];
         m.SetColor("_Color", new Color(22f, 191f, 0));
         m.SetColor("_EmissionColor", new Color(22f, 191f, 0) / 100f);
