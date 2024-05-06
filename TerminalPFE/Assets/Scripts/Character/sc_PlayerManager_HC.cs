@@ -72,12 +72,12 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
                 transform.position = data.LastPos;
                 transform.rotation = data.LastRot;
             }
+            if (SceneManager.GetActiveScene().buildIndex == 1)
+            {
+                SetLimbColor(data.redArm, data.redLeg);
+            }
         }
         GetComponent<CharacterController>().enabled = true;
-        if (SceneManager.GetActiveScene().buildIndex == 1)
-        {
-            SetLimbColor(data.redArm, data.redLeg);
-        }
     }
 
     public void SaveData(ref GeneralData data)
