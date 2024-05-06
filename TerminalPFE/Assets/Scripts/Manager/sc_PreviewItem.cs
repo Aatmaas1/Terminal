@@ -187,7 +187,7 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
 
     public void MajInv()
     {
-        for (int i = 0; i < IsObjects.Length-1; i++)
+        for (int i = 0; i <= IsObjects.Length-1; i++)
         {
             ImageItem[i].GetComponent<TMP_Text>().text = IsObjects[i].nom;
         }
