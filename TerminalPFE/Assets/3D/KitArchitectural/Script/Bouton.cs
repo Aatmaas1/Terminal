@@ -21,6 +21,8 @@ public class Bouton : MonoBehaviour, IDataManager
     public GameObject logo;
     public Sprite logoCard, logoCross;
     bool _isBlocked = false;
+    [Tooltip("Donner en référence tout bouton de l'autre coté de la porte")]
+    public Bouton jumeau;
 
     private void Start()
     {
@@ -80,6 +82,11 @@ public class Bouton : MonoBehaviour, IDataManager
 
             //sc_ScreenShake.instance.ScreenBaseQuick();
             StartCoroutine(CamPorte());
+
+            if(jumeau != null)
+            {
+                jumeau.PasseVert();
+            }
         }
     }
 
@@ -152,11 +159,7 @@ public class Bouton : MonoBehaviour, IDataManager
     {
         PorteOuvertureParBouton.GetComponent<Animator>().speed = 1000;
         yield return new WaitForEndOfFrame();
-        Material m = transform.GetChild(3).GetComponent<MeshRenderer>().materials[1];
-        m.SetColor("_Color", new Color(22f, 191f, 0));
-        m.SetColor("_EmissionColor", new Color(22f, 191f, 0) / 100f);
         UnityEventPortes.InteractDoorBouton();
-        Destroy(logo);
     }
     IEnumerator CamPorte()
     {
@@ -169,10 +172,7 @@ public class Bouton : MonoBehaviour, IDataManager
         VfxFeedBack.SendEvent("OnBouton");
 
         yield return new WaitForSeconds(0.2f);
-        Material m = transform.GetChild(3).GetComponent<MeshRenderer>().materials[1];
-        m.SetColor("_Color", new Color(22f, 191f, 0));
-        m.SetColor("_EmissionColor", new Color(22f, 191f, 0) / 100f);
-        Destroy(logo);
+        PasseVert();
         if (holoText != null)
         {
             holoText.GetComponent<TMPro.TMP_Text>().text = "";
@@ -237,5 +237,13 @@ public class Bouton : MonoBehaviour, IDataManager
         sc_ScreenShake.instance.OnInteractPlayerLight();
         sc_PlayerManager_HC.Instance.GetComponent<Animator>().Play("AnimInterraction");
         StartCoroutine(CamPorte());
+    }
+
+    public void PasseVert()
+    {
+        Material m = transform.GetChild(3).GetComponent<MeshRenderer>().materials[1];
+        m.SetColor("_Color", new Color(22f, 191f, 0));
+        m.SetColor("_EmissionColor", new Color(22f, 191f, 0) / 100f);
+        Destroy(logo);
     }
 }
