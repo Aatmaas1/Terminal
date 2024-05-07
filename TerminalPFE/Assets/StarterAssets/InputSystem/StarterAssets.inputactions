@@ -725,8 +725,52 @@
         {
             "name": "Nothing",
             "id": "7fca7c0c-b242-48e6-9490-a2a57cc34882",
-            "actions": [],
-            "bindings": []
+            "actions": [
+                {
+                    "name": "Exit",
+                    "type": "Button",
+                    "id": "f5236b7c-d038-417a-ada0-572831f751d5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a8c68dd6-114a-4af0-ae75-287767bded9c",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Exit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7e0dcb4b-91ad-468c-9d15-306c8f3ae8b1",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Exit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "90c692c9-8f4c-481a-b00f-b120462c340c",
+                    "path": "<Keyboard>/backspace",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Exit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

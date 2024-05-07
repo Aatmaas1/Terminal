@@ -21,6 +21,8 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
 
     public CinemachineVirtualCamera cameraZoom;
 
+    public sc_Digicode_HC digicode;
+
     private void Awake()
     {
         if (Instance == null)
@@ -131,6 +133,14 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
             sc_UIPauseManager.Instance.TestPause();
             sc_UIPauseManager.Instance.LoadInventory();
             ResetZoom();
+        }
+    }
+
+    public void OnExit()
+    {
+        if (digicode != null)
+        {
+            digicode.Close();
         }
     }
 
