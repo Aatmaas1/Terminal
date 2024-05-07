@@ -13,6 +13,7 @@ public class BoutonSpam : MonoBehaviour, IDataManager
     bool isOpen = false;
     bool PlayerClose = false;
     VisualEffect Vfx;
+    public VisualEffect VfxFeedBack;
     float color = 0;
     public int nbFakeAppuyage = 2;
     public float delayReset = 1;
@@ -27,7 +28,7 @@ public class BoutonSpam : MonoBehaviour, IDataManager
     private void Start()
     {
         UnityEventPortes = PorteOuvertureParBouton.GetComponent<UnityEventPortes>();
-        Vfx = GetComponentInChildren<VisualEffect>();
+        Vfx = transform.GetChild(1).GetComponent<VisualEffect>();
     }
     private void FixedUpdate()
     {
@@ -96,6 +97,7 @@ public class BoutonSpam : MonoBehaviour, IDataManager
 
         UnityEventPortes.InteractDoorBouton();
         this.gameObject.GetComponent<Animator>().SetTrigger("IsClick");
+        VfxFeedBack.SendEvent("OnBouton");
 
         yield return new WaitForSeconds(0.2f);
         PasseVert();
@@ -157,7 +159,8 @@ public class BoutonSpam : MonoBehaviour, IDataManager
 
     public void PasseVert()
     {
-        Material m = transform.GetChild(3).GetComponent<MeshRenderer>().materials[1];
+        isOpen = true;
+        Material m = transform.GetChild(0).GetComponent<MeshRenderer>().materials[1];
         m.SetColor("_Color", new Color(22f, 191f, 0));
         m.SetColor("_EmissionColor", new Color(22f, 191f, 0) / 100f);
         Destroy(logo);
