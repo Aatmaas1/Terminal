@@ -1,4 +1,5 @@
 using Cinemachine;
+using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -325,5 +326,10 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         }
 
         transform.GetChild(1).GetChild(0).GetComponent<SkinnedMeshRenderer>().materials = fun;
+    }
+
+    public void SetSensiCam(float val)
+    {
+        GetComponent<ThirdPersonController>().CameraSpeed = val;
     }
 }

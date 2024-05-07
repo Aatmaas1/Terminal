@@ -15,6 +15,7 @@ public class sc_DataManager : MonoBehaviour
     public static sc_DataManager instance { get; private set; }
 
     private GeneralData generalData;
+    public SettingsData settingsData;
 
     private List<IDataManager> dataInterfaceObjects;
 
@@ -58,12 +59,19 @@ public class sc_DataManager : MonoBehaviour
     {
         // Load all the saves using dataHandler
         this.generalData = fileHandler.Load();
+        this.settingsData = fileHandler.LoadSettings();
 
         // if there isn't any, create a new save
         if(this.generalData == null)
         {
             Debug.Log("No Data found, creating a new save file.");
             NewGame();
+        }
+
+        if(this.settingsData == null)
+        {
+            settingsData = new SettingsData();
+            fileHandler.SaveSettings(settingsData);
         }
 
         //Pass it to the scripts
@@ -81,6 +89,7 @@ public class sc_DataManager : MonoBehaviour
 
         //Save data with dataHandler
         fileHandler.Save(generalData);
+        fileHandler.SaveSettings(settingsData);
     }
 
     public void LoadToObjects()
@@ -203,5 +212,11 @@ public class sc_DataManager : MonoBehaviour
     {
         generalData.redArm = arm;
         generalData.redLeg = leg;
+    }
+
+    public void SaveCamSensi(float sensi)
+    {
+        settingsData.sensiCam = sensi;
+        fileHandler.SaveSettings(settingsData);
     }
 }

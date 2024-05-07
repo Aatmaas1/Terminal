@@ -93,4 +93,12 @@ public class sc_SceneManager_HC : MonoBehaviour
     {
         Time.timeScale = 1;
     }
+
+    public void OnLevelWasLoaded(int level)
+    {
+        if(level == 1 ||level == 2)
+        {
+            sc_PlayerManager_HC.Instance.SetSensiCam(sc_DataManager.instance.settingsData.sensiCam);
+        }
+    }
 }

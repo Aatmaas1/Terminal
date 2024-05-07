@@ -76,6 +76,35 @@ public class sc_FileHandler_HC
         }
         return loadedData;
     }
+    public SettingsData LoadSettings()
+    {
+        //Combine pr que ça marche sur windows, linux et mac (normalement)
+        string FullPath = Path.Combine(DataPath, "Settings.game");
+        SettingsData loadedData = null;
+        if (File.Exists(FullPath))
+        {
+            try
+            {
+                string dataToLoad = "";
+                using (FileStream stream = new FileStream(FullPath, FileMode.Open))
+                {
+                    using (StreamReader reader = new StreamReader(stream))
+                    {
+                        dataToLoad = reader.ReadToEnd();
+                    }
+                }
+
+
+                //Deserialisation
+                loadedData = JsonUtility.FromJson<SettingsData>(dataToLoad);
+            }
+            catch (Exception e)
+            {
+                Debug.LogError("Error occured when trying to load file : " + FullPath + "\n" + e);
+            }
+        }
+        return loadedData;
+    }
 
 
     public void Save(GeneralData data)
@@ -111,6 +140,33 @@ public class sc_FileHandler_HC
     {
         //Combine pr que ça marche sur windows, linux et mac (normalement)
         string FullPath = Path.Combine(DataPath, FileName);
+
+
+        try
+        {
+            Directory.CreateDirectory(Path.GetDirectoryName(FullPath));
+
+            //Serialisation
+            string dataToStore = JsonUtility.ToJson(data, true);
+
+
+            using (FileStream stream = new FileStream(FullPath, FileMode.Create))
+            {
+                using (StreamWriter writer = new StreamWriter(stream))
+                {
+                    writer.Write(dataToStore);
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.LogError("Error occured when trying to save to file : " + FullPath + "\n" + e);
+        }
+    }
+    public void SaveSettings(SettingsData data)
+    {
+        //Combine pr que ça marche sur windows, linux et mac (normalement)
+        string FullPath = Path.Combine(DataPath, "Settings.game");
 
 
         try

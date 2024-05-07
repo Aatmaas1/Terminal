@@ -8,7 +8,7 @@ public class sc_Digicode_HC : MonoBehaviour
 {
     public string Code;
     public TMP_Text Affichage;
-    public GameObject Visuel, CamPerso, CamCode, VisuRobot;
+    public GameObject Visuel, CamPerso, CamCode, VisuRobot, skeleRobot;
     public Color colorError;
 
     string memory = "";
@@ -21,6 +21,7 @@ public class sc_Digicode_HC : MonoBehaviour
         Cursor.visible = true;
         Visuel.SetActive(true);
         VisuRobot.SetActive(false);
+        skeleRobot.SetActive(false);
         CamPerso.SetActive(false);
         CamCode.SetActive(true);
     }
@@ -33,6 +34,7 @@ public class sc_Digicode_HC : MonoBehaviour
             Cursor.visible = false;
             Visuel.SetActive(false);
             VisuRobot.SetActive(true);
+            skeleRobot.SetActive(true);
             CamCode.SetActive(false);
             CamPerso.SetActive(true);
             DeleteAll();

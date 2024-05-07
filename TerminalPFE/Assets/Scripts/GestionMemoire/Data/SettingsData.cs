@@ -9,4 +9,6 @@ public class SettingsData
     //Audio (voir avec adrien)
 
     //Controles (Remap ?)
+
+    public float sensiCam = 1.25f;
 }

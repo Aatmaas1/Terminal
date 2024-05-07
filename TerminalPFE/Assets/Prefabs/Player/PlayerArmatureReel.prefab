@@ -723,6 +723,8 @@ MonoBehaviour:
   brasRouge: {fileID: 2100000, guid: a33dde60588a0dc458138ab39ab876db, type: 2}
   jambesGris: {fileID: 2100000, guid: 8b25e99361ac31d4e9ae83c46aee69ea, type: 2}
   jambesRouge: {fileID: 2100000, guid: 6ae0eb1773cd28044af8dc906d8bcce6, type: 2}
+  cameraZoom: {fileID: 0}
+  digicode: {fileID: 0}
 --- !u!1 &1116219123447706844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1610,7 +1612,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3156351179844837237}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
@@ -2104,7 +2106,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4877144102587392119}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
