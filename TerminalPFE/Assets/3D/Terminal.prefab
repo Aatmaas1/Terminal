@@ -421,7 +421,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 14
   m_CollisionDetection: 0
 --- !u!114 &4629505027050378447
 MonoBehaviour:
@@ -537,6 +537,8 @@ MonoBehaviour:
   isUse: 0
   nonUseMat: {fileID: 87437032686664549, guid: c9c1c1e256217db42b28f9897af00379, type: 3}
   useMat: {fileID: 2100000, guid: 16dc323307948984492cd69d11d46cb9, type: 2}
+  brasRougeEnSortie: 0
+  jambeRougeEnSortie: 0
 --- !u!114 &9045226214216058494
 MonoBehaviour:
   m_ObjectHideFlags: 0

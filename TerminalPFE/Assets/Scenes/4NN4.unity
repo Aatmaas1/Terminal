@@ -9310,7 +9310,7 @@ PrefabInstance:
     - target: {fileID: 7298939621828970412, guid: 01f5a03f1edcafe408baa3128b2f3a17,
         type: 3}
       propertyPath: m_text
-      value: Terminal [1.0.8]
+      value: Terminal [1.0.9]
       objectReference: {fileID: 0}
     - target: {fileID: 7298939621828970412, guid: 01f5a03f1edcafe408baa3128b2f3a17,
         type: 3}
@@ -11415,7 +11415,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 43714b68324cc2c409d534d9874f2a2b, type: 2}
+      objectReference: {fileID: 2100000, guid: 8bce4d0a0b1db5f4ea7f8788a64cdb43, type: 2}
     - target: {fileID: 3576798532895581474, guid: e848b10f55eedc2448951992f3da7e91,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
@@ -11425,7 +11425,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
-      objectReference: {fileID: 2100000, guid: 766fd3ff04aab4745a764d33daac86fa, type: 2}
+      objectReference: {fileID: 2100000, guid: 6d199386f78d8734aaa9a73bbb8b25a4, type: 2}
+    - target: {fileID: 3576798532895581474, guid: e848b10f55eedc2448951992f3da7e91,
+        type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: eb200a151bc88684eac1522879e5635f, type: 2}
     - target: {fileID: 3586324409110053295, guid: e848b10f55eedc2448951992f3da7e91,
         type: 3}
       propertyPath: m_LocalPosition.x
