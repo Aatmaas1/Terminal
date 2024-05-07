@@ -26,14 +26,17 @@ public class sc_Digicode_HC : MonoBehaviour
     }
     public void Close()
     {
-        sc_PlayerManager_HC.Instance.SetInputMode("Player");
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-        Visuel.SetActive(false);
-        VisuRobot.SetActive(true);
-        CamCode.SetActive(false);
-        CamPerso.SetActive(true);
-        DeleteAll();
+        if(Visuel.activeInHierarchy)
+        {
+            sc_PlayerManager_HC.Instance.SetInputMode("Player");
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            Visuel.SetActive(false);
+            VisuRobot.SetActive(true);
+            CamCode.SetActive(false);
+            CamPerso.SetActive(true);
+            DeleteAll();
+        }
     }
 
     public void BoutonChiffre(string index)
