@@ -69,7 +69,7 @@ MonoBehaviour:
     m_StartupLanguage: English(US)
     m_EngineLogging: 1
     m_MaximumNumberOfPositioningPaths: 255
-    m_CommandQueueSize: 262144
+    m_CommandQueueSize: 1048576
     m_SamplesPerFrame: 512
     m_MainOutputSettings:
       m_AudioDeviceShareset: 
@@ -84,7 +84,7 @@ MonoBehaviour:
     m_NumberOfRefillsInVoice: 4
     m_SpatialAudioSettings:
       m_MaxSoundPropagationDepth: 8
-      m_MovementThreshold: 0.25
+      m_MovementThreshold: 1
       m_NumberOfPrimaryRays: 35
       m_MaxReflectionOrder: 2
       m_MaxDiffractionOrder: 4
@@ -112,7 +112,7 @@ MonoBehaviour:
     m_SoundBankPersistentDataPath: 
     m_MemoryAllocationSizeLimit: 0
     m_MemoryDebugLevel: 0
-    MaxSystemAudioObjects: 128
+    MaxSystemAudioObjects: 256
   CommsSettings:
     m_PoolSize: 262144
     m_DiscoveryBroadcastPort: 24024

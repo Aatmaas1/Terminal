@@ -65,6 +65,8 @@ public class Death4NN4 : MonoBehaviour
         yield return new WaitForSeconds(timeToLoad);
         //sc_PlayerManager_HC.Instance.SetInputMode("Player");
 
+        AudioListenerDontDestroyOnLoad.instance.AudioYuumi();
+
         SceneManager.LoadScene("Introduction");
 
     }
