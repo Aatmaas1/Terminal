@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 60088738}
-  m_IndirectSpecularColor: {r: 0.632951, g: 0.23868087, b: 0.12571746, a: 1}
+  m_IndirectSpecularColor: {r: 0.6329508, g: 0.23868087, b: 0.12571749, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1168,51 +1168,52 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1432941009}
+  - {fileID: 2036714149}
+  - {fileID: 1297340081}
+  - {fileID: 1880743879}
+  - {fileID: 1451323046}
+  - {fileID: 529570607}
+  - {fileID: 1678853104}
+  - {fileID: 1378329609}
+  - {fileID: 947511152}
+  - {fileID: 2110401254}
+  - {fileID: 1632298603}
+  - {fileID: 929057424}
+  - {fileID: 703013269}
+  - {fileID: 521484006}
+  - {fileID: 682443234}
   - {fileID: 830664996}
   - {fileID: 1767335688}
   - {fileID: 1334806080}
-  - {fileID: 2036714149}
   - {fileID: 314136217}
   - {fileID: 1099759184}
   - {fileID: 480595769}
   - {fileID: 653900227}
-  - {fileID: 1297340081}
-  - {fileID: 1451323046}
   - {fileID: 579017906}
   - {fileID: 960126848}
-  - {fileID: 529570607}
   - {fileID: 1911595205}
   - {fileID: 794201760}
   - {fileID: 441944937}
-  - {fileID: 1678853104}
   - {fileID: 1088668515}
-  - {fileID: 929057424}
   - {fileID: 664478826}
   - {fileID: 23373392}
-  - {fileID: 703013269}
   - {fileID: 35728429}
   - {fileID: 1909085239}
   - {fileID: 290719934}
   - {fileID: 887477035}
   - {fileID: 589956686}
   - {fileID: 364816386}
-  - {fileID: 521484006}
   - {fileID: 506490593}
-  - {fileID: 682443234}
   - {fileID: 69000838}
   - {fileID: 844306196}
   - {fileID: 400825709}
-  - {fileID: 2110401254}
-  - {fileID: 1632298603}
   - {fileID: 386286218}
   - {fileID: 61353548}
   - {fileID: 2116197581}
   - {fileID: 1090227451}
   - {fileID: 622490640}
-  - {fileID: 1880743879}
   - {fileID: 1765902511}
   - {fileID: 129276940}
-  - {fileID: 947511152}
   - {fileID: 1138447180}
   - {fileID: 1097203661}
   - {fileID: 964746846}
@@ -1228,7 +1229,6 @@ Transform:
   - {fileID: 1784562093}
   - {fileID: 357891674}
   - {fileID: 901330595}
-  - {fileID: 1378329609}
   - {fileID: 1524533064}
   - {fileID: 1886511240}
   - {fileID: 1432948108}
@@ -1592,23 +1592,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 958176078684456754, guid: ea06adb326b375748b4cde697cd75d85,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 172219623}
-    - targetCorrespondingSourceObject: {fileID: 958176078684456754, guid: ea06adb326b375748b4cde697cd75d85,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 172219622}
     - targetCorrespondingSourceObject: {fileID: 958176078684456754, guid: ea06adb326b375748b4cde697cd75d85,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 172219621}
-    - targetCorrespondingSourceObject: {fileID: 958176078684456754, guid: ea06adb326b375748b4cde697cd75d85,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 172219620}
-    - targetCorrespondingSourceObject: {fileID: 958176078684456754, guid: ea06adb326b375748b4cde697cd75d85,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 172219619}
+    - targetCorrespondingSourceObject: {fileID: 958176078684456754, guid: ea06adb326b375748b4cde697cd75d85,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 172219623}
   m_SourcePrefab: {fileID: 100100000, guid: ea06adb326b375748b4cde697cd75d85, type: 3}
 --- !u!1 &172219617 stripped
 GameObject:
@@ -1682,42 +1674,6 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
---- !u!114 &172219620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 172219617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9148343e82e90d24ab3d3f50049bf763, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDefaultListener: 1
-  listenerId: 0
---- !u!114 &172219621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 172219617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39aa918e6aae49d4793394497512a086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!65 &172219622
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1739,33 +1695,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &172219623
-Rigidbody:
+--- !u!114 &172219623
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 172219617}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb3678f619e783a489ebd2164db01de1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &214672693
 GameObject:
   m_ObjectHideFlags: 0
@@ -3907,14 +3848,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 521484011}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 521484010}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 521484009}
   m_SourcePrefab: {fileID: 100100000, guid: 5075fc9a815fe054ca0727e67285e70c, type: 3}
 --- !u!4 &521484006 stripped
@@ -3956,41 +3889,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &521484010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521484007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83f4799bb0d66434b8bb713fef56e7c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Collider: {fileID: 0}
---- !u!114 &521484011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521484007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39aa918e6aae49d4793394497512a086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 1
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1 &524922087
 GameObject:
   m_ObjectHideFlags: 3
@@ -4139,15 +4037,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 529570613}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 529570612}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 529570611}
     - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
         type: 3}
       insertIndex: -1
@@ -4192,19 +4082,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &529570611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529570608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83f4799bb0d66434b8bb713fef56e7c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Collider: {fileID: 0}
 --- !u!65 &529570612
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4226,28 +4103,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 6, z: 4}
   m_Center: {x: 1, y: 3, z: -2}
---- !u!114 &529570613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529570608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39aa918e6aae49d4793394497512a086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 1
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1 &561527061
 GameObject:
   m_ObjectHideFlags: 0
@@ -4934,15 +4789,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 682443240}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 682443239}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 682443238}
     - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
         type: 3}
       insertIndex: -1
@@ -4987,19 +4834,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &682443238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 682443235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83f4799bb0d66434b8bb713fef56e7c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Collider: {fileID: 0}
 --- !u!65 &682443239
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5021,28 +4855,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 6, z: 4}
   m_Center: {x: 1, y: 3, z: -2}
---- !u!114 &682443240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 682443235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39aa918e6aae49d4793394497512a086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 1
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1001 &691551405
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5213,15 +5025,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 703013275}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 703013274}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 703013273}
     - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
         type: 3}
       insertIndex: -1
@@ -5266,19 +5070,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &703013273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 703013270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83f4799bb0d66434b8bb713fef56e7c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Collider: {fileID: 0}
 --- !u!65 &703013274
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5300,28 +5091,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 6, z: 4}
   m_Center: {x: 1, y: 3, z: -2}
---- !u!114 &703013275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 703013270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39aa918e6aae49d4793394497512a086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 1
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1 &715431665
 GameObject:
   m_ObjectHideFlags: 0
@@ -6545,7 +6314,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &902851183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7031,11 +6800,7 @@ PrefabInstance:
     - {fileID: 2714098253601956054, guid: 5075fc9a815fe054ca0727e67285e70c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 929057427}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5075fc9a815fe054ca0727e67285e70c, type: 3}
 --- !u!4 &929057424 stripped
 Transform:
@@ -7043,34 +6808,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 929057423}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &929057425 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-    type: 3}
-  m_PrefabInstance: {fileID: 929057423}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &929057427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 929057425}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39aa918e6aae49d4793394497512a086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 1
-  isStaticObject: 1
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1001 &947511151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7157,15 +6894,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 947511158}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 947511157}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 947511156}
     - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
         type: 3}
       insertIndex: -1
@@ -7210,19 +6939,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &947511156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 947511153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83f4799bb0d66434b8bb713fef56e7c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Collider: {fileID: 0}
 --- !u!65 &947511157
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7244,28 +6960,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 6, z: 4}
   m_Center: {x: 1, y: 3, z: -2}
---- !u!114 &947511158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 947511153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39aa918e6aae49d4793394497512a086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 1
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1001 &957109667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10306,14 +10000,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1297340086}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1297340085}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1297340084}
   m_SourcePrefab: {fileID: 100100000, guid: 5075fc9a815fe054ca0727e67285e70c, type: 3}
 --- !u!4 &1297340081 stripped
@@ -10355,41 +10041,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1297340085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1297340082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83f4799bb0d66434b8bb713fef56e7c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Collider: {fileID: 0}
---- !u!114 &1297340086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1297340082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39aa918e6aae49d4793394497512a086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 1
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1001 &1334806079
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12729,27 +12380,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4650890447162091546, guid: e848b10f55eedc2448951992f3da7e91,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1371093576}
-    - targetCorrespondingSourceObject: {fileID: 4650890447162091546, guid: e848b10f55eedc2448951992f3da7e91,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1371093575}
-    - targetCorrespondingSourceObject: {fileID: 4650890447162091546, guid: e848b10f55eedc2448951992f3da7e91,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1371093574}
     - targetCorrespondingSourceObject: {fileID: 4650890447162091546, guid: e848b10f55eedc2448951992f3da7e91,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1371093573}
-    - targetCorrespondingSourceObject: {fileID: 4650890447162091546, guid: e848b10f55eedc2448951992f3da7e91,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1371093572}
-    - targetCorrespondingSourceObject: {fileID: 4650890447162091546, guid: e848b10f55eedc2448951992f3da7e91,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1371093571}
   m_SourcePrefab: {fileID: 100100000, guid: e848b10f55eedc2448951992f3da7e91, type: 3}
 --- !u!1 &1371093562 stripped
 GameObject:
@@ -12858,32 +12493,6 @@ MonoBehaviour:
   SelectedSlot: {fileID: 1660019852}
   menuSelection: {fileID: 1660019849}
   rotateSpeed: 5
---- !u!114 &1371093571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1371093567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f81ca4bfcb3b8134c9fb9cb36b02ded8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1371093572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1371093567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9148343e82e90d24ab3d3f50049bf763, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDefaultListener: 1
-  listenerId: 0
 --- !u!65 &1371093573
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12932,41 +12541,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1371093575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1371093567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83f4799bb0d66434b8bb713fef56e7c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Collider: {fileID: 0}
---- !u!114 &1371093576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1371093567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39aa918e6aae49d4793394497512a086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1001 &1375416653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13132,14 +12706,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1378329615}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1378329614}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1378329613}
     - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
         type: 3}
@@ -13206,41 +12772,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1378329614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1378329610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83f4799bb0d66434b8bb713fef56e7c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Collider: {fileID: 0}
---- !u!114 &1378329615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1378329610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39aa918e6aae49d4793394497512a086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 1
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1 &1385984788
 GameObject:
   m_ObjectHideFlags: 0
@@ -13595,15 +13126,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1432941015}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1432941014}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1432941013}
     - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
         type: 3}
       insertIndex: -1
@@ -13648,19 +13171,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1432941013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1432941010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83f4799bb0d66434b8bb713fef56e7c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Collider: {fileID: 0}
 --- !u!65 &1432941014
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13682,28 +13192,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 6, z: 4}
   m_Center: {x: 1, y: 3, z: -2}
---- !u!114 &1432941015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1432941010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39aa918e6aae49d4793394497512a086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 1
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1 &1432948107
 GameObject:
   m_ObjectHideFlags: 0
@@ -13899,14 +13387,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1451323051}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1451323050}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1451323049}
   m_SourcePrefab: {fileID: 100100000, guid: 5075fc9a815fe054ca0727e67285e70c, type: 3}
 --- !u!4 &1451323046 stripped
@@ -13948,41 +13428,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1451323050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1451323047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83f4799bb0d66434b8bb713fef56e7c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Collider: {fileID: 0}
---- !u!114 &1451323051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1451323047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39aa918e6aae49d4793394497512a086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 1
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1 &1468971930
 GameObject:
   m_ObjectHideFlags: 0
@@ -14938,14 +14383,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1632298608}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1632298607}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1632298606}
   m_SourcePrefab: {fileID: 100100000, guid: 5075fc9a815fe054ca0727e67285e70c, type: 3}
 --- !u!4 &1632298603 stripped
@@ -14987,41 +14424,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1632298607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632298604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83f4799bb0d66434b8bb713fef56e7c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Collider: {fileID: 0}
---- !u!114 &1632298608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632298604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39aa918e6aae49d4793394497512a086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 1
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1 &1634242948
 GameObject:
   m_ObjectHideFlags: 0
@@ -15740,15 +15142,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1678853110}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1678853109}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1678853108}
     - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
         type: 3}
       insertIndex: -1
@@ -15793,19 +15187,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1678853108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678853105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83f4799bb0d66434b8bb713fef56e7c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Collider: {fileID: 0}
 --- !u!65 &1678853109
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15827,28 +15208,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 6, z: 4}
   m_Center: {x: 1, y: 3, z: -2}
---- !u!114 &1678853110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678853105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39aa918e6aae49d4793394497512a086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 1
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1 &1699945727
 GameObject:
   m_ObjectHideFlags: 0
@@ -17254,15 +16613,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1880743885}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1880743884}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1880743883}
     - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
         type: 3}
       insertIndex: -1
@@ -17307,19 +16658,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1880743883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1880743880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83f4799bb0d66434b8bb713fef56e7c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Collider: {fileID: 0}
 --- !u!65 &1880743884
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17341,28 +16679,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 6, z: 4}
   m_Center: {x: 1, y: 3, z: -2}
---- !u!114 &1880743885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1880743880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39aa918e6aae49d4793394497512a086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 1
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1001 &1886511239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18158,15 +17474,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2036714155}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 2036714154}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2036714153}
     - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
         type: 3}
       insertIndex: -1
@@ -18211,19 +17519,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2036714153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2036714150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83f4799bb0d66434b8bb713fef56e7c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Collider: {fileID: 0}
 --- !u!65 &2036714154
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18245,28 +17540,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 6, z: 4}
   m_Center: {x: 1, y: 3, z: -2}
---- !u!114 &2036714155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2036714150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39aa918e6aae49d4793394497512a086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 1
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1 &2050025334
 GameObject:
   m_ObjectHideFlags: 0
@@ -18760,14 +18033,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2110401260}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2110401259}
-    - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 2110401258}
     - targetCorrespondingSourceObject: {fileID: 926131204303430952, guid: 5075fc9a815fe054ca0727e67285e70c,
         type: 3}
@@ -18834,41 +18099,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2110401259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2110401255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83f4799bb0d66434b8bb713fef56e7c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Collider: {fileID: 0}
---- !u!114 &2110401260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2110401255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39aa918e6aae49d4793394497512a086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 1
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1001 &2116197580
 PrefabInstance:
   m_ObjectHideFlags: 0

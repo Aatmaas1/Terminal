@@ -1130,6 +1130,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1183343870}
+        m_TargetAssemblyTypeName: AudioListenerDontDestroyOnLoad, Assembly-CSharp
+        m_MethodName: AudioYuumi
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 738575547}
         m_TargetAssemblyTypeName: sc_MainMenuPlay, Assembly-CSharp
         m_MethodName: IsClicked
@@ -1561,14 +1573,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainCamera
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5290854737723808071, guid: ea06adb326b375748b4cde697cd75d85,
+        type: 3}
+      propertyPath: isDefaultListener
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5591268630253455379, guid: ea06adb326b375748b4cde697cd75d85,
+        type: 3}
+      propertyPath: m_listeners.useDefaultListeners
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5591268630253455379, guid: ea06adb326b375748b4cde697cd75d85,
+        type: 3}
+      propertyPath: m_listeners.initialListenerList.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5591268630253455379, guid: ea06adb326b375748b4cde697cd75d85,
+        type: 3}
+      propertyPath: m_listeners.initialListenerList.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5290854737723808071, guid: ea06adb326b375748b4cde697cd75d85, type: 3}
+    - {fileID: 5591268630253455379, guid: ea06adb326b375748b4cde697cd75d85, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 958176078684456754, guid: ea06adb326b375748b4cde697cd75d85,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1657274292}
+      addedObject: {fileID: 1657274290}
   m_SourcePrefab: {fileID: 100100000, guid: ea06adb326b375748b4cde697cd75d85, type: 3}
 --- !u!1 &811310682
 GameObject:
@@ -1645,6 +1679,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 811310682}
   m_CullTransparentMesh: 1
+--- !u!1 &845027897 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 958176078684456754, guid: ea06adb326b375748b4cde697cd75d85,
+    type: 3}
+  m_PrefabInstance: {fileID: 776449806}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &895587630
 GameObject:
   m_ObjectHideFlags: 0
@@ -2528,6 +2568,165 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!1 &1183343866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1183343867}
+  - component: {fileID: 1183343870}
+  - component: {fileID: 1183343869}
+  - component: {fileID: 1183343868}
+  - component: {fileID: 1183343871}
+  - component: {fileID: 1183343872}
+  - component: {fileID: 1183343873}
+  - component: {fileID: 1183343874}
+  m_Layer: 0
+  m_Name: Audio Yuumi
+  m_TagString: Yuumi ^_^
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1183343867
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183343866}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1183343868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183343866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9148343e82e90d24ab3d3f50049bf763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDefaultListener: 1
+  listenerId: 0
+--- !u!114 &1183343869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183343866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39aa918e6aae49d4793394497512a086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!114 &1183343870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183343866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c2951a38e3671340aea89e99f28d6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1183343871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183343866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f81ca4bfcb3b8134c9fb9cb36b02ded8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1183343872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183343866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83f4799bb0d66434b8bb713fef56e7c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Collider: {fileID: 0}
+--- !u!54 &1183343873
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183343866}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1183343874
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183343866}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1190879861
 GameObject:
   m_ObjectHideFlags: 0
@@ -2851,12 +3050,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400261400}
   m_CullTransparentMesh: 1
---- !u!1 &1450680022 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 958176078684456754, guid: ea06adb326b375748b4cde697cd75d85,
-    type: 3}
-  m_PrefabInstance: {fileID: 776449806}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1458106163
 GameObject:
   m_ObjectHideFlags: 0
@@ -3133,14 +3326,18 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 776449806}
   m_PrefabAsset: {fileID: 0}
---- !u!81 &1657274292
-AudioListener:
+--- !u!114 &1657274290
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1450680022}
+  m_GameObject: {fileID: 845027897}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb3678f619e783a489ebd2164db01de1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1684703087
 GameObject:
   m_ObjectHideFlags: 0
@@ -4424,6 +4621,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1183343870}
+        m_TargetAssemblyTypeName: AudioListenerDontDestroyOnLoad, Assembly-CSharp
+        m_MethodName: AudioYuumi
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1190879862}
         m_TargetAssemblyTypeName: sc_GestionBlocs_HC, Assembly-CSharp
         m_MethodName: NewGame
@@ -4664,3 +4873,4 @@ SceneRoots:
   - {fileID: 590631918}
   - {fileID: 401333731}
   - {fileID: 1190879863}
+  - {fileID: 1183343867}
