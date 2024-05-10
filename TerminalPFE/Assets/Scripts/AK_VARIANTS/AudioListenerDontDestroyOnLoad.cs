@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using AK.Wwise;
 
 public class AudioListenerDontDestroyOnLoad : MonoBehaviour
 {
@@ -25,6 +26,11 @@ public class AudioListenerDontDestroyOnLoad : MonoBehaviour
     {
         transform.parent = null;
         DontDestroyOnLoad(gameObject);
+    }
+
+    public void RegisterYuumi()
+    {
+        AkSoundEngine.RegisterGameObj(gameObject);
     }
 
     public void OnLevelWasLoaded(int level)
