@@ -10,9 +10,9 @@ public class sc_ChangeLightColor : MonoBehaviour
     public bool isOpening;
 
     private Material lightMat;
-    private Material cableMat;
+    private List<Material> cableMast;
 
-    public GameObject calbe;
+    public List<GameObject> calbes;
 
     float value = 0;
     float valueClose = 1;
@@ -25,13 +25,20 @@ public class sc_ChangeLightColor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(calbe != null)
-            cableMat = calbe.GetComponent<LineRenderer>().materials[0];
+        if(calbes.Count > 0)
+        {
+            for(int i = 0; i < calbes.Count; i++)
+            {
+                Material mat = calbes[i].GetComponent<LineRenderer>().materials[0];
+                cableMast.Add(mat);
+            }
+        }
+            //cableMat = calbe.GetComponent<LineRenderer>().materials[0];
     }
 
     public void ChangeLights(int lightIndex)
     {
-        if(cableMat != null) 
+        if(cableMast.Count > 0) 
         {
             sc_ScreenShake.instance.ScreenBaseQuick();
 
@@ -45,17 +52,23 @@ public class sc_ChangeLightColor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (cableMat != null)
+        if (cableMast.Count > 0)
         {
             if (isOpening && !isOpen)
             {
                 value = Mathf.MoveTowards(value, 1, Time.deltaTime * speed);
-                cableMat.SetFloat("_ColorChanger", value);
+                foreach (Material mat in cableMast)
+                {
+                    mat.SetFloat("_ColorChanger", value);
+                }
             }
             else if (!isOpening && isOpen)
             {
                 valueClose = Mathf.MoveTowards(valueClose, 0, Time.deltaTime * speed);
-                cableMat.SetFloat("_ColorChanger", valueClose);
+                foreach (Material mat in cableMast)
+                {
+                    mat.SetFloat("_ColorChanger", valueClose);
+                }
             }
         }
     }
