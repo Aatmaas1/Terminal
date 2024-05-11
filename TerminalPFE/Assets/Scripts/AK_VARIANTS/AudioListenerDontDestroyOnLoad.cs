@@ -9,12 +9,8 @@ public class AudioListenerDontDestroyOnLoad : MonoBehaviour
 {
     public static AudioListenerDontDestroyOnLoad instance;
 
-    private AkGameObj gameObj;
-
     public void Awake()
     {
-        gameObj = GetComponent<AkGameObj>();
-
         if (instance == null)
         {
             instance = this;
@@ -24,13 +20,13 @@ public class AudioListenerDontDestroyOnLoad : MonoBehaviour
             Destroy(gameObject);
         }
 
+        
+
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(1))
         {
             transform.position = FindAnyObjectByType<AudioListenerTargetPos>().transform.GetChild(2).transform.GetChild(0).transform.GetChild(2)
                                                                             .transform.GetChild(0).transform.GetChild(0).transform.GetChild(1)
-                                                                            .transform.GetChild(0).transform.position;
-
-            
+                                                                            .transform.GetChild(0).transform.position;          
 
             transform.rotation = FindAnyObjectByType<AudioListenerTargetPos>().transform.GetChild(2).transform.GetChild(0).transform.GetChild(2)
                                                                             .transform.GetChild(0).transform.GetChild(0).transform.GetChild(1)
@@ -46,15 +42,6 @@ public class AudioListenerDontDestroyOnLoad : MonoBehaviour
             transform.rotation = FindAnyObjectByType<AudioListenerTargetPos>().transform.rotation;
             transform.parent = FindAnyObjectByType<AudioListenerTargetPos>().transform;
         }
-    }
-
-    public void Update()
-    {
-        AkSoundEngine.SetObjectPosition(gameObject, FindAnyObjectByType<AudioListenerTargetPos>().transform.GetChild(2).transform.GetChild(0).transform.GetChild(2)
-                                                                            .transform.GetChild(0).transform.GetChild(0).transform.GetChild(1)
-                                                                            .transform.GetChild(0).transform);
-        Debug.Log(gameObj.transform.position);
-        Debug.Log(transform.position);
     }
 
     public void AudioYuumi()

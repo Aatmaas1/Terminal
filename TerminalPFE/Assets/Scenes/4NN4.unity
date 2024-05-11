@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 60088738}
-  m_IndirectSpecularColor: {r: 0.632951, g: 0.23868087, b: 0.12571746, a: 1}
+  m_IndirectSpecularColor: {r: 0.6329508, g: 0.23868087, b: 0.12571749, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3279,37 +3279,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbd8ecd3491e22a4fbd25f28af1557e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerObject: {fileID: 0}
---- !u!114 &471398047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1371093568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9420a156afe21b34da084eabd0bf75f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: d1bbb3b5
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f8ef22c56745c0542b730d2e254dc748,
-      type: 2}
-  useCallbacks: 0
-  Callbacks: []
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
 --- !u!114 &471398048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12369,15 +12338,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5322358518556904294, guid: e848b10f55eedc2448951992f3da7e91,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1945163692}
-    - targetCorrespondingSourceObject: {fileID: 5322358518556904294, guid: e848b10f55eedc2448951992f3da7e91,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1945163691}
     - targetCorrespondingSourceObject: {fileID: 5322358518556904294, guid: e848b10f55eedc2448951992f3da7e91,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1945163690}
+    - targetCorrespondingSourceObject: {fileID: 5322358518556904294, guid: e848b10f55eedc2448951992f3da7e91,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1945163696}
     - targetCorrespondingSourceObject: {fileID: 460487711871196164, guid: e848b10f55eedc2448951992f3da7e91,
         type: 3}
       insertIndex: -1
@@ -12393,15 +12362,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 460487711871196164, guid: e848b10f55eedc2448951992f3da7e91,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 471398047}
-    - targetCorrespondingSourceObject: {fileID: 460487711871196164, guid: e848b10f55eedc2448951992f3da7e91,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 471398046}
     - targetCorrespondingSourceObject: {fileID: 460487711871196164, guid: e848b10f55eedc2448951992f3da7e91,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 471398045}
+    - targetCorrespondingSourceObject: {fileID: 460487711871196164, guid: e848b10f55eedc2448951992f3da7e91,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1371093571}
     - targetCorrespondingSourceObject: {fileID: 4650890447162091546, guid: e848b10f55eedc2448951992f3da7e91,
         type: 3}
       insertIndex: -1
@@ -12518,6 +12487,31 @@ MonoBehaviour:
   SelectedSlot: {fileID: 1660019852}
   menuSelection: {fileID: 1660019849}
   rotateSpeed: 5
+--- !u!114 &1371093571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371093568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef149396dd3cf14f9071ec5d6758cda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PasSol:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f8ef22c56745c0542b730d2e254dc748,
+      type: 2}
+  PasGrille:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  PasSable:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!65 &1371093573
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17329,37 +17323,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbd8ecd3491e22a4fbd25f28af1557e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerObject: {fileID: 0}
---- !u!114 &1945163692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1371093569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9420a156afe21b34da084eabd0bf75f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: d1bbb3b5
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f8ef22c56745c0542b730d2e254dc748,
-      type: 2}
-  useCallbacks: 0
-  Callbacks: []
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
 --- !u!114 &1945163693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17430,6 +17393,31 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.11604585, y: 0.017571524, z: 0.09566186}
   m_Center: {x: 0, y: 0.088000335, z: -0.05}
+--- !u!114 &1945163696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371093569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef149396dd3cf14f9071ec5d6758cda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PasSol:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f8ef22c56745c0542b730d2e254dc748,
+      type: 2}
+  PasGrille:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  PasSable:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &1981568777
 GameObject:
   m_ObjectHideFlags: 3
