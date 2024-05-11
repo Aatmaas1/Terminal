@@ -482,7 +482,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e364e8b048b1b448b41f12b8470ec700
     GuidInternal: 
-    m_lastTime: -8584864534457176090
+    m_lastTime: -8584861778674765542
     List:
     - name: Main
       guid: 251dc717ef0fef42a545f46544a81c52
@@ -498,6 +498,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 251dc717ef0fef42a545f46544a81c52
       Path: SoundBanks\Default Work Unit\Main
+    - name: Main2
+      guid: 8e7644591820404db5f76535700cbb44
+      id: 1764570876
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e364e8b048b1b448b41f12b8470ec700
+      - ElementName: Main2
+        ObjectType: 7
+        guid: 8e7644591820404db5f76535700cbb44
+      Path: SoundBanks\Default Work Unit\Main2
     - name: MUSIQUE
       guid: 64f4e0bf9fde7e45b0047a2f5a7cf03f
       id: 69765534
@@ -512,6 +526,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 64f4e0bf9fde7e45b0047a2f5a7cf03f
       Path: SoundBanks\Default Work Unit\MUSIQUE
+    - name: MUSIQUE2
+      guid: d780445195f6574bb1d02fe3c137463a
+      id: 701539208
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e364e8b048b1b448b41f12b8470ec700
+      - ElementName: MUSIQUE2
+        ObjectType: 7
+        guid: d780445195f6574bb1d02fe3c137463a
+      Path: SoundBanks\Default Work Unit\MUSIQUE2
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -524,7 +552,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 32fcbe829e1db64882c8fd8a959356a5
     GuidInternal: 
-    m_lastTime: -8584864534464956107
+    m_lastTime: -8584861778693172905
     List:
     - name: AMBIANCES
       guid: 0de342e3b708fb408c527d577683a4a1
@@ -591,6 +619,23 @@ MonoBehaviour:
         ObjectType: 4
         guid: 88f90691d8dc94408199bba3ae90acb0
       Path: Events\Default Work Unit\Musique
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Musique2
+      guid: de7368d822c9564a9a4097f51bd33792
+      id: 701539208
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Musique2
+        ObjectType: 4
+        guid: de7368d822c9564a9a4097f51bd33792
+      Path: Events\Default Work Unit\Musique2
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -731,6 +776,66 @@ MonoBehaviour:
       maxAttenuation: 195
       maxDuration: 137.93452
       minDuration: 137.93452
+    - name: Play_MUSIQUE_SIMULATION_1
+      guid: 16527d8251e36346a4ba06f456e3ada8
+      id: 2687430207
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Musique2
+        ObjectType: 4
+        guid: de7368d822c9564a9a4097f51bd33792
+      - ElementName: Play_MUSIQUE_SIMULATION_1
+        ObjectType: 3
+        guid: 16527d8251e36346a4ba06f456e3ada8
+      Path: Events\Default Work Unit\Musique2\Play_MUSIQUE_SIMULATION_1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_MUSIQUE_SIMULATION_2
+      guid: 2aa98b48785738489c36aca2fb946c44
+      id: 2687430204
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Musique2
+        ObjectType: 4
+        guid: de7368d822c9564a9a4097f51bd33792
+      - ElementName: Play_MUSIQUE_SIMULATION_2
+        ObjectType: 3
+        guid: 2aa98b48785738489c36aca2fb946c44
+      Path: Events\Default Work Unit\Musique2\Play_MUSIQUE_SIMULATION_2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_MUSIQUE_SIMULATION_3
+      guid: 7cc9b4bae35a46438777ba8780905152
+      id: 2687430205
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Musique2
+        ObjectType: 4
+        guid: de7368d822c9564a9a4097f51bd33792
+      - ElementName: Play_MUSIQUE_SIMULATION_3
+        ObjectType: 3
+        guid: 7cc9b4bae35a46438777ba8780905152
+      Path: Events\Default Work Unit\Musique2\Play_MUSIQUE_SIMULATION_3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_MUSIQUE_SORTIE
       guid: 744725bf44f15b45a5225570d6f9094b
       id: 3323333764
@@ -851,6 +956,26 @@ MonoBehaviour:
       maxAttenuation: 195
       maxDuration: -1
       minDuration: -1
+    - name: Play_SFX_AMBIANCE_VENT_LOOP_LONG_LEGER
+      guid: 82b53263cccb4d45b81937e2c3d83e5f
+      id: 165306862
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: AMBIANCES
+        ObjectType: 4
+        guid: 0de342e3b708fb408c527d577683a4a1
+      - ElementName: Play_SFX_AMBIANCE_VENT_LOOP_LONG_LEGER
+        ObjectType: 3
+        guid: 82b53263cccb4d45b81937e2c3d83e5f
+      Path: Events\Default Work Unit\AMBIANCES\Play_SFX_AMBIANCE_VENT_LOOP_LONG_LEGER
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_SFX_BOUTON_CLICK_NON
       guid: f02e758b9bfaed4faf252097c2d286d2
       id: 3549990494
@@ -929,8 +1054,8 @@ MonoBehaviour:
         guid: 2c91207f45e384489490bd001c93b4ab
       Path: Events\Default Work Unit\SIMULATION\Play_SFX_BUMPER_BOOST
       maxAttenuation: 0
-      maxDuration: 1.5843333
-      minDuration: 1.5843333
+      maxDuration: 1.7932708
+      minDuration: 1.7932708
     - name: Play_SFX_CONSTRUCTION_ANDRO
       guid: 6e7d090535f43e4485687de6cac5dcfb
       id: 1925718750
@@ -1191,6 +1316,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 19.104605
       minDuration: 19.104605
+    - name: Play_SFX_RISERS_SORTIE_TERMINAL_5_MIEUX
+      guid: 9c220e85a9dd46438d2ec98bc2d3a0e4
+      id: 3970918113
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: SIMULATION
+        ObjectType: 4
+        guid: 21401f346c3df249b57d96bcb18e02f4
+      - ElementName: Play_SFX_RISERS_SORTIE_TERMINAL_5_MIEUX
+        ObjectType: 3
+        guid: 9c220e85a9dd46438d2ec98bc2d3a0e4
+      Path: Events\Default Work Unit\SIMULATION\Play_SFX_RISERS_SORTIE_TERMINAL_5_MIEUX
+      maxAttenuation: 0
+      maxDuration: 4.8701043
+      minDuration: 4.8701043
     - name: Play_SFX_SABLE_SOL
       guid: 9f780296b103c946873cc084896e80cb
       id: 1177195950
@@ -1209,8 +1354,28 @@ MonoBehaviour:
         guid: 9f780296b103c946873cc084896e80cb
       Path: Events\Default Work Unit\AMBIANCES\Play_SFX_SABLE_SOL
       maxAttenuation: 195
-      maxDuration: 24
-      minDuration: 24
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_SAUT_SIMULATION
+      guid: 1f0a2d70182a954caa7e3c7c29eb1a2f
+      id: 3597163389
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: SIMULATION
+        ObjectType: 4
+        guid: 21401f346c3df249b57d96bcb18e02f4
+      - ElementName: Play_SFX_SAUT_SIMULATION
+        ObjectType: 3
+        guid: 1f0a2d70182a954caa7e3c7c29eb1a2f
+      Path: Events\Default Work Unit\SIMULATION\Play_SFX_SAUT_SIMULATION
+      maxAttenuation: 0
+      maxDuration: 1.6835623
+      minDuration: 1.4157015
     - name: Play_SFX_SCAN_OBJ
       guid: c1084b444716f3449eef7216a2cb9faa
       id: 4060256703
@@ -1231,6 +1396,46 @@ MonoBehaviour:
       maxAttenuation: 195
       maxDuration: 5.143417
       minDuration: 5.143417
+    - name: Play_SFX_SIMU_ENTREE_TERMINAL
+      guid: cdaf477101d24d46a6c64284ff9d00b9
+      id: 3243641169
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: SIMULATION
+        ObjectType: 4
+        guid: 21401f346c3df249b57d96bcb18e02f4
+      - ElementName: Play_SFX_SIMU_ENTREE_TERMINAL
+        ObjectType: 3
+        guid: cdaf477101d24d46a6c64284ff9d00b9
+      Path: Events\Default Work Unit\SIMULATION\Play_SFX_SIMU_ENTREE_TERMINAL
+      maxAttenuation: 0
+      maxDuration: 2.7403333
+      minDuration: 2.7403333
+    - name: Play_SFX_SIMU_SORTIE_TERMINAL
+      guid: 44b961925f21344880bde7fb31f5dd9d
+      id: 3086172020
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: SIMULATION
+        ObjectType: 4
+        guid: 21401f346c3df249b57d96bcb18e02f4
+      - ElementName: Play_SFX_SIMU_SORTIE_TERMINAL
+        ObjectType: 3
+        guid: 44b961925f21344880bde7fb31f5dd9d
+      Path: Events\Default Work Unit\SIMULATION\Play_SFX_SIMU_SORTIE_TERMINAL
+      maxAttenuation: 0
+      maxDuration: 3.8172293
+      minDuration: 3.8172293
     - name: Play_SFX_SIMUTOREEL
       guid: b69d1ab9b8d7a84989c2ed4a80163655
       id: 2427864811
@@ -1627,7 +1832,7 @@ MonoBehaviour:
     m_lastTime: -8584991312705959035
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 05000000060000000e000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
