@@ -47,7 +47,19 @@
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-22</Value>

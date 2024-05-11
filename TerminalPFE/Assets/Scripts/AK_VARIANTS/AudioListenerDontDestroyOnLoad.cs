@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using AK.Wwise;
+using Unity.VisualScripting;
 
 public class AudioListenerDontDestroyOnLoad : MonoBehaviour
 {
     public static AudioListenerDontDestroyOnLoad instance;
+
+    private AkGameObj gameObj;
 
     public void Awake()
     {
@@ -19,7 +22,35 @@ public class AudioListenerDontDestroyOnLoad : MonoBehaviour
             Destroy(gameObject);
         }
 
-        transform.parent = FindAnyObjectByType<AudioListenerTargetPos>().transform;
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(1))
+        {
+            transform.position = FindAnyObjectByType<AudioListenerTargetPos>().transform.GetChild(2).transform.GetChild(0).transform.GetChild(2)
+                                                                            .transform.GetChild(0).transform.GetChild(0).transform.GetChild(1)
+                                                                            .transform.GetChild(0).transform.position;
+
+            
+
+            transform.rotation = FindAnyObjectByType<AudioListenerTargetPos>().transform.GetChild(2).transform.GetChild(0).transform.GetChild(2)
+                                                                            .transform.GetChild(0).transform.GetChild(0).transform.GetChild(1)
+                                                                            .transform.GetChild(0).transform.rotation;
+
+            transform.parent = FindAnyObjectByType<AudioListenerTargetPos>().transform.GetChild(2).transform.GetChild(0).transform.GetChild(2)
+                                                                            .transform.GetChild(0).transform.GetChild(0).transform.GetChild(1)
+                                                                            .transform.GetChild(0).transform;
+        }
+        else
+        {
+            transform.position = FindAnyObjectByType<AudioListenerTargetPos>().transform.position;
+            transform.rotation = FindAnyObjectByType<AudioListenerTargetPos>().transform.rotation;
+            transform.parent = FindAnyObjectByType<AudioListenerTargetPos>().transform;
+        }
+    }
+
+    public void Update()
+    {
+        AkSoundEngine.SetObjectPosition(gameObject, FindAnyObjectByType<AudioListenerTargetPos>().transform.GetChild(2).transform.GetChild(0).transform.GetChild(2)
+                                                                            .transform.GetChild(0).transform.GetChild(0).transform.GetChild(1)
+                                                                            .transform.GetChild(0).transform);
     }
 
     public void AudioYuumi()
@@ -35,9 +66,19 @@ public class AudioListenerDontDestroyOnLoad : MonoBehaviour
 
     public void OnLevelWasLoaded(int level)
     {
-        transform.position = FindAnyObjectByType<AudioListenerTargetPos>().transform.position;
-        transform.rotation = FindAnyObjectByType<AudioListenerTargetPos>().transform.rotation;
-        transform.parent = FindAnyObjectByType<AudioListenerTargetPos>().transform;
-        transform.localPosition = transform.localPosition + new Vector3(0.054f, 1.65f, 0.041f);
+        if (level == 1)
+        {
+            transform.position = FindAnyObjectByType<AudioListenerTargetPos>().transform.position;
+            transform.rotation = FindAnyObjectByType<AudioListenerTargetPos>().transform.rotation;
+            transform.parent = FindAnyObjectByType<AudioListenerTargetPos>().transform.GetChild(2).transform.GetChild(0).transform.GetChild(2)
+                                                                            .transform.GetChild(0).transform.GetChild(0).transform.GetChild(1)
+                                                                            .transform.GetChild(0).transform;
+        }
+        else
+        {
+            transform.position = FindAnyObjectByType<AudioListenerTargetPos>().transform.position;
+            transform.rotation = FindAnyObjectByType<AudioListenerTargetPos>().transform.rotation;
+            transform.parent = FindAnyObjectByType<AudioListenerTargetPos>().transform;
+        }
     }
 }

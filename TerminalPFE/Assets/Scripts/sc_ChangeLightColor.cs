@@ -38,39 +38,45 @@ public class sc_ChangeLightColor : MonoBehaviour
 
     public void ChangeLights(int lightIndex)
     {
-        if(cableMast.Count > 0) 
+        if(cableMast != null)
         {
-            sc_ScreenShake.instance.ScreenBaseQuick();
+            if (cableMast.Count > 0)
+            {
+                sc_ScreenShake.instance.ScreenBaseQuick();
 
-            value = 0;
-            valueClose = 1; 
-            index = lightIndex;
-            StartCoroutine(ChangeCableColor());
-        }
+                value = 0;
+                valueClose = 1;
+                index = lightIndex;
+                StartCoroutine(ChangeCableColor());
+            }
+        }      
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (cableMast.Count > 0)
+        if(cableMast != null)
         {
-            if (isOpening && !isOpen)
+            if (cableMast.Count > 0)
             {
-                value = Mathf.MoveTowards(value, 1, Time.deltaTime * speed);
-                foreach (Material mat in cableMast)
+                if (isOpening && !isOpen)
                 {
-                    mat.SetFloat("_ColorChanger", value);
+                    value = Mathf.MoveTowards(value, 1, Time.deltaTime * speed);
+                    foreach (Material mat in cableMast)
+                    {
+                        mat.SetFloat("_ColorChanger", value);
+                    }
+                }
+                else if (!isOpening && isOpen)
+                {
+                    valueClose = Mathf.MoveTowards(valueClose, 0, Time.deltaTime * speed);
+                    foreach (Material mat in cableMast)
+                    {
+                        mat.SetFloat("_ColorChanger", valueClose);
+                    }
                 }
             }
-            else if (!isOpening && isOpen)
-            {
-                valueClose = Mathf.MoveTowards(valueClose, 0, Time.deltaTime * speed);
-                foreach (Material mat in cableMast)
-                {
-                    mat.SetFloat("_ColorChanger", valueClose);
-                }
-            }
-        }
+        }       
     }
 
     IEnumerator ChangeCableColor()
