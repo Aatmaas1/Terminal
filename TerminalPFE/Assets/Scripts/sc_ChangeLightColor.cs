@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -10,8 +9,8 @@ public class sc_ChangeLightColor : MonoBehaviour
     public bool isOpen;
     public bool isOpening;
 
-    //private Material lightMat;
-    public List<Material> cableMast;
+    private Material lightMat;
+    private List<Material> cableMast;
 
     public List<GameObject> calbes;
 
@@ -39,21 +38,45 @@ public class sc_ChangeLightColor : MonoBehaviour
 
     public void ChangeLights(int lightIndex)
     {
-        if(cableMast.Count > 0) 
+        if(cableMast != null)
         {
-            sc_ScreenShake.instance.ScreenBaseQuick();
+            if (cableMast.Count > 0)
+            {
+                sc_ScreenShake.instance.ScreenBaseQuick();
 
-            value = 0;
-            valueClose = 1; 
-            index = lightIndex;
-            StartCoroutine(ChangeCableColor());
-        }
+                value = 0;
+                valueClose = 1;
+                index = lightIndex;
+                StartCoroutine(ChangeCableColor());
+            }
+        }      
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if(cableMast != null)
+        {
+            if (cableMast.Count > 0)
+            {
+                if (isOpening && !isOpen)
+                {
+                    value = Mathf.MoveTowards(value, 1, Time.deltaTime * speed);
+                    foreach (Material mat in cableMast)
+                    {
+                        mat.SetFloat("_ColorChanger", value);
+                    }
+                }
+                else if (!isOpening && isOpen)
+                {
+                    valueClose = Mathf.MoveTowards(valueClose, 0, Time.deltaTime * speed);
+                    foreach (Material mat in cableMast)
+                    {
+                        mat.SetFloat("_ColorChanger", valueClose);
+                    }
+                }
+            }
+        }       
     }
 
     IEnumerator ChangeCableColor()
@@ -62,64 +85,28 @@ public class sc_ChangeLightColor : MonoBehaviour
         {
             isOpening = true;
 
-            float lerper = 0;
-
-            while(lerper < 1)
-            {
-                float amount = Mathf.Lerp(0, 1, lerper);
-                if (cableMast.Count > 0)
-                {
-                    foreach (Material mat in cableMast)
-                    {
-                        mat.SetFloat("_ColorChanger", amount);
-                    }
-                }
-                lerper += Time.deltaTime;
-                yield return null;
-            }
-
-            isOpen = true;
-
-            sc_ScreenShake.instance.ScreenBaseQuick();
-
+            yield return new WaitUntil(() => value >= 1);
             akPortes.ChangeLight();
-            //ChangeColor(index);
+            ChangeColor(index);
         }
         else if (isOpen)
         {
-            isOpening = true;
+            isOpening = false;
 
-            float lerper = 0;
+            yield return new WaitUntil(() => value >= 0);
 
-            while (lerper < 1)
-            {
-                float amount = Mathf.Lerp(1, 0, lerper);
-                if (cableMast.Count > 0)
-                {
-                    foreach (Material mat in cableMast)
-                    {
-                        mat.SetFloat("_ColorChanger", amount);
-                    }
-                }
-                lerper += Time.deltaTime;
-                yield return null;
-            }
-
-            isOpen = false;
-
-            akPortes.ChangeLight();
+            ChangeColor(index);
         }
 
     }
 
-    /*
     public void ChangeColor(int indexMat)
     {
-        //lightMat = GetComponent<MeshRenderer>().materials[indexMat];
+        lightMat = GetComponent<MeshRenderer>().materials[indexMat];
 
         if (isOpen)//la porte est ouverte donc on ferme
         {
-            //lightMat.SetFloat("_ColorChanger", 0);
+            lightMat.SetFloat("_ColorChanger", 0);
             isOpen = false;
             //sc_ScreenShake.instance.ScreenBaseQuick();
 
@@ -127,11 +114,11 @@ public class sc_ChangeLightColor : MonoBehaviour
 
         else //la porte est fermée donc on ouvre
         {
-            //lightMat.SetFloat("_ColorChanger", 1);
+            lightMat.SetFloat("_ColorChanger", 1);
             isOpen = true;
             sc_ScreenShake.instance.ScreenBaseQuick();
 
         }
-    }*/
+    }
 
 }

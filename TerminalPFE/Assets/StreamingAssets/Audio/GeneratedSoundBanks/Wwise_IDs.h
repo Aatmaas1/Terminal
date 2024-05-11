@@ -19,12 +19,16 @@ namespace AK
         static const AkUniqueID PLAY_MUSIQUE_INTO_DEMARCHE_DIFF = 1666445414U;
         static const AkUniqueID PLAY_MUSIQUE_OUTRO = 946375059U;
         static const AkUniqueID PLAY_MUSIQUE_SALLE_WALL_E = 1291952458U;
+        static const AkUniqueID PLAY_MUSIQUE_SIMULATION_1 = 2687430207U;
+        static const AkUniqueID PLAY_MUSIQUE_SIMULATION_2 = 2687430204U;
+        static const AkUniqueID PLAY_MUSIQUE_SIMULATION_3 = 2687430205U;
         static const AkUniqueID PLAY_MUSIQUE_SORTIE = 3323333764U;
         static const AkUniqueID PLAY_PROPOSITIONSIMULATION = 388074695U;
         static const AkUniqueID PLAY_RANDOMCONTAINERTEST = 2623669360U;
         static const AkUniqueID PLAY_RANDOMISEUR_PAS_SABLE = 128182366U;
         static const AkUniqueID PLAY_SFX_AMBIANCE_CROWD = 1326775932U;
         static const AkUniqueID PLAY_SFX_AMBIANCE_VENT_LOOP_LONG = 490583398U;
+        static const AkUniqueID PLAY_SFX_AMBIANCE_VENT_LOOP_LONG_LEGER = 165306862U;
         static const AkUniqueID PLAY_SFX_BOUTON_CLICK_NON = 3549990494U;
         static const AkUniqueID PLAY_SFX_BOUTON_CLICK_OUI = 3382067122U;
         static const AkUniqueID PLAY_SFX_BOUTONS_PARCOURIR = 1055529180U;
@@ -42,8 +46,12 @@ namespace AK
         static const AkUniqueID PLAY_SFX_PORTE_FINALE = 2394956354U;
         static const AkUniqueID PLAY_SFX_PORTES_CHANGELIGHT = 140330310U;
         static const AkUniqueID PLAY_SFX_REELTOSIMU_2 = 3337838948U;
+        static const AkUniqueID PLAY_SFX_RISERS_SORTIE_TERMINAL_5_MIEUX = 3970918113U;
         static const AkUniqueID PLAY_SFX_SABLE_SOL = 1177195950U;
+        static const AkUniqueID PLAY_SFX_SAUT_SIMULATION = 3597163389U;
         static const AkUniqueID PLAY_SFX_SCAN_OBJ = 4060256703U;
+        static const AkUniqueID PLAY_SFX_SIMU_ENTREE_TERMINAL = 3243641169U;
+        static const AkUniqueID PLAY_SFX_SIMU_SORTIE_TERMINAL = 3086172020U;
         static const AkUniqueID PLAY_SFX_SIMUTOREEL = 2427864811U;
         static const AkUniqueID PLAY_SFX_TERMINAL_BOUCLE = 2080143493U;
         static const AkUniqueID PLAY_SFX_TERMINAL_FERMETURE = 2337403756U;
@@ -67,7 +75,9 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID MAIN = 3161908922U;
+        static const AkUniqueID MAIN2 = 1764570876U;
         static const AkUniqueID MUSIQUE = 69765534U;
+        static const AkUniqueID MUSIQUE2 = 701539208U;
     } // namespace BANKS
 
     namespace BUSSES

@@ -13,4 +13,14 @@ public class AK_POSTEVENT_2_AM : MonoBehaviour
         playEvent.Post(gameObject);
         playEvent2.Post(gameObject);
     }
+
+    public void PostEvent1()
+    {
+        playEvent.Post(gameObject);
+    }
+
+    public void PostEvent2()
+    {
+        playEvent2.Post(gameObject);
+    }
 }

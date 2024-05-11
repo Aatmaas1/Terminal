@@ -3,186 +3,283 @@
 	<AudioObjects>
 		<WorkUnit Name="Musique" ID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}" OwnerID="{AB2030D7-FEB3-4931-8F66-2372D24A8919}" PersistMode="Nested">
 			<ChildrenList>
-				<Sound Name="4NN4_MASTERING2" ID="{1368F824-5DE1-485B-9779-1915D015E25B}" ShortID="109313220">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-10</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
-						</Reference>
-					</ReferenceList>
+				<Folder Name="MUSIQUE" ID="{CE9E7DE2-5F74-4A71-AB97-8882202747E7}" ShortID="476594068">
 					<ChildrenList>
-						<AudioFileSource Name="4NN4_MASTERING2" ID="{D2FE2C47-3683-4EE4-8662-AEAB53AA1706}">
-							<Language>SFX</Language>
-							<AudioFile>4NN4_MASTERING2.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="352465723"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="4NN4_MASTERING2" ID="{D2FE2C47-3683-4EE4-8662-AEAB53AA1706}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="PropositionSimulation" ID="{4E2D0F9B-3665-4992-8FFD-CD80A53FF955}" ShortID="266907452">
-					<PropertyList>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-10</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="PropositionSimulation" ID="{1FC06EA9-0DBC-4B4E-8445-814EE0DF7E56}">
-							<Language>SFX</Language>
-							<AudioFile>PropositionSimulation.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="31641563"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="PropositionSimulation" ID="{1FC06EA9-0DBC-4B4E-8445-814EE0DF7E56}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="MUSIQUE_SALLE_WALL_E" ID="{6F719EF3-4715-467F-8321-8EDE0830DEE8}" ShortID="117374398">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="CenterPercentage" Type="int32">
-							<ValueList>
-								<Value>25</Value>
-							</ValueList>
-						</Property>
-						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-						<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
-						<Property Name="LoopCount" Type="int32" Value="5"/>
-						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-10</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Attenuation">
-							<ObjectRef Name="test" ID="{83FC4427-373B-423C-9734-382CCBEF1630}" WorkUnitID="{1AEB090E-561D-4FBA-B8F3-272DEE9A77E2}"/>
-						</Reference>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="MUSIQUE_SALLE_WALL_E" ID="{556EEC7E-457F-40B9-B92B-E62BB58450C3}">
+						<Sound Name="4NN4_MASTERING2" ID="{1368F824-5DE1-485B-9779-1915D015E25B}" ShortID="109313220">
 							<PropertyList>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>MUSIQUE_SALLE_WALL_E.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="586738246"/>
-							</MediaIDList>
-						</AudioFileSource>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="4NN4_MASTERING2" ID="{D2FE2C47-3683-4EE4-8662-AEAB53AA1706}">
+									<Language>SFX</Language>
+									<AudioFile>4NN4_MASTERING2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="352465723"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="4NN4_MASTERING2" ID="{D2FE2C47-3683-4EE4-8662-AEAB53AA1706}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MUSIQUE_SORTIE" ID="{6BAE3E81-A6B6-4882-BFD2-A00BE2671563}" ShortID="853707218">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MUSIQUE_SORTIE" ID="{942EACFD-D6C5-4CEB-86BE-80FD4F33C3B2}">
+									<Language>SFX</Language>
+									<AudioFile>MUSIQUE_SORTIE.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="251354379"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MUSIQUE_SORTIE" ID="{942EACFD-D6C5-4CEB-86BE-80FD4F33C3B2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MUSIQUE_SALLE_WALL_E" ID="{6F719EF3-4715-467F-8321-8EDE0830DEE8}" ShortID="117374398">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>25</Value>
+									</ValueList>
+								</Property>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+								<Property Name="LoopCount" Type="int32" Value="5"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="test" ID="{83FC4427-373B-423C-9734-382CCBEF1630}" WorkUnitID="{1AEB090E-561D-4FBA-B8F3-272DEE9A77E2}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MUSIQUE_SALLE_WALL_E" ID="{556EEC7E-457F-40B9-B92B-E62BB58450C3}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>MUSIQUE_SALLE_WALL_E.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="586738246"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{E2018A6A-FA91-41C5-AE50-74D0BD5EF21A}"/>
+							</PositioningInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="MUSIQUE_SALLE_WALL_E" ID="{556EEC7E-457F-40B9-B92B-E62BB58450C3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PropositionSimulation" ID="{4E2D0F9B-3665-4992-8FFD-CD80A53FF955}" ShortID="266907452">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PropositionSimulation" ID="{1FC06EA9-0DBC-4B4E-8445-814EE0DF7E56}">
+									<Language>SFX</Language>
+									<AudioFile>PropositionSimulation.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="31641563"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="PropositionSimulation" ID="{1FC06EA9-0DBC-4B4E-8445-814EE0DF7E56}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MUSIQUE_INTO_DEMARCHE_DIFF" ID="{8B8C3E5A-05B6-42D4-8A92-C96C6804146C}" ShortID="1054048500">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MUSIQUE_INTO_DEMARCHE_DIFF" ID="{377AEC87-7156-43DF-A02B-704AA29F75AE}">
+									<Language>SFX</Language>
+									<AudioFile>MUSIQUE_INTO_DEMARCHE_DIFF.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="771713541"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MUSIQUE_INTO_DEMARCHE_DIFF" ID="{377AEC87-7156-43DF-A02B-704AA29F75AE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MUSIQUE_OUTRO" ID="{51E5DC8F-772C-4F4E-B3E7-94D47AD76AC7}" ShortID="394132457">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MUSIQUE_OUTRO" ID="{DA9BA9CC-D809-4501-B48A-FD2C092DB502}">
+									<Language>SFX</Language>
+									<AudioFile>MUSIQUE_OUTRO.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="843582853"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MUSIQUE_OUTRO" ID="{DA9BA9CC-D809-4501-B48A-FD2C092DB502}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-					<PositioningInfo>
-						<Panner Name="" ID="{E2018A6A-FA91-41C5-AE50-74D0BD5EF21A}"/>
-					</PositioningInfo>
-					<ActiveSourceList>
-						<ActiveSource Name="MUSIQUE_SALLE_WALL_E" ID="{556EEC7E-457F-40B9-B92B-E62BB58450C3}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="MUSIQUE_OUTRO" ID="{51E5DC8F-772C-4F4E-B3E7-94D47AD76AC7}" ShortID="394132457">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
-						</Reference>
-					</ReferenceList>
+				</Folder>
+				<Folder Name="MUSIQUE2" ID="{98295D3A-82BF-4605-8F08-E31B244F1F6F}" ShortID="182268845">
 					<ChildrenList>
-						<AudioFileSource Name="MUSIQUE_OUTRO" ID="{DA9BA9CC-D809-4501-B48A-FD2C092DB502}">
-							<Language>SFX</Language>
-							<AudioFile>MUSIQUE_OUTRO.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="843582853"/>
-							</MediaIDList>
-						</AudioFileSource>
+						<Sound Name="MUSIQUE_SIMULATION_1" ID="{073FB7F6-B85A-49CC-B31B-49A4A1BF0B46}" ShortID="648927800">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MUSIQUE_SIMULATION_1" ID="{18AC3F6E-8BE9-43DF-9D7C-F1DF8D6ADD93}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.049308387757982"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.10280622596877"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>MUSIQUE_SIMULATION_1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="794636167"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MUSIQUE_SIMULATION_1" ID="{18AC3F6E-8BE9-43DF-9D7C-F1DF8D6ADD93}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MUSIQUE_SIMULATION_2" ID="{178CD6FC-3BCA-4C62-94F3-26299FE22E0D}" ShortID="813255615">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MUSIQUE_SIMULATION_2" ID="{6B73FE57-205F-4CC4-A469-30DAC24896BF}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0829507206254081"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.327936476834054"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>MUSIQUE_SIMULATION_2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="497442186"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MUSIQUE_SIMULATION_2" ID="{6B73FE57-205F-4CC4-A469-30DAC24896BF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MUSIQUE_SIMULATION_3" ID="{435FD24D-F821-4FCF-9364-256481C44D0F}" ShortID="196995396">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MUSIQUE_SIMULATION_3" ID="{424CAF84-BF3A-47E8-8B05-0144C6A028C8}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0717213003636346"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>MUSIQUE_SIMULATION_3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="861859393"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MUSIQUE_SIMULATION_3" ID="{424CAF84-BF3A-47E8-8B05-0144C6A028C8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="MUSIQUE_OUTRO" ID="{DA9BA9CC-D809-4501-B48A-FD2C092DB502}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="MUSIQUE_SORTIE" ID="{6BAE3E81-A6B6-4882-BFD2-A00BE2671563}" ShortID="853707218">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="MUSIQUE_SORTIE" ID="{942EACFD-D6C5-4CEB-86BE-80FD4F33C3B2}">
-							<Language>SFX</Language>
-							<AudioFile>MUSIQUE_SORTIE.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="251354379"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="MUSIQUE_SORTIE" ID="{942EACFD-D6C5-4CEB-86BE-80FD4F33C3B2}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="MUSIQUE_INTO_DEMARCHE_DIFF" ID="{8B8C3E5A-05B6-42D4-8A92-C96C6804146C}" ShortID="1054048500">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-6</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="MUSIQUE_INTO_DEMARCHE_DIFF" ID="{377AEC87-7156-43DF-A02B-704AA29F75AE}">
-							<Language>SFX</Language>
-							<AudioFile>MUSIQUE_INTO_DEMARCHE_DIFF.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="771713541"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="MUSIQUE_INTO_DEMARCHE_DIFF" ID="{377AEC87-7156-43DF-A02B-704AA29F75AE}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

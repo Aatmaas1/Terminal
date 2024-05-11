@@ -30,9 +30,16 @@
 								<MediaID ID="1004497866"/>
 							</MediaIDList>
 						</AudioFileSource>
+						<AudioFileSource Name="SFX_BUMPER_REWORK" ID="{F8E1C979-D96E-4B5A-B7B7-79F70DD1F510}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_BUMPER_REWORK.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="556248774"/>
+							</MediaIDList>
+						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="SFX_BUMPER_BOOST" ID="{0140BF3F-7097-46B5-85CE-E70B489C67A8}" Platform="Linked"/>
+						<ActiveSource Name="SFX_BUMPER_REWORK" ID="{F8E1C979-D96E-4B5A-B7B7-79F70DD1F510}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<RandomSequenceContainer Name="SFX_PERLES_TUILES" ID="{E70EAE05-4174-4828-9C7E-C14582121F5B}" ShortID="948048753">
@@ -40,7 +47,19 @@
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-22</Value>
@@ -278,6 +297,126 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<Sound Name="SFX_SAUT_SIMULATION" ID="{56C0848C-4621-4C29-86FB-EA60E8918CD3}" ShortID="170693640">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{CEAEB26D-F01D-468E-834C-DD10F7EE46A2}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="150"/>
+											<Property Name="Min" Type="Real64" Value="-150"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_SAUT_SIMULATION" ID="{29FEAB1F-2210-4399-9B5E-5E75207439AC}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_SAUT_SIMULATION.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="73036343"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_SAUT_SIMULATION" ID="{29FEAB1F-2210-4399-9B5E-5E75207439AC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SFX_RISERS_SORTIE_TERMINAL_5_MIEUX" ID="{817DFC6F-ECA1-4477-BBCD-10B5217494AF}" ShortID="544052728">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_RISERS_SORTIE_TERMINAL_5_MIEUX" ID="{8F3C387F-6971-4C2D-A72C-BA13A3B4749C}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_RISERS_SORTIE_TERMINAL_5_MIEUX.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="760112334"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_RISERS_SORTIE_TERMINAL_5_MIEUX" ID="{8F3C387F-6971-4C2D-A72C-BA13A3B4749C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SFX_SIMU_ENTREE_TERMINAL" ID="{CC1AF4E1-18DF-42A8-88E1-DE3147B2B54F}" ShortID="1029357714">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_SIMU_ENTREE_TERMINAL" ID="{E4EF44EC-5D49-4DBB-AEA8-86BA2C94EED0}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_SIMU_ENTREE_TERMINAL.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="835461043"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_SIMU_ENTREE_TERMINAL" ID="{E4EF44EC-5D49-4DBB-AEA8-86BA2C94EED0}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SFX_SIMU_SORTIE_TERMINAL" ID="{88B0353D-2671-413A-937A-661067206380}" ShortID="475948748">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_SIMU_SORTIE_TERMINAL" ID="{CF9E63E1-1270-454D-B86C-E0DF00FD2786}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_SIMU_SORTIE_TERMINAL.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="343033165"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_SIMU_SORTIE_TERMINAL" ID="{CF9E63E1-1270-454D-B86C-E0DF00FD2786}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

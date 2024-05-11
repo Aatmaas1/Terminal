@@ -123,6 +123,8 @@ namespace StarterAssets
         private int _animIDFreeFall;
         private int _animIDMotionSpeed;
 
+        public AK.Wwise.Event jumpEvent;
+
 
 #if ENABLE_INPUT_SYSTEM
         private PlayerInput _playerInput;
@@ -368,6 +370,8 @@ namespace StarterAssets
                     _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
 
                     _coyoteTime = 0;
+
+                    jumpEvent.Post(gameObject);
 
                     // update animator if using character
                     if (_hasAnimator)
