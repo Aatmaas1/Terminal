@@ -13,6 +13,8 @@ public class AudioListenerDontDestroyOnLoad : MonoBehaviour
 
     public void Awake()
     {
+        gameObj = GetComponent<AkGameObj>();
+
         if (instance == null)
         {
             instance = this;
@@ -51,6 +53,8 @@ public class AudioListenerDontDestroyOnLoad : MonoBehaviour
         AkSoundEngine.SetObjectPosition(gameObject, FindAnyObjectByType<AudioListenerTargetPos>().transform.GetChild(2).transform.GetChild(0).transform.GetChild(2)
                                                                             .transform.GetChild(0).transform.GetChild(0).transform.GetChild(1)
                                                                             .transform.GetChild(0).transform);
+        Debug.Log(gameObj.transform.position);
+        Debug.Log(transform.position);
     }
 
     public void AudioYuumi()
