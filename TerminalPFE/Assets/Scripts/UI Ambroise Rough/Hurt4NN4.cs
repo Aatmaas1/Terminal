@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using AK.Wwise;
 
 public class Hurt4NN4 : MonoBehaviour
 {
@@ -13,7 +14,9 @@ public class Hurt4NN4 : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-          
+
+            StartCoroutine(LPF());
+
             StartCoroutine(WaitAnimHurt());
 
 
@@ -34,5 +37,28 @@ public class Hurt4NN4 : MonoBehaviour
         yield return new WaitForSeconds(6f);
         sc_PlayerManager_HC.Instance.SetInputMode("Player");
         rope4NN4ToPlanner.SetActive(true);
+    }
+
+    public float timeBeforeLPFRemoval;
+    public float timeToNoLPF;
+    public float startingLPFValue;
+    public float targetLPFValue;
+    
+
+    public IEnumerator LPF()
+    {
+        AkSoundEngine.SetRTPCValue("BatterieFaible", 100);
+
+        yield return new WaitForSeconds(timeBeforeLPFRemoval);
+
+        float time = 0f;
+
+        while (time < timeToNoLPF)
+        {
+            time += Time.deltaTime;
+            AkSoundEngine.SetRTPCValue("BatterieFaible", Mathf.Lerp(startingLPFValue, targetLPFValue, time / timeToNoLPF));
+            yield return null;
+            StopCoroutine(LPF());
+        }
     }
 }

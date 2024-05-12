@@ -4651,6 +4651,10 @@ MonoBehaviour:
   PlayerAnimator: {fileID: 151071937}
   rope4NN4ToPlanner: {fileID: 715431665}
   vCam: {fileID: 86321398}
+  timeBeforeLPFRemoval: 4
+  timeToNoLPF: 3
+  startingLPFValue: 60
+  targetLPFValue: 30
 --- !u!65 &680603860
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5245,6 +5249,10 @@ MonoBehaviour:
   PlayerAnimator: {fileID: 151071937}
   rope4NN4ToPlanner: {fileID: 715431665}
   vCam: {fileID: 376036607}
+  timeBeforeLPFRemoval: 4
+  timeToNoLPF: 3
+  startingLPFValue: 60
+  targetLPFValue: 10
 --- !u!65 &728788452
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6276,7 +6284,9 @@ GameObject:
   - component: {fileID: 902851184}
   - component: {fileID: 902851183}
   - component: {fileID: 902851186}
+  - component: {fileID: 902851188}
   - component: {fileID: 902851185}
+  - component: {fileID: 902851187}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -6369,6 +6379,58 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 6a72cfaba9b40954b9270810c5e36f89,
+      type: 2}
+  decodeBank: 0
+  overrideLoadSetting: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
+--- !u!114 &902851187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902851182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2149a5d61e6e2cd41ae40badec2c1e90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0ba00f15e11741e4ba9447c4585453da,
+      type: 2}
+  decodeBank: 0
+  overrideLoadSetting: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
+--- !u!114 &902851188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902851182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2149a5d61e6e2cd41ae40badec2c1e90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7da33f53f37a0e6488defdb0a2810bb1,
       type: 2}
   decodeBank: 0
   overrideLoadSetting: 0
@@ -14544,6 +14606,8 @@ MonoBehaviour:
   timeToFade: 5
   timeToLoad: 6
   postEvent: {fileID: 1634242952}
+  initialLPF: 60
+  timeToFullLPF: 20
 --- !u!114 &1634242952
 MonoBehaviour:
   m_ObjectHideFlags: 0

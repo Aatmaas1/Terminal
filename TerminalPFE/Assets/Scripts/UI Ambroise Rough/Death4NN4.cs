@@ -64,6 +64,7 @@ public class Death4NN4 : MonoBehaviour
 
         yield return new WaitForSeconds(timeToLoad);
         //sc_PlayerManager_HC.Instance.SetInputMode("Player");
+        AkSoundEngine.SetRTPCValue("BatterieFaible", 0f);
 
         AudioListenerDontDestroyOnLoad.instance.AudioYuumi();
 
@@ -78,5 +79,20 @@ public class Death4NN4 : MonoBehaviour
             PlayerAnimator.gameObject.GetComponent<ThirdPersonController>().MoveSpeed = 4 * (1f - (0.75f * i * 0.005f));
             yield return new WaitForSeconds(0.01f);
         }
+    }
+
+    public float initialLPF;
+    public float timeToFullLPF;
+
+    IEnumerator LPFDeath()
+    {
+        float time = 0f;
+
+        while(time < timeToFullLPF)
+        {
+            AkSoundEngine.SetRTPCValue("BatterieFaible", Mathf.Lerp(initialLPF, 100, time / timeToFullLPF));
+            yield return null;
+            StopCoroutine(LPFDeath());
+        }      
     }
 }

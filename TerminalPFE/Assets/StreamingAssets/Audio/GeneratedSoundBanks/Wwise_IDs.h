@@ -68,6 +68,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID BATTERIEFAIBLE = 2931768338U;
         static const AkUniqueID VOLUME = 2415836739U;
     } // namespace GAME_PARAMETERS
 
@@ -83,6 +84,7 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID SFX = 393239870U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{506CDC56-82AD-0BB6-E4AA-9010D3B631A8}">
+		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{5C92F974-5277-FDAE-A2A5-FD2E91960E77}">
 			<ShortName>MUSIQUE</ShortName>
 			<Path>MUSIQUE.bnk</Path>
 			<Media>
@@ -110,7 +110,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E9594AC1-23D4-6715-6498-264371FCFF06}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{3A4829A9-AA7F-6F19-79E7-39218777F918}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -130,6 +130,7 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="393239870" Name="SFX"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 			<AuxBusses>
@@ -197,6 +198,7 @@
 			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="2415836739" Name="VOLUME"/>
+				<GameParameter Id="2931768338" Name="BatterieFaible"/>
 			</GameParameters>
 			<AcousticTextures>
 				<AcousticTexture Id="386080821" Name="BETON">
@@ -336,7 +338,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1764570876" Type="User" Language="SFX" Hash="{172FD47E-5100-2DE3-62AF-977348BC9A58}">
+		<SoundBank Id="1764570876" Type="User" Language="SFX" Hash="{D708139C-BB83-9414-338A-13DA61438F4B}">
 			<ShortName>Main2</ShortName>
 			<Path>Main2.bnk</Path>
 			<Media>
@@ -490,7 +492,7 @@
 				<Event Id="3185533582" Name="Stop_SFX_AMBIANCE_CROWD" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{FE80B999-1031-A795-CD89-C2D38F71710C}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{1BD8AFD7-97F8-BF27-6B3A-DE7BF21ED419}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -750,5 +752,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{03680B8C-A679-48F9-7D61-54BC86F5D08B}</FileHash>
+	<FileHash>{A24DDD93-1E3E-AD72-3C22-09E1304C463A}</FileHash>
 </SoundBanksInfo>

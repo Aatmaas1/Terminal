@@ -20,7 +20,7 @@ public class AudioListenerDontDestroyOnLoad : MonoBehaviour
             Destroy(gameObject);
         }
 
-        
+        AkSoundEngine.SetRTPCValue("BatterieFaible", 0);
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(1))
         {

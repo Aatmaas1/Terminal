@@ -317,7 +317,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: a496d604dfb54f43bca9994076f26b0d
     GuidInternal: 
-    m_lastTime: -8584861557124443772
+    m_lastTime: -8584861011351092065
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -346,10 +346,13 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 62a47c4cc463bf47a06a1483820419db
       - ElementName: ReverbMaster
         ObjectType: 1
         guid: 42842fd81596364b96a11bfd164ea25a
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbMaster
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\ReverbMaster
     - name: RoomHall
       guid: 5100af0e06ddf247a3ae3d12e76eb21f
       id: 484847633
@@ -363,13 +366,16 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 62a47c4cc463bf47a06a1483820419db
       - ElementName: ReverbMaster
         ObjectType: 1
         guid: 42842fd81596364b96a11bfd164ea25a
       - ElementName: RoomHall
         ObjectType: 1
         guid: 5100af0e06ddf247a3ae3d12e76eb21f
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbMaster\RoomHall
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\ReverbMaster\RoomHall
     - name: RoomLarge
       guid: be166937e0ba2d4e95c765d3fa177e44
       id: 3553615197
@@ -383,13 +389,16 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 62a47c4cc463bf47a06a1483820419db
       - ElementName: ReverbMaster
         ObjectType: 1
         guid: 42842fd81596364b96a11bfd164ea25a
       - ElementName: RoomLarge
         ObjectType: 1
         guid: be166937e0ba2d4e95c765d3fa177e44
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbMaster\RoomLarge
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\ReverbMaster\RoomLarge
     - name: RoomMedium
       guid: 32905c8804ebb44ebbb7de3043b128d3
       id: 4002769053
@@ -403,13 +412,16 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 62a47c4cc463bf47a06a1483820419db
       - ElementName: ReverbMaster
         ObjectType: 1
         guid: 42842fd81596364b96a11bfd164ea25a
       - ElementName: RoomMedium
         ObjectType: 1
         guid: 32905c8804ebb44ebbb7de3043b128d3
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbMaster\RoomMedium
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\ReverbMaster\RoomMedium
     - name: RoomRefectoire
       guid: 2173be36c1600044949ac133dd1d3d20
       id: 3501257686
@@ -423,13 +435,16 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 62a47c4cc463bf47a06a1483820419db
       - ElementName: ReverbMaster
         ObjectType: 1
         guid: 42842fd81596364b96a11bfd164ea25a
       - ElementName: RoomRefectoire
         ObjectType: 1
         guid: 2173be36c1600044949ac133dd1d3d20
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbMaster\RoomRefectoire
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\ReverbMaster\RoomRefectoire
     - name: RoomSmall
       guid: 7569fd984a4291458ccb5a59c3ef30ef
       id: 3205342581
@@ -443,13 +458,16 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 62a47c4cc463bf47a06a1483820419db
       - ElementName: ReverbMaster
         ObjectType: 1
         guid: 42842fd81596364b96a11bfd164ea25a
       - ElementName: RoomSmall
         ObjectType: 1
         guid: 7569fd984a4291458ccb5a59c3ef30ef
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbMaster\RoomSmall
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\ReverbMaster\RoomSmall
     - name: RoomStairs
       guid: 68fe7de147d8ad418b2c85e15ce45f27
       id: 654671026
@@ -463,13 +481,33 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 62a47c4cc463bf47a06a1483820419db
       - ElementName: ReverbMaster
         ObjectType: 1
         guid: 42842fd81596364b96a11bfd164ea25a
       - ElementName: RoomStairs
         ObjectType: 1
         guid: 68fe7de147d8ad418b2c85e15ce45f27
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbMaster\RoomStairs
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\ReverbMaster\RoomStairs
+    - name: SFX
+      guid: 62a47c4cc463bf47a06a1483820419db
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a496d604dfb54f43bca9994076f26b0d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 62a47c4cc463bf47a06a1483820419db
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -1773,8 +1811,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: f463c39a5f915547a8ea853e5e7d5179
     GuidInternal: 
-    m_lastTime: -8584886743172941623
+    m_lastTime: -8584861034447783829
     List:
+    - name: BatterieFaible
+      guid: 504c39daeea7a9488edc2be5e4831b8b
+      id: 2931768338
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f463c39a5f915547a8ea853e5e7d5179
+      - ElementName: BatterieFaible
+        ObjectType: 13
+        guid: 504c39daeea7a9488edc2be5e4831b8b
+      Path: Game Parameters\Default Work Unit\BatterieFaible
     - name: VOLUME
       guid: f266c54bcdb5fb4c80bb75672b59c51d
       id: 2415836739
@@ -1832,7 +1884,7 @@ MonoBehaviour:
     m_lastTime: -8584991312705959035
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 020000000500000006000000070000000c0000000d0000000e000000140000001500000051000000
+  ExpandedWaapiItemIds: 0200000003000000040000000500000006000000070000000c0000000d0000000e000000140000001500000051000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
