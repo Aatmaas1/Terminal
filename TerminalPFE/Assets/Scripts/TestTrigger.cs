@@ -125,6 +125,12 @@ public class TestTrigger : MonoBehaviour, IDataManager
             }
 
             sc_UIPauseManager.Instance.cameraPause.SetActive(false);
+
+            if(index == 3 && sc_CorpsCasse_HC.instance != null)
+            {
+                sc_CorpsCasse_HC.instance.launchInteractAnimation();
+            }
+
             StartCoroutine(DelayEffet());
         }
     }
