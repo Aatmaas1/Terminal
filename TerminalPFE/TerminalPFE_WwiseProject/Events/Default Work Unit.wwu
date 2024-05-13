@@ -458,6 +458,38 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Stop_SFX_AMBIANCE_VENT_LOOP_LONG_LEGER" ID="{CD895E66-4110-4200-9F08-744CCE9B7411}">
+							<ChildrenList>
+								<Action Name="" ID="{77133259-EF0B-4CDB-94FF-00D752F65950}" ShortID="500971925">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_AMBIANCE_VENT_LOOP_LONG_LEGER" ID="{AA60D9A2-3BD9-48D5-ACF5-92CA273D9171}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_SFX_AMBIANCE_VENT_LOOP_LONG" ID="{FE8F73D6-027A-490B-9A55-D886F7531C89}">
+							<ChildrenList>
+								<Action Name="" ID="{92CADA9D-5874-4C76-837C-28AC34F2517B}" ShortID="728015468">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_AMBIANCE_VENT_LOOP_LONG" ID="{877BA685-E0A1-4871-9D90-9F170F1F0DDF}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="TRANSITIONS" ID="{B2332AF7-D31D-4ACA-B9DC-FA5CD171A264}" ShortID="520741749">
@@ -676,11 +708,59 @@
 							<ChildrenList>
 								<Action Name="" ID="{E3FFD712-634E-4238-80D9-3E4894C5AC3B}" ShortID="819522546">
 									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="3"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="MUSIQUE_SIMULATION_3" ID="{435FD24D-F821-4FCF-9364-256481C44D0F}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_MUSIQUE_SIMULATION_3" ID="{B4AA9175-EEF4-4F78-A6AC-E7A200DFCCC6}">
+							<ChildrenList>
+								<Action Name="" ID="{D1283D54-69B2-4ABD-8342-BA94EADF2621}" ShortID="681630517">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MUSIQUE_SIMULATION_3" ID="{435FD24D-F821-4FCF-9364-256481C44D0F}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_MUSIQUE_SIMULATION_1" ID="{642884D3-7034-4F35-B937-869871498973}">
+							<ChildrenList>
+								<Action Name="" ID="{3248B99E-4831-43A1-8EE4-1D30CBA14AA5}" ShortID="913256295">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MUSIQUE_SIMULATION_1" ID="{073FB7F6-B85A-49CC-B31B-49A4A1BF0B46}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_MUSIQUE_SIMULATION_2" ID="{1E177DE0-2F5A-47F6-A9DD-5C23D427CC5C}">
+							<ChildrenList>
+								<Action Name="" ID="{846C0358-8621-4702-B3E5-19160C14C3B2}" ShortID="1017338213">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MUSIQUE_SIMULATION_2" ID="{178CD6FC-3BCA-4C62-94F3-26299FE22E0D}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

@@ -75,7 +75,7 @@
 				<Event Id="3465213173" Name="Stop_PropositionSimulation" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="701539208" Type="User" Language="SFX" Hash="{85075AF0-68E5-9689-8913-29C7CC01C514}">
+		<SoundBank Id="701539208" Type="User" Language="SFX" Hash="{0E11B65F-2D1A-E806-2D91-689B4676FCE3}">
 			<ShortName>MUSIQUE2</ShortName>
 			<Path>MUSIQUE2.bnk</Path>
 			<Media>
@@ -108,9 +108,12 @@
 						<MediaRef Id="861859393"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1930795165" Name="Stop_MUSIQUE_SIMULATION_1" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1930795166" Name="Stop_MUSIQUE_SIMULATION_2" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1930795167" Name="Stop_MUSIQUE_SIMULATION_3" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{3A4829A9-AA7F-6F19-79E7-39218777F918}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{23E1C9C8-FD1C-FAD9-2BCF-BF745E5848E7}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -338,7 +341,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1764570876" Type="User" Language="SFX" Hash="{D708139C-BB83-9414-338A-13DA61438F4B}">
+		<SoundBank Id="1764570876" Type="User" Language="SFX" Hash="{E2FA33BE-4493-3E42-BF53-FCF2E7A39D46}">
 			<ShortName>Main2</ShortName>
 			<Path>Main2.bnk</Path>
 			<Media>
@@ -357,6 +360,10 @@
 				<File Id="233112726" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SABLE_SOL.wav</ShortName>
 					<CachePath>SFX/SFX_SABLE_SOL_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="338148254" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_UI_BOUTON_PARCOURIR.wav</ShortName>
+					<CachePath>SFX/SFX_UI_BOUTON_PARCOURIR_818F3B66.wem</CachePath>
 				</File>
 				<File Id="343033165" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMU_SORTIE_TERMINAL.wav</ShortName>
@@ -417,6 +424,10 @@
 				<File Id="916630455" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_8.wav</ShortName>
 					<CachePath>SFX/SFX_SIMULATION_TUILES_8_818F3B66.wem</CachePath>
+				</File>
+				<File Id="917800529" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_UI_BOUTON_RETOUR.wav</ShortName>
+					<CachePath>SFX/SFX_UI_BOUTON_RETOUR_818F3B66.wem</CachePath>
 				</File>
 				<File Id="961710233" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMULATION_TUILES_7.wav</ShortName>
@@ -488,11 +499,21 @@
 						<MediaRef Id="343033165"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2295581168" Name="Play_SFX_UI_BOUTON_PARCOURIR" DurationType="OneShot" DurationMin="1.8461459" DurationMax="1.8461459">
+					<MediaRefs>
+						<MediaRef Id="338148254"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2663653444" Name="Play_SFX_UI_BOUTON_RETOUR" DurationType="OneShot" DurationMin="1.8461459" DurationMax="1.8461459">
+					<MediaRefs>
+						<MediaRef Id="917800529"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3983987071" Name="Stop_AMBIANCE_TEMPETE_SEEMLESS" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3185533582" Name="Stop_SFX_AMBIANCE_CROWD" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{1BD8AFD7-97F8-BF27-6B3A-DE7BF21ED419}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{EDC25258-F141-A5CB-3EB3-2EC94D81B1A8}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -752,5 +773,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A24DDD93-1E3E-AD72-3C22-09E1304C463A}</FileHash>
+	<FileHash>{CA4FFE0D-F80D-9A51-3CA3-6213B83052AE}</FileHash>
 </SoundBanksInfo>

@@ -520,7 +520,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e364e8b048b1b448b41f12b8470ec700
     GuidInternal: 
-    m_lastTime: -8584860361416829656
+    m_lastTime: -8584860328408453469
     List:
     - name: Main
       guid: 251dc717ef0fef42a545f46544a81c52
@@ -590,7 +590,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 32fcbe829e1db64882c8fd8a959356a5
     GuidInternal: 
-    m_lastTime: -8584860361417225377
+    m_lastTime: -8584860251915375944
     List:
     - name: AMBIANCES
       guid: 0de342e3b708fb408c527d577683a4a1
@@ -1688,6 +1688,66 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Stop_MUSIQUE_SIMULATION_1
+      guid: d38428643470354fb937869871498973
+      id: 1930795165
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Musique2
+        ObjectType: 4
+        guid: de7368d822c9564a9a4097f51bd33792
+      - ElementName: Stop_MUSIQUE_SIMULATION_1
+        ObjectType: 3
+        guid: d38428643470354fb937869871498973
+      Path: Events\Default Work Unit\Musique2\Stop_MUSIQUE_SIMULATION_1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_MUSIQUE_SIMULATION_2
+      guid: e07d171e5a2ff647a9dd5c23d427cc5c
+      id: 1930795166
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Musique2
+        ObjectType: 4
+        guid: de7368d822c9564a9a4097f51bd33792
+      - ElementName: Stop_MUSIQUE_SIMULATION_2
+        ObjectType: 3
+        guid: e07d171e5a2ff647a9dd5c23d427cc5c
+      Path: Events\Default Work Unit\Musique2\Stop_MUSIQUE_SIMULATION_2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_MUSIQUE_SIMULATION_3
+      guid: 7591aab4f4ee784fa6ace7a200dfccc6
+      id: 1930795167
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Musique2
+        ObjectType: 4
+        guid: de7368d822c9564a9a4097f51bd33792
+      - ElementName: Stop_MUSIQUE_SIMULATION_3
+        ObjectType: 3
+        guid: 7591aab4f4ee784fa6ace7a200dfccc6
+      Path: Events\Default Work Unit\Musique2\Stop_MUSIQUE_SIMULATION_3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_PropositionSimulation
       guid: 4a037acc8015974889c3e619f21b1435
       id: 3465213173
@@ -1728,6 +1788,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Stop_SFX_AMBIANCE_VENT_LOOP_LONG
+      guid: d6738ffe7a020b499a55d886f7531c89
+      id: 3212398792
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: AMBIANCES
+        ObjectType: 4
+        guid: 0de342e3b708fb408c527d577683a4a1
+      - ElementName: Stop_SFX_AMBIANCE_VENT_LOOP_LONG
+        ObjectType: 3
+        guid: d6738ffe7a020b499a55d886f7531c89
+      Path: Events\Default Work Unit\AMBIANCES\Stop_SFX_AMBIANCE_VENT_LOOP_LONG
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_SFX_AMBIANCE_VENT_LOOP_LONG_LEGER
+      guid: 665e89cd104100429f08744cce9b7411
+      id: 2661945764
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: AMBIANCES
+        ObjectType: 4
+        guid: 0de342e3b708fb408c527d577683a4a1
+      - ElementName: Stop_SFX_AMBIANCE_VENT_LOOP_LONG_LEGER
+        ObjectType: 3
+        guid: 665e89cd104100429f08744cce9b7411
+      Path: Events\Default Work Unit\AMBIANCES\Stop_SFX_AMBIANCE_VENT_LOOP_LONG_LEGER
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_SFX_REELTOSIMU_2
       guid: ec7d80f90bb09046b2baf29c2e1a86ca
       id: 1840303866
@@ -1924,7 +2024,7 @@ MonoBehaviour:
     m_lastTime: -8584991312705959035
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 02000000030000000400000005000000060000000d000000140000001500000051000000
+  ExpandedWaapiItemIds: 020000000300000004000000050000000600000007000000080000000b0000000c0000000d00000010000000140000001500000051000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -58,7 +58,7 @@ public class AudioListenerDontDestroyOnLoad : MonoBehaviour
     public AK.Wwise.Event simu1;
     public AK.Wwise.Event simu2;
     public AK.Wwise.Event simu3;
-
+    public AK.Wwise.Event stopSimu3;
     public bool simu1AlreadyLoaded = false;
     public bool earthQuakeSpecial = false;
 
@@ -79,19 +79,22 @@ public class AudioListenerDontDestroyOnLoad : MonoBehaviour
             transform.parent = FindAnyObjectByType<AudioListenerTargetPos>().transform;
         }
 
-        if(level == 2 && !simu1AlreadyLoaded)
+        if (level == 2 && simu1AlreadyLoaded && earthQuakeSpecial == false)
+        {
+            simu2.Post(gameObject);
+        }
+
+        if (level == 2 && simu1AlreadyLoaded && earthQuakeSpecial == true)
+        {
+            simu3.Post(gameObject);
+        }
+
+        if (level == 2 && !simu1AlreadyLoaded)
         {
             simu1.Post(gameObject);
             simu1AlreadyLoaded = true;
         }
-        if(level == 2 && simu1AlreadyLoaded && earthQuakeSpecial == false)
-        {
-            simu2.Post(gameObject);
-        }
-        if(level == 2 && simu1AlreadyLoaded && earthQuakeSpecial == true)
-        {
-            simu3.Post(gameObject);
-        }
+
     }
 
     public void SimuAfterEarthQuake()

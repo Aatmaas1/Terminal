@@ -5,18 +5,26 @@ using AK.Wwise;
 
 public class EBOULEMENT_SWITCH : MonoBehaviour
 {
-    public AK.Wwise.Event myEvent;
+    public AK_POSTEVENT_2_AM postEvent;
 
-    public void OnTriggerEnter(Collider other)
+    public float waitBeforeSimu;
+
+    private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
+            postEvent.PostEvent1();
             AudioListenerDontDestroyOnLoad.instance.AudioYuumi();
-            AudioListenerDontDestroyOnLoad.instance.gameObject.transform.position = Vector3.zero;
-            if(myEvent != null)
-            {
-                myEvent.Post(gameObject);
-            }
+            StartCoroutine(Post2AndDesactivate());
         }
+    }
+
+    public IEnumerator Post2AndDesactivate()
+    {
+        yield return new WaitForSeconds(waitBeforeSimu);
+        postEvent.PostEvent2();
+
+        yield return new WaitForSeconds(2f);
+        gameObject.SetActive(false);
     }
 }

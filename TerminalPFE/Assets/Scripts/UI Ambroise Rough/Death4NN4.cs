@@ -67,6 +67,8 @@ public class Death4NN4 : MonoBehaviour
         AkSoundEngine.SetRTPCValue("BatterieFaible", 0f);
 
         AudioListenerDontDestroyOnLoad.instance.AudioYuumi();
+        AkSoundEngine.UnregisterAllGameObj();
+        AudioListenerDontDestroyOnLoad.instance.RegisterYuumi();
 
         SceneManager.LoadScene("Introduction");
 

@@ -75,7 +75,7 @@
 				<Event Id="3465213173" Name="Stop_PropositionSimulation" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="701539208" Type="User" Language="SFX" Hash="{85075AF0-68E5-9689-8913-29C7CC01C514}">
+		<SoundBank Id="701539208" Type="User" Language="SFX" Hash="{0E11B65F-2D1A-E806-2D91-689B4676FCE3}">
 			<ShortName>MUSIQUE2</ShortName>
 			<Path>MUSIQUE2.bnk</Path>
 			<Media>
@@ -108,6 +108,9 @@
 						<MediaRef Id="861859393"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1930795165" Name="Stop_MUSIQUE_SIMULATION_1" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1930795166" Name="Stop_MUSIQUE_SIMULATION_2" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1930795167" Name="Stop_MUSIQUE_SIMULATION_3" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
 		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{83FFF504-9AA2-49FA-79CF-F3561200CE3C}">
@@ -338,7 +341,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1764570876" Type="User" Language="SFX" Hash="{EE721CA7-B189-46F1-682E-A32207CB0DF5}">
+		<SoundBank Id="1764570876" Type="User" Language="SFX" Hash="{E2FA33BE-4493-3E42-BF53-FCF2E7A39D46}">
 			<ShortName>Main2</ShortName>
 			<Path>Main2.bnk</Path>
 			<Media>
@@ -510,7 +513,7 @@
 				<Event Id="3185533582" Name="Stop_SFX_AMBIANCE_CROWD" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{1BD8AFD7-97F8-BF27-6B3A-DE7BF21ED419}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{EDC25258-F141-A5CB-3EB3-2EC94D81B1A8}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -770,5 +773,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{CCDE6D73-3BB4-47CF-C331-CF1B8557071E}</FileHash>
+	<FileHash>{0CA302AF-F5D6-CB36-9918-DA2F6DC9EDB1}</FileHash>
 </SoundBanksInfo>
