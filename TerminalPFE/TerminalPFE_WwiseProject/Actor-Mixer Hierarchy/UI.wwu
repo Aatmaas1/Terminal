@@ -94,6 +94,50 @@
 						<ActiveSource Name="SFX_BOUTON_CLICK_OUI" ID="{C0A4A377-E633-44EF-949D-34D840D55B6E}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="SFX_UI_BOUTON_PARCOURIR" ID="{29DFB43B-2ED1-4DF8-94B5-338779C65C4A}" ShortID="899794691">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_UI_BOUTON_PARCOURIR" ID="{9B82AD97-DE32-447A-8B7A-CC2220BD2A1A}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_UI_BOUTON_PARCOURIR.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="338148254"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_UI_BOUTON_PARCOURIR" ID="{9B82AD97-DE32-447A-8B7A-CC2220BD2A1A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SFX_UI_BOUTON_RETOUR" ID="{53E10BFA-7411-4D73-8DC6-3E9D30F353D1}" ShortID="768144003">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_UI_BOUTON_RETOUR" ID="{5741441F-C4DD-4D4E-A75F-F1D3726170EB}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_UI_BOUTON_RETOUR.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="917800529"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_UI_BOUTON_RETOUR" ID="{5741441F-C4DD-4D4E-A75F-F1D3726170EB}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

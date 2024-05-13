@@ -56,6 +56,8 @@ namespace AK
         static const AkUniqueID PLAY_SFX_TERMINAL_BOUCLE = 2080143493U;
         static const AkUniqueID PLAY_SFX_TERMINAL_FERMETURE = 2337403756U;
         static const AkUniqueID PLAY_SFX_TERMINAL_OUVERTURE = 2483481318U;
+        static const AkUniqueID PLAY_SFX_UI_BOUTON_PARCOURIR = 2295581168U;
+        static const AkUniqueID PLAY_SFX_UI_BOUTON_RETOUR = 2663653444U;
         static const AkUniqueID RESUME_MUSIQUE_SALLE_WALL_E = 4222333403U;
         static const AkUniqueID STOP_4NN4_MASTERING2 = 1362331995U;
         static const AkUniqueID STOP_AMBIANCE_TEMPETE_SEEMLESS = 3983987071U;

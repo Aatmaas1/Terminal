@@ -317,7 +317,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: a496d604dfb54f43bca9994076f26b0d
     GuidInternal: 
-    m_lastTime: -8584861011351092065
+    m_lastTime: -8584860975024276704
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -520,7 +520,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e364e8b048b1b448b41f12b8470ec700
     GuidInternal: 
-    m_lastTime: -8584861624212070043
+    m_lastTime: -8584860361416829656
     List:
     - name: Main
       guid: 251dc717ef0fef42a545f46544a81c52
@@ -590,7 +590,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 32fcbe829e1db64882c8fd8a959356a5
     GuidInternal: 
-    m_lastTime: -8584861624230859571
+    m_lastTime: -8584860361417225377
     List:
     - name: AMBIANCES
       guid: 0de342e3b708fb408c527d577683a4a1
@@ -1554,6 +1554,46 @@ MonoBehaviour:
       maxAttenuation: 195
       maxDuration: 1.3872292
       minDuration: 1.3872292
+    - name: Play_SFX_UI_BOUTON_PARCOURIR
+      guid: 9696a958d3c0454aace7562d6b795cd6
+      id: 2295581168
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: UI
+        ObjectType: 4
+        guid: b05565065b0d484ea53e41db3858150e
+      - ElementName: Play_SFX_UI_BOUTON_PARCOURIR
+        ObjectType: 3
+        guid: 9696a958d3c0454aace7562d6b795cd6
+      Path: Events\Default Work Unit\UI\Play_SFX_UI_BOUTON_PARCOURIR
+      maxAttenuation: 0
+      maxDuration: 1.8461459
+      minDuration: 1.8461459
+    - name: Play_SFX_UI_BOUTON_RETOUR
+      guid: bfce9e9bc0e4a64d870f11481cc8f002
+      id: 2663653444
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: UI
+        ObjectType: 4
+        guid: b05565065b0d484ea53e41db3858150e
+      - ElementName: Play_SFX_UI_BOUTON_RETOUR
+        ObjectType: 3
+        guid: bfce9e9bc0e4a64d870f11481cc8f002
+      Path: Events\Default Work Unit\UI\Play_SFX_UI_BOUTON_RETOUR
+      maxAttenuation: 0
+      maxDuration: 1.8461459
+      minDuration: 1.8461459
     - name: PORTES
       guid: ad9b7f7209c43d4aa5b228ff9479e558
       id: 3185142948
@@ -1884,7 +1924,7 @@ MonoBehaviour:
     m_lastTime: -8584991312705959035
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0200000003000000040000000500000006000000070000000c0000000d0000000e000000140000001500000051000000
+  ExpandedWaapiItemIds: 02000000030000000400000005000000060000000d000000140000001500000051000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

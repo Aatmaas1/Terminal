@@ -8,6 +8,9 @@ public class Bouton : MonoBehaviour, IDataManager
     private UnityEventPortes UnityEventPortes;
     public GameObject PorteOuvertureParBouton;
 
+    private AK_POSTEVENT_2_AM access;
+
+
     public int index;
     bool isOpen = false;
     bool PlayerClose = false;
@@ -28,6 +31,7 @@ public class Bouton : MonoBehaviour, IDataManager
     private void Start()
     {
         UnityEventPortes = PorteOuvertureParBouton.GetComponent<UnityEventPortes>();
+        access = GetComponent<AK_POSTEVENT_2_AM>();
         Vfx = GetComponentInChildren<VisualEffect>();
     }
     private void FixedUpdate()
@@ -202,6 +206,7 @@ public class Bouton : MonoBehaviour, IDataManager
         Material m = transform.GetChild(3).GetComponent<MeshRenderer>().materials[1];
 
         yield return new WaitForSeconds(0.5f);
+        access.PostEvent2();
         m.SetColor("_Color", new Color(190f, 0f, 0));
         m.SetColor("_EmissionColor", new Color(190f, 0f, 0) / 100f);
         if (holoText != null)
@@ -242,6 +247,7 @@ public class Bouton : MonoBehaviour, IDataManager
 
     public void PasseVert()
     {
+        access.PostEvent1();
         isOpen = true;
         Material m = transform.GetChild(3).GetComponent<MeshRenderer>().materials[1];
         m.SetColor("_Color", new Color(22f, 191f, 0));

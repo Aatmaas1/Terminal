@@ -20,7 +20,6 @@ public class sc_ChangeLightColor : MonoBehaviour
 
     private int index;
 
-    public AK_PORTES_AM akPortes;
 
     // Start is called before the first frame update
     void Start()
@@ -86,7 +85,6 @@ public class sc_ChangeLightColor : MonoBehaviour
             isOpening = true;
 
             yield return new WaitUntil(() => value >= 1);
-            akPortes.ChangeLight();
             ChangeColor(index);
         }
         else if (isOpen)

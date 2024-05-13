@@ -618,6 +618,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_SFX_UI_BOUTON_PARCOURIR" ID="{58A99696-C0D3-4A45-ACE7-562D6B795CD6}">
+							<ChildrenList>
+								<Action Name="" ID="{80672665-76F8-45F2-9183-554048F1052D}" ShortID="1065844119">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_UI_BOUTON_PARCOURIR" ID="{29DFB43B-2ED1-4DF8-94B5-338779C65C4A}" WorkUnitID="{C1B3393F-8FEC-4DB0-B4BA-1FFD0B2CB28E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_UI_BOUTON_RETOUR" ID="{9B9ECEBF-E4C0-4DA6-870F-11481CC8F002}">
+							<ChildrenList>
+								<Action Name="" ID="{397360BE-ED96-4053-81E2-09A5B6E69414}" ShortID="209835712">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_UI_BOUTON_RETOUR" ID="{53E10BFA-7411-4D73-8DC6-3E9D30F353D1}" WorkUnitID="{C1B3393F-8FEC-4DB0-B4BA-1FFD0B2CB28E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Musique2" ID="{D86873DE-C922-4A56-9A40-97F51BD33792}" ShortID="161924041">
