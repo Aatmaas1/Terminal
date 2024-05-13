@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{5C92F974-5277-FDAE-A2A5-FD2E91960E77}">
+		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{11AE6396-7679-9C03-3BC6-AA47BC30D33F}">
 			<ShortName>MUSIQUE</ShortName>
 			<Path>MUSIQUE.bnk</Path>
 			<Media>
@@ -19,7 +19,7 @@
 				</File>
 				<File Id="251354379" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MUSIQUE_SORTIE.wav</ShortName>
-					<CachePath>SFX/MUSIQUE_SORTIE_818F3B66.wem</CachePath>
+					<CachePath>SFX/MUSIQUE_SORTIE_5AA7521A.wem</CachePath>
 				</File>
 				<File Id="352465723" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>4NN4_MASTERING2.wav</ShortName>
@@ -60,7 +60,7 @@
 						<MediaRef Id="586738246"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3323333764" Name="Play_MUSIQUE_SORTIE" DurationType="OneShot" DurationMin="28.08523" DurationMax="28.08523">
+				<Event Id="3323333764" Name="Play_MUSIQUE_SORTIE" DurationType="OneShot" DurationMin="14.933536" DurationMax="14.933536">
 					<MediaRefs>
 						<MediaRef Id="251354379"/>
 					</MediaRefs>
@@ -773,5 +773,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9882DE46-CA13-8427-2E45-E7FB19CDB70B}</FileHash>
+	<FileHash>{CCB51973-80AB-9FE2-AD41-0CF2CA948426}</FileHash>
 </SoundBanksInfo>
