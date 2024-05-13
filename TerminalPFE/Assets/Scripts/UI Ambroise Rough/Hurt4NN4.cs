@@ -53,7 +53,7 @@ public class Hurt4NN4 : MonoBehaviour
 
         float time = 0f;
 
-        while (time < timeToNoLPF)
+        while (time < 1f)
         {
             time += Time.deltaTime;
             AkSoundEngine.SetRTPCValue("BatterieFaible", Mathf.Lerp(startingLPFValue, targetLPFValue, time / timeToNoLPF));

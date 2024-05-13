@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 60088738}
-  m_IndirectSpecularColor: {r: 0.6329508, g: 0.23868087, b: 0.12571749, a: 1}
+  m_IndirectSpecularColor: {r: 0.632951, g: 0.23868087, b: 0.12571746, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1819,7 +1819,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 64
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: 79097b1dc5119d14fa5e9820c10e9393, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: e798edeaf7bdfaa4ba285df9c67c83fd, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -15308,6 +15308,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c2951a38e3671340aea89e99f28d6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  simu1:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  simu2:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  simu3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  stopSimu3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  simu1AlreadyLoaded: 0
+  earthQuakeSpecial: 0
 --- !u!4 &1672795029
 Transform:
   m_ObjectHideFlags: 0

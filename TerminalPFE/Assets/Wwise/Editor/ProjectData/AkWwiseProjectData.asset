@@ -520,7 +520,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e364e8b048b1b448b41f12b8470ec700
     GuidInternal: 
-    m_lastTime: -8584860328408453469
+    m_lastTime: -8584860059221856232
     List:
     - name: Main
       guid: 251dc717ef0fef42a545f46544a81c52
@@ -590,7 +590,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 32fcbe829e1db64882c8fd8a959356a5
     GuidInternal: 
-    m_lastTime: -8584860251915375944
+    m_lastTime: -8584860059850382419
     List:
     - name: AMBIANCES
       guid: 0de342e3b708fb408c527d577683a4a1
@@ -892,8 +892,8 @@ MonoBehaviour:
         guid: 744725bf44f15b45a5225570d6f9094b
       Path: Events\Default Work Unit\Musique\Play_MUSIQUE_SORTIE
       maxAttenuation: 0
-      maxDuration: 28.08523
-      minDuration: 28.08523
+      maxDuration: 14.933536
+      minDuration: 14.933536
     - name: Play_PropositionSimulation
       guid: 1bab1b8d7ce6cc4faa3a1faf7bc997eb
       id: 388074695
@@ -1688,6 +1688,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Stop_MUSIQUE_SALLE_WALL_E
+      guid: a56eb845ff52c045839f55307f5df1f5
+      id: 3151416304
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Stop_MUSIQUE_SALLE_WALL_E
+        ObjectType: 3
+        guid: a56eb845ff52c045839f55307f5df1f5
+      Path: Events\Default Work Unit\Stop_MUSIQUE_SALLE_WALL_E
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_MUSIQUE_SIMULATION_1
       guid: d38428643470354fb937869871498973
       id: 1930795165
@@ -2024,7 +2041,7 @@ MonoBehaviour:
     m_lastTime: -8584991312705959035
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 020000000300000004000000050000000600000007000000080000000b0000000c0000000d00000010000000140000001500000051000000
+  ExpandedWaapiItemIds: 050000000600000007000000080000000b0000000d0000000f000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

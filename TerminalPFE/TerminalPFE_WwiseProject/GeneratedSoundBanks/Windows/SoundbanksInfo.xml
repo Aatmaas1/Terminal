@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{5C92F974-5277-FDAE-A2A5-FD2E91960E77}">
+		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{FD1EACAC-5314-09FF-A391-F85ABD761374}">
 			<ShortName>MUSIQUE</ShortName>
 			<Path>MUSIQUE.bnk</Path>
 			<Media>
@@ -19,7 +19,7 @@
 				</File>
 				<File Id="251354379" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MUSIQUE_SORTIE.wav</ShortName>
-					<CachePath>SFX/MUSIQUE_SORTIE_818F3B66.wem</CachePath>
+					<CachePath>SFX/MUSIQUE_SORTIE_32797BA1.wem</CachePath>
 				</File>
 				<File Id="352465723" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>4NN4_MASTERING2.wav</ShortName>
@@ -60,7 +60,7 @@
 						<MediaRef Id="586738246"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3323333764" Name="Play_MUSIQUE_SORTIE" DurationType="OneShot" DurationMin="28.08523" DurationMax="28.08523">
+				<Event Id="3323333764" Name="Play_MUSIQUE_SORTIE" DurationType="OneShot" DurationMin="14.933536" DurationMax="14.933536">
 					<MediaRefs>
 						<MediaRef Id="251354379"/>
 					</MediaRefs>
@@ -72,10 +72,11 @@
 				</Event>
 				<Event Id="4222333403" Name="Resume_MUSIQUE_SALLE_WALL_E" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1362331995" Name="Stop_4NN4_MASTERING2" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3151416304" Name="Stop_MUSIQUE_SALLE_WALL_E" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3465213173" Name="Stop_PropositionSimulation" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="701539208" Type="User" Language="SFX" Hash="{0E11B65F-2D1A-E806-2D91-689B4676FCE3}">
+		<SoundBank Id="701539208" Type="User" Language="SFX" Hash="{04DF3C4F-32BA-A897-38AB-1D7D27DB627D}">
 			<ShortName>MUSIQUE2</ShortName>
 			<Path>MUSIQUE2.bnk</Path>
 			<Media>
@@ -773,5 +774,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0CA302AF-F5D6-CB36-9918-DA2F6DC9EDB1}</FileHash>
+	<FileHash>{07C6BEA9-06B5-743C-C134-9FCF07707841}</FileHash>
 </SoundBanksInfo>

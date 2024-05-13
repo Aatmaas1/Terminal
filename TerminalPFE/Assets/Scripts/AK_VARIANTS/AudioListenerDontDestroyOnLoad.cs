@@ -79,14 +79,10 @@ public class AudioListenerDontDestroyOnLoad : MonoBehaviour
             transform.parent = FindAnyObjectByType<AudioListenerTargetPos>().transform;
         }
 
-        if (level == 2 && simu1AlreadyLoaded && earthQuakeSpecial == false)
+        if (level == 2 && simu1AlreadyLoaded)
         {
+            stopSimu3.Post(gameObject);
             simu2.Post(gameObject);
-        }
-
-        if (level == 2 && simu1AlreadyLoaded && earthQuakeSpecial == true)
-        {
-            simu3.Post(gameObject);
         }
 
         if (level == 2 && !simu1AlreadyLoaded)

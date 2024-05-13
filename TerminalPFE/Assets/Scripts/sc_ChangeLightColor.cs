@@ -21,8 +21,6 @@ public class sc_ChangeLightColor : MonoBehaviour
 
     private int index;
 
-    public AK_PORTES_AM akPortes;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -82,7 +80,6 @@ public class sc_ChangeLightColor : MonoBehaviour
 
             sc_ScreenShake.instance.ScreenBaseQuick();
 
-            akPortes.ChangeLight();
             //ChangeColor(index);
         }
         else if (isOpen)
@@ -107,7 +104,6 @@ public class sc_ChangeLightColor : MonoBehaviour
 
             isOpen = false;
 
-            akPortes.ChangeLight();
         }
 
     }

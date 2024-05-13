@@ -45,6 +45,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="MUSIQUE_SORTIE" ID="{942EACFD-D6C5-4CEB-86BE-80FD4F33C3B2}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.52729342900302"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="13.1516934164149"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>MUSIQUE_SORTIE.wav</AudioFile>
 									<MediaIDList>
