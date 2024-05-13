@@ -90,7 +90,7 @@ public class Death4NN4 : MonoBehaviour
     {
         float time = 0f;
 
-        while(time < timeToFullLPF)
+        while(time < 1f)
         {
             AkSoundEngine.SetRTPCValue("BatterieFaible", Mathf.Lerp(initialLPF, 100, time / timeToFullLPF));
             yield return null;

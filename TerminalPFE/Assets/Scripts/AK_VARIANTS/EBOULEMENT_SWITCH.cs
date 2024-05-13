@@ -21,8 +21,9 @@ public class EBOULEMENT_SWITCH : MonoBehaviour
 
     public IEnumerator Post2AndDesactivate()
     {
+        AudioListenerDontDestroyOnLoad.instance.earthQuakeSpecial = true;
         yield return new WaitForSeconds(waitBeforeSimu);
-        postEvent.PostEvent2();
+        AudioListenerDontDestroyOnLoad.instance.simu3.Post(AudioListenerDontDestroyOnLoad.instance.gameObject);
 
         yield return new WaitForSeconds(2f);
         gameObject.SetActive(false);
