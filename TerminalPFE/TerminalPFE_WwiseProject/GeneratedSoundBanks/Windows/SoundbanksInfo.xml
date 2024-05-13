@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{11AE6396-7679-9C03-3BC6-AA47BC30D33F}">
+		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{FD1EACAC-5314-09FF-A391-F85ABD761374}">
 			<ShortName>MUSIQUE</ShortName>
 			<Path>MUSIQUE.bnk</Path>
 			<Media>
@@ -19,7 +19,7 @@
 				</File>
 				<File Id="251354379" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MUSIQUE_SORTIE.wav</ShortName>
-					<CachePath>SFX/MUSIQUE_SORTIE_5AA7521A.wem</CachePath>
+					<CachePath>SFX/MUSIQUE_SORTIE_32797BA1.wem</CachePath>
 				</File>
 				<File Id="352465723" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>4NN4_MASTERING2.wav</ShortName>
@@ -72,6 +72,7 @@
 				</Event>
 				<Event Id="4222333403" Name="Resume_MUSIQUE_SALLE_WALL_E" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1362331995" Name="Stop_4NN4_MASTERING2" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3151416304" Name="Stop_MUSIQUE_SALLE_WALL_E" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3465213173" Name="Stop_PropositionSimulation" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
@@ -773,5 +774,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{CCB51973-80AB-9FE2-AD41-0CF2CA948426}</FileHash>
+	<FileHash>{07C6BEA9-06B5-743C-C134-9FCF07707841}</FileHash>
 </SoundBanksInfo>

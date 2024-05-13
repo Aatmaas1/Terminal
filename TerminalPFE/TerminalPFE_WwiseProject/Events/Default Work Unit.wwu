@@ -768,6 +768,21 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Stop_MUSIQUE_SALLE_WALL_E" ID="{45B86EA5-52FF-45C0-839F-55307F5DF1F5}">
+					<ChildrenList>
+						<Action Name="" ID="{10F7E276-8B28-4C24-BC69-2F76E4681123}" ShortID="512258013">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MUSIQUE_SALLE_WALL_E" ID="{6F719EF3-4715-467F-8321-8EDE0830DEE8}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -61,6 +61,7 @@ namespace AK
         static const AkUniqueID RESUME_MUSIQUE_SALLE_WALL_E = 4222333403U;
         static const AkUniqueID STOP_4NN4_MASTERING2 = 1362331995U;
         static const AkUniqueID STOP_AMBIANCE_TEMPETE_SEEMLESS = 3983987071U;
+        static const AkUniqueID STOP_MUSIQUE_SALLE_WALL_E = 3151416304U;
         static const AkUniqueID STOP_MUSIQUE_SIMULATION_1 = 1930795165U;
         static const AkUniqueID STOP_MUSIQUE_SIMULATION_2 = 1930795166U;
         static const AkUniqueID STOP_MUSIQUE_SIMULATION_3 = 1930795167U;
