@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: ec39ef54d28cedd4e90e139b5b2ea4fb,
+    type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: e531f5df76180a2488851ed3da9ca9c5,
     type: 2}
 --- !u!196 &4
@@ -3279,6 +3280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbd8ecd3491e22a4fbd25f28af1557e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  triggerObject: {fileID: 0}
 --- !u!114 &471398048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4651,10 +4653,6 @@ MonoBehaviour:
   PlayerAnimator: {fileID: 151071937}
   rope4NN4ToPlanner: {fileID: 715431665}
   vCam: {fileID: 86321398}
-  timeBeforeLPFRemoval: 4
-  timeToNoLPF: 3
-  startingLPFValue: 60
-  targetLPFValue: 30
 --- !u!65 &680603860
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5249,10 +5247,6 @@ MonoBehaviour:
   PlayerAnimator: {fileID: 151071937}
   rope4NN4ToPlanner: {fileID: 715431665}
   vCam: {fileID: 376036607}
-  timeBeforeLPFRemoval: 4
-  timeToNoLPF: 3
-  startingLPFValue: 60
-  targetLPFValue: 10
 --- !u!65 &728788452
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12596,19 +12590,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef149396dd3cf14f9071ec5d6758cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PasSol:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f8ef22c56745c0542b730d2e254dc748,
-      type: 2}
-  PasGrille:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  PasSable:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
 --- !u!65 &1371093573
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14641,8 +14622,6 @@ MonoBehaviour:
   timeToFade: 5
   timeToLoad: 6
   postEvent: {fileID: 1634242952}
-  initialLPF: 60
-  timeToFullLPF: 20
 --- !u!114 &1634242952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15343,24 +15322,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c2951a38e3671340aea89e99f28d6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  simu1:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  simu2:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  simu3:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  stopSimu3:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  simu1AlreadyLoaded: 0
-  earthQuakeSpecial: 0
 --- !u!4 &1672795029
 Transform:
   m_ObjectHideFlags: 0
@@ -17945,6 +17906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbd8ecd3491e22a4fbd25f28af1557e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  triggerObject: {fileID: 0}
 --- !u!114 &1945163693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18027,19 +17989,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef149396dd3cf14f9071ec5d6758cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PasSol:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f8ef22c56745c0542b730d2e254dc748,
-      type: 2}
-  PasGrille:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  PasSable:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
 --- !u!1 &1981568777
 GameObject:
   m_ObjectHideFlags: 3
