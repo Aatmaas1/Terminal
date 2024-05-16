@@ -75,14 +75,14 @@ public class sc_TutoManager_HC : MonoBehaviour, IDataManager
 
     IEnumerator DelayTutoMove2()
     {
-        sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
+        //sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
         yield return new WaitForSeconds(0.1f);
         OuvrePorte();
         //sc_PlayerManager_HC.Instance.MakeCamLookAt(Porte1.transform.GetChild(4));
         Anims.Play("TutoMove2");
 
-        yield return new WaitForSeconds(2f);
-        sc_PlayerManager_HC.Instance.SetInputMode("Player");
+        //yield return new WaitForSeconds(2f);
+        //sc_PlayerManager_HC.Instance.SetInputMode("Player");
         //Trigger2.SetActive(true);
 
     }
