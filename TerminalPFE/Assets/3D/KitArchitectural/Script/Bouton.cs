@@ -14,7 +14,7 @@ public class Bouton : MonoBehaviour, IDataManager
     public int index;
     bool isOpen = false;
     bool PlayerClose = false;
-    VisualEffect Vfx;
+    public VisualEffect Vfx;
     public VisualEffect VfxFeedBack;
     float color = 0;
     public int cardID = 0;
@@ -174,6 +174,7 @@ public class Bouton : MonoBehaviour, IDataManager
 
         UnityEventPortes.InteractDoorBouton();
         this.gameObject.GetComponent<Animator>().SetTrigger("IsClick");
+        Vfx.gameObject.SetActive(false);
         VfxFeedBack.SendEvent("OnBouton");
 
         yield return new WaitForSeconds(0.2f);
