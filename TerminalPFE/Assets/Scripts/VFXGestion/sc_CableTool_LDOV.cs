@@ -10,6 +10,11 @@ public class sc_CableTool_LDOV : MonoBehaviour
 
     public LineRenderer cable;
 
+    [Space]
+    [Header("à cocher pour utiliser le tool !!!")]
+    public bool IWantToChange;
+    [Space]
+
     [Header("Les courbes qui permettent de modifier l'aspect du cable")]
     [Header("t = 0 -> startPos; t = 1 -> endPos")]
     [Tooltip("Modifie selon l'axe X")]
@@ -19,9 +24,6 @@ public class sc_CableTool_LDOV : MonoBehaviour
     [Tooltip("Modifie selon l'axe Z")]
     public AnimationCurve curveZ;
 
-    [Space]
-    [Header("à cocher pouu utiliser le tool !!!")]
-    public bool IWantToChange;
     [Space]
 
     [Tooltip("Pour modifier l'épaisseur du cable")]
