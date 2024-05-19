@@ -29,6 +29,10 @@ namespace AK
         static const AkUniqueID PLAY_SFX_AMBIANCE_CROWD = 1326775932U;
         static const AkUniqueID PLAY_SFX_AMBIANCE_VENT_LOOP_LONG = 490583398U;
         static const AkUniqueID PLAY_SFX_AMBIANCE_VENT_LOOP_LONG_LEGER = 165306862U;
+        static const AkUniqueID PLAY_SFX_BATTEMENT_COEUR = 2692847473U;
+        static const AkUniqueID PLAY_SFX_BATTEMENT_COEUR_2 = 1697954246U;
+        static const AkUniqueID PLAY_SFX_BATTEMENT_COEUR_ISOLE = 1039181434U;
+        static const AkUniqueID PLAY_SFX_BATTEMENT_COEUR_ISOLE_1 = 3271480754U;
         static const AkUniqueID PLAY_SFX_BOUTON_CLICK_NON = 3549990494U;
         static const AkUniqueID PLAY_SFX_BOUTON_CLICK_OUI = 3382067122U;
         static const AkUniqueID PLAY_SFX_BOUTONS_PARCOURIR = 1055529180U;

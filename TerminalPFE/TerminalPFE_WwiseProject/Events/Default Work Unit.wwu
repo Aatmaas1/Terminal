@@ -159,6 +159,21 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Stop_MUSIQUE_SALLE_WALL_E" ID="{45B86EA5-52FF-45C0-839F-55307F5DF1F5}">
+							<ChildrenList>
+								<Action Name="" ID="{10F7E276-8B28-4C24-BC69-2F76E4681123}" ShortID="512258013">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MUSIQUE_SALLE_WALL_E" ID="{6F719EF3-4715-467F-8321-8EDE0830DEE8}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="SIMULATION" ID="{341F4021-3D6C-49F2-B57D-96BCB18E02F4}" ShortID="370386191">
@@ -672,6 +687,50 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_SFX_BATTEMENT_COEUR_2" ID="{C7CB080D-481C-4A59-BE08-D604A1C6678F}">
+							<ChildrenList>
+								<Action Name="" ID="{080DD116-83E6-43D3-854B-20BF307D9C12}" ShortID="819604561">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_BATTEMENT_COEUR_2" ID="{C68A1278-E72A-4591-9726-4709E2D44983}" WorkUnitID="{C1B3393F-8FEC-4DB0-B4BA-1FFD0B2CB28E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_BATTEMENT_COEUR" ID="{E7A3B93B-61AA-4875-9999-FAE9B051B8CF}">
+							<ChildrenList>
+								<Action Name="" ID="{9C59A1B6-8702-4D4C-BAAA-4C5A83F16CF4}" ShortID="60678340">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_BATTEMENT_COEUR" ID="{A0172F36-F1D8-4433-9605-FCB0D740860D}" WorkUnitID="{C1B3393F-8FEC-4DB0-B4BA-1FFD0B2CB28E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_BATTEMENT_COEUR_ISOLE" ID="{1D0E4DA7-5E20-4F7D-BA73-74881FB3BAB0}">
+							<ChildrenList>
+								<Action Name="" ID="{FC3CBEE9-EF0B-4A86-9143-D34B33131BE6}" ShortID="920068674">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_BATTEMENT_COEUR_ISOLE" ID="{8668759C-78C9-4478-8CFB-43FE59AFAE38}" WorkUnitID="{C1B3393F-8FEC-4DB0-B4BA-1FFD0B2CB28E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_BATTEMENT_COEUR_ISOLE_1" ID="{F542D78B-A1EB-4F22-9E60-BD36684B3C24}">
+							<ChildrenList>
+								<Action Name="" ID="{062D8FE5-8653-4F1D-9B40-6FF7C5915B9F}" ShortID="25004270">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_BATTEMENT_COEUR_ISOLE_1" ID="{6FBE5A8D-BC6D-40F9-AA0A-A630CE491A6A}" WorkUnitID="{C1B3393F-8FEC-4DB0-B4BA-1FFD0B2CB28E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Musique2" ID="{D86873DE-C922-4A56-9A40-97F51BD33792}" ShortID="161924041">
@@ -768,21 +827,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Stop_MUSIQUE_SALLE_WALL_E" ID="{45B86EA5-52FF-45C0-839F-55307F5DF1F5}">
-					<ChildrenList>
-						<Action Name="" ID="{10F7E276-8B28-4C24-BC69-2F76E4681123}" ShortID="512258013">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="MUSIQUE_SALLE_WALL_E" ID="{6F719EF3-4715-467F-8321-8EDE0830DEE8}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

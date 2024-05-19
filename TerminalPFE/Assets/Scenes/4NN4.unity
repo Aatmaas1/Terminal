@@ -5542,8 +5542,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.089561015, y: 0.038302865, z: 0.12495775}
-  m_Center: {x: 0.0050263316, y: -0.08295491, z: 0.058662914}
+  m_Size: {x: 0.073965654, y: 0.03846025, z: 0.09897105}
+  m_Center: {x: -0.0021560173, y: -0.09668665, z: 0.07512929}
 --- !u!1001 &480595768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7366,6 +7366,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 680603858}
+  - component: {fileID: 680603861}
   - component: {fileID: 680603860}
   - component: {fileID: 680603859}
   m_Layer: 0
@@ -7405,10 +7406,15 @@ MonoBehaviour:
   PlayerAnimator: {fileID: 151071937}
   rope4NN4ToPlanner: {fileID: 715431665}
   vCam: {fileID: 86321398}
-  timeBeforeLPFRemoval: 0
-  timeToNoLPF: 0
-  startingLPFValue: 0
-  targetLPFValue: 0
+  timeBeforeLPFRemoval: 3
+  timeToNoLPF: 4
+  startingLPFValue: 100
+  targetLPFValue: 40
+  battementCoeur:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1df1e299936c18546aff617c2cd0a1e1,
+      type: 2}
 --- !u!65 &680603860
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7430,6 +7436,28 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 16.91066, z: 31.716911}
   m_Center: {x: 0, y: -1.1107368, z: 2.91329}
+--- !u!114 &680603861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680603857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39aa918e6aae49d4793394497512a086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1001 &682443233
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8435,6 +8463,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 728788450}
+  - component: {fileID: 728788455}
   - component: {fileID: 728788452}
   - component: {fileID: 728788451}
   - component: {fileID: 728788454}
@@ -8475,10 +8504,15 @@ MonoBehaviour:
   PlayerAnimator: {fileID: 151071937}
   rope4NN4ToPlanner: {fileID: 715431665}
   vCam: {fileID: 376036607}
-  timeBeforeLPFRemoval: 0
-  timeToNoLPF: 0
-  startingLPFValue: 0
-  targetLPFValue: 0
+  timeBeforeLPFRemoval: 3
+  timeToNoLPF: 4
+  startingLPFValue: 80
+  targetLPFValue: 20
+  battementCoeur:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2a2042cfacd683647b27ff92060b6ceb,
+      type: 2}
 --- !u!65 &728788452
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8514,6 +8548,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TempeteDeSable1: {fileID: 914828730}
   TempeteDeSable2: {fileID: 1290654722}
+--- !u!114 &728788455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728788449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39aa918e6aae49d4793394497512a086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &736146562
 GameObject:
   m_ObjectHideFlags: 0
@@ -17676,7 +17732,8 @@ MonoBehaviour:
   PasSol:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: f8ef22c56745c0542b730d2e254dc748,
+      type: 2}
   PasGrille:
     idInternal: 0
     valueGuidInternal: 
@@ -21475,8 +21532,13 @@ MonoBehaviour:
   timeToFade: 5
   timeToLoad: 6
   postEvent: {fileID: 1634242952}
-  initialLPF: 0
-  timeToFullLPF: 0
+  battement:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e54c1780602f62343bab9f991ca7f6c8,
+      type: 2}
+  initialLPF: 40
+  timeToFullLPF: 15
 --- !u!114 &1634242952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25529,8 +25591,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.11604585, y: 0.017571524, z: 0.09566186}
-  m_Center: {x: 0, y: 0.088000335, z: -0.05}
+  m_Size: {x: 0.070764564, y: 0.04567799, z: 0.124789245}
+  m_Center: {x: 0.00575049, y: 0.10140697, z: -0.0790135}
 --- !u!114 &1945163696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25546,7 +25608,8 @@ MonoBehaviour:
   PasSol:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: f8ef22c56745c0542b730d2e254dc748,
+      type: 2}
   PasGrille:
     idInternal: 0
     valueGuidInternal: 

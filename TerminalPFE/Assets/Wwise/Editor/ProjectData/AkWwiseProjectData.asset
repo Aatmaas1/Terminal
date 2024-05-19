@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 1cf59fa78aed4b48900c0883722c8eb0
     GuidInternal: 
-    m_lastTime: -8584956867393635481
+    m_lastTime: -8584961376108387220
     List:
     - name: BETON
       guid: 4c9ae77e8847c643b2c6e42551e1bd87
@@ -51,7 +51,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Factory Acoustic Textures
     guid: 6b663d46a83ca54f8b4a5fef12b883f6
     GuidInternal: 
-    m_lastTime: -8584956867393635481
+    m_lastTime: -8584961376108367210
     List:
     - name: Acoustic_Banner
       guid: f2532d2fccda8e408b8898b1b52a26d6
@@ -317,7 +317,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: a496d604dfb54f43bca9994076f26b0d
     GuidInternal: 
-    m_lastTime: -8584860128987387893
+    m_lastTime: -8584854611537190505
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -520,7 +520,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e364e8b048b1b448b41f12b8470ec700
     GuidInternal: 
-    m_lastTime: -8584859968483856049
+    m_lastTime: -8584854640675847903
     List:
     - name: Main
       guid: 251dc717ef0fef42a545f46544a81c52
@@ -590,7 +590,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 32fcbe829e1db64882c8fd8a959356a5
     GuidInternal: 
-    m_lastTime: -8584859968483891828
+    m_lastTime: -8584854640675757897
     List:
     - name: AMBIANCES
       guid: 0de342e3b708fb408c527d577683a4a1
@@ -1014,6 +1014,86 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_SFX_BATTEMENT_COEUR
+      guid: 3bb9a3e7aa6175489999fae9b051b8cf
+      id: 2692847473
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: UI
+        ObjectType: 4
+        guid: b05565065b0d484ea53e41db3858150e
+      - ElementName: Play_SFX_BATTEMENT_COEUR
+        ObjectType: 3
+        guid: 3bb9a3e7aa6175489999fae9b051b8cf
+      Path: Events\Default Work Unit\UI\Play_SFX_BATTEMENT_COEUR
+      maxAttenuation: 0
+      maxDuration: 4.370167
+      minDuration: 4.370167
+    - name: Play_SFX_BATTEMENT_COEUR_2
+      guid: 0d08cbc71c48594abe08d604a1c6678f
+      id: 1697954246
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: UI
+        ObjectType: 4
+        guid: b05565065b0d484ea53e41db3858150e
+      - ElementName: Play_SFX_BATTEMENT_COEUR_2
+        ObjectType: 3
+        guid: 0d08cbc71c48594abe08d604a1c6678f
+      Path: Events\Default Work Unit\UI\Play_SFX_BATTEMENT_COEUR_2
+      maxAttenuation: 0
+      maxDuration: 4.370167
+      minDuration: 4.370167
+    - name: Play_SFX_BATTEMENT_COEUR_ISOLE
+      guid: a74d0e1d205e7d4fba7374881fb3bab0
+      id: 1039181434
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: UI
+        ObjectType: 4
+        guid: b05565065b0d484ea53e41db3858150e
+      - ElementName: Play_SFX_BATTEMENT_COEUR_ISOLE
+        ObjectType: 3
+        guid: a74d0e1d205e7d4fba7374881fb3bab0
+      Path: Events\Default Work Unit\UI\Play_SFX_BATTEMENT_COEUR_ISOLE
+      maxAttenuation: 0
+      maxDuration: 1.4326667
+      minDuration: 1.4326667
+    - name: Play_SFX_BATTEMENT_COEUR_ISOLE_1
+      guid: 8bd742f5eba1224f9e60bd36684b3c24
+      id: 3271480754
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: UI
+        ObjectType: 4
+        guid: b05565065b0d484ea53e41db3858150e
+      - ElementName: Play_SFX_BATTEMENT_COEUR_ISOLE_1
+        ObjectType: 3
+        guid: 8bd742f5eba1224f9e60bd36684b3c24
+      Path: Events\Default Work Unit\UI\Play_SFX_BATTEMENT_COEUR_ISOLE_1
+      maxAttenuation: 0
+      maxDuration: 1.4663125
+      minDuration: 1.4663125
     - name: Play_SFX_BOUTON_CLICK_NON
       guid: f02e758b9bfaed4faf252097c2d286d2
       id: 3549990494
@@ -1698,10 +1778,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Musique
+        ObjectType: 4
+        guid: 88f90691d8dc94408199bba3ae90acb0
       - ElementName: Stop_MUSIQUE_SALLE_WALL_E
         ObjectType: 3
         guid: a56eb845ff52c045839f55307f5df1f5
-      Path: Events\Default Work Unit\Stop_MUSIQUE_SALLE_WALL_E
+      Path: Events\Default Work Unit\Musique\Stop_MUSIQUE_SALLE_WALL_E
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -1968,7 +2051,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: f463c39a5f915547a8ea853e5e7d5179
     GuidInternal: 
-    m_lastTime: -8584860128990383753
+    m_lastTime: -8584854661909169552
     List:
     - name: BatterieFaible
       guid: 504c39daeea7a9488edc2be5e4831b8b
@@ -2010,7 +2093,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 714a7c0a843719468b6cdc73bdd5c5ef
     GuidInternal: 
-    m_lastTime: -8584991339338059162
+    m_lastTime: -8584976072292003898
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -2024,7 +2107,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 6a351b9960659c4795efc6c4eb9bc882
     GuidInternal: 
-    m_lastTime: -8584991339338059162
+    m_lastTime: -8584991312705989083
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -2038,10 +2121,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 2231a2ba2b69e34ab5a5aaa376433f97
     GuidInternal: 
-    m_lastTime: -8584991339338039150
+    m_lastTime: -8584991312705959035
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 05000000060000000c00000011000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

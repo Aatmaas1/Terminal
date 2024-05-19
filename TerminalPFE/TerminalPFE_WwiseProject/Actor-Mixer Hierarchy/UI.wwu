@@ -138,6 +138,115 @@
 						<ActiveSource Name="SFX_UI_BOUTON_RETOUR" ID="{5741441F-C4DD-4D4E-A75F-F1D3726170EB}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="SFX_BATTEMENT_COEUR" ID="{A0172F36-F1D8-4433-9605-FCB0D740860D}" ShortID="606391738">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{4C7CA462-63C4-47BF-A06A-1483820419DB}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_BATTEMENT_COEUR" ID="{C7F0B1AA-BBC9-45F5-864F-E65E56B4D90F}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_BATTEMENT_COEUR.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="912676389"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_BATTEMENT_COEUR" ID="{C7F0B1AA-BBC9-45F5-864F-E65E56B4D90F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SFX_BATTEMENT_COEUR_2" ID="{C68A1278-E72A-4591-9726-4709E2D44983}" ShortID="638757614">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{4C7CA462-63C4-47BF-A06A-1483820419DB}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_BATTEMENT_COEUR_2" ID="{6C25A777-C9B6-4CBD-8115-C3838ABE5CB5}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_BATTEMENT_COEUR_2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="961755382"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_BATTEMENT_COEUR_2" ID="{6C25A777-C9B6-4CBD-8115-C3838ABE5CB5}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SFX_BATTEMENT_COEUR_ISOLE" ID="{8668759C-78C9-4478-8CFB-43FE59AFAE38}" ShortID="878842106">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-9</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{4C7CA462-63C4-47BF-A06A-1483820419DB}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_BATTEMENT_COEUR_ISOLE" ID="{88E89EBB-F469-469D-A42D-1D08EEFDE455}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_BATTEMENT_COEUR_ISOLE.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="884427440"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_BATTEMENT_COEUR_ISOLE" ID="{88E89EBB-F469-469D-A42D-1D08EEFDE455}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SFX_BATTEMENT_COEUR_ISOLE_1" ID="{6FBE5A8D-BC6D-40F9-AA0A-A630CE491A6A}" ShortID="913428340">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{4C7CA462-63C4-47BF-A06A-1483820419DB}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_BATTEMENT_COEUR_ISOLE_1" ID="{BDED5E8B-C5B2-46EB-855A-9BAEE99F455E}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_BATTEMENT_COEUR_ISOLE_1.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="120129755"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_BATTEMENT_COEUR_ISOLE_1" ID="{BDED5E8B-C5B2-46EB-855A-9BAEE99F455E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

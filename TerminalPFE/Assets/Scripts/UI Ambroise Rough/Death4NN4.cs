@@ -34,6 +34,7 @@ public class Death4NN4 : MonoBehaviour
         }
     }
 
+    public AK.Wwise.Event battement;
 
     IEnumerator WaitAnimDeath()
     {
@@ -41,6 +42,7 @@ public class Death4NN4 : MonoBehaviour
         StartCoroutine(SlowDown());
 
         postEvent.PostEvent();
+        battement.Post(gameObject);
 
         yield return new WaitForSeconds(timeToStop);
 
@@ -92,7 +94,8 @@ public class Death4NN4 : MonoBehaviour
 
         while(time < 1f)
         {
-            AkSoundEngine.SetRTPCValue("BatterieFaible", Mathf.Lerp(initialLPF, 100, time / timeToFullLPF));
+            time += Time.deltaTime / timeToFullLPF;
+            AkSoundEngine.SetRTPCValue("BatterieFaible", Mathf.Lerp(initialLPF, 100, time));
             yield return null;
             StopCoroutine(LPFDeath());
         }      

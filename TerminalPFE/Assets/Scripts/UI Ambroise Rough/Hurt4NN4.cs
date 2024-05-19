@@ -43,11 +43,14 @@ public class Hurt4NN4 : MonoBehaviour
     public float timeToNoLPF;
     public float startingLPFValue;
     public float targetLPFValue;
-    
+
+    public AK.Wwise.Event battementCoeur;
 
     public IEnumerator LPF()
     {
-        AkSoundEngine.SetRTPCValue("BatterieFaible", 100);
+        AkSoundEngine.SetRTPCValue("BatterieFaible", startingLPFValue);
+
+        battementCoeur.Post(gameObject);
 
         yield return new WaitForSeconds(timeBeforeLPFRemoval);
 
@@ -55,8 +58,8 @@ public class Hurt4NN4 : MonoBehaviour
 
         while (time < 1f)
         {
-            time += Time.deltaTime;
-            AkSoundEngine.SetRTPCValue("BatterieFaible", Mathf.Lerp(startingLPFValue, targetLPFValue, time / timeToNoLPF));
+            time += Time.deltaTime / timeToNoLPF;
+            AkSoundEngine.SetRTPCValue("BatterieFaible", Mathf.Lerp(startingLPFValue, targetLPFValue, time));
             yield return null;
             StopCoroutine(LPF());
         }

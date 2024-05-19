@@ -114,7 +114,7 @@
 				<Event Id="1930795167" Name="Stop_MUSIQUE_SIMULATION_3" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{83FFF504-9AA2-49FA-79CF-F3561200CE3C}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E6C5C9FF-F7AD-4999-C17F-AD53A989CD1E}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -514,7 +514,7 @@
 				<Event Id="3185533582" Name="Stop_SFX_AMBIANCE_CROWD" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{EDC25258-F141-A5CB-3EB3-2EC94D81B1A8}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{134F48DD-87E2-B007-2427-C8486A6A198B}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -529,6 +529,10 @@
 				<File Id="41481307" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_BOUTON_CLICK_OUI.wav</ShortName>
 					<CachePath>SFX/SFX_BOUTON_CLICK_OUI_9E686036.wem</CachePath>
+				</File>
+				<File Id="120129755" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_BATTEMENT_COEUR_ISOLE_1.wav</ShortName>
+					<CachePath>SFX/SFX_BATTEMENT_COEUR_ISOLE_1_818F3B66.wem</CachePath>
 				</File>
 				<File Id="132449596" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_LETTRES_INTRO_NEW_ESSAI_2.wav</ShortName>
@@ -614,6 +618,14 @@
 					<ShortName>SFX_PAS_ANDROÏDE_4.wav</ShortName>
 					<CachePath>SFX/SFX_PAS_ANDROÏDE_4_818F3B66.wem</CachePath>
 				</File>
+				<File Id="884427440" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_BATTEMENT_COEUR_ISOLE.wav</ShortName>
+					<CachePath>SFX/SFX_BATTEMENT_COEUR_ISOLE_818F3B66.wem</CachePath>
+				</File>
+				<File Id="912676389" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_BATTEMENT_COEUR.wav</ShortName>
+					<CachePath>SFX/SFX_BATTEMENT_COEUR_818F3B66.wem</CachePath>
+				</File>
 				<File Id="919887464" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_EBOULEMENT.wav</ShortName>
 					<CachePath>SFX/SFX_EBOULEMENT_818F3B66.wem</CachePath>
@@ -629,6 +641,10 @@
 				<File Id="948307174" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PAS_ANDROÏDE_SABLE_6.wav</ShortName>
 					<CachePath>SFX/SFX_PAS_ANDROÏDE_SABLE_6_818F3B66.wem</CachePath>
+				</File>
+				<File Id="961755382" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_BATTEMENT_COEUR_2.wav</ShortName>
+					<CachePath>SFX/SFX_BATTEMENT_COEUR_2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="978644198" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PAS_ANDROÏDE_SABLE_1.wav</ShortName>
@@ -666,6 +682,26 @@
 						<MediaRef Id="948307174"/>
 						<MediaRef Id="978644198"/>
 						<MediaRef Id="978945700"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2692847473" Name="Play_SFX_BATTEMENT_COEUR" DurationType="OneShot" DurationMin="4.370167" DurationMax="4.370167">
+					<MediaRefs>
+						<MediaRef Id="912676389"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1697954246" Name="Play_SFX_BATTEMENT_COEUR_2" DurationType="OneShot" DurationMin="4.370167" DurationMax="4.370167">
+					<MediaRefs>
+						<MediaRef Id="961755382"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1039181434" Name="Play_SFX_BATTEMENT_COEUR_ISOLE" DurationType="OneShot" DurationMin="1.4326667" DurationMax="1.4326667">
+					<MediaRefs>
+						<MediaRef Id="884427440"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3271480754" Name="Play_SFX_BATTEMENT_COEUR_ISOLE_1" DurationType="OneShot" DurationMin="1.4663125" DurationMax="1.4663125">
+					<MediaRefs>
+						<MediaRef Id="120129755"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3549990494" Name="Play_SFX_BOUTON_CLICK_NON" DurationType="OneShot" DurationMin="2.0240362" DurationMax="2.0240362">
@@ -774,5 +810,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{07C6BEA9-06B5-743C-C134-9FCF07707841}</FileHash>
+	<FileHash>{1BBC728A-3C6E-1BF6-40D4-4C326E588AC2}</FileHash>
 </SoundBanksInfo>

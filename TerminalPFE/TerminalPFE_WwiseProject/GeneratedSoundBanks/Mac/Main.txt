@@ -2,11 +2,13 @@ Event	ID	Name			Wwise Object Path	Notes
 	128182366	Play_RANDOMISEUR_PAS_SABLE			\Default Work Unit\PasEvent\Play_RANDOMISEUR_PAS_SABLE	
 	140330310	Play_SFX_PORTES_CHANGELIGHT			\Default Work Unit\PORTES\Play_SFX_PORTES_CHANGELIGHT	
 	317254060	Play_SFX_FERMETURE_PORTE_PETITE			\Default Work Unit\PORTES\Play_SFX_FERMETURE_PORTE_PETITE	
+	1039181434	Play_SFX_BATTEMENT_COEUR_ISOLE			\Default Work Unit\UI\Play_SFX_BATTEMENT_COEUR_ISOLE	
 	1055529180	Play_SFX_BOUTONS_PARCOURIR			\Default Work Unit\UI\Play_SFX_BOUTONS_PARCOURIR	
 	1074890505	Stop_SFX_SIMUTOREEL			\Default Work Unit\TRANSITIONS\Stop_SFX_SIMUTOREEL	
 	1116452380	Play_SFX_PORTE_BLOQUEE			\Default Work Unit\PORTES\Play_SFX_PORTE_BLOQUEE	
 	1191159315	Stop_SFX_TERMINAL_BOUCLE			\Default Work Unit\TERMINAL\Stop_SFX_TERMINAL_BOUCLE	
 	1226673255	Play_SFX_FERMETURE_PORTE_TUTO			\Default Work Unit\PORTES\Play_SFX_FERMETURE_PORTE_TUTO	
+	1697954246	Play_SFX_BATTEMENT_COEUR_2			\Default Work Unit\UI\Play_SFX_BATTEMENT_COEUR_2	
 	1840303866	Stop_SFX_REELTOSIMU_2			\Default Work Unit\TRANSITIONS\Stop_SFX_REELTOSIMU_2	
 	1925718750	Play_SFX_CONSTRUCTION_ANDRO			\Default Work Unit\INTRODUCTION\Play_SFX_CONSTRUCTION_ANDRO	
 	1974769985	Play_SFX_OUVERTURE_PORTE_TUTO			\Default Work Unit\PORTES\Play_SFX_OUVERTURE_PORTE_TUTO	
@@ -18,6 +20,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	2427864811	Play_SFX_SIMUTOREEL			\Default Work Unit\TRANSITIONS\Play_SFX_SIMUTOREEL	
 	2483481318	Play_SFX_TERMINAL_OUVERTURE			\Default Work Unit\TERMINAL\Play_SFX_TERMINAL_OUVERTURE	
 	2623669360	Play_RandomContainerTest			\Default Work Unit\PasEvent\Play_RandomContainerTest	
+	2692847473	Play_SFX_BATTEMENT_COEUR			\Default Work Unit\UI\Play_SFX_BATTEMENT_COEUR	
+	3271480754	Play_SFX_BATTEMENT_COEUR_ISOLE_1			\Default Work Unit\UI\Play_SFX_BATTEMENT_COEUR_ISOLE_1	
 	3337838948	Play_SFX_REELTOSIMU_2			\Default Work Unit\TRANSITIONS\Play_SFX_REELTOSIMU_2	
 	3382067122	Play_SFX_BOUTON_CLICK_OUI			\Default Work Unit\UI\Play_SFX_BOUTON_CLICK_OUI	
 	3549990494	Play_SFX_BOUTON_CLICK_NON			\Default Work Unit\UI\Play_SFX_BOUTON_CLICK_NON	
@@ -29,6 +33,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	13083898	SFX_PAS_ANDROÏDE_2	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Mac\SFX\SFX_PAS_ANDROÏDE_2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Pas\RANDOMISEUR_PAS\SFX_PAS_ANDROÏDE_2		119912
 	38118640	SFX_PAS_ANDROÏDE_SABLE_4	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Mac\SFX\SFX_PAS_ANDROÏDE_SABLE_4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Pas\RANDOMISEUR_PAS_SABLE\SFX_PAS_ANDROÏDE_SABLE_4		119912
 	41481307	SFX_BOUTON_CLICK_OUI	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Mac\SFX\SFX_BOUTON_CLICK_OUI_9E686036.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI\SFX_BOUTON_CLICK_OUI		156816
+	120129755	SFX_BATTEMENT_COEUR_ISOLE_1	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Mac\SFX\SFX_BATTEMENT_COEUR_ISOLE_1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI\SFX_BATTEMENT_COEUR_ISOLE_1		281628
 	132449596	SFX_LETTRES_INTRO_NEW_ESSAI_2	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Mac\SFX\SFX_LETTRES_INTRO_NEW_ESSAI_2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\INTRO CONSTRUCTION ANDRO\SFX_LETTRES_INTRO_NEW_ESSAI_2		156096
 	214063422	SFX_CONSTRUCTION_ANDRO	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Mac\SFX\SFX_CONSTRUCTION_ANDROÏDE_268A4F59.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\INTRO CONSTRUCTION ANDRO\SFX_CONSTRUCTION_ANDRO		4678136
 	293166367	SFX_TERMINAL_OUVERTURE	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Mac\SFX\SFX_TERMINAL_OUVERTURE_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\TERMINAL\SFX_TERMINAL_OUVERTURE		266444
@@ -50,10 +55,13 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	857904994	SFX_PAS_ANDROÏDE_SABLE_5	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Mac\SFX\SFX_PAS_ANDROÏDE_SABLE_5_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Pas\RANDOMISEUR_PAS_SABLE\SFX_PAS_ANDROÏDE_SABLE_5		119912
 	871342710	SFX_PORTE_BLOQUEE	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Mac\SFX\SFX_PORTE_BLOQUEE_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Portes\SFX_PORTE_BLOQUEE		355480
 	881874796	SFX_PAS_ANDROÏDE_4	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Mac\SFX\SFX_PAS_ANDROÏDE_4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Pas\RANDOMISEUR_PAS\SFX_PAS_ANDROÏDE_4		119912
+	884427440	SFX_BATTEMENT_COEUR_ISOLE	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Mac\SFX\SFX_BATTEMENT_COEUR_ISOLE_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI\SFX_BATTEMENT_COEUR_ISOLE		275168
+	912676389	SFX_BATTEMENT_COEUR	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Mac\SFX\SFX_BATTEMENT_COEUR_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI\SFX_BATTEMENT_COEUR		839168
 	919887464	SFX_EBOULEMENT	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Mac\SFX\SFX_EBOULEMENT_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Transitions\SFX_EBOULEMENT		963856
 	922605610	SFX_FERMETURE_PORTE_TUTO	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Mac\SFX\SFX_FERMETURE_PORTE_TUTO_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Portes\SFX_FERMETURE_PORTE_TUTO		261004
 	946652825	SFX_TERMINAL_FERMETURE	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Mac\SFX\SFX_TERMINAL_FERMETURE_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\TERMINAL\SFX_TERMINAL_FERMETURE		266444
 	948307174	SFX_PAS_ANDROÏDE_SABLE_6	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Mac\SFX\SFX_PAS_ANDROÏDE_SABLE_6_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Pas\RANDOMISEUR_PAS_SABLE\SFX_PAS_ANDROÏDE_SABLE_6		119912
+	961755382	SFX_BATTEMENT_COEUR_2	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Mac\SFX\SFX_BATTEMENT_COEUR_2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI\SFX_BATTEMENT_COEUR_2		839168
 	978644198	SFX_PAS_ANDROÏDE_SABLE_1	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Mac\SFX\SFX_PAS_ANDROÏDE_SABLE_1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Pas\RANDOMISEUR_PAS_SABLE\SFX_PAS_ANDROÏDE_SABLE_1		119912
 	978945700	SFX_PAS_ANDROÏDE_SABLE_3	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Mac\SFX\SFX_PAS_ANDROÏDE_SABLE_3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Pas\RANDOMISEUR_PAS_SABLE\SFX_PAS_ANDROÏDE_SABLE_3		119912
 	1031853575	SFX_PORTES_CHANGELIGHT	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Mac\SFX\SFX_PORTES_CHANGELIGHT_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Portes\SFX_PORTES_CHANGELIGHT		354556
