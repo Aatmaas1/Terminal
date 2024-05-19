@@ -49,8 +49,7 @@
 				<Sound Name="SFX_SCAN_OBJ" ID="{5B5F2A14-EC5A-498A-9335-1A44A6CF4386}" ShortID="650581662">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-9</Value>

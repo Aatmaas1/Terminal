@@ -5,6 +5,7 @@ public class ActionPorteTuto : MonoBehaviour
     //à passer en private
     public bool isOpening;
     private Animator PorteTutoAnimator;
+
     private void Start()
     {
         PorteTutoAnimator = GetComponent<Animator>();

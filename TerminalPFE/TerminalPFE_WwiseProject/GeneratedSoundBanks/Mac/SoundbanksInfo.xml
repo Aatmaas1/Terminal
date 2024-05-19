@@ -514,7 +514,7 @@
 				<Event Id="3185533582" Name="Stop_SFX_AMBIANCE_CROWD" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{134F48DD-87E2-B007-2427-C8486A6A198B}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{72E13D72-0618-C867-736C-4EE02AAC82A1}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -779,7 +779,7 @@
 						<MediaRef Id="336626696"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="4060256703" Name="Play_SFX_SCAN_OBJ" MaxAttenuation="195" DurationType="OneShot" DurationMin="5.143417" DurationMax="5.143417">
+				<Event Id="4060256703" Name="Play_SFX_SCAN_OBJ" DurationType="OneShot" DurationMin="5.143417" DurationMax="5.143417">
 					<MediaRefs>
 						<MediaRef Id="837757474"/>
 					</MediaRefs>
@@ -810,5 +810,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{302CDA52-AAA1-6A7C-7F91-B328648C53C2}</FileHash>
+	<FileHash>{A29E007B-9526-A026-3C98-04C41D59C44D}</FileHash>
 </SoundBanksInfo>

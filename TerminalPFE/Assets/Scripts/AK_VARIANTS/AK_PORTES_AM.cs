@@ -10,13 +10,25 @@ public class AK_PORTES_AM : MonoBehaviour
 
     public AkRoomPortal portal;
 
-    public void Open()
+    public void OpenPortal()
     {
-        if(portal != null)
+        if (portal != null)
         {
             portal.Open();
         }
-        
+    }
+
+    public void ClosePortal()
+    {
+
+        if (portal != null)
+        {
+            portal.Close();
+        }
+    }
+
+    public void Open()
+    {        
         open.Post(gameObject);
         //Debug.Log("Je m'ouvre");
     }
@@ -24,12 +36,6 @@ public class AK_PORTES_AM : MonoBehaviour
     public void Close()
     {
         close.Post(gameObject);
-
-        if (portal != null)
-        {
-            portal.Close();
-        }
-
     }
 
     public void ChangeLight()
