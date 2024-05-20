@@ -219,4 +219,9 @@ public class sc_DataManager : MonoBehaviour
         settingsData.sensiCam = sensi;
         fileHandler.SaveSettings(settingsData);
     }
+    public void SaveQuality(int valeur)
+    {
+        settingsData.quality = valeur;
+        fileHandler.SaveSettings(settingsData);
+    }
 }

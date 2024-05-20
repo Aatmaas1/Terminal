@@ -4,19 +4,22 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System.Linq;
 
 public class sc_PannelOptionsManager : MonoBehaviour
 {
     public GameObject pannelGraphique, pannelSon, pannelControles;
 
     public Slider sliderSensiCam;
-    public TMP_Text valeurSensiCam;
+    public TMP_Text valeurGraphismes, valeurSensiCam;
 
 
-    private void Start()
+    private void Awake()
     {
         sliderSensiCam.value = sc_DataManager.instance.settingsData.sensiCam;
         valeurSensiCam.text = sc_DataManager.instance.settingsData.sensiCam.ToString();
+        QualitySettings.SetQualityLevel(sc_DataManager.instance.settingsData.quality);
+        valeurGraphismes.text = QualitySettings.names[QualitySettings.GetQualityLevel()];
     }
 
     public void OpenVisual()
@@ -41,16 +44,35 @@ public class sc_PannelOptionsManager : MonoBehaviour
         pannelGraphique.SetActive(false);
     }
 
-    public void SwitchQualiy(bool isGauche)
+    public void SwitchQuality(bool isGauche)
     {
-        /*if(isGauche)
+        int i = QualitySettings.GetQualityLevel();
+        if(isGauche)
         {
-
+            if(i == 0)
+            {
+                i = QualitySettings.count - 1;
+            }
+            else
+            {
+                i--;
+            }
         }
         else
         {
+            if (i == QualitySettings.count -1)
+            {
+                i = 0;
+            }
+            else
+            {
+                i++;
+            }
+        }
 
-        }*/
+        QualitySettings.SetQualityLevel(i);
+        valeurGraphismes.text = QualitySettings.names[QualitySettings.GetQualityLevel()];
+        sc_DataManager.instance.SaveQuality(i);
     }
 
     public void ChangeSensiCam()
