@@ -11,10 +11,14 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="SFX" ID="{4C7CA462-63C4-47BF-A06A-1483820419DB}">
+							<PropertyList>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList/>
 							<ChildrenList>
 								<AuxBus Name="ReverbMaster" ID="{D82F8442-9615-4B36-96A1-1BFD164EA25A}">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
@@ -22,7 +26,7 @@
 									<ChildrenList>
 										<AuxBus Name="RoomMedium" ID="{885C9032-EB04-4EB4-BBB7-DE3043B128D3}">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
@@ -63,7 +67,7 @@
 										</AuxBus>
 										<AuxBus Name="RoomSmall" ID="{98FD6975-424A-4591-8CCB-5A59C3EF30EF}">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
@@ -105,11 +109,12 @@
 										</AuxBus>
 										<AuxBus Name="RoomHall" ID="{0EAF0051-DD06-47F2-A3AE-3D12E76EB21F}">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 											</PropertyList>
+											<ReferenceList/>
 											<ObjectLists>
 												<ObjectList Name="Effects">
 													<Reference>
@@ -147,7 +152,7 @@
 										</AuxBus>
 										<AuxBus Name="RoomLarge" ID="{376916BE-BAE0-4E2D-95C7-65D3FA177E44}">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
@@ -189,7 +194,7 @@
 										</AuxBus>
 										<AuxBus Name="RoomStairs" ID="{E17DFE68-D847-41AD-8B2C-85E15CE45F27}">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
@@ -231,7 +236,7 @@
 										</AuxBus>
 										<AuxBus Name="RoomRefectoire" ID="{36BE7321-60C1-4400-949A-C133DD1D3D20}">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
@@ -257,6 +262,7 @@
 										<Position Name="" ID="{A1EE437C-9495-4C08-85CD-17827F4FD074}"/>
 									</PositioningInfo>
 								</AuxBus>
+								<Bus Name="RAW SOUND" ID="{C649DA51-3287-4693-9B4A-A92AD21B648C}"/>
 							</ChildrenList>
 							<ObjectLists>
 								<ObjectList Name="RTPC">

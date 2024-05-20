@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Sound Name="SFX_OUVERTURE_PORTE_PETITE" ID="{8A3F0EE5-79AD-42A0-B0A9-B67C4087ED67}" ShortID="1050927176">
 					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
@@ -22,7 +22,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX" ID="{4C7CA462-63C4-47BF-A06A-1483820419DB}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+							<ObjectRef Name="RAW SOUND" ID="{C649DA51-3287-4693-9B4A-A92AD21B648C}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -40,7 +40,7 @@
 				</Sound>
 				<Sound Name="SFX_FERMETURE_PORTE_PETITE" ID="{FD265EF0-B6E2-4CCD-9441-E7A3BE2F8BFF}" ShortID="191269118">
 					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
@@ -57,7 +57,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX" ID="{4C7CA462-63C4-47BF-A06A-1483820419DB}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+							<ObjectRef Name="RAW SOUND" ID="{C649DA51-3287-4693-9B4A-A92AD21B648C}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -75,7 +75,7 @@
 				</Sound>
 				<Sound Name="SFX_OUVERTURE_PORTE_TUTO" ID="{B6836ABF-27FA-4C88-9043-44093883FA6D}" ShortID="483795144">
 					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
@@ -92,7 +92,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX" ID="{4C7CA462-63C4-47BF-A06A-1483820419DB}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+							<ObjectRef Name="RAW SOUND" ID="{C649DA51-3287-4693-9B4A-A92AD21B648C}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -110,7 +110,7 @@
 				</Sound>
 				<Sound Name="SFX_FERMETURE_PORTE_TUTO" ID="{87768B83-0A0C-40FF-AB6E-710D6A087DCF}" ShortID="944354579">
 					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
@@ -127,7 +127,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX" ID="{4C7CA462-63C4-47BF-A06A-1483820419DB}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+							<ObjectRef Name="RAW SOUND" ID="{C649DA51-3287-4693-9B4A-A92AD21B648C}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -145,7 +145,7 @@
 				</Sound>
 				<Sound Name="SFX_PORTE_FINALE" ID="{B692877B-B51D-4C63-8DA2-A51929D03716}" ShortID="931083036">
 					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
@@ -162,7 +162,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX" ID="{4C7CA462-63C4-47BF-A06A-1483820419DB}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+							<ObjectRef Name="RAW SOUND" ID="{C649DA51-3287-4693-9B4A-A92AD21B648C}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -180,7 +180,7 @@
 				</Sound>
 				<Sound Name="SFX_PORTES_CHANGELIGHT" ID="{A6F13EEB-826F-472B-9ED8-74330D4C231F}" ShortID="337650405">
 					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -196,7 +196,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX" ID="{4C7CA462-63C4-47BF-A06A-1483820419DB}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+							<ObjectRef Name="RAW SOUND" ID="{C649DA51-3287-4693-9B4A-A92AD21B648C}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -214,7 +214,7 @@
 				</Sound>
 				<Sound Name="SFX_PORTE_BLOQUEE" ID="{DE864B14-33C3-4CB8-B496-497C34831F89}" ShortID="125324643">
 					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
@@ -231,7 +231,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX" ID="{4C7CA462-63C4-47BF-A06A-1483820419DB}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+							<ObjectRef Name="RAW SOUND" ID="{C649DA51-3287-4693-9B4A-A92AD21B648C}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

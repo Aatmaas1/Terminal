@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{FD1EACAC-5314-09FF-A391-F85ABD761374}">
+		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{AE30CB1A-7DDE-B656-4065-7E2E0758C4FB}">
 			<ShortName>MUSIQUE</ShortName>
 			<Path>MUSIQUE.bnk</Path>
 			<Media>
@@ -114,7 +114,7 @@
 				<Event Id="1930795167" Name="Stop_MUSIQUE_SIMULATION_3" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E6C5C9FF-F7AD-4999-C17F-AD53A989CD1E}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{33DD8552-9D27-5BBA-769B-1F2FF18B2263}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -136,6 +136,7 @@
 			<Busses>
 				<Bus Id="393239870" Name="SFX"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3981461428" Name="RAW SOUND"/>
 			</Busses>
 			<AuxBusses>
 				<AuxBus Id="484847633" Name="RoomHall">
@@ -342,7 +343,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1764570876" Type="User" Language="SFX" Hash="{62870748-846E-4080-F72D-A2BFF916CF10}">
+		<SoundBank Id="1764570876" Type="User" Language="SFX" Hash="{570F3366-9140-126B-7584-4090908D387B}">
 			<ShortName>Main2</ShortName>
 			<Path>Main2.bnk</Path>
 			<Media>
@@ -514,7 +515,7 @@
 				<Event Id="3185533582" Name="Stop_SFX_AMBIANCE_CROWD" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{72E13D72-0618-C867-736C-4EE02AAC82A1}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{DD8BEADD-317B-5498-6963-33904B0330DE}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -810,5 +811,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F442DBC6-4921-C15D-2AF8-25FE6B47F3B7}</FileHash>
+	<FileHash>{A648BC5D-E11B-ADF3-F7FF-10E67CB2DD5A}</FileHash>
 </SoundBanksInfo>

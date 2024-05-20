@@ -317,7 +317,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: a496d604dfb54f43bca9994076f26b0d
     GuidInternal: 
-    m_lastTime: -8584854602178350294
+    m_lastTime: -8584853924907138496
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -333,6 +333,26 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: RAW SOUND
+      guid: 51da49c6873293469b4aa92ad21b648c
+      id: 3981461428
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a496d604dfb54f43bca9994076f26b0d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 62a47c4cc463bf47a06a1483820419db
+      - ElementName: RAW SOUND
+        ObjectType: 2
+        guid: 51da49c6873293469b4aa92ad21b648c
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\RAW SOUND
     - name: ReverbMaster
       guid: 42842fd81596364b96a11bfd164ea25a
       id: 1686871543
@@ -590,7 +610,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 32fcbe829e1db64882c8fd8a959356a5
     GuidInternal: 
-    m_lastTime: -8584854459305474336
+    m_lastTime: -8584854085410424671
     List:
     - name: AMBIANCES
       guid: 0de342e3b708fb408c527d577683a4a1
@@ -2124,7 +2144,7 @@ MonoBehaviour:
     m_lastTime: -8584991312705959035
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0200000003000000040000000500000006000000070000000c0000000d000000170000002800000029000000
+  ExpandedWaapiItemIds: 0500000006000000070000000b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
