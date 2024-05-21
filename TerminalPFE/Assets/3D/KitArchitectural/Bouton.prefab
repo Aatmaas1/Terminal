@@ -319,6 +319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PorteOuvertureParBouton: {fileID: 0}
   index: 0
+  Vfx: {fileID: 0}
   VfxFeedBack: {fileID: 2910250443539871676}
   cardID: 0
   holoText: {fileID: 0}
@@ -327,6 +328,7 @@ MonoBehaviour:
   logoCard: {fileID: 21300000, guid: 658c5459da4dd0944b1fc1ae97c4357f, type: 3}
   logoCross: {fileID: 21300000, guid: 58f40e3d77ddfc547b1d9cbb55d15c9d, type: 3}
   jumeau: {fileID: 0}
+  textError: 
 --- !u!95 &7574674968908188646
 Animator:
   serializedVersion: 5
@@ -491,7 +493,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4282114777396531105}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: bd8f58f633ee20344bdbe95854518957, type: 2}
   m_CullingMode: 0
