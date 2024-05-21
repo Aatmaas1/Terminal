@@ -307,22 +307,22 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
         if (isBrasRouge)
         {
             fun[2] = brasRouge;
-            Debug.Log("BrasRouge");
+            //Debug.Log("BrasRouge");
         }
         else
         {
             fun[2] = brasGris;
-            Debug.Log("BrasGris");
+            //Debug.Log("BrasGris");
         }
         if (isJambeRouge)
         {
             fun[3] = jambesRouge;
-            Debug.Log("JambeRouge");
+            //Debug.Log("JambeRouge");
         }
         else
         {
             fun[3] = jambesGris;
-            Debug.Log("JambeGris");
+            //Debug.Log("JambeGris");
         }
 
         transform.GetChild(1).GetChild(0).GetComponent<SkinnedMeshRenderer>().materials = fun;
