@@ -175,6 +175,7 @@ public class Bouton : MonoBehaviour, IDataManager
         UnityEventPortes.InteractDoorBouton();
         this.gameObject.GetComponent<Animator>().SetTrigger("IsClick");
         Vfx.gameObject.SetActive(false);
+        transform.tag = "Untagged";
         VfxFeedBack.SendEvent("OnBouton");
 
         yield return new WaitForSeconds(0.2f);
