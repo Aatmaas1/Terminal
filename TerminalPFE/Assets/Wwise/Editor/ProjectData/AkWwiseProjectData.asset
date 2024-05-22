@@ -540,7 +540,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e364e8b048b1b448b41f12b8470ec700
     GuidInternal: 
-    m_lastTime: -8584853127643538902
+    m_lastTime: -8584851905363225746
     List:
     - name: Main
       guid: 251dc717ef0fef42a545f46544a81c52
@@ -610,7 +610,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 32fcbe829e1db64882c8fd8a959356a5
     GuidInternal: 
-    m_lastTime: -8584853127651143300
+    m_lastTime: -8584851899683646246
     List:
     - name: AMBIANCES
       guid: 0de342e3b708fb408c527d577683a4a1
@@ -774,6 +774,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_CODE_USINE_LOOP
+      guid: 4f79a681d490834dacaf3de8e2c443e3
+      id: 3280361123
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Play_CODE_USINE_LOOP
+        ObjectType: 3
+        guid: 4f79a681d490834dacaf3de8e2c443e3
+      Path: Events\Default Work Unit\Play_CODE_USINE_LOOP
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_INSTANT_FUSEE_2
+      guid: 8edcbd953d035e41bac254459ad01af4
+      id: 1711887847
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Play_INSTANT_FUSEE_2
+        ObjectType: 3
+        guid: 8edcbd953d035e41bac254459ad01af4
+      Path: Events\Default Work Unit\Play_INSTANT_FUSEE_2
+      maxAttenuation: 0
+      maxDuration: 40.30979
+      minDuration: 40.30979
     - name: Play_MUSIQUE_INTO_DEMARCHE_DIFF
       guid: 2d0ead5e00ccd049aa1713d00a66ec38
       id: 1666445414
@@ -1694,6 +1728,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.8461459
       minDuration: 1.8461459
+    - name: Play_SORTIE_USINE
+      guid: e6d5bfd97b750e409b1c0a7a8cf7b9d3
+      id: 158678111
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Play_SORTIE_USINE
+        ObjectType: 3
+        guid: e6d5bfd97b750e409b1c0a7a8cf7b9d3
+      Path: Events\Default Work Unit\Play_SORTIE_USINE
+      maxAttenuation: 0
+      maxDuration: 14.352271
+      minDuration: 14.352271
     - name: PORTES
       guid: ad9b7f7209c43d4aa5b228ff9479e558
       id: 3185142948
@@ -1785,6 +1836,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: df2b7b82b05af346952be2fdc995beb1
       Path: Events\Default Work Unit\AMBIANCES\Stop_AMBIANCE_TEMPETE_SEEMLESS
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_CODE_USINE_LOOP
+      guid: 8fbdf7cb5022624b9e3ad9e851d6becc
+      id: 2809798973
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: Stop_CODE_USINE_LOOP
+        ObjectType: 3
+        guid: 8fbdf7cb5022624b9e3ad9e851d6becc
+      Path: Events\Default Work Unit\Stop_CODE_USINE_LOOP
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -2144,7 +2212,7 @@ MonoBehaviour:
     m_lastTime: -8584991312705959035
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0600000007000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
