@@ -310,6 +310,80 @@
 								<ActiveSource Name="MUSIQUE_SIMULATION_3" ID="{424CAF84-BF3A-47E8-8B05-0144C6A028C8}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="CODE_USINE_LOOP" ID="{7DC6FA75-B290-4AF7-A81B-4985ECB96600}" ShortID="1017154744">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="CODE_USINE_LOOP" ID="{79575331-1660-403E-ACDB-34986F055E27}">
+									<Language>SFX</Language>
+									<AudioFile>CODE_USINE_LOOP.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="546656314"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="CODE_USINE_LOOP" ID="{79575331-1660-403E-ACDB-34986F055E27}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SORTIE_USINE" ID="{FBFFE04C-B7BF-40A1-BFB7-A22DA3E8C401}" ShortID="348433552">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SORTIE_USINE" ID="{3BFB2C29-5070-4FF5-A7B3-A3F0BF71097F}">
+									<Language>SFX</Language>
+									<AudioFile>SORTIE_USINE.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="606043974"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SORTIE_USINE" ID="{3BFB2C29-5070-4FF5-A7B3-A3F0BF71097F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="INSTANT_FUSEE_2" ID="{8D9B7443-46B5-4C00-847C-F02CFB2AB745}" ShortID="759120450">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="INSTANT_FUSEE_2" ID="{CB7A33D7-75DB-47B0-8D5B-7C80866EA515}">
+									<Language>SFX</Language>
+									<AudioFile>INSTANT_FUSEE_2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="917758653"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="INSTANT_FUSEE_2" ID="{CB7A33D7-75DB-47B0-8D5B-7C80866EA515}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

@@ -76,13 +76,21 @@
 				<Event Id="3465213173" Name="Stop_PropositionSimulation" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="701539208" Type="User" Language="SFX" Hash="{8D09803D-1705-EBDC-8F54-B36FC72956E1}">
+		<SoundBank Id="701539208" Type="User" Language="SFX" Hash="{BAC26D9F-5E06-A08A-A100-C73AEC760DE4}">
 			<ShortName>MUSIQUE2</ShortName>
 			<Path>MUSIQUE2.bnk</Path>
 			<Media>
 				<File Id="497442186" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MUSIQUE_SIMULATION_2.wav</ShortName>
 					<CachePath>SFX/MUSIQUE_SIMULATION_2_A79006FA.wem</CachePath>
+				</File>
+				<File Id="546656314" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>CODE_USINE_LOOP.wav</ShortName>
+					<CachePath>SFX/CODE_USINE_LOOP_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="606043974" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SORTIE_USINE.wav</ShortName>
+					<CachePath>SFX/SORTIE_USINE_818F3B66.wem</CachePath>
 				</File>
 				<File Id="794636167" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MUSIQUE_SIMULATION_1.wav</ShortName>
@@ -92,8 +100,22 @@
 					<ShortName>MUSIQUE_SIMULATION_3.wav</ShortName>
 					<CachePath>SFX/MUSIQUE_SIMULATION_3_EA94E589.wem</CachePath>
 				</File>
+				<File Id="917758653" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>INSTANT_FUSEE_2.wav</ShortName>
+					<CachePath>SFX/INSTANT_FUSEE_2_818F3B66.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
+				<Event Id="3280361123" Name="Play_CODE_USINE_LOOP" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="546656314"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1711887847" Name="Play_INSTANT_FUSEE_2" DurationType="OneShot" DurationMin="40.30979" DurationMax="40.30979">
+					<MediaRefs>
+						<MediaRef Id="917758653"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2687430207" Name="Play_MUSIQUE_SIMULATION_1" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="794636167"/>
@@ -109,12 +131,18 @@
 						<MediaRef Id="861859393"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="158678111" Name="Play_SORTIE_USINE" DurationType="OneShot" DurationMin="14.352271" DurationMax="14.352271">
+					<MediaRefs>
+						<MediaRef Id="606043974"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2809798973" Name="Stop_CODE_USINE_LOOP" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1930795165" Name="Stop_MUSIQUE_SIMULATION_1" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1930795166" Name="Stop_MUSIQUE_SIMULATION_2" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1930795167" Name="Stop_MUSIQUE_SIMULATION_3" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{0C820108-6081-567B-59E1-17D8AD0C9A12}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{3D563BC0-8E69-A7EB-F83C-94213C649C0A}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -136,6 +164,7 @@
 			<Busses>
 				<Bus Id="393239870" Name="SFX"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3981461428" Name="RAW SOUND"/>
 			</Busses>
 			<AuxBusses>
 				<AuxBus Id="484847633" Name="RoomHall">
@@ -342,7 +371,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1764570876" Type="User" Language="SFX" Hash="{62870748-846E-4080-F72D-A2BFF916CF10}">
+		<SoundBank Id="1764570876" Type="User" Language="SFX" Hash="{570F3366-9140-126B-7584-4090908D387B}">
 			<ShortName>Main2</ShortName>
 			<Path>Main2.bnk</Path>
 			<Media>
@@ -514,7 +543,7 @@
 				<Event Id="3185533582" Name="Stop_SFX_AMBIANCE_CROWD" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{D8AC5F01-BAED-8F86-D9DA-558EE4674563}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{DD8BEADD-317B-5498-6963-33904B0330DE}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -810,5 +839,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{60F8D46B-2964-118E-C84E-6D1BE93853B0}</FileHash>
+	<FileHash>{6F683E3A-7EF2-83A7-2020-0B168FF58B2F}</FileHash>
 </SoundBanksInfo>

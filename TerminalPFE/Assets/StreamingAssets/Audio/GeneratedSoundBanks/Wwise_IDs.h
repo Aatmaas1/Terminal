@@ -16,6 +16,8 @@ namespace AK
         static const AkUniqueID PAUSE_MUSIQUE_SALLE_WALL_E = 1769335880U;
         static const AkUniqueID PLAY_4NN4_MASTERING2 = 4068946449U;
         static const AkUniqueID PLAY_AMBIANCE_VENT_SEEMLESS_2 = 3498856201U;
+        static const AkUniqueID PLAY_CODE_USINE_LOOP = 3280361123U;
+        static const AkUniqueID PLAY_INSTANT_FUSEE_2 = 1711887847U;
         static const AkUniqueID PLAY_MUSIQUE_INTO_DEMARCHE_DIFF = 1666445414U;
         static const AkUniqueID PLAY_MUSIQUE_OUTRO = 946375059U;
         static const AkUniqueID PLAY_MUSIQUE_SALLE_WALL_E = 1291952458U;
@@ -62,9 +64,11 @@ namespace AK
         static const AkUniqueID PLAY_SFX_TERMINAL_OUVERTURE = 2483481318U;
         static const AkUniqueID PLAY_SFX_UI_BOUTON_PARCOURIR = 2295581168U;
         static const AkUniqueID PLAY_SFX_UI_BOUTON_RETOUR = 2663653444U;
+        static const AkUniqueID PLAY_SORTIE_USINE = 158678111U;
         static const AkUniqueID RESUME_MUSIQUE_SALLE_WALL_E = 4222333403U;
         static const AkUniqueID STOP_4NN4_MASTERING2 = 1362331995U;
         static const AkUniqueID STOP_AMBIANCE_TEMPETE_SEEMLESS = 3983987071U;
+        static const AkUniqueID STOP_CODE_USINE_LOOP = 2809798973U;
         static const AkUniqueID STOP_MUSIQUE_SALLE_WALL_E = 3151416304U;
         static const AkUniqueID STOP_MUSIQUE_SIMULATION_1 = 1930795165U;
         static const AkUniqueID STOP_MUSIQUE_SIMULATION_2 = 1930795166U;

@@ -76,13 +76,21 @@
 				<Event Id="3465213173" Name="Stop_PropositionSimulation" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="701539208" Type="User" Language="SFX" Hash="{8D09803D-1705-EBDC-8F54-B36FC72956E1}">
+		<SoundBank Id="701539208" Type="User" Language="SFX" Hash="{BAC26D9F-5E06-A08A-A100-C73AEC760DE4}">
 			<ShortName>MUSIQUE2</ShortName>
 			<Path>MUSIQUE2.bnk</Path>
 			<Media>
 				<File Id="497442186" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MUSIQUE_SIMULATION_2.wav</ShortName>
 					<CachePath>SFX/MUSIQUE_SIMULATION_2_A79006FA.wem</CachePath>
+				</File>
+				<File Id="546656314" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>CODE_USINE_LOOP.wav</ShortName>
+					<CachePath>SFX/CODE_USINE_LOOP_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="606043974" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SORTIE_USINE.wav</ShortName>
+					<CachePath>SFX/SORTIE_USINE_818F3B66.wem</CachePath>
 				</File>
 				<File Id="794636167" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MUSIQUE_SIMULATION_1.wav</ShortName>
@@ -92,8 +100,22 @@
 					<ShortName>MUSIQUE_SIMULATION_3.wav</ShortName>
 					<CachePath>SFX/MUSIQUE_SIMULATION_3_EA94E589.wem</CachePath>
 				</File>
+				<File Id="917758653" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>INSTANT_FUSEE_2.wav</ShortName>
+					<CachePath>SFX/INSTANT_FUSEE_2_818F3B66.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
+				<Event Id="3280361123" Name="Play_CODE_USINE_LOOP" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="546656314"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1711887847" Name="Play_INSTANT_FUSEE_2" DurationType="OneShot" DurationMin="40.30979" DurationMax="40.30979">
+					<MediaRefs>
+						<MediaRef Id="917758653"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2687430207" Name="Play_MUSIQUE_SIMULATION_1" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="794636167"/>
@@ -109,6 +131,12 @@
 						<MediaRef Id="861859393"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="158678111" Name="Play_SORTIE_USINE" DurationType="OneShot" DurationMin="14.352271" DurationMax="14.352271">
+					<MediaRefs>
+						<MediaRef Id="606043974"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2809798973" Name="Stop_CODE_USINE_LOOP" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1930795165" Name="Stop_MUSIQUE_SIMULATION_1" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1930795166" Name="Stop_MUSIQUE_SIMULATION_2" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1930795167" Name="Stop_MUSIQUE_SIMULATION_3" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
@@ -811,5 +839,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A648BC5D-E11B-ADF3-F7FF-10E67CB2DD5A}</FileHash>
+	<FileHash>{4237A8D2-F303-B20C-7028-693CF766BB01}</FileHash>
 </SoundBanksInfo>
