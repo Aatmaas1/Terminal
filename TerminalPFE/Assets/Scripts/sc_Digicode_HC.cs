@@ -18,7 +18,7 @@ public class sc_Digicode_HC : MonoBehaviour
     {
         sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
         Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        //Cursor.visible = true;
         Visuel.SetActive(true);
         VisuRobot.SetActive(false);
         skeleRobot.SetActive(false);
@@ -31,7 +31,7 @@ public class sc_Digicode_HC : MonoBehaviour
         {
             sc_PlayerManager_HC.Instance.SetInputMode("Player");
             Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            //Cursor.visible = false;
             Visuel.SetActive(false);
             VisuRobot.SetActive(true);
             skeleRobot.SetActive(true);

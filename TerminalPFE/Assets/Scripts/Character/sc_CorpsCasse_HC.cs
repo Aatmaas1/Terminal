@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class sc_CorpsCasse_HC : MonoBehaviour
 {
@@ -21,6 +22,20 @@ public class sc_CorpsCasse_HC : MonoBehaviour
     public void launchInteractAnimation()
     {
         GetComponent<Animator>().Play("ZombieInteraction");
+        PlayerInput pInput;
+        if (gameObject.activeInHierarchy)
+        {
+            pInput = GetComponent<PlayerInput>();
+            pInput.enabled = true;
+            pInput.ActivateInput();
+            if (pInput.currentActionMap == null)
+            {
+                pInput.currentActionMap = pInput.actions.actionMaps[0];
+            }
+            //pInput.currentActionMap.Disable();
+            pInput.SwitchCurrentActionMap("Nothing");
+            pInput.currentActionMap.Enable();
+        }
     }
     public void BreakLegs()
     {
