@@ -828,6 +828,59 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_CODE_USINE_LOOP" ID="{81A6794F-90D4-4D83-ACAF-3DE8E2C443E3}">
+					<ChildrenList>
+						<Action Name="" ID="{B868AD39-5117-4FCD-AC52-BE6A32F3ED64}" ShortID="971742838">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CODE_USINE_LOOP" ID="{7DC6FA75-B290-4AF7-A81B-4985ECB96600}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_CODE_USINE_LOOP" ID="{CBF7BD8F-2250-4B62-9E3A-D9E851D6BECC}">
+					<ChildrenList>
+						<Action Name="" ID="{9B8C68E3-4CF8-4ACF-BB3D-436184EEC718}" ShortID="63098274">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CODE_USINE_LOOP" ID="{7DC6FA75-B290-4AF7-A81B-4985ECB96600}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SORTIE_USINE" ID="{D9BFD5E6-757B-400E-9B1C-0A7A8CF7B9D3}">
+					<ChildrenList>
+						<Action Name="" ID="{EF07FF72-3E53-4DBE-8836-CCDF990E9249}" ShortID="37064567">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SORTIE_USINE" ID="{FBFFE04C-B7BF-40A1-BFB7-A22DA3E8C401}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_INSTANT_FUSEE_2" ID="{95BDDC8E-033D-415E-BAC2-54459AD01AF4}">
+					<ChildrenList>
+						<Action Name="" ID="{6F59CADE-61DC-4D6B-925B-515D504B5ADB}" ShortID="326867579">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="INSTANT_FUSEE_2" ID="{8D9B7443-46B5-4C00-847C-F02CFB2AB745}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
