@@ -24,6 +24,9 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
 
     public sc_Digicode_HC digicode;
 
+    [HideInInspector]
+    public bool isZooming;
+
     private void Awake()
     {
         if (Instance == null)
@@ -112,11 +115,13 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
     public void OnZoom()
     {
         cameraZoom.gameObject.SetActive(!cameraZoom.gameObject.activeInHierarchy);
+        isZooming = true;
     }
 
     public void ResetZoom()
     {
         cameraZoom.gameObject.SetActive(false);
+        isZooming = false;
     }
     public void OnJump()
     {

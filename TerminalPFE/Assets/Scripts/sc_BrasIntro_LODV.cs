@@ -1,3 +1,4 @@
+using StarterAssets;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -44,7 +45,15 @@ public class sc_BrasIntro_LODV : MonoBehaviour
             character.transform.rotation = Quaternion.Euler(rota);
             character.transform.position = socket.position;
             //hasAlreadyTransportPlayer = true;
+
+            if (sc_PlayerManager_HC.Instance.isZooming)
+                AlreadyZoom();
         }
+    }
+
+    public void AlreadyZoom()
+    {
+        GetComponent<Animator>().SetBool("AlreadyZoom", true);
     }
 
     //à la fin de l'annim, permet de lacher l'android
