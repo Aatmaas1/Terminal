@@ -37,7 +37,7 @@ public class sc_BrasIntro_LODV : MonoBehaviour
             animator.enabled = false;
             isTransportingChara = true;
             isRealStart = false;
-            fadeInAnimator.SetBool("FadeIn", true);
+            //fadeInAnimator.SetBool("FadeIn", true);
         }
         else
             Destroy(fadeInAnimator.gameObject);

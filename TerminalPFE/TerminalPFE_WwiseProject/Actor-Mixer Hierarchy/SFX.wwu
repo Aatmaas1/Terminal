@@ -35,6 +35,15 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="SFX_BRAS_ROBOTIQUE_LOOP" ID="{327A4150-4BE0-4F56-AFB7-804739C236D5}" ShortID="855567246">
+					<PropertyList>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-9</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>

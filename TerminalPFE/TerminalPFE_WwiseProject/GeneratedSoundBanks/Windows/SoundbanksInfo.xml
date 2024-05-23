@@ -543,7 +543,7 @@
 				<Event Id="3185533582" Name="Stop_SFX_AMBIANCE_CROWD" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{DD8BEADD-317B-5498-6963-33904B0330DE}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{4D0F4742-9838-15A6-981F-070521CCC389}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -558,6 +558,10 @@
 				<File Id="41481307" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_BOUTON_CLICK_OUI.wav</ShortName>
 					<CachePath>SFX/SFX_BOUTON_CLICK_OUI_9E686036.wem</CachePath>
+				</File>
+				<File Id="59938486" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_NEON_GRESILLE.wav</ShortName>
+					<CachePath>SFX/SFX_NEON_GRESILLE_818F3B66.wem</CachePath>
 				</File>
 				<File Id="120129755" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_BATTEMENT_COEUR_ISOLE_1.wav</ShortName>
@@ -631,6 +635,10 @@
 					<ShortName>SFX_SCAN_OBJ.wav</ShortName>
 					<CachePath>SFX/SFX_SCAN_OBJ_818F3B66.wem</CachePath>
 				</File>
+				<File Id="843512969" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_BRAS_ROBOTIQUE_LOOP.wav</ShortName>
+					<CachePath>SFX/SFX_BRAS_ROBOTIQUE_LOOP_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="854111363" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMUTOREEL.wav</ShortName>
 					<CachePath>SFX/SFX_SIMUTOREEL_3DAFE51F.wem</CachePath>
@@ -693,6 +701,7 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="176057426" Name="Pause_SFX_BRAS_ROBOTIQUE_LOOP" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2623669360" Name="Play_RandomContainerTest" MaxAttenuation="195" DurationType="OneShot" DurationMin="0.6240417" DurationMax="0.6240417">
 					<MediaRefs>
 						<MediaRef Id="13083898"/>
@@ -748,6 +757,11 @@
 						<MediaRef Id="561456419"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3105531936" Name="Play_SFX_BRAS_ROBOTIQUE_LOOP" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="843512969"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1925718750" Name="Play_SFX_CONSTRUCTION_ANDRO" DurationType="OneShot" DurationMin="24.364792" DurationMax="24.364792">
 					<MediaRefs>
 						<MediaRef Id="214063422"/>
@@ -776,6 +790,11 @@
 				<Event Id="2068312904" Name="Play_SFX_LETTRES_INTRO_NEW_ESSAI_2" DurationType="OneShot" DurationMin="0.8101568" DurationMax="0.81485">
 					<MediaRefs>
 						<MediaRef Id="132449596"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2923994044" Name="Play_SFX_NEON_GRESILLE" DurationType="OneShot" DurationMin="1.8461459" DurationMax="1.8461459">
+					<MediaRefs>
+						<MediaRef Id="59938486"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3699296330" Name="Play_SFX_OUVERTURE_PORTE_PETITE" MaxAttenuation="195" DurationType="OneShot" DurationMin="1.0550833" DurationMax="1.0550833">
@@ -833,11 +852,14 @@
 						<MediaRef Id="293166367"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2176208755" Name="Resume_SFX_BRAS_ROBOTIQUE_LOOP" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3592606554" Name="Stop_SFX_BRAS_ROBOTIQUE_LOOP" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1581865358" Name="Stop_SFX_NEON_GRESILLE" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1840303866" Name="Stop_SFX_REELTOSIMU_2" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1074890505" Name="Stop_SFX_SIMUTOREEL" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1191159315" Name="Stop_SFX_TERMINAL_BOUCLE" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{84D343F3-3985-055B-DCD4-78C39C61437F}</FileHash>
+	<FileHash>{A8AE895F-BB33-E234-F58C-A6A8A0C14525}</FileHash>
 </SoundBanksInfo>

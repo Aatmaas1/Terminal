@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PAUSE_MUSIQUE_SALLE_WALL_E = 1769335880U;
+        static const AkUniqueID PAUSE_SFX_BRAS_ROBOTIQUE_LOOP = 176057426U;
         static const AkUniqueID PLAY_4NN4_MASTERING2 = 4068946449U;
         static const AkUniqueID PLAY_AMBIANCE_VENT_SEEMLESS_2 = 3498856201U;
         static const AkUniqueID PLAY_CODE_USINE_LOOP = 3280361123U;
@@ -38,6 +39,7 @@ namespace AK
         static const AkUniqueID PLAY_SFX_BOUTON_CLICK_NON = 3549990494U;
         static const AkUniqueID PLAY_SFX_BOUTON_CLICK_OUI = 3382067122U;
         static const AkUniqueID PLAY_SFX_BOUTONS_PARCOURIR = 1055529180U;
+        static const AkUniqueID PLAY_SFX_BRAS_ROBOTIQUE_LOOP = 3105531936U;
         static const AkUniqueID PLAY_SFX_BUMPER_BOOST = 4021310751U;
         static const AkUniqueID PLAY_SFX_CONSTRUCTION_ANDRO = 1925718750U;
         static const AkUniqueID PLAY_SFX_DETECTION_LANCEMENT2 = 2126400971U;
@@ -45,6 +47,7 @@ namespace AK
         static const AkUniqueID PLAY_SFX_FERMETURE_PORTE_PETITE = 317254060U;
         static const AkUniqueID PLAY_SFX_FERMETURE_PORTE_TUTO = 1226673255U;
         static const AkUniqueID PLAY_SFX_LETTRES_INTRO_NEW_ESSAI_2 = 2068312904U;
+        static const AkUniqueID PLAY_SFX_NEON_GRESILLE = 2923994044U;
         static const AkUniqueID PLAY_SFX_OUVERTURE_PORTE_PETITE = 3699296330U;
         static const AkUniqueID PLAY_SFX_OUVERTURE_PORTE_TUTO = 1974769985U;
         static const AkUniqueID PLAY_SFX_PERLES_TUILES = 2699630658U;
@@ -66,6 +69,7 @@ namespace AK
         static const AkUniqueID PLAY_SFX_UI_BOUTON_RETOUR = 2663653444U;
         static const AkUniqueID PLAY_SORTIE_USINE = 158678111U;
         static const AkUniqueID RESUME_MUSIQUE_SALLE_WALL_E = 4222333403U;
+        static const AkUniqueID RESUME_SFX_BRAS_ROBOTIQUE_LOOP = 2176208755U;
         static const AkUniqueID STOP_4NN4_MASTERING2 = 1362331995U;
         static const AkUniqueID STOP_AMBIANCE_TEMPETE_SEEMLESS = 3983987071U;
         static const AkUniqueID STOP_CODE_USINE_LOOP = 2809798973U;
@@ -75,6 +79,8 @@ namespace AK
         static const AkUniqueID STOP_MUSIQUE_SIMULATION_3 = 1930795167U;
         static const AkUniqueID STOP_PROPOSITIONSIMULATION = 3465213173U;
         static const AkUniqueID STOP_SFX_AMBIANCE_CROWD = 3185533582U;
+        static const AkUniqueID STOP_SFX_BRAS_ROBOTIQUE_LOOP = 3592606554U;
+        static const AkUniqueID STOP_SFX_NEON_GRESILLE = 1581865358U;
         static const AkUniqueID STOP_SFX_REELTOSIMU_2 = 1840303866U;
         static const AkUniqueID STOP_SFX_SIMUTOREEL = 1074890505U;
         static const AkUniqueID STOP_SFX_TERMINAL_BOUCLE = 1191159315U;

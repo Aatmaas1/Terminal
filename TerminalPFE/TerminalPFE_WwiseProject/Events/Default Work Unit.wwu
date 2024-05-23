@@ -174,6 +174,31 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_INSTANT_FUSEE_2" ID="{95BDDC8E-033D-415E-BAC2-54459AD01AF4}">
+							<ChildrenList>
+								<Action Name="" ID="{6F59CADE-61DC-4D6B-925B-515D504B5ADB}" ShortID="326867579">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="INSTANT_FUSEE_2" ID="{8D9B7443-46B5-4C00-847C-F02CFB2AB745}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SORTIE_USINE" ID="{D9BFD5E6-757B-400E-9B1C-0A7A8CF7B9D3}">
+							<ChildrenList>
+								<Action Name="" ID="{EF07FF72-3E53-4DBE-8836-CCDF990E9249}" ShortID="37064567">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SORTIE_USINE" ID="{FBFFE04C-B7BF-40A1-BFB7-A22DA3E8C401}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="SIMULATION" ID="{341F4021-3D6C-49F2-B57D-96BCB18E02F4}" ShortID="370386191">
@@ -505,6 +530,120 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Resume_SFX_BRAS_ROBOTIQUE_LOOP" ID="{BB40ED9C-A48D-4E58-9A65-232A74076D47}">
+							<ChildrenList>
+								<Action Name="" ID="{9E03D7AB-20DA-4B9E-B889-17388C4C48A4}" ShortID="86423520">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_BRAS_ROBOTIQUE_LOOP" ID="{327A4150-4BE0-4F56-AFB7-804739C236D5}" WorkUnitID="{5477266C-D991-4580-A687-CA6FC8AF0645}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_SFX_BRAS_ROBOTIQUE_LOOP" ID="{98AF6A74-989C-4991-A58E-0344CFDBBEA4}">
+							<ChildrenList>
+								<Action Name="" ID="{ADA82CE2-32AE-47F8-80EE-E68BF86F91F0}" ShortID="1025930816">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_BRAS_ROBOTIQUE_LOOP" ID="{327A4150-4BE0-4F56-AFB7-804739C236D5}" WorkUnitID="{5477266C-D991-4580-A687-CA6FC8AF0645}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Pause_SFX_BRAS_ROBOTIQUE_LOOP" ID="{8B49B87C-4622-4B36-AA7B-09B9080C894F}">
+							<ChildrenList>
+								<Action Name="" ID="{8D7A1005-D294-4384-801E-6F2518F15576}" ShortID="366655799">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_BRAS_ROBOTIQUE_LOOP" ID="{327A4150-4BE0-4F56-AFB7-804739C236D5}" WorkUnitID="{5477266C-D991-4580-A687-CA6FC8AF0645}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_BRAS_ROBOTIQUE_LOOP" ID="{91BA8071-5C17-4570-88BB-2A55845134FB}">
+							<ChildrenList>
+								<Action Name="" ID="{AC6F90A3-3AA5-47F7-8354-7FAB6FBF86EA}" ShortID="1062966168">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.25"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_BRAS_ROBOTIQUE_LOOP" ID="{327A4150-4BE0-4F56-AFB7-804739C236D5}" WorkUnitID="{5477266C-D991-4580-A687-CA6FC8AF0645}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_CODE_USINE_LOOP" ID="{81A6794F-90D4-4D83-ACAF-3DE8E2C443E3}">
+							<ChildrenList>
+								<Action Name="" ID="{B868AD39-5117-4FCD-AC52-BE6A32F3ED64}" ShortID="971742838">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CODE_USINE_LOOP" ID="{7DC6FA75-B290-4AF7-A81B-4985ECB96600}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_NEON_GRESILLE" ID="{E505186D-92EE-456D-9FD7-CCC98117B7C3}">
+							<ChildrenList>
+								<Action Name="" ID="{8F1F7B4C-3154-4A51-AB67-2B18CB680ABE}" ShortID="261545202">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_NEON_GRESILLE" ID="{C498ECE7-FCD2-4C68-A093-927DAE7F606A}" WorkUnitID="{5477266C-D991-4580-A687-CA6FC8AF0645}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_SFX_NEON_GRESILLE" ID="{7E59603F-CF02-4016-89A0-29A3DBDA5728}">
+							<ChildrenList>
+								<Action Name="" ID="{20645B7B-7E2A-40D7-BF44-AA8CF0C00E07}" ShortID="538912863">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_NEON_GRESILLE" ID="{C498ECE7-FCD2-4C68-A093-927DAE7F606A}" WorkUnitID="{5477266C-D991-4580-A687-CA6FC8AF0645}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_CODE_USINE_LOOP" ID="{CBF7BD8F-2250-4B62-9E3A-D9E851D6BECC}">
+							<ChildrenList>
+								<Action Name="" ID="{9B8C68E3-4CF8-4ACF-BB3D-436184EEC718}" ShortID="63098274">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CODE_USINE_LOOP" ID="{7DC6FA75-B290-4AF7-A81B-4985ECB96600}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="TRANSITIONS" ID="{B2332AF7-D31D-4ACA-B9DC-FA5CD171A264}" ShortID="520741749">
@@ -828,60 +967,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Play_CODE_USINE_LOOP" ID="{81A6794F-90D4-4D83-ACAF-3DE8E2C443E3}">
-					<ChildrenList>
-						<Action Name="" ID="{B868AD39-5117-4FCD-AC52-BE6A32F3ED64}" ShortID="971742838">
-							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="CODE_USINE_LOOP" ID="{7DC6FA75-B290-4AF7-A81B-4985ECB96600}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_CODE_USINE_LOOP" ID="{CBF7BD8F-2250-4B62-9E3A-D9E851D6BECC}">
-					<ChildrenList>
-						<Action Name="" ID="{9B8C68E3-4CF8-4ACF-BB3D-436184EEC718}" ShortID="63098274">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="CODE_USINE_LOOP" ID="{7DC6FA75-B290-4AF7-A81B-4985ECB96600}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_SORTIE_USINE" ID="{D9BFD5E6-757B-400E-9B1C-0A7A8CF7B9D3}">
-					<ChildrenList>
-						<Action Name="" ID="{EF07FF72-3E53-4DBE-8836-CCDF990E9249}" ShortID="37064567">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SORTIE_USINE" ID="{FBFFE04C-B7BF-40A1-BFB7-A22DA3E8C401}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_INSTANT_FUSEE_2" ID="{95BDDC8E-033D-415E-BAC2-54459AD01AF4}">
-					<ChildrenList>
-						<Action Name="" ID="{6F59CADE-61DC-4D6B-925B-515D504B5ADB}" ShortID="326867579">
-							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="INSTANT_FUSEE_2" ID="{8D9B7443-46B5-4C00-847C-F02CFB2AB745}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
