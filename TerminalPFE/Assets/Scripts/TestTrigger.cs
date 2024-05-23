@@ -140,6 +140,10 @@ public class TestTrigger : MonoBehaviour, IDataManager
         GetComponent<sc_CameraEffect_HC>().PrepareVideo();
         yield return new WaitForSeconds(ChangementVitesseTerminalAnimation);
         OnTrig?.Invoke();
+        if(transform.childCount >= 2)
+        {
+            transform.GetChild(2).gameObject.SetActive(false);
+        }
     }
 
     public void PlayerReady()
