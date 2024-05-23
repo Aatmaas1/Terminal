@@ -14,6 +14,8 @@ public class sc_Digicode_HC : MonoBehaviour
     string memory = "";
     bool _canAct = true;
 
+    public AK_POSTEVENT_AM postMusic;
+
     public void Open()
     {
         sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
@@ -24,6 +26,7 @@ public class sc_Digicode_HC : MonoBehaviour
         skeleRobot.SetActive(false);
         CamPerso.SetActive(false);
         CamCode.SetActive(true);
+        postMusic.PostEvent();
     }
     public void Close()
     {
@@ -37,6 +40,7 @@ public class sc_Digicode_HC : MonoBehaviour
             skeleRobot.SetActive(true);
             CamCode.SetActive(false);
             CamPerso.SetActive(true);
+            postMusic.PostStopEvent();
             DeleteAll();
         }
     }

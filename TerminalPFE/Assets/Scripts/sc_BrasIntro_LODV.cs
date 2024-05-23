@@ -18,6 +18,8 @@ public class sc_BrasIntro_LODV : MonoBehaviour
 
     bool isTransportingChara;
 
+    public Animator fadeInAnimator;
+
     public bool isRealStart;
     // bool hasAlreadyTransportPlayer = false;
 
@@ -35,6 +37,7 @@ public class sc_BrasIntro_LODV : MonoBehaviour
             animator.enabled = false;
             isTransportingChara = true;
             isRealStart = false;
+            fadeInAnimator.SetBool("FadeIn", true);
         }
     }
 
