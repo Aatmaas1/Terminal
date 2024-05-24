@@ -19,6 +19,7 @@ public class AK_DESACTIVATE_TRIGGER_AM : MonoBehaviour
     public IEnumerator Desactivate()
     {
         yield return new WaitForSeconds(0.5f);
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 }

@@ -14,6 +14,7 @@ public class EBOULEMENT_SWITCH : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             postEvent.PostEvent1();
+            postEvent.PostEvent2();
             AudioListenerDontDestroyOnLoad.instance.AudioYuumi();
             StartCoroutine(Post2AndDesactivate());
         }
@@ -26,6 +27,6 @@ public class EBOULEMENT_SWITCH : MonoBehaviour
         AudioListenerDontDestroyOnLoad.instance.AfterEarthQuake();
 
         yield return new WaitForSeconds(2f);
-        gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 }
