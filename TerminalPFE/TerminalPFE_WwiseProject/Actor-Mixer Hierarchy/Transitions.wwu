@@ -35,6 +35,7 @@
 				</Sound>
 				<Sound Name="SFX_REELTOSIMU_2" ID="{3038B8F4-3E80-478D-8F0B-27F9F1AD5102}" ShortID="256446947">
 					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-10</Value>
@@ -52,8 +53,6 @@
 					<ChildrenList>
 						<AudioFileSource Name="SFX_REELTOSIMU_2" ID="{767EE32F-CBCB-4026-BD9E-97AA32487156}">
 							<PropertyList>
-								<Property Name="FadeInDuration" Type="Real64" Value="1.97449819599628"/>
-								<Property Name="FadeOutDuration" Type="Real64" Value="0.587012977188081"/>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 							</PropertyList>
 							<Language>SFX</Language>
@@ -69,6 +68,7 @@
 				</Sound>
 				<Sound Name="SFX_SIMUTOREEL" ID="{87A125E5-E1D4-45C6-B20D-F8450F6AE6B5}" ShortID="399281000">
 					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-11</Value>
@@ -86,8 +86,6 @@
 					<ChildrenList>
 						<AudioFileSource Name="SFX_SIMUTOREEL" ID="{D61B0718-87B5-40BC-8B71-D81A80F1E454}">
 							<PropertyList>
-								<Property Name="FadeInDuration" Type="Real64" Value="1.91509776536313"/>
-								<Property Name="FadeOutDuration" Type="Real64" Value="0.585168761638734"/>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 							</PropertyList>
 							<Language>SFX</Language>
@@ -99,6 +97,66 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="SFX_SIMUTOREEL" ID="{D61B0718-87B5-40BC-8B71-D81A80F1E454}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SFX_REELTOSIMU_LOOP" ID="{94DC34F8-D384-494F-BED8-60758D01F9FA}" ShortID="637205611">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="RAW SOUND" ID="{C649DA51-3287-4693-9B4A-A92AD21B648C}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_REELTOSIMU_LOOP" ID="{0E011948-1354-4615-A407-AC1158069D86}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_REELTOSIMU_LOOP.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="498153307"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_REELTOSIMU_LOOP" ID="{0E011948-1354-4615-A407-AC1158069D86}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SFX_SIMUTOREEL_LOOP" ID="{AF79D04A-9097-48ED-929C-E7CC2FE82D1A}" ShortID="533074341">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-11</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="RAW SOUND" ID="{C649DA51-3287-4693-9B4A-A92AD21B648C}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_SIMUTOREEL_LOOP" ID="{A685FB3B-7072-42A4-B671-964F78F4933E}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_SIMUTOREEL_LOOP.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="613886124"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_SIMUTOREEL_LOOP" ID="{A685FB3B-7072-42A4-B671-964F78F4933E}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>
