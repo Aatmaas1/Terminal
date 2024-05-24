@@ -178,11 +178,11 @@
 							<ChildrenList>
 								<Action Name="" ID="{6F59CADE-61DC-4D6B-925B-515D504B5ADB}" ShortID="326867579">
 									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="4"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="INSTANT_FUSEE_3" ID="{83873E2E-F407-43FD-810E-B47B133376FC}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+											<ObjectRef Name="INSTANT_FUSEE_GUITARE" ID="{0905E087-11E5-4876-8FB1-235FD7A6CDF0}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -667,6 +667,20 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SFX_BATTEMENT_COEUR_1MN30" ID="{FE8B3C35-F8F2-4AB0-AB82-70259ADAE1E8}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_INSTANT_FUSEE_FUSEE" ID="{9A7A6BD5-8353-4DB2-A0A0-2522B2969F17}">
+							<ChildrenList>
+								<Action Name="" ID="{214F0244-AF8C-4A00-8BB9-FE61B8CC91F0}" ShortID="865434445">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="1.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="INSTANT_FUSEE_FUSEE" ID="{75B4FB67-9E07-4B70-B5BF-0856195107B6}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

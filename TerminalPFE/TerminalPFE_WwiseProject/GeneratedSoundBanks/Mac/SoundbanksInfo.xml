@@ -142,7 +142,7 @@
 				<Event Id="1930795167" Name="Stop_MUSIQUE_SIMULATION_3" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{3D563BC0-8E69-A7EB-F83C-94213C649C0A}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{046130AF-6259-B701-ED72-89ACED0F04EE}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -154,6 +154,7 @@
 					<Plugin Id="618729785" Name="Room_Medium (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</Custom>
 				<ShareSets>
+					<Plugin Id="48620415" Name="Have_U_Ever_Been_Outside" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="3451596814" Name="Hall_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</ShareSets>
 				<AudioDevices>
@@ -188,6 +189,16 @@
 					</AuxBusRefs>
 				</AuxBus>
 				<AuxBus Id="1686871543" Name="ReverbMaster"/>
+				<AuxBus Id="2552628973" Name="ROOMOUTSIDE">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="48620415"/>
+						</ShareSets>
+					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="1686871543" Name="ReverbMaster"/>
+					</AuxBusRefs>
+				</AuxBus>
 				<AuxBus Id="3205342581" Name="RoomSmall">
 					<PluginRefs>
 						<Custom>
@@ -543,7 +554,7 @@
 				<Event Id="3185533582" Name="Stop_SFX_AMBIANCE_CROWD" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7520F2A3-35A4-95B4-2459-2A389A7E05FB}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8B382D2F-9C2D-A1E0-979A-B10815D21EF8}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -880,5 +891,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{AC259A3B-CAC0-EAED-6F65-934F541BB0B8}</FileHash>
+	<FileHash>{532E5CED-3508-FA82-54C3-6EB2DF347810}</FileHash>
 </SoundBanksInfo>

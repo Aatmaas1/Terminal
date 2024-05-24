@@ -190,6 +190,28 @@
 								<ActiveSource Name="MUSIQUE_OUTRO" ID="{DA9BA9CC-D809-4501-B48A-FD2C092DB502}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="INSTANT_FUSEE_GUITARE" ID="{0905E087-11E5-4876-8FB1-235FD7A6CDF0}" ShortID="1068715881">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="INSTANT_FUSEE_GUITARE" ID="{5E711304-5FE5-433F-9376-CC20FA4D2A11}">
+									<Language>SFX</Language>
+									<AudioFile>INSTANT_FUSEE_GUITARE.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="970806313"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="INSTANT_FUSEE_GUITARE" ID="{5E711304-5FE5-433F-9376-CC20FA4D2A11}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="MUSIQUE2" ID="{98295D3A-82BF-4605-8F08-E31B244F1F6F}" ShortID="182268845">

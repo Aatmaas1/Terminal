@@ -563,7 +563,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e364e8b048b1b448b41f12b8470ec700
     GuidInternal: 
-    m_lastTime: -8584850539767968811
+    m_lastTime: -8584850311765302802
     List:
     - name: Main
       guid: 251dc717ef0fef42a545f46544a81c52
@@ -633,7 +633,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 32fcbe829e1db64882c8fd8a959356a5
     GuidInternal: 
-    m_lastTime: -8584850539783664783
+    m_lastTime: -8584850311787146548
     List:
     - name: AMBIANCES
       guid: 0de342e3b708fb408c527d577683a4a1
@@ -857,6 +857,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 40.34023
       minDuration: 40.34023
+    - name: Play_INSTANT_FUSEE_FUSEE
+      guid: d56b7a9a5383b24da0a02522b2969f17
+      id: 3082097605
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: AMBIANCES
+        ObjectType: 4
+        guid: 0de342e3b708fb408c527d577683a4a1
+      - ElementName: Play_INSTANT_FUSEE_FUSEE
+        ObjectType: 3
+        guid: d56b7a9a5383b24da0a02522b2969f17
+      Path: Events\Default Work Unit\AMBIANCES\Play_INSTANT_FUSEE_FUSEE
+      maxAttenuation: 0
+      maxDuration: 41.84023
+      minDuration: 41.84023
     - name: Play_MUSIQUE_INTO_DEMARCHE_DIFF
       guid: 2d0ead5e00ccd049aa1713d00a66ec38
       id: 1666445414
@@ -2427,7 +2447,7 @@ MonoBehaviour:
     m_lastTime: -8584991312705959035
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000a000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -233,6 +233,33 @@
 						<ActiveSource Name="SFX_NEON_GRESILLE" ID="{B68CE08E-8E2D-4886-87B5-E72C357B90CF}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="INSTANT_FUSEE_FUSEE" ID="{75B4FB67-9E07-4B70-B5BF-0856195107B6}" ShortID="740828826">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="RAW SOUND" ID="{C649DA51-3287-4693-9B4A-A92AD21B648C}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="INSTANT_FUSEE_FUSEE" ID="{9D4EF9EE-242E-4F79-A4BB-591B1BCB0414}">
+							<Language>SFX</Language>
+							<AudioFile>INSTANT_FUSEE_FUSEE.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="986844119"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="INSTANT_FUSEE_FUSEE" ID="{9D4EF9EE-242E-4F79-A4BB-591B1BCB0414}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
