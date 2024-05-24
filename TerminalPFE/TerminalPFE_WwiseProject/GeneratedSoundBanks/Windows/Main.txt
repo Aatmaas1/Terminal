@@ -3,6 +3,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	140330310	Play_SFX_PORTES_CHANGELIGHT			\Default Work Unit\PORTES\Play_SFX_PORTES_CHANGELIGHT	
 	176057426	Pause_SFX_BRAS_ROBOTIQUE_LOOP			\Default Work Unit\AMBIANCES\Pause_SFX_BRAS_ROBOTIQUE_LOOP	
 	317254060	Play_SFX_FERMETURE_PORTE_PETITE			\Default Work Unit\PORTES\Play_SFX_FERMETURE_PORTE_PETITE	
+	748748168	Play_SFX_BRAS_ROBOTIQUE_IMPACT			\Default Work Unit\TRANSITIONS\Play_SFX_BRAS_ROBOTIQUE_IMPACT	
 	1039181434	Play_SFX_BATTEMENT_COEUR_ISOLE			\Default Work Unit\UI\Play_SFX_BATTEMENT_COEUR_ISOLE	
 	1055529180	Play_SFX_BOUTONS_PARCOURIR			\Default Work Unit\UI\Play_SFX_BOUTONS_PARCOURIR	
 	1074890505	Stop_SFX_SIMUTOREEL			\Default Work Unit\TRANSITIONS\Stop_SFX_SIMUTOREEL	
@@ -29,6 +30,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3271480754	Play_SFX_BATTEMENT_COEUR_ISOLE_1			\Default Work Unit\UI\Play_SFX_BATTEMENT_COEUR_ISOLE_1	
 	3337838948	Play_SFX_REELTOSIMU_2			\Default Work Unit\TRANSITIONS\Play_SFX_REELTOSIMU_2	
 	3382067122	Play_SFX_BOUTON_CLICK_OUI			\Default Work Unit\UI\Play_SFX_BOUTON_CLICK_OUI	
+	3539423249	Play_SFX_BATTEMENT_COEUR_1MN30			\Default Work Unit\AMBIANCES\Play_SFX_BATTEMENT_COEUR_1MN30	
 	3549990494	Play_SFX_BOUTON_CLICK_NON			\Default Work Unit\UI\Play_SFX_BOUTON_CLICK_NON	
 	3592606554	Stop_SFX_BRAS_ROBOTIQUE_LOOP			\Default Work Unit\AMBIANCES\Stop_SFX_BRAS_ROBOTIQUE_LOOP	
 	3699296330	Play_SFX_OUVERTURE_PORTE_PETITE			\Default Work Unit\PORTES\Play_SFX_OUVERTURE_PORTE_PETITE	
@@ -38,8 +40,9 @@ Event	ID	Name			Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	13083898	SFX_PAS_ANDROÏDE_2	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_PAS_ANDROÏDE_2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Pas\RANDOMISEUR_PAS\SFX_PAS_ANDROÏDE_2		119912
 	38118640	SFX_PAS_ANDROÏDE_SABLE_4	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_PAS_ANDROÏDE_SABLE_4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Pas\RANDOMISEUR_PAS_SABLE\SFX_PAS_ANDROÏDE_SABLE_4		119912
+	40830848	SFX_BATTEMENT_COEUR_1MN30	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_BATTEMENT_COEUR_1MN30_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambiances\SFX_BATTEMENT_COEUR_1MN30		17189868
 	41481307	SFX_BOUTON_CLICK_OUI	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_BOUTON_CLICK_OUI_9E686036.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI\SFX_BOUTON_CLICK_OUI		156816
-	59938486	SFX_NEON_GRESILLE	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_NEON_GRESILLE_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_NEON_GRESILLE		354556
+	59938486	SFX_NEON_GRESILLE	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_NEON_GRESILLE_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambiances\SFX_NEON_GRESILLE		354556
 	120129755	SFX_BATTEMENT_COEUR_ISOLE_1	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_BATTEMENT_COEUR_ISOLE_1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI\SFX_BATTEMENT_COEUR_ISOLE_1		281628
 	132449596	SFX_LETTRES_INTRO_NEW_ESSAI_2	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_LETTRES_INTRO_NEW_ESSAI_2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\INTRO CONSTRUCTION ANDRO\SFX_LETTRES_INTRO_NEW_ESSAI_2		156096
 	214063422	SFX_CONSTRUCTION_ANDRO	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_CONSTRUCTION_ANDROÏDE_268A4F59.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\INTRO CONSTRUCTION ANDRO\SFX_CONSTRUCTION_ANDRO		4678136
@@ -47,6 +50,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	356420912	SFX_DETECTION_LANCEMENT2	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_DETECTION_LANCEMENT2_08EEFC29.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\DETECTION SCAN\SFX_DETECTION_LANCEMENT2		299452
 	444243406	SFX_BOUTON_CLICK_NON	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_BOUTON_CLICK_NON_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI\SFX_BOUTON_CLICK_NON		357184
 	479046017	SFX_PAS_ANDROÏDE_SABLE_2	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_PAS_ANDROÏDE_SABLE_2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Pas\RANDOMISEUR_PAS_SABLE\SFX_PAS_ANDROÏDE_SABLE_2		119912
+	485079361	SFX_BRAS_ROBOTIQUE_IMPACT	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_BRAS_ROBOTIQUE_IMPACT_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Transitions\SFX_BRAS_ROBOTIQUE_IMPACT		85040
 	498153307	SFX_REELTOSIMU_LOOP	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_REELTOSIMU_LOOP_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Transitions\SFX_REELTOSIMU_LOOP		3556620
 	520465305	SFX_PAS_ANDROÏDE_1	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_PAS_ANDROÏDE_1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Pas\RANDOMISEUR_PAS\SFX_PAS_ANDROÏDE_1		119912
 	539106288	SFX_PAS_ANDROÏDE_3	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_PAS_ANDROÏDE_3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Pas\RANDOMISEUR_PAS\SFX_PAS_ANDROÏDE_3		119912
@@ -59,7 +63,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	747293285	SFX_PORTE_FINALE	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_PORTE_FINALE_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Portes\SFX_PORTE_FINALE		1311044
 	775787932	SFX_OUVERTURE_PORTE_PETITE	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_OUVERTURE_PORTE_PETITE_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Portes\SFX_OUVERTURE_PORTE_PETITE		202672
 	837757474	SFX_SCAN_OBJ	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_SCAN_OBJ_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\DETECTION SCAN\SFX_SCAN_OBJ		987632
-	843512969	SFX_BRAS_ROBOTIQUE_LOOP	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_BRAS_ROBOTIQUE_LOOP_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_BRAS_ROBOTIQUE_LOOP		1698332
+	843512969	SFX_BRAS_ROBOTIQUE_LOOP	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_BRAS_ROBOTIQUE_LOOP_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Transitions\SFX_BRAS_ROBOTIQUE_LOOP		1698332
 	857904994	SFX_PAS_ANDROÏDE_SABLE_5	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_PAS_ANDROÏDE_SABLE_5_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Pas\RANDOMISEUR_PAS_SABLE\SFX_PAS_ANDROÏDE_SABLE_5		119912
 	871342710	SFX_PORTE_BLOQUEE	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_PORTE_BLOQUEE_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Portes\SFX_PORTE_BLOQUEE		355480
 	881874796	SFX_PAS_ANDROÏDE_4	C:\Users\adrim\Documents\GitHub\Terminal\TerminalPFE\TerminalPFE_WwiseProject\.cache\Windows\SFX\SFX_PAS_ANDROÏDE_4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Pas\RANDOMISEUR_PAS\SFX_PAS_ANDROÏDE_4		119912

@@ -539,7 +539,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_BRAS_ROBOTIQUE_LOOP" ID="{327A4150-4BE0-4F56-AFB7-804739C236D5}" WorkUnitID="{5477266C-D991-4580-A687-CA6FC8AF0645}"/>
+											<ObjectRef Name="SFX_BRAS_ROBOTIQUE_LOOP" ID="{327A4150-4BE0-4F56-AFB7-804739C236D5}" WorkUnitID="{966934EA-2DC0-4447-9711-9782A113F052}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -554,7 +554,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_BRAS_ROBOTIQUE_LOOP" ID="{327A4150-4BE0-4F56-AFB7-804739C236D5}" WorkUnitID="{5477266C-D991-4580-A687-CA6FC8AF0645}"/>
+											<ObjectRef Name="SFX_BRAS_ROBOTIQUE_LOOP" ID="{327A4150-4BE0-4F56-AFB7-804739C236D5}" WorkUnitID="{966934EA-2DC0-4447-9711-9782A113F052}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -569,7 +569,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_BRAS_ROBOTIQUE_LOOP" ID="{327A4150-4BE0-4F56-AFB7-804739C236D5}" WorkUnitID="{5477266C-D991-4580-A687-CA6FC8AF0645}"/>
+											<ObjectRef Name="SFX_BRAS_ROBOTIQUE_LOOP" ID="{327A4150-4BE0-4F56-AFB7-804739C236D5}" WorkUnitID="{966934EA-2DC0-4447-9711-9782A113F052}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -583,7 +583,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_BRAS_ROBOTIQUE_LOOP" ID="{327A4150-4BE0-4F56-AFB7-804739C236D5}" WorkUnitID="{5477266C-D991-4580-A687-CA6FC8AF0645}"/>
+											<ObjectRef Name="SFX_BRAS_ROBOTIQUE_LOOP" ID="{327A4150-4BE0-4F56-AFB7-804739C236D5}" WorkUnitID="{966934EA-2DC0-4447-9711-9782A113F052}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -608,7 +608,7 @@
 								<Action Name="" ID="{8F1F7B4C-3154-4A51-AB67-2B18CB680ABE}" ShortID="261545202">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_NEON_GRESILLE" ID="{C498ECE7-FCD2-4C68-A093-927DAE7F606A}" WorkUnitID="{5477266C-D991-4580-A687-CA6FC8AF0645}"/>
+											<ObjectRef Name="SFX_NEON_GRESILLE" ID="{C498ECE7-FCD2-4C68-A093-927DAE7F606A}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -623,7 +623,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_NEON_GRESILLE" ID="{C498ECE7-FCD2-4C68-A093-927DAE7F606A}" WorkUnitID="{5477266C-D991-4580-A687-CA6FC8AF0645}"/>
+											<ObjectRef Name="SFX_NEON_GRESILLE" ID="{C498ECE7-FCD2-4C68-A093-927DAE7F606A}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -639,6 +639,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="CODE_USINE_LOOP" ID="{7DC6FA75-B290-4AF7-A81B-4985ECB96600}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_BATTEMENT_COEUR_1MN30" ID="{FDFFAE03-2789-411A-84E6-BE915BF95F23}">
+							<ChildrenList>
+								<Action Name="" ID="{7594EC0F-E01A-44B5-B8C9-3557AF6B0526}" ShortID="417196301">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_BATTEMENT_COEUR_1MN30" ID="{FE8B3C35-F8F2-4AB0-AB82-70259ADAE1E8}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -714,6 +725,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SFX_SIMUTOREEL_LOOP" ID="{AF79D04A-9097-48ED-929C-E7CC2FE82D1A}" WorkUnitID="{966934EA-2DC0-4447-9711-9782A113F052}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_BRAS_ROBOTIQUE_IMPACT" ID="{6CFF82F5-3D0D-48FF-AFA5-3C0651A1298B}">
+							<ChildrenList>
+								<Action Name="" ID="{90AB0D33-BB18-4959-A15E-F551FEA56E87}" ShortID="35714584">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_BRAS_ROBOTIQUE_IMPACT" ID="{6284F544-449B-4E63-A737-AA30EE192D65}" WorkUnitID="{966934EA-2DC0-4447-9711-9782A113F052}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -910,7 +932,7 @@
 							<ChildrenList>
 								<Action Name="" ID="{E3FFD712-634E-4238-80D9-3E4894C5AC3B}" ShortID="819522546">
 									<PropertyList>
-										<Property Name="FadeInCurve" Type="int16" Value="2"/>
+										<Property Name="FadeInCurve" Type="int16" Value="8"/>
 										<Property Name="FadeTime" Type="Real64" Value="20"/>
 									</PropertyList>
 									<ReferenceList>

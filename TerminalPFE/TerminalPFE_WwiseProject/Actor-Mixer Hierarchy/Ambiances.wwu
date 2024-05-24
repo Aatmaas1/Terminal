@@ -182,6 +182,57 @@
 						<ActiveSource Name="SFX_AMBIANCE_VENT_LOOP_LONG_LEGER" ID="{DA27C9E7-38B6-459C-96FC-4AFF1689450B}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="SFX_BATTEMENT_COEUR_1MN30" ID="{FE8B3C35-F8F2-4AB0-AB82-70259ADAE1E8}" ShortID="629165933">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-9</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="RAW SOUND" ID="{C649DA51-3287-4693-9B4A-A92AD21B648C}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_BATTEMENT_COEUR_1MN30" ID="{1C8B8E19-15FD-4316-8D0F-E7502F0711DC}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_BATTEMENT_COEUR_1MN30.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="40830848"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_BATTEMENT_COEUR_1MN30" ID="{1C8B8E19-15FD-4316-8D0F-E7502F0711DC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SFX_NEON_GRESILLE" ID="{C498ECE7-FCD2-4C68-A093-927DAE7F606A}" ShortID="788095263">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="RAW SOUND" ID="{C649DA51-3287-4693-9B4A-A92AD21B648C}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_NEON_GRESILLE" ID="{B68CE08E-8E2D-4886-87B5-E72C357B90CF}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_NEON_GRESILLE.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="59938486"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_NEON_GRESILLE" ID="{B68CE08E-8E2D-4886-87B5-E72C357B90CF}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

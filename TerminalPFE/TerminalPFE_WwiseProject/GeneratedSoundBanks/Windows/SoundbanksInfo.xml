@@ -76,7 +76,7 @@
 				<Event Id="3465213173" Name="Stop_PropositionSimulation" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="701539208" Type="User" Language="SFX" Hash="{8881FB5C-A277-1730-3524-C74563701AC5}">
+		<SoundBank Id="701539208" Type="User" Language="SFX" Hash="{A2617DB6-D864-BB19-4172-8B5583D6A5A6}">
 			<ShortName>MUSIQUE2</ShortName>
 			<Path>MUSIQUE2.bnk</Path>
 			<Media>
@@ -543,7 +543,7 @@
 				<Event Id="3185533582" Name="Stop_SFX_AMBIANCE_CROWD" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{178D1A6C-8F02-EF1F-B31F-0264997A2528}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7D1D2C59-4F9D-94B0-9DC0-F3A60E995BAE}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -554,6 +554,10 @@
 				<File Id="38118640" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PAS_ANDROÏDE_SABLE_4.wav</ShortName>
 					<CachePath>SFX/SFX_PAS_ANDROÏDE_SABLE_4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="40830848" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_BATTEMENT_COEUR_1MN30.wav</ShortName>
+					<CachePath>SFX/SFX_BATTEMENT_COEUR_1MN30_818F3B66.wem</CachePath>
 				</File>
 				<File Id="41481307" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_BOUTON_CLICK_OUI.wav</ShortName>
@@ -590,6 +594,10 @@
 				<File Id="479046017" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PAS_ANDROÏDE_SABLE_2.wav</ShortName>
 					<CachePath>SFX/SFX_PAS_ANDROÏDE_SABLE_2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="485079361" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_BRAS_ROBOTIQUE_IMPACT.wav</ShortName>
+					<CachePath>SFX/SFX_BRAS_ROBOTIQUE_IMPACT_818F3B66.wem</CachePath>
 				</File>
 				<File Id="498153307" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_REELTOSIMU_LOOP.wav</ShortName>
@@ -727,6 +735,11 @@
 						<MediaRef Id="912676389"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3539423249" Name="Play_SFX_BATTEMENT_COEUR_1MN30" DurationType="OneShot" DurationMin="89.53006" DurationMax="89.53006">
+					<MediaRefs>
+						<MediaRef Id="40830848"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1697954246" Name="Play_SFX_BATTEMENT_COEUR_2" DurationType="OneShot" DurationMin="4.370167" DurationMax="4.370167">
 					<MediaRefs>
 						<MediaRef Id="961755382"/>
@@ -755,6 +768,11 @@
 				<Event Id="1055529180" Name="Play_SFX_BOUTONS_PARCOURIR" DurationType="OneShot" DurationMin="0.419697" DurationMax="0.419697">
 					<MediaRefs>
 						<MediaRef Id="561456419"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="748748168" Name="Play_SFX_BRAS_ROBOTIQUE_IMPACT" DurationType="OneShot" DurationMin="0.44241667" DurationMax="0.44241667">
+					<MediaRefs>
+						<MediaRef Id="485079361"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3105531936" Name="Play_SFX_BRAS_ROBOTIQUE_LOOP" DurationType="Infinite">
@@ -861,5 +879,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FB037B48-69B3-22E2-DDF1-8572D885F5CC}</FileHash>
+	<FileHash>{6F0E677F-C4E5-F7B0-FF90-9AFF0251ED19}</FileHash>
 </SoundBanksInfo>
