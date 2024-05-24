@@ -182,7 +182,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="INSTANT_FUSEE_2" ID="{8D9B7443-46B5-4C00-847C-F02CFB2AB745}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
+											<ObjectRef Name="INSTANT_FUSEE_3" ID="{83873E2E-F407-43FD-810E-B47B133376FC}" WorkUnitID="{3DB75E1A-554E-4B81-A9FC-6F71304E7BE4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -550,6 +550,7 @@
 								<Action Name="" ID="{ADA82CE2-32AE-47F8-80EE-E68BF86F91F0}" ShortID="1025930816">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
@@ -647,6 +648,22 @@
 						<Event Name="Play_SFX_BATTEMENT_COEUR_1MN30" ID="{FDFFAE03-2789-411A-84E6-BE915BF95F23}">
 							<ChildrenList>
 								<Action Name="" ID="{7594EC0F-E01A-44B5-B8C9-3557AF6B0526}" ShortID="417196301">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_BATTEMENT_COEUR_1MN30" ID="{FE8B3C35-F8F2-4AB0-AB82-70259ADAE1E8}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_SFX_BATTEMENT_COEUR_1MN30" ID="{2E74B13B-67BE-464F-8870-83C4F49B08DA}">
+							<ChildrenList>
+								<Action Name="" ID="{36E4509A-050C-4876-852C-2609C3E6D2BA}" ShortID="298335492">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SFX_BATTEMENT_COEUR_1MN30" ID="{FE8B3C35-F8F2-4AB0-AB82-70259ADAE1E8}" WorkUnitID="{147F8A23-E62D-43B9-B80D-6E19A3441376}"/>
@@ -932,8 +949,7 @@
 							<ChildrenList>
 								<Action Name="" ID="{E3FFD712-634E-4238-80D9-3E4894C5AC3B}" ShortID="819522546">
 									<PropertyList>
-										<Property Name="FadeInCurve" Type="int16" Value="8"/>
-										<Property Name="FadeTime" Type="Real64" Value="20"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">

@@ -12,6 +12,8 @@ public class AK_PORTES_AM : MonoBehaviour
 
     public void OpenPortal()
     {
+
+
         if (portal != null)
         {
             portal.Open();

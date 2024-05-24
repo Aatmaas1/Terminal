@@ -14,7 +14,6 @@
 							<PropertyList>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
-							<ReferenceList/>
 							<ChildrenList>
 								<AuxBus Name="ReverbMaster" ID="{D82F8442-9615-4B36-96A1-1BFD164EA25A}">
 									<PropertyList>
@@ -114,7 +113,6 @@
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 											</PropertyList>
-											<ReferenceList/>
 											<ObjectLists>
 												<ObjectList Name="Effects">
 													<Reference>
@@ -249,6 +247,26 @@
 																<ReferenceList>
 																	<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 																		<ObjectRef Name="Hall_Medium" ID="{50286348-176A-4235-9E4C-CA5F73D87818}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+																	</Reference>
+																</ReferenceList>
+															</EffectSlot>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+										<AuxBus Name="ROOMOUTSIDE" ID="{010F3C12-B2AD-4489-8F1D-6206A1535BFE}">
+											<PropertyList>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<Reference>
+														<Local>
+															<EffectSlot Name="" ID="{72DF7C75-FB45-4627-A142-FBF3A8CEB839}" ShortID="38466437">
+																<ReferenceList>
+																	<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																		<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 																	</Reference>
 																</ReferenceList>
 															</EffectSlot>

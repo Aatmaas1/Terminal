@@ -81,6 +81,7 @@ namespace AK
         static const AkUniqueID STOP_MUSIQUE_SIMULATION_3 = 1930795167U;
         static const AkUniqueID STOP_PROPOSITIONSIMULATION = 3465213173U;
         static const AkUniqueID STOP_SFX_AMBIANCE_CROWD = 3185533582U;
+        static const AkUniqueID STOP_SFX_BATTEMENT_COEUR_1MN30 = 1677409355U;
         static const AkUniqueID STOP_SFX_BRAS_ROBOTIQUE_LOOP = 3592606554U;
         static const AkUniqueID STOP_SFX_NEON_GRESILLE = 1581865358U;
         static const AkUniqueID STOP_SFX_REELTOSIMU_2 = 1840303866U;
@@ -116,6 +117,7 @@ namespace AK
         static const AkUniqueID ROOMHALL = 484847633U;
         static const AkUniqueID ROOMLARGE = 3553615197U;
         static const AkUniqueID ROOMMEDIUM = 4002769053U;
+        static const AkUniqueID ROOMOUTSIDE = 2552628973U;
         static const AkUniqueID ROOMREFECTOIRE = 3501257686U;
         static const AkUniqueID ROOMSMALL = 3205342581U;
         static const AkUniqueID ROOMSTAIRS = 654671026U;

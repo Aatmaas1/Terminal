@@ -384,6 +384,28 @@
 								<ActiveSource Name="INSTANT_FUSEE_2" ID="{CB7A33D7-75DB-47B0-8D5B-7C80866EA515}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="INSTANT_FUSEE_3" ID="{83873E2E-F407-43FD-810E-B47B133376FC}" ShortID="833889934">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ACBD3298-0759-4E91-B49E-1A0EC2A77C41}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{04D696A4-B5DF-434F-BCA9-994076F26B0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="INSTANT_FUSEE_3" ID="{8E080F50-AEC8-430E-9EEB-AD45265DEA80}">
+									<Language>SFX</Language>
+									<AudioFile>INSTANT_FUSEE_3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="706508236"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="INSTANT_FUSEE_3" ID="{8E080F50-AEC8-430E-9EEB-AD45265DEA80}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

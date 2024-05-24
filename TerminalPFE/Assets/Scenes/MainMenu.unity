@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.632951, g: 0.23868087, b: 0.12571746, a: 1}
+  m_IndirectSpecularColor: {r: 0.6329508, g: 0.23868087, b: 0.12571749, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3597,10 +3597,15 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 34c7e24dccdf120428dc2e00d753d303,
       type: 2}
-  stopSimu3:
+  battementsCoeur:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 10517a5c7876c7c45bf14fe206c3a7df,
+    WwiseObjectReference: {fileID: 11400000, guid: c0d9b56614e224c45b04cb43ed81a928,
+      type: 2}
+  battementsCoeurStop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 81b621730331b0b44b36a7128014ef84,
       type: 2}
   simu1AlreadyLoaded: 0
   earthQuakeSpecial: 0

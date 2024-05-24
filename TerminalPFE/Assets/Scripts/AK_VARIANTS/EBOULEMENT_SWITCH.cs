@@ -7,7 +7,7 @@ public class EBOULEMENT_SWITCH : MonoBehaviour
 {
     public AK_POSTEVENT_2_AM postEvent;
 
-    public float waitBeforeSimu;
+    public float waitHeartBeat;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -21,9 +21,9 @@ public class EBOULEMENT_SWITCH : MonoBehaviour
 
     public IEnumerator Post2AndDesactivate()
     {
-        AudioListenerDontDestroyOnLoad.instance.earthQuakeSpecial = true;
-        yield return new WaitForSeconds(waitBeforeSimu);
-        AudioListenerDontDestroyOnLoad.instance.simu3.Post(AudioListenerDontDestroyOnLoad.instance.gameObject);
+        yield return new WaitForSeconds(waitHeartBeat);
+        //AudioListenerDontDestroyOnLoad.instance.battementsCoeur.Post(AudioListenerDontDestroyOnLoad.instance.gameObject);
+        AudioListenerDontDestroyOnLoad.instance.AfterEarthQuake();
 
         yield return new WaitForSeconds(2f);
         gameObject.SetActive(false);

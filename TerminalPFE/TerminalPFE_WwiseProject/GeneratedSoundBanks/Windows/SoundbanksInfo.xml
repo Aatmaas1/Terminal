@@ -76,7 +76,7 @@
 				<Event Id="3465213173" Name="Stop_PropositionSimulation" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="701539208" Type="User" Language="SFX" Hash="{A2617DB6-D864-BB19-4172-8B5583D6A5A6}">
+		<SoundBank Id="701539208" Type="User" Language="SFX" Hash="{5F5BE4B3-90CB-F48C-32E4-6EB3600D82B1}">
 			<ShortName>MUSIQUE2</ShortName>
 			<Path>MUSIQUE2.bnk</Path>
 			<Media>
@@ -92,6 +92,10 @@
 					<ShortName>SORTIE_USINE.wav</ShortName>
 					<CachePath>SFX/SORTIE_USINE_818F3B66.wem</CachePath>
 				</File>
+				<File Id="706508236" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>INSTANT_FUSEE_3.wav</ShortName>
+					<CachePath>SFX/INSTANT_FUSEE_3_818F3B66.wem</CachePath>
+				</File>
 				<File Id="794636167" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MUSIQUE_SIMULATION_1.wav</ShortName>
 					<CachePath>SFX/MUSIQUE_SIMULATION_1_27DB8D7C.wem</CachePath>
@@ -100,10 +104,6 @@
 					<ShortName>MUSIQUE_SIMULATION_3.wav</ShortName>
 					<CachePath>SFX/MUSIQUE_SIMULATION_3_EA94E589.wem</CachePath>
 				</File>
-				<File Id="917758653" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>INSTANT_FUSEE_2.wav</ShortName>
-					<CachePath>SFX/INSTANT_FUSEE_2_818F3B66.wem</CachePath>
-				</File>
 			</Media>
 			<Events>
 				<Event Id="3280361123" Name="Play_CODE_USINE_LOOP" DurationType="Infinite">
@@ -111,9 +111,9 @@
 						<MediaRef Id="546656314"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1711887847" Name="Play_INSTANT_FUSEE_2" DurationType="OneShot" DurationMin="40.30979" DurationMax="40.30979">
+				<Event Id="1711887847" Name="Play_INSTANT_FUSEE_2" DurationType="OneShot" DurationMin="40.34023" DurationMax="40.34023">
 					<MediaRefs>
-						<MediaRef Id="917758653"/>
+						<MediaRef Id="706508236"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2687430207" Name="Play_MUSIQUE_SIMULATION_1" DurationType="Infinite">
@@ -142,7 +142,7 @@
 				<Event Id="1930795167" Name="Stop_MUSIQUE_SIMULATION_3" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{33DD8552-9D27-5BBA-769B-1F2FF18B2263}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{C6806D5C-B151-BF37-C25E-BF5EDD7C3898}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -154,6 +154,7 @@
 					<Plugin Id="618729785" Name="Room_Medium (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</Custom>
 				<ShareSets>
+					<Plugin Id="48620415" Name="Have_U_Ever_Been_Outside" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="3451596814" Name="Hall_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</ShareSets>
 				<AudioDevices>
@@ -188,6 +189,16 @@
 					</AuxBusRefs>
 				</AuxBus>
 				<AuxBus Id="1686871543" Name="ReverbMaster"/>
+				<AuxBus Id="2552628973" Name="ROOMOUTSIDE">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="48620415"/>
+						</ShareSets>
+					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="1686871543" Name="ReverbMaster"/>
+					</AuxBusRefs>
+				</AuxBus>
 				<AuxBus Id="3205342581" Name="RoomSmall">
 					<PluginRefs>
 						<Custom>
@@ -543,7 +554,7 @@
 				<Event Id="3185533582" Name="Stop_SFX_AMBIANCE_CROWD" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7D1D2C59-4F9D-94B0-9DC0-F3A60E995BAE}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8B382D2F-9C2D-A1E0-979A-B10815D21EF8}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -871,6 +882,7 @@
 					</MediaRefs>
 				</Event>
 				<Event Id="2176208755" Name="Resume_SFX_BRAS_ROBOTIQUE_LOOP" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1677409355" Name="Stop_SFX_BATTEMENT_COEUR_1MN30" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3592606554" Name="Stop_SFX_BRAS_ROBOTIQUE_LOOP" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1581865358" Name="Stop_SFX_NEON_GRESILLE" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1840303866" Name="Stop_SFX_REELTOSIMU_2" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
@@ -879,5 +891,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6F0E677F-C4E5-F7B0-FF90-9AFF0251ED19}</FileHash>
+	<FileHash>{B1CE3588-164B-496F-276B-FB8B23B43B89}</FileHash>
 </SoundBanksInfo>

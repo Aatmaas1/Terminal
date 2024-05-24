@@ -317,7 +317,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: a496d604dfb54f43bca9994076f26b0d
     GuidInternal: 
-    m_lastTime: -8584853127644662702
+    m_lastTime: -8584850593987976820
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -442,6 +442,29 @@ MonoBehaviour:
         ObjectType: 1
         guid: 32905c8804ebb44ebbb7de3043b128d3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\ReverbMaster\RoomMedium
+    - name: ROOMOUTSIDE
+      guid: 123c0f01adb289448f1d6206a1535bfe
+      id: 2552628973
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a496d604dfb54f43bca9994076f26b0d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 62a47c4cc463bf47a06a1483820419db
+      - ElementName: ReverbMaster
+        ObjectType: 1
+        guid: 42842fd81596364b96a11bfd164ea25a
+      - ElementName: ROOMOUTSIDE
+        ObjectType: 1
+        guid: 123c0f01adb289448f1d6206a1535bfe
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\ReverbMaster\ROOMOUTSIDE
     - name: RoomRefectoire
       guid: 2173be36c1600044949ac133dd1d3d20
       id: 3501257686
@@ -540,7 +563,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e364e8b048b1b448b41f12b8470ec700
     GuidInternal: 
-    m_lastTime: -8584850677481003879
+    m_lastTime: -8584850595589294776
     List:
     - name: Main
       guid: 251dc717ef0fef42a545f46544a81c52
@@ -610,7 +633,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 32fcbe829e1db64882c8fd8a959356a5
     GuidInternal: 
-    m_lastTime: -8584850677488013897
+    m_lastTime: -8584850561341555852
     List:
     - name: AMBIANCES
       guid: 0de342e3b708fb408c527d577683a4a1
@@ -832,8 +855,8 @@ MonoBehaviour:
         guid: 8edcbd953d035e41bac254459ad01af4
       Path: Events\Default Work Unit\Musique\Play_INSTANT_FUSEE_2
       maxAttenuation: 0
-      maxDuration: 40.30979
-      minDuration: 40.30979
+      maxDuration: 40.34023
+      minDuration: 40.34023
     - name: Play_MUSIQUE_INTO_DEMARCHE_DIFF
       guid: 2d0ead5e00ccd049aa1713d00a66ec38
       id: 1666445414
@@ -1114,6 +1137,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 4.370167
       minDuration: 4.370167
+    - name: Play_SFX_BATTEMENT_COEUR_1MN30
+      guid: 03aefffd89271a4184e6be915bf95f23
+      id: 3539423249
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: AMBIANCES
+        ObjectType: 4
+        guid: 0de342e3b708fb408c527d577683a4a1
+      - ElementName: Play_SFX_BATTEMENT_COEUR_1MN30
+        ObjectType: 3
+        guid: 03aefffd89271a4184e6be915bf95f23
+      Path: Events\Default Work Unit\AMBIANCES\Play_SFX_BATTEMENT_COEUR_1MN30
+      maxAttenuation: 0
+      maxDuration: 89.53006
+      minDuration: 89.53006
     - name: Play_SFX_BATTEMENT_COEUR_2
       guid: 0d08cbc71c48594abe08d604a1c6678f
       id: 1697954246
@@ -1234,6 +1277,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.419697
       minDuration: 0.419697
+    - name: Play_SFX_BRAS_ROBOTIQUE_IMPACT
+      guid: f582ff6c0d3dff48afa53c0651a1298b
+      id: 748748168
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: TRANSITIONS
+        ObjectType: 4
+        guid: f72a33b21dd3ca4ab9dcfa5cd171a264
+      - ElementName: Play_SFX_BRAS_ROBOTIQUE_IMPACT
+        ObjectType: 3
+        guid: f582ff6c0d3dff48afa53c0651a1298b
+      Path: Events\Default Work Unit\TRANSITIONS\Play_SFX_BRAS_ROBOTIQUE_IMPACT
+      maxAttenuation: 0
+      maxDuration: 0.44241667
+      minDuration: 0.44241667
     - name: Play_SFX_BRAS_ROBOTIQUE_LOOP
       guid: 7180ba91175c704588bb2a55845134fb
       id: 3105531936
@@ -1552,8 +1615,8 @@ MonoBehaviour:
         guid: f4a7a2c1cca2d641b37de77470e13013
       Path: Events\Default Work Unit\TRANSITIONS\Play_SFX_REELTOSIMU_2
       maxAttenuation: 0
-      maxDuration: 19.104605
-      minDuration: 19.104605
+      maxDuration: -1
+      minDuration: -1
     - name: Play_SFX_RISERS_SORTIE_TERMINAL_5_MIEUX
       guid: 9c220e85a9dd46438d2ec98bc2d3a0e4
       id: 3970918113
@@ -1692,8 +1755,8 @@ MonoBehaviour:
         guid: b69d1ab9b8d7a84989c2ed4a80163655
       Path: Events\Default Work Unit\TRANSITIONS\Play_SFX_SIMUTOREEL
       maxAttenuation: 0
-      maxDuration: 19.044584
-      minDuration: 19.044584
+      maxDuration: -1
+      minDuration: -1
     - name: Play_SFX_TERMINAL_BOUCLE
       guid: 8d6da815c223bb47b1da4d5cf728fdfa
       id: 2080143493
@@ -2108,6 +2171,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Stop_SFX_BATTEMENT_COEUR_1MN30
+      guid: 3bb1742ebe674f46887083c4f49b08da
+      id: 1677409355
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 32fcbe829e1db64882c8fd8a959356a5
+      - ElementName: AMBIANCES
+        ObjectType: 4
+        guid: 0de342e3b708fb408c527d577683a4a1
+      - ElementName: Stop_SFX_BATTEMENT_COEUR_1MN30
+        ObjectType: 3
+        guid: 3bb1742ebe674f46887083c4f49b08da
+      Path: Events\Default Work Unit\AMBIANCES\Stop_SFX_BATTEMENT_COEUR_1MN30
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_SFX_BRAS_ROBOTIQUE_LOOP
       guid: 746aaf989c989149a58e0344cfdbbea4
       id: 3592606554
@@ -2344,7 +2427,7 @@ MonoBehaviour:
     m_lastTime: -8584991312705959035
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0200000003000000040000000500000006000000070000000b0000000f00000010000000280000002a0000007700000079000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
