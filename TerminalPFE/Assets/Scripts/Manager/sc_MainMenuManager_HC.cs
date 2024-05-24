@@ -20,6 +20,7 @@ public class sc_MainMenuManager_HC : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Screen.SetResolution(1920, 1080, true);
         optionSelected = 0;
         SetPoints();
         Boutons[optionSelected].GetComponent<Animator>().SetBool("IsSelected", true);
