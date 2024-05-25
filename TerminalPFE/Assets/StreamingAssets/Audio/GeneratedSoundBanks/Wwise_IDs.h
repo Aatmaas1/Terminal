@@ -93,6 +93,7 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID BATTERIEFAIBLE = 2931768338U;
+        static const AkUniqueID VENTAFTEREARTHQUAKE = 4115807709U;
         static const AkUniqueID VOLUME = 2415836739U;
     } // namespace GAME_PARAMETERS
 

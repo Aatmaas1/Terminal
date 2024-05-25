@@ -105,5 +105,7 @@ public class AudioListenerDontDestroyOnLoad : MonoBehaviour
     {
         battementsCoeur.Post(gameObject);
         earthQuakeSpecial = true;
+
+        AkSoundEngine.SetRTPCValue("VentAfterEarthQuake", 100f);
     }
 }

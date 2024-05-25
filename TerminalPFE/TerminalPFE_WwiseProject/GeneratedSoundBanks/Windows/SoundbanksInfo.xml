@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{AE30CB1A-7DDE-B656-4065-7E2E0758C4FB}">
+		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{929CCE4C-8FF9-BE01-9A78-43CEA2C2D0C4}">
 			<ShortName>MUSIQUE</ShortName>
 			<Path>MUSIQUE.bnk</Path>
 			<Media>
@@ -31,7 +31,7 @@
 				</File>
 				<File Id="771713541" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MUSIQUE_INTO_DEMARCHE_DIFF.wav</ShortName>
-					<CachePath>SFX/MUSIQUE_INTO_DEMARCHE_DIFF_818F3B66.wem</CachePath>
+					<CachePath>SFX/MUSIQUE_INTO_DEMARCHE_DIFF_26931047.wem</CachePath>
 				</File>
 				<File Id="843582853" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MUSIQUE_OUTRO.wav</ShortName>
@@ -76,7 +76,7 @@
 				<Event Id="3465213173" Name="Stop_PropositionSimulation" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="701539208" Type="User" Language="SFX" Hash="{9568FC56-A6DE-8CFE-CB7D-188DC719F394}">
+		<SoundBank Id="701539208" Type="User" Language="SFX" Hash="{7059DDFA-BDC3-D5F7-811C-BBFEE59CE981}">
 			<ShortName>MUSIQUE2</ShortName>
 			<Path>MUSIQUE2.bnk</Path>
 			<Media>
@@ -142,7 +142,7 @@
 				<Event Id="1930795167" Name="Stop_MUSIQUE_SIMULATION_3" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{C6806D5C-B151-BF37-C25E-BF5EDD7C3898}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F5AF598F-67C7-FD19-1D78-79C862652BAD}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -188,7 +188,13 @@
 						<AuxBusRef Id="1686871543" Name="ReverbMaster"/>
 					</AuxBusRefs>
 				</AuxBus>
-				<AuxBus Id="1686871543" Name="ReverbMaster"/>
+				<AuxBus Id="1686871543" Name="ReverbMaster">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="48620415"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
 				<AuxBus Id="2552628973" Name="ROOMOUTSIDE">
 					<PluginRefs>
 						<ShareSets>
@@ -243,6 +249,7 @@
 			<GameParameters>
 				<GameParameter Id="2415836739" Name="VOLUME"/>
 				<GameParameter Id="2931768338" Name="BatterieFaible"/>
+				<GameParameter Id="4115807709" Name="VentAfterEarthQuake"/>
 			</GameParameters>
 			<AcousticTextures>
 				<AcousticTexture Id="386080821" Name="BETON">
@@ -382,7 +389,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1764570876" Type="User" Language="SFX" Hash="{570F3366-9140-126B-7584-4090908D387B}">
+		<SoundBank Id="1764570876" Type="User" Language="SFX" Hash="{397E551E-9335-33C0-9137-AC0492786A9D}">
 			<ShortName>Main2</ShortName>
 			<Path>Main2.bnk</Path>
 			<Media>
@@ -456,7 +463,7 @@
 				</File>
 				<File Id="831089712" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_AMBIANCE_CROWD.wav</ShortName>
-					<CachePath>SFX/SFX_AMBIANCE_CROWD_818F3B66.wem</CachePath>
+					<CachePath>SFX/SFX_AMBIANCE_CROWD_FF2B3CEC.wem</CachePath>
 				</File>
 				<File Id="835461043" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMU_ENTREE_TERMINAL.wav</ShortName>
@@ -553,8 +560,11 @@
 				<Event Id="3983987071" Name="Stop_AMBIANCE_TEMPETE_SEEMLESS" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3185533582" Name="Stop_SFX_AMBIANCE_CROWD" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="4115807709" Name="VentAfterEarthQuake"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{BC03D179-3819-FB89-49CF-13529D947B23}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{867FC00B-D5C7-454F-4308-FB0928FFEA49}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -900,5 +910,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5A70248B-DE7D-3221-7F31-D0F9EF82FB94}</FileHash>
+	<FileHash>{3F8E0FE3-1237-DD02-23EB-770CAFE9F846}</FileHash>
 </SoundBanksInfo>
