@@ -120,8 +120,11 @@ public class sc_PlayerManager_HC : MonoBehaviour, IDataManager
 
     public void ResetZoom()
     {
-        cameraZoom.gameObject.SetActive(false);
-        isZooming = false;
+        if(cameraZoom != null)
+        {
+            cameraZoom.gameObject.SetActive(false);
+            isZooming = false;
+        }
     }
     public void OnJump()
     {

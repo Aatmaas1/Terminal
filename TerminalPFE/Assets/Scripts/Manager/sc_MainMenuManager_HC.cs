@@ -39,6 +39,7 @@ public class sc_MainMenuManager_HC : MonoBehaviour
         if (sc_DataManager.instance.TestIsNewSave())
         {
             Boutons[0].SetActive(false);
+            optionSelected = 1;
         }
     }
 

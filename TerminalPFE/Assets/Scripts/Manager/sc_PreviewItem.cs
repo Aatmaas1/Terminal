@@ -77,6 +77,7 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
         {
             Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", true);
         }
+        sc_UIPauseManager.Instance.Up();
     }
     public void OnDown()
     {
@@ -90,6 +91,7 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
         {
             Cadres[selected].GetComponent<Animator>().SetBool("IsSelected", true);
         }
+        sc_UIPauseManager.Instance.Down();
     }
 
     public void OnLeft()
@@ -133,6 +135,7 @@ public class sc_PreviewItem : MonoBehaviour, IDataManager
             description.text = IsObjects[selected].commentaireAndroid;
             description.transform.GetChild(0).GetComponent<TMP_Text>().text = IsObjects[selected].description;
         }
+        sc_UIPauseManager.Instance.Select();
     }
 
     public void OnBack()

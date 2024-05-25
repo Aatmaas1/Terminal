@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class sc_UIPauseManager : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class sc_UIPauseManager : MonoBehaviour
     public System.Action OnPause;
 
     public GameObject menuPause, inventaire, cameraGame, cameraPause;
+    public GameObject[] Boutons;
+    [SerializeField]
+    private int optionSelected;
 
     Transform player;
     private void Awake()
@@ -30,6 +34,8 @@ public class sc_UIPauseManager : MonoBehaviour
     {
         player = menuPause.transform.parent.parent;
         StartCoroutine(TestPauseAtStrat());
+        optionSelected = 0;
+        Boutons[optionSelected].GetComponent<Animator>().SetBool("IsSelected", true);
     }
 
     private void Update()
@@ -68,6 +74,8 @@ public class sc_UIPauseManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         cameraGame.SetActive(false);
         cameraPause.SetActive(true);
+        optionSelected = 0;
+        Boutons[0].GetComponent<Animator>().SetBool("IsSelected", true);
     }
 
     void EndPause()
@@ -82,6 +90,7 @@ public class sc_UIPauseManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         cameraGame.SetActive(true);
         cameraPause.SetActive(false);
+        Boutons[optionSelected].GetComponent<Animator>().SetBool("IsSelected", false);
     }
 
 
@@ -120,6 +129,40 @@ public class sc_UIPauseManager : MonoBehaviour
         {
             TestPause();
         }
+    }
 
+    public void Up()
+    {
+        if (menuPause.activeInHierarchy)
+        {
+            Boutons[optionSelected].GetComponent<Animator>().SetBool("IsSelected", false);
+            optionSelected -= 1;
+            if (optionSelected < 0) { optionSelected = Boutons.Length - 1; }
+            Boutons[optionSelected].GetComponent<Animator>().SetBool("IsSelected", true);
+        }
+    }
+    public void Down()
+    {
+        if (menuPause.activeInHierarchy)
+        {
+            Boutons[optionSelected].GetComponent<Animator>().SetBool("IsSelected", false);
+            optionSelected += 1;
+            if (optionSelected >= Boutons.Length) { optionSelected = 0; }
+            Boutons[optionSelected].GetComponent<Animator>().SetBool("IsSelected", true);
+        }
+    }
+    public void Select()
+    {
+        if (menuPause.activeInHierarchy)
+        {
+            Boutons[optionSelected].GetComponent<Button>().onClick.Invoke();
+        }
+    }
+
+    public void MouseButton(int nb)
+    {
+        Boutons[optionSelected].GetComponent<Animator>().SetBool("IsSelected", false);
+        optionSelected = nb;
+        Boutons[optionSelected].GetComponent<Animator>().SetBool("IsSelected", true);
     }
 }
