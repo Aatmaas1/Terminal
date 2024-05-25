@@ -6,7 +6,7 @@ public class AK_OTE_AM : MonoBehaviour
 {
     bool isPlaying = false;
 
-    private AK_POST_PAS_AM postPas;
+    public AK_POST_PAS_AM postPas;
 
     private void Start()
     {

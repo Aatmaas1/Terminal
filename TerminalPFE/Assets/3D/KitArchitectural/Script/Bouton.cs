@@ -80,6 +80,7 @@ public class Bouton : MonoBehaviour, IDataManager
             if (checkDigi != null)
             {
                 checkDigi.Open();
+                
                 return;
             }
             isOpen = true;

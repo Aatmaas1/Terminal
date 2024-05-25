@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{AE30CB1A-7DDE-B656-4065-7E2E0758C4FB}">
+		<SoundBank Id="69765534" Type="User" Language="SFX" Hash="{05998861-ED2F-ADF2-9FCF-66BEB8BD816C}">
 			<ShortName>MUSIQUE</ShortName>
 			<Path>MUSIQUE.bnk</Path>
 			<Media>
@@ -31,7 +31,7 @@
 				</File>
 				<File Id="771713541" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MUSIQUE_INTO_DEMARCHE_DIFF.wav</ShortName>
-					<CachePath>SFX/MUSIQUE_INTO_DEMARCHE_DIFF_818F3B66.wem</CachePath>
+					<CachePath>SFX/MUSIQUE_INTO_DEMARCHE_DIFF_2F532B6D.wem</CachePath>
 				</File>
 				<File Id="843582853" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MUSIQUE_OUTRO.wav</ShortName>
@@ -76,7 +76,7 @@
 				<Event Id="3465213173" Name="Stop_PropositionSimulation" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="701539208" Type="User" Language="SFX" Hash="{5F5BE4B3-90CB-F48C-32E4-6EB3600D82B1}">
+		<SoundBank Id="701539208" Type="User" Language="SFX" Hash="{7059DDFA-BDC3-D5F7-811C-BBFEE59CE981}">
 			<ShortName>MUSIQUE2</ShortName>
 			<Path>MUSIQUE2.bnk</Path>
 			<Media>
@@ -92,10 +92,6 @@
 					<ShortName>SORTIE_USINE.wav</ShortName>
 					<CachePath>SFX/SORTIE_USINE_818F3B66.wem</CachePath>
 				</File>
-				<File Id="706508236" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>INSTANT_FUSEE_3.wav</ShortName>
-					<CachePath>SFX/INSTANT_FUSEE_3_818F3B66.wem</CachePath>
-				</File>
 				<File Id="794636167" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MUSIQUE_SIMULATION_1.wav</ShortName>
 					<CachePath>SFX/MUSIQUE_SIMULATION_1_27DB8D7C.wem</CachePath>
@@ -103,6 +99,10 @@
 				<File Id="861859393" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MUSIQUE_SIMULATION_3.wav</ShortName>
 					<CachePath>SFX/MUSIQUE_SIMULATION_3_EA94E589.wem</CachePath>
+				</File>
+				<File Id="970806313" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>INSTANT_FUSEE_GUITARE.wav</ShortName>
+					<CachePath>SFX/INSTANT_FUSEE_GUITARE_818F3B66.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -113,7 +113,7 @@
 				</Event>
 				<Event Id="1711887847" Name="Play_INSTANT_FUSEE_2" DurationType="OneShot" DurationMin="40.34023" DurationMax="40.34023">
 					<MediaRefs>
-						<MediaRef Id="706508236"/>
+						<MediaRef Id="970806313"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2687430207" Name="Play_MUSIQUE_SIMULATION_1" DurationType="Infinite">
@@ -142,7 +142,7 @@
 				<Event Id="1930795167" Name="Stop_MUSIQUE_SIMULATION_3" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{046130AF-6259-B701-ED72-89ACED0F04EE}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F26BE482-C38D-F270-B110-1059C3E0415E}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -243,6 +243,7 @@
 			<GameParameters>
 				<GameParameter Id="2415836739" Name="VOLUME"/>
 				<GameParameter Id="2931768338" Name="BatterieFaible"/>
+				<GameParameter Id="4115807709" Name="VentAfterEarthQuake"/>
 			</GameParameters>
 			<AcousticTextures>
 				<AcousticTexture Id="386080821" Name="BETON">
@@ -382,7 +383,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1764570876" Type="User" Language="SFX" Hash="{570F3366-9140-126B-7584-4090908D387B}">
+		<SoundBank Id="1764570876" Type="User" Language="SFX" Hash="{EFE678F8-6CCB-CFE2-0568-93F2990C2190}">
 			<ShortName>Main2</ShortName>
 			<Path>Main2.bnk</Path>
 			<Media>
@@ -456,7 +457,7 @@
 				</File>
 				<File Id="831089712" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_AMBIANCE_CROWD.wav</ShortName>
-					<CachePath>SFX/SFX_AMBIANCE_CROWD_818F3B66.wem</CachePath>
+					<CachePath>SFX/SFX_AMBIANCE_CROWD_11A93380.wem</CachePath>
 				</File>
 				<File Id="835461043" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_SIMU_ENTREE_TERMINAL.wav</ShortName>
@@ -481,7 +482,7 @@
 						<MediaRef Id="386145636"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1326775932" Name="Play_SFX_AMBIANCE_CROWD" MaxAttenuation="195" DurationType="OneShot" DurationMin="30.96498" DurationMax="30.96498">
+				<Event Id="1326775932" Name="Play_SFX_AMBIANCE_CROWD" MaxAttenuation="195" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="831089712"/>
 					</MediaRefs>
@@ -553,8 +554,11 @@
 				<Event Id="3983987071" Name="Stop_AMBIANCE_TEMPETE_SEEMLESS" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3185533582" Name="Stop_SFX_AMBIANCE_CROWD" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="4115807709" Name="VentAfterEarthQuake"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8B382D2F-9C2D-A1E0-979A-B10815D21EF8}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{EA5D9F63-097E-BC56-E7A9-A81AA55529E9}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -710,6 +714,10 @@
 					<ShortName>SFX_PAS_ANDROÏDE_SABLE_3.wav</ShortName>
 					<CachePath>SFX/SFX_PAS_ANDROÏDE_SABLE_3_818F3B66.wem</CachePath>
 				</File>
+				<File Id="986844119" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>INSTANT_FUSEE_FUSEE.wav</ShortName>
+					<CachePath>SFX/INSTANT_FUSEE_FUSEE_818F3B66.wem</CachePath>
+				</File>
 				<File Id="1031853575" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PORTES_CHANGELIGHT.wav</ShortName>
 					<CachePath>SFX/SFX_PORTES_CHANGELIGHT_818F3B66.wem</CachePath>
@@ -721,6 +729,11 @@
 			</Media>
 			<Events>
 				<Event Id="176057426" Name="Pause_SFX_BRAS_ROBOTIQUE_LOOP" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3082097605" Name="Play_INSTANT_FUSEE_FUSEE" DurationType="OneShot" DurationMin="41.84023" DurationMax="41.84023">
+					<MediaRefs>
+						<MediaRef Id="986844119"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2623669360" Name="Play_RandomContainerTest" MaxAttenuation="195" DurationType="OneShot" DurationMin="0.6240417" DurationMax="0.6240417">
 					<MediaRefs>
 						<MediaRef Id="13083898"/>
@@ -891,5 +904,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{532E5CED-3508-FA82-54C3-6EB2DF347810}</FileHash>
+	<FileHash>{3A670A6B-F1BB-A082-AFF9-92881E43D642}</FileHash>
 </SoundBanksInfo>

@@ -16,6 +16,7 @@ public class sc_Digicode_HC : MonoBehaviour
 
     public void Open()
     {
+        AudioListenerDontDestroyOnLoad.instance.Code();
         sc_PlayerManager_HC.Instance.SetInputMode("Nothing");
         Cursor.lockState = CursorLockMode.None;
         //Cursor.visible = true;
@@ -29,6 +30,7 @@ public class sc_Digicode_HC : MonoBehaviour
     {
         if(Visuel.activeInHierarchy)
         {
+            AudioListenerDontDestroyOnLoad.instance.StopCode();
             sc_PlayerManager_HC.Instance.SetInputMode("Player");
             Cursor.lockState = CursorLockMode.Locked;
             //Cursor.visible = false;

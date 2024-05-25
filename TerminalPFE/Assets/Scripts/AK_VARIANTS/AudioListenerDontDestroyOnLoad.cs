@@ -63,6 +63,9 @@ public class AudioListenerDontDestroyOnLoad : MonoBehaviour
     public bool simu1AlreadyLoaded = false;
     public bool earthQuakeSpecial = false;
 
+
+    public AK.Wwise.Event code;
+    public AK.Wwise.Event stopCode;
     public void OnLevelWasLoaded(int level)
     {
         if (level == 1)
@@ -107,5 +110,15 @@ public class AudioListenerDontDestroyOnLoad : MonoBehaviour
         earthQuakeSpecial = true;
 
         AkSoundEngine.SetRTPCValue("VentAfterEarthQuake", 100f);
+    }
+
+    public void Code()
+    {
+        code.Post(gameObject);
+    }
+
+    public void StopCode()
+    {
+        stopCode.Post(gameObject);
     }
 }
